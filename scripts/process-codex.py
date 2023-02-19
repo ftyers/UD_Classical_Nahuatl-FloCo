@@ -14,26 +14,10 @@ def detokenise(s):
 	o = re.sub(' ([,:.;]+)$', '\g<1>', o)
 	return o
 
-def normalise(s):
-	lookup = {'ioan': 'ihuan',
-		  'yoan': 'ihuan',
-		  'tenochtitla': 'Tenochtitlan',
-		  'tenochtitlan': 'Tenochtitlan',
-		  'cempoalxiujtl': 'cempohualxihuitl',
-		  'tlatocaiotl': 'tlatocayotl',
-		  'Vitzilihuitl': 'Huitzilihuitl',
-		  'ei': 'eyi',
-		  'chicuei': 'chicueyi',
-		  'mexico': 'Mexico',
-		  'yn': 'in',
-		  'naui': 'nahui',
-		  'njcan': 'nican',
-		  'tlatoanj': 'tlatoani',
-		  'Jnic': 'Inic',
-		  'injc': 'inic'
-		 }
-	if s in lookup:
-		return lookup[s]
+def normalise(table, s):
+	if s in table[0]:
+		return table[0][s]
+
 	return s	
 
 def maxmatch(tree, sentence):
@@ -68,8 +52,22 @@ def load_tree(fn):
 		span = left.split(' ')
 		tree.insert(span, right)	
 	return tree
+
+def load_table(fn):
+	table = {}
+	for line in open(fn):
+		level, left, right = line.strip().split('\t')
+		level = int(level)
+		if level not in table:
+			table[level] = {}
+		if left not in table[level]:
+			table[left] = {}
+		table[level][left] = right
+	return table
 		
 tree = load_tree('lookup.tsv')
+table = load_table('normalisation.tsv')
+
 #print(tree.size())
 #tree.display()
 current_token = ''
@@ -106,16 +104,16 @@ for token in tokens:
 	if token[0] != '¶':
 		current_sentence.append(token)
 	if token[0] == '.':
-		s2 = retokenise(tree, current_sentence)
-#		print('s2:', s2)
 		sentence = '·'.join([token[0] for token in current_sentence])
 		sentence = sentence.replace('¶·', '¶')
-		print('# sent_id = %s:%d' % (book, current_sentence_id))
-		print('# text = %s' % detokenise(sentence.replace('·', ' ')))
-		print('# text[orig] = %s' % detokenise(sentence))
+
+		s2 = retokenise(tree, current_sentence)
+
 		idx = 1
+		lines = []
+		retokenised_sentence = []
+		normalised_sentence = []
 		for i, token in enumerate(s2):
-#			print(token)
 			if type(token) == type({}):
 				subtokens = token['repl'].split('·')
 				for subtoken in subtokens:	
@@ -123,13 +121,25 @@ for token in tokens:
 					foli = ','.join([i[1] for i in token['span']])
 					para = ','.join(['%d' % i[2] for i in token['span']])
 					line = ','.join(['%d' % i[3] for i in token['span']])
-					norm = normalise(subtoken)
-					print('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s' % (manu, foli, para, line, norm)))
+					norm = normalise(table, subtoken)
+					lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s' % (manu, foli, para, line, norm)))
 					idx += 1
+					retokenised_sentence.append(subtoken.strip('¶'))
+					normalised_sentence.append(norm.strip('¶'))
 			else:
 				form = token[0]
-				print('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (i+1, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s' % (token[1], token[2], token[3], normalise(token[0]))))
+				norm = normalise(table, token[0])
+				lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (i+1, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s' % (token[1], token[2], token[3], norm)))
+				retokenised_sentence.append(form.strip('¶'))
+				normalised_sentence.append(norm.strip('¶'))
 				idx += 1
+
+		print('# sent_id = %s:%d' % (book, current_sentence_id))
+		print('# text = %s' % detokenise(' '.join(retokenised_sentence)))
+		print('# text[norm] = %s' % detokenise(' '.join(normalised_sentence)))
+		print('# text[orig] = %s' % detokenise(sentence))
+		for line in lines:
+			print(line)
 		print()
 		current_sentence = []
 		current_sentence_id += 1
