@@ -15,6 +15,7 @@ def detokenise(s):
 	return o
 
 def normalise(table, s):
+	s = s.strip('¶')
 	if s in table[0]:
 		return table[0][s]
 
@@ -125,13 +126,13 @@ for token in tokens:
 					lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s' % (manu, foli, para, line, norm)))
 					idx += 1
 					retokenised_sentence.append(subtoken.strip('¶'))
-					normalised_sentence.append(norm.strip('¶'))
+					normalised_sentence.append(norm)
 			else:
-				form = token[0]
+				form = token[0].strip('¶')
 				norm = normalise(table, token[0])
 				lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (i+1, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s' % (token[1], token[2], token[3], norm)))
 				retokenised_sentence.append(form.strip('¶'))
-				normalised_sentence.append(norm.strip('¶'))
+				normalised_sentence.append(norm)
 				idx += 1
 
 		print('# sent_id = %s:%d' % (book, current_sentence_id))
