@@ -7,10 +7,11 @@ def guess(norm):
 		return ('NOUN', '_', 'Guessed=Yes')
 	if re.findall('[a-z]+catl', norm):
 		return ('NOUN', '_', 'Guessed=Yes')
+	if re.findall('[a-z]+iztli', norm):
+		return ('NOUN', '_', 'Guessed=Yes')
 	if re.findall('[a-z]+huilia', norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	return ('X', '_', '_')
-	
 
 def tag(lexicon, form, norm, idx):
 	lower = norm.lower()
