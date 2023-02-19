@@ -65,7 +65,7 @@ def load_table(fn):
 		table[level][left] = right
 	return table
 		
-tree = load_tree('lookup.tsv')
+tree = load_tree('retokenisation.tsv')
 table = load_table('normalisation.tsv')
 
 #print(tree.size())
