@@ -5,10 +5,14 @@ alphabet = 'abcdefghijklmnopqrstuvxyz'
 def guess(norm):
     if re.findall('[a-z]+yotl$', norm):
         return ('NOUN', '_', 'Guessed=Yes')
-    if re.findall('[aeiou]tl$', norm):
+    if re.findall('[aeioju]tl$', norm):
         return ('NOUN', '_', 'Guessed=Yes')
-    if re.findall('[aeiouv][^aeiou]+tli$', norm):
+    if re.findall('[aeiojuv][^aeiou]+tli$', norm):
         return ('NOUN', '_', 'Guessed=Yes')
+    if re.findall('[a-z]+tzin$', norm):
+        return ('NOUN', '_', 'Guessed=Yes')
+    if re.findall('[^aeiouhvj]oa$', norm):
+        return ('VERB', '_', 'Guessed=Yes')
     if re.findall('[a-z]+huitl$', norm):
         return ('NOUN', '_', 'Guessed=Yes')
     if re.findall('[a-z]+catl$', norm):
@@ -84,5 +88,5 @@ for bloc in sys.stdin.read().split('\n\n'):
 
 	print()
 
-
-print('%.2f%%' % (tagged/total*100),file=sys.stderr)
+if total != 0:
+	print('%.2f%%' % (tagged/total*100),file=sys.stderr)
