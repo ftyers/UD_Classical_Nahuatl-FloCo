@@ -4,6 +4,8 @@ from Trie import PrefixTree
 def tokenise(s):
 	o = s
 	o = re.sub('([,:.;?!]+)', ' \g<1> ', o)
+#	o = o.replace('etc .', 'etc.')
+#	o = o.replace('Etc .', 'Etc.')
 	o = re.sub('  *', ' ', o)
 	o = o.strip()
 	return o.split(' ')
@@ -14,10 +16,13 @@ def detokenise(s):
 	o = re.sub(' ([,:.;?!]+)$', '\g<1>', o)
 	return o
 
-def normalise(table, s):
+def normalise(table, s, idx):
+#	print(idx, s, file=sys.stderr)
 	s = s.strip('¶')
 	if s in table[0]:
 		return table[0][s]
+	if s[0].isupper() and s.lower() in table[0]:
+		return table[0][s.lower()].title()
 
 	return s	
 
@@ -122,14 +127,14 @@ for token in tokens:
 					foli = ','.join([i[1] for i in token['span']])
 					para = ','.join(['%d' % i[2] for i in token['span']])
 					line = ','.join(['%d' % i[3] for i in token['span']])
-					norm = normalise(table, subtoken)
+					norm = normalise(table, subtoken, idx)
 					lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s' % (manu, foli, para, line, norm)))
 					idx += 1
 					retokenised_sentence.append(subtoken.strip('¶'))
 					normalised_sentence.append(norm)
 			else:
 				form = token[0].strip('¶')
-				norm = normalise(table, token[0])
+				norm = normalise(table, token[0], idx)
 				lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (i+1, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s' % (token[1], token[2], token[3], norm)))
 				retokenised_sentence.append(form.strip('¶'))
 				normalised_sentence.append(norm)

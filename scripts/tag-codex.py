@@ -3,27 +3,29 @@ import sys, re
 alphabet = 'abcdefghijklmnopqrstuvxyz'
 
 def guess(norm):
-    if re.findall('[a-z]+yotl$', norm):
-        return ('NOUN', '_', 'Guessed=Yes')
-    if re.findall('[aeioju]tl$', norm):
-        return ('NOUN', '_', 'Guessed=Yes')
-    if re.findall('[aeiojuv][^aeiou]+tli$', norm):
-        return ('NOUN', '_', 'Guessed=Yes')
-    if re.findall('[a-z]+tzin$', norm):
-        return ('NOUN', '_', 'Guessed=Yes')
-    if re.findall('[^aeiouhvj]oa$', norm):
-        return ('VERB', '_', 'Guessed=Yes')
-    if re.findall('[a-z]+huitl$', norm):
-        return ('NOUN', '_', 'Guessed=Yes')
-    if re.findall('[a-z]+catl$', norm):
-        return ('NOUN', '_', 'Guessed=Yes')
-    if re.findall('[a-z]+iztli$', norm):
-        return ('NOUN', '_', 'Guessed=Yes')
-    if re.findall('[a-z]+huilia$', norm):
-        return ('VERB', '_', 'Guessed=Yes')
-    if re.findall('[a-z]+ltia$', norm):
-        return ('VERB', '_', 'Guessed=Yes')
-    return ('X', '_', '_')
+	if re.findall('[aeiou]tl$', norm):
+		return ('NOUN', '_', 'Guessed=Yes')
+	if re.findall('[aeiouv][^aeiou]+tli$', norm):
+		return ('NOUN', '_', 'Guessed=Yes')
+	if re.findall('[a-z]+yotl$', norm):
+		return ('NOUN', '_', 'Guessed=Yes')
+	if re.findall('[a-z]+huitl$', norm):
+		return ('NOUN', '_', 'Guessed=Yes')
+	if re.findall('[a-z]+catl$', norm):
+		return ('NOUN', '_', 'Guessed=Yes')
+	if re.findall('[a-z]+iztli$', norm):
+		return ('NOUN', '_', 'Guessed=Yes')
+	if re.findall('[a-z]+huilia$', norm):
+		return ('VERB', '_', 'Guessed=Yes')
+	if re.findall('[a-z]+ltia$', norm):
+		return ('VERB', '_', 'Guessed=Yes')
+	if re.findall('^qui[a-z]+([io]|hu)a$', norm):
+		return ('VERB', '_', 'Guessed=Yes')
+	if re.findall('^mo[a-z]+lia$', norm):
+		return ('VERB', '_', 'Guessed=Yes')
+	if re.findall('^[a-z]+zque$', norm):
+		return ('VERB', '_', 'Guessed=Yes')
+	return ('X', '_', '_')
 
 def tag(lexicon, form, norm, idx):
 	lower = norm.lower()
