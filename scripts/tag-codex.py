@@ -15,6 +15,8 @@ def guess(norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall('[a-z]+ltia$', norm):
 		return ('VERB', '_', 'Guessed=Yes')
+	if re.findall('^qui[a-z]+[io]a$', norm):
+		return ('VERB', '_', 'Guessed=Yes')
 	return ('X', '_', '_')
 
 def tag(lexicon, form, norm, idx):
