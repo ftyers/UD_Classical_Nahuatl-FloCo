@@ -3,15 +3,15 @@ from Trie import PrefixTree
 
 def tokenise(s):
 	o = s
-	o = re.sub('([,:.;]+)', ' \g<1> ', o)
+	o = re.sub('([,:.;?!]+)', ' \g<1> ', o)
 	o = re.sub('  *', ' ', o)
 	o = o.strip()
 	return o.split(' ')
 
 def detokenise(s):
 	o = s
-	o = re.sub(' ([,:.;]+) ', '\g<1> ', o)
-	o = re.sub(' ([,:.;]+)$', '\g<1>', o)
+	o = re.sub(' ([,:.;?!]+) ', '\g<1> ', o)
+	o = re.sub(' ([,:.;?!]+)$', '\g<1>', o)
 	return o
 
 def normalise(table, s):
@@ -104,7 +104,7 @@ current_sentence = []
 for token in tokens:
 	if token[0] != '¶':
 		current_sentence.append(token)
-	if token[0] == '.':
+	if token[0] == '.' or token[0] == '?':
 		sentence = '·'.join([token[0] for token in current_sentence])
 		sentence = sentence.replace('¶·', '¶')
 
