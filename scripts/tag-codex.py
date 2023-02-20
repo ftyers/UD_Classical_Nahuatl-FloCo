@@ -3,13 +3,17 @@ import sys, re
 alphabet = 'abcdefghijklmnopqrstuvxyz'
 
 def guess(norm):
-	if re.findall('[a-z]+yotl', norm):
+	if re.findall('[a-z]+yotl$', norm):
 		return ('NOUN', '_', 'Guessed=Yes')
-	if re.findall('[a-z]+catl', norm):
+	if re.findall('[a-z]+huitl$', norm):
 		return ('NOUN', '_', 'Guessed=Yes')
-	if re.findall('[a-z]+iztli', norm):
+	if re.findall('[a-z]+catl$', norm):
 		return ('NOUN', '_', 'Guessed=Yes')
-	if re.findall('[a-z]+huilia', norm):
+	if re.findall('[a-z]+iztli$', norm):
+		return ('NOUN', '_', 'Guessed=Yes')
+	if re.findall('[a-z]+huilia$', norm):
+		return ('VERB', '_', 'Guessed=Yes')
+	if re.findall('[a-z]+ltia$', norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	return ('X', '_', '_')
 
