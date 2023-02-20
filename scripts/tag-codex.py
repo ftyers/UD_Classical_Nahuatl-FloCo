@@ -46,7 +46,10 @@ def read_lexicon(fn):
 		if line[0] == '#':
 			continue
 		tag, feats, token = line.strip().split('\t')
-		lexicon[token] = (tag, feats)
+		if token in lexicon:
+			lexicon[token] = (lexicon[token][0] + '|' + tag, '_')
+		else:
+			lexicon[token] = (tag, feats)
 	return lexicon
 		
 lexicon = read_lexicon('lexicon.tsv')
@@ -62,8 +65,9 @@ for bloc in sys.stdin.read().split('\n\n'):
 
 	comments = [line for line in bloc.split('\n') if line and line[0] == '#']
 	lines = [line for line in bloc.split('\n') if line and line[0] != '#']
-
-	print('\n'.join(comments))
+	new_lines = []
+	n_tokens = 0
+	n_tagged = 0
 
 	for line in lines:
 		# ID · FORM · LEMMA · UPOS · XPOS · FEATS · HEAD · DEPREL · EDEPS · MISC
@@ -84,9 +88,19 @@ for bloc in sys.stdin.read().split('\n\n'):
 
 		if upos != 'X':
 			tagged += 1
+			n_tagged += 1
 		total += 1
+		n_tokens += 1
 
+		#print('\t'.join(row))
+		new_lines.append(row)
+
+	print('\n'.join(comments))
+	if n_tokens > 0:
+		print('# tagged = %.2f%%' % (tagged/total*100))
+	for row in new_lines:
 		print('\t'.join(row))
+	
 
 	print()
 
