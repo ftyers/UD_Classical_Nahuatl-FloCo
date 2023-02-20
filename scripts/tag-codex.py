@@ -3,7 +3,7 @@ import sys, re
 alphabet = 'abcdefghijklmnopqrstuvxyz'
 
 def guess(norm):
-	if re.findall('[a-z]+cayotl', norm):
+	if re.findall('[a-z]+yotl', norm):
 		return ('NOUN', '_', 'Guessed=Yes')
 	if re.findall('[a-z]+catl', norm):
 		return ('NOUN', '_', 'Guessed=Yes')
