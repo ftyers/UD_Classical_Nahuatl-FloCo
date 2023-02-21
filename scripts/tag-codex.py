@@ -97,7 +97,7 @@ for bloc in sys.stdin.read().split('\n\n'):
 
 	print('\n'.join(comments))
 	if n_tokens > 0:
-		print('# tagged = %.2f%%' % (tagged/total*100))
+		print('# tagged = %.2f%%' % (n_tagged/n_tokens*100))
 	for row in new_lines:
 		print('\t'.join(row))
 	
