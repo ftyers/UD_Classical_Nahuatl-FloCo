@@ -22,8 +22,6 @@ for bloc in sys.stdin.read().split('\n\n'):
 
 	comments = [line for line in bloc.split('\n') if line and line[0] == '#']
 	lines = [line for line in bloc.split('\n') if line and line[0] != '#']
-	n_tokens = 0
-	n_tagged = 0
 
 	sent_id = ''
 	for comment in comments:
@@ -31,6 +29,7 @@ for bloc in sys.stdin.read().split('\n\n'):
 			sent_id = comment.split('=')[1].strip()
 	if sent_id in translations:
 		comments = comments[:-1] + ['# text[%s] = %s' % translations[sent_id], comments[-1]]
+		translated += 1
 	print('\n'.join(comments))
 #	if n_tokens > 0:
 #		print('# tagged = %.2f%%' % (n_tagged/n_tokens*100))
@@ -38,6 +37,7 @@ for bloc in sys.stdin.read().split('\n\n'):
 		print(line)
 
 	print()
+	total += 1
 
-#if total != 0:
-#	print('%d/%d' % (tagged,total), '(%.2f%%)' % (tagged/total*100),file=sys.stderr)
+if total != 0:
+	print('%d/%d' % (translated,total), '(%.2f%%)' % (translated/total*100),file=sys.stderr)
