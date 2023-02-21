@@ -30,7 +30,7 @@ def guess(norm):
 def tag(lexicon, form, norm, idx):
 	lower = norm.lower()
 	if lower in lexicon:
-		return (lexicon[lower][0], lexicon[lower][1], '_')
+		return (lexicon[lower][0], lexicon[lower][1], lexicon[lower][2])
 	if norm[0] in '0123456789':
 		return ('NUM', '_', '_')
 	if norm[0].upper() == norm[0] and idx > 1 and norm[0].lower() in alphabet:
@@ -45,11 +45,14 @@ def read_lexicon(fn):
 	for line in open(fn).readlines():
 		if line[0] == '#':
 			continue
-		tag, feats, token = line.strip().split('\t')
+		tag, feats, token, misc = line.strip().split('\t')
 		if token in lexicon:
-			lexicon[token] = (lexicon[token][0] + '|' + tag, '_')
+			lexicon[token] = (lexicon[token][0] + '|' + tag, '_', '_')
 		else:
-			lexicon[token] = (tag, feats)
+			if misc == '_':
+				lexicon[token] = (tag, feats, '_')
+			else:
+				lexicon[token] = (tag, feats, 'Split=' + misc)
 	return lexicon
 		
 lexicon = read_lexicon('lexicon.tsv')
