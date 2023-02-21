@@ -105,4 +105,4 @@ for bloc in sys.stdin.read().split('\n\n'):
 	print()
 
 if total != 0:
-	print('%.2f%%' % (tagged/total*100),file=sys.stderr)
+	print('%d/%d' % (tagged,total), '(%.2f%%)' % (tagged/total*100),file=sys.stderr)
