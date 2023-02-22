@@ -23,6 +23,10 @@ def guess(norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall('^mo[a-z]+lia$', norm):
 		return ('VERB', '_', 'Guessed=Yes')
+	if re.findall('^qui[a-z]+ya$', norm):			# quihtohuaya
+		return ('VERB', '_', 'Guessed=Yes')
+	if re.findall('^qui[a-z]+tiz$', norm):			# quintlanamictiz
+		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall('^[a-z]+zque$', norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall('^[a-z]+ohua$', norm):
@@ -43,18 +47,20 @@ def tag(lexicon, form, norm, idx):
 	return guess(norm)
 
 def read_lexicon(fn):
+	# FORM			LEMMA			UPOS		UFEATS		MISC
 	lexicon = {}
 	for line in open(fn).readlines():
-		if line[0] == '#':
+		if line[0] == '#' or line.strip() == '':
 			continue
-		tag, feats, token, misc = line.strip().split('\t')
+		line = re.sub('\t\t*', '\t', line)
+		token, lemma, upos, ufeats, misc = line.strip().split('\t')
 		if token in lexicon:
-			lexicon[token] = (lexicon[token][0] + '|' + tag, '_', '_')
+			lexicon[token] = (lexicon[token][0] + '|' + upos , '_', '_')
 		else:
 			if misc == '_':
-				lexicon[token] = (tag, feats, '_')
+				lexicon[token] = (upos, ufeats, '_')
 			else:
-				lexicon[token] = (tag, feats, 'Split=' + misc)
+				lexicon[token] = (upos, ufeats, misc)
 	return lexicon
 		
 lexicon = read_lexicon('lexicon.tsv')
