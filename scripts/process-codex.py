@@ -23,8 +23,10 @@ def normalise(table, s, idx):
 		return table[0][s]
 	if s[0].isupper() and s.lower() in table[0]:
 		return table[0][s.lower()].title()
+	if s[0] in ',:.;?!':
+		return s
 
-	return s	
+	return '*'+s
 
 def maxmatch(tree, sentence):
 #	token += ' '
