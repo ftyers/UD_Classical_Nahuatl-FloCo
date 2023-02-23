@@ -23,11 +23,11 @@ def normalise(table, s, idx):
 	if s in table[0]:
 		return table[0][s]
 	if s[0].isupper() and s.lower() in table[0]:
-		return table[0][s.lower()].title()
+		return table[0][s.lower()][0].title(), table[0][s.lower()][1]
 	if s[0] in ',:.;?!':
-		return s
+		return s, False
 
-	return '*'+s
+	return '*'+s, False 
 
 def maxmatch(tree, sentence):
 #	token += ' '
@@ -72,8 +72,11 @@ def load_table(fn):
 		if level not in table:
 			table[level] = {}
 		if left not in table[level]:
-			table[left] = {}
-		table[level][left] = right
+			table[level][left] = {}
+		if len(table[level][left]) > 0: # ambiguous
+			table[level][left] = (table[level][left][0] + ',' + right, True)
+		else:
+			table[level][left] = (right, False)
 	return table
 		
 tree = load_tree('retokenisation.tsv')
@@ -132,15 +135,23 @@ for token in tokens:
 					foli = ','.join([i[1] for i in token['span']])
 					para = ','.join(['%d' % i[2] for i in token['span']])
 					line = ','.join(['%d' % i[3] for i in token['span']])
-					norm = normalise(table, subtoken, idx)
-					lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s' % (manu, foli, para, line, norm)))
+					norm, ambiguous = normalise(table, subtoken, idx)
+					if ambiguous:
+						lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s|AmbigNorm=%s' % (manu, foli, para, line, norm, ambiguous)))
+						norm = norm.split(',')[0]
+					else:
+						lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s' % (manu, foli, para, line, norm)))
 					idx += 1
 					retokenised_sentence.append(subtoken.strip('¶'))
 					normalised_sentence.append(norm.replace('*', ''))
 			else:
 				form = token[0].strip('¶')
-				norm = normalise(table, token[0], idx)
-				lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s' % (token[1], token[2], token[3], norm)))
+				norm, ambiguous = normalise(table, token[0], idx)
+				if ambiguous:
+					lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s|AmbigNorm=%s' % (token[1], token[2], token[3], norm, ambiguous)))
+					norm = norm.split(',')[0]
+				else:
+					lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s' % (token[1], token[2], token[3], norm)))
 				retokenised_sentence.append(form.strip('¶'))
 				normalised_sentence.append(norm.replace('*', ''))
 				idx += 1
