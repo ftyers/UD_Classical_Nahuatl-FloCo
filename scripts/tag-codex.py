@@ -21,6 +21,8 @@ def guess(norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall('^qui[a-z]+([io]|hu)a$', norm):
 		return ('VERB', '_', 'Guessed=Yes')
+	if re.findall('^mo[a-z]+ya$', norm):
+		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall('^mo[a-z]+lia$', norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall('^qui[a-z]+ya$', norm):			# quihtohuaya
