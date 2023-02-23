@@ -17,17 +17,22 @@ def detokenise(s):
 	o = re.sub(' ([,:.;?!]+)$', '\g<1>', o)
 	return o
 
-def normalise(table, s, idx):
+def normalise(table, overrides, s, idx):
 #	print(idx, s, file=sys.stderr)
 	s = s.strip('¶')
+	if idx in overrides:
+		form = overrides[idx][1]
+		return form, form, table[0][s][1]
 	if s in table[0]:
-		return table[0][s]
+		form = table[0][s][0]
+		return form, form, table[0][s][1]
 	if s[0].isupper() and s.lower() in table[0]:
-		return table[0][s.lower()].title()
+		form = table[0][s.lower()][0].title()
+		return form, form, table[0][s.lower()][1]
 	if s[0] in ',:.;?!':
-		return s
+		return s, s, False
 
-	return '*'+s
+	return '*'+s, s, False 
 
 def maxmatch(tree, sentence):
 #	token += ' '
@@ -64,7 +69,7 @@ def load_tree(fn):
 		tree.insert(span, right)	
 	return tree
 
-def load_table(fn):
+def load_normalisation_table(fn):
 	table = {}
 	for line in open(fn):
 		level, left, right = line.strip().split('\t')
@@ -72,12 +77,29 @@ def load_table(fn):
 		if level not in table:
 			table[level] = {}
 		if left not in table[level]:
-			table[left] = {}
-		table[level][left] = right
+			table[level][left] = {}
+		if len(table[level][left]) > 0: # ambiguous
+			table[level][left] = (table[level][left][0] + ',' + right, True)
+		else:
+			table[level][left] = (right, False)
+	return table
+
+def load_override_table(fn):
+	table = {}
+	for line in open(fn):
+		sent_id, token_id, left, right = line.strip().split('\t')
+		token_id = int(token_id)
+		if sent_id not in table:
+			table[sent_id] = {}
+		if token_id not in table[sent_id]:
+			table[sent_id][token_id] = {}
+		# left here is only for sanity checking
+		table[sent_id][token_id] = (left, right)
 	return table
 		
 tree = load_tree('retokenisation.tsv')
-table = load_table('normalisation.tsv')
+table = load_normalisation_table('normalisation.tsv')
+overrides = load_override_table('overrides.tsv')
 
 #print(tree.size())
 #tree.display()
@@ -120,6 +142,11 @@ for token in tokens:
 
 		s2 = retokenise(tree, current_sentence)
 
+		sentence_id_string = '%s:%d' % (book, current_sentence_id)
+		norm_overrides = {}
+		if sentence_id_string in overrides:
+			norm_overrides = overrides[sentence_id_string]
+
 		idx = 1
 		lines = []
 		retokenised_sentence = []
@@ -132,17 +159,23 @@ for token in tokens:
 					foli = ','.join([i[1] for i in token['span']])
 					para = ','.join(['%d' % i[2] for i in token['span']])
 					line = ','.join(['%d' % i[3] for i in token['span']])
-					norm = normalise(table, subtoken, idx)
-					lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s' % (manu, foli, para, line, norm)))
+					norm, norm_form, ambiguous = normalise(table, norm_overrides, subtoken, idx)
+					if ambiguous:
+						lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s|AmbigNorm=%s' % (manu, foli, para, line, norm, ambiguous)))
+					else:
+						lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s' % (manu, foli, para, line, norm)))
 					idx += 1
 					retokenised_sentence.append(subtoken.strip('¶'))
-					normalised_sentence.append(norm.replace('*', ''))
+					normalised_sentence.append(norm_form.replace('*', ''))
 			else:
 				form = token[0].strip('¶')
-				norm = normalise(table, token[0], idx)
-				lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s' % (token[1], token[2], token[3], norm)))
+				norm, norm_form, ambiguous = normalise(table, norm_overrides, token[0], idx)
+				if ambiguous:
+					lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s|AmbigNorm=%s' % (token[1], token[2], token[3], norm, ambiguous)))
+				else:
+					lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s' % (token[1], token[2], token[3], norm)))
 				retokenised_sentence.append(form.strip('¶'))
-				normalised_sentence.append(norm.replace('*', ''))
+				normalised_sentence.append(norm_form.replace('*', ''))
 				idx += 1
 
 		print('# sent_id = %s:%d' % (book, current_sentence_id))
