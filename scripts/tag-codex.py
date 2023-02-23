@@ -34,7 +34,7 @@ def guess(norm):
 	return ('X', '_', '_')
 
 def tag(lexicon, form, norm, idx):
-	lower = norm.lower()
+	lower = norm.lower().strip('*')
 	if lower in lexicon:
 		return (lexicon[lower][0], lexicon[lower][1], lexicon[lower][2])
 	if norm[0] in '0123456789':
