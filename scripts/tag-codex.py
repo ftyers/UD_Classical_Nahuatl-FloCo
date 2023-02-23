@@ -5,7 +5,7 @@ alphabet = 'abcdefghijklmnopqrstuvxyz'
 def guess(norm):
 	if re.findall('[aeiou]tl$', norm):
 		return ('NOUN', '_', 'Guessed=Yes')
-	if re.findall('[aeiouv][^aeiou]+tli$', norm):
+	if re.findall('[aeiouvj][^aeiou]+tli$', norm):
 		return ('NOUN', '_', 'Guessed=Yes')
 	if re.findall('[a-z]+yotl$', norm):
 		return ('NOUN', '_', 'Guessed=Yes')
