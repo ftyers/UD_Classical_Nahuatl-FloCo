@@ -6,7 +6,7 @@ def guess(norm):
 	norm = norm.lower()
 	if re.findall('[aeiou]tl$', norm):
 		return ('NOUN', '_', 'Guessed=Yes')
-	if re.findall('[aeiouvj][^aeiou]+tli$', norm):
+	if re.findall('[aeiou][^aeiou]+tli$', norm):
 		return ('NOUN', '_', 'Guessed=Yes')
 	if re.findall('[a-z]+yotl$', norm):
 		return ('NOUN', '_', 'Guessed=Yes')
@@ -40,13 +40,13 @@ def guess(norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall("^mo[a-z]+oa", norm):
 		return ("VERB", "_", "Guessed=Yes")
-	if re.findall('t[ij](hu|u|o)etz[ij]$', norm):
+	if re.findall('tihuetziz?$', norm):
 		return ('VERB', '_', 'Guessed=Yes')
-	if re.findall("t[ij]nem[ij]$", norm):
+	if re.findall("tinemi$", norm):
 		return ("VERB", "_", "Guessed=Yes")
 	if norm.startswith("xi"):
 		return ("VERB", "_", "Guessed=Yes")
-	if re.findall("t[ij]qu[ij][çz]a", norm):
+	if re.findall("tiquiza", norm):
 		return ("VERB", "_", "Guessed=Yes")
 	return ('X', '_', '_')
 
