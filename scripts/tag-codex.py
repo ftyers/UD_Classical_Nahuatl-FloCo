@@ -44,6 +44,8 @@ def guess(norm):
 		return ("VERB", "_", "Guessed=Yes")
 	if norm.startswith("xi"):
 		return ("VERB", "_", "Guessed=Yes")
+	if re.findall("t[ij]qu[ij][çz]a", norm):
+		return ("VERB", "_", "Guessed=Yes")
 	return ('X', '_', '_')
 
 def tag(lexicon, form, norm, idx):
