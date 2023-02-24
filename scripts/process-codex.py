@@ -22,7 +22,7 @@ def normalise(table, overrides, s, idx):
 	s = s.strip('¶')
 	if idx in overrides:
 		form = overrides[idx][1]
-		return form, form, table[0][s][1]
+		return form, form, table[0][s.lower()][1]
 	if s in table[0]:
 		form = table[0][s][0]
 		return form, form, table[0][s][1]
