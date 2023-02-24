@@ -38,6 +38,8 @@ def guess(norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall('^[a-z]+ohua$', norm):
 		return ('VERB', '_', 'Guessed=Yes')
+	if re.findall("^mo[a-z]+oa", norm):
+		return ("VERB", "_", "Guessed=Yes")
 	if re.findall('t[ij](hu|u|o)etz[ij]$', norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall("t[ij]nem[ij]$", norm):
@@ -58,7 +60,6 @@ def tag(lexicon, form, norm, idx):
 		return ('PROPN', '_', '_')
 	if norm[0] in '.?!:,;':
 		return ('PUNCT', '_', '_')
-
 	return guess(norm)
 
 def read_lexicon(fn):
