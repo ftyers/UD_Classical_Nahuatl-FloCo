@@ -71,8 +71,14 @@ def load_tree(fn):
 
 def load_normalisation_table(fn):
 	table = {}
-	for line in open(fn):
-		level, left, right = line.strip().split('\t')
+	lineno = 0
+	for lineno, line in enumerate(open(fn)):
+		try:
+			level, left, right = line.strip().split('\t')
+		except:
+			print('Error too few values in line %d' % lineno, file=sys.stderr)
+			raise
+			
 		level = int(level)
 		if level not in table:
 			table[level] = {}
