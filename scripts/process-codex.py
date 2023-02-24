@@ -18,7 +18,7 @@ def detokenise(s):
 	return o
 
 def normalise(table, overrides, s, idx):
-#	print(idx, s, file=sys.stderr)
+#	print('@',idx, s, overrides, file=sys.stderr)
 	s = s.strip('¶')
 	if idx in overrides:
 		form = overrides[idx][1]
@@ -139,6 +139,7 @@ for line in open(sys.argv[1]):
 
 current_sentence_id = 1
 current_sentence = []
+norm_overrides = {}
 for token in tokens:
 	if token[0] != '¶':
 		current_sentence.append(token)
@@ -149,9 +150,10 @@ for token in tokens:
 		s2 = retokenise(tree, current_sentence)
 
 		sentence_id_string = '%s:%d' % (book, current_sentence_id)
-		norm_overrides = {}
 		if sentence_id_string in overrides:
 			norm_overrides = overrides[sentence_id_string]
+		else:
+			norm_overrides = {}
 
 		idx = 1
 		lines = []
