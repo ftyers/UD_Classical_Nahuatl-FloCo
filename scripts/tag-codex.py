@@ -58,6 +58,7 @@ def read_lexicon(fn):
 			continue
 		line = re.sub('\t\t*', '\t', line)
 		token, lemma, upos, ufeats, misc = line.strip().split('\t')
+
 		if token in lexicon:
 			lexicon[token] = (lexicon[token][0] + '|' + upos , '_', '_')
 		else:

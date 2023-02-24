@@ -79,7 +79,7 @@ def load_normalisation_table(fn):
 		if left not in table[level]:
 			table[level][left] = {}
 		if len(table[level][left]) > 0: # ambiguous
-			table[level][left] = (table[level][left][0] + ',' + right, True)
+			table[level][left] = (table[level][left][0] + '/' + right, True)
 		else:
 			table[level][left] = (right, False)
 	return table
