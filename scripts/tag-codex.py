@@ -60,7 +60,7 @@ def tag(lexicon, form, norm, idx):
 		return ('PROPN', '_', '_')
 	if norm[0] in '.?!:,;':
 		return ('PUNCT', '_', '_')
-	return guess(norm)
+	return guess(lower) # guess(norm)
 
 def read_lexicon(fn):
 	# FORM			LEMMA			UPOS		UFEATS		MISC
