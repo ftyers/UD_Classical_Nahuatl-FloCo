@@ -53,11 +53,15 @@ def tag(lexicon, form, norm, idx):
 def read_lexicon(fn):
 	# FORM			LEMMA			UPOS		UFEATS		MISC
 	lexicon = {}
-	for line in open(fn).readlines():
+	for lineno, line in enumerate(open(fn).readlines()):
 		if line[0] == '#' or line.strip() == '':
 			continue
 		line = re.sub('\t\t*', '\t', line)
-		token, lemma, upos, ufeats, misc = line.strip().split('\t')
+		try:
+			token, lemma, upos, ufeats, misc = line.strip().split('\t')
+		except:
+			print('Error on %d, not enough values to unpack.' % (lineno),file=sys.stderr)
+			raise
 		if token in lexicon:
 			lexicon[token] = (lexicon[token][0] + '|' + upos , '_', '_')
 		else:
