@@ -3,6 +3,7 @@ import sys, re
 alphabet = 'abcdefghijklmnopqrstuvxyz'
 
 def guess(norm):
+	norm = norm.lower()
 	if re.findall('[aeiou]tl$', norm):
 		return ('NOUN', '_', 'Guessed=Yes')
 	if re.findall('[aeiouvj][^aeiou]+tli$', norm):
@@ -18,6 +19,8 @@ def guess(norm):
 	if re.findall('[a-z]+huilia$', norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall('[a-z]+ltia$', norm):
+		return ('VERB', '_', 'Guessed=Yes')
+	if re.findall('^xi[a-z]+can$', norm):			# ximellacuahuacan
 		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall('^qui[a-z]+([io]|hu)a$', norm):
 		return ('VERB', '_', 'Guessed=Yes')
