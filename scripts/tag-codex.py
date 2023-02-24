@@ -35,6 +35,12 @@ def guess(norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall('^[a-z]+ohua$', norm):
 		return ('VERB', '_', 'Guessed=Yes')
+	if re.findall('t[ij](hu|u|o)etz[ij]$', norm):
+		return ('VERB', '_', 'Guessed=Yes')
+	if re.findall("t[ij]nem[ij]$", norm):
+		return ("VERB", "_", "Guessed=Yes")
+	if norm.startswith("xi"):
+		return ("VERB", "_", "Guessed=Yes")
 	return ('X', '_', '_')
 
 def tag(lexicon, form, norm, idx):
