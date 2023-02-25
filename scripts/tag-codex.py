@@ -28,6 +28,10 @@ def guess(norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall('^nimitz', norm):				# nimitzpantia
 		return ('VERB', '_', 'Guessed=Yes')
+	if re.findall('^[a-z]+tinemi$', norm):
+		return ('VERB', '_', 'Guessed=Yes')
+	if re.findall('^[a-z]+znequi$', norm):
+		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall('^mo[a-z]+ya$', norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall('^mo[a-z]+lia$', norm):
