@@ -73,6 +73,8 @@ def load_normalisation_table(fn):
 	table = {}
 	lineno = 0
 	for lineno, line in enumerate(open(fn)):
+		if line.strip() == '' or line[0] == '#':
+			continue
 		try:
 			level, left, right = line.strip().split('\t')
 		except:
