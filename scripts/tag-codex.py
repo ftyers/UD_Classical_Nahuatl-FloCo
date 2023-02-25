@@ -40,7 +40,7 @@ def guess(norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall("^mo[a-z]+oa", norm):
 		return ("VERB", "_", "Guessed=Yes")
-	if re.findall('tihuetziz?$', norm):
+	if re.findall('tihu[ei]tz(iz|i)?$', norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall("tinemi$", norm):
 		return ("VERB", "_", "Guessed=Yes")
