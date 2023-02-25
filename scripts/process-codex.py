@@ -78,7 +78,8 @@ def load_normalisation_table(fn):
 		try:
 			level, left, right = line.strip().split('\t')
 		except:
-			print('Error too few values in line %d' % lineno, file=sys.stderr)
+			print('!!! Error wrong number of values in line %d' % lineno, file=sys.stderr)
+			print('!!!', line, file=sys.stderr)
 			raise
 			
 		level = int(level)
