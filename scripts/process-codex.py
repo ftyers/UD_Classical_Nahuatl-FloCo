@@ -62,7 +62,7 @@ def retokenise(tree, sentence):
 def load_tree(fn):
 	tree = PrefixTree()
 	for line in open(fn):
-		if line[0] == '#':
+		if line[0] == '#' or line.strip() == '':
 			continue
 		left, right = line.strip().split('\t')
 		span = left.split(' ')
