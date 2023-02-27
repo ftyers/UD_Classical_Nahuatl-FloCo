@@ -4,7 +4,7 @@ from Trie import PrefixTree
 def tokenise(s):
 	o = s
 	o = re.sub('([,:.;?!]+)', ' \g<1> ', o)
-	for etc in ['etc', '&c', 'Etc']:
+	for etc in ['etc', '&c', 'Etc', 'q. n']:
 		o = o.replace(etc + ' .', etc + '.')
 		o = o.replace('. ' + etc, etc)
 	o = re.sub('  *', ' ', o)
@@ -121,7 +121,7 @@ tokens = []
 
 
 for line in open(sys.argv[1]):
-	if re.findall(' fo. *[0-9]+', line):
+	if re.findall(' [Ff]ol?. *[0-9]+', line):
 		current_folio = re.sub('[^0-9]+', '', line.replace('fo.','').strip())
 		current_paragraph = 0
 		current_line = 0
@@ -129,6 +129,8 @@ for line in open(sys.argv[1]):
 
 	line = line.strip() + '¶'
 	line = re.sub('\([0-9]+\)', '', line)
+	# We need to track and replace tokens that end in a full stop
+	line = line.replace('tli. q. n.', '@#@15@#@ @#@16@#@ @#@17@#@')
 
 	if line.strip() == '¶':
 		current_paragraph += 1
@@ -145,7 +147,19 @@ current_sentence = []
 norm_overrides = {}
 for token in tokens:
 	if token[0] != '¶':
-		current_sentence.append(token)
+		# Make this more beautiful
+		if token[0] in ['@#@15@#@', '@#@16@#@', '@#@17@#@']:
+			if token[0] == '@#@15@#@':
+				current_sentence.append(('tli.', token[1], token[2], token[3]))
+				continue
+			if token[0] == '@#@16@#@':
+				current_sentence.append(('q.', token[1], token[2], token[3]))
+				continue
+			if token[0] == '@#@17@#@':
+				current_sentence.append(('n.', token[1], token[2], token[3]))
+				continue
+		else: 
+			current_sentence.append(token)
 	if token[0] == '.' or token[0] == '?' or token[0].lower() in ['&c.', 'etc.']:
 		sentence = '·'.join([token[0] for token in current_sentence])
 		sentence = sentence.replace('¶·', '¶')
