@@ -122,7 +122,7 @@ tokens = []
 
 for line in open(sys.argv[1]):
 	if re.findall(' fo. *[0-9]+', line):
-		current_folio = line.replace('fo.','').strip()
+		current_folio = re.sub('[^0-9]+', '', line.replace('fo.','').strip())
 		current_paragraph = 0
 		current_line = 0
 		continue
