@@ -76,6 +76,7 @@ def load_normalisation_table(fn):
 		if line.strip() == '' or line[0] == '#':
 			continue
 		try:
+			line = re.sub('\t\t*', '\t', line)
 			level, left, right = line.strip().split('\t')
 		except:
 			print('!!! Error wrong number of values in line %d' % lineno, file=sys.stderr)
@@ -130,7 +131,7 @@ for line in open(sys.argv[1]):
 	line = line.strip() + '¶'
 	line = re.sub('\([0-9]+\)', '', line)
 	# We need to track and replace tokens that end in a full stop
-	line = line.replace('tli. q. n.', '@#@15@#@ @#@16@#@ @#@17@#@')
+	line = line.replace('q. n.', '@#@16@#@ @#@17@#@')
 
 	if line.strip() == '¶':
 		current_paragraph += 1
@@ -148,10 +149,7 @@ norm_overrides = {}
 for token in tokens:
 	if token[0] != '¶':
 		# Make this more beautiful
-		if token[0] in ['@#@15@#@', '@#@16@#@', '@#@17@#@']:
-			if token[0] == '@#@15@#@':
-				current_sentence.append(('tli.', token[1], token[2], token[3]))
-				continue
+		if token[0] in ['@#@16@#@', '@#@17@#@']:
 			if token[0] == '@#@16@#@':
 				current_sentence.append(('q.', token[1], token[2], token[3]))
 				continue
