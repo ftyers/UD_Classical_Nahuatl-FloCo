@@ -18,6 +18,8 @@ def guess(norm):
 		return ('NOUN', '_', 'Guessed=Yes')
 	if re.findall('[a-z]+huilia$', norm):
 		return ('VERB', '_', 'Guessed=Yes')
+	if re.findall('[a-z]+quiza$', norm):
+		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall('[a-z]+ltia$', norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall('^xi[a-z]+can$', norm):			# ximellacuahuacan
