@@ -60,6 +60,9 @@ def tag(lexicon, form, norm, idx):
 	lower = norm.lower().strip('*')
 	if lower in lexicon:
 		return (lexicon[lower][0], lexicon[lower][1], lexicon[lower][2])
+	if norm in lexicon:
+		if lexicon[norm][0] == 'PROPN':
+			return (lexicon[norm][0], lexicon[norm][1], lexicon[norm][2])
 	if norm[0] in '0123456789':
 		return ('NUM', '_', '_')
 	if norm[0].upper() == norm[0] and idx > 1 and norm[0].lower() in alphabet:
