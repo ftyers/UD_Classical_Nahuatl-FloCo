@@ -50,7 +50,7 @@ def guess(norm):
 		return ('VERB', '_', 'Guessed=Yes')
 	if re.findall("tinemi$", norm):
 		return ("VERB", "_", "Guessed=Yes")
-	if norm.startswith("xi"):
+	if norm.startswith("xi[^u]"):
 		return ("VERB", "_", "Guessed=Yes")
 	if re.findall("tiquiza", norm):
 		return ("VERB", "_", "Guessed=Yes")
