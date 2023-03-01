@@ -116,6 +116,10 @@ for bloc in sys.stdin.read().split('\n\n'):
 		# ID · FORM · LEMMA · UPOS · XPOS · FEATS · HEAD · DEPREL · EDEPS · MISC
 		# 0    1      2       3      4      5       6      7        8       9
 		row = line.split('\t')
+
+		if '-' in row[0]:
+			new_lines.append(row)
+			continue
 			
 		idx = int(row[0])
 		form = row[1]

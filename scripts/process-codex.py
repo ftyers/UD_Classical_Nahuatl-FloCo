@@ -110,13 +110,16 @@ def load_override_table(fn):
 def load_subtoken_table(fn):
 	table = {}
 	for line in open(fn):
+		if line[0] == '#':
+			continue
 		token, subtokens, sent_ids = re.sub('\t\t*', '\t', line).strip().split('\t')
+		token = token.strip()
 		subtokens = subtokens.split('|')
-		sent_ids.split(' ')
+		sent_ids = sent_ids.split(' ')
 		if token not in table:
 			table[token] = {}
 		for sent_id in sent_ids:
-			table[token][send_id] = subtokens
+			table[token][sent_id] = subtokens
 
 	return table
 		
@@ -197,16 +200,38 @@ for token in tokens:
 					para = ','.join(['%d' % i[2] for i in token['span']])
 					line = ','.join(['%d' % i[3] for i in token['span']])
 					norm, norm_form, ambiguous = normalise(table, norm_overrides, subtoken, idx)
-					if ambiguous:
-						lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s|AmbigNorm=%s' % (manu, foli, para, line, norm, ambiguous)))
+
+					conllu_subtokens = []
+					if subtoken in subtoken_table:
+						if sentence_id_string in subtoken_table[subtoken]:
+							conllu_subtokens = subtoken_table[subtoken][sentence_id_string]
+
+					if len(conllu_subtokens) > 0:
+						span = '%d-%d' % (idx, idx+len(conllu_subtokens) -1)
+						lines.append('%s\t%s\t_\t_\t_\t_\t_\t_\t_\t_' % (span, subtoken))
+						for conllu_subtoken in conllu_subtokens:
+							norm, norm_form, ambiguous = normalise(table, norm_overrides, conllu_subtoken, idx)
+							lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, conllu_subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s' % (manu, foli, para, line, norm)))
+							normalised_sentence.append(norm_form.replace('*', ''))
+							idx += 1
 					else:
-						lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s' % (manu, foli, para, line, norm)))
-					idx += 1
+						if ambiguous:
+							lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s|AmbigNorm=%s' % (manu, foli, para, line, norm, ambiguous)))
+						else:
+							lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s' % (manu, foli, para, line, norm)))
+						idx += 1
+						normalised_sentence.append(norm_form.replace('*', ''))
 					retokenised_sentence.append(subtoken.strip('¶'))
-					normalised_sentence.append(norm_form.replace('*', ''))
 			else:
 				form = token[0].strip('¶')
 				norm, norm_form, ambiguous = normalise(table, norm_overrides, token[0], idx)
+
+
+				conllu_subtokens = []
+				if subtoken in subtoken_table:
+						if sentence_id_string in subtoken_table[subtoken]:
+							conllu_subtokens = subtoken_table[subtoken][sentence_id_string]
+
 				if ambiguous:
 					lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s|AmbigNorm=%s' % (token[1], token[2], token[3], norm, ambiguous)))
 				else:
