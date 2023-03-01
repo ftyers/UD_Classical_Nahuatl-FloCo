@@ -106,10 +106,24 @@ def load_override_table(fn):
 		# left here is only for sanity checking
 		table[sent_id][token_id] = (left, right)
 	return table
+
+def load_subtoken_table(fn):
+	table = {}
+	for line in open(fn):
+		token, subtokens, sent_ids = re.sub('\t\t*', '\t', line).strip().split('\t')
+		subtokens = subtokens.split('|')
+		sent_ids.split(' ')
+		if token not in table:
+			table[token] = {}
+		for sent_id in sent_ids:
+			table[token][send_id] = subtokens
+
+	return table
 		
 tree = load_tree('retokenisation.tsv')
 table = load_normalisation_table('normalisation.tsv')
 overrides = load_override_table('overrides.tsv')
+subtoken_table = load_subtoken_table('subtokens.tsv')
 
 #print(tree.size())
 #tree.display()
