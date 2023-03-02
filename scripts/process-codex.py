@@ -227,10 +227,10 @@ for token in tokens:
 				norm, norm_form, ambiguous = normalise(table, norm_overrides, token[0], idx)
 
 
-				conllu_subtokens = []
-				if subtoken in subtoken_table:
-					if sentence_id_string in subtoken_table[subtoken]:
-						conllu_subtokens = subtoken_table[subtoken][sentence_id_string]
+#				conllu_subtokens = []
+#				if subtoken in subtoken_table:
+#					if sentence_id_string in subtoken_table[subtoken]:
+#						conllu_subtokens = subtoken_table[subtoken][sentence_id_string]
 
 				if ambiguous:
 					lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s|AmbigNorm=%s' % (token[1], token[2], token[3], norm, ambiguous)))
