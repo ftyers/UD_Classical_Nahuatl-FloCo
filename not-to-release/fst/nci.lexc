@@ -2,26 +2,42 @@ Multichar_Symbols
 
 %<n%>
 %<pl%>
+%<adv%>
 %<redup%>
+
+%<px3aa%>
 %<px1sg%>
 %<px2sg%>
+%<px3sg%>
+%<px1pl%>
+%<px2pl%>
+%<px3pl%>
 
+@P.Poss.1@
+@R.Poss.1@
+@D.Poss@
 
 LEXICON Root
 
 Prefixes ;
-
+Adjetivos ;
 
 LEXICON Prefixes 
 
 
-Possessives ;
+@P.Poss.1@:@P.Poss.1@ Possessives ;
+                      Sustantivos ;
 
 LEXICON Possessives 
 
+%<px3aa%>:te%> Sustantivos ; 
 
 %<px1sg%>:no%> Sustantivos ; 
 %<px2sg%>:mo%> Sustantivos ; 
+%<px3sg%>:i%> Sustantivos ; 
+%<px1pl%>:to%> Sustantivos ; 
+%<px2pl%>:namo%> Sustantivos ;  ! FIXME: Check
+%<px3pl%>:in%> Sustantivos ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -32,17 +48,47 @@ LEXICON N-DERIV
 %<dim%>:%>ton # ;
 %<aug%>:%>pol # ;
 
+LEXICON N-LI
+
+@D.Poss@%<n%>%<abs%>:@D.Poss@%>li       # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              # ;
+%<n%>:                                  N-DERIV ;
+
 LEXICON N-TL 
 
-%<n%>%<abs%>:%>tl # ;
-%<n%>: N-DERIV ;
+@D.Poss@%<n%>%<abs%>:@D.Poss@%>tl       # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              # ;
+%<n%>:                                  N-DERIV ;
+
+LEXICON N-TLI
+
+@D.Poss@%<n%>%<abs%>:@D.Poss@%>tli      # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              # ;
+%<n%>:                                  N-DERIV ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON ADV
+
+%<adv%>:                                # ;
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Sustantivos 
 
-tlacatl:tlaca                                   N-TL ; ! "hombre"
-cihuatl:cihua                                   N-TL ; ! "mujer"
-ehecatl:eheca                                   N-TL ; ! "viento"
-yollotl:yollo                                   N-TL ; ! "corazón"
-nacatl:naca                                     N-TL ; ! "carne"
+tlacatl:tlaca                                   N-TL  ; ! "hombre"
+cihuatl:cihua                                   N-TL  ; ! "mujer"
+ehecatl:eheca                                   N-TL  ; ! "viento"
+yollotl:yollo                                   N-TL  ; ! "corazón"
+nacatl:naca                                     N-TL  ; ! "carne"
+teotl:teotl                                     N-TL  ; ! "díos"
+calli:cal                                       N-LI  ; ! "casa"
+amoxtli:amox                                    N-TLI ; ! "libro"
+cactli:cac                                      N-TLI ; ! "zapato"
+chantli:chan                                    N-TLI ; ! "hogar"
+
+LEXICON Adverbios 
+
+
+mochipa:mochipa                                 ADV ; ! "siempre"
