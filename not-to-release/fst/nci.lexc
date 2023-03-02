@@ -5,6 +5,10 @@ Multichar_Symbols
 %<redup%>
 %<px1sg%>
 %<px2sg%>
+%<px3sg%>
+%<px1pl%>
+%<px2pl%>
+%<px3pl%>
 
 
 LEXICON Root
@@ -22,6 +26,10 @@ LEXICON Possessives
 
 %<px1sg%>:no%> Sustantivos ; 
 %<px2sg%>:mo%> Sustantivos ; 
+%<px3sg%>:i%> Sustantivos ; 
+%<px1pl%>:to%> Sustantivos ; 
+%<px2pl%>:namo%> Sustantivos ;  ! FIXME: Check
+%<px3pl%>:in%> Sustantivos ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -32,17 +40,31 @@ LEXICON N-DERIV
 %<dim%>:%>ton # ;
 %<aug%>:%>pol # ;
 
+LEXICON N-LI
+
+%<n%>%<abs%>:%>li # ;
+%<n%>: N-DERIV ;
+
 LEXICON N-TL 
 
 %<n%>%<abs%>:%>tl # ;
 %<n%>: N-DERIV ;
 
+LEXICON N-TLI
+
+%<n%>%<abs%>:%>tli # ;
+%<n%>: N-DERIV ;
+
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Sustantivos 
 
-tlacatl:tlaca                                   N-TL ; ! "hombre"
-cihuatl:cihua                                   N-TL ; ! "mujer"
-ehecatl:eheca                                   N-TL ; ! "viento"
-yollotl:yollo                                   N-TL ; ! "corazón"
-nacatl:naca                                     N-TL ; ! "carne"
+tlacatl:tlaca                                   N-TL  ; ! "hombre"
+cihuatl:cihua                                   N-TL  ; ! "mujer"
+ehecatl:eheca                                   N-TL  ; ! "viento"
+yollotl:yollo                                   N-TL  ; ! "corazón"
+nacatl:naca                                     N-TL  ; ! "carne"
+teotl:teotl                                     N-TL  ; ! "díos"
+calli:cal                                       N-LI  ; ! "casa"
+amoxtli:amox                                    N-TLI ; ! "libro"
