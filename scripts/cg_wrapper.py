@@ -100,11 +100,11 @@ class ConllSentence:
                             wd[0], # ID
                             wd[1], # FORM
                             wd[2], # LEMMA
-                            reading[0], # UPOS
-                            reading[1], # XPOS
-                            '|'.join(reading[2]), # FEATS
-                            reading[4], # HEAD
-                            dep, # DEPREL
+                            reading[0] or '_', # UPOS
+                            reading[1] or '_', # XPOS
+                            '|'.join(reading[2]) or '_', # FEATS
+                            reading[4] or '_', # HEAD
+                            dep or '_', # DEPREL
                             wd[8], # DEPS
                             wd[9], # MISC
                         ])
