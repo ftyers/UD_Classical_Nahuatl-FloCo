@@ -10,6 +10,9 @@ Multichar_Symbols
 %<px2pl%>
 %<px3pl%>
 
+@P.Poss.1@
+@R.Poss.1@
+@D.Poss@
 
 LEXICON Root
 
@@ -19,7 +22,8 @@ Prefixes ;
 LEXICON Prefixes 
 
 
-Possessives ;
+@P.Poss.1@:@P.Poss.1@ Possessives ;
+                      Sustantivos ;
 
 LEXICON Possessives 
 
@@ -42,18 +46,21 @@ LEXICON N-DERIV
 
 LEXICON N-LI
 
-%<n%>%<abs%>:%>li # ;
-%<n%>: N-DERIV ;
+@D.Poss@%<n%>%<abs%>:@D.Poss@%>li       # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              # ;
+%<n%>:                                  N-DERIV ;
 
 LEXICON N-TL 
 
-%<n%>%<abs%>:%>tl # ;
-%<n%>: N-DERIV ;
+@D.Poss@%<n%>%<abs%>:@D.Poss@%>tl       # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              # ;
+%<n%>:                                  N-DERIV ;
 
 LEXICON N-TLI
 
-%<n%>%<abs%>:%>tli # ;
-%<n%>: N-DERIV ;
+@D.Poss@%<n%>%<abs%>:@D.Poss@%>tli      # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              # ;
+%<n%>:                                  N-DERIV ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
