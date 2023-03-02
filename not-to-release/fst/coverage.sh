@@ -1,3 +1,5 @@
+#!/bin/bash
+
 unknown=$(cat ../../scripts/lexicon.tsv  | cut -f1 | hfst-lookup nci.mor.hfst 2>/dev/null | grep '+?' | wc -l)
 total=$(cat ../../scripts/lexicon.tsv  | cut -f1 | hfst-lookup nci.mor.hfst 2>/dev/null | grep '^$' | wc -l)
 known=$(echo "${total} - ${unknown}" | bc -l)
