@@ -1,0 +1,35 @@
+DELIMITERS = "<%%%%%>" ;
+
+LIST CB = ("<:>" upos:PUNCT) ;
+
+REMOVE (upos:DET) IF (0 ("<yn>"i)) (1 (upos:SCONJ)) ;
+
+SETPARENT (upos:ADV) TO (1* (upos:VERB) BARRIER (*) - (upos:ADV)) ;
+
+MAP (@advmod) (upos:ADV) IF (p (upos:VERB)) ;
+
+SELECT (upos:DET) IF (1C (upos:NOUN)) ;
+
+SETPARENT (upos:DET) TO (1 (upos:NOUN)) ;
+MAP (@det) (upos:DET) ;
+
+SETPARENT (upos:NOUN) TO (0* (upos:VERB) BARRIER CB) ;
+
+"<y>" SETPARENT (upos:CCONJ) (1 CB) TO (1* (upos:VERB)) ;
+"<y>" MAP (@cc) (upos:CCONJ) ;
+
+SETPARENT (upos:SCONJ) TO (1* (upos:VERB) BARRIER (*) - (upos:SCONJ)) ;
+MAP (@mark) (upos:SCONJ) ;
+
+SETPARENT (upos:VERB) TO (-1* (upos:VERB) BARRIER CB) ;
+
+SECTION
+SETPARENT (upos:VERB) (NOT p (*)) TO (-1* (upos:VERB)) (NOT p (*)) ;
+
+SECTION
+MAP (@root) (upos:VERB) IF (NOT p (*)) ;
+MAP (@parataxis) (upos:VERB) ;
+SETPARENT (@root) TO (@0 (*)) ;
+
+SECTION
+SETPARENT (@parataxis) TO (p (@parataxis) LINK p (upos:VERB)) ;
