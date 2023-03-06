@@ -1,5 +1,6 @@
 import sys, re, os
 from Trie import PrefixTree
+from ml_support import load_retokenization_model, retokenize_w_model
 
 def tokenise(s):
 	o = s
@@ -54,9 +55,15 @@ def maxmatch(tree, sentence):
 
 	return [firstSpan] + maxmatch(tree, remainder)
 
-
-def retokenise(tree, sentence):
+def retokenise(tree, sentence, model_bundle=None):
 	spans = maxmatch(tree, sentence)
+	if model_bundle is not None:
+		sentence = (
+			"·".join([t[0] for t in sentence]).replace("¶·", "¶")
+		)
+		spans = retokenize_w_model(
+			spans, sentence, model_bundle["vectorizer"], model_bundle["model"]
+		)
 	return spans
 	
 def load_tree(fn):
@@ -124,6 +131,12 @@ def load_subtoken_table(fn):
 	return table
 		
 tree = load_tree('retokenisation.tsv')
+
+#
+# Use a statistical model to retokenize after running rules:
+#
+retokenization_bundle = load_retokenization_model()
+
 table = load_normalisation_table('normalisation.tsv')
 overrides = load_override_table('overrides.tsv')
 subtoken_table = load_subtoken_table('subtokens.tsv')
@@ -179,7 +192,10 @@ for token in tokens:
 		sentence = '·'.join([token[0] for token in current_sentence])
 		sentence = sentence.replace('¶·', '¶')
 
-		s2 = retokenise(tree, current_sentence)
+		#
+		# Remove model_bundle=... to revert to sans-model mode.
+		#
+		s2 = retokenise(tree, current_sentence, model_bundle=retokenization_bundle)
 
 		sentence_id_string = '%s:%d' % (book, current_sentence_id)
 		if sentence_id_string in overrides:
