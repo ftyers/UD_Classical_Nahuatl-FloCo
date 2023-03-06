@@ -195,7 +195,7 @@ for token in tokens:
 		#
 		# Remove model_bundle=... to revert to sans-model mode.
 		#
-		s2 = retokenise(tree, current_sentence, model_bundle=retokenization_bundle)
+		s2 = retokenise(tree, current_sentence) #, model_bundle=retokenization_bundle)
 
 		sentence_id_string = '%s:%d' % (book, current_sentence_id)
 		if sentence_id_string in overrides:
