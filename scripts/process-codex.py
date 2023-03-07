@@ -32,7 +32,7 @@ def normalise(table, overrides, s, idx):
 	if s[0].isupper() and s.lower() in table[0]:
 		form = table[0][s.lower()][0].title()
 		return form, form, table[0][s.lower()][1]
-	if s[0] in ',:.;?!':
+	if s[0] in ',:.;?!()':
 		return s, s, False
 
 	return '*'+s, s, False 
