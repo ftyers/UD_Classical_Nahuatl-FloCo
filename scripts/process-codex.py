@@ -4,7 +4,7 @@ from Trie import PrefixTree
 
 def tokenise(s):
 	o = s
-	o = re.sub('([,:.;?!]+)', ' \g<1> ', o)
+	o = re.sub('([,:.;?!()]+)', ' \g<1> ', o)
 	for etc in ['etc', '&c', 'Etc', 'q. n']:
 		o = o.replace(etc + ' .', etc + '.')
 		o = o.replace('. ' + etc, etc)
