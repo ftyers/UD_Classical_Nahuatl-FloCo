@@ -69,7 +69,7 @@ def tag(lexicon, form, norm, idx):
 		return ('NUM', '_', '_')
 	if norm[0].upper() == norm[0] and idx > 1 and norm[0].lower() in alphabet:
 		return ('PROPN', '_', '_')
-	if norm[0] in '.?!:,;':
+	if norm[0] in '.?!:,;()':
 		return ('PUNCT', '_', '_')
 	return guess(norm)
 
