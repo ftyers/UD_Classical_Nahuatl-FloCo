@@ -2,34 +2,86 @@ DELIMITERS = "<%%%%%>" ;
 
 LIST CB = ("<:>" upos:PUNCT) ;
 
-REMOVE (upos:DET) IF (0 ("<yn>"i)) (1 (upos:SCONJ)) ;
+LIST ClauseRoot = upos:VERB (upos:NOUN Number[subj]=Sing) FallbackClauseRoot ;
 
-SETPARENT (upos:ADV) TO (1* (upos:VERB) BARRIER (*) - (upos:ADV)) ;
+LIST QuoteVerb = "<qujtoa>"i ;
 
-MAP (@advmod) (upos:ADV) IF (p (upos:VERB)) ;
+# TODO: real tags
+LIST Trans3SObj = (Subcat=Tran "<quj.*>"ri) ;
+
+REMOVE (upos:DET) IF (0 (upos:SCONJ)) (1C (upos:SCONJ)) ;
+REMOVE (upos:DET) IF (0 ("<in>"i)) (1* (upos:VERB) BARRIER (*) - (upos:ADV)) ;
+REMOVE (upos:DET) IF (0 (upos:PRON)) (1 (upos:PUNCT)) ;
+
+MAP (@advmod) (upos:ADV) ;
+
+SETPARENT (@advmod) (NOT p (*)) TO (1* (upos:ADJ) BARRIER (*) - (@advmod)) ;
+SETPARENT (upos:ADV) (NOT p (*)) TO (1* (upos:VERB) BARRIER CB) ;
 
 SELECT (upos:DET) IF (1C (upos:NOUN)) ;
 
 SETPARENT (upos:DET) TO (1 (upos:NOUN)) ;
 MAP (@det) (upos:DET) ;
 
-SETPARENT (upos:NOUN) TO (0* (upos:VERB) BARRIER CB) ;
+SETPARENT (upos:NOUN) TO (0* ClauseRoot BARRIER CB) ;
 
-"<y>" SETPARENT (upos:CCONJ) (1 CB) TO (1* (upos:VERB)) ;
+"<y>" SETPARENT (upos:CCONJ) (1 CB) TO (1* ClauseRoot) ;
 "<y>" MAP (@cc) (upos:CCONJ) ;
 
-SETPARENT (upos:SCONJ) TO (1* (upos:VERB) BARRIER (*) - (upos:SCONJ)) ;
+SETPARENT (upos:SCONJ) TO (1* ClauseRoot BARRIER CB) ;
 MAP (@mark) (upos:SCONJ) ;
 
-SETPARENT (upos:VERB) TO (-1* (upos:VERB) BARRIER CB) ;
+ADD (FallbackClauseRoot) (upos:ADJ) IF (NEGATE 0* ClauseRoot BARRIER CB) ;
+
+SETPARENT ClauseRoot TO (-1* ClauseRoot BARRIER CB) ;
+
+WITH ClauseRoot (NOT p (*)) (c ("<jqc>"i)) {
+  SETPARENT (*) TO (1* ClauseRoot) ;
+  MAP (@advcl) (*) ;
+} ;
+
+WITH (upos:NUM) (1 ("<vitz>")) (NOT p (*)) {
+  MAP (@nummod) (*) ;
+  SETPARENT (*) TO (jC1 (*)) ;
+} ;
 
 SECTION
-SETPARENT (upos:VERB) (NOT p (*)) TO (-1* (upos:VERB)) (NOT p (*)) ;
+SETPARENT ClauseRoot (NOT p (*)) TO (-1* ClauseRoot) (NOT p (*)) ;
 
 SECTION
-MAP (@root) (upos:VERB) IF (NOT p (*)) ;
-MAP (@parataxis) (upos:VERB) ;
+MAP (@root) ClauseRoot IF (NOT p (*)) ;
+MAP (@parataxis) ClauseRoot ;
 SETPARENT (@root) TO (@0 (*)) ;
 
 SECTION
-SETPARENT (@parataxis) TO (p (@parataxis) LINK p (upos:VERB)) ;
+SETPARENT (@parataxis) TO (p (@parataxis) LINK p ClauseRoot) ;
+
+MAP (@obl) (NounType=Relat) IF (p ClauseRoot) ;
+MAP (@nmod) (NounType=Relat) ;
+
+# use UDAPI fixpunct or something later
+MAP (@punct) (upos:PUNCT) ;
+SETPARENT (upos:PUNCT) (NOT p (*)) TO (0* (*) - (upos:PUNCT)) ;
+
+MAP (@vocative) (Case=Voc) IF (p ClauseRoot) ;
+
+WITH (upos:NOUN) (p ClauseRoot) (NEGATE s (*)) {
+  MAP (@obj) (*) IF (jC1 Trans3SObj) ;
+  MAP (@nsubj) (*) ;
+} ;
+
+WITH (@parataxis) (-1* (@parataxis)) (p (@root)) (c (@cc)) {
+  SETPARENT (*) TO (jC1 (*)) ;
+  UNMAP (@parataxis) ;
+  MAP (@conj) (*) ;
+} ;
+
+
+# TODO: bug with LINK in context tests
+#WITH ClauseRoot (-1* CB LINK 1 ("<in>")) (-1* CB LINK -1 QuoteVerb) {
+#  SELECT (upos:SCONJ) IF (jC1A (*)) ;
+#  MAP (@mark) _C1_ ;
+#  MAP (@ccomp) (*) ;
+#  SETPARENT (*) TO (jC2 (*)) ;
+#  SETCHILD (*) TO (jC1 (*)) ;
+#} ;
