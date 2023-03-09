@@ -171,6 +171,7 @@ for line in open(sys.argv[1]):
 		continue
 
 	for token in tokenise(line):
+		token = token.strip('^') # for inserted tokens
 		tokens.append((token, current_folio, current_paragraph, current_line))
 
 	current_line += 1
