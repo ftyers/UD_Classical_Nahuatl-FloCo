@@ -25,17 +25,20 @@ def normalise(table, overrides, s, idx):
 	s = s.strip('¶')
 	if idx in overrides:
 		form = overrides[idx][1]
-		return form, form, table[0][s.lower()][1]
+		return form, form, table[0][s.lower()][1], True
 	if s in table[0]:
 		form = table[0][s][0]
-		return form, form, table[0][s][1]
+		if table[0][s][1]:
+			# We guarantee that the highest ranked is first
+			form = table[0][s][0].split('/')[0]
+		return form, form, table[0][s][1], False
 	if s[0].isupper() and s.lower() in table[0]:
 		form = table[0][s.lower()][0].title()
-		return form, form, table[0][s.lower()][1]
+		return form, form, table[0][s.lower()][1], False
 	if s[0] in ',:.;?!()':
-		return s, s, False
+		return s, s, False, False
 
-	return '*'+s, s, False 
+	return '*'+s, s, False, False
 
 def maxmatch(tree, sentence):
 #	token += ' '
@@ -81,24 +84,30 @@ def load_tree(fn):
 def load_normalisation_table(fn):
 	table = {}
 	lineno = 0
+	ranks = {}
 	for lineno, line in enumerate(open(fn)):
 		if line.strip() == '' or line[0] == '#':
 			continue
 		try:
 			line = re.sub('\t\t*', '\t', line)
-			level, left, right = line.strip().split('\t')
+			level, rank, left, right = line.strip().split('\t')
 		except:
 			print('!!! Error wrong number of values in line %d' % lineno, file=sys.stderr)
 			print('!!!', line, file=sys.stderr)
 			raise
 			
 		level = int(level)
+		rank = int(rank)
+		if left not in ranks:
+			ranks[left] = []
+		ranks[left].append((rank, right))
 		if level not in table:
 			table[level] = {}
 		if left not in table[level]:
 			table[level][left] = {}
 		if len(table[level][left]) > 0: # ambiguous
-			table[level][left] = (table[level][left][0] + '/' + right, True)
+			ranks[left].sort()
+			table[level][left] = ('/'.join([j for i,j in ranks[left]]), True)
 		else:
 			table[level][left] = (right, False)
 	return table
@@ -218,7 +227,7 @@ for token in tokens:
 					foli = ','.join([i[1] for i in token['span']])
 					para = ','.join(['%d' % i[2] for i in token['span']])
 					line = ','.join(['%d' % i[3] for i in token['span']])
-					norm, norm_form, ambiguous = normalise(table, norm_overrides, subtoken, idx)
+					norm, norm_form, ambiguous, overridden = normalise(table, norm_overrides, subtoken, idx)
 
 					conllu_subtokens = []
 					if subtoken in subtoken_table:
@@ -229,13 +238,13 @@ for token in tokens:
 						span = '%d-%d' % (idx, idx+len(conllu_subtokens) -1)
 						lines.append('%s\t%s\t_\t_\t_\t_\t_\t_\t_\t_' % (span, subtoken))
 						for conllu_subtoken in conllu_subtokens:
-							norm, norm_form, ambiguous = normalise(table, norm_overrides, conllu_subtoken, idx)
+							norm, norm_form, ambiguous, overridden = normalise(table, norm_overrides, conllu_subtoken, idx)
 							lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, conllu_subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s' % (manu, foli, para, line, norm)))
 							normalised_sentence.append(norm_form.replace('*', ''))
 							idx += 1
 					else:
 						if ambiguous:
-							lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s|AmbigNorm=%s' % (manu, foli, para, line, norm, ambiguous)))
+							lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s|AmbigNorm=%s|Override=%s' % (manu, foli, para, line, norm, ambiguous, overridden)))
 						else:
 							lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s' % (manu, foli, para, line, norm)))
 						idx += 1
@@ -243,7 +252,7 @@ for token in tokens:
 					retokenised_sentence.append(subtoken.strip('¶'))
 			else:
 				form = token[0].strip('¶')
-				norm, norm_form, ambiguous = normalise(table, norm_overrides, token[0], idx)
+				norm, norm_form, ambiguous, overridden = normalise(table, norm_overrides, token[0], idx)
 
 
 #				conllu_subtokens = []
@@ -252,7 +261,7 @@ for token in tokens:
 #						conllu_subtokens = subtoken_table[subtoken][sentence_id_string]
 
 				if ambiguous:
-					lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s|AmbigNorm=%s' % (token[1], token[2], token[3], norm, ambiguous)))
+					lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s|AmbigNorm=%s|Override=%s' % (token[1], token[2], token[3], norm, ambiguous, overridden)))
 				else:
 					lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s' % (token[1], token[2], token[3], norm)))
 				retokenised_sentence.append(form.strip('¶'))
