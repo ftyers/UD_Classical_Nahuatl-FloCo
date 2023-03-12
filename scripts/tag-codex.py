@@ -137,7 +137,7 @@ for bloc in sys.stdin.read().split('\n\n'):
 		for analysis in analyses:
 			c = convertor.convert(analysis[0])
 			converted_analyses.append(c)
-			print(c, analyses, file=sys.stderr)
+			print(form, '|', norm, '|||', c, analyses, file=sys.stderr)
 
 		upos, ufeats, addmisc = tag(lexicon, form, norm, idx)
 		row[3] = upos

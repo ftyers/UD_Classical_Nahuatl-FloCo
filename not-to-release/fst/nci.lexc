@@ -47,6 +47,16 @@ LEXICON Possessives
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+LEXICON V-IMPERF
+
+%<impf%>:%>ya                                                      # ;
+
+LEXICON V-TV-OA 
+
+%<v%>%<tv%>:a                                                      V-IMPERF ; 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 LEXICON N-DERIV 
 
 %<rev%>:%>tzin # ;
@@ -63,6 +73,7 @@ LEXICON N-LI
 LEXICON N-TL 
 
 @D.Poss@%<n%>%<abs%>:@D.Poss@%>tl       # ;
+@D.Poss@%<n%>%<pl%>:@D.Poss@%>me        # ;
 @R.Poss.1@%<n%>:@R.Poss.1@              # ;
 %<n%>:                                  N-DERIV ;
 
@@ -72,12 +83,24 @@ LEXICON N-TLI
 @R.Poss.1@%<n%>:@R.Poss.1@              # ;
 %<n%>:                                  N-DERIV ;
 
+LEXICON N-HUITL 
+
+@D.Poss@%<n%>%<abs%>:@D.Poss@%>tl       # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              # ;
+%<n%>:                                  N-DERIV ;
+
+LEXICON N-Ø
+
+@D.Poss@%<n%>%<abs%>:@D.Poss@%          # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              # ;
+%<n%>:                                  N-DERIV ;
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON N-REL
 
-%<n%>%<rel%>:                                         # ; 
+@R.Poss.1@%<n%>%<rel%>:@R.Poss.1@              # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -113,20 +136,28 @@ LEXICON Relacionales
 
 pan:pan                                         N-REL ; ! ""
 tech:tech                                       N-REL ; ! ""
+techpa:techpa                                   N-REL ; ! ""
+toca:toca                                       N-REL ; ! ""
 
 LEXICON Comunes 
 
-tlacatl:tlaca                                   N-TL  ; ! "hombre"
-cihuatl:cihua                                   N-TL  ; ! "mujer"
-ehecatl:eheca                                   N-TL  ; ! "viento"
-yollotl:yollo                                   N-TL  ; ! "corazón"
-nacatl:naca                                     N-TL  ; ! "carne"
-teotl:teotl                                     N-TL  ; ! "díos"
-calli:cal                                       N-LI  ; ! "casa"
-amoxtli:amox                                    N-TLI ; ! "libro"
-cactli:cac                                      N-TLI ; ! "zapato"
-chantli:chan                                    N-TLI ; ! "hogar"
-coyotl:coyo                                     N-TL  ; ! "coyote"
+tlacatl:tlaca                                   N-TL    ; ! "hombre"
+cihuatl:cihua                                   N-TL    ; ! "mujer"
+ehecatl:eheca                                   N-TL    ; ! "viento"
+yollotl:yollo                                   N-TL    ; ! "corazón"
+nacatl:naca                                     N-TL    ; ! "carne"
+teotl:teo                                       N-TL    ; ! "díos"
+tetl:te                                         N-TL    ; ! "díos"
+calli:cal                                       N-LI    ; ! "casa"
+amoxtli:amox                                    N-TLI   ; ! "libro"
+cactli:cac                                      N-TLI   ; ! "zapato"
+chantli:chan                                    N-TLI   ; ! "hogar"
+coyotl:coyo                                     N-TL    ; ! "coyote"
+tecolotl:tecolo                                 N-TL    ; ! "búho"
+tezahuitl:tezahui                               N-HUITL ; ! ""
+tlacatecolotl:tlacatecolo                       N-TL    ; ! ""
+diablo:diablo                                   N-Ø     ; ! "diablo"
+
 
 LEXICON Propios 
 
@@ -136,3 +167,14 @@ LEXICON Adverbios
 
 
 mochipa:mochipa                                 ADV ; ! "siempre"
+miecpa:miecpa                                   ADV ; ! "mucho"
+amo:amo                                         ADV ; ! "no"
+zan:zan                                         ADV ; ! ""
+huehca:huehca                                   ADV ; ! "lejos"
+nican:nican                                     ADV ; ! "aquí"
+ompa:ompa                                       ADV ; ! "allá"
+
+
+LEXICON TV 
+
+ihtoa:ihto                                      V-TV-OA ;
