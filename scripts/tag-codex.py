@@ -1,4 +1,6 @@
 import sys, re
+from attapply import ATTFST
+from convertor import *
 
 alphabet = 'abcdefghijklmnopqrstuvxyz'
 
@@ -96,6 +98,8 @@ def read_lexicon(fn):
 	return lexicon
 		
 lexicon = read_lexicon('lexicon.tsv')
+fst = ATTFST('../not-to-release/fst/nci.mor.att.gz')
+convertor = Convertor('tagset.tsv')
 
 total = 0
 tagged = 0
@@ -121,11 +125,19 @@ for bloc in sys.stdin.read().split('\n\n'):
 			new_lines.append(row)
 			continue
 			
+
 		idx = int(row[0])
 		form = row[1]
 		misc = row[9]
 		attrs = {pair.split('=')[0] : pair.split('=')[1] for pair in misc.split('|')}
 		norm = attrs['Norm']
+
+		analyses = list(fst.apply(norm))
+		converted_analyses = []
+		for analysis in analyses:
+			c = convertor.convert(analysis[0])
+			converted_analyses.append(c)
+			print(c, analyses, file=sys.stderr)
 
 		upos, ufeats, addmisc = tag(lexicon, form, norm, idx)
 		row[3] = upos

@@ -2,6 +2,8 @@ Multichar_Symbols
 
 %<n%>
 %<pl%>
+%<np%>
+%<num%>
 %<adv%>
 %<redup%>
 
@@ -66,14 +68,28 @@ LEXICON N-TLI
 @R.Poss.1@%<n%>:@R.Poss.1@              # ;
 %<n%>:                                  N-DERIV ;
 
+LEXICON NP
+
+%<np%>:                                         # ; 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON NUM-LI
+
+%<num%>:%>li                                    # ;
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON ADV
 
-%<adv%>:                                # ;
+%<adv%>:                                        # ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Numeros
+
+macuilli:macuil                                 NUM-LI ; ! "cinco"
 
 LEXICON Sustantivos 
 
@@ -87,6 +103,11 @@ calli:cal                                       N-LI  ; ! "casa"
 amoxtli:amox                                    N-TLI ; ! "libro"
 cactli:cac                                      N-TLI ; ! "zapato"
 chantli:chan                                    N-TLI ; ! "hogar"
+coyotl:coyo                                     N-TL  ; ! "coyote"
+
+LEXICON Propios 
+
+Quetzalcoatl:Quetzalcoatl                       NP    ; ! ""
 
 LEXICON Adverbios 
 
