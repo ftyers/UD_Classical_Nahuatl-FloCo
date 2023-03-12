@@ -7,72 +7,82 @@ alphabet = 'abcdefghijklmnopqrstuvxyz'
 def guess(norm):
 	norm = norm.lower()
 	if re.findall('[aeiou]tl$', norm):
-		return ('NOUN', '_', 'Guessed=Yes')
+		return('_', 'NOUN', '_', 'Guessed=Yes')
 	if re.findall('[aeiou][^aeiou]+tli$', norm):
-		return ('NOUN', '_', 'Guessed=Yes')
+		return('_', 'NOUN', '_', 'Guessed=Yes')
 	if re.findall('[a-z]+yotl$', norm):
-		return ('NOUN', '_', 'Guessed=Yes')
+		return('_', 'NOUN', '_', 'Guessed=Yes')
 	if re.findall('[a-z]+huitl$', norm):
-		return ('NOUN', '_', 'Guessed=Yes')
+		return('_', 'NOUN', '_', 'Guessed=Yes')
 	if re.findall('[a-z]+catl$', norm):
-		return ('NOUN', '_', 'Guessed=Yes')
+		return('_', 'NOUN', '_', 'Guessed=Yes')
 	if re.findall('[a-z]+iztli$', norm):
-		return ('NOUN', '_', 'Guessed=Yes')
+		return('_', 'NOUN', '_', 'Guessed=Yes')
 	if re.findall('[a-z]+huilia$', norm):
-		return ('VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes')
 	if re.findall('[a-z]+quiza$', norm):
-		return ('VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes')
 	if re.findall('[a-z]+ltia$', norm):
-		return ('VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes')
 	if re.findall('^xi[a-z]+can$', norm):			# ximellacuahuacan
-		return ('VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes')
 	if re.findall('^qui[a-z]+([io]|hu)a$', norm):
-		return ('VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes')
 	if re.findall('^tinech', norm):				# tinechitlacoa
-		return ('VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes')
 	if re.findall('^nimitz', norm):				# nimitzpantia
-		return ('VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes')
 	if re.findall('^[a-z]+tinemi$', norm):
-		return ('VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes')
 	if re.findall('^[a-z]+znequi$', norm):
-		return ('VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes')
 	if re.findall('^mo[a-z]+ya$', norm):
-		return ('VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes')
 	if re.findall('^mo[a-z]+lia$', norm):
-		return ('VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes')
 	if re.findall('^qui[a-z]+ya$', norm):			# quihtohuaya
-		return ('VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes')
 	if re.findall('^qui[a-z]+tiz$', norm):			# quintlanamictiz
-		return ('VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes')
 	if re.findall('^[a-z]+zque$', norm):
-		return ('VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes')
 	if re.findall('^[a-z]+ohua$', norm):
-		return ('VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes')
 	if re.findall("^mo[a-z]+oa", norm):
-		return ("VERB", "_", "Guessed=Yes")
+		return('_', "VERB", "_", "Guessed=Yes")
 	if re.findall('tihu[ei]tz(iz|i)?$', norm):
-		return ('VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes')
 	if re.findall("tinemi$", norm):
-		return ("VERB", "_", "Guessed=Yes")
+		return('_', "VERB", "_", "Guessed=Yes")
 	if norm.startswith("xi[^u]"):
-		return ("VERB", "_", "Guessed=Yes")
+		return('_', "VERB", "_", "Guessed=Yes")
 	if re.findall("tiquiza", norm):
 		return ("VERB", "_", "Guessed=Yes")
-	return ('X', '_', '_')
+	return ('_', 'X', '_', '_')
 
-def tag(lexicon, form, norm, idx):
+def tag(lexicon, form, norm, idx, analyses):
 	lower = norm.lower().strip('*')
+	# [{'lemma': 'teotl', 'pos': 'NOUN', 'feats': {'Case': 'Abs'}}] [('teotl<n><abs>', 0.0)]
+	#print(analyses, file=sys.stderr)
+	
+	# TODO: Work out what to do here with multiple analyses
+	# 	We should probably do max intersection with the analyses in the lexicon
+	if len(analyses) == 1:
+		return (analyses[0]['lemma'], 
+			analyses[0]['pos'], 
+			'|'.join(['%s=%s' % (i, j) for i, j in analyses[0]['feats'].items()]), 
+			'Analysed=Yes')
 	if lower in lexicon:
-		return (lexicon[lower][0], lexicon[lower][1], lexicon[lower][2])
+		return ('_', lexicon[lower][0], lexicon[lower][1], lexicon[lower][2])
 	if norm in lexicon:
 		if lexicon[norm][0] == 'PROPN':
-			return (lexicon[norm][0], lexicon[norm][1], lexicon[norm][2])
+			return ('_', lexicon[norm][0], lexicon[norm][1], lexicon[norm][2])
 	if norm[0] in '0123456789':
-		return ('NUM', '_', '_')
+		return ('_', 'NUM', '_', '_')
 	if norm[0].upper() == norm[0] and idx > 1 and norm[0].lower() in alphabet:
-		return ('PROPN', '_', '_')
+		return ('_', 'PROPN', '_', '_')
 	if norm[0] in '.?!:,;()':
-		return ('PUNCT', '_', '_')
+		return (norm[0], 'PUNCT', '_', '_')
 	return guess(norm)
 
 def read_lexicon(fn):
@@ -103,6 +113,7 @@ convertor = Convertor('tagset.tsv')
 
 total = 0
 tagged = 0
+analysed = 0
 
 for bloc in sys.stdin.read().split('\n\n'):
 	bloc = bloc.strip()
@@ -134,12 +145,16 @@ for bloc in sys.stdin.read().split('\n\n'):
 
 		analyses = list(fst.apply(norm))
 		converted_analyses = []
+		# [{'lemma': 'teotl', 'pos': 'NOUN', 'feats': {'Case': 'Abs'}}] [('teotl<n><abs>', 0.0)]
 		for analysis in analyses:
 			c = convertor.convert(analysis[0])
-			converted_analyses.append(c)
-			print(form, '|', norm, '|||', c, analyses, file=sys.stderr)
+			converted_analyses.append(c[0])
+	#		print(form, '|', norm, '|||', c, analyses, file=sys.stderr)
+		if len(converted_analyses) > 0:
+			analysed += 1
 
-		upos, ufeats, addmisc = tag(lexicon, form, norm, idx)
+		lem, upos, ufeats, addmisc = tag(lexicon, form, norm, idx, converted_analyses)
+		row[2] = lem
 		row[3] = upos
 		row[5] = ufeats
 		if addmisc != '_':
@@ -164,4 +179,4 @@ for bloc in sys.stdin.read().split('\n\n'):
 	print()
 
 if total != 0:
-	print('%d/%d' % (tagged,total), '(%.2f%%)' % (tagged/total*100),file=sys.stderr)
+	print('%d/%d' % (tagged,total), '(%.2f%%); %d/%d (%.2f%%)' % (tagged/total*100, analysed, total, analysed/total*100),file=sys.stderr)

@@ -1,5 +1,5 @@
 TARGETS = ../not-to-release/conllu/Book_01_-_The_Gods.conllu ../not-to-release/conllu/Book_05_-_The_Omens.conllu 
-DEPS = lexicon.tsv normalisation.tsv retokenisation.tsv
+DEPS = lexicon.tsv normalisation.tsv retokenisation.tsv tagset.tsv ../not-to-release/fst/nci.mor.att.gz
 
 all: $(TARGETS)
 

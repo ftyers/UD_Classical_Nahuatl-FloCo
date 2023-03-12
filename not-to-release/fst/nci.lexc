@@ -22,16 +22,19 @@ Multichar_Symbols
 @R.Poss.1@
 @D.Poss@
 
+%{q%}
+
 LEXICON Root
 
 Prefixes ;
-Adjetivos ;
+Adverbios ;
 
 LEXICON Prefixes 
 
 
 @P.Poss.1@:@P.Poss.1@ Possessives ;
                       Sustantivos ;
+                      Subjeto ;
 
 LEXICON Possessives 
 
@@ -45,15 +48,42 @@ LEXICON Possessives
 %<px2pl%>:namo%> Sustantivos ;  ! FIXME: Check
 %<px3pl%>:in%> Sustantivos ; 
 
+LEXICON Subjeto
+
+%<s_sg1%>:ni%>                                               Objeto ;
+%<s_sg3%>:                                                   Objeto ;
+
+LEXICON Objeto
+
+
+%<o_sg3%>:%>%{q%}ui                                          TV ;
+                                                             IV ;
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON V-IMPERF
 
 %<impf%>:%>ya                                                      # ;
 
+LEXICON V-PRES
+
+%<pres%>:                                                          # ;
+
 LEXICON V-TV-OA 
 
+%<v%>%<tv%>:oa                                                     V-IMPERF ; 
+%<v%>%<tv%>:oa                                                     V-PRES ; 
+
+LEXICON V-TV-HUA 
+
+%<v%>%<tv%>:hua                                                    V-IMPERF ; 
+%<v%>%<tv%>:hua                                                    V-PRES ; 
+
+LEXICON V-IV-A
+
 %<v%>%<tv%>:a                                                      V-IMPERF ; 
+%<v%>%<tv%>:a                                                      V-PRES ; 
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -154,6 +184,7 @@ cactli:cac                                      N-TLI   ; ! "zapato"
 chantli:chan                                    N-TLI   ; ! "hogar"
 coyotl:coyo                                     N-TL    ; ! "coyote"
 tecolotl:tecolo                                 N-TL    ; ! "búho"
+tototl:toto                                     N-TL    ; ! "pájaro"
 tezahuitl:tezahui                               N-HUITL ; ! ""
 tlacatecolotl:tlacatecolo                       N-TL    ; ! ""
 diablo:diablo                                   N-Ø     ; ! "diablo"
@@ -175,6 +206,11 @@ nican:nican                                     ADV ; ! "aquí"
 ompa:ompa                                       ADV ; ! "allá"
 
 
+LEXICON IV
+
+choca:choca                                     V-IV-A ; 
+
 LEXICON TV 
 
-ihtoa:ihto                                      V-TV-OA ;
+ihtoa:iht                                       V-TV-OA ;
+chihua:chi                                      V-TV-HUA ;
