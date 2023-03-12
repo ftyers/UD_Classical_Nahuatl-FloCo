@@ -7,6 +7,9 @@ Multichar_Symbols
 %<adv%>
 %<redup%>
 
+%<rel%>
+
+%<px3nn%>
 %<px3aa%>
 %<px1sg%>
 %<px2sg%>
@@ -33,6 +36,7 @@ LEXICON Prefixes
 LEXICON Possessives 
 
 %<px3aa%>:te%> Sustantivos ; 
+%<px3aa%>:tla%> Sustantivos ; 
 
 %<px1sg%>:no%> Sustantivos ; 
 %<px2sg%>:mo%> Sustantivos ; 
@@ -68,6 +72,15 @@ LEXICON N-TLI
 @R.Poss.1@%<n%>:@R.Poss.1@              # ;
 %<n%>:                                  N-DERIV ;
 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON N-REL
+
+%<n%>%<rel%>:                                         # ; 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 LEXICON NP
 
 %<np%>:                                         # ; 
@@ -92,6 +105,16 @@ LEXICON Numeros
 macuilli:macuil                                 NUM-LI ; ! "cinco"
 
 LEXICON Sustantivos 
+
+                                                Comunes ;
+                                                Relacionales ;
+
+LEXICON Relacionales 
+
+pan:pan                                         N-REL ; ! ""
+tech:tech                                       N-REL ; ! ""
+
+LEXICON Comunes 
 
 tlacatl:tlaca                                   N-TL  ; ! "hombre"
 cihuatl:cihua                                   N-TL  ; ! "mujer"
