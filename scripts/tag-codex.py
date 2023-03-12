@@ -106,7 +106,19 @@ def read_lexicon(fn):
 			else:
 				lexicon[token] = (upos, ufeats, misc)
 	return lexicon
-		
+
+def sort_features(ufeats):
+	if ufeats != '_' and ufeats != '':
+		if '|' in ufeats:
+			ufeats = {i.split('=')[0]: i.split('=')[1] for i in ufeats.split('|')}
+		else:
+			ufeats = {ufeats.split('=')[0]: ufeats.split('=')[1]}
+		ufeats = list(ufeats.items())
+		ufeats.sort()
+		ufeats = '|'.join(['%s=%s' % (i, j) for i, j in ufeats])
+	return ufeats
+
+	
 lexicon = read_lexicon('lexicon.tsv')
 fst = ATTFST('../not-to-release/fst/nci.mor.att.gz')
 convertor = Convertor('tagset.tsv')
@@ -126,6 +138,7 @@ for bloc in sys.stdin.read().split('\n\n'):
 	new_lines = []
 	n_tokens = 0
 	n_tagged = 0
+	n_analysed = 0
 
 	for line in lines:
 		# ID · FORM · LEMMA · UPOS · XPOS · FEATS · HEAD · DEPREL · EDEPS · MISC
@@ -151,12 +164,14 @@ for bloc in sys.stdin.read().split('\n\n'):
 			converted_analyses.append(c[0])
 	#		print(form, '|', norm, '|||', c, analyses, file=sys.stderr)
 		if len(converted_analyses) > 0:
+			n_analysed += 1
 			analysed += 1
 
 		lem, upos, ufeats, addmisc = tag(lexicon, form, norm, idx, converted_analyses)
 		row[2] = lem
 		row[3] = upos
-		row[5] = ufeats
+		row[5] = sort_features(ufeats)
+		
 		if addmisc != '_':
 			row[9] = row[9] + '|' + addmisc
 
@@ -172,6 +187,7 @@ for bloc in sys.stdin.read().split('\n\n'):
 	print('\n'.join(comments))
 	if n_tokens > 0:
 		print('# tagged = %.2f%%' % (n_tagged/n_tokens*100))
+		print('# analysed = %.2f%%' % (n_analysed/n_tokens*100))
 	for row in new_lines:
 		print('\t'.join(row))
 	

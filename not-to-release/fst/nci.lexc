@@ -18,16 +18,26 @@ Multichar_Symbols
 %<px2pl%>
 %<px3pl%>
 
+@U.S_AGR.SG1@
+@U.S_AGR.SG2@
+@U.S_AGR.SG3@
+@U.S_AGR.PL1@
+@U.S_AGR.PL2@
+@U.S_AGR.PL3@
 @P.Poss.1@
 @R.Poss.1@
 @D.Poss@
 
 %{q%}
+%{n%}
 
 LEXICON Root
 
 Prefixes ;
 Adverbios ;
+Pronombres ;
+Numeros ;
+Propios ;
 
 LEXICON Prefixes 
 
@@ -39,7 +49,6 @@ LEXICON Prefixes
 LEXICON Possessives 
 
 %<px3aa%>:te%> Sustantivos ; 
-%<px3aa%>:tla%> Sustantivos ; 
 
 %<px1sg%>:no%> Sustantivos ; 
 %<px2sg%>:mo%> Sustantivos ; 
@@ -50,16 +59,37 @@ LEXICON Possessives
 
 LEXICON Subjeto
 
-%<s_sg1%>:ni%>                                               Objeto ;
-%<s_sg3%>:                                                   Objeto ;
+@U.S_AGR.SG1@%<s_sg1%>:@U.S_AGR.SG1@ni%>                     Objeto ;
+@U.S_AGR.SG2@%<s_sg2%>:@U.S_AGR.SG2@ti%>                     Objeto ;
+@U.S_AGR.SG3@%<s_sg3%>:@U.S_AGR.SG3@                         Objeto ;
+@U.S_AGR.PL1@%<s_pl1%>:@U.S_AGR.PL1@ti%>                     Objeto ;
+!@U.S_AGR.PL2@%<s_pl2%>:@U.S_AGR.PL2@nan%>                     Objeto ;
+@U.S_AGR.PL3@%<s_pl3%>:@U.S_AGR.PL3@                         Objeto ;
+
 
 LEXICON Objeto
 
 
-%<o_sg3%>:%>%{q%}ui                                          TV ;
-                                                             IV ;
+%<o_sg1%>:%>%>nech                                                 TV-DV ;
+%<o_sg2%>:%>%>mitz                                                 TV-DV ;
+%<o_sg3%>:%>%{q%}ui                                                TV-DV ;
+%<o_pl3%>:%>%{q%}ui%{n%}                                           TV-DV ;
+%<o_ref%>:%>%>mo                                                   TV-DV ;
 
+                                                                   IV ;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON V-AGR-NBR-SG
+
+@U.S_AGR.SG1@:@U.S_AGR.SG1@                                        # ;
+@U.S_AGR.SG2@:@U.S_AGR.SG2@                                        # ;
+@U.S_AGR.SG3@:@U.S_AGR.SG3@                                        # ;
+
+LEXICON V-AGR-NBR-PL
+
+@U.S_AGR.PL1@:@U.S_AGR.PL1@                                        # ;
+@U.S_AGR.PL2@:@U.S_AGR.PL2@                                        # ;
+@U.S_AGR.PL3@:@U.S_AGR.PL3@                                        # ;
 
 LEXICON V-IMPERF
 
@@ -69,20 +99,65 @@ LEXICON V-PRES
 
 %<pres%>:                                                          # ;
 
+LEXICON V-FUT
+
+%<fut%>:%>z                                                        V-AGR-NBR-SG ;
+%<fut%>:%>zque                                                     V-AGR-NBR-PL ;
+
+LEXICON V-DV-TIA
+
+%<v%>%<dv%>:tia                                                    V-IMPERF ; 
+%<v%>%<dv%>:tia                                                    V-PRES ; 
+%<v%>%<dv%>:tia                                                    V-FUT ; 
+
+LEXICON V-DV-A 
+
+%<v%>%<dv%>:a                                                      V-IMPERF ; 
+%<v%>%<dv%>:a                                                      V-PRES ; 
+%<v%>%<dv%>:a                                                      V-FUT ; 
+
 LEXICON V-TV-OA 
 
 %<v%>%<tv%>:oa                                                     V-IMPERF ; 
 %<v%>%<tv%>:oa                                                     V-PRES ; 
+%<v%>%<tv%>:oa                                                     V-FUT ; 
+
+LEXICON V-TV-A 
+
+%<v%>%<tv%>:a                                                      V-IMPERF ; 
+%<v%>%<tv%>:a                                                      V-PRES ; 
+%<v%>%<tv%>:a                                                      V-FUT ; 
 
 LEXICON V-TV-HUA 
 
 %<v%>%<tv%>:hua                                                    V-IMPERF ; 
 %<v%>%<tv%>:hua                                                    V-PRES ; 
+%<v%>%<tv%>:hua                                                    V-FUT ; 
+
+LEXICON V-TV-TIA
+
+%<v%>%<tv%>:tia                                                    V-IMPERF ; 
+%<v%>%<tv%>:tia                                                    V-PRES ; 
+%<v%>%<tv%>:tia                                                    V-FUT ; 
 
 LEXICON V-IV-A
 
 %<v%>%<tv%>:a                                                      V-IMPERF ; 
 %<v%>%<tv%>:a                                                      V-PRES ; 
+%<v%>%<tv%>:a                                                      V-FUT ; 
+
+LEXICON V-IV-I
+
+%<v%>%<tv%>:i                                                      V-IMPERF ; 
+%<v%>%<tv%>:i                                                      V-PRES ; 
+%<v%>%<tv%>:i                                                      V-FUT ; 
+
+LEXICON V-IV-OA 
+
+%<v%>%<iv%>:oa                                                     V-IMPERF ; 
+%<v%>%<iv%>:oa                                                     V-PRES ; 
+%<v%>%<iv%>:oa                                                     V-FUT ; 
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -94,43 +169,63 @@ LEXICON N-DERIV
 %<dim%>:%>ton # ;
 %<aug%>:%>pol # ;
 
+LEXICON N-POSS
+
+%<pl%>:%>huan                           # ;
+                                        # ;
+
 LEXICON N-LI
 
 @D.Poss@%<n%>%<abs%>:@D.Poss@%>li       # ;
-@R.Poss.1@%<n%>:@R.Poss.1@              # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
 %<n%>:                                  N-DERIV ;
 
 LEXICON N-TL 
 
 @D.Poss@%<n%>%<abs%>:@D.Poss@%>tl       # ;
 @D.Poss@%<n%>%<pl%>:@D.Poss@%>me        # ;
-@R.Poss.1@%<n%>:@R.Poss.1@              # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
 %<n%>:                                  N-DERIV ;
 
 LEXICON N-TLI
 
 @D.Poss@%<n%>%<abs%>:@D.Poss@%>tli      # ;
-@R.Poss.1@%<n%>:@R.Poss.1@              # ;
+@D.Poss@%<n%>%<pl%>:@D.Poss@%>tin       # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
 %<n%>:                                  N-DERIV ;
 
 LEXICON N-HUITL 
 
 @D.Poss@%<n%>%<abs%>:@D.Poss@%>tl       # ;
-@R.Poss.1@%<n%>:@R.Poss.1@              # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
 %<n%>:                                  N-DERIV ;
 
 LEXICON N-Ø
 
-@D.Poss@%<n%>%<abs%>:@D.Poss@%          # ;
-@R.Poss.1@%<n%>:@R.Poss.1@              # ;
+@D.Poss@%<n%>%<abs%>:@D.Poss@           # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
 %<n%>:                                  N-DERIV ;
+
+LEXICON N-NI
+
+@D.Poss@%<n%>%<abs%>:@D.Poss@%>ni       # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
+%<n%>:                                  N-DERIV ;
+
+
+LEXICON N-TECA
+
+@D.Poss@%<n%>%<abs%>:@D.Poss@           # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
+%<n%>:                                  N-DERIV ;
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON N-REL
 
-@R.Poss.1@%<n%>%<rel%>:@R.Poss.1@              # ;
+@R.Poss.1@%<n%>%<rel%>:@R.Poss.1@              N-POSS ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -139,6 +234,10 @@ LEXICON NP
 %<np%>:                                         # ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON NUM-TLI
+
+%<num%>:%>tli                                    # ;
 
 LEXICON NUM-LI
 
@@ -150,12 +249,48 @@ LEXICON ADV
 
 %<adv%>:                                        # ;
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON PRON-NEHHUATL 
+
+%<prn%>%<pers%>%<p1%>%<sg%>%<short%>:%>         # ;
+%<prn%>%<pers%>%<p1%>%<sg%>:%>tl                # ;
+
+LEXICON PRON-TEHHUATL 
+
+%<prn%>%<pers%>%<p2%>%<sg%>%<short%>:%>         # ;
+%<prn%>%<pers%>%<p2%>%<sg%>:%>tl                # ;
+%<prn%>%<pers%>%<p2%>%<sg%>%<rev%>:%>tzin       # ;
+
+LEXICON PRON-YEHHUATL 
+
+%<prn%>%<pers%>%<p3%>%<sg%>%<short%>:%>         # ;
+%<prn%>%<pers%>%<p3%>%<sg%>:%>tl                # ;
+
+LEXICON PRON-TEHHUAN 
+
+%<prn%>%<pers%>%<p1%>%<pl%>:                    # ;
+
+LEXICON PRON-YEHHUAN 
+
+%<prn%>%<pers%>%<p3%>%<pl%>:                    # ;
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Pronombres
+
+nehhuatl:nehhua                                 PRON-NEHHUATL ;
+tehhuatl:tehhua                                 PRON-TEHHUATL ;
+yehhuatl:yehhua                                 PRON-YEHHUATL ;
+
+tehhuan:tehhuan                                 PRON-TEHHUAN ;
+yehhuan:yehhuan                                 PRON-YEHHUAN ;
 
 LEXICON Numeros
 
 macuilli:macuil                                 NUM-LI ; ! "cinco"
+matlactli:matlac                                NUM-TLI ; ! "diez"
 
 LEXICON Sustantivos 
 
@@ -165,9 +300,22 @@ LEXICON Sustantivos
 LEXICON Relacionales 
 
 pan:pan                                         N-REL ; ! ""
+pantzinco:pantzinco                             N-REL ; ! ""
 tech:tech                                       N-REL ; ! ""
 techpa:techpa                                   N-REL ; ! ""
+techtzinco:techtzinco                           N-REL ; ! ""
+huan:huan                                       N-REL ; ! ""
 toca:toca                                       N-REL ; ! ""
+campa:campa                                     N-REL ; ! ""
+huic:huic                                       N-REL ; ! ""
+huicpa:huicpa                                   N-REL ; ! ""
+copac:copac                                     N-REL ; ! ""
+ixpan:ixpan                                     N-REL ; ! ""
+ixpampa:ixpampa                                 N-REL ; ! ""
+ixpantzinco:ixpantzinco                         N-REL ; ! ""
+tzintlan:tzintlan                               N-REL ; ! ""
+ca:ca                                           N-REL ; ! ""
+tic:tic                                         N-REL ; ! ""
 
 LEXICON Comunes 
 
@@ -179,6 +327,7 @@ nacatl:naca                                     N-TL    ; ! "carne"
 teotl:teo                                       N-TL    ; ! "díos"
 tetl:te                                         N-TL    ; ! "díos"
 calli:cal                                       N-LI    ; ! "casa"
+tlacualli:tlacual                               N-LI    ; ! "comida"
 amoxtli:amox                                    N-TLI   ; ! "libro"
 cactli:cac                                      N-TLI   ; ! "zapato"
 chantli:chan                                    N-TLI   ; ! "hogar"
@@ -187,8 +336,87 @@ tecolotl:tecolo                                 N-TL    ; ! "búho"
 tototl:toto                                     N-TL    ; ! "pájaro"
 tezahuitl:tezahui                               N-HUITL ; ! ""
 tlacatecolotl:tlacatecolo                       N-TL    ; ! ""
-diablo:diablo                                   N-Ø     ; ! "diablo"
+telpochtli:telpoch                              N-TLI   ; ! ""
 
+atl:a                                           N-TL ; ! ""
+mauhcatlacatl:mauhcatlaca                       N-TL ; ! ""
+mochitlacatl:mochitlaca                         N-TL ; ! ""
+tenzacatl:tenzaca                               N-TL ; ! ""
+cuicatl:cuica                                   N-TL ; ! ""
+tocatl:toca                                     N-TL ; ! ""
+ocelopetlatl:ocelopetla                         N-TL ; ! ""
+cuitlatl:cuitla                                 N-TL ; ! ""
+amatl:ama                                       N-TL ; ! ""
+coatl:coa                                       N-TL ; ! ""
+epatl:epa                                       N-TL ; ! ""
+quiyahuatl:quiyahua                             N-TL ; ! ""
+tehuatl:tehua                                   N-TL ; ! ""
+mazatl:maza                                     N-TL ; ! ""
+tepetl:tepe                                     N-TL ; ! ""
+altepetl:altepe                                 N-TL ; ! ""
+iyetl:iye                                       N-TL ; ! ""
+chichitl:chichi                                 N-TL ; ! ""
+xochitl:xochi                                   N-TL ; ! ""
+macuilxochitl:macuilxochi                       N-TL ; ! ""
+zacamitl:zacami                                 N-TL ; ! ""
+cihuateotl:cihuateo                             N-TL ; ! ""
+axolotl:axolo                                   N-TL ; ! ""
+icnoyotl:icnoyo                                 N-TL ; ! ""
+
+yaotetzahuitl:yaotetzahui                       N-HUITL ; ! ""
+miquiztetzahuitl:miquiztetzahui                 N-HUITL ; ! ""
+xihuitl:xihui                                   N-HUITL ; ! ""
+yaohuitl:yaohui                                 N-HUITL ; ! ""
+cuauhuitl:cuauhui                               N-HUITL ; ! ""
+cuahuitl:cuahui                                 N-HUITL ; ! ""
+
+pochteca:pochteca                               N-TECA ; ! ""
+
+acacpalli:acacpal                               N-LI ; ! ""
+acalli:acal                                     N-LI ; ! ""
+amacalli:amacal                                 N-LI ; ! ""
+atlapalli:atlapal                               N-LI ; ! ""
+centlalli:centlal                               N-LI ; ! ""
+chilli:chil                                     N-LI ; ! ""
+chimalli:chimal                                 N-LI ; ! ""
+citlalli:citlal                                 N-LI ; ! ""
+copalli:copal                                   N-LI ; ! ""
+cuitlapilli:cuitlapil                           N-LI ; ! ""
+ithualli:ithual                                 N-LI ; ! ""
+macehualli:macehual                             N-LI ; ! ""
+malli:mal                                       N-LI ; ! ""
+mecapalli:mecapal                               N-LI ; ! ""
+nahualli:nahual                                 N-LI ; ! ""
+necualli:necual                                 N-LI ; ! ""
+olli:ol                                         N-LI ; ! ""
+tamalli:tamal                                   N-LI ; ! ""
+tamalololli:tamalolol                           N-LI ; ! ""
+tecolli:tecol                                   N-LI ; ! ""
+teomimilli:teomimil                             N-LI ; ! ""
+tlachinolli:tlachinol                           N-LI ; ! ""
+tlachpanalli:tlachpanal                         N-LI ; ! ""
+tlacolli:tlacol                                 N-LI ; ! ""
+tlacuilolli:tlacuilol                           N-LI ; ! ""
+tlahtolli:tlahtol                               N-LI ; ! ""
+tlalli:tlal                                     N-LI ; ! ""
+tlaozalli:tlaozal                               N-LI ; ! ""
+tlapalli:tlapal                                 N-LI ; ! ""
+tlatlacolli:tlatlacol                           N-LI ; ! ""
+tlatlatolli:tlatlatol                           N-LI ; ! ""
+tlatolli:tlatol                                 N-LI ; ! ""
+tlazolli:tlazol                                 N-LI ; ! ""
+tlecuilli:tlecuil                               N-LI ; ! ""
+tlilli:tlil                                     N-LI ; ! ""
+tolmimilli:tolmimil                             N-LI ; ! ""
+tonalli:tonal                                   N-LI ; ! "día"
+tzohualli:tzohual                               N-LI ; ! ""
+yohualli:yohual                                 N-LI ; ! "noche"
+pilli:pil                                       N-LI ; ! "hijo"
+
+tecuani:tecua                                   N-NI ; ! "bestia"
+
+diablo:diablo                                   N-Ø     ; ! "diablo"
+capítulo:capítulo                               N-Ø     ; ! ""
 
 LEXICON Propios 
 
@@ -204,13 +432,37 @@ zan:zan                                         ADV ; ! ""
 huehca:huehca                                   ADV ; ! "lejos"
 nican:nican                                     ADV ; ! "aquí"
 ompa:ompa                                       ADV ; ! "allá"
+oncan:oncan                                     ADV ; ! "aquí"
 
+yohualtica:yohualtica                           ADV ; ! ""
+
+
+LEXICON TV-DV 
+
+                                                                   TV ;
+                                                                   DV ;
 
 LEXICON IV
 
-choca:choca                                     V-IV-A ; 
+cochi:coch                                      V-IV-I ; 
+choca:choc                                      V-IV-A ; 
+quiza:quiza                                     V-IV-A ; 
+miqui:miqu                                      V-IV-I ; 
+tlahtoa:tlaht                                   V-IV-OA ; 
+nemi:nem                                        V-IV-I ; 
+yaotl»miqui:yaomiqu                             V-IV-I ; 
+tlalli»miqui:tlalmiqu                           V-IV-I ; 
 
 LEXICON TV 
 
+itta:itta                                       V-TV-A ;
 ihtoa:iht                                       V-TV-OA ;
 chihua:chi                                      V-TV-HUA ;
+tenehua:tene                                    V-TV-HUA ;
+mictia:mic                                      V-TV-TIA ;
+nextia:nex                                      V-TV-TIA ; 
+
+LEXICON DV 
+
+maca:maca                                       V-DV-A ; 
+machtia:mach                                    V-DV-TIA ; 
