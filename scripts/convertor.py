@@ -91,7 +91,7 @@ class Convertor(object):
 
 		rules['sym'] = list(rules['sym'])
 		rules['sym'].sort(key=lambda x: len(x), reverse=True)
-		rules['sub'].sort()
+		rules['sub'].sort(reverse=True)
 		return rules
 
 	def _convert(self, a):
@@ -115,13 +115,16 @@ class Convertor(object):
 		tags = [i for i in self.input_patterns.findall(a) if not i == '']
 		msd = set(tags)
 		analysis['lemma'] = re.sub('<[^>]+>', '', a)
+
+		# FIXME: This is broken, we need to make sure that there are full matches before
+		# setting the POS, examples: itechpa, tlein, coatl
 		for (priority, inn, out) in self.conversion_rules['sub']:
 			pos_pat = set([inn[1]])
 			remainder = msd - pos_pat
 			intersect = msd.intersection(pos_pat)
 			if intersect == pos_pat:
 				analysis['pos'] = out[1]
-				if out[2] != '':
+				if out[2] != '' and msd - set(inn[2]) != msd:
 					for i in out[2].split('|'):
 						analysis['feats'].add(i)
 				msd = remainder
@@ -136,6 +139,7 @@ class Convertor(object):
 		# Convert set of Feature=Value pairs to dictionary of Feature:Value
 		analysis['feats'] = {i.split('=')[0]: i.split('=')[1]
 					for i in analysis['feats'] if not i == ''}
+
 
 		return analysis
 
