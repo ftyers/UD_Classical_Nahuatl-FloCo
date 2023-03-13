@@ -75,7 +75,7 @@ def tag(lexicon, form, norm, idx, analyses):
 
 		analysis = analyses[0]
 		#print('@', idx, norm, '|||', analyses[0])
-		return (analysis['lemma'], analysis['pos'], '|'.join(['%s=%s' % (i, j) for i, j in analysis['feats'].items()]), '_', analysis['empty'])
+		return (analysis['lemma'], analysis['pos'], '|'.join(['%s=%s' % (i, j) for i, j in analysis['feats'].items()]), 'Analysed=Yes', analysis['empty'])
 
 	if lower in lexicon:
 		return ('_', lexicon[lower][0], lexicon[lower][1], lexicon[lower][2], [])
@@ -193,7 +193,10 @@ for bloc in sys.stdin.read().split('\n\n'):
 		new_lines.append(row)
 		
 		for i, empty in enumerate(empties):
-			new_lines.append([row[0] + '.' + str(i+1), '_', empty['lemma'], empty['pos'], '_', '_', '_', '_', '_', 'Incorporated=Yes'])
+			ufeats = '_'
+			if empty['feats'] != set():
+				ufeats = '|'.join(list(empty['feats']))
+			new_lines.append([row[0] + '.' + str(i+1), '_', empty['lemma'], empty['pos'], '_', ufeats, '_', '_', '_', 'Incorporated=Yes'])
 
 	print('\n'.join(comments))
 	if n_tokens > 0:

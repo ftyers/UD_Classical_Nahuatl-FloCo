@@ -8,6 +8,7 @@ Multichar_Symbols
 %<cnjsub%>
 %<cnjcoo%>
 %<redup%>
+%<loc%>
 
 %<on%>
 %<hual%>
@@ -336,6 +337,10 @@ LEXICON N-TETEUH
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+LEXICON N-LOC
+
+@R.Poss.1@%<n%>%<loc%>:@R.Poss.1@              N-POSS ;
+
 LEXICON N-REL
 
 @R.Poss.1@%<n%>%<rel%>:@R.Poss.1@              N-POSS ;
@@ -458,6 +463,7 @@ LEXICON Sustantivos
 
                                                 Comunes ;
                                                 Relacionales ;
+                                                Locativos ;
 
 LEXICON Relacionales 
 
@@ -478,6 +484,13 @@ ixpantzinco:ixpantzinco                         N-REL ; ! ""
 tzintlan:tzintlan                               N-REL ; ! ""
 ca:ca                                           N-REL ; ! ""
 tic:tic                                         N-REL ; ! ""
+
+LEXICON Locativos 
+
+teopan:teopan                                   N-LOC ; ! ""
+yaopan:yaopan                                   N-LOC ; ! ""
+milpan:milpan                                   N-LOC ; ! ""
+tlalpan:tlalpan                                 N-LOC ; ! ""
 
 LEXICON Comunes 
 
@@ -586,6 +599,7 @@ miquiztli:miquiz                                N-TLI ; ! ""
 huitztli:huitz                                  N-TLI ; ! ""
 nacaztli:nacaz                                  N-TLI ; ! ""
 yohualtepoztli:yohualtepoz                      N-TLI ; ! ""
+octli:oc                                        N-TLI ; ! ""
 
 tecuani:tecua                                   N-NI ; ! "bestia"
 tlatoani:tlatoa                                 N-NI ; ! ""
@@ -611,6 +625,7 @@ Centzonhuitznahua:Centzonhuitznahua                NP ; ! ""
 Coyolxauh:Coyolxauh                NP ; ! ""
 Omacatl:Omacatl                NP ; ! ""
 Opochtli:Opochtli                NP ; ! ""
+Tlazolteotl:Tlazolteotl                         NP ; ! ""
 
 
 LEXICON Adjetivos
@@ -637,6 +652,7 @@ za:za                                           ADV ; ! ""
 anozo:anozo                                     ADV ; ! ""
 azo:azo                                         ADV ; ! ""
 huel:huel                                       ADV ; ! ""
+zatepan:zatepan                                 ADV ; ! ""
 
 yohualtica:yohualtica                           ADV ; ! ""
 
@@ -647,13 +663,16 @@ cochi:coch                                      V-IV-I ;
 choca:choc                                      V-IV-A ; 
 quiza:quiz                                      V-IV-A ; 
 hualla:huall                                    V-IV-A ; 
+huetzi:huetz                                    V-IV-I ; 
+«cuauhten%<n%>%<loc%>»huetzi:cuauhtenhuetz      V-IV-I ; 
 pohui:pohu                                      V-IV-I ; 
 miqui:miqu                                      V-IV-I ; 
 tlatoa:tlat                                     V-IV-OA ; 
 choloa:chol                                     V-IV-OA ; 
 nemi:nem                                        V-IV-I ; 
-«yaotl%<n%>»miqui:yaomiqu                            V-IV-I ; 
-«tlalli%<n%>»miqui:tlalmiqu                          V-IV-I ; 
+«yaotl%<n%>»miqui:yaomiqu                       V-IV-I ; 
+«icxi%<n%>»mimiqui:icximimiqu                   V-IV-I ; 
+«tlalli%<n%>»miqui:tlalmiqu                     V-IV-I ; 
 
 LEXICON TV 
 
