@@ -5,7 +5,44 @@ Multichar_Symbols
 %<np%>
 %<num%>
 %<adv%>
+%<cnjsub%>
+%<cnjcoo%>
 %<redup%>
+
+%<abs%>                         !
+%<aug%>                         !
+%<cm%>                         !
+%<dim%>                         !
+%<dv%>                         !
+%<fut%>                         !
+%<impf%>                         !
+%<iv%>                         !
+%<o_aa3%>                         !
+%<o_nn3%>                         !
+%<o_pl3%>                         !
+%<o_ref%>                         !
+%<o_sg1%>                         !
+%<o_sg2%>                         !
+%<o_sg3%>                         !
+%<p1%>                         !
+%<p2%>                         !
+%<p3%>                         !
+%<pers%>                         !
+%<pres%>                         !
+%<prn%>                         !
+%<rev%>                         !
+%<sent%>                         !
+%<sg%>                         !
+%<short%>                         !
+%<s_pl1%>                         !
+%<s_pl2%>                         !
+%<s_pl3%>                         !
+%<s_sg1%>                         !
+%<s_sg2%>                         !
+%<s_sg3%>                         !
+%<tv%>                         !
+%<v%>                         !
+
 
 %<rel%>
 
@@ -30,6 +67,7 @@ Multichar_Symbols
 
 %{q%}
 %{n%}
+%{i%}
 
 LEXICON Root
 
@@ -38,6 +76,8 @@ Adverbios ;
 Pronombres ;
 Numeros ;
 Propios ;
+Punctuación ;
+Conjunciones ;
 
 LEXICON Prefixes 
 
@@ -70,13 +110,15 @@ LEXICON Subjeto
 LEXICON Objeto
 
 
-%<o_sg1%>:%>%>nech                                                 TV-DV ;
-%<o_sg2%>:%>%>mitz                                                 TV-DV ;
-%<o_sg3%>:%>%{q%}ui                                                TV-DV ;
-%<o_pl3%>:%>%{q%}ui%{n%}                                           TV-DV ;
-%<o_ref%>:%>%>mo                                                   TV-DV ;
+%<o_sg1%>:nech%>                                                 TV-DV ;
+%<o_sg2%>:mitz%>                                                 TV-DV ;
+%<o_sg3%>:%{q%}ui%>                                              TV-DV ;
+%<o_pl3%>:%{q%}ui%{n%}%>                                         TV-DV ;
+%<o_ref%>:mo%>                                                   TV-DV ;
+%<o_aa3%>:te%>                                                   TV-DV ;
+%<o_nn3%>:tla%>                                                  TV-DV ;
 
-                                                                   IV ;
+                                                                 IV ;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON V-AGR-NBR-SG
@@ -93,11 +135,11 @@ LEXICON V-AGR-NBR-PL
 
 LEXICON V-IMPERF
 
-%<impf%>:%>ya                                                      # ;
+%<impf%>:%>ya                                                      V-AGR-NBR-SG ;
 
 LEXICON V-PRES
 
-%<pres%>:                                                          # ;
+%<pres%>:                                                          V-AGR-NBR-SG ;
 
 LEXICON V-FUT
 
@@ -133,6 +175,12 @@ LEXICON V-TV-HUA
 %<v%>%<tv%>:hua                                                    V-IMPERF ; 
 %<v%>%<tv%>:hua                                                    V-PRES ; 
 %<v%>%<tv%>:hua                                                    V-FUT ; 
+
+LEXICON V-TV-LIA
+
+%<v%>%<tv%>:lia                                                    V-IMPERF ; 
+%<v%>%<tv%>:lia                                                    V-PRES ; 
+%<v%>%<tv%>:lia                                                    V-FUT ; 
 
 LEXICON V-TV-TIA
 
@@ -219,7 +267,9 @@ LEXICON N-TECA
 @R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
 %<n%>:                                  N-DERIV ;
 
+LEXICON N-TETEUH
 
+@D.Poss@%<n%>%<pl%>:@D.Poss@%>uh        # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -234,6 +284,10 @@ LEXICON NP
 %<np%>:                                         # ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON NUM
+
+%<num%>:                                         # ;
 
 LEXICON NUM-TLI
 
@@ -275,8 +329,25 @@ LEXICON PRON-YEHHUAN
 
 %<prn%>%<pers%>%<p3%>%<pl%>:                    # ;
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON CC
+
+%<cnjcoo%>:                                     # ;
+
+LEXICON CS 
+
+%<cnjsub%>:                                     # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Conjunciones
+
+ipampa:ipampa                                   CS ; ! "porque"
+ihcuac:ihcuac                                   CS ; ! "cuando"
+in:in                                           CS ; ! ""
+
+auh:auh                                         CC ; ! "y"
 
 LEXICON Pronombres
 
@@ -289,6 +360,10 @@ yehhuan:yehhuan                                 PRON-YEHHUAN ;
 
 LEXICON Numeros
 
+ce:ce                                           NUM ; ! "uno"
+ome:ome                                         NUM ; ! "dos"
+eyi:eyi                                         NUM ; ! "tres"
+nahui:nahui                                     NUM ; ! "cuatro"
 macuilli:macuil                                 NUM-LI ; ! "cinco"
 matlactli:matlac                                NUM-TLI ; ! "diez"
 
@@ -325,6 +400,7 @@ ehecatl:eheca                                   N-TL    ; ! "viento"
 yollotl:yollo                                   N-TL    ; ! "corazón"
 nacatl:naca                                     N-TL    ; ! "carne"
 teotl:teo                                       N-TL    ; ! "díos"
+teotl:tete                                      N-TETEUH ; ! ""
 tetl:te                                         N-TL    ; ! "díos"
 calli:cal                                       N-LI    ; ! "casa"
 tlacualli:tlacual                               N-LI    ; ! "comida"
@@ -362,6 +438,8 @@ zacamitl:zacami                                 N-TL ; ! ""
 cihuateotl:cihuateo                             N-TL ; ! ""
 axolotl:axolo                                   N-TL ; ! ""
 icnoyotl:icnoyo                                 N-TL ; ! ""
+
+xiuhcoatl:xiuhcoa                               N-TL ; ! ""
 
 yaotetzahuitl:yaotetzahui                       N-HUITL ; ! ""
 miquiztetzahuitl:miquiztetzahui                 N-HUITL ; ! ""
@@ -414,6 +492,8 @@ yohualli:yohual                                 N-LI ; ! "noche"
 pilli:pil                                       N-LI ; ! "hijo"
 
 tecuani:tecua                                   N-NI ; ! "bestia"
+tlatoani:tlatoa                                 N-NI ; ! ""
+yaotlatoani:yaotlatoa                           N-NI ; ! ""
 
 diablo:diablo                                   N-Ø     ; ! "diablo"
 capítulo:capítulo                               N-Ø     ; ! ""
@@ -421,6 +501,7 @@ capítulo:capítulo                               N-Ø     ; ! ""
 LEXICON Propios 
 
 Quetzalcoatl:Quetzalcoatl                       NP    ; ! ""
+Huitzilopochtli:Huitzilopochtli                 NP    ; ! ""
 
 LEXICON Adverbios 
 
@@ -433,6 +514,12 @@ huehca:huehca                                   ADV ; ! "lejos"
 nican:nican                                     ADV ; ! "aquí"
 ompa:ompa                                       ADV ; ! "allá"
 oncan:oncan                                     ADV ; ! "aquí"
+cenca:cenca                                     ADV ; ! "muy"
+huecauh:huecauh                                 ADV ; ! "en el pasado"
+oc:oc                                           ADV ; ! ""
+anozo:anozo                                     ADV ; ! ""
+azo:azo                                         ADV ; ! ""
+huel:huel                                       ADV ; ! ""
 
 yohualtica:yohualtica                           ADV ; ! ""
 
@@ -448,21 +535,31 @@ cochi:coch                                      V-IV-I ;
 choca:choc                                      V-IV-A ; 
 quiza:quiza                                     V-IV-A ; 
 miqui:miqu                                      V-IV-I ; 
-tlahtoa:tlaht                                   V-IV-OA ; 
+tlatoa:tlat                                     V-IV-OA ; 
 nemi:nem                                        V-IV-I ; 
 yaotl»miqui:yaomiqu                             V-IV-I ; 
 tlalli»miqui:tlalmiqu                           V-IV-I ; 
 
 LEXICON TV 
 
-itta:itta                                       V-TV-A ;
-ihtoa:iht                                       V-TV-OA ;
+itta:itt                                        V-TV-A ;
+tlaza:tlaz                                      V-TV-A ;
+ihtoa:%{i%}ht                                   V-TV-OA ;
 chihua:chi                                      V-TV-HUA ;
 tenehua:tene                                    V-TV-HUA ;
 mictia:mic                                      V-TV-TIA ;
+altia:al                                        V-TV-TIA ;
 nextia:nex                                      V-TV-TIA ; 
+tlamanilia:tlamani                              V-TV-LIA ; 
 
 LEXICON DV 
 
 maca:maca                                       V-DV-A ; 
 machtia:mach                                    V-DV-TIA ; 
+
+
+LEXICON Punctuación
+
+,%<cm%>:,                                       # ;
+.%<sent%>:%.                                    # ;
+%:%<sent%>:%:                                    # ;

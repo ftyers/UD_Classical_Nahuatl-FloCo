@@ -5,6 +5,7 @@ Alphabet
 
  %{q%}:q %{q%}:c
  %{n%}:n %{n%}:m
+ %{i%}:i
 
  %>:0 ;
 
@@ -27,3 +28,8 @@ u:0 <=> %{q%}:c _ ;
 
 "Objeto II"
 i:0 <=> %{q%}:c u:0 _  ; 
+
+
+"Reflexive"
+Vx:0 <=> m _ %>: %{i%}: ;
+    where Vx in ( i o ) ;
