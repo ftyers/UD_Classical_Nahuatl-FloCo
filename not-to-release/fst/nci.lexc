@@ -94,6 +94,7 @@ Adjetivos ;
 Propios ;
 Punctuación ;
 Conjunciones ;
+Irregulares ;
 
 LEXICON Prefixes 
 
@@ -188,6 +189,10 @@ LEXICON V-IMPERF
 
 %<impf%>:%>ya                                                      V-AGR-NBR-SG ;
 
+LEXICON V-PAST
+
+%<past%>:                                                          V-AGR-NBR-SG ;
+
 LEXICON V-PRES
 
 %<pres%>:                                                          V-AGR-NBR-SG ;
@@ -202,73 +207,84 @@ LEXICON V-DV-TIA
 %<v%>%<dv%>:tia                                                    V-IMPERF ; 
 %<v%>%<dv%>:tia                                                    V-PRES ; 
 %<v%>%<dv%>:tia                                                    V-FUT ; 
+%<v%>%<dv%>:ti                                                     V-PAST ; 
 
 LEXICON V-DV-A 
 
 %<v%>%<dv%>:a                                                      V-IMPERF ; 
 %<v%>%<dv%>:a                                                      V-PRES ; 
 %<v%>%<dv%>:a                                                      V-FUT ; 
+%<v%>%<dv%>:                                                       V-PAST ; 
 
 LEXICON V-TV-OA 
 
 %<v%>%<tv%>:oa                                                     V-IMPERF ; 
 %<v%>%<tv%>:oa                                                     V-PRES ; 
 %<v%>%<tv%>:oa                                                     V-FUT ; 
+%<v%>%<tv%>:o                                                      V-PAST ; 
 
 LEXICON V-TV-A 
 
 %<v%>%<tv%>:a                                                      V-IMPERF ; 
 %<v%>%<tv%>:a                                                      V-PRES ; 
 %<v%>%<tv%>:a                                                      V-FUT ; 
+%<v%>%<tv%>:                                                       V-PAST ; 
 
 LEXICON V-TV-HUIA
 
 %<v%>%<tv%>:huia                                                   V-IMPERF ; 
 %<v%>%<tv%>:huia                                                   V-PRES ; 
 %<v%>%<tv%>:huia                                                   V-FUT ; 
+%<v%>%<tv%>:hui                                                    V-PAST ; 
 
 LEXICON V-TV-HUA 
 
 %<v%>%<tv%>:hua                                                    V-IMPERF ; 
 %<v%>%<tv%>:hua                                                    V-PRES ; 
 %<v%>%<tv%>:hua                                                    V-FUT ; 
+%<v%>%<tv%>:auh                                                    V-PAST ; 
 
 LEXICON V-TV-LIA
 
 %<v%>%<tv%>:lia                                                    V-IMPERF ; 
 %<v%>%<tv%>:lia                                                    V-PRES ; 
 %<v%>%<tv%>:lia                                                    V-FUT ; 
+%<v%>%<tv%>:li                                                     V-PAST ; 
 
 LEXICON V-TV-TIA
 
 %<v%>%<tv%>:tia                                                    V-IMPERF ; 
 %<v%>%<tv%>:tia                                                    V-PRES ; 
 %<v%>%<tv%>:tia                                                    V-FUT ; 
+%<v%>%<tv%>:ti                                                     V-PAST ; 
 
 LEXICON V-TV-I
 
 %<v%>%<tv%>:i                                                      V-IMPERF ; 
 %<v%>%<tv%>:i                                                      V-PRES ; 
 %<v%>%<tv%>:i                                                      V-FUT ; 
-
+%<v%>%<tv%>:i                                                      V-PAST ; 
 
 LEXICON V-IV-A
 
 %<v%>%<iv%>:a                                                      V-IMPERF ; 
 %<v%>%<iv%>:a                                                      V-PRES ; 
 %<v%>%<iv%>:a                                                      V-FUT ; 
+%<v%>%<iv%>:                                                       V-PAST ; 
 
 LEXICON V-IV-I
 
 %<v%>%<iv%>:i                                                      V-IMPERF ; 
 %<v%>%<iv%>:i                                                      V-PRES ; 
 %<v%>%<iv%>:i                                                      V-FUT ; 
+%<v%>%<iv%>:                                                       V-PAST ; 
 
 LEXICON V-IV-OA 
 
 %<v%>%<iv%>:oa                                                     V-IMPERF ; 
 %<v%>%<iv%>:oa                                                     V-PRES ; 
-%<v%>%<iv%>:o                                                     V-FUT ; 
+%<v%>%<iv%>:o                                                      V-FUT ; 
+%<v%>%<iv%>:o                                                      V-PAST ; 
 
 
 
@@ -405,6 +421,7 @@ LEXICON PRON-TEHHUAN
 LEXICON PRON-YEHHUAN 
 
 %<prn%>%<pers%>%<p3%>%<pl%>:                    # ;
+%<prn%>%<pers%>%<p3%>%<pl%>%<long%>:%>tin       # ;
 
 LEXICON PRON-INTLA
 
@@ -693,11 +710,16 @@ altia:al                                        V-TV-TIA ;
 nextia:nex                                      V-TV-TIA ; 
 tlamanilia:tlamani                              V-TV-LIA ; 
 tocayotia:tocayo                                V-TV-TIA ; 
+tetzammatia:tetzamma                            V-TV-TIA ; 
 
 LEXICON DV 
 
 maca:mac                                        V-DV-A ; 
 machtia:mach                                    V-DV-TIA ; 
+
+LEXICON Irregulares 
+
+%<s_sg3%>catca%<v%>%<iv%>:catca                 # ;
 
 
 LEXICON Punctuación
