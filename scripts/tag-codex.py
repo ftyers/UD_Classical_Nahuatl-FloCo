@@ -68,10 +68,17 @@ def tag(lexicon, form, norm, idx, analyses):
 	# TODO: Work out what to do here with multiple analyses
 	# 	We should probably do max intersection with the analyses in the lexicon
 	if len(analyses) == 1:
+		if lower in lexicon:
+#			print(idx, norm, '|||', lexicon[lower][0], '|||', analyses[0]['pos'])
+			if lexicon[lower][0] != analyses[0]['pos']:
+				return ('_', lexicon[lower][0], lexicon[lower][1], lexicon[lower][2])
+
+#		print('@', idx, norm, '|||', analyses[0])
 		return (analyses[0]['lemma'], 
 			analyses[0]['pos'], 
 			'|'.join(['%s=%s' % (i, j) for i, j in analyses[0]['feats'].items()]), 
 			'Analysed=Yes')
+
 	if lower in lexicon:
 		return ('_', lexicon[lower][0], lexicon[lower][1], lexicon[lower][2])
 	if norm in lexicon:

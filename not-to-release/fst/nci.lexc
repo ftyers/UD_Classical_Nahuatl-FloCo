@@ -34,12 +34,22 @@ Multichar_Symbols
 %<sent%>                         !
 %<sg%>                         !
 %<short%>                         !
+%<i_pl1%>                         !
+%<i_pl2%>                         !
+%<i_pl3%>                         !
+%<i_sg1%>                         !
+%<i_sg2%>                         !
+%<i_sg3%>                         !
+%<i_aa3%>                         !
+%<i_nn3%>                         !
+
 %<s_pl1%>                         !
 %<s_pl2%>                         !
 %<s_pl3%>                         !
 %<s_sg1%>                         !
 %<s_sg2%>                         !
 %<s_sg3%>                         !
+
 %<tv%>                         !
 %<v%>                         !
 
@@ -75,6 +85,7 @@ Prefixes ;
 Adverbios ;
 Pronombres ;
 Numeros ;
+Adjetivos ;
 Propios ;
 Punctuación ;
 Conjunciones ;
@@ -106,19 +117,48 @@ LEXICON Subjeto
 !@U.S_AGR.PL2@%<s_pl2%>:@U.S_AGR.PL2@nan%>                     Objeto ;
 @U.S_AGR.PL3@%<s_pl3%>:@U.S_AGR.PL3@                         Objeto ;
 
-
 LEXICON Objeto
 
-
-%<o_sg1%>:nech%>                                                 TV-DV ;
-%<o_sg2%>:mitz%>                                                 TV-DV ;
-%<o_sg3%>:%{q%}ui%>                                              TV-DV ;
-%<o_pl3%>:%{q%}ui%{n%}%>                                         TV-DV ;
-%<o_ref%>:mo%>                                                   TV-DV ;
-%<o_aa3%>:te%>                                                   TV-DV ;
-%<o_nn3%>:tla%>                                                  TV-DV ;
-
+                                                                 ObjetoDir ;
+                                                                 ObjetoInd ;
                                                                  IV ;
+
+LEXICON ObjetoDir
+
+
+%<o_sg1%>:nech%>                                                 DireccionalTV ;
+%<o_sg2%>:mitz%>                                                 DireccionalTV ;
+%<o_sg3%>:%{q%}ui%>                                              DireccionalTV ;
+%<o_pl3%>:%{q%}ui%{n%}%>                                         DireccionalTV ;
+%<o_ref%>:mo%>                                                   DireccionalTV ;
+%<o_aa3%>:te%>                                                   DireccionalTV ;
+%<o_nn3%>:tla%>                                                  DireccionalTV ;
+
+LEXICON ObjetoInd
+
+
+%<i_sg1%>:nech%>                                                 DireccionalDV ;
+%<i_sg2%>:mitz%>                                                 DireccionalDV ;
+%<i_sg3%>:%{q%}ui%>                                              DireccionalDV ;
+%<i_pl3%>:%{q%}ui%{n%}%>                                         DireccionalDV ;
+%<i_ref%>:mo%>                                                   DireccionalDV ;
+%<i_aa3%>:te%>                                                   DireccionalDV ;
+%<i_nn3%>:tla%>                                                  DireccionalDV ;
+
+LEXICON DireccionalTV
+
+%<on%>:on%>                                                      TV ;
+%<hual%>:hual%>                                                  TV ;
+                                                                 TV ;
+
+LEXICON DireccionalDV
+
+%<on%>:on%>                                                      DV ;
+%<hual%>:hual%>                                                  DV ;
+                                                                 DV ; 
+
+
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON V-AGR-NBR-SG
@@ -194,17 +234,24 @@ LEXICON V-TV-TIA
 %<v%>%<tv%>:tia                                                    V-PRES ; 
 %<v%>%<tv%>:tia                                                    V-FUT ; 
 
-LEXICON V-IV-A
-
-%<v%>%<tv%>:a                                                      V-IMPERF ; 
-%<v%>%<tv%>:a                                                      V-PRES ; 
-%<v%>%<tv%>:a                                                      V-FUT ; 
-
-LEXICON V-IV-I
+LEXICON V-TV-I
 
 %<v%>%<tv%>:i                                                      V-IMPERF ; 
 %<v%>%<tv%>:i                                                      V-PRES ; 
 %<v%>%<tv%>:i                                                      V-FUT ; 
+
+
+LEXICON V-IV-A
+
+%<v%>%<iv%>:a                                                      V-IMPERF ; 
+%<v%>%<iv%>:a                                                      V-PRES ; 
+%<v%>%<iv%>:a                                                      V-FUT ; 
+
+LEXICON V-IV-I
+
+%<v%>%<iv%>:i                                                      V-IMPERF ; 
+%<v%>%<iv%>:i                                                      V-PRES ; 
+%<v%>%<iv%>:i                                                      V-FUT ; 
 
 LEXICON V-IV-OA 
 
@@ -304,6 +351,10 @@ LEXICON NUM-LI
 %<num%>:%>li                                    # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON ADJ
+
+%<adj%>:                                        # ;
 
 LEXICON ADV
 
@@ -423,6 +474,7 @@ coyotl:coyo                                     N-TL    ; ! "coyote"
 tecolotl:tecolo                                 N-TL    ; ! "búho"
 tototl:toto                                     N-TL    ; ! "pájaro"
 tezahuitl:tezahui                               N-HUITL ; ! ""
+ilhuitl:ilhui                                   N-HUITL ; ! ""
 tlacatecolotl:tlacatecolo                       N-TL    ; ! ""
 telpochtli:telpoch                              N-TLI   ; ! ""
 
@@ -515,6 +567,10 @@ LEXICON Propios
 Quetzalcoatl:Quetzalcoatl                       NP    ; ! ""
 Huitzilopochtli:Huitzilopochtli                 NP    ; ! ""
 
+LEXICON Adjetivos
+
+cualli:cualli                                   ADJ ; ! ""
+
 LEXICON Adverbios 
 
 
@@ -537,11 +593,6 @@ huel:huel                                       ADV ; ! ""
 yohualtica:yohualtica                           ADV ; ! ""
 
 
-LEXICON TV-DV 
-
-                                                                   TV ;
-                                                                   DV ;
-
 LEXICON IV
 
 cochi:coch                                      V-IV-I ; 
@@ -557,10 +608,12 @@ LEXICON TV
 
 itta:%{i%}tt                                    V-TV-A ;
 tlaza:tlaz                                      V-TV-A ;
+nequi:nequ                                      V-TV-I ;
 quetza:quetz                                    V-TV-A ;
 quequetza:quequetz                              V-TV-A ;
 ihtoa:%{i%}ht                                   V-TV-OA ;
 chihua:chi                                      V-TV-HUA ;
+chichihua:chichi                                V-TV-HUA ;
 tenehua:tene                                    V-TV-HUA ;
 ilhuia:%{i%}l                                   V-TV-HUIA ;
 mictia:mic                                      V-TV-TIA ;
@@ -571,7 +624,7 @@ tocayotia:tocayo                                V-TV-TIA ;
 
 LEXICON DV 
 
-maca:maca                                       V-DV-A ; 
+maca:mac                                        V-DV-A ; 
 machtia:mach                                    V-DV-TIA ; 
 
 
