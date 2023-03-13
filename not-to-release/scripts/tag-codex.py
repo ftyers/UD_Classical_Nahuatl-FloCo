@@ -125,7 +125,7 @@ def sort_features(ufeats):
 
 	
 lexicon = read_lexicon('lexicon.tsv')
-fst = ATTFST('../not-to-release/fst/nci.mor.att.gz')
+fst = ATTFST('../fst/nci.mor.att.gz')
 convertor = Convertor('tagset.tsv')
 
 total = 0

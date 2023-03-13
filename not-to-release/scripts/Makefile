@@ -1,10 +1,10 @@
-TARGETS = ../not-to-release/conllu/Book_01_-_The_Gods.conllu ../not-to-release/conllu/Book_05_-_The_Omens.conllu 
-DEPS = lexicon.tsv normalisation.tsv retokenisation.tsv tagset.tsv ../not-to-release/fst/nci.mor.att.gz
+TARGETS = ../conllu/Book_01_-_The_Gods.conllu ../conllu/Book_05_-_The_Omens.conllu 
+DEPS = lexicon.tsv normalisation.tsv retokenisation.tsv tagset.tsv ../fst/nci.mor.att.gz
 
 all: $(TARGETS)
 
-../not-to-release/conllu/Book_05_-_The_Omens.conllu: ../books/Book_05_-_The_Omens.txt $(DEPS)
+../conllu/Book_05_-_The_Omens.conllu: ../books/Book_05_-_The_Omens.txt $(DEPS)
 	python3 process-codex.py $< | python3 tag-codex.py > $@
 
-../not-to-release/conllu/Book_01_-_The_Gods.conllu: ../books/Book_01_-_The_Gods.txt $(DEPS)
+../conllu/Book_01_-_The_Gods.conllu: ../books/Book_01_-_The_Gods.txt $(DEPS)
 	python3 process-codex.py $< | python3 tag-codex.py > $@
