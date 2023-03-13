@@ -274,7 +274,7 @@
 # text[norm] = Timotolinia xole, xolotze, telpochtle, tiacahue: ca nel tictemoa, tiquitlani, in mellacuahualoca: ca ic otihualla, in timotezcahuico, in timamoxhuico: xicchiye, in tlein oticmomacehui: ca amo ihuiyan cualli: amo tlacayectli, amo tlacacemelle: ca iuh conitotihui, in techcauhtihui, in huehuetque: ca oictli, mecapalli, icnoyotl, quitemohuia: ihuan anoce, ye ixquich: azo titlatlatzihuiti, azo ye moztla, huiptla, mozomaz, monenequiz, in ipalnemohuani: ma xicmotlahtolchiyeli, ca iuh ma chiyotica, in tonalamapan: in oncan tictlapiyelia, in cuitlapilli, atlapalli: cuix zan nel nimitzihicahuiz, nimitzmamauhtiz?
 # text[orig] = Timotoli¶nja·xole·,·xolotze·,·telpuchtle·,·tiacave·:·canel·tictemoa·,·tiquj·tlanj·,·in·mellaqua¶oaloca·:·ca·ic·otiualla·,·intimotezcaujco·,·intimamuxvico·:·xicchie·,·intlein·oticmo¶maceuj·:·ca·amo·iuijan·qualli·:·amo·tla¶caiectli·,·amo·tlacacemelle·:·caiuh·co¶njtotiuj·,·in·tech·cauh·tiuj·,·in·vevetque·:·caujctli·,·mecapalli·,·ic·noiotl·,·quj·temouja·:·ioan·anoce·,·ieixqujch·:·acotitlatlatzi·ujti·,·aco·ie·muztla·,·viptla·,·mocomaz·,·mone¶nequjz·,·injpalnemoanj·:·maxicmotlatol¶chieli·,·ca·iuh·machiotica·,·in·tonal·ama¶pan·:·in·vncan·tictlapielia·,·in·cujtlapil¶li·,·atlapalli·:·cujx·çan·nel·njmjtzihi¶caviz·,·njmjtzmamauhtiz·?
 # tagged = 87.61%
-# analysed = 53.98%
+# analysed = 54.87%
 1	Timotolinja	_	NOUN	_	Number[subj]=Sing|Person[subj]=2	_	_	_	Orig=Timotoli¶·nja|Folio=1,1|Paragraph=5,5|Line=8,9|Norm=Timotolinia
 2	xole	_	NOUN	_	Case=Voc	_	_	_	Folio=1|Paragraph=5|Line=9|Norm=xole
 3	,	,	PUNCT	_		_	_	_	Folio=1|Paragraph=5|Line=9|Norm=,|Analysed=Yes
@@ -387,7 +387,7 @@
 110	njmjtzihicaviz	_	VERB	_	_	_	_	_	Orig=njmjtzihi¶·caviz|Folio=1,1|Paragraph=5,5|Line=22,23|Norm=nimitzihicahuiz
 111	,	,	PUNCT	_		_	_	_	Folio=1|Paragraph=5|Line=23|Norm=,|Analysed=Yes
 112	njmjtzmamauhtiz	_	VERB	_	_	_	_	_	Folio=1|Paragraph=5|Line=23|Norm=nimitzmamauhtiz
-113	?	?	PUNCT	_	_	_	_	_	Folio=1|Paragraph=5|Line=23|Norm=?
+113	?	?	PUNCT	_		_	_	_	Folio=1|Paragraph=5|Line=23|Norm=?|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:8
 # text = ca mopan oqujnec, in tlacatl totecujo: camo motlacaiocoia, in tequanj: timotolinja, ca nel iuhcan timotlacatili: ca iuhca motonal, in amo tlacacemellecan.
@@ -1900,11 +1900,11 @@
 # text[norm] = Auh intla ye quinotza, quilhuia: Tocniuhtze, huitzitle, yaotle: tle tinechilhuia, tle tinechnequilia, xinechcahua: nimitzmacaz in tlein ticnequi: huel niman ic tenotzaya, ic quitlacatocayotiaya, in aquin tlein itoca, in ipiltoca.
 # text[orig] = A·uh·in¶tlaiequjnotza·,·qujluja·:·Tocnjuhtze·,·vitzitle·,·iaotle·:·tletinechiluja·,·tle¶tinechnequjlia·,·xinech·caoa·:·njmjtz¶mazca·intlein·ticnequj·:·vel·njman¶ictenotzaia·,·ic·qujtlacatocaiotiata·,·inaqujn·tlein·itoca·,·inj·piltoca·.
 # tagged = 95.24%
-# analysed = 57.14%
+# analysed = 61.90%
 1	Auh	_	CCONJ	_	_	_	_	_	Orig=A·uh|Folio=5,5|Paragraph=2,2|Line=14,14|Norm=Auh|Gloss=y
 2	intla	_	PRON	_	_	_	_	_	Orig=in¶·tlaiequjnotza|Folio=5,5|Paragraph=2,2|Line=14,15|Norm=intla|Gloss=algo
 3	ie	_	ADV	_	_	_	_	_	Orig=in¶·tlaiequjnotza|Folio=5,5|Paragraph=2,2|Line=14,15|Norm=ye|AmbigNorm=True|Override=False
-4	qujnotza	_	VERB	_	_	_	_	_	Orig=in¶·tlaiequjnotza|Folio=5,5|Paragraph=2,2|Line=14,15|Norm=quinotza
+4	qujnotza	notza	VERB	_	Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Tense=Pres|VerbForm=Fin	_	_	_	Orig=in¶·tlaiequjnotza|Folio=5,5|Paragraph=2,2|Line=14,15|Norm=quinotza|Analysed=Yes
 5	,	,	PUNCT	_		_	_	_	Folio=5|Paragraph=2|Line=15|Norm=,|Analysed=Yes
 6	qujluja	ilhuia	VERB	_	Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Tense=Pres|VerbForm=Fin	_	_	_	Folio=5|Paragraph=2|Line=15|Norm=quilhuia|Analysed=Yes
 7	:	:	PUNCT	_		_	_	_	Folio=5|Paragraph=2|Line=15|Norm=:|Analysed=Yes
@@ -1930,7 +1930,7 @@
 27	vel	huel	ADV	_		_	_	_	Folio=5|Paragraph=2|Line=18|Norm=huel|Analysed=Yes
 28	njman	_	ADV	_	_	_	_	_	Folio=5|Paragraph=2|Line=18|Norm=niman
 29	ic	_	ADV	_	_	_	_	_	Orig=ictenotzaia|Folio=5|Paragraph=2|Line=19|Norm=ic
-30	tenotzaia	_	VERB	_	_	_	_	_	Orig=ictenotzaia|Folio=5|Paragraph=2|Line=19|Norm=tenotzaya
+30	tenotzaia	notza	VERB	_	Animacy[obj]=Anim|Aspect=Imp|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Tense=Past|VerbForm=Fin	_	_	_	Orig=ictenotzaia|Folio=5|Paragraph=2|Line=19|Norm=tenotzaya|Analysed=Yes
 31	,	,	PUNCT	_		_	_	_	Folio=5|Paragraph=2|Line=19|Norm=,|Analysed=Yes
 32	ic	_	ADV	_	_	_	_	_	Folio=5|Paragraph=2|Line=19|Norm=ic
 33	qujtlacatocaiotiata	_	VERB	_	_	_	_	_	Folio=5|Paragraph=2|Line=19|Norm=quitlacatocayotiaya|Guessed=Yes
@@ -2612,8 +2612,8 @@
 # text = No ioan, intla ie aca mococoa: in jpan tzatzitiqujca, qujtoaia ca aiocmo qujcaz: ca ticcaoazque.
 # text[norm] = No ihuan, intla ye aca mococoa: in ipan tzatzitiquiza, quihtoaya ca ayocmo quizaz: ca ticcahuazque.
 # text[orig] = No·ioan·,·intla·ie·aca·mococoa·:·inj¶pan·tzatzitiqujca·,·qujtoaia·ca·aioc¶mo·qujcaz·:·caticcaoazque·.
-# tagged = 95.00%
-# analysed = 45.00%
+# tagged = 100.00%
+# analysed = 50.00%
 1	No	_	ADV	_	_	_	_	_	Folio=7|Paragraph=3|Line=13|Norm=No|Gloss=también
 2	ioan	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3	_	_	_	Folio=7|Paragraph=3|Line=13|Norm=ihuan|Analysed=Yes
 3	,	,	PUNCT	_		_	_	_	Folio=7|Paragraph=3|Line=13|Norm=,|Analysed=Yes
@@ -2629,7 +2629,7 @@
 13	qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Tense=Past|VerbForm=Fin	_	_	_	Folio=7|Paragraph=3|Line=14|Norm=quihtoaya|Analysed=Yes
 14	ca	_	VERB	_	_	_	_	_	Folio=7|Paragraph=3|Line=14|Norm=ca|AmbigNorm=True|Override=False
 15	aiocmo	_	ADV	_	_	_	_	_	Orig=aioc¶·mo|Folio=7,7|Paragraph=3,3|Line=14,15|Norm=ayocmo|Gloss=ya.no
-16	qujcaz	_	X	_	_	_	_	_	Folio=7|Paragraph=3|Line=15|Norm=quizaz
+16	qujcaz	quiza	VERB	_	Number[subj]=Sing|Person[subj]=3|Tense=Fut|VerbForm=Fin	_	_	_	Folio=7|Paragraph=3|Line=15|Norm=quizaz|Analysed=Yes
 17	:	:	PUNCT	_		_	_	_	Folio=7|Paragraph=3|Line=15|Norm=:|Analysed=Yes
 18	ca	_	VERB	_	_	_	_	_	Orig=caticcaoazque|Folio=7|Paragraph=3|Line=15|Norm=ca|AmbigNorm=True|Override=False
 19	ticcaoazque	_	VERB	_	_	_	_	_	Orig=caticcaoazque|Folio=7|Paragraph=3|Line=15|Norm=ticcahuazque|Guessed=Yes
@@ -3243,7 +3243,7 @@
 # text[norm] = Intla ye ompa itztiuh, mictlampa: ic quimati ca ye miquiz, in oquimottiti: auh intlacamo ompa itztiuh, ic quimati, azo zan itla in quihtoznequi, acazomo cenca hueixtica: quihtoaya in motetzahui, tlaquiyocoli, tlamotelchihua, in yoyoliton: cuix zan ye toconmattiyezque?
 # text[orig] = Intla·ie·vmpa·itztiuh·,·mjctlampa·:·ic·qujmati·caie·mjqujz·,·ino·quj·mottiti·:·auh·intlacamo·vm¶pa·itztiuh·,·ic·qujmati·,·aco·çan¶itla·in·quj·toznequj·,·acacomo·cen¶ca·veixtica·:·qujtoaia·in·motetza¶uj·,·tlaqujioculi·,·tlamotelchioa·,·in¶ioioliton·:·cujx·çan·ie·toconmatti¶ezque·?
 # tagged = 92.00%
-# analysed = 50.00%
+# analysed = 52.00%
 1	Intla	_	PRON	_	_	_	_	_	Folio=9|Paragraph=1|Line=8|Norm=Intla|Gloss=algo
 2	ie	_	ADV	_	_	_	_	_	Folio=9|Paragraph=1|Line=8|Norm=ye|AmbigNorm=True|Override=False
 3	vmpa	ompa	ADV	_		_	_	_	Folio=9|Paragraph=1|Line=8|Norm=ompa|Analysed=Yes
@@ -3293,20 +3293,20 @@
 47	çan	zan	ADV	_		_	_	_	Folio=9|Paragraph=1|Line=15|Norm=zan|Analysed=Yes
 48	ie	_	ADV	_	_	_	_	_	Folio=9|Paragraph=1|Line=15|Norm=ye|AmbigNorm=True|Override=False
 49	toconmattiezque	_	VERB	_	_	_	_	_	Orig=toconmatti¶·ezque|Folio=9,9|Paragraph=1,1|Line=15,16|Norm=toconmattiyezque|Guessed=Yes
-50	?	?	PUNCT	_	_	_	_	_	Folio=9|Paragraph=1|Line=16|Norm=?
+50	?	?	PUNCT	_		_	_	_	Folio=9|Paragraph=1|Line=16|Norm=?|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:65
 # text = cujx çan ie ipan toizque?
 # text[norm] = cuix zan ye ipan toyezque?
 # text[orig] = cujx·çan·ie·ipan·toizque·?
 # tagged = 100.00%
-# analysed = 33.33%
+# analysed = 50.00%
 1	cujx	_	ADV	_	_	_	_	_	Folio=9|Paragraph=1|Line=16|Norm=cuix|Gloss=quizás
 2	çan	zan	ADV	_		_	_	_	Folio=9|Paragraph=1|Line=16|Norm=zan|Analysed=Yes
 3	ie	_	ADV	_	_	_	_	_	Folio=9|Paragraph=1|Line=16|Norm=ye|AmbigNorm=True|Override=False
 4	ipan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3	_	_	_	Folio=9|Paragraph=1|Line=16|Norm=ipan|Analysed=Yes
 5	toizque	_	VERB	_	_	_	_	_	Folio=9|Paragraph=1|Line=16|Norm=toyezque|Guessed=Yes
-6	?	?	PUNCT	_	_	_	_	_	Folio=9|Paragraph=1|Line=16|Norm=?
+6	?	?	PUNCT	_		_	_	_	Folio=9|Paragraph=1|Line=16|Norm=?|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:66
 # text = ma ca qujn jc ticmatizque in tlein, qujtoznequj.
@@ -4517,7 +4517,7 @@
 # text[norm] = Auh intla ye oquimottiti in iuhqui y, quitetemoa: quicuitihuetzi, quiteteuhtzitzquia, itech mopiloa: ayocmo quicahua quitlatoltia, quilhuia: ac tehhuatl in nocne?
 # text[orig] = A·uh·in¶tlaieo·qujmottiti·injuhquj·y·,·qujte¶temoa·:·qujcujtiuetzi·,·qujteteuhtzitz¶quja·,·itech·mopiloa·:·aocmo·qujca¶oa·qujtlatoltia·,·qujluja·:·actehoatl·jn¶nocne·?
 # tagged = 96.43%
-# analysed = 42.86%
+# analysed = 46.43%
 1	Auh	_	CCONJ	_	_	_	_	_	Orig=A·uh|Folio=12,12|Paragraph=1,1|Line=13,13|Norm=Auh|Gloss=y
 2	intla	_	PRON	_	_	_	_	_	Orig=in¶·tlaieo·qujmottiti|Folio=12,12,12|Paragraph=1,1,1|Line=13,14,14|Norm=intla|Gloss=algo
 3	ie	_	ADV	_	_	_	_	_	Orig=in¶·tlaieo·qujmottiti|Folio=12,12,12|Paragraph=1,1,1|Line=13,14,14|Norm=ye|AmbigNorm=True|Override=False
@@ -4545,14 +4545,14 @@
 25	tehoatl	tehhuatl	PRON	_	Number=Sing|Person=2|PronType=Prs	_	_	_	Orig=actehoatl|Folio=12|Paragraph=1|Line=17|Norm=tehhuatl|Analysed=Yes
 26	jn	_	DET|SCONJ	_	_	_	_	_	Folio=12|Paragraph=1|Line=17|Norm=in
 27	nocne	_	ADV	_	_	_	_	_	Folio=12|Paragraph=1|Line=18|Norm=nocne
-28	?	?	PUNCT	_	_	_	_	_	Folio=12|Paragraph=1|Line=18|Norm=?
+28	?	?	PUNCT	_		_	_	_	Folio=12|Paragraph=1|Line=18|Norm=?|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:95
 # text = xinechnotza, amommaca titlatoz: ca onjmjtzan, amo njmjtzcaoaz: vecauhtica qujnemjtia, in qujtlatoltia: iquac qujnotza, qujnanqujlia intla ie caamana: in ace ipan tlathviznequj, in ace qujtlathujltia, qujlvia: xinechcaoa ie tinechitlacoa, tlein qujnequj moiollo: njmjtzmacaz, tlein tinechmacaz: qujluja, yzca njmjtzmaca, ce vitzli: amo njcia, amo njccelia tle njcchioaz, vme, Ey, nauj qujmaca: ca nel amo ic qujcaoa: qujnjquac in oqujiolpachiujti, in oqujiolpachiuhcaioti in ie qujluja: muchi njmjtzmaca in necujltonolli, titlamavicoz in tlalticpac: yquac qujcoa: ca nel oconjttac in qujtemoa ijollo, injc oelciciuhtinenca, onentlamattinenca.
 # text[norm] = xinechnotza, amommaca titlahtoz: ca onimitzan, amo nimitzcahuaz: huecauhtica quinemitia, in quitlatoltia: ihcuac quinotza, quinanquilia intla ye caamana: in ace ipan tlahuiznequi, in ace quitlathuiltia, quiluia: xinechcahua ye tinechitlacoa, tlein quinequi moyollo: nimitzmacaz, tlein tinechmacaz: quilhuia, izca nimitzmaca, ce huitztli: amo nicia, amo niccelia tle nicchihuaz, ome, Ey, nahui quimaca: za nel amo ic quicahua: quinihcuac in oquiyolpachihuiti, in oquiyolpachiuhcayoti in ye quilhuia: mochi nimitzmaca in necuiltonolli, titlamahuicoz in tlalticpac: ihcuac quicohua: ca nel oconittac in quitemoa iyollo, inic ohuelciciuhtinenca, onentlamattinenca.
 # text[orig] = xinechnotza·,·amomma¶ca·titlatoz·:·caonjmjtzan·,·amo·nj¶mjtzcaoaz·:·vecauhtica·qujnemjtia·,·in·quj·tlatoltia·:·iquac·qujnotza·,·quj¶nanqujlia·intlaiecaamana·:·inace¶ipan·tlathviznequj·,·in·ace·qujtlat¶hujltia·,·qujlvia·:·xinechcaoa·ie¶tinechitlacoa·,·tlein·qujnequj·mo¶iollo·:·njmjtzmacaz·,·tlein·tinech¶macaz·:·qujluja·,·yzca·njmjtzmaca·,·ce·vitzli·:·amo·njcia·,·amo·njccelia·tle¶njcchioaz·,·vme·,·Ey·,·nauj·qujmaca·:·ca¶nel·amo·ic·qujcaoa·:·qujnjquac·inoquj¶iolpachiujti·,·inoqujiolpachiuhcaioti¶in·ie·qujluja·:·muchi·njmjtzmaca·in¶necujltonolli·,·titlamavicoz·in·tlaltic¶pac·:·yquac·qujcoa·:·canel·oconjttac¶in·qujtemoa·ijollo·,·injc·oelciciuhti¶nenca·,·onentlamattinenca·.
 # tagged = 90.18%
-# analysed = 57.14%
+# analysed = 58.04%
 1	xinechnotza	_	VERB	_	_	_	_	_	Folio=12|Paragraph=1|Line=18|Norm=xinechnotza
 2	,	,	PUNCT	_		_	_	_	Folio=12|Paragraph=1|Line=18|Norm=,|Analysed=Yes
 3	amommaca	_	VERB	_	_	_	_	_	Orig=amomma¶·ca|Folio=12,12|Paragraph=1,1|Line=18,19|Norm=amommaca
@@ -4571,7 +4571,7 @@
 16	qujtlatoltia	_	VERB	_	_	_	_	_	Orig=quj·tlatoltia|Folio=12,12|Paragraph=1,1|Line=21,21|Norm=quitlatoltia|Guessed=Yes
 17	:	:	PUNCT	_		_	_	_	Folio=12|Paragraph=1|Line=21|Norm=:|Analysed=Yes
 18	iquac	ihcuac	SCONJ	_		_	_	_	Folio=12|Paragraph=1|Line=21|Norm=ihcuac|Analysed=Yes
-19	qujnotza	_	VERB	_	_	_	_	_	Folio=12|Paragraph=1|Line=21|Norm=quinotza
+19	qujnotza	notza	VERB	_	Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Tense=Pres|VerbForm=Fin	_	_	_	Folio=12|Paragraph=1|Line=21|Norm=quinotza|Analysed=Yes
 20	,	,	PUNCT	_		_	_	_	Folio=12|Paragraph=1|Line=21|Norm=,|Analysed=Yes
 21	qujnanqujlia	_	VERB	_	_	_	_	_	Orig=quj¶·nanqujlia|Folio=12,12|Paragraph=1,1|Line=21,22|Norm=quinanquilia|Guessed=Yes
 22	intla	_	PRON	_	_	_	_	_	Orig=intlaiecaamana|Folio=12|Paragraph=1|Line=22|Norm=intla|Gloss=algo
@@ -4730,7 +4730,7 @@
 # text[norm] = Quihtoa, zan oncan in neaxixaloyan, in tlazolpan moteittitiaya: intla ye aca axixmiqui, in zan icel yohualtica quiza: in azo metztona, anozo tlayohua: ihcuac quimottitia: zan yeh moch ic quinextiaya in miquiztetzahuitl.
 # text[orig] = Qujtoa·,·çan·vncan·in·neaxixalo¶ian·,·in·tlaculpan·moteittitiaia·:·in¶tlaie·aca·axixmjquj·,·incan·icel¶ioaltica·qujca·:·inaco·metztona·,·a¶noco·tlaiooa·:·iquac·qujmottitia·:·can·iehmuch·ic·qujnextiaia·in·mj¶qujztetzaujtl·.
 # tagged = 97.50%
-# analysed = 60.00%
+# analysed = 62.50%
 1	Qujtoa	_	VERB	_	Subcat=Tran	_	_	_	Folio=12|Paragraph=4|Line=5|Norm=Quihtoa
 2	,	,	PUNCT	_		_	_	_	Folio=12|Paragraph=4|Line=5|Norm=,|Analysed=Yes
 3	çan	zan	ADV	_		_	_	_	Folio=12|Paragraph=4|Line=5|Norm=zan|Analysed=Yes
@@ -4751,7 +4751,7 @@
 18	can	zan	ADV	_		_	_	_	Orig=incan·icel¶|Folio=12,12|Paragraph=4,4|Line=7,7|Norm=zan|Analysed=Yes
 19	icel	_	NOUN	_	NounType=Relat	_	_	_	Orig=incan·icel¶|Folio=12,12|Paragraph=4,4|Line=7,7|Norm=icel
 20	ioaltica	yohualtica	ADV	_		_	_	_	Folio=12|Paragraph=4|Line=8|Norm=yohualtica|Analysed=Yes
-21	qujca	_	VERB	_	_	_	_	_	Folio=12|Paragraph=4|Line=8|Norm=quiza
+21	qujca	quiza	VERB	_	Number[subj]=Sing|Person[subj]=3|Tense=Pres|VerbForm=Fin	_	_	_	Folio=12|Paragraph=4|Line=8|Norm=quiza|Analysed=Yes
 22	:	:	PUNCT	_		_	_	_	Folio=12|Paragraph=4|Line=8|Norm=:|Analysed=Yes
 23	in	_	DET|SCONJ	_	_	_	_	_	Orig=inaco|Folio=12|Paragraph=4|Line=8|Norm=in
 24	aco	azo	ADV	_		_	_	_	Orig=inaco|Folio=12|Paragraph=4|Line=8|Norm=azo|Analysed=Yes
