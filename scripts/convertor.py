@@ -94,27 +94,7 @@ class Convertor(object):
 		rules['sub'].sort(reverse=True)
 		return rules
 
-	def _convert(self, a):
-		"""
-		Convert an analysis to UD using the conversion rules, rules
-		are applied in priority order.
-
-		Parameters
-		----------
-		a: str
-			An Apertium-compatible analysis, e.g. <s_sg1>quiza<v><iv><pret>, note
-			that by this point there should be no subwords.
-
-		Returns
-		----------
-		dict
-			A dictionary containing a lemma, a part-of-speech and a
-			set of Feature=Value pairs.
-		"""
-		analysis = {'lemma': '', 'pos': '', 'feats': set()}
-		tags = [i for i in self.input_patterns.findall(a) if not i == '']
-		msd = set(tags)
-		analysis['lemma'] = re.sub('<[^>]+>', '', a)
+	def _apply_rules(self, msd, analysis):
 
 		# FIXME: This is broken, we need to make sure that there are full matches before
 		# setting the POS, examples: itechpa, tlein, coatl
@@ -136,10 +116,46 @@ class Convertor(object):
 					analysis['feats'].add(i)
 				msd = remainder
 
+		return msd, analysis
+
+
+	def _convert(self, a):
+		"""
+		Convert an analysis to UD using the conversion rules, rules
+		are applied in priority order.
+
+		Parameters
+		----------
+		a: str
+			An Apertium-compatible analysis, e.g. <s_sg1>quiza<v><iv><pret>, note
+			that by this point there should be no subwords.
+
+		Returns
+		----------
+		dict
+			A dictionary containing a lemma, a part-of-speech and a
+			set of Feature=Value pairs.
+		"""
+		analysis = {'lemma': '', 'pos': '', 'feats': set(), 'empty':[]}
+		incorporated = re.findall('«[^»]+»', a)
+		a = re.sub('«[^»]+»', '', a)
+		tags = [i for i in self.input_patterns.findall(a) if not i == '']
+		msd = set(tags)
+		analysis['lemma'] = re.sub('<[^>]+>', '', a)
+	
+		msd, analysis = self._apply_rules(msd, analysis)
+
 		# Convert set of Feature=Value pairs to dictionary of Feature:Value
 		analysis['feats'] = {i.split('=')[0]: i.split('=')[1]
 					for i in analysis['feats'] if not i == ''}
 
+		for incorp in incorporated:
+			empty = {'lemma': '', 'pos': '', 'feats': set()}
+			tags = [i for i in self.input_patterns.findall(incorp) if not i == '']
+			msd = set(tags)
+			empty['lemma'] = re.sub('<[^>]+>', '', incorp[1:-1])
+			msd, empty = self._apply_rules(msd, empty)
+			analysis['empty'].append(empty)	
 
 		return analysis
 

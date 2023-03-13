@@ -7,58 +7,58 @@ alphabet = 'abcdefghijklmnopqrstuvxyz'
 def guess(norm):
 	norm = norm.lower()
 	if re.findall('[aeiou]tl$', norm):
-		return('_', 'NOUN', '_', 'Guessed=Yes')
+		return('_', 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[aeiou][^aeiou]+tli$', norm):
-		return('_', 'NOUN', '_', 'Guessed=Yes')
+		return('_', 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+yotl$', norm):
-		return('_', 'NOUN', '_', 'Guessed=Yes')
+		return('_', 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+huitl$', norm):
-		return('_', 'NOUN', '_', 'Guessed=Yes')
+		return('_', 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+catl$', norm):
-		return('_', 'NOUN', '_', 'Guessed=Yes')
+		return('_', 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+iztli$', norm):
-		return('_', 'NOUN', '_', 'Guessed=Yes')
+		return('_', 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+huilia$', norm):
-		return('_', 'VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+quiza$', norm):
-		return('_', 'VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+ltia$', norm):
-		return('_', 'VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('^xi[a-z]+can$', norm):			# ximellacuahuacan
-		return('_', 'VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('^qui[a-z]+([io]|hu)a$', norm):
-		return('_', 'VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('^tinech', norm):				# tinechitlacoa
-		return('_', 'VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('^nimitz', norm):				# nimitzpantia
-		return('_', 'VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('^[a-z]+tinemi$', norm):
-		return('_', 'VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('^[a-z]+znequi$', norm):
-		return('_', 'VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('^mo[a-z]+ya$', norm):
-		return('_', 'VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('^mo[a-z]+lia$', norm):
-		return('_', 'VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('^qui[a-z]+ya$', norm):			# quihtohuaya
-		return('_', 'VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('^qui[a-z]+tiz$', norm):			# quintlanamictiz
-		return('_', 'VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('^[a-z]+zque$', norm):
-		return('_', 'VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('^[a-z]+ohua$', norm):
-		return('_', 'VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall("^mo[a-z]+oa", norm):
-		return('_', "VERB", "_", "Guessed=Yes")
+		return('_', "VERB", "_", "Guessed=Yes", [])
 	if re.findall('tihu[ei]tz(iz|i)?$', norm):
-		return('_', 'VERB', '_', 'Guessed=Yes')
+		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall("tinemi$", norm):
-		return('_', "VERB", "_", "Guessed=Yes")
+		return('_', "VERB", "_", "Guessed=Yes", [])
 	if norm.startswith("xi[^u]"):
-		return('_', "VERB", "_", "Guessed=Yes")
+		return('_', "VERB", "_", "Guessed=Yes", [])
 	if re.findall("tiquiza", norm):
-		return ("VERB", "_", "Guessed=Yes")
-	return ('_', 'X', '_', '_')
+		return ("VERB", "_", "Guessed=Yes", [])
+	return ('_', 'X', '_', '_', [])
 
 def tag(lexicon, form, norm, idx, analyses):
 	lower = norm.lower().strip('*')
@@ -71,25 +71,23 @@ def tag(lexicon, form, norm, idx, analyses):
 		if lower in lexicon:
 #			print(idx, norm, '|||', lexicon[lower][0], '|||', analyses[0]['pos'])
 			if lexicon[lower][0] != analyses[0]['pos']:
-				return ('_', lexicon[lower][0], lexicon[lower][1], lexicon[lower][2])
+				return ('_', lexicon[lower][0], lexicon[lower][1], lexicon[lower][2], [])
 
-#		print('@', idx, norm, '|||', analyses[0])
-		return (analyses[0]['lemma'], 
-			analyses[0]['pos'], 
-			'|'.join(['%s=%s' % (i, j) for i, j in analyses[0]['feats'].items()]), 
-			'Analysed=Yes')
+		analysis = analyses[0]
+		#print('@', idx, norm, '|||', analyses[0])
+		return (analysis['lemma'], analysis['pos'], '|'.join(['%s=%s' % (i, j) for i, j in analysis['feats'].items()]), '_', analysis['empty'])
 
 	if lower in lexicon:
-		return ('_', lexicon[lower][0], lexicon[lower][1], lexicon[lower][2])
+		return ('_', lexicon[lower][0], lexicon[lower][1], lexicon[lower][2], [])
 	if norm in lexicon:
 		if lexicon[norm][0] == 'PROPN':
-			return ('_', lexicon[norm][0], lexicon[norm][1], lexicon[norm][2])
+			return ('_', lexicon[norm][0], lexicon[norm][1], lexicon[norm][2], [])
 	if norm[0] in '0123456789':
-		return ('_', 'NUM', '_', '_')
+		return ('_', 'NUM', '_', '_', [])
 	if norm[0].upper() == norm[0] and idx > 1 and norm[0].lower() in alphabet:
-		return ('_', 'PROPN', '_', '_')
+		return ('_', 'PROPN', '_', '_', [])
 	if norm[0] in '.?!:,;()':
-		return (norm[0], 'PUNCT', '_', '_')
+		return (norm[0], 'PUNCT', '_', '_', [])
 	return guess(norm)
 
 def read_lexicon(fn):
@@ -164,21 +162,24 @@ for bloc in sys.stdin.read().split('\n\n'):
 		norm = attrs['Norm']
 
 		analyses = list(fst.apply(norm))
+#		print('ANAL', analyses)
 		converted_analyses = []
 		# [{'lemma': 'teotl', 'pos': 'NOUN', 'feats': {'Case': 'Abs'}}] [('teotl<n><abs>', 0.0)]
 		for analysis in analyses:
 			c = convertor.convert(analysis[0])
 			converted_analyses.append(c[0])
 	#		print(form, '|', norm, '|||', c, analyses, file=sys.stderr)
+
 		if len(converted_analyses) > 0:
 			n_analysed += 1
 			analysed += 1
 
-		lem, upos, ufeats, addmisc = tag(lexicon, form, norm, idx, converted_analyses)
+		lem, upos, ufeats, addmisc, empties = tag(lexicon, form, norm, idx, converted_analyses)
+
 		row[2] = lem
 		row[3] = upos
 		row[5] = sort_features(ufeats)
-		
+
 		if addmisc != '_':
 			row[9] = row[9] + '|' + addmisc
 
@@ -190,6 +191,9 @@ for bloc in sys.stdin.read().split('\n\n'):
 
 		#print('\t'.join(row))
 		new_lines.append(row)
+		
+		for i, empty in enumerate(empties):
+			new_lines.append([row[0] + '.' + str(i+1), '_', empty['lemma'], empty['pos'], '_', '_', '_', '_', '_', 'Incorporated=Yes'])
 
 	print('\n'.join(comments))
 	if n_tokens > 0:

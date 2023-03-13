@@ -55,6 +55,7 @@ Multichar_Symbols
 
 %<tv%>                         !
 %<v%>                         !
+%<itg%>                         !
 
 
 %<rel%>
@@ -124,7 +125,7 @@ LEXICON Objeto
 
                                                                  ObjetoDir ;
                                                                  ObjetoInd ;
-                                                                 IV ;
+                                                                 DireccionalIV ;
 
 LEXICON ObjetoDir
 
@@ -148,7 +149,13 @@ LEXICON ObjetoInd
 %<i_aa3%>:te%>                                                   DireccionalDV ;
 %<i_nn3%>:tla%>                                                  DireccionalDV ;
 
-LEXICON DireccionalTV
+LEXICON DireccionalIV
+
+%<on%>:on%>                                                      IV ;
+%<hual%>:hual%>                                                  IV ;
+                                                                 IV ;
+
+ LEXICON DireccionalTV
 
 %<on%>:on%>                                                      TV ;
 %<hual%>:hual%>                                                  TV ;
@@ -260,7 +267,7 @@ LEXICON V-IV-OA
 
 %<v%>%<iv%>:oa                                                     V-IMPERF ; 
 %<v%>%<iv%>:oa                                                     V-PRES ; 
-%<v%>%<iv%>:oa                                                     V-FUT ; 
+%<v%>%<iv%>:o                                                     V-FUT ; 
 
 
 
@@ -359,6 +366,11 @@ LEXICON ADJ
 
 %<adj%>:                                        # ;
 
+LEXICON ADV-ITG
+
+%<adv%>%<itg%>:                                 # ;
+
+
 LEXICON ADV
 
 %<adv%>:                                        # ;
@@ -389,6 +401,10 @@ LEXICON PRON-YEHHUAN
 
 %<prn%>%<pers%>%<p3%>%<pl%>:                    # ;
 
+LEXICON PRON-INTLA
+
+%<prn%>:                                 # ;
+
 LEXICON PRON-TLEIN 
 
 %<prn%>%<rel%>:                                 # ;
@@ -412,6 +428,7 @@ ihcuac:ihcuac                                   CS ; ! "cuando"
 in:in                                           CS ; ! ""
 
 auh:auh                                         CC ; ! "y"
+y:y                                             CC ; ! "y"
 
 LEXICON Pronombres
 
@@ -423,6 +440,10 @@ tehhuan:tehhuan                                 PRON-TEHHUAN ;
 yehhuan:yehhuan                                 PRON-YEHHUAN ;
 
 tlein:tlein                                     PRON-TLEIN ;
+intla:intla                                     PRON-INTLA ;
+
+aca:aca                                         PRON-INTLA ;
+aquin:aquin                                     PRON-INTLA ;
 
 LEXICON Numeros
 
@@ -557,6 +578,14 @@ tonalli:tonal                                   N-LI ; ! "día"
 tzohualli:tzohual                               N-LI ; ! ""
 yohualli:yohual                                 N-LI ; ! "noche"
 pilli:pil                                       N-LI ; ! "hijo"
+quetzalli:quetzal                               N-LI ; ! ""
+
+nechichihualli:nechichihual                     N-LI ; ! ""
+
+miquiztli:miquiz                                N-TLI ; ! ""
+huitztli:huitz                                  N-TLI ; ! ""
+nacaztli:nacaz                                  N-TLI ; ! ""
+yohualtepoztli:yohualtepoz                      N-TLI ; ! ""
 
 tecuani:tecua                                   N-NI ; ! "bestia"
 tlatoani:tlatoa                                 N-NI ; ! ""
@@ -570,12 +599,27 @@ LEXICON Propios
 Quetzalcoatl:Quetzalcoatl                       NP    ; ! ""
 Huitzilopochtli:Huitzilopochtli                 NP    ; ! ""
 
+Tezcatlipoca:Tezcatlipoca                NP ; ! ""
+Paynal:Paynal                NP ; ! ""
+Cihuacoatl:Cihuacoatl                NP ; ! ""
+Tlalocan:Tlalocan                NP ; ! ""
+Xiutecuhtli:Xiutecuhtli                NP ; ! ""
+Ixcozauhqui:Ixcozauhqui                NP ; ! ""
+Teotihuacan:Teotihuacan                NP ; ! ""
+Tollan:Tollan                NP ; ! ""
+Centzonhuitznahua:Centzonhuitznahua                NP ; ! ""
+Coyolxauh:Coyolxauh                NP ; ! ""
+Omacatl:Omacatl                NP ; ! ""
+Opochtli:Opochtli                NP ; ! ""
+
+
 LEXICON Adjetivos
 
 cualli:cualli                                   ADJ ; ! ""
 
 LEXICON Adverbios 
 
+quenin:quenin                                   ADV-ITG ; ! "cómo"
 
 mochipa:mochipa                                 ADV ; ! "siempre"
 miecpa:miecpa                                   ADV ; ! "mucho"
@@ -589,6 +633,7 @@ cenca:cenca                                     ADV ; ! "muy"
 huecauh:huecauh                                 ADV ; ! "en el pasado"
 oc:oc                                           ADV ; ! ""
 no:no                                           ADV ; ! ""
+za:za                                           ADV ; ! ""
 anozo:anozo                                     ADV ; ! ""
 azo:azo                                         ADV ; ! ""
 huel:huel                                       ADV ; ! ""
@@ -601,12 +646,14 @@ LEXICON IV
 cochi:coch                                      V-IV-I ; 
 choca:choc                                      V-IV-A ; 
 quiza:quiz                                      V-IV-A ; 
+hualla:huall                                    V-IV-A ; 
 pohui:pohu                                      V-IV-I ; 
 miqui:miqu                                      V-IV-I ; 
 tlatoa:tlat                                     V-IV-OA ; 
+choloa:chol                                     V-IV-OA ; 
 nemi:nem                                        V-IV-I ; 
-yaotl»miqui:yaomiqu                             V-IV-I ; 
-tlalli»miqui:tlalmiqu                           V-IV-I ; 
+«yaotl%<n%>»miqui:yaomiqu                            V-IV-I ; 
+«tlalli%<n%>»miqui:tlalmiqu                          V-IV-I ; 
 
 LEXICON TV 
 
@@ -641,3 +688,4 @@ LEXICON Punctuación
 %?%<sent%>:%?                                    # ;
 %!%<sent%>:%!                                    # ;
 %:%<sent%>:%:                                    # ;
+%;%<sent%>:%;                                    # ;
