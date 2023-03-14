@@ -242,7 +242,7 @@ LEXICON V-TV-HUA
 %<v%>%<tv%>:hua                                                    V-IMPERF ; 
 %<v%>%<tv%>:hua                                                    V-PRES ; 
 %<v%>%<tv%>:hua                                                    V-FUT ; 
-%<v%>%<tv%>:auh                                                    V-PAST ; 
+%<v%>%<tv%>:uh                                                    V-PAST ; 
 
 LEXICON V-TV-LIA
 
@@ -351,6 +351,11 @@ LEXICON N-TETEUH
 
 @D.Poss@%<n%>%<pl%>:@D.Poss@%>uh        # ;
 
+LEXICON N-CICITLALTIN
+
+@D.Poss@%<n%>%<pl%>:@D.Poss@%>tin        # ;
+
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON N-LOC
@@ -376,10 +381,12 @@ LEXICON NUM
 LEXICON NUM-TLI
 
 %<num%>:%>tli                                    # ;
+%<num%>%<cmp%>:                                  # ;
 
 LEXICON NUM-LI
 
 %<num%>:%>li                                    # ;
+%<num%>%<cmp%>:                                  # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -525,6 +532,7 @@ amoxtli:amox                                    N-TLI   ; ! "libro"
 cactli:cac                                      N-TLI   ; ! "zapato"
 chantli:chan                                    N-TLI   ; ! "hogar"
 coyotl:coyo                                     N-TL    ; ! "coyote"
+yaoyotl:yaoyo                                   N-TL    ; ! ""
 tecolotl:tecolo                                 N-TL    ; ! "búho"
 tototl:toto                                     N-TL    ; ! "pájaro"
 tezahuitl:tezahui                               N-HUITL ; ! ""
@@ -576,6 +584,7 @@ centlalli:centlal                               N-LI ; ! ""
 chilli:chil                                     N-LI ; ! ""
 chimalli:chimal                                 N-LI ; ! ""
 citlalli:citlal                                 N-LI ; ! ""
+citlalli:cicitlal				N-CICITLALTIN ; ! ""
 copalli:copal                                   N-LI ; ! ""
 cuitlapilli:cuitlapil                           N-LI ; ! ""
 ithualli:ithual                                 N-LI ; ! ""
@@ -628,8 +637,11 @@ capítulo:capítulo                               N-Ø     ; ! ""
 LEXICON Propios 
 
 Quetzalcoatl:Quetzalcoatl                       NP    ; ! ""
+Itzcoatzin:Itzcoatzin                           NP    ; ! ""
 Huitzilopochtli:Huitzilopochtli                 NP    ; ! ""
 
+Chimalpopoca:Chimalpopoca                       NP    ; ! ""
+Tenochtitlan:Tenochtitlan                      NP    ; ! ""
 Tezcatlipoca:Tezcatlipoca                NP ; ! ""
 Paynal:Paynal                NP ; ! ""
 Cihuacoatl:Cihuacoatl                NP ; ! ""
@@ -702,6 +714,7 @@ nonotza:nonotz                                  V-TV-A ;
 quetza:quetz                                    V-TV-A ;
 quequetza:quequetz                              V-TV-A ;
 ihtoa:%{i%}ht                                   V-TV-OA ;
+pehua:pe                                        V-TV-HUA ;
 chihua:chi                                      V-TV-HUA ;
 chichihua:chichi                                V-TV-HUA ;
 tenehua:tene                                    V-TV-HUA ;
@@ -712,6 +725,7 @@ nextia:nex                                      V-TV-TIA ;
 tlamanilia:tlamani                              V-TV-LIA ; 
 tocayotia:tocayo                                V-TV-TIA ; 
 tetzammatia:tetzamma                            V-TV-TIA ; 
+matia:ma                                        V-TV-TIA ; 
 
 LEXICON DV 
 
