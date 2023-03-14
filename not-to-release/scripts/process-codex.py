@@ -73,10 +73,13 @@ def retokenise(tree, sentence, model_bundle=None):
 	
 def load_tree(fn):
 	tree = PrefixTree()
-	for line in open(fn):
+	for lineno, line in enumerate(open(fn)):
 		if line[0] == '#' or line.strip() == '':
 			continue
-		left, right = line.strip().split('\t')
+		try:
+			left, right = line.strip().split('\t')
+		except:
+			print('!!! Error wrong number of values in line %d' % lineno, file=sys.stderr)
 		span = left.split(' ')
 		tree.insert(span, right)	
 	return tree
