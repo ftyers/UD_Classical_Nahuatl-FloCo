@@ -2,9 +2,66 @@ Multichar_Symbols
 
 %<n%>
 %<pl%>
+%<np%>
+%<num%>
 %<adv%>
+%<cnjsub%>
+%<cnjcoo%>
 %<redup%>
+%<loc%>
 
+%<on%>
+%<hual%>
+
+%<abs%>                         !
+%<aug%>                         !
+%<cm%>                         !
+%<dim%>                         !
+%<dv%>                         !
+%<fut%>                         !
+%<impf%>                         !
+%<iv%>                         !
+%<o_aa3%>                         !
+%<o_nn3%>                         !
+%<o_pl3%>                         !
+%<o_ref%>                         !
+%<o_sg1%>                         !
+%<o_sg2%>                         !
+%<o_sg3%>                         !
+%<p1%>                         !
+%<p2%>                         !
+%<p3%>                         !
+%<pers%>                         !
+%<pres%>                         !
+%<prn%>                         !
+%<rev%>                         !
+%<sent%>                         !
+%<sg%>                         !
+%<short%>                         !
+%<i_pl1%>                         !
+%<i_pl2%>                         !
+%<i_pl3%>                         !
+%<i_sg1%>                         !
+%<i_sg2%>                         !
+%<i_sg3%>                         !
+%<i_aa3%>                         !
+%<i_nn3%>                         !
+
+%<s_pl1%>                         !
+%<s_pl2%>                         !
+%<s_pl3%>                         !
+%<s_sg1%>                         !
+%<s_sg2%>                         !
+%<s_sg3%>                         !
+
+%<tv%>                         !
+%<v%>                         !
+%<itg%>                         !
+
+
+%<rel%>
+
+%<px3nn%>
 %<px3aa%>
 %<px1sg%>
 %<px2sg%>
@@ -13,20 +70,38 @@ Multichar_Symbols
 %<px2pl%>
 %<px3pl%>
 
+@U.S_AGR.SG1@
+@U.S_AGR.SG2@
+@U.S_AGR.SG3@
+@U.S_AGR.PL1@
+@U.S_AGR.PL2@
+@U.S_AGR.PL3@
 @P.Poss.1@
 @R.Poss.1@
 @D.Poss@
 
+%{q%}
+%{n%}
+%{i%}
+
 LEXICON Root
 
 Prefixes ;
+Adverbios ;
+Pronombres ;
+Numeros ;
 Adjetivos ;
+Propios ;
+Punctuación ;
+Conjunciones ;
+Irregulares ;
 
 LEXICON Prefixes 
 
 
 @P.Poss.1@:@P.Poss.1@ Possessives ;
                       Sustantivos ;
+                      Subjeto ;
 
 LEXICON Possessives 
 
@@ -39,6 +114,180 @@ LEXICON Possessives
 %<px2pl%>:namo%> Sustantivos ;  ! FIXME: Check
 %<px3pl%>:in%> Sustantivos ; 
 
+LEXICON Subjeto
+
+@U.S_AGR.SG1@%<s_sg1%>:@U.S_AGR.SG1@ni%>                     Objeto ;
+@U.S_AGR.SG2@%<s_sg2%>:@U.S_AGR.SG2@ti%>                     Objeto ;
+@U.S_AGR.SG3@%<s_sg3%>:@U.S_AGR.SG3@                         Objeto ;
+@U.S_AGR.PL1@%<s_pl1%>:@U.S_AGR.PL1@ti%>                     Objeto ;
+!@U.S_AGR.PL2@%<s_pl2%>:@U.S_AGR.PL2@nan%>                     Objeto ;
+@U.S_AGR.PL3@%<s_pl3%>:@U.S_AGR.PL3@                         Objeto ;
+
+LEXICON Objeto
+
+                                                                 ObjetoDir ;
+                                                                 ObjetoInd ;
+                                                                 DireccionalIV ;
+
+LEXICON ObjetoDir
+
+
+%<o_sg1%>:nech%>                                                 DireccionalTV ;
+%<o_sg2%>:mitz%>                                                 DireccionalTV ;
+%<o_sg3%>:%{q%}ui%>                                              DireccionalTV ;
+%<o_pl3%>:%{q%}ui%{n%}%>                                         DireccionalTV ;
+%<o_ref%>:mo%>                                                   DireccionalTV ;
+%<o_aa3%>:te%>                                                   DireccionalTV ;
+%<o_nn3%>:tla%>                                                  DireccionalTV ;
+
+LEXICON ObjetoInd
+
+
+%<i_sg1%>:nech%>                                                 DireccionalDV ;
+%<i_sg2%>:mitz%>                                                 DireccionalDV ;
+%<i_sg3%>:%{q%}ui%>                                              DireccionalDV ;
+%<i_pl3%>:%{q%}ui%{n%}%>                                         DireccionalDV ;
+%<i_ref%>:mo%>                                                   DireccionalDV ;
+%<i_aa3%>:te%>                                                   DireccionalDV ;
+%<i_nn3%>:tla%>                                                  DireccionalDV ;
+
+LEXICON DireccionalIV
+
+%<on%>:on%>                                                      IV ;
+%<hual%>:hual%>                                                  IV ;
+                                                                 IV ;
+
+ LEXICON DireccionalTV
+
+%<on%>:on%>                                                      TV ;
+%<hual%>:hual%>                                                  TV ;
+                                                                 TV ;
+
+LEXICON DireccionalDV
+
+%<on%>:on%>                                                      DV ;
+%<hual%>:hual%>                                                  DV ;
+                                                                 DV ; 
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON V-AGR-NBR-SG
+
+@U.S_AGR.SG1@:@U.S_AGR.SG1@                                        # ;
+@U.S_AGR.SG2@:@U.S_AGR.SG2@                                        # ;
+@U.S_AGR.SG3@:@U.S_AGR.SG3@                                        # ;
+
+LEXICON V-AGR-NBR-PL
+
+@U.S_AGR.PL1@:@U.S_AGR.PL1@                                        # ;
+@U.S_AGR.PL2@:@U.S_AGR.PL2@                                        # ;
+@U.S_AGR.PL3@:@U.S_AGR.PL3@                                        # ;
+
+LEXICON V-IMPERF
+
+%<impf%>:%>ya                                                      V-AGR-NBR-SG ;
+
+LEXICON V-PAST
+
+%<past%>:                                                          V-AGR-NBR-SG ;
+
+LEXICON V-PRES
+
+%<pres%>:                                                          V-AGR-NBR-SG ;
+
+LEXICON V-FUT
+
+%<fut%>:%>z                                                        V-AGR-NBR-SG ;
+%<fut%>:%>zque                                                     V-AGR-NBR-PL ;
+
+LEXICON V-DV-TIA
+
+%<v%>%<dv%>:tia                                                    V-IMPERF ; 
+%<v%>%<dv%>:tia                                                    V-PRES ; 
+%<v%>%<dv%>:tia                                                    V-FUT ; 
+%<v%>%<dv%>:ti                                                     V-PAST ; 
+
+LEXICON V-DV-A 
+
+%<v%>%<dv%>:a                                                      V-IMPERF ; 
+%<v%>%<dv%>:a                                                      V-PRES ; 
+%<v%>%<dv%>:a                                                      V-FUT ; 
+%<v%>%<dv%>:                                                       V-PAST ; 
+
+LEXICON V-TV-OA 
+
+%<v%>%<tv%>:oa                                                     V-IMPERF ; 
+%<v%>%<tv%>:oa                                                     V-PRES ; 
+%<v%>%<tv%>:oa                                                     V-FUT ; 
+%<v%>%<tv%>:o                                                      V-PAST ; 
+
+LEXICON V-TV-A 
+
+%<v%>%<tv%>:a                                                      V-IMPERF ; 
+%<v%>%<tv%>:a                                                      V-PRES ; 
+%<v%>%<tv%>:a                                                      V-FUT ; 
+%<v%>%<tv%>:                                                       V-PAST ; 
+
+LEXICON V-TV-HUIA
+
+%<v%>%<tv%>:huia                                                   V-IMPERF ; 
+%<v%>%<tv%>:huia                                                   V-PRES ; 
+%<v%>%<tv%>:huia                                                   V-FUT ; 
+%<v%>%<tv%>:hui                                                    V-PAST ; 
+
+LEXICON V-TV-HUA 
+
+%<v%>%<tv%>:hua                                                    V-IMPERF ; 
+%<v%>%<tv%>:hua                                                    V-PRES ; 
+%<v%>%<tv%>:hua                                                    V-FUT ; 
+%<v%>%<tv%>:auh                                                    V-PAST ; 
+
+LEXICON V-TV-LIA
+
+%<v%>%<tv%>:lia                                                    V-IMPERF ; 
+%<v%>%<tv%>:lia                                                    V-PRES ; 
+%<v%>%<tv%>:lia                                                    V-FUT ; 
+%<v%>%<tv%>:li                                                     V-PAST ; 
+
+LEXICON V-TV-TIA
+
+%<v%>%<tv%>:tia                                                    V-IMPERF ; 
+%<v%>%<tv%>:tia                                                    V-PRES ; 
+%<v%>%<tv%>:tia                                                    V-FUT ; 
+%<v%>%<tv%>:ti                                                     V-PAST ; 
+
+LEXICON V-TV-I
+
+%<v%>%<tv%>:i                                                      V-IMPERF ; 
+%<v%>%<tv%>:i                                                      V-PRES ; 
+%<v%>%<tv%>:i                                                      V-FUT ; 
+%<v%>%<tv%>:i                                                      V-PAST ; 
+
+LEXICON V-IV-A
+
+%<v%>%<iv%>:a                                                      V-IMPERF ; 
+%<v%>%<iv%>:a                                                      V-PRES ; 
+%<v%>%<iv%>:a                                                      V-FUT ; 
+%<v%>%<iv%>:                                                       V-PAST ; 
+
+LEXICON V-IV-I
+
+%<v%>%<iv%>:i                                                      V-IMPERF ; 
+%<v%>%<iv%>:i                                                      V-PRES ; 
+%<v%>%<iv%>:i                                                      V-FUT ; 
+%<v%>%<iv%>:                                                       V-PAST ; 
+
+LEXICON V-IV-OA 
+
+%<v%>%<iv%>:oa                                                     V-IMPERF ; 
+%<v%>%<iv%>:oa                                                     V-PRES ; 
+%<v%>%<iv%>:o                                                      V-FUT ; 
+%<v%>%<iv%>:o                                                      V-PAST ; 
+
+
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON N-DERIV 
@@ -48,47 +297,437 @@ LEXICON N-DERIV
 %<dim%>:%>ton # ;
 %<aug%>:%>pol # ;
 
+LEXICON N-POSS
+
+%<pl%>:%>huan                           # ;
+                                        # ;
+
 LEXICON N-LI
 
 @D.Poss@%<n%>%<abs%>:@D.Poss@%>li       # ;
-@R.Poss.1@%<n%>:@R.Poss.1@              # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
 %<n%>:                                  N-DERIV ;
 
 LEXICON N-TL 
 
 @D.Poss@%<n%>%<abs%>:@D.Poss@%>tl       # ;
-@R.Poss.1@%<n%>:@R.Poss.1@              # ;
+@D.Poss@%<n%>%<pl%>:@D.Poss@%>me        # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
 %<n%>:                                  N-DERIV ;
 
 LEXICON N-TLI
 
 @D.Poss@%<n%>%<abs%>:@D.Poss@%>tli      # ;
-@R.Poss.1@%<n%>:@R.Poss.1@              # ;
+@D.Poss@%<n%>%<pl%>:@D.Poss@%>tin       # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
 %<n%>:                                  N-DERIV ;
 
+LEXICON N-HUITL 
+
+@D.Poss@%<n%>%<abs%>:@D.Poss@%>tl       # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
+%<n%>:                                  N-DERIV ;
+
+LEXICON N-Ø
+
+@D.Poss@%<n%>%<abs%>:@D.Poss@           # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
+%<n%>:                                  N-DERIV ;
+
+LEXICON N-NI
+
+@D.Poss@%<n%>%<abs%>:@D.Poss@%>ni       # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
+%<n%>:                                  N-DERIV ;
+
+
+LEXICON N-TECA
+
+@D.Poss@%<n%>%<abs%>:@D.Poss@           # ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
+%<n%>:                                  N-DERIV ;
+
+LEXICON N-TETEUH
+
+@D.Poss@%<n%>%<pl%>:@D.Poss@%>uh        # ;
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON N-LOC
+
+@R.Poss.1@%<n%>%<loc%>:@R.Poss.1@              N-POSS ;
+
+LEXICON N-REL
+
+@R.Poss.1@%<n%>%<rel%>:@R.Poss.1@              N-POSS ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON NP
+
+%<np%>:                                         # ; 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON NUM
+
+%<num%>:                                         # ;
+
+LEXICON NUM-TLI
+
+%<num%>:%>tli                                    # ;
+
+LEXICON NUM-LI
+
+%<num%>:%>li                                    # ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON ADJ
+
+%<adj%>:                                        # ;
+
+LEXICON ADV-ITG
+
+%<adv%>%<itg%>:                                 # ;
+
 
 LEXICON ADV
 
-%<adv%>:                                # ;
-
+%<adv%>:                                        # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+LEXICON PRON-NEHHUATL 
+
+%<prn%>%<pers%>%<p1%>%<sg%>%<short%>:%>         # ;
+%<prn%>%<pers%>%<p1%>%<sg%>:%>tl                # ;
+
+LEXICON PRON-TEHHUATL 
+
+%<prn%>%<pers%>%<p2%>%<sg%>%<short%>:%>         # ;
+%<prn%>%<pers%>%<p2%>%<sg%>:%>tl                # ;
+%<prn%>%<pers%>%<p2%>%<sg%>%<rev%>:%>tzin       # ;
+
+LEXICON PRON-YEHHUATL 
+
+%<prn%>%<pers%>%<p3%>%<sg%>%<short%>:%>         # ;
+%<prn%>%<pers%>%<p3%>%<sg%>:%>tl                # ;
+
+LEXICON PRON-TEHHUAN 
+
+%<prn%>%<pers%>%<p1%>%<pl%>:                    # ;
+
+LEXICON PRON-YEHHUAN 
+
+%<prn%>%<pers%>%<p3%>%<pl%>:                    # ;
+%<prn%>%<pers%>%<p3%>%<pl%>%<long%>:%>tin       # ;
+
+LEXICON PRON-INTLA
+
+%<prn%>:                                 # ;
+
+LEXICON PRON-TLEIN 
+
+%<prn%>%<rel%>:                                 # ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON CC
+
+%<cnjcoo%>:                                     # ;
+
+LEXICON CS 
+
+%<cnjsub%>:                                     # ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Conjunciones
+
+ipampa:ipampa                                   CS ; ! "porque"
+ihcuac:ihcuac                                   CS ; ! "cuando"
+in:in                                           CS ; ! ""
+
+auh:auh                                         CC ; ! "y"
+y:y                                             CC ; ! "y"
+
+LEXICON Pronombres
+
+nehhuatl:nehhua                                 PRON-NEHHUATL ;
+tehhuatl:tehhua                                 PRON-TEHHUATL ;
+yehhuatl:yehhua                                 PRON-YEHHUATL ;
+
+tehhuan:tehhuan                                 PRON-TEHHUAN ;
+yehhuan:yehhuan                                 PRON-YEHHUAN ;
+
+tlein:tlein                                     PRON-TLEIN ;
+intla:intla                                     PRON-INTLA ;
+
+aca:aca                                         PRON-INTLA ;
+aquin:aquin                                     PRON-INTLA ;
+
+LEXICON Numeros
+
+ce:ce                                           NUM ; ! "uno"
+ome:ome                                         NUM ; ! "dos"
+eyi:eyi                                         NUM ; ! "tres"
+nahui:nahui                                     NUM ; ! "cuatro"
+macuilli:macuil                                 NUM-LI ; ! "cinco"
+matlactli:matlac                                NUM-TLI ; ! "diez"
+
 LEXICON Sustantivos 
 
-tlacatl:tlaca                                   N-TL  ; ! "hombre"
-cihuatl:cihua                                   N-TL  ; ! "mujer"
-ehecatl:eheca                                   N-TL  ; ! "viento"
-yollotl:yollo                                   N-TL  ; ! "corazón"
-nacatl:naca                                     N-TL  ; ! "carne"
-teotl:teotl                                     N-TL  ; ! "díos"
-calli:cal                                       N-LI  ; ! "casa"
-amoxtli:amox                                    N-TLI ; ! "libro"
-cactli:cac                                      N-TLI ; ! "zapato"
-chantli:chan                                    N-TLI ; ! "hogar"
+                                                Comunes ;
+                                                Relacionales ;
+                                                Locativos ;
+
+LEXICON Relacionales 
+
+pan:pan                                         N-REL ; ! ""
+pantzinco:pantzinco                             N-REL ; ! ""
+tech:tech                                       N-REL ; ! ""
+techpa:techpa                                   N-REL ; ! ""
+techtzinco:techtzinco                           N-REL ; ! ""
+huan:huan                                       N-REL ; ! ""
+toca:toca                                       N-REL ; ! ""
+campa:campa                                     N-REL ; ! ""
+huic:huic                                       N-REL ; ! ""
+huicpa:huicpa                                   N-REL ; ! ""
+copac:copac                                     N-REL ; ! ""
+ixpan:ixpan                                     N-REL ; ! ""
+ixpampa:ixpampa                                 N-REL ; ! ""
+ixpantzinco:ixpantzinco                         N-REL ; ! ""
+tzintlan:tzintlan                               N-REL ; ! ""
+ca:ca                                           N-REL ; ! ""
+tic:tic                                         N-REL ; ! ""
+
+LEXICON Locativos 
+
+teopan:teopan                                   N-LOC ; ! ""
+yaopan:yaopan                                   N-LOC ; ! ""
+milpan:milpan                                   N-LOC ; ! ""
+tlalpan:tlalpan                                 N-LOC ; ! ""
+
+LEXICON Comunes 
+
+tlacatl:tlaca                                   N-TL    ; ! "hombre"
+cihuatl:cihua                                   N-TL    ; ! "mujer"
+ehecatl:eheca                                   N-TL    ; ! "viento"
+yollotl:yollo                                   N-TL    ; ! "corazón"
+nacatl:naca                                     N-TL    ; ! "carne"
+teotl:teo                                       N-TL    ; ! "díos"
+teotl:tete                                      N-TETEUH ; ! ""
+tetl:te                                         N-TL    ; ! "díos"
+calli:cal                                       N-LI    ; ! "casa"
+tlacualli:tlacual                               N-LI    ; ! "comida"
+amoxtli:amox                                    N-TLI   ; ! "libro"
+cactli:cac                                      N-TLI   ; ! "zapato"
+chantli:chan                                    N-TLI   ; ! "hogar"
+coyotl:coyo                                     N-TL    ; ! "coyote"
+tecolotl:tecolo                                 N-TL    ; ! "búho"
+tototl:toto                                     N-TL    ; ! "pájaro"
+tezahuitl:tezahui                               N-HUITL ; ! ""
+ilhuitl:ilhui                                   N-HUITL ; ! ""
+tlacatecolotl:tlacatecolo                       N-TL    ; ! ""
+telpochtli:telpoch                              N-TLI   ; ! ""
+
+atl:a                                           N-TL ; ! ""
+mauhcatlacatl:mauhcatlaca                       N-TL ; ! ""
+mochitlacatl:mochitlaca                         N-TL ; ! ""
+tenzacatl:tenzaca                               N-TL ; ! ""
+cuicatl:cuica                                   N-TL ; ! ""
+tocatl:toca                                     N-TL ; ! ""
+ocelopetlatl:ocelopetla                         N-TL ; ! ""
+cuitlatl:cuitla                                 N-TL ; ! ""
+amatl:ama                                       N-TL ; ! ""
+coatl:coa                                       N-TL ; ! ""
+epatl:epa                                       N-TL ; ! ""
+quiyahuatl:quiyahua                             N-TL ; ! ""
+tehuatl:tehua                                   N-TL ; ! ""
+mazatl:maza                                     N-TL ; ! ""
+tepetl:tepe                                     N-TL ; ! ""
+altepetl:altepe                                 N-TL ; ! ""
+iyetl:iye                                       N-TL ; ! ""
+chichitl:chichi                                 N-TL ; ! ""
+xochitl:xochi                                   N-TL ; ! ""
+macuilxochitl:macuilxochi                       N-TL ; ! ""
+zacamitl:zacami                                 N-TL ; ! ""
+cihuateotl:cihuateo                             N-TL ; ! ""
+axolotl:axolo                                   N-TL ; ! ""
+icnoyotl:icnoyo                                 N-TL ; ! ""
+
+xiuhcoatl:xiuhcoa                               N-TL ; ! ""
+
+yaotetzahuitl:yaotetzahui                       N-HUITL ; ! ""
+miquiztetzahuitl:miquiztetzahui                 N-HUITL ; ! ""
+xihuitl:xihui                                   N-HUITL ; ! ""
+yaohuitl:yaohui                                 N-HUITL ; ! ""
+cuauhuitl:cuauhui                               N-HUITL ; ! ""
+cuahuitl:cuahui                                 N-HUITL ; ! ""
+
+pochteca:pochteca                               N-TECA ; ! ""
+
+acacpalli:acacpal                               N-LI ; ! ""
+acalli:acal                                     N-LI ; ! ""
+amacalli:amacal                                 N-LI ; ! ""
+atlapalli:atlapal                               N-LI ; ! ""
+centlalli:centlal                               N-LI ; ! ""
+chilli:chil                                     N-LI ; ! ""
+chimalli:chimal                                 N-LI ; ! ""
+citlalli:citlal                                 N-LI ; ! ""
+copalli:copal                                   N-LI ; ! ""
+cuitlapilli:cuitlapil                           N-LI ; ! ""
+ithualli:ithual                                 N-LI ; ! ""
+macehualli:macehual                             N-LI ; ! ""
+malli:mal                                       N-LI ; ! ""
+mecapalli:mecapal                               N-LI ; ! ""
+nahualli:nahual                                 N-LI ; ! ""
+necualli:necual                                 N-LI ; ! ""
+olli:ol                                         N-LI ; ! ""
+tamalli:tamal                                   N-LI ; ! ""
+tamalololli:tamalolol                           N-LI ; ! ""
+tecolli:tecol                                   N-LI ; ! ""
+teomimilli:teomimil                             N-LI ; ! ""
+tlachinolli:tlachinol                           N-LI ; ! ""
+tlachpanalli:tlachpanal                         N-LI ; ! ""
+tlacolli:tlacol                                 N-LI ; ! ""
+tlacuilolli:tlacuilol                           N-LI ; ! ""
+tlahtolli:tlahtol                               N-LI ; ! ""
+tlalli:tlal                                     N-LI ; ! ""
+tlaozalli:tlaozal                               N-LI ; ! ""
+tlapalli:tlapal                                 N-LI ; ! ""
+tlatlacolli:tlatlacol                           N-LI ; ! ""
+tlatlatolli:tlatlatol                           N-LI ; ! ""
+tlatolli:tlatol                                 N-LI ; ! ""
+tlazolli:tlazol                                 N-LI ; ! ""
+tlecuilli:tlecuil                               N-LI ; ! ""
+tlilli:tlil                                     N-LI ; ! ""
+tolmimilli:tolmimil                             N-LI ; ! ""
+tonalli:tonal                                   N-LI ; ! "día"
+tzohualli:tzohual                               N-LI ; ! ""
+yohualli:yohual                                 N-LI ; ! "noche"
+pilli:pil                                       N-LI ; ! "hijo"
+quetzalli:quetzal                               N-LI ; ! ""
+
+nechichihualli:nechichihual                     N-LI ; ! ""
+
+miquiztli:miquiz                                N-TLI ; ! ""
+huitztli:huitz                                  N-TLI ; ! ""
+nacaztli:nacaz                                  N-TLI ; ! ""
+yohualtepoztli:yohualtepoz                      N-TLI ; ! ""
+octli:oc                                        N-TLI ; ! ""
+
+tecuani:tecua                                   N-NI ; ! "bestia"
+tlatoani:tlatoa                                 N-NI ; ! ""
+yaotlatoani:yaotlatoa                           N-NI ; ! ""
+
+diablo:diablo                                   N-Ø     ; ! "diablo"
+capítulo:capítulo                               N-Ø     ; ! ""
+
+LEXICON Propios 
+
+Quetzalcoatl:Quetzalcoatl                       NP    ; ! ""
+Huitzilopochtli:Huitzilopochtli                 NP    ; ! ""
+
+Tezcatlipoca:Tezcatlipoca                NP ; ! ""
+Paynal:Paynal                NP ; ! ""
+Cihuacoatl:Cihuacoatl                NP ; ! ""
+Tlalocan:Tlalocan                NP ; ! ""
+Xiutecuhtli:Xiutecuhtli                NP ; ! ""
+Ixcozauhqui:Ixcozauhqui                NP ; ! ""
+Teotihuacan:Teotihuacan                NP ; ! ""
+Tollan:Tollan                NP ; ! ""
+Centzonhuitznahua:Centzonhuitznahua                NP ; ! ""
+Coyolxauh:Coyolxauh                NP ; ! ""
+Omacatl:Omacatl                NP ; ! ""
+Opochtli:Opochtli                NP ; ! ""
+Tlazolteotl:Tlazolteotl                         NP ; ! ""
+
+
+LEXICON Adjetivos
+
+cualli:cualli                                   ADJ ; ! ""
 
 LEXICON Adverbios 
 
+quenin:quenin                                   ADV-ITG ; ! "cómo"
 
 mochipa:mochipa                                 ADV ; ! "siempre"
+miecpa:miecpa                                   ADV ; ! "mucho"
+amo:amo                                         ADV ; ! "no"
+zan:zan                                         ADV ; ! ""
+huehca:huehca                                   ADV ; ! "lejos"
+nican:nican                                     ADV ; ! "aquí"
+ompa:ompa                                       ADV ; ! "allá"
+oncan:oncan                                     ADV ; ! "aquí"
+cenca:cenca                                     ADV ; ! "muy"
+huecauh:huecauh                                 ADV ; ! "en el pasado"
+oc:oc                                           ADV ; ! ""
+no:no                                           ADV ; ! ""
+za:za                                           ADV ; ! ""
+anozo:anozo                                     ADV ; ! ""
+azo:azo                                         ADV ; ! ""
+huel:huel                                       ADV ; ! ""
+zatepan:zatepan                                 ADV ; ! ""
+
+yohualtica:yohualtica                           ADV ; ! ""
+
+
+LEXICON IV
+
+cochi:coch                                      V-IV-I ; 
+choca:choc                                      V-IV-A ; 
+quiza:quiz                                      V-IV-A ; 
+hualla:huall                                    V-IV-A ; 
+huetzi:huetz                                    V-IV-I ; 
+«cuauhten%<n%>%<loc%>»huetzi:cuauhtenhuetz      V-IV-I ; 
+pohui:pohu                                      V-IV-I ; 
+miqui:miqu                                      V-IV-I ; 
+tlatoa:tlat                                     V-IV-OA ; 
+choloa:chol                                     V-IV-OA ; 
+nemi:nem                                        V-IV-I ; 
+«yohualli%<n%>»nenemi:yohualnenem               V-IV-I ; 
+«yaotl%<n%>»miqui:yaomiqu                       V-IV-I ; 
+«icxi%<n%>»mimiqui:icximimiqu                   V-IV-I ; 
+«tlalli%<n%>»miqui:tlalmiqu                     V-IV-I ; 
+
+LEXICON TV 
+
+itta:%{i%}tt                                    V-TV-A ;
+tlaza:tlaz                                      V-TV-A ;
+nequi:nequ                                      V-TV-I ;
+notza:notz                                      V-TV-A ;
+nonotza:nonotz                                  V-TV-A ;
+quetza:quetz                                    V-TV-A ;
+quequetza:quequetz                              V-TV-A ;
+ihtoa:%{i%}ht                                   V-TV-OA ;
+chihua:chi                                      V-TV-HUA ;
+chichihua:chichi                                V-TV-HUA ;
+tenehua:tene                                    V-TV-HUA ;
+ilhuia:%{i%}l                                   V-TV-HUIA ;
+mictia:mic                                      V-TV-TIA ;
+altia:al                                        V-TV-TIA ;
+nextia:nex                                      V-TV-TIA ; 
+tlamanilia:tlamani                              V-TV-LIA ; 
+tocayotia:tocayo                                V-TV-TIA ; 
+tetzammatia:tetzamma                            V-TV-TIA ; 
+
+LEXICON DV 
+
+maca:mac                                        V-DV-A ; 
+machtia:mach                                    V-DV-TIA ; 
+
+LEXICON Irregulares 
+
+%<s_sg3%>catca%<v%>%<iv%>:catca                 # ;
+
+
+LEXICON Punctuación
+
+,%<cm%>:,                                       # ;
+.%<sent%>:%.                                    # ;
+%?%<sent%>:%?                                    # ;
+%!%<sent%>:%!                                    # ;
+%:%<sent%>:%:                                    # ;
+%;%<sent%>:%;                                    # ;
