@@ -368,6 +368,11 @@ LEXICON N-REL
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+LEXICON NP-LOC
+
+%<np%>%<loc%>:                                         # ; 
+
+
 LEXICON NP
 
 %<np%>:                                         # ; 
@@ -381,6 +386,7 @@ LEXICON NUM
 LEXICON NUM-TLI
 
 %<num%>:%>tli                                    # ;
+%<num%>%<pl%>:%>tin                                    # ;
 %<num%>%<cmp%>:                                  # ;
 
 LEXICON NUM-LI
@@ -641,8 +647,9 @@ Quetzalcoatl:Quetzalcoatl                       NP    ; ! ""
 Itzcoatzin:Itzcoatzin                           NP    ; ! ""
 Huitzilopochtli:Huitzilopochtli                 NP    ; ! ""
 
+Mexico:Mexico                                 NP-LOC ; ! ""
 Moctezuma:Moctezuma                            NP ; ! ""
-Chimalpopoca:Chimalpopoca                       NP    ; ! ""
+Chimalpopoca:Chimalpopoca                       NP-LOC    ; ! ""
 Tenochtitlan:Tenochtitlan                      NP    ; ! ""
 Tezcatlipoca:Tezcatlipoca                NP ; ! ""
 Paynal:Paynal                NP ; ! ""
@@ -650,8 +657,8 @@ Cihuacoatl:Cihuacoatl                NP ; ! ""
 Tlalocan:Tlalocan                NP ; ! ""
 Xiutecuhtli:Xiutecuhtli                NP ; ! ""
 Ixcozauhqui:Ixcozauhqui                NP ; ! ""
-Teotihuacan:Teotihuacan                NP ; ! ""
-Tollan:Tollan                NP ; ! ""
+Teotihuacan:Teotihuacan                NP-LOC ; ! ""
+Tollan:Tollan                NP-LOC ; ! ""
 Centzonhuitznahua:Centzonhuitznahua                NP ; ! ""
 Coyolxauh:Coyolxauh                NP ; ! ""
 Omacatl:Omacatl                NP ; ! ""
