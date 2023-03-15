@@ -14,6 +14,8 @@ def guess(norm):
 		return('_', 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+huitl$', norm):
 		return('_', 'NOUN', '_', 'Guessed=Yes', [])
+	if re.findall('[a-z]+tzitzin$', norm):
+		return('_', 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+catl$', norm):
 		return('_', 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+iztli$', norm):
