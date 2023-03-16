@@ -72,14 +72,19 @@ def tag(lexicon, form, norm, idx, analyses):
 	# TODO: Work out what to do here with multiple analyses
 	# 	We should probably do max intersection with the analyses in the lexicon
 	if len(analyses) == 1:
+		addmisc = '_'
 		if lower in lexicon:
 #			print(idx, norm, '|||', lexicon[lower][0], '|||', analyses[0]['pos'])
 			if lexicon[lower][0] != analyses[0]['pos']:
 				return ('_', lexicon[lower][0], lexicon[lower][1], lexicon[lower][2], [])
+			addmisc = lexicon[lower][2]
 
 		analysis = analyses[0]
 		#print('@', idx, norm, '|||', analyses[0])
-		return (analysis['lemma'], analysis['pos'], '|'.join(['%s=%s' % (i, j) for i, j in analysis['feats'].items()]), 'Analysed=Yes', analysis['empty'])
+		misc = 'Analysed=Yes'	
+		if addmisc != '_':
+			misc = addmisc + '|' + misc 
+		return (analysis['lemma'], analysis['pos'], '|'.join(['%s=%s' % (i, j) for i, j in analysis['feats'].items()]), misc, analysis['empty'])
 
 	if lower in lexicon:
 		return ('_', lexicon[lower][0], lexicon[lower][1], lexicon[lower][2], [])
@@ -166,6 +171,9 @@ for bloc in sys.stdin.read().split('\n\n'):
 		norm = attrs['Norm']
 
 		analyses = list(fst.apply(norm))
+		if len(analyses) == 0:
+			analyses = list(fst.apply(norm.lower()))
+			
 #		print('ANAL', analyses)
 		converted_analyses = []
 		# [{'lemma': 'teotl', 'pos': 'NOUN', 'feats': {'Case': 'Abs'}}] [('teotl<n><abs>', 0.0)]
