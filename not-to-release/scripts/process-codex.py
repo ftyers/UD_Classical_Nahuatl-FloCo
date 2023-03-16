@@ -37,6 +37,12 @@ def normalise(table, overrides, s, idx):
 		return form, form, table[0][s.lower()][1], False
 	if s[0] in ',:.;?!()':
 		return s, s, False, False
+	num = True
+	for c in s:
+		if c not in '1234567890':
+			num = False
+	if num:
+		return s, s, False, False
 
 	return '*'+s, s, False, False
 
