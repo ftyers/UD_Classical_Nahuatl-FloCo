@@ -6,7 +6,7 @@ def tokenise(s):
 	o = s
 	o = re.sub('([,:.;?!()]+)', ' \g<1> ', o)
 	o = o.replace(" ). ", " ) . ")
-	for etc in ['etc', '&c', 'Etc', 'q. n']:
+	for etc in ['etc', '&c', 'Etc', 'q. n', 'xpo']:
 		o = o.replace(etc + ' .', etc + '.')
 		o = o.replace('. ' + etc, etc)
 	o = re.sub('  *', ' ', o)
@@ -36,6 +36,12 @@ def normalise(table, overrides, s, idx):
 		form = table[0][s.lower()][0].title()
 		return form, form, table[0][s.lower()][1], False
 	if s[0] in ',:.;?!()':
+		return s, s, False, False
+	num = True
+	for c in s:
+		if c not in '1234567890':
+			num = False
+	if num:
 		return s, s, False, False
 
 	return '*'+s, s, False, False
@@ -176,6 +182,7 @@ for line in open(sys.argv[1]):
 	line = re.sub('\([0-9]+\)', '', line)
 	# We need to track and replace tokens that end in a full stop
 	line = line.replace('q. n.', '@#@16@#@ @#@17@#@')
+	line = line.replace('xpo.', '@#@18@#@')
 
 	if line.strip() == '¶':
 		current_paragraph += 1
@@ -194,12 +201,15 @@ norm_overrides = {}
 for token in tokens:
 	if token[0] != '¶':
 		# Make this more beautiful
-		if token[0] in ['@#@16@#@', '@#@17@#@']:
+		if token[0] in ['@#@16@#@', '@#@17@#@', '@#@18@#@']:
 			if token[0] == '@#@16@#@':
 				current_sentence.append(('q.', token[1], token[2], token[3]))
 				continue
 			if token[0] == '@#@17@#@':
 				current_sentence.append(('n.', token[1], token[2], token[3]))
+				continue
+			if token[0] == '@#@18@#@':
+				current_sentence.append(('xpo.', token[1], token[2], token[3]))
 				continue
 		else: 
 			current_sentence.append(token)
