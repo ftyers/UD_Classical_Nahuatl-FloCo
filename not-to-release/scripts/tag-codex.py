@@ -14,6 +14,8 @@ def guess(norm):
 		return('_', 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+huitl$', norm):
 		return('_', 'NOUN', '_', 'Guessed=Yes', [])
+	if re.findall('[a-z]+tzitzin$', norm):
+		return('_', 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+catl$', norm):
 		return('_', 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+iztli$', norm):
@@ -27,6 +29,8 @@ def guess(norm):
 	if re.findall('^xi[a-z]+can$', norm):			# ximellacuahuacan
 		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('^qui[a-z]+([io]|hu)a$', norm):
+		return('_', 'VERB', '_', 'Guessed=Yes', [])
+	if re.findall('^oquin[a-z]+que$', norm):
 		return('_', 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('^tinech', norm):				# tinechitlacoa
 		return('_', 'VERB', '_', 'Guessed=Yes', [])

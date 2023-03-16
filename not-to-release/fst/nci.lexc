@@ -356,6 +356,10 @@ LEXICON N-CICITLALTIN
 @D.Poss@%<n%>%<pl%>:@D.Poss@%>tin        # ;
 
 
+LEXICON N-SPA
+
+%<n%>:                                   # ;
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON N-LOC
@@ -367,6 +371,11 @@ LEXICON N-REL
 @R.Poss.1@%<n%>%<rel%>:@R.Poss.1@              N-POSS ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON NP-LOC
+
+%<np%>%<loc%>:                                         # ; 
+
 
 LEXICON NP
 
@@ -381,6 +390,7 @@ LEXICON NUM
 LEXICON NUM-TLI
 
 %<num%>:%>tli                                    # ;
+%<num%>%<pl%>:%>tin                                    # ;
 %<num%>%<cmp%>:                                  # ;
 
 LEXICON NUM-LI
@@ -508,6 +518,7 @@ ixpantzinco:ixpantzinco                         N-REL ; ! ""
 tzintlan:tzintlan                               N-REL ; ! ""
 ca:ca                                           N-REL ; ! ""
 tic:tic                                         N-REL ; ! ""
+icpac:icpac                                     N-REL ; ! ""
 
 LEXICON Locativos 
 
@@ -527,6 +538,8 @@ teotl:teo                                       N-TL    ; ! "díos"
 teotl:tete                                      N-TETEUH ; ! ""
 tetl:te                                         N-TL    ; ! "díos"
 calli:cal                                       N-LI    ; ! "casa"
+cuicacalli:cuicacal                             N-LI    ; ! ""
+teocalli:teocal                                 N-LI    ; ! ""
 tlacualli:tlacual                               N-LI    ; ! "comida"
 amoxtli:amox                                    N-TLI   ; ! "libro"
 cactli:cac                                      N-TLI   ; ! "zapato"
@@ -634,22 +647,29 @@ yaotlatoani:yaotlatoa                           N-NI ; ! ""
 diablo:diablo                                   N-Ø     ; ! "diablo"
 capítulo:capítulo                               N-Ø     ; ! ""
 
+don:don                                         N-SPA ; ! ""
+
 LEXICON Propios 
 
 Quetzalcoatl:Quetzalcoatl                       NP    ; ! ""
+Moquihuixtli:Moquihuixtli                       NP    ; ! ""
 Itzcoatzin:Itzcoatzin                           NP    ; ! ""
 Huitzilopochtli:Huitzilopochtli                 NP    ; ! ""
 
-Chimalpopoca:Chimalpopoca                       NP    ; ! ""
-Tenochtitlan:Tenochtitlan                      NP    ; ! ""
+Mexico:Mexico                                 NP-LOC ; ! ""
+Moctezuma:Moctezuma                            NP ; ! ""
+Chimalpopoca:Chimalpopoca                       NP-LOC    ; ! ""
+Tlatelolco:Tlatelolco                           NP-LOC ; ! ""
+Texcoco:Texcoco                               NP-LOC ; ! ""
+Tenochtitlan:Tenochtitlan                      NP-LOC    ; ! ""
 Tezcatlipoca:Tezcatlipoca                NP ; ! ""
 Paynal:Paynal                NP ; ! ""
 Cihuacoatl:Cihuacoatl                NP ; ! ""
 Tlalocan:Tlalocan                NP ; ! ""
 Xiutecuhtli:Xiutecuhtli                NP ; ! ""
 Ixcozauhqui:Ixcozauhqui                NP ; ! ""
-Teotihuacan:Teotihuacan                NP ; ! ""
-Tollan:Tollan                NP ; ! ""
+Teotihuacan:Teotihuacan                NP-LOC ; ! ""
+Tollan:Tollan                NP-LOC ; ! ""
 Centzonhuitznahua:Centzonhuitznahua                NP ; ! ""
 Coyolxauh:Coyolxauh                NP ; ! ""
 Omacatl:Omacatl                NP ; ! ""
@@ -695,11 +715,11 @@ hualla:huall                                    V-IV-A ;
 huetzi:huetz                                    V-IV-I ; 
 «cuauhten%<n%>%<loc%>»huetzi:cuauhtenhuetz      V-IV-I ; 
 pohui:pohu                                      V-IV-I ; 
-miqui:miqu                                      V-IV-I ; 
 tlatoa:tlat                                     V-IV-OA ; 
 choloa:chol                                     V-IV-OA ; 
 nemi:nem                                        V-IV-I ; 
 «yohualli%<n%>»nenemi:yohualnenem               V-IV-I ; 
+miqui:miqu                                      V-IV-I ; 
 «yaotl%<n%>»miqui:yaomiqu                       V-IV-I ; 
 «icxi%<n%>»mimiqui:icximimiqu                   V-IV-I ; 
 «tlalli%<n%>»miqui:tlalmiqu                     V-IV-I ; 
@@ -709,14 +729,18 @@ LEXICON TV
 itta:%{i%}tt                                    V-TV-A ;
 tlaza:tlaz                                      V-TV-A ;
 nequi:nequ                                      V-TV-I ;
+caqui:caqu                                      V-TV-I ;
 notza:notz                                      V-TV-A ;
 nonotza:nonotz                                  V-TV-A ;
 quetza:quetz                                    V-TV-A ;
+piya:piy                                        V-TV-A ;
 quequetza:quequetz                              V-TV-A ;
 ihtoa:%{i%}ht                                   V-TV-OA ;
 pehua:pe                                        V-TV-HUA ;
 chihua:chi                                      V-TV-HUA ;
+«yaotl%<n%>»chihua:yaochi                       V-TV-HUA ;
 chichihua:chichi                                V-TV-HUA ;
+«yaotl%<n%>»chichihua:yaochichi                 V-TV-HUA ;
 tenehua:tene                                    V-TV-HUA ;
 ilhuia:%{i%}l                                   V-TV-HUIA ;
 mictia:mic                                      V-TV-TIA ;
