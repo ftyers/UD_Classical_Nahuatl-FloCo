@@ -71,12 +71,21 @@ def tag(lexicon, form, norm, idx, analyses):
 	
 	# TODO: Work out what to do here with multiple analyses
 	# 	We should probably do max intersection with the analyses in the lexicon
+	guessed_lemma = '_'
+	if len(analyses) > 1:
+		lemmas = []
+		for analysis in analyses:
+			lemmas.append(analysis['lemma'])
+		lemmas = list(set(lemmas))
+		if len(lemmas) == 1:
+			guessed_lemma = lemmas[0]
+
 	if len(analyses) == 1:
 		addmisc = '_'
 		if lower in lexicon:
 #			print(idx, norm, '|||', lexicon[lower][0], '|||', analyses[0]['pos'])
 			if lexicon[lower][0] != analyses[0]['pos']:
-				return ('_', lexicon[lower][0], lexicon[lower][1], lexicon[lower][2], [])
+				return (guessed_lemma, lexicon[lower][0], lexicon[lower][1], lexicon[lower][2], [])
 			addmisc = lexicon[lower][2]
 
 		analysis = analyses[0]
@@ -87,16 +96,17 @@ def tag(lexicon, form, norm, idx, analyses):
 		return (analysis['lemma'], analysis['pos'], '|'.join(['%s=%s' % (i, j) for i, j in analysis['feats'].items()]), misc, analysis['empty'])
 
 	if lower in lexicon:
-		return ('_', lexicon[lower][0], lexicon[lower][1], lexicon[lower][2], [])
+		return (guessed_lemma, lexicon[lower][0], lexicon[lower][1], lexicon[lower][2], [])
+
 	if norm in lexicon:
 		if lexicon[norm][0] == 'PROPN':
 			return ('_', lexicon[norm][0], lexicon[norm][1], lexicon[norm][2], [])
 	if norm[0] in '0123456789':
-		return ('_', 'NUM', '_', '_', [])
+		return (norm, 'NUM', '_', '_', [])
 	if norm[0].upper() == norm[0] and idx > 1 and norm[0].lower() in alphabet:
 		return ('_', 'PROPN', '_', '_', [])
 	if norm[0] in '.?!:,;()':
-		return (norm[0], 'PUNCT', '_', '_', [])
+		return (norm, 'PUNCT', '_', '_', [])
 	return guess(norm)
 
 def read_lexicon(fn):
