@@ -812,9 +812,9 @@
 # text[norm] = Inic chicome capítulo: oncan motenehua, in cihuateotl: in itoca, chicome coatl.
 # text[orig] = Jnic·chicome·capitulo·:·vn¶can·moteneoa·,·yn·cioateutl·:·y·njtoca·,·chicome·coatl·.
 # tagged = 100.00%
-# analysed = 81.25%
+# analysed = 93.75%
 1	Jnic	_	SCONJ	_	_	_	_	_	Folio=3|Paragraph=2|Line=1|Norm=Inic
-2	chicome	_	NUM	_	_	_	_	_	Folio=3|Paragraph=2|Line=1|Norm=chicome|Gloss=siete
+2	chicome	chicome	NUM	_		_	_	_	Folio=3|Paragraph=2|Line=1|Norm=chicome|Gloss=siete|Analysed=Yes
 3	capitulo	capítulo	NOUN	_	Case=Abs	_	_	_	Folio=3|Paragraph=2|Line=1|Norm=capítulo|Analysed=Yes
 4	:	:	PUNCT	_		_	_	_	Folio=3|Paragraph=2|Line=1|Norm=:|Analysed=Yes
 5	vncan	oncan	ADV	_		_	_	_	Orig=vn¶·can|Folio=3,3|Paragraph=2,2|Line=1,2|Norm=oncan|Gloss=aquí|Analysed=Yes
@@ -826,7 +826,7 @@
 11	yn	_	DET|SCONJ	_	_	_	_	_	Orig=y·njtoca|Folio=3,3|Paragraph=2,2|Line=3,3|Norm=in
 12	jtoca	_	NOUN	_	_	_	_	_	Orig=y·njtoca|Folio=3,3|Paragraph=2,2|Line=3,3|Norm=itoca|Gloss=su.nombre
 13	,	,	PUNCT	_		_	_	_	Folio=3|Paragraph=2|Line=3|Norm=,|Analysed=Yes
-14	chicome	_	NUM	_	_	_	_	_	Folio=3|Paragraph=2|Line=3|Norm=chicome|Gloss=siete
+14	chicome	chicome	NUM	_		_	_	_	Folio=3|Paragraph=2|Line=3|Norm=chicome|Gloss=siete|Analysed=Yes
 15	coatl	coatl	NOUN	_	Case=Abs	_	_	_	Folio=3|Paragraph=2|Line=3|Norm=coatl|Gloss=víbora|Analysed=Yes
 16	.	.	PUNCT	_		_	_	_	Folio=3|Paragraph=2|Line=3|Norm=.|Analysed=Yes
 
@@ -835,8 +835,8 @@
 # text[norm] = Chicome coatl: yehhuatl ipan mixcohuaya, quimixiptlatiaya, in tonacayotl: ihuan in zazo tlein inenca, iyolca macehualli, inyohua, incualo.
 # text[orig] = Chicome·coatl·:·iehoatl·ipan·mj¶xcoaia·,·qujmjxiptlatiaia·,·in·to¶nacaiotl·:·yoan·in·caco·tlein·y¶nenca·,·y·iolca·maceoalli·,·y·njoa·,·yn·qualo·.
 # tagged = 92.00%
-# analysed = 64.00%
-1	Chicome	_	NUM	_	_	_	_	_	Folio=3|Paragraph=3|Line=1|Norm=Chicome|Gloss=siete
+# analysed = 68.00%
+1	Chicome	chicome	NUM	_		_	_	_	Folio=3|Paragraph=3|Line=1|Norm=Chicome|Gloss=siete|Analysed=Yes
 2	coatl	coatl	NOUN	_	Case=Abs	_	_	_	Folio=3|Paragraph=3|Line=1|Norm=coatl|Gloss=víbora|Analysed=Yes
 3	:	:	PUNCT	_		_	_	_	Folio=3|Paragraph=3|Line=1|Norm=:|Analysed=Yes
 4	iehoatl	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	_	_	_	Folio=3|Paragraph=3|Line=1|Norm=yehhuatl|Gloss=él|Analysed=Yes
@@ -894,9 +894,9 @@
 # text[norm] = Inic chicueyi, capítulo: oncan motenehua, in cihuateotl, in itoca: Teteuh innan: no motocayotia, Tlalli iyollo, ihuan Toci.
 # text[orig] = Jnic·chicuei·,·capitulo·:·vnca¶moteneoa·,·yn·cioateutl·,·y·njtoca·:·Teteu·ynna·:·no·motocaiotia·,·Tlal¶li·y·iollo·,·yoan·Toci·.
 # tagged = 100.00%
-# analysed = 84.62%
+# analysed = 88.46%
 1	Jnic	_	SCONJ	_	_	_	_	_	Folio=3|Paragraph=4|Line=1|Norm=Inic
-2	chicuei	_	NUM	_	_	_	_	_	Folio=3|Paragraph=4|Line=1|Norm=chicueyi|Gloss=ocho
+2	chicuei	chicueyi	NUM	_		_	_	_	Folio=3|Paragraph=4|Line=1|Norm=chicueyi|Gloss=ocho|Analysed=Yes
 3	,	,	PUNCT	_		_	_	_	Folio=3|Paragraph=4|Line=1|Norm=,|Analysed=Yes
 4	capitulo	capítulo	NOUN	_	Case=Abs	_	_	_	Folio=3|Paragraph=4|Line=1|Norm=capítulo|Analysed=Yes
 5	:	:	PUNCT	_		_	_	_	Folio=3|Paragraph=4|Line=1|Norm=:|Analysed=Yes
@@ -1932,7 +1932,7 @@
 # text[norm] = No iuh quimahuiztiliaya, in ixiptla tonacayotl, in itoca, chicome coatl; ihuan in ixiptla iztatl, itoca Huixtociahuatl: ic quilnamiquiya; in ye tlamanixti: ca huel inenca mochihua in macehualli, ic huellamati, ic huel nemi.
 # text[orig] = Noiuh¶quj·mauiz·tiliaia·,·y·njxiptla·to¶nacaiotl·,·y·nj·toca·,·chicome·coatl·;·yoa¶y·nj·xiptla·iztatl·,·y·toca·Vixtociaoatl·:·ic·qujlnamjquja·;·y·nj·e·tla·manjx¶ti·:·ca·vel·y·nenca·muchioa·in·mace¶oalli·,·ic·vellamati·,·ic·vel·nemj·.
 # tagged = 95.35%
-# analysed = 60.47%
+# analysed = 62.79%
 1	No	no	ADV	_		_	_	_	Orig=Noiuh¶|Folio=6|Paragraph=1|Line=24|Norm=No|Gloss=también|Analysed=Yes
 2	iuh	_	ADV	_	_	_	_	_	Orig=Noiuh¶|Folio=6|Paragraph=1|Line=24|Norm=iuh
 3	qujmauiztiliaia	_	VERB	_	_	_	_	_	Orig=quj·mauiz·tiliaia|Folio=6,6,6|Paragraph=1,1,1|Line=25,25,25|Norm=quimahuiztiliaya|Guessed=Yes
@@ -1944,7 +1944,7 @@
 9	yn	_	DET|SCONJ	_	_	_	_	_	Orig=y·nj·toca|Folio=6,6,6|Paragraph=1,1,1|Line=26,26,26|Norm=in
 10	jtoca	_	NOUN	_	_	_	_	_	Orig=y·nj·toca|Folio=6,6,6|Paragraph=1,1,1|Line=26,26,26|Norm=itoca|Gloss=su.nombre
 11	,	,	PUNCT	_		_	_	_	Folio=6|Paragraph=1|Line=26|Norm=,|Analysed=Yes
-12	chicome	_	NUM	_	_	_	_	_	Folio=6|Paragraph=1|Line=26|Norm=chicome|Gloss=siete
+12	chicome	chicome	NUM	_		_	_	_	Folio=6|Paragraph=1|Line=26|Norm=chicome|Gloss=siete|Analysed=Yes
 13	coatl	coatl	NOUN	_	Case=Abs	_	_	_	Folio=6|Paragraph=1|Line=26|Norm=coatl|Gloss=víbora|Analysed=Yes
 14	;	;	PUNCT	_		_	_	_	Folio=6|Paragraph=1|Line=26|Norm=;|Analysed=Yes
 15	yoa	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3	_	_	_	Folio=6|Paragraph=1|Line=26|Norm=ihuan|Gloss=con|Analysed=Yes
