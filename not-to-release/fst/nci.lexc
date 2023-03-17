@@ -4,6 +4,7 @@ Multichar_Symbols
 %<pl%>
 %<np%>
 %<num%>
+%<det%>
 %<adv%>
 %<cnjsub%>
 %<cnjcoo%>
@@ -96,6 +97,7 @@ Propios ;
 Punctuación ;
 Conjunciones ;
 Irregulares ;
+Determinantes ;
 Digitos ;
 
 LEXICON Prefixes 
@@ -475,6 +477,10 @@ LEXICON PRON-TLEIN
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+LEXICON DET 
+
+%<det%>:                                        # ;
+
 LEXICON CC
 
 %<cnjcoo%>:                                     # ;
@@ -493,6 +499,10 @@ in:in                                           CS ; ! ""
 
 auh:auh                                         CC ; ! "y"
 y:y                                             CC ; ! "y"
+
+LEXICON Determinantes 
+
+in:in                                           DET ; 
 
 LEXICON Pronombres
 
