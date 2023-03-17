@@ -6,7 +6,7 @@ def tokenise(s):
 	o = s
 	o = re.sub('([,:.;?!()]+)', ' \g<1> ', o)
 	o = o.replace(" ). ", " ) . ")
-	for etc in ['etc', '&c', 'Etc', 'q. n', 'xpo']:
+	for etc in ['etc', '&c', 'Etc', 'q. n', 'xpo', '14']:
 		o = o.replace(etc + ' .', etc + '.')
 		o = o.replace('. ' + etc, etc)
 	o = re.sub('  *', ' ', o)
@@ -183,6 +183,7 @@ for line in open(sys.argv[1]):
 	# We need to track and replace tokens that end in a full stop
 	line = line.replace('q. n.', '@#@16@#@ @#@17@#@')
 	line = line.replace('xpo.', '@#@18@#@')
+	line = line.replace('14.', '@#@19@#@')
 
 	if line.strip() == '¶':
 		current_paragraph += 1
@@ -201,7 +202,7 @@ norm_overrides = {}
 for token in tokens:
 	if token[0] != '¶':
 		# Make this more beautiful
-		if token[0] in ['@#@16@#@', '@#@17@#@', '@#@18@#@']:
+		if token[0] in ['@#@16@#@', '@#@17@#@', '@#@18@#@', '@#@19@#@']:
 			if token[0] == '@#@16@#@':
 				current_sentence.append(('q.', token[1], token[2], token[3]))
 				continue
@@ -210,6 +211,9 @@ for token in tokens:
 				continue
 			if token[0] == '@#@18@#@':
 				current_sentence.append(('xpo.', token[1], token[2], token[3]))
+				continue
+			if token[0] == '@#@19@#@':
+				current_sentence.append(('14.', token[1], token[2], token[3]))
 				continue
 		else: 
 			current_sentence.append(token)
