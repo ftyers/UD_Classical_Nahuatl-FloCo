@@ -317,7 +317,7 @@ LEXICON N-DERIV
 %<dim%>:%>ton # ;
 %<aug%>:%>pol # ;
 
-LEXICON N-POSS
+LEXICON N-POSESION
 
 %<pl%>:%>huan                           # ;
                                         # ;
@@ -325,47 +325,51 @@ LEXICON N-POSS
 LEXICON N-LI
 
 @D.Poss@%<n%>%<abs%>:@D.Poss@%>li       # ;
-@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSESION ;
 %<n%>:                                  N-DERIV ;
 
 LEXICON N-TL 
 
 @D.Poss@%<n%>%<abs%>:@D.Poss@%>tl       # ;
 @D.Poss@%<n%>%<pl%>:@D.Poss@%>me        # ;
-@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSESION ;
 %<n%>:                                  N-DERIV ;
 
 LEXICON N-TLI
 
 @D.Poss@%<n%>%<abs%>:@D.Poss@%>tli      # ;
 @D.Poss@%<n%>%<pl%>:@D.Poss@%>tin       # ;
-@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSESION ;
 %<n%>:                                  N-DERIV ;
+
+LEXICON N-POSS
+
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSESION ;
 
 LEXICON N-HUITL 
 
 @D.Poss@%<n%>%<abs%>:@D.Poss@%>tl       # ;
-@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSESION ;
 %<n%>:                                  N-DERIV ;
 
 LEXICON N-Ø
 
 @D.Poss@%<n%>%<abs%>:@D.Poss@           # ;
 @D.Poss@%<n%>%<pl%>:@D.Poss@%>me        # ;
-@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSESION ;
 %<n%>:                                  N-DERIV ;
 
 LEXICON N-NI
 
 @D.Poss@%<n%>%<abs%>:@D.Poss@%>ni       # ;
-@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSESION ;
 %<n%>:                                  N-DERIV ;
 
 
 LEXICON N-TECA
 
 @D.Poss@%<n%>%<abs%>:@D.Poss@           # ;
-@R.Poss.1@%<n%>:@R.Poss.1@              N-POSS ;
+@R.Poss.1@%<n%>:@R.Poss.1@              N-POSESION ;
 %<n%>:                                  N-DERIV ;
 
 LEXICON N-TETEUH
@@ -552,7 +556,6 @@ tech:tech                                       N-REL ; ! ""
 techpa:techpa                                   N-REL ; ! ""
 techtzinco:techtzinco                           N-REL ; ! ""
 huan:huan                                       N-REL ; ! ""
-toca:toca                                       N-REL ; ! ""
 campa:campa                                     N-REL ; ! ""
 huic:huic                                       N-REL ; ! ""
 huicpa:huicpa                                   N-REL ; ! ""
@@ -568,9 +571,12 @@ icpac:icpac                                     N-REL ; ! ""
 tzalan:tzalan                                   N-REL ; ! ""
 icxitlan:icxitlan				N-REL ; ! ""
 pampa:pampa					N-REL ; ! ""
+mixpan:mixpan                                   N-REL ; ! "" 
 ca:ca						N-REL ; ! ""
 nanacaztlan:nanacaztlan				N-REL ; ! ""
 nacazco:nacazco					N-REL ; ! ""
+
+!toca:toca                                       N-REL ; ! ""
 
 LEXICON Locativos 
 
@@ -604,6 +610,8 @@ tezahuitl:tezahui                               N-HUITL ; ! ""
 ilhuitl:ilhui                                   N-HUITL ; ! ""
 tlacatecolotl:tlacatecolo                       N-TL    ; ! ""
 telpochtli:telpoch                              N-TLI   ; ! ""
+
+toca:toca                                       N-POSS ; ! ""
 
 atl:a                                           N-TL ; ! ""
 mauhcatlacatl:mauhcatlaca                       N-TL ; ! ""
@@ -5835,16 +5843,16 @@ choca:choc                                      V-IV-A ;
 quiza:quiz                                      V-IV-A ; 
 hualla:huall                                    V-IV-A ; 
 huetzi:huetz                                    V-IV-I ; 
-«cuauhten%<n%>%<loc%>»huetzi:cuauhtenhuetz      V-IV-I ; 
+«cuauhten%<n%>%<loc%>»huetzi:cuauhten·huetz      V-IV-I ; 
 pohui:pohu                                      V-IV-I ; 
 tlatoa:tlat                                     V-IV-OA ; 
 choloa:chol                                     V-IV-OA ; 
 nemi:nem                                        V-IV-I ; 
-«yohualli%<n%>»nenemi:yohualnenem               V-IV-I ; 
+«yohualli%<n%>»nenemi:yohual·ne~nem               V-IV-I ; 
 miqui:miqu                                      V-IV-I ; 
-«yaotl%<n%>»miqui:yaomiqu                       V-IV-I ; 
-«icxi%<n%>»mimiqui:icximimiqu                   V-IV-I ; 
-«tlalli%<n%>»miqui:tlalmiqu                     V-IV-I ; 
+«yaotl%<n%>»miqui:yao·miqu                       V-IV-I ; 
+«icxi%<n%>»mimiqui:icxi·mi~miqu                   V-IV-I ; 
+«tlalli%<n%>»miqui:tlal·miqu                     V-IV-I ; 
 
 LEXICON TV 
 
@@ -5852,17 +5860,19 @@ itta:%{i%}tt                                    V-TV-A ;
 tlaza:tlaz                                      V-TV-A ;
 nequi:nequ                                      V-TV-I ;
 caqui:caqu                                      V-TV-I ;
+tequi:tequ                                      V-TV-I ;
+tetequi:te~tequ                                      V-TV-I ;
 notza:notz                                      V-TV-A ;
-nonotza:nonotz                                  V-TV-A ;
+nonotza:no~notz                                  V-TV-A ;
 quetza:quetz                                    V-TV-A ;
+quequetza:que~quetz                              V-TV-A ;
 piya:piy                                        V-TV-A ;
-quequetza:quequetz                              V-TV-A ;
 ihtoa:%{i%}ht                                   V-TV-OA ;
 pehua:pe                                        V-TV-HUA ;
 chihua:chi                                      V-TV-HUA ;
-«yaotl%<n%>»chihua:yaochi                       V-TV-HUA ;
-chichihua:chichi                                V-TV-HUA ;
-«yaotl%<n%>»chichihua:yaochichi                 V-TV-HUA ;
+«yaotl%<n%>»chihua:yao·chi                       V-TV-HUA ;
+chichihua:chi~chi                                V-TV-HUA ;
+«yaotl%<n%>»chi~chihua:yao·chichi                 V-TV-HUA ;
 tenehua:tene                                    V-TV-HUA ;
 ilhuia:%{i%}l                                   V-TV-HUIA ;
 polihui:poli                                    V-TV-HUI ;
