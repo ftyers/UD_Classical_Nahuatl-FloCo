@@ -11,6 +11,7 @@ Multichar_Symbols
 %<redup%>
 %<loc%>
 %<past%>
+%<impers%>
 
 %<on%>
 %<hual%>
@@ -78,6 +79,15 @@ Multichar_Symbols
 @U.S_AGR.PL1@
 @U.S_AGR.PL2@
 @U.S_AGR.PL3@
+
+@P.S_AGR.NONE@
+@R.S_AGR.NONE@
+@D.S_AGR.NONE@
+
+@P.O_AGR.NONE@
+@R.O_AGR.NONE@
+@D.O_AGR.NONE@
+
 @P.Poss.1@
 @R.Poss.1@
 @D.Poss@
@@ -132,11 +142,15 @@ LEXICON Sujeto
 @U.S_AGR.PL2@%<s_pl2%>:@U.S_AGR.PL2@an%>                     Objeto ;
 @U.S_AGR.PL3@%<s_pl3%>:@U.S_AGR.PL3@                         Objeto ;
 
+@P.S_AGR.NONE@:@P.S_AGR.NONE@                                Objeto ;
+
 LEXICON Objeto
 
                                                                  ObjetoDir ;
                                                                  ObjetoInd ;
                                                                  DireccionalIV ;
+@P.O_AGR.NONE@:@P.O_AGR.NONE@                                    DireccionalTV ;
+@P.O_AGR.NONE@:@P.O_AGR.NONE@                                    DireccionalDV ;
 
 LEXICON ObjetoDir
 
@@ -182,17 +196,22 @@ LEXICON DireccionalDV
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+LEXICON V-AGR-EMPTY
+
+
+@D.S_AGR.NONE@@D.O_AGR.NONE@:@D.S_AGR.NONE@@D.O_AGR.NONE@          # ;
+
 LEXICON V-AGR-NBR-SG
 
-@U.S_AGR.SG1@:@U.S_AGR.SG1@                                        # ;
-@U.S_AGR.SG2@:@U.S_AGR.SG2@                                        # ;
-@U.S_AGR.SG3@:@U.S_AGR.SG3@                                        # ;
+@U.S_AGR.SG1@:@U.S_AGR.SG1@                                        V-AGR-EMPTY ;
+@U.S_AGR.SG2@:@U.S_AGR.SG2@                                        V-AGR-EMPTY ;
+@U.S_AGR.SG3@:@U.S_AGR.SG3@                                        V-AGR-EMPTY ;
 
 LEXICON V-AGR-NBR-PL
 
-@U.S_AGR.PL1@:@U.S_AGR.PL1@                                        # ;
-@U.S_AGR.PL2@:@U.S_AGR.PL2@                                        # ;
-@U.S_AGR.PL3@:@U.S_AGR.PL3@                                        # ;
+@U.S_AGR.PL1@:@U.S_AGR.PL1@                                        V-AGR-EMPTY ;
+@U.S_AGR.PL2@:@U.S_AGR.PL2@                                        V-AGR-EMPTY ;
+@U.S_AGR.PL3@:@U.S_AGR.PL3@                                        V-AGR-EMPTY ;
 
 LEXICON V-IMPERF
 
@@ -214,6 +233,14 @@ LEXICON V-FUT
 
 %<fut%>:%>z                                                        V-AGR-NBR-SG ;
 %<fut%>:%>zque                                                     V-AGR-NBR-PL ;
+
+LEXICON V-IMPERS 
+
+@R.O_AGR.NONE@%<impers%>:@R.O_AGR.NONE@%>lo                        # ;
+
+LEXICON V-DERIV 
+
+@R.S_AGR.NONE@:@R.S_AGR.NONE@                                      V-IMPERS ;
 
 LEXICON V-DV-TIA
 
@@ -277,6 +304,7 @@ LEXICON V-TV-TIA
 %<v%>%<tv%>:tia                                                    V-PRES ; 
 %<v%>%<tv%>:tia                                                    V-FUT ; 
 %<v%>%<tv%>:ti                                                     V-PAST ; 
+%<v%>%<tv%>:ti                                                     V-DERIV ; 
 
 LEXICON V-TV-I
 
