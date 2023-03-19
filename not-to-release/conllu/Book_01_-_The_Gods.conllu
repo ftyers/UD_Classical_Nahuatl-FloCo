@@ -217,13 +217,13 @@
 
 # sent_id = Book_01_-_The_Gods.txt:8
 # text = Auh in maceoalti, qujtocaia, qujtlalochtocaia, coiohujtiuja, quicaoatztiuja, teuhtli quiquetztiuja, tlalli qujpototztiuja: iuhqujn tlaixqujqujca, tlalli tetecujca: auh ce tlacatl qujnapalotiuja.
-# text[norm] = Auh in macehualti, quitocaya, quitlalochtocaya, coyohuitihuia, quicahuatzihuia, teuhtli quiquetztihuia, tlalli quipototztihuia: iuhquin tlaixquiquiza, tlalli tetecuica: auh ce tlacatl quinapalotihuia.
+# text[norm] = Auh in macehualtin, quitocaya, quitlalochtocaya, coyohuitihuia, quicahuatzihuia, teuhtli quiquetztihuia, tlalli quipototztihuia: iuhquin tlaixquiquiza, tlalli tetecuica: auh ce tlacatl quinapalotihuia.
 # text[orig] = Auh·in¶maceoalti·,·qujtocaia·,·qujtlalochtoca¶ia·,·coiohujtiuja·,·quicaoatztiuja·,·te¶uhtli·quiquetztiuja·,·tlalli·qujpototz¶tiuja·:·iuh·qujn·tlaixquj·qujca·,·tlalli¶tetecujca·:·auh·ce·tlacatl·qujnapa¶lotiuja·.
 # tagged = 100.00%
-# analysed = 58.62%
+# analysed = 62.07%
 1	Auh	auh	CCONJ	_		_	_	_	Folio=1|Paragraph=6|Line=3|Norm=Auh|Gloss=y|Analysed=Yes
 2	in	in	DET|SCONJ	_	_	_	_	_	Folio=1|Paragraph=6|Line=3|Norm=in
-3	maceoalti	_	VERB	_	_	_	_	_	Folio=1|Paragraph=6|Line=4|Norm=macehualti
+3	maceoalti	macehualli	NOUN	_	Number=Plur	_	_	_	Folio=1|Paragraph=6|Line=4|Norm=macehualtin|Analysed=Yes
 4	,	,	PUNCT	_		_	_	_	Folio=1|Paragraph=6|Line=4|Norm=,|Analysed=Yes
 5	qujtocaia	_	VERB	_	_	_	_	_	Folio=1|Paragraph=6|Line=4|Norm=quitocaya|Guessed=Yes
 6	,	,	PUNCT	_		_	_	_	Folio=1|Paragraph=6|Line=4|Norm=,|Analysed=Yes
@@ -1384,7 +1384,7 @@
 # text[norm] = Diablome catca y, macuiltin, teme in imixiptlahuan: intech tlamiloya, quilmach tetlahuelia, teca mocayohua, inic aca itech quinehuaya, tlahuelilocati, tennecuilihui, ixnecuilihui, matzicolihui, icxiicopichahui, icximimiqui, momacuecuetza, tencualacquiza: ic mihtoaya omotenamicti, ipan oquizque Cihuapipiltin, omaxac chaneque.
 # text[orig] = Diablome·catca·y·,·macujltin·,·teme¶y·nj·mixiptlaoan·:·intech·tlamjloia·,·qujlmach·tetlauelia·,·teca·mocaia¶oa·,·y·njc·aca·itech·qujneoaia·,·tla¶uelilocati·,·tennecujliuj·,·ixnecuj¶liuj·,·matzicoliuj·,·icxicopichauj·,·ic¶ximjmjquj·,·momacuecuetza·,·ten¶qualacquica·:·ic·mjtoaia·omotena¶micti·,·y·pan·oquizque·cioapipil¶ti·,·vmaxac·chaneque·.
 # tagged = 90.20%
-# analysed = 60.78%
+# analysed = 62.75%
 1	Diablome	diablo	NOUN	_	Number=Plur	_	_	_	Folio=4|Paragraph=7|Line=1|Norm=Diablome|Analysed=Yes
 2	catca	catca	VERB	_	Number[subj]=Sing|Person[subj]=3|Subcat=Intr	_	_	_	Folio=4|Paragraph=7|Line=1|Norm=catca|Analysed=Yes
 3	y	y	CCONJ	_		_	_	_	Folio=4|Paragraph=7|Line=1|Norm=y|AmbigNorm=True|Override=False|Analysed=Yes
@@ -5989,8 +5989,8 @@
 # text = Auh intla aca tealtiz, iehoatl caltiaia, qujxcoaia yn jteouh yiacatecutli: anoço ceme iehoantin yn mocheoaia, in qujnmoteutiaia in chiconqujaujtl, anoço chalmecacioatl, yoan acxomucujl, yoan nacxitl, cochimetl, iacapitzaoac, aiac qujiocuja, yiollotlama, yn aco ce, anoco vme, ca altiz tlacatl: vmpa concovaia yn tlacanecujloca azcaputzalco: motlahtlatilia, motlapapatilia, qujncuecuepa, qujmjhitta, yn qualtin qujncoazque, yn açan quenamjque, in tlacaiecti, in tlacamelaoaque, yn açan cucuxque, yn atle intlaciuh ca: ynjc iehoan qujnmietizque, yn ipan panquetzaliztli: yn vncan ilhujqujxtililoia vitzilubuchtli: yquac qujnchichioaia, qujntlamamaca, intech qujtlalia yn juhquj ynechichioal yiacatecutli.
 # text[norm] = Auh intla aca teyaltiz, yehhuatl caltiaya, quixcohuaya in iteouh Iyacatecuhtli: anozo cemeh yehhuantin in mochehuaya, in quinmoteotitaya in Chiconquiahuitl, anozo Chalmecacihuatl, ihuan Acxomocuil, ihuan Nacxitl, Cochimetl, Yacapitzahuac, ayac quiyocuia, iyollotlama, in azo ce, anozo ome, ca altiz tlacatl: ompa concohuaya in tlacanecuiloca Azcapoltzalco: motlahtlatilia, motlapapatilia, quincuecuepa, quimihitta, in cualtin quincohuazque, in acan quenamique, in tlacayecti, in tlacamelahuaque, in acan cocoxque, in atle intlaciuh ca: inic yehhuan quinmietizque, in ipan Panquetzaliztli: in oncan ilhuiquixtililoya Huitzilopochtli: ihcuac quinchichihuaya, quintlamamaca, intech quitlalia in iuhqui inechichihual Iyacatecuhtli.
 # text[orig] = A·uh·intla·aca·te¶altiz·,·iehoatl·caltiaia·,·qujxcoaia¶y·nj·teouh·y·ia·catecutli·:·anoço¶ceme·iehoantin·yn·mocheoaia·,·in¶qujn·moteutiaia·in·chiconqujaujtl·,·anoço·chalmecacioatl·,·yoan·ac¶xomucujl·,·yoan·nacxitl·,·cochi¶metl·,·ia·ca·pitzaoac·,·aiac·quj·io¶cuja·,·y·iollo·tlama·,·y·naco·ce·,·ano¶co·vme·,·caaltiz·tlacatl·:·vmpa·con¶covaia·yn·tlacanecujloca·azcapu¶tzalco·:·motlahtlatilia·,·motlapapa¶tilia·,·qujn·cuecuepa·,·quj·mjhitta·,·yn·qualtin·qujncoazque·,·y·na·çan¶quenamjque·,·in·tlacaiecti·,·in·tlaca¶melaoaque·,·y·na·çan·cucuxque·,·yn¶atle·intlaciuhca·:·y·njc·iehoan·qujn¶mietizque·,·y·ni·pan·panquetzaliz¶tli·:·yn·vncan·ilhujqujxtililoia·vi¶tzilubuchtli·:·y·quac·qujnchichi¶oaia·,·qujn·tlamamaca·,·intech¶qujtlalia·y·nj·uh·quj·y·ne·chichi¶oal·y·ia·ca·tecutli·.
-# tagged = 86.96%
-# analysed = 63.48%
+# tagged = 87.83%
+# analysed = 64.35%
 1	Auh	auh	CCONJ	_		_	_	_	Orig=A·uh|Folio=18,18|Paragraph=1,1|Line=11,11|Norm=Auh|Gloss=y|Analysed=Yes
 2	intla	_	PRON	_	_	_	_	_	Folio=18|Paragraph=1|Line=11|Norm=intla|Gloss=algo
 3	aca	_	DET|PRON	_	_	_	_	_	Folio=18|Paragraph=1|Line=11|Norm=aca
@@ -6059,7 +6059,7 @@
 66	qujmjhitta	_	X	_	_	_	_	_	Orig=quj·mjhitta|Folio=18,18|Paragraph=1,1|Line=23,23|Norm=quimihitta
 67	,	,	PUNCT	_		_	_	_	Folio=18|Paragraph=1|Line=23|Norm=,|Analysed=Yes
 68	yn	in	DET|SCONJ	_	_	_	_	_	Folio=18|Paragraph=1|Line=24|Norm=in
-69	qualtin	_	X	_	_	_	_	_	Folio=18|Paragraph=1|Line=24|Norm=cualtin
+69	qualtin	cualli	NOUN	_	Number=Plur	_	_	_	Folio=18|Paragraph=1|Line=24|Norm=cualtin|Analysed=Yes
 70	qujncoazque	_	VERB	_	_	_	_	_	Folio=18|Paragraph=1|Line=24|Norm=quincohuazque|Guessed=Yes
 71	,	,	PUNCT	_		_	_	_	Folio=18|Paragraph=1|Line=24|Norm=,|Analysed=Yes
 72	yn	in	DET|SCONJ	_	_	_	_	_	Orig=y·na·çan¶|Folio=18,18,18|Paragraph=1,1,1|Line=24,24,24|Norm=in
