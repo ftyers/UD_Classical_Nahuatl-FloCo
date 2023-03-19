@@ -289,9 +289,9 @@ for token in tokens:
 						lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s|AmbigNorm=%s|Override=%s' % (token[1], token[2], token[3], norm, ambiguous, overridden)))
 					else:
 						lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s' % (token[1], token[2], token[3], norm)))
-					retokenised_sentence.append(form.strip('¶'))
 					normalised_sentence.append(norm_form.replace('*', ''))
 					idx += 1
+				retokenised_sentence.append(form.strip('¶'))
 	
 		print('# sent_id = %s:%d' % (book, current_sentence_id))
 		print('# text = %s' % detokenise(' '.join(retokenised_sentence)))
