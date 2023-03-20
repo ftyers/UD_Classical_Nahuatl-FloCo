@@ -20,6 +20,8 @@ def guess(norm, guessed_lemma):
 		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+iztli$', norm):
 		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
+	if re.findall('quin[a-z]+tia$', norm):
+		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('hual[a-z]+tia$', norm):
 		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+huilia$', norm):
