@@ -1442,7 +1442,7 @@
 # text[norm] = Ipampa y in tetahuan, anozo tenahuan, quimilhuiaya in inpilhuan: maca xonquiza, tlalpan aci, temo in Cihuapipiltin.
 # text[orig] = Jpampa·y¶yn·tetaoa·,·anoço·tenaoa·,·qujmil¶hujaia·y·njn·pilhoan·:·maca·xon¶qujca·,·tlalpan·aci·,·temo·in·cioa¶pipilti·.
 # tagged = 95.45%
-# analysed = 68.18%
+# analysed = 72.73%
 1	Jpampa	_	NOUN	_	NounType=Relat	_	_	_	Folio=4|Paragraph=7|Line=10|Norm=Ipampa|Gloss=porque
 2	y	y	CCONJ	_		_	_	_	Folio=4|Paragraph=7|Line=10|Norm=y|AmbigNorm=True|Override=False|Analysed=Yes
 3	yn	in	DET|SCONJ	_	_	_	_	_	Folio=5|Paragraph=1|Line=1|Norm=in
@@ -1458,7 +1458,7 @@
 13	maca	_	X	_	_	_	_	_	Folio=5|Paragraph=1|Line=2|Norm=maca
 14	xonqujca	_	VERB	_	_	_	_	_	Orig=xon¶·qujca|Folio=5,5|Paragraph=1,1|Line=2,3|Norm=xonquiza|Guessed=Yes
 15	,	,	PUNCT	_		_	_	_	Folio=5|Paragraph=1|Line=3|Norm=,|Analysed=Yes
-16	tlalpan	_	NOUN	_	_	_	_	_	Folio=5|Paragraph=1|Line=3|Norm=tlalpan|Locative=Yes
+16	tlalpan	tlalpan	NOUN	_	Locative=Yes	_	_	_	Folio=5|Paragraph=1|Line=3|Norm=tlalpan|Locative=Yes|Analysed=Yes
 17	aci	_	VERB	_	_	_	_	_	Folio=5|Paragraph=1|Line=3|Norm=aci
 18	,	,	PUNCT	_		_	_	_	Folio=5|Paragraph=1|Line=3|Norm=,|Analysed=Yes
 19	temo	_	VERB	_	_	_	_	_	Folio=5|Paragraph=1|Line=3|Norm=temo
@@ -5369,8 +5369,8 @@
 # text = Jn aqujn ipam muchioaia, yn, cuculiztli toqujchti, yuicpa monetoltiaia, yujcpa mjtoaia: ynjc onmaqujz yn jicoaio, ynjc itlan aquiz, yn jquac ilhujqujxtililo: motocaiotia, thacaxipeoaliztli: tlapainaltiaia, tetocaia, mjequjntin momanaia, muchinti eoaiotiuj, chichiiaoatiuj, chichipicatiuj, tzotzotlantiuj in tetoca, ynjc motlamauhtiliaia: qujnnecaliltiaia, qujnnamjquj in tiiacaoan, tlapepenti, tlatzonanti: yoan in ixqujchti, çan papaqujnj, yn mjhivintia, tlatlamati, moqujchnequj, moqujchnenequj, amjquizmauhque, teca momotlanj, iaotlaveliloque: vncan moieiecoaia, moiaomamachtiaia, yn juh mjcalizque iaopan, vmpa mocacaoaia yn aiac, mjtoaia totecco.
 # text[norm] = In aquin ipan mochihuaya, in, cocoliztli toquichti, ihuicpa monetoltiaya, ihuicpa mihtoaya: inic onmaquiz in iyicohuayo, inic itlan aquiz, in ihcuac ilhuiquixtililo: motocayotia, tlacaxipehualiztli: tlapayinaltiaya, tetocaya, micquintin momanaya, mochinti ehuayotihui, chihiyaoatihui, chichipicatihui, tzotzotlantihui in tetoca, inic motlamauhtiliaya: quinnecaliltiaya, quinnamiqui in tiyacahuan, tlapepenti, tlatzonanti: ihuan in ixquichti, zan papaquini, in mihuihuintia, tlatlamati, moquichnequi, moquichnenequi, amiquizmauhque, teca momotlani, yaotlahueliloque: oncan moyeyecohuaya, moyaomamachtiaya, in iuh micalizque yaopan, ompa mocacahuaya in ayac, mihtoaya Totecco.
 # text[orig] = J·na·qujn·ipam·muchioaia·,·yn·,·cu¶culiztli·toqujchti·,·yuicpa·mone¶toltiaia·,·yujcpa·mjtoaia·:·y·njc¶onmaqujz·y·nj·icoaio·,·y·njc·itlan¶aquiz·,·y·nj·quac·ilhujqujxtililo·:·motocaiotia·,·thacaxipeoaliztli·:·tla¶painaltiaia·,·tetocaia·,·mjequjn¶tin·momanaia·,·muchinti·eoaio¶tiuj·,·chichiiaoatiuj·,·chichipica¶tiuj·,·tzotzotlantiuj·in·tetoca·,·y·njc¶motlamauhtiliaia·:·qujnnecalil¶tiaia·,·qujnnamjquj·in·tiiacaoan·,·tlapepenti·,·tlatzonanti·:·yoan·inix¶qujchti·,·çan·papaqujnj·,·yn·mjhivin¶tia·,·tlatlamati·,·moqujchnequj·,·moqujchnenequj·,·amjquizmauh¶que·,·teca·momotlanj·,·iaotlaveli¶loque·:·vncan·moieiecoaia·,·mo·ia¶omamachtiaia·,·ynjuh·mjcaliz¶que·iaopan·,·vmpa·mocacaoaia¶y·naiac·,·mj·toaia·totecco·.
-# tagged = 73.33%
-# analysed = 58.10%
+# tagged = 74.29%
+# analysed = 59.05%
 1	Jn	in	DET|SCONJ	_	_	_	_	_	Orig=J·na·qujn|Folio=16,16,16|Paragraph=0,0,0|Line=11,11,11|Norm=In
 2	aqujn	aquin	PRON	_		_	_	_	Orig=J·na·qujn|Folio=16,16,16|Paragraph=0,0,0|Line=11,11,11|Norm=aquin|Analysed=Yes
 3	ipam	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3	_	_	_	Folio=16|Paragraph=0|Line=11|Norm=ipan|Analysed=Yes
@@ -5466,7 +5466,7 @@
 93	yn	in	DET|SCONJ	_	_	_	_	_	Orig=ynjuh|Folio=16|Paragraph=1|Line=4|Norm=in
 94	juh	_	ADV	_	_	_	_	_	Orig=ynjuh|Folio=16|Paragraph=1|Line=4|Norm=iuh
 95	mjcalizque	_	VERB	_	_	_	_	_	Orig=mjcaliz¶·que|Folio=16,16|Paragraph=1,1|Line=4,5|Norm=micalizque|Guessed=Yes
-96	iaopan	_	X	_	_	_	_	_	Folio=16|Paragraph=1|Line=5|Norm=yaopan
+96	iaopan	yaopan	NOUN	_	Locative=Yes	_	_	_	Folio=16|Paragraph=1|Line=5|Norm=yaopan|Analysed=Yes
 97	,	,	PUNCT	_		_	_	_	Folio=16|Paragraph=1|Line=5|Norm=,|Analysed=Yes
 98	vmpa	ompa	ADV	_		_	_	_	Folio=16|Paragraph=1|Line=5|Norm=ompa|Gloss=allá|Analysed=Yes
 99	mocacaoaia	_	VERB	_	_	_	_	_	Folio=16|Paragraph=1|Line=5|Norm=mocacahuaya|Guessed=Yes
