@@ -95,6 +95,7 @@ Multichar_Symbols
 %{q%}
 %{n%}
 %{i%}
+%{N%}
 
 LEXICON Root
 
@@ -176,19 +177,19 @@ LEXICON ObjetoInd
 
 LEXICON DireccionalIV
 
-%<on%>:on%>                                                      IV ;
+%<on%>:o%{N%}%>                                                  IV ;
 %<hual%>:hual%>                                                  IV ;
                                                                  IV ;
 
  LEXICON DireccionalTV
 
-%<on%>:on%>                                                      TV ;
+%<on%>:o%{N%}%>                                                      TV ;
 %<hual%>:hual%>                                                  TV ;
                                                                  TV ;
 
 LEXICON DireccionalDV
 
-%<on%>:on%>                                                      DV ;
+%<on%>:o%{N%}%>                                                      DV ;
 %<hual%>:hual%>                                                  DV ;
                                                                  DV ; 
 
@@ -410,6 +411,11 @@ LEXICON N-CICITLALTIN
 @D.Poss@%<n%>%<pl%>:@D.Poss@%>tin        # ;
 
 
+LEXICON N-SPA-ES
+
+%<n%>:                                   # ;
+%<n%>%<pl%>:%>es                          # ;
+
 LEXICON N-SPA-S
 
 %<n%>:                                   # ;
@@ -562,6 +568,7 @@ intla:intla                                     PRON-INTLA ;
 
 aca:aca                                         PRON-INTLA ;
 aquin:aqui                                      PRON-AQUIN ;
+ayatle:ayatle                                   PRON-INTLA ;
 
 LEXICON Numeros
 
@@ -5817,6 +5824,7 @@ padre:padre                                     N-Ø     ; ! ""
 capítulo:capítulo                               N-Ø     ; ! ""
 
 don:don                                         N-SPA ; ! ""
+gobernador:gobernador                           N-SPA-ES ; ! ""
 audiencia:audiencia                             N-SPA-S     ; ! ""
 mayordomo:mayordomo                             N-SPA-S     ; ! ""
 párrafo:párrafo                                 N-SPA-S ; ! ""
@@ -5880,6 +5888,8 @@ azo:azo                                         ADV ; ! ""
 huel:huel                                       ADV ; ! ""
 zatepan:zatepan                                 ADV ; ! ""
 
+ihuiyan:ihuiyan                                 ADV ; ! "pacíficamente"
+
 yohualtica:yohualtica                           ADV ; ! ""
 
 
@@ -5938,6 +5948,7 @@ maca:mac                                        V-DV-A ;
 namaca:namac                                    V-DV-A ; 
 huica:huic                                      V-DV-A ; 
 machtia:mach                                    V-DV-TIA ; 
+pehualtia:pehual                                V-TV-TIA ;
 
 LEXICON Irregulares 
 
