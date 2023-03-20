@@ -1,5 +1,5 @@
 TARGETS = ../conllu/Book_01_-_The_Gods.conllu ../conllu/Book_05_-_The_Omens.conllu 
-DEPS = lexicon.tsv normalisation.tsv retokenisation.tsv tagset.tsv ../fst/nci.mor.att.gz
+DEPS = lexicon.tsv normalisation.tsv retokenisation.tsv tagset.tsv ../fst/nci.mor.att.gz tag-codex.py
 
 all: $(TARGETS)
 

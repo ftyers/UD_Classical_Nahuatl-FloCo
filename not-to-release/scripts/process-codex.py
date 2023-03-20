@@ -271,20 +271,28 @@ for token in tokens:
 				form = token[0].strip('¶')
 				norm, norm_form, ambiguous, overridden = normalise(table, norm_overrides, token[0], idx)
 
+				conllu_subtokens = []
+				if form in subtoken_table:
+					if sentence_id_string in subtoken_table[form]:
+						conllu_subtokens = subtoken_table[form][sentence_id_string]
 
-#				conllu_subtokens = []
-#				if subtoken in subtoken_table:
-#					if sentence_id_string in subtoken_table[subtoken]:
-#						conllu_subtokens = subtoken_table[subtoken][sentence_id_string]
-
-				if ambiguous:
-					lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s|AmbigNorm=%s|Override=%s' % (token[1], token[2], token[3], norm, ambiguous, overridden)))
+				if len(conllu_subtokens) > 0:
+					span = '%d-%d' % (idx, idx+len(conllu_subtokens) -1)
+					lines.append('%s\t%s\t_\t_\t_\t_\t_\t_\t_\t_' % (span, form))
+					for conllu_subtoken in conllu_subtokens:
+						norm, norm_form, ambiguous, overridden = normalise(table, norm_overrides, conllu_subtoken, idx)
+						lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, conllu_subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s' % (manu, foli, para, line, norm)))
+						normalised_sentence.append(norm_form.replace('*', ''))
+						idx += 1
 				else:
-					lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s' % (token[1], token[2], token[3], norm)))
+					if ambiguous:
+						lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s|AmbigNorm=%s|Override=%s' % (token[1], token[2], token[3], norm, ambiguous, overridden)))
+					else:
+						lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s' % (token[1], token[2], token[3], norm)))
+					normalised_sentence.append(norm_form.replace('*', ''))
+					idx += 1
 				retokenised_sentence.append(form.strip('¶'))
-				normalised_sentence.append(norm_form.replace('*', ''))
-				idx += 1
-
+	
 		print('# sent_id = %s:%d' % (book, current_sentence_id))
 		print('# text = %s' % detokenise(' '.join(retokenised_sentence)))
 		print('# text[norm] = %s' % detokenise(' '.join(normalised_sentence)))
