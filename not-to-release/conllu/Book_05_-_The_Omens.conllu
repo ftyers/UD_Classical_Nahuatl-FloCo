@@ -189,7 +189,7 @@
 # text[norm] = Inin, quitohuaya ye yaomiquiz: anozo ye miquiz, tlalmiquiz: anozo, ye itla commonamictiz, icnoyotl: azo monamacaz, motlanamictiz: anozo ipilhuan cemeh quinmonamaquiliz, quintlanamictiz: quintlatlacolnamictiz, icnoyotl calaquiz, in inextitlan, in itlecuillan: atl nehneciz in ichan.
 # text[orig] = Ynjn·,·qujtovaia·ie·iaomj¶qujz·:·anoço·ie·mjqujz·,·tlalmiqujz·:·anoço·,·ie·itla·com·monamjctiz·,·ic¶noiotl·:·aco·monamacaz·,·motlanamjc¶tiz·:·anoço·ipilhoan·ceme·quin·mona¶maqujliz·,·qujn·tlanamjctiz·:·qujntlatlacul¶namjctiz·,·icnoiotl·calaqujz·,·inj·nextitlan·,·injtlecujllan·:·atl·neneciz·injchan·.
 # tagged = 100.00%
-# analysed = 68.75%
+# analysed = 70.83%
 1	Ynjn	_	DET|PRON	_	_	_	_	_	Folio=1|Paragraph=4|Line=6|Norm=Inin
 2	,	,	PUNCT	_		_	_	_	Folio=1|Paragraph=4|Line=6|Norm=,|Analysed=Yes
 3	qujtovaia	_	VERB	_	_	_	_	_	Folio=1|Paragraph=4|Line=6|Norm=quitohuaya|Guessed=Yes
@@ -213,12 +213,12 @@
 19	icnoiotl	icnoyotl	NOUN	_	Case=Abs	_	_	_	Orig=ic¶·noiotl|Folio=1,1|Paragraph=4,5|Line=8,1|Norm=icnoyotl|Gloss=pobreza|Analysed=Yes
 20	:	:	PUNCT	_		_	_	_	Folio=1|Paragraph=5|Line=1|Norm=:|Analysed=Yes
 21	aco	azo	ADV	_		_	_	_	Folio=1|Paragraph=5|Line=1|Norm=azo|Gloss=quizás|Analysed=Yes
-22	monamacaz	_	VERB	_	_	_	_	_	Folio=1|Paragraph=5|Line=1|Norm=monamacaz
+22	monamacaz	namaca	VERB	_	Number[subj]=Sing|Person[subj]=3|Subcat=Ditr|Tense=Fut|VerbForm=Fin	_	_	_	Folio=1|Paragraph=5|Line=1|Norm=monamacaz|Analysed=Yes
 23	,	,	PUNCT	_		_	_	_	Folio=1|Paragraph=5|Line=1|Norm=,|Analysed=Yes
 24	motlanamjctiz	_	VERB	_	_	_	_	_	Orig=motlanamjc¶·tiz|Folio=1,1|Paragraph=5,5|Line=1,2|Norm=motlanamictiz
 25	:	:	PUNCT	_		_	_	_	Folio=1|Paragraph=5|Line=2|Norm=:|Analysed=Yes
 26	anoço	anozo	ADV	_		_	_	_	Folio=1|Paragraph=5|Line=2|Norm=anozo|Analysed=Yes
-27	ipilhoan	pilli	NOUN	_	Number=Plur|Number[psor]=Sing|Person[psor]=3	_	_	_	Folio=1|Paragraph=5|Line=2|Norm=ipilhuan|Analysed=Yes
+27	ipilhoan	_	NOUN	_	_	_	_	_	Folio=1|Paragraph=5|Line=2|Norm=ipilhuan
 28	ceme	_	PRON	_	_	_	_	_	Folio=1|Paragraph=5|Line=2|Norm=cemeh
 29	quinmonamaqujliz	_	VERB	_	_	_	_	_	Orig=quin·mona¶·maqujliz|Folio=1,1,1|Paragraph=5,5,5|Line=2,2,3|Norm=quinmonamaquiliz
 30	,	,	PUNCT	_		_	_	_	Folio=1|Paragraph=5|Line=3|Norm=,|Analysed=Yes
@@ -2386,7 +2386,7 @@
 31	anoce	_	CCONJ	_	_	_	_	_	Folio=7|Paragraph=1|Line=5|Norm=anoce
 32	aca	_	DET|PRON	_	_	_	_	_	Folio=7|Paragraph=1|Line=5|Norm=aca
 33	ce	ce	NUM	_		_	_	_	Folio=7|Paragraph=1|Line=5|Norm=ce|AmbigNorm=True|Override=False|Gloss=uno|Analysed=Yes
-34	ipiltzin	pilli	NOUN	_	Number[psor]=Sing|Person[psor]=3	_	_	_	Folio=7|Paragraph=1|Line=5|Norm=ipiltzin|Analysed=Yes
+34	ipiltzin	_	NOUN	_	_	_	_	_	Folio=7|Paragraph=1|Line=5|Norm=ipiltzin
 35	ie	_	ADV	_	_	_	_	_	Orig=iemjquiz|Folio=7|Paragraph=1|Line=6|Norm=ye|AmbigNorm=True|Override=False
 36	mjquiz	miqui	VERB	_	Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	_	_	_	Orig=iemjquiz|Folio=7|Paragraph=1|Line=6|Norm=miquiz|Analysed=Yes
 37	,	,	PUNCT	_		_	_	_	Folio=7|Paragraph=1|Line=6|Norm=,|Analysed=Yes
@@ -3719,7 +3719,7 @@
 25	qujntlacaoaltia	_	VERB	_	_	_	_	_	Folio=10|Paragraph=1|Line=7|Norm=quintlacahualtia|Guessed=Yes
 26	,	,	PUNCT	_		_	_	_	Folio=10|Paragraph=1|Line=7|Norm=,|Analysed=Yes
 27	in	in	DET|SCONJ	_	_	_	_	_	Orig=intepilchoa|Folio=10|Paragraph=1|Line=7|Norm=in
-28	tepilchoa	pilli	NOUN	_	Animacy[psor]=Anim|Number=Plur|Person[psor]=3	_	_	_	Orig=intepilchoa|Folio=10|Paragraph=1|Line=7|Norm=tepilhuan|Gloss=hijos.de.alguien|Analysed=Yes
+28	tepilchoa	_	NOUN	_	_	_	_	_	Orig=intepilchoa|Folio=10|Paragraph=1|Line=7|Norm=tepilhuan|Gloss=hijos.de.alguien
 29	:	:	PUNCT	_		_	_	_	Folio=10|Paragraph=1|Line=7|Norm=:|Analysed=Yes
 30	injc	_	SCONJ	_	_	_	_	_	Folio=10|Paragraph=1|Line=8|Norm=inic
 31	amo	amo	ADV	_		_	_	_	Folio=10|Paragraph=1|Line=8|Norm=amo|Gloss=no|Analysed=Yes
