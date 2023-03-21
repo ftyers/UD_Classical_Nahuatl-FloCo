@@ -9,9 +9,13 @@ Alphabet
  %{u%}:0
  %{N%}:n %{N%}:m
 
- %~:0 
- %·:0
- %>:0 ;
+ %~:%~
+ %·:%·
+ %>:%>
+ %«:%« 
+ %»:%»
+
+;
 
 
 Sets
@@ -23,9 +27,6 @@ Cns   = b c d f g h j k l m n p q r s t w x y z u ;
 
 
 Rules
-
-"Morpheme boundary"
-%>:0 <=> _ ; 
 
 "Objeto I"
 u:0 <=> %{q%}:c _  ; 
