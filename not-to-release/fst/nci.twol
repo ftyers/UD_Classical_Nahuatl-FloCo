@@ -3,6 +3,7 @@ Alphabet
  A B C D E F G H I J K L M N O P Q R S T U W X Y Z
  a b c d e f g h i j k l m n o p q r s t u w x y z
 
+ %{a%}:a
  %{q%}:q %{q%}:c
  %{n%}:n %{n%}:m
  %{i%}:i %{u%}:u
@@ -34,6 +35,7 @@ u:0 <=> %{q%}:c _  ;
 "Objeto II"
 i:0 <=> %{q%}:c u:0 _ %>: ;
                     _ %>: %{i%}: ; 
+                    _ %>: %{a%}: ;
 
 !@ {q}:q u:u i:0 >:0 {i}:i h:h t:t o:o a:a >:0 y:y a:a
 

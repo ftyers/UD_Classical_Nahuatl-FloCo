@@ -92,6 +92,7 @@ Multichar_Symbols
 @R.Poss.1@
 @D.Poss@
 
+%{a%}
 %{q%}
 %{n%}
 %{i%}
@@ -159,6 +160,8 @@ LEXICON ObjetoDir
 %<o_sg1%>:nech%>                                                 DireccionalTV ;
 %<o_sg2%>:mitz%>                                                 DireccionalTV ;
 %<o_sg3%>:%{q%}ui%>                                              DireccionalTV ;
+%<o_pl1%>:tech%>                                                 DireccionalTV ;
+%<o_pl2%>:%{a%}mech%>                                            DireccionalTV ;
 %<o_pl3%>:%{q%}ui%{n%}%>                                         DireccionalTV ;
 %<o_ref%>:mo%>                                                   DireccionalTV ;
 %<o_aa3%>:te%>                                                   DireccionalTV ;
@@ -170,6 +173,8 @@ LEXICON ObjetoInd
 %<i_sg1%>:nech%>                                                 DireccionalDV ;
 %<i_sg2%>:mitz%>                                                 DireccionalDV ;
 %<i_sg3%>:%{q%}ui%>                                              DireccionalDV ;
+%<i_pl1%>:tech%>                                                 DireccionalDV ;
+%<i_pl2%>:%{a%}mech%>                                            DireccionalDV ;
 %<i_pl3%>:%{q%}ui%{n%}%>                                         DireccionalDV ;
 %<i_ref%>:mo%>                                                   DireccionalDV ;
 %<i_aa3%>:te%>                                                   DireccionalDV ;
@@ -635,6 +640,7 @@ milpan:milpan                                   N-LOC ; ! ""
 tlalpan:tlalpan                                 N-LOC ; ! ""
 tianquizco:tianquizco                           N-LOC ; ! ""
 tianquizpan:tianquizpan                         N-LOC ; ! ""
+atlan:atlan                                     N-LOC ; ! ""
 
 LEXICON Comunes 
 
@@ -5902,6 +5908,7 @@ LEXICON IV
 
 cochi:coch                                      V-IV-I ; 
 choca:choc                                      V-IV-A ; 
+cuica:cuic                                      V-IV-A ; 
 quiza:quiz                                      V-IV-A ; 
 hualla:huall                                    V-IV-A ; 
 huetzi:huetz                                    V-IV-I ; 
