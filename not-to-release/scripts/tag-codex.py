@@ -147,9 +147,9 @@ def sort_features(ufeats):
 		ufeats = '|'.join(['%s=%s' % (i, j) for i, j in ufeats])
 	return ufeats
 
-	
 lexicon = read_lexicon('lexicon.tsv')
-fst = ATTFST('../fst/nci.mor.att.gz')
+morfst = ATTFST('../fst/nci.mor.att.gz')
+genfst = ATTFST('../fst/nci.gen.att.gz')
 convertor = Convertor('tagset.tsv')
 
 total = 0
@@ -185,17 +185,20 @@ for bloc in sys.stdin.read().split('\n\n'):
 		attrs = {pair.split('=')[0] : pair.split('=')[1] for pair in misc.split('|')}
 		norm = attrs['Norm']
 
-		analyses = list(fst.apply(norm))
+		analyses = list(morfst.apply(norm))
 		if len(analyses) == 0:
-			analyses = list(fst.apply(norm.lower()))
+			analyses = list(morfst.apply(norm.lower()))
 			
 #		print('ANAL', analyses)
 		converted_analyses = []
+		generated_analyses = {}
 		# [{'lemma': 'teotl', 'pos': 'NOUN', 'feats': {'Case': 'Abs'}}] [('teotl<n><abs>', 0.0)]
 		for analysis in analyses:
-			c = convertor.convert(analysis[0])
+			a = analysis[0]
+			c = convertor.convert(a)
+			generated_analyses[a] = list(genfst.apply(a))
 			converted_analyses.append(c[0])
-	#		print(form, '|', norm, '|||', c, analyses, file=sys.stderr)
+			#print(form, '|', norm, '|||', c, '|||', a, '|||', generated_analyses, file=sys.stderr)
 
 		if len(converted_analyses) > 0:
 			n_analysed += 1
