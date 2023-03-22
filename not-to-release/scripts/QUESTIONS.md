@@ -2,6 +2,13 @@
 
   * Valency changes, *quinyaochichiuh*
 
+```
+29	oqujniauchiuhque	chihua	VERB	_	Aspect=Prior|Number[obj]=Plur|Number[subj]=Plur|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=13|Paragraph=6|Line=6|Norm=oquinyaochiuhque|Analysed=Yes
+29.1	_	yaotl	NOUN	_	_	_	_	_	Incorporated=Yes
+```
+  
+  * Should the `[obj]` here be `[iobj]` ?
+
 * How do we deal with compounding 
 
   * Of lexical items: *calcuauhuitl*
