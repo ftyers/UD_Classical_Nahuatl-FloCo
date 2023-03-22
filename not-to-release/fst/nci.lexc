@@ -274,6 +274,14 @@ LEXICON V-TV-OA
 %<v%>%<tv%>:oa                                                     V-FUT ; 
 %<v%>%<tv%>:o                                                      V-PAST ; 
 
+LEXICON V-TV-YA 
+
+%<v%>%<tv%>:ya                                                      V-IMPERF ; 
+%<v%>%<tv%>:ya                                                      V-PRES ; 
+%<v%>%<tv%>:ya                                                      V-FUT ; 
+%<v%>%<tv%>:x                                                       V-PAST ; 
+
+
 LEXICON V-TV-A 
 
 %<v%>%<tv%>:a                                                      V-IMPERF ; 
@@ -421,7 +429,7 @@ LEXICON N-NI
 %<n%>:                                  N-DERIV ;
 
 
-LEXICON N-TECA
+LEXICON N-ECA
 
 @D.Poss@%<n%>%<abs%>:@D.Poss@           # ;
 @R.Poss.1@%<n%>:@R.Poss.1@              N-POSESION ;
@@ -2847,7 +2855,8 @@ ihhuitl:ihhui                                   N-HUITL ; ! ""
 ilhuitl:ilhui                                   N-HUITL ; ! ""
 ixpilhuitl:ixpilhui                             N-HUITL ; ! ""
 
-pochteca:pochteca                               N-TECA ; ! ""
+pochteca:pochteca                               N-ECA ; ! ""
+chichimeca:chichimeca                           N-ECA ; ! ""
 
 acacpalli:acacpal                               N-LI ; ! ""
 acalli:acal                                     N-LI ; ! ""
@@ -5958,7 +5967,7 @@ notza:notz                                      V-TV-A ;
 nonotza:no~notz                                  V-TV-A ;
 quetza:quetz                                    V-TV-A ;
 quequetza:que~quetz                              V-TV-A ;
-piya:piy                                        V-TV-A ;
+piya:pi                                        V-TV-YA ;
 ihtoa:%{i%}ht                                   V-TV-OA ;
 pehua:pe                                        V-TV-HUA ;
 chihua:chi                                      V-TV-HUA ;
