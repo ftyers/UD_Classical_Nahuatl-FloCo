@@ -284,6 +284,7 @@ LEXICON V-TV-YA
 
 LEXICON V-TV-A 
 
+%<v%>%<tv%>%<past%>:a%>c                                           V-AGR-NBR-SG ;
 %<v%>%<tv%>:a                                                      V-IMPERF ; 
 %<v%>%<tv%>:a                                                      V-PRES ; 
 %<v%>%<tv%>:a                                                      V-FUT ; 
@@ -476,6 +477,11 @@ LEXICON NP-LOC
 
 %<np%>%<loc%>:                                         # ; 
 
+
+LEXICON NP-TL
+
+%<np%>:tl                                        # ; 
+%<np%>%<rev%>:%>tzin                                        # ; 
 
 LEXICON NP
 
@@ -1797,7 +1803,7 @@ nextecuillotl:nextecuillo                        N-TL ; ! ""
 nextecuiltentetl:nextecuiltente                  N-TL ; ! ""
 nextlacotl:nextlaco                              N-TL ; ! ""
 nexzoquitl:nexzoqui                              N-TL ; ! ""
-nezahualcoyotl:nezahualcoyo                      N-TL ; ! ""
+!nezahualcoyotl:nezahualcoyo                      N-TL ; ! ""
 nezcalihcayotl:nezcalihcayo                      N-TL ; ! ""
 nezcayotl:nezcayo                                N-TL ; ! ""
 nochxochitl:nochxochi                            N-TL ; ! ""
@@ -2286,7 +2292,7 @@ tlazolteocihuatl:tlazolteocihua                  N-TL ; ! ""
 tlazolteotl:tlazolteo                            N-TL ; ! ""
 tlazolxochitl:tlazolxochi                        N-TL ; ! ""
 tlazolxocotl:tlazolxoco                          N-TL ; ! ""
-tlazolyaotl:tlazolyao                            N-TL ; ! ""
+!tlazolyaotl:tlazolyao                            N-TL ; ! ""
 tlazotl:tlazo                                    N-TL ; ! ""
 tleatoyatl:tleatoya                              N-TL ; ! ""
 tlecallotl:tlecallo                              N-TL ; ! ""
@@ -5869,7 +5875,10 @@ párrafo:párrafo                                 N-SPA-S ; ! ""
 
 LEXICON Propios 
 
-Quetzalcoatl:Quetzalcoatl                       NP    ; ! ""
+Quetzalcoatl:Quetzalcoa                       NP-TL    ; ! ""
+Tlazolteotl:Tlazolteo                         NP-TL ; ! ""
+Nezahualcoyotl:Nezahualcoyo                   NP-TL ; ! ""
+Tlazolyaotl:Tlazolyao                         NP-TL ; ! ""
 Moquihuixtli:Moquihuixtli                       NP    ; ! ""
 Itzcoatzin:Itzcoatzin                           NP    ; ! ""
 Huitzilopochtli:Huitzilopochtli                 NP    ; ! ""
@@ -5893,7 +5902,6 @@ Centzonhuitznahua:Centzonhuitznahua                NP ; ! ""
 Coyolxauh:Coyolxauh                NP ; ! ""
 Omacatl:Omacatl                NP ; ! ""
 Opochtli:Opochtli                NP ; ! ""
-Tlazolteotl:Tlazolteotl                         NP ; ! ""
 
 
 LEXICON Adjetivos
@@ -5959,6 +5967,7 @@ itta:%{i%}tt                                    V-TV-A ;
 toca:toc                                        V-TV-A ;
 tlaza:tlaz                                      V-TV-A ;
 cua:cu                                          V-TV-A ;
+teca:tec                                         V-TV-A ;
 nequi:nequ                                      V-TV-I ;
 caqui:caqu                                      V-TV-I ;
 tequi:tequ                                      V-TV-I ;
