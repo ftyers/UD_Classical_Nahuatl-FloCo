@@ -4,7 +4,7 @@
 
 * How do we deal with compounding 
 
-  * Of lexical items:
+  * Of lexical items: *calcuauhuitl*
 
   * Of relational nouns: 
 

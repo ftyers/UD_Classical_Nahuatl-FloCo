@@ -6,6 +6,7 @@ Multichar_Symbols
 %<num%>
 %<det%>
 %<adv%>
+%<aux%>
 %<cnjsub%>
 %<cnjcoo%>
 %<redup%>
@@ -125,6 +126,7 @@ LEXICON Possessives
 %<px3aa%>:te%> Sustantivos ; 
 
 %<px1sg%>:no%> Sustantivos ; 
+%<px1sg%>:no~no%> Sustantivos ;  ! FIXME: Check
 %<px2sg%>:mo%> Sustantivos ; 
 %<px3sg%>:i%> Sustantivos ; 
 %<px1pl%>:to%> Sustantivos ; 
@@ -250,8 +252,10 @@ LEXICON V-DERIV
 
 LEXICON V-AUX 
 
-%+nemi%<aux%>:%>ti·nemi                                            V-AGR-EMPTY ;
-%+nemi%<aux%>%<past%>:%>ti·nen%>ca                                 V-AGR-EMPTY ;
+%+nemi%<aux%>:%>ti·nemi                                            V-AGR-NBR-SG ;
+%+nemi%<aux%>:%>ti·nemi                                            V-AGR-NBR-PL ;
+%+nemi%<aux%>%<past%>:%>ti·nen%>ca                                 V-AGR-NBR-SG ;
+%+nemi%<aux%>%<past%>:%>ti·nen%>ca                                 V-AGR-NBR-PL ;
 
 LEXICON V-DV-TIA
 
@@ -273,6 +277,7 @@ LEXICON V-TV-OA
 %<v%>%<tv%>:oa                                                     V-PRES ; 
 %<v%>%<tv%>:oa                                                     V-FUT ; 
 %<v%>%<tv%>:o                                                      V-PAST ; 
+%<v%>%<tv%>:o                                                      V-DERIV ; 
 
 LEXICON V-TV-YA 
 
@@ -363,6 +368,7 @@ LEXICON V-IV-OA
 %<v%>%<iv%>:oa                                                     V-PRES ; 
 %<v%>%<iv%>:o                                                      V-FUT ; 
 %<v%>%<iv%>:o                                                      V-PAST ; 
+%<v%>%<iv%>:oti                                                     V-DERIV ; 
 
 
 
@@ -371,13 +377,13 @@ LEXICON V-IV-OA
 LEXICON N-DERIV 
 
 %<rev%>:%>tzin # ;
-%<rev%>%<pl%>:%>tzi%>tzin # ;
+%<rev%>%<pl%>:%>tzi~tzin # ;
 %<dim%>:%>ton # ;
 %<aug%>:%>pol # ;
 
 LEXICON N-DERIV-PL
 
-%<rev%>:%>tzi%>tzin # ;
+%<rev%>:%>tzi~tzin # ;
 
 LEXICON N-POSESION
 
@@ -685,8 +691,9 @@ tetl:te                                         N-TL    ; ! "díos"
 calli:cal                                       N-LI    ; ! "casa"
 cuicacalli:cuicacal                             N-LI    ; ! ""
 teocalli:teocal                                 N-LI    ; ! ""
-pilli¹:pil                                      N-LI    ; ! ""
-pilli¹:pi~pil                                   N-CICITLALTIN ; ! ""
+!pilli:pil                                       N-LI ; ! "hijo" ! FIXME: Possessive only?
+pilli:pil                                      N-LI    ; ! ""
+pilli:pi~pil                                   N-CICITLALTIN ; ! ""
 tlacualli:tlacual                               N-LI    ; ! "comida"
 amoxtli:amox                                    N-TLI   ; ! "libro"
 cactli:cac                                      N-TLI   ; ! "zapato"
@@ -2906,7 +2913,6 @@ tolmimilli:tolmimil                             N-LI ; ! ""
 tonalli:tonal                                   N-LI ; ! "día"
 tzohualli:tzohual                               N-LI ; ! ""
 yohualli:yohual                                 N-LI ; ! "noche"
-pilli:pil                                       N-LI ; ! "hijo"
 quetzalli:quetzal                               N-LI ; ! ""
 nechichihualli:nechichihual                     N-LI ; ! ""
 aapilolli:aapilol                               N-LI ; ! ""
