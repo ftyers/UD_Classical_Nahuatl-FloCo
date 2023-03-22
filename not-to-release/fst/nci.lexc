@@ -248,6 +248,11 @@ LEXICON V-DERIV
 
 @R.S_AGR.NONE@:@R.S_AGR.NONE@                                      V-IMPERS ;
 
+LEXICON V-AUX 
+
+%+nemi%<aux%>:%>ti·nemi                                            V-AGR-EMPTY ;
+%+nemi%<aux%>%<past%>:%>ti·nen%>ca                                 V-AGR-EMPTY ;
+
 LEXICON V-DV-TIA
 
 %<v%>%<dv%>:tia                                                    V-IMPERF ; 
@@ -321,6 +326,7 @@ LEXICON V-TV-I
 
 LEXICON V-IV-A
 
+%<v%>%<iv%>:a                                                      V-AUX ; 
 %<v%>%<iv%>:a                                                      V-IMPERF ; 
 %<v%>%<iv%>:a                                                      V-PRES ; 
 %<v%>%<iv%>:a                                                      V-FUT ; 
@@ -669,6 +675,7 @@ tototl:toto                                     N-TL    ; ! "pájaro"
 tezahuitl:tezahui                               N-HUITL ; ! ""
 ilhuitl:ilhui                                   N-HUITL ; ! ""
 tlacatecolotl:tlacatecolo                       N-TL    ; ! ""
+tlatocayotl:tlatocayo                           N-TL    ; ! ""
 telpochtli:telpoch                              N-TLI   ; ! ""
 
 toca:toca                                       N-POSS ; ! ""
@@ -5920,6 +5927,7 @@ choloa:chol                                     V-IV-OA ;
 nemi:nem                                        V-IV-I ; 
 «yohualli%<n%>»nenemi:«yohual»ne~nem               V-IV-I ; 
 miqui:miqu                                      V-IV-I ; 
+!mimiqui:mi~miqu                                      V-IV-I ; 
 «yaotl%<n%>»miqui:«yao»miqu                       V-IV-I ; 
 «icxi%<n%>»mimiqui:«icxi»mi~miqu                   V-IV-I ; 
 «tlalli%<n%>»miqui:«tlal»miqu                     V-IV-I ; 
@@ -5927,6 +5935,7 @@ miqui:miqu                                      V-IV-I ;
 LEXICON TV 
 
 itta:%{i%}tt                                    V-TV-A ;
+toca:toc                                        V-TV-A ;
 tlaza:tlaz                                      V-TV-A ;
 nequi:nequ                                      V-TV-I ;
 caqui:caqu                                      V-TV-I ;
