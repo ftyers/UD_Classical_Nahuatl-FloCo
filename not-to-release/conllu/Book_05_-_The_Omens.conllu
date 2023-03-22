@@ -993,7 +993,7 @@
 # text[norm] = In ihcuac in, in aquin tachcauh, in tachcauhchiuhtiuh, in tachcauh icatiuh ohtlipan, oncan pehua, in quimelacuaohua, in quinchoquiztlapalohua, iteiccahuan, itlahuapahualhuan: in ohtli ipan quimixtlamachtia, quimilhuia.
 # text[orig] = Inj·quac¶yn·,·inaqujn·tachcauh·,·in·tach¶cauhchiuhtiuh·,·intachcauh·ica¶tiuh·vtlipan·,·vncan·peoa·,·in·quj¶melaquaoa·,·in·qujn·choqujztla¶paloa·,·iteiccaoan·,·itlahoapaval¶van·:·in·vtli·ipan·qujmixtla¶machtia·,·qujmjlvia·.
 # tagged = 91.67%
-# analysed = 69.44%
+# analysed = 72.22%
 1	In	in	DET|SCONJ	_	_	_	_	_	Orig=Inj·quac¶|Folio=3,3|Paragraph=1,1|Line=9,9|Norm=In
 2	jquac	ihcuac	SCONJ	_		_	_	_	Orig=Inj·quac¶|Folio=3,3|Paragraph=1,1|Line=9,9|Norm=ihcuac|Gloss=cuando|Analysed=Yes
 3	yn	in	DET|SCONJ	_	_	_	_	_	Folio=3|Paragraph=1|Line=10|Norm=in
@@ -1011,7 +1011,7 @@
 15	vtlipan	_	ADV	_	_	_	_	_	Folio=3|Paragraph=1|Line=12|Norm=ohtlipan
 16	,	,	PUNCT	_		_	_	_	Folio=3|Paragraph=1|Line=12|Norm=,|Analysed=Yes
 17	vncan	oncan	ADV	_		_	_	_	Folio=3|Paragraph=1|Line=12|Norm=oncan|Gloss=aquí|Analysed=Yes
-18	peoa	_	VERB	_	_	_	_	_	Folio=3|Paragraph=1|Line=12|Norm=pehua
+18	peoa	pehua	VERB	_	_	_	_	_	Folio=3|Paragraph=1|Line=12|Norm=pehua
 19	,	,	PUNCT	_		_	_	_	Folio=3|Paragraph=1|Line=12|Norm=,|Analysed=Yes
 20	in	in	DET|SCONJ	_	_	_	_	_	Folio=3|Paragraph=1|Line=12|Norm=in
 21	qujmelaquaoa	_	VERB	_	_	_	_	_	Orig=quj¶·melaquaoa|Folio=3,3|Paragraph=1,1|Line=12,13|Norm=quimelacuaohua|Guessed=Yes
@@ -3218,11 +3218,11 @@
 
 # sent_id = Book_05_-_The_Omens.txt:63
 # text = Tlen jc otivalla, tla njqujtta, tlacuele nocommaujco: njamn ic qujtztimotlalia, qujtztica in campa ie itztiaz.
-# text[norm] = Tlen ic otihualla, tla njqujtta, tlacuele nocommahuizo: niman ic quitztimotlalia, quitztica in campa ye itztiyaz.
+# text[norm] = Tlein ic otihualla, tla njqujtta, tlacuele nocommahuizo: niman ic quitztimotlalia, quitztica in campa ye itztiyaz.
 # text[orig] = Tlenjc·otivalla·,·tlanj·qujt¶ta·,·tlacuele·nocommaujco·:·njamn¶ic·qujtz·timotlalia·,·qujtztica·in·cam¶pa·ie·itztiaz·.
 # tagged = 90.00%
-# analysed = 35.00%
-1	Tlen	_	PRON	_	_	_	_	_	Orig=Tlenjc|Folio=9|Paragraph=1|Line=5|Norm=*Tlen
+# analysed = 40.00%
+1	Tlen	tlein	PRON	_	NounType=Relat	_	_	_	Orig=Tlenjc|Folio=9|Paragraph=1|Line=5|Norm=Tlein|Analysed=Yes
 2	jc	_	ADV	_	_	_	_	_	Orig=Tlenjc|Folio=9|Paragraph=1|Line=5|Norm=ic
 3	otivalla	hualla	VERB	_	_	_	_	_	Folio=9|Paragraph=1|Line=5|Norm=otihualla
 4	,	,	PUNCT	_		_	_	_	Folio=9|Paragraph=1|Line=5|Norm=,|Analysed=Yes
