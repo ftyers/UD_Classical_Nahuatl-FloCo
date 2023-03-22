@@ -220,12 +220,12 @@
 # text[norm] = Auh in macehualtin, quitocaya, quitlalochtocaya, coyohuitihuia, quicahuatzihuia, teuhtli quiquetztihuia, tlalli quipototztihuia: iuhquin tlaixquiquiza, tlalli tetecuica: auh ce tlacatl quinapalotihuia.
 # text[orig] = Auh·in¶maceoalti·,·qujtocaia·,·qujtlalochtoca¶ia·,·coiohujtiuja·,·quicaoatztiuja·,·te¶uhtli·quiquetztiuja·,·tlalli·qujpototz¶tiuja·:·iuh·qujn·tlaixquj·qujca·,·tlalli¶tetecujca·:·auh·ce·tlacatl·qujnapa¶lotiuja·.
 # tagged = 100.00%
-# analysed = 62.07%
+# analysed = 65.52%
 1	Auh	auh	CCONJ	_		_	_	_	Folio=1|Paragraph=6|Line=3|Norm=Auh|Gloss=y|Analysed=Yes
 2	in	in	DET|SCONJ	_	_	_	_	_	Folio=1|Paragraph=6|Line=3|Norm=in
 3	maceoalti	macehualli	NOUN	_	Number=Plur	_	_	_	Folio=1|Paragraph=6|Line=4|Norm=macehualtin|Analysed=Yes
 4	,	,	PUNCT	_		_	_	_	Folio=1|Paragraph=6|Line=4|Norm=,|Analysed=Yes
-5	qujtocaia	_	VERB	_	_	_	_	_	Folio=1|Paragraph=6|Line=4|Norm=quitocaya|Guessed=Yes
+5	qujtocaia	toca	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=1|Paragraph=6|Line=4|Norm=quitocaya|Analysed=Yes
 6	,	,	PUNCT	_		_	_	_	Folio=1|Paragraph=6|Line=4|Norm=,|Analysed=Yes
 7	qujtlalochtocaia	_	VERB	_	_	_	_	_	Orig=qujtlalochtoca¶·ia|Folio=1,1|Paragraph=6,6|Line=4,5|Norm=quitlalochtocaya|Guessed=Yes
 8	,	,	PUNCT	_		_	_	_	Folio=1|Paragraph=6|Line=5|Norm=,|Analysed=Yes
@@ -400,7 +400,7 @@
 # text[norm] = Auh in quenman, quitemacaya, in necuiltonolli: in tlatquitl, in oquichiotl, in tiyacauhiyotl, in tecuiyotl, in tlatocayotl, in pillotl, in mahuizzotl.
 # text[orig] = Auh·in·quenman·,·qujtema¶caia·,·in·necujltonolli·:·in·tlatqujtl·,·in·oqujchiotl·,·in·tiacauhiutl·,·in·te¶cuiotl·,·in·tlatocaiutl·,·in·pillotl·,·in¶mauizcotl·.
 # tagged = 100.00%
-# analysed = 76.67%
+# analysed = 80.00%
 1	Auh	auh	CCONJ	_		_	_	_	Folio=1|Paragraph=8|Line=12|Norm=Auh|Gloss=y|Analysed=Yes
 2	in	in	DET|SCONJ	_	_	_	_	_	Folio=1|Paragraph=8|Line=12|Norm=in
 3	quenman	_	ADV	_	_	_	_	_	Folio=1|Paragraph=8|Line=12|Norm=quenman|Gloss=a.veces
@@ -423,7 +423,7 @@
 20	tecuiotl	_	NOUN	_	_	_	_	_	Orig=te¶·cuiotl|Folio=2,2|Paragraph=1,1|Line=2,3|Norm=tecuiyotl|Guessed=Yes
 21	,	,	PUNCT	_		_	_	_	Folio=2|Paragraph=1|Line=3|Norm=,|Analysed=Yes
 22	in	in	DET|SCONJ	_	_	_	_	_	Folio=2|Paragraph=1|Line=3|Norm=in
-23	tlatocaiutl	_	NOUN	_	_	_	_	_	Folio=2|Paragraph=1|Line=3|Norm=tlatocayotl|Guessed=Yes
+23	tlatocaiutl	tlatocayotl	NOUN	_	Case=Abs	_	_	_	Folio=2|Paragraph=1|Line=3|Norm=tlatocayotl|Analysed=Yes
 24	,	,	PUNCT	_		_	_	_	Folio=2|Paragraph=1|Line=3|Norm=,|Analysed=Yes
 25	in	in	DET|SCONJ	_	_	_	_	_	Folio=2|Paragraph=1|Line=3|Norm=in
 26	pillotl	pillotl	NOUN	_	Case=Abs	_	_	_	Folio=2|Paragraph=1|Line=3|Norm=pillotl|Analysed=Yes
@@ -5369,8 +5369,8 @@
 # text = Jn aqujn ipam muchioaia, yn, cuculiztli toqujchti, yuicpa monetoltiaia, yujcpa mjtoaia: ynjc onmaqujz yn jicoaio, ynjc itlan aquiz, yn jquac ilhujqujxtililo: motocaiotia, thacaxipeoaliztli: tlapainaltiaia, tetocaia, mjequjntin momanaia, muchinti eoaiotiuj, chichiiaoatiuj, chichipicatiuj, tzotzotlantiuj in tetoca, ynjc motlamauhtiliaia: qujnnecaliltiaia, qujnnamjquj in tiiacaoan, tlapepenti, tlatzonanti: yoan in ixqujchti, çan papaqujnj, yn mjhivintia, tlatlamati, moqujchnequj, moqujchnenequj, amjquizmauhque, teca momotlanj, iaotlaveliloque: vncan moieiecoaia, moiaomamachtiaia, yn juh mjcalizque iaopan, vmpa mocacaoaia yn aiac, mjtoaia totecco.
 # text[norm] = In aquin ipan mochihuaya, in, cocoliztli toquichti, ihuicpa monetoltiaya, ihuicpa mihtoaya: inic onmaquiz in iyicohuayo, inic itlan aquiz, in ihcuac ilhuiquixtililo: motocayotia, tlacaxipehualiztli: tlapayinaltiaya, tetocaya, micquintin momanaya, mochinti ehuayotihui, chihiyaoatihui, chichipicatihui, tzotzotlantihui in tetoca, inic motlamauhtiliaya: quinnecaliltiaya, quinnamiqui in tiyacahuan, tlapepenti, tlatzonanti: ihuan in ixquichti, zan papaquini, in mihuihuintia, tlatlamati, moquichnequi, moquichnenequi, amiquizmauhque, teca momotlani, yaotlahueliloque: oncan moyeyecohuaya, moyaomamachtiaya, in iuh micalizque yaopan, ompa mocacahuaya in ayac, mihtoaya Totecco.
 # text[orig] = J·na·qujn·ipam·muchioaia·,·yn·,·cu¶culiztli·toqujchti·,·yuicpa·mone¶toltiaia·,·yujcpa·mjtoaia·:·y·njc¶onmaqujz·y·nj·icoaio·,·y·njc·itlan¶aquiz·,·y·nj·quac·ilhujqujxtililo·:·motocaiotia·,·thacaxipeoaliztli·:·tla¶painaltiaia·,·tetocaia·,·mjequjn¶tin·momanaia·,·muchinti·eoaio¶tiuj·,·chichiiaoatiuj·,·chichipica¶tiuj·,·tzotzotlantiuj·in·tetoca·,·y·njc¶motlamauhtiliaia·:·qujnnecalil¶tiaia·,·qujnnamjquj·in·tiiacaoan·,·tlapepenti·,·tlatzonanti·:·yoan·inix¶qujchti·,·çan·papaqujnj·,·yn·mjhivin¶tia·,·tlatlamati·,·moqujchnequj·,·moqujchnenequj·,·amjquizmauh¶que·,·teca·momotlanj·,·iaotlaveli¶loque·:·vncan·moieiecoaia·,·mo·ia¶omamachtiaia·,·ynjuh·mjcaliz¶que·iaopan·,·vmpa·mocacaoaia¶y·naiac·,·mj·toaia·totecco·.
-# tagged = 74.29%
-# analysed = 59.05%
+# tagged = 75.24%
+# analysed = 60.00%
 1	Jn	in	DET|SCONJ	_	_	_	_	_	Orig=J·na·qujn|Folio=16,16,16|Paragraph=0,0,0|Line=11,11,11|Norm=In
 2	aqujn	aquin	PRON	_		_	_	_	Orig=J·na·qujn|Folio=16,16,16|Paragraph=0,0,0|Line=11,11,11|Norm=aquin|Analysed=Yes
 3	ipam	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3	_	_	_	Folio=16|Paragraph=0|Line=11|Norm=ipan|Analysed=Yes
@@ -5406,7 +5406,7 @@
 33	:	:	PUNCT	_		_	_	_	Folio=16|Paragraph=0|Line=16|Norm=:|Analysed=Yes
 34	tlapainaltiaia	_	X	_	_	_	_	_	Orig=tla¶·painaltiaia|Folio=16,16|Paragraph=0,0|Line=16,17|Norm=tlapayinaltiaya
 35	,	,	PUNCT	_		_	_	_	Folio=16|Paragraph=0|Line=17|Norm=,|Analysed=Yes
-36	tetocaia	_	X	_	_	_	_	_	Folio=16|Paragraph=0|Line=17|Norm=tetocaya
+36	tetocaia	toca	VERB	_	Animacy[obj]=Anim|Aspect=Imp|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=16|Paragraph=0|Line=17|Norm=tetocaya|Analysed=Yes
 37	,	,	PUNCT	_		_	_	_	Folio=16|Paragraph=0|Line=17|Norm=,|Analysed=Yes
 38	mjequjntin	_	X	_	_	_	_	_	Orig=mjequjn¶·tin|Folio=16,16|Paragraph=0,0|Line=17,18|Norm=micquintin
 39	momanaia	_	VERB	_	_	_	_	_	Folio=16|Paragraph=0|Line=18|Norm=momanaya|Guessed=Yes
