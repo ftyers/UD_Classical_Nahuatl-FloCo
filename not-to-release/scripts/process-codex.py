@@ -1,5 +1,6 @@
 import sys, re, os
 from Trie import PrefixTree
+import glob
 # from ml_support import load_retokenization_model, retokenize_w_model
 
 def tokenise(s):
@@ -77,8 +78,7 @@ def retokenise(tree, sentence, model_bundle=None):
 	# 	)
 	return spans
 	
-def load_tree(fn):
-	tree = PrefixTree()
+def load_tree(fn, tree):
 	for lineno, line in enumerate(open(fn)):
 		if line[0] == '#' or line.strip() == '':
 			continue
@@ -90,8 +90,8 @@ def load_tree(fn):
 		tree.insert(span, right)	
 	return tree
 
-def load_normalisation_table(fn):
-	table = {}
+def load_normalisation_table(fn, table):
+#	table = {}
 	lineno = 0
 	ranks = {}
 	for lineno, line in enumerate(open(fn)):
@@ -150,14 +150,19 @@ def load_subtoken_table(fn):
 
 	return table
 		
-tree = load_tree('retokenisation.tsv')
-
+tree = PrefixTree()
+tree = load_tree('retokenisation.tsv', tree)
+for fn in glob.glob('retokenisation/*.retok'):
+	tree = load_tree(fn, tree)
 #
 # Use a statistical model to retokenize after running rules:
 #
 # retokenization_bundle = load_retokenization_model()
 
-table = load_normalisation_table('normalisation.tsv')
+table = load_normalisation_table('normalisation.tsv', {})
+for fn in glob.glob('normalisation/*.norm'):
+	table = load_normalisation_table(fn, table)
+	
 overrides = load_override_table('overrides.tsv')
 subtoken_table = load_subtoken_table('subtokens.tsv')
 

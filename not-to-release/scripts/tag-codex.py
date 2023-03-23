@@ -1,6 +1,7 @@
 import sys, re
 from attapply import ATTFST
 from convertor import *
+import glob
 
 alphabet = 'abcdefghijklmnopqrstuvxyz'
 
@@ -114,9 +115,8 @@ def tag(lexicon, form, norm, idx, analyses):
 
 	return guess(norm, guessed_lemma)
 
-def read_lexicon(fn):
+def read_lexicon(fn, lexicon):
 	# FORM			LEMMA			UPOS		UFEATS		MISC
-	lexicon = {}
 	for lineno, line in enumerate(open(fn).readlines()):
 		if line[0] == '#' or line.strip() == '':
 			continue
@@ -147,7 +147,10 @@ def sort_features(ufeats):
 		ufeats = '|'.join(['%s=%s' % (i, j) for i, j in ufeats])
 	return ufeats
 
-lexicon = read_lexicon('lexicon.tsv')
+lexicon = read_lexicon('lexicon.tsv', {})
+for fn in glob.glob('lexicon/*.lexicon'):
+	lexicon = read_lexicon(fn, lexicon)
+
 morfst = ATTFST('../fst/nci.mor.att.gz')
 genfst = ATTFST('../fst/nci.gen.att.gz')
 convertor = Convertor('tagset.tsv')
