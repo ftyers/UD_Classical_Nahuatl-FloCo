@@ -115,6 +115,7 @@ def load_normalisation_table(fn, table):
 		if left not in table[level]:
 			table[level][left] = {}
 		if len(table[level][left]) > 0: # ambiguous
+			ranks[left] = list(set(ranks[left]))
 			ranks[left].sort()
 			table[level][left] = ('/'.join([j for i,j in ranks[left]]), True)
 		else:
@@ -206,22 +207,25 @@ current_sentence_id = 1
 current_sentence = []
 norm_overrides = {}
 for token in tokens:
+#	print('TOKEN:', token, [i[0] for i in current_sentence])
 	if token[0] != '¶':
+#		print('!!!', token[0].strip('¶'))
 		# Make this more beautiful
+		newtok = token
+		token_check = token[0].strip('¶')
 		if token[0].strip('¶') in ['@#@16@#@', '@#@17@#@', '@#@18@#@', '@#@19@#@', '@#@20@#@']:
-			if token[0] == '@#@16@#@':
-				current_sentence.append(('q.', token[1], token[2], token[3]))
-			if token[0] == '@#@17@#@':
-				current_sentence.append(('n.', token[1], token[2], token[3]))
-			if token[0] == '@#@18@#@':
-				current_sentence.append(('xpo.', token[1], token[2], token[3]))
-			if token[0] == '@#@19@#@':
-				current_sentence.append(('14.', token[1], token[2], token[3]))
-			if token[0] == '@#@20@#@':
-				current_sentence.append(('p.', token[1], token[2], token[3]))
-			continue
-		else: 
-			current_sentence.append(token)
+			if token_check == '@#@16@#@':
+				newtok = ('q.', token[1], token[2], token[3])
+			elif token_check == '@#@17@#@':
+				newtok = ('n.', token[1], token[2], token[3])
+			elif token_check == '@#@18@#@':
+				newtok = ('xpo.', token[1], token[2], token[3])
+			elif token_check == '@#@19@#@':
+				newtok = ('14.', token[1], token[2], token[3])
+			elif token_check == '@#@20@#@':
+				newtok = ('p.', token[1], token[2], token[3])
+		current_sentence.append(newtok)
+
 	if token[0] == '.' or token[0] == '?' or token[0].lower() in ['&c.', 'etc.']:
 		sentence = '·'.join([token[0] for token in current_sentence])
 		sentence = sentence.replace('¶·', '¶')
