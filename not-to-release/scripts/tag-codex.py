@@ -17,6 +17,8 @@ def guess(norm, guessed_lemma):
 		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+tzitzin$', norm):
 		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
+	if re.findall('[a-z]+tilmatli$', norm):
+		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+catl$', norm):
 		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+iztli$', norm):
