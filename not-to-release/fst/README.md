@@ -1,8 +1,9 @@
 # Files
 
-* `nci.lexc`: Lexicon and morphotactics
+* `nci.lexd`: Lexicon and morphotactics
 * `nci.twol`: Phonological rules
 
+Note: if it fails compile, make sure your lexd version is atleast 1.3.2
 
 # Stuff you can do:
 
