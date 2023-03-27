@@ -5504,6 +5504,7 @@ VerbImpers
 PATTERN ObjVerb
 Directional? VerbStem[iv]
 ObjectPrefix Directional? VerbStem[tv]
+IObjPrefix VerbStem[dvlex]
 TwoObjectPrefix Directional? VerbStem[dv]
 
 LEXICON Augment
@@ -5526,10 +5527,13 @@ ObjectSpec(1): :ObjectSpec(2)
 ObjectRefl(1): :ObjectRefl(2)
 ObjectNonSpec(1): :ObjectNonSpec(2)
 
-PATTERN TwoObjectPrefix
+PATTERN IObjPrefix
 ObjectSpec(2)
 ObjectRefl(2)
 ObjectNonSpec(2)
+
+PATTERN TwoObjectPrefix
+IObjPrefix
 ObjectPrefix (ObjectNonSpec(2) | ObjectDouble)
 
 LEXICON ObjectSpec(2)
@@ -5580,7 +5584,7 @@ VStemBase[cl3] [<impers>:{del}>lo]
 PATTERN VStemBase
 VerbRoot[iv] [<v><iv>:]
 VerbRoot[tv] [<v><tv>:]
-VerbRoot[dv] [<v><dv>:]
+VerbRoot[|[dv,dvlex]] [<v><dv>:]
 
 LEXICON VerbRoot[iv]
 cochi:cochi[cl2]
@@ -5635,6 +5639,9 @@ tlamanilia:tlamanilia[cl3]
 tocayotia:tocayotia[cl3]
 tetzammatia:tetzammatia[cl3]
 matia:matia[cl3]
+
+LEXICON VerbRoot[dvlex]
+tlamachtia:tlamachtia[cl3]
 
 LEXICON VerbRoot[dv]
 maca:maca[cl2]
