@@ -1,4 +1,4 @@
-all: nci.mor.att.gz nci.gen.att.gz
+all: nci.mor.att.gz nci.gen.att.gz nci.orth-norm.hfst
 
 nci.lexc.hfst: nci.lexc
 	hfst-lexc --Werror $< -o $@
@@ -23,6 +23,9 @@ nci.lexd.gen.hfst: nci.lexd-pret.hfst nci.twol.hfst
 
 nci.lexd.mor.hfst: nci.lexd.gen.hfst nci.mor.twol.hfst
 	hfst-compose-intersect -1 nci.lexd.gen.hfst  -2 nci.mor.twol.hfst | hfst-invert -o $@
+
+nci.orth-norm.hfst: orth-norm.lexc
+	hfst-lexc $< -o $@
 
 %.xfst.hfst: %.xfst
 	hfst-regexp2fst -S $< -o $@
