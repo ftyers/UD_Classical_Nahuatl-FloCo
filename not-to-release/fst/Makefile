@@ -12,17 +12,17 @@ nci.lexd.hfst: nci.lexd.att
 nci.lexd-pret.hfst: nci.lexd.hfst preterite.xfst.hfst
 	hfst-compose -1 nci.lexd.hfst -2 preterite.xfst.hfst -o $@
 
-nci.gen.hfst: nci.lexc.hfst nci.twol.hfst
+nci.lexc.gen.hfst: nci.lexc.hfst nci.twol.hfst
 	hfst-compose-intersect -1 nci.lexc.hfst -2 nci.twol.hfst | hfst-eliminate-flags -o $@
+
+nci.lexc.mor.hfst: nci.lexc.gen.hfst nci.mor.twol.hfst
+	hfst-compose-intersect -1 nci.lexc.gen.hfst  -2 nci.mor.twol.hfst | hfst-invert -o $@
+
+nci.gen.hfst: nci.lexd-pret.hfst nci.twol.hfst
+	hfst-compose-intersect -1 nci.lexd-pret.hfst -2 nci.twol.hfst -o $@
 
 nci.mor.hfst: nci.gen.hfst nci.mor.twol.hfst
 	hfst-compose-intersect -1 nci.gen.hfst  -2 nci.mor.twol.hfst | hfst-invert -o $@
-
-nci.lexd.gen.hfst: nci.lexd-pret.hfst nci.twol.hfst
-	hfst-compose-intersect -1 nci.lexd-pret.hfst -2 nci.twol.hfst -o $@
-
-nci.lexd.mor.hfst: nci.lexd.gen.hfst nci.mor.twol.hfst
-	hfst-compose-intersect -1 nci.lexd.gen.hfst  -2 nci.mor.twol.hfst | hfst-invert -o $@
 
 nci.orth-norm.hfst: orth-norm.lexc
 	hfst-lexc $< -o $@
