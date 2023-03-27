@@ -1,0 +1,67 @@
+LEXICON Root
+Cns ;
+Vow ;
+
+LEXICON Loop
+Cns ;
+Vow ;
+Punct ;
+# ;
+
+LEXICON Vow
+FrontVow ;
+BackVow ;
+
+LEXICON FrontVow
+i:i Cns ;
+i:i # ;
+i:i Vow ;
+i:y Vow ;
+
+j:i Cns ;
+j:i # ;
+j:i Vow ;
+j:y Vow ;
+
+e:e Loop ;
+
+LEXICON BackVow
+a:a Loop ;
+o:o Cns ;
+o:o # ;
+o:o Vow ;
+o:hu Vow ;
+u:hu Loop ;
+u:o Cns ;
+u:o # ;
+v:hu Loop ;
+
+LEXICON Cns
+b:b Loop ;
+c:c BackVow ;
+c:z BackVow ;
+c:c Cns ;
+c:c # ;
+c:c FrontVow ;
+cu:cu Vow ;
+ç:z FrontVow ;
+ç:z BackVow ;
+d:d Loop ;
+f:f Loop ;
+g:g Loop ;
+h:h Loop ;
+k:k Loop ;
+l:l Loop ;
+m:m Loop ;
+n:n Loop ;
+ñ:ñ Loop ;
+p:p Loop ;
+qu:cu BackVow ;
+qu:qu FrontVow ;
+r:r Loop ;
+s:s Loop ;
+t:t Loop ;
+x:x Loop ;
+y:y Loop ;
+y:i Loop ;
+z:z Loop ;
