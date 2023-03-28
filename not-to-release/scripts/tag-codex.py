@@ -165,9 +165,11 @@ morfst = ATTFST('../fst/nci.mor.att.gz')
 genfst = ATTFST('../fst/nci.gen.att.gz')
 convertor = Convertor('tagset.tsv')
 
+sents = 0
 total = 0
 tagged = 0
 analysed = 0
+clean = 0
 
 for bloc in sys.stdin.read().split('\n\n'):
 	bloc = bloc.strip()
@@ -197,6 +199,9 @@ for bloc in sys.stdin.read().split('\n\n'):
 		misc = row[9]
 		attrs = {pair.split('=')[0] : pair.split('=')[1] for pair in misc.split('|')}
 		norm = attrs['Norm']
+
+		if '*' not in norm:
+			clean += 1 
 
 		analyses = list(morfst.apply(norm))
 		if len(analyses) == 0:
@@ -252,4 +257,6 @@ for bloc in sys.stdin.read().split('\n\n'):
 	print()
 
 if total != 0:
-	print('%d/%d' % (tagged,total), '(%.2f%%); %d/%d (%.2f%%)' % (tagged/total*100, analysed, total, analysed/total*100),file=sys.stderr)
+	print('Normalised: %d/%d (%.2f%%)' % (clean, total, clean/total*100), file=sys.stderr, end=' | ')
+	print('Tagged: %d/%d (%.2f%%)' % (tagged, total, tagged/total*100), file=sys.stderr, end=' | ')
+	print('Analysed: %d/%d (%.2f%%)' %  (analysed, total, analysed/total*100), file=sys.stderr)
