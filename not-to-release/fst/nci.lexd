@@ -9,6 +9,7 @@ PRON
 PROPN
 PUNCT
 VERB
+PART
 
 Irregulares
 
@@ -163,9 +164,15 @@ in<cnjsub>:in # ""
 auh<cnjcoo>:auh # "y"
 y<cnjcoo>:y # "y"
 
+ye<cnjsub>:ye
+ca<cnjsub>:ca
+
 LEXICON DET 
 
 in<det>:in
+
+LEXICON PART
+ma<part><opt>:ma
 
 LEXICON Numeros
 
@@ -5498,6 +5505,10 @@ zatepan:zatepan # ""
 ihuiyan:ihuiyan # "pacíficamente"
 
 yohualtica:yohualtica # ""
+
+iuhqui:iuhqui
+iuhquin:iuhquin # TODO: split like dictionary into iuhqi+in?
+cana:cana
 
 ###############################################################################
 
