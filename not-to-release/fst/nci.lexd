@@ -9,6 +9,7 @@ PRON
 PROPN
 PUNCT
 VERB
+PART
 
 Irregulares
 
@@ -163,9 +164,15 @@ in<cnjsub>:in # ""
 auh<cnjcoo>:auh # "y"
 y<cnjcoo>:y # "y"
 
+ye<cnjsub>:ye
+ca<cnjsub>:ca
+
 LEXICON DET 
 
 in<det>:in
+
+LEXICON PART
+ma<part><opt>:ma
 
 LEXICON Numeros
 
@@ -5499,6 +5506,10 @@ ihuiyan:ihuiyan # "pacíficamente"
 
 yohualtica:yohualtica # ""
 
+iuhqui:iuhqui
+iuhquin:iuhquin # TODO: split like dictionary into iuhqi+in?
+cana:cana
+
 ###############################################################################
 
 PATTERN VERB
@@ -5570,6 +5581,10 @@ LEXICON Tense
 <past>:>que[pl,pret]
 <past>:>queh[pl,pret]
 
+LEXICON Aux
++nemi<aux>:>ti·nemi
++nemi<aux><past>:>ti·nen>ca
+
 PATTERN VerbStem
 VStemBase[cl1] Tense[-pret]
 VStemBase[cl1] Tense[pret,pl]
@@ -5582,6 +5597,8 @@ VStemBase[cl3] Tense[-pret,-fut]
 VStemBase[cl3] [:{del}] Tense[|[pret,fut]]
 
 VStemBase[cl4] Tense
+
+VStemBase[iv] Aux
 
 PATTERN VerbImpers
 VStemBase[cl3] [<impers>:{del}>lo]

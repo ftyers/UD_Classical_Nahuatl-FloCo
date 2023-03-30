@@ -1,4 +1,4 @@
-all: nci.mor.att.gz nci.gen.att.gz nci.orth-norm.hfst
+all: nci.mor.att.gz nci.gen.att.gz nci.mor.hfstol nci.gen.hfstol nci.orth-norm.hfst
 
 nci.lexc.hfst: nci.lexc
 	hfst-lexc --Werror $< -o $@
