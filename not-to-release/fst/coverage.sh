@@ -7,7 +7,7 @@ coverage=$(echo "${known}/${total}*100" | bc -l | head -c 6)
 
 echo "Tokens: ${known}/${total} (${coverage}%)"
 
-total=$(cat /tmp/freq | hfst-proc nci.mor.hfstol   | wc -l)
-known=$(cat /tmp/freq | hfst-proc nci.mor.hfstol   | grep '<' | wc -l)
+total=$(cat nci.freq | apertium-destxt | hfst-proc nci.mor.hfstol   | wc -l)
+known=$(cat nci.freq | apertium-destxt | hfst-proc nci.mor.hfstol   | grep '<' | wc -l)
 coverage=$(echo "${known}/${total}*100" | bc -l | head -c 6)
 echo "Types:  ${known}/${total} (${coverage}%)" 
