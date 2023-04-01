@@ -11,6 +11,8 @@ def guess(norm, guessed_lemma):
 		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[aeiou][^aeiou]+tli$', norm):
 		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
+	if re.findall('(in|in|no|mo)[a-z]+huan$', norm):
+		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+yotl$', norm):
 		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+huitl$', norm):
