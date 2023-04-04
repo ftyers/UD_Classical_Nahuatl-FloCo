@@ -63,6 +63,10 @@ LEXICON N-ABS
 <abs>:[eca]
 <pl>:>uh[teteuh]
 <pl>:tin[cicitlaltin]
+<abs>:t[t]
+<pl>:t>que[t]
+<abs>:qui[qui]
+<pl>:que[qui]
 
 LEXICON N-ABS-SPA
 :án[spa-anes]
@@ -74,7 +78,7 @@ LEXICON N-ABS-SPA
 :[spa]
 
 PATTERN Noun-Absolutive
-(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,teteuh,cicitlaltin,catl]]
+(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,teteuh,cicitlaltin,catl,que,t]]
 
 PATTERN Noun-Possessed
 Comunes[-teteuh,-cicitlaltin,-spa,-spa-s,-spa-es,-spa-anes,-loc,-rel] [<n>:]
@@ -248,6 +252,9 @@ pochtecatl:pochte[catl] # ""
 tlaxcaltecatl:tlaxcalte[catl] # ""
 chichimecatl:chichime[catl] # ""
 
+tlatocat:tlatoca[t] # ""
+calpixqui:calpix[qui] # ""
+teopixqui:teopix[qui] # ""
 
 nacatl:naca[tl] # "carne"
 teotl:teo[tl] # "díos"
