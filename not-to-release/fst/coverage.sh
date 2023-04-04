@@ -20,7 +20,7 @@ cat /tmp/nci.analysed | cut -f2 -d'^' | cut -f1 -d'/' | sort -f | uniq -c | sort
 
 total_types=$(cat nci.freq | apertium-destxt | hfst-proc nci.mor.hfstol   | wc -l)
 known_types=$(cat nci.freq | apertium-destxt | hfst-proc nci.mor.hfstol   | grep '<' | wc -l)
-coverage_types=$(echo "${known}/${total}*100" | bc -l | head -c 6)
+coverage_types=$(echo "${known_types}/${total_types}*100" | bc -l | head -c 6)
 #echo "Types:  ${known}/${total} (${coverage}%)" 
 
 echo -e "${d}\t${z}\t${stems}/${lex}\t${known}/${total}\t${coverage}\t${known_types}/${total_types}\t${coverage_types}" >> history.log
