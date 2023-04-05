@@ -25,3 +25,5 @@ coverage_types=$(echo "${known_types}/${total_types}*100" | bc -l | head -c 6)
 
 echo -e "${d}\t${z}\t${stems}/${lex}\t${known}/${total}\t${coverage}\t${known_types}/${total_types}\t${coverage_types}" >> history.log
 tail -1 history.log
+
+cat /tmp/nci.analysed | grep '*' | sort | uniq -c | sort -nr | head -n25
