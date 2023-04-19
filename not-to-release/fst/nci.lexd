@@ -11326,15 +11326,9 @@ ahco # "above"
 ###############################################################################
 
 PATTERN VERB
-Augment < (Subject ObjVerb)[-pl]
-Augment < (Subject ObjVerb)[-sg]
+Augment < (Subject TenseVerb)[-pl]
+Augment < (Subject TenseVerb)[-sg]
 VerbImpers
-
-PATTERN ObjVerb
-Directional? VerbStem[iv]
-ObjectPrefix Directional? VerbStem[tv]
-IObjPrefix VerbStem[dvlex]
-TwoObjectPrefix Directional? VerbStem[dv]
 
 LEXICON Augment
 <aug>:o>
@@ -11400,30 +11394,56 @@ LEXICON Aux
 +nemi<aux>:>ti·nemi
 +nemi<aux><past>:>ti·nen>ca
 
-PATTERN VerbStem
-VStemBase[cl1] Tense[-pret]
-VStemBase[cl1] Tense[pret,pl]
-VStemBase[cl1] [<past>:>c[sg]]
+PATTERN TenseVerb
+ObjVerb[cl1] Tense[-pret]
+ObjVerb[cl1] Tense[pret,pl]
+ObjVerb[cl1] [<past>:>c[sg]]
 
-VStemBase[cl2] Tense[-pret]
-VStemBase[cl2] [:{del}] Tense[pret]
+ObjVerb[cl2] Tense[-pret]
+ObjVerb[cl2] [:{del}] Tense[pret]
 
-VStemBase[cl3] Tense[-pret,-fut]
-VStemBase[cl3] [:{del}] Tense[|[pret,fut]]
+ObjVerb[cl3] Tense[-pret,-fut]
+ObjVerb[cl3] [:{del}] Tense[|[pret,fut]]
 
-VStemBase[cl4] Tense
+ObjVerb[cl4] Tense
 
-VStemBase[iv] Aux
+VerbRootIV [<v><iv>:] Aux
+
+PATTERN AnyStem
+IVStem
+TVStem
+DVlexStem
+DVStem
 
 PATTERN VerbImpers
-VStemBase[cl3] [<impers>:{del}>lo]
+AnyStem[cl3] [<impers>:{del}>lo]
 
-PATTERN VStemBase
-VerbRoot[iv] [<v><iv>:]
-VerbRoot[tv] [<v><tv>:]
-VerbRoot[|[dv,dvlex]] [<v><dv>:]
+PATTERN ObjVerb
+Directional? IVStem
+ObjectPrefix Directional? TVStem
+IObjPrefix DVlexStem
+TwoObjectPrefix Directional? DVStem
 
-LEXICON VerbRoot[iv]
+LEXICON CausAppl
+<caus>:tia[cl3]
+<caus>:lia[cl3]
+
+PATTERN IVStem
+VerbRootIV [<v><iv>:]
+
+PATTERN TVStem
+VerbRootTV [<v><tv>:]
+
+PATTERN DVlexStem
+VerbRootDVlex [<v><dv>:]
+VerbRootIV [<v><iv>:] CausAppl
+
+PATTERN DVStem
+VerbRootDV [<v><dv>:]
+VerbRootTV [<v><tv>:] CausAppl
+VerbRootIV [<v><iv>:] (CausAppl) (CausAppl)
+
+LEXICON VerbRootIV
 aahuitzocalaqui[cl2]
 aaqui[cl2]
 acacalotlahtoa[cl3]
@@ -13970,7 +13990,7 @@ zozolci[cl1]
 zozotlacmiqui[cl2]
 zozotlahu[cl2]
 
-LEXICON VerbRoot[tv]
+LEXICON VerbRootTV
 aachcui[cl1]
 aachti[cl1]
 aahhuictlaza[cl2]
@@ -18381,11 +18401,11 @@ zozolcahuia[cl3]
 zozolotza[cl2]
 zozotlahua[cl2]
 
-LEXICON VerbRoot[dvlex]
+LEXICON VerbRootDVlex
 tlamachtia[cl3]
 «cal<n>»maca:«cal»maca[cl2]
 
-LEXICON VerbRoot[dv]
+LEXICON VerbRootDV
 «yollotl<n>»chichilia:«yollo»chichilia[cl3]
 aaquilia[cl3]
 actia[cl3]
