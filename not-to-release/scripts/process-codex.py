@@ -14,8 +14,11 @@ def tokenise(s):
 	o = o.strip()
 	return o.split(' ')
 
-def detokenise(s):
+def detokenise(s, manual=False):
 	o = s
+	if manual:
+		o = o.replace('@', '')
+		o = o.replace('|', '')
 	o = re.sub(' ([,:.;?!]+) ', '\g<1> ', o)
 	o = re.sub(' ([,:.;?!]+)$', '\g<1>', o)
 	o = o.replace("( ", "(").replace(" )", ")").replace(" .)", ".)")
@@ -24,6 +27,9 @@ def detokenise(s):
 def normalise(table, overrides, s, idx):
 #	print('@',idx, s, overrides, file=sys.stderr)
 	s = s.strip('¶')
+	if s == '':
+		print('WARNING: Empty token:', idx, s, file=sys.stderr)
+
 	if idx in overrides:
 		form = overrides[idx][1]
 		return form, form, table[0][s.lower()][1], True
@@ -225,12 +231,19 @@ tokens = []
 
 manual_tokenisation = False
 
-book_text = open(sys.argv[1]).read()
+book_text = re.sub('  *', ' ', open(sys.argv[1]).read())
 if '@' in book_text:
 	book_text = re.sub(' *@ *', '@ ', book_text)
+	# '|' followed by a space is a mistake
+	# Auh intlacamo motlapaloa
+	# pilhoaque, in quj@chioaz in, ticitl:
+	# nj@man vel qujtzatzaqua in cioatzin@
+	# tli. A@uh in@tla|ic| mjquj ijti, mj@
+	# toa, motocaiotia: mocioaque@
+	book_text = re.sub('\| ', ' ', book_text) 
 	manual_tokenisation = True
 
-lines = book_text.split('\n')
+lines = re.sub('  *', ' ', book_text).split('\n')
 
 for line in lines:
 	if re.findall(' [Ff]ol?. *[0-9]+', line):
@@ -360,7 +373,7 @@ for token in tokens:
 		print('# sent_id = %s:%d' % (book, current_sentence_id))
 		print('# text = %s' % detokenise(' '.join(retokenised_sentence)))
 		print('# text[norm] = %s' % detokenise(' '.join(normalised_sentence)))
-		print('# text[orig] = %s' % detokenise(sentence))
+		print('# text[orig] = %s' % detokenise(sentence, manual=manual_tokenisation))
 		for line in lines:
 			print(line)
 		print()
