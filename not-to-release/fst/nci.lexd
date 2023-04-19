@@ -21,6 +21,7 @@ Irregulares
 PATTERN NOUN
 # Absolutive Nouns
 Noun-Absolutive
+Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-DERIV-ABS
 # Possessive singular
 Possessives Noun-Possessed > N-DERIV
 # Possessive plural
@@ -91,12 +92,24 @@ LEXICON N-DERIV
 <rev><pl>:>tzi~tzin
 <dim>:>ton
 <aug>:>pol
+# TODO: tags
+<dim>:>pil
+<dim>:>tin
+<dim>:>zol
+
+LEXICON N-DERIV-ABS
+<rev><abs>:>tzin>tli
+<dim><abs>:>ton>tli
+<dim><abs>:>zol>li
 
 LEXICON N-POSS-PL
 <pl>:>huan
 
 LEXICON N-DERIV-PL
 <rev>:>tzi~tzin
+<dim>:>to~ton
+<dim>:>pi~pil
+<aug>:>po~pol
 
 ###############################################################################
 
@@ -11415,6 +11428,12 @@ TVStem
 DVlexStem
 DVStem
 
+LEXICON Pass
+<pass>:>lo[cl1]
+
+LEXICON PassCl3
+<pass>:{del}>lo[cl1]
+
 PATTERN VerbImpers
 AnyStem[cl3] [<impers>:{del}>lo]
 
@@ -11425,23 +11444,38 @@ IObjPrefix DVlexStem
 TwoObjectPrefix Directional? DVStem
 
 LEXICON CausAppl
-<caus>:tia[cl3]
-<caus>:lia[cl3]
+<caus>:{caus}ltia[cl3]
+<appl>:{caus}lia[cl3]
+<hon>:tzinoa[cl3]
+
+LEXICON CausApplCl3
+<caus>:{del}tia[cl3]
+<appl>:{del}lia[cl3]
+<hon>:{del}tzinoa[cl3]
 
 PATTERN IVStem
 VerbRootIV [<v><iv>:]
+VerbRootTV[cl3] [<v><tv>:] PassCl3
+VerbRootTV[-cl3] [<v><tv>:] Pass
 
 PATTERN TVStem
 VerbRootTV [<v><tv>:]
+VerbRootDV[cl3] [<v><dv>:] PassCl3
+VerbRootTV[-cl3] [<v><dv>:] Pass
+
+PATTERN IVCaus
+VerbRootIV[cl3] [<v><iv>:] CausApplCl3
+VerbRootIV[-cl3] [<v><iv>:] CausAppl
 
 PATTERN DVlexStem
 VerbRootDVlex [<v><dv>:]
-VerbRootIV [<v><iv>:] CausAppl
+IVCaus
 
 PATTERN DVStem
 VerbRootDV [<v><dv>:]
-VerbRootTV [<v><tv>:] CausAppl
-VerbRootIV [<v><iv>:] (CausAppl) (CausAppl)
+VerbRootTV[cl3] [<v><tv>:] CausApplCl3
+VerbRootTV[-cl3] [<v><tv>:] CausAppl
+IVCaus (CausApplCl3)
 
 LEXICON VerbRootIV
 aahuitzocalaqui[cl2]
