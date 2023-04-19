@@ -41,3 +41,6 @@ nci.orth-norm.hfst: orth-norm.lexc
 
 %.hfstol: %.hfst
 	hfst-fst2fst -w $< -o $@
+
+cov: nci.mor.hfstol coverage.sh
+	./coverage.sh $<

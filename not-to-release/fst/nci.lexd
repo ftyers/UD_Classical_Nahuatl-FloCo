@@ -1,3 +1,6 @@
+# «yaotl<n>»chi~chihua:«yao»chi~chihua[cl2]
+# + compound
+
 PATTERNS
 ADJ
 ADV
@@ -78,7 +81,7 @@ LEXICON N-ABS-SPA
 :[spa]
 
 PATTERN Noun-Absolutive
-(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,teteuh,cicitlaltin,catl,que,t]]
+(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,teteuh,cicitlaltin,catl,qui,t]]
 
 PATTERN Noun-Possessed
 Comunes[-teteuh,-cicitlaltin,-spa,-spa-s,-spa-es,-spa-anes,-loc,-rel] [<n>:]
@@ -163,6 +166,11 @@ amo<adv>+tlein<prn><rel>:atle
 acah<prn><rel>:acah
 ayac<prn><rel>:ayac
 
+ixquichtin<prn>:ixquichtin
+
+mochi<prn>:mochi
+tle<prn><int>:tle
+
 ###############################################################################
 
 LEXICON CONJ
@@ -183,6 +191,8 @@ ic<cnjsub>:ic # "when"
 LEXICON DET 
 
 in<det>:in
+inin<det>:inin
+mochi<det>:mochi
 
 LEXICON PART
 ma<part><opt>:ma
@@ -11180,6 +11190,18 @@ zoquichacalin:zoquichacal[in]
 zotolin:zotol[in]
 zoyacapolin:zoyacapol[in]
 
+maxtlatl:maxtla[tl]
+tecuhtli<n>+tlatoqui:tecuhtlato[qui]
+
+# unknowns that look like nouns TODO
+nahuixihuitl:nahuixihui[tl]
+matlacxihuitl:matlacxihui[tl]
+xoxouhqui:xoxouh[qui]
+cempohualxihuitl:cempohualxihui[tl]
+cemilhuitl:cemilhui[tl]
+exihuitl:exihui[tl]
+chalchihuitl:chalchihui[tl]
+teoxihuitl:teoxihui[tl]
 
 LEXICON Propios 
 Quetzalcoatl:Quetzalcoa[tl]
@@ -11218,6 +11240,8 @@ hueyi:hueyi
 chichiltic[tic]
 coztic[tic] # "yellow"
 iztac # "white"
+
+tlazotlanqui # "fair, fine"
 
 # from https://nahuatl.wired-humanities.org/themes/colors
 achipactic[tic] # "bleached"
@@ -11302,15 +11326,9 @@ ahco # "above"
 ###############################################################################
 
 PATTERN VERB
-Augment < (Subject ObjVerb)[-pl]
-Augment < (Subject ObjVerb)[-sg]
+Augment < (Subject TenseVerb)[-pl]
+Augment < (Subject TenseVerb)[-sg]
 VerbImpers
-
-PATTERN ObjVerb
-Directional? VerbStem[iv]
-ObjectPrefix Directional? VerbStem[tv]
-IObjPrefix VerbStem[dvlex]
-TwoObjectPrefix Directional? VerbStem[dv]
 
 LEXICON Augment
 <aug>:o>
@@ -11376,30 +11394,56 @@ LEXICON Aux
 +nemi<aux>:>ti·nemi
 +nemi<aux><past>:>ti·nen>ca
 
-PATTERN VerbStem
-VStemBase[cl1] Tense[-pret]
-VStemBase[cl1] Tense[pret,pl]
-VStemBase[cl1] [<past>:>c[sg]]
+PATTERN TenseVerb
+ObjVerb[cl1] Tense[-pret]
+ObjVerb[cl1] Tense[pret,pl]
+ObjVerb[cl1] [<past>:>c[sg]]
 
-VStemBase[cl2] Tense[-pret]
-VStemBase[cl2] [:{del}] Tense[pret]
+ObjVerb[cl2] Tense[-pret]
+ObjVerb[cl2] [:{del}] Tense[pret]
 
-VStemBase[cl3] Tense[-pret,-fut]
-VStemBase[cl3] [:{del}] Tense[|[pret,fut]]
+ObjVerb[cl3] Tense[-pret,-fut]
+ObjVerb[cl3] [:{del}] Tense[|[pret,fut]]
 
-VStemBase[cl4] Tense
+ObjVerb[cl4] Tense
 
-VStemBase[iv] Aux
+VerbRootIV [<v><iv>:] Aux
+
+PATTERN AnyStem
+IVStem
+TVStem
+DVlexStem
+DVStem
 
 PATTERN VerbImpers
-VStemBase[cl3] [<impers>:{del}>lo]
+AnyStem[cl3] [<impers>:{del}>lo]
 
-PATTERN VStemBase
-VerbRoot[iv] [<v><iv>:]
-VerbRoot[tv] [<v><tv>:]
-VerbRoot[|[dv,dvlex]] [<v><dv>:]
+PATTERN ObjVerb
+Directional? IVStem
+ObjectPrefix Directional? TVStem
+IObjPrefix DVlexStem
+TwoObjectPrefix Directional? DVStem
 
-LEXICON VerbRoot[iv]
+LEXICON CausAppl
+<caus>:tia[cl3]
+<caus>:lia[cl3]
+
+PATTERN IVStem
+VerbRootIV [<v><iv>:]
+
+PATTERN TVStem
+VerbRootTV [<v><tv>:]
+
+PATTERN DVlexStem
+VerbRootDVlex [<v><dv>:]
+VerbRootIV [<v><iv>:] CausAppl
+
+PATTERN DVStem
+VerbRootDV [<v><dv>:]
+VerbRootTV [<v><tv>:] CausAppl
+VerbRootIV [<v><iv>:] (CausAppl) (CausAppl)
+
+LEXICON VerbRootIV
 aahuitzocalaqui[cl2]
 aaqui[cl2]
 acacalotlahtoa[cl3]
@@ -13946,7 +13990,7 @@ zozolci[cl1]
 zozotlacmiqui[cl2]
 zozotlahu[cl2]
 
-LEXICON VerbRoot[tv]
+LEXICON VerbRootTV
 aachcui[cl1]
 aachti[cl1]
 aahhuictlaza[cl2]
@@ -18357,11 +18401,11 @@ zozolcahuia[cl3]
 zozolotza[cl2]
 zozotlahua[cl2]
 
-LEXICON VerbRoot[dvlex]
+LEXICON VerbRootDVlex
 tlamachtia[cl3]
 «cal<n>»maca:«cal»maca[cl2]
 
-LEXICON VerbRoot[dv]
+LEXICON VerbRootDV
 «yollotl<n>»chichilia:«yollo»chichilia[cl3]
 aaquilia[cl3]
 actia[cl3]
