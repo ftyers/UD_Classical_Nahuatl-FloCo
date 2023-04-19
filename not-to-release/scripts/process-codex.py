@@ -67,8 +67,55 @@ def maxmatch(tree, sentence):
 
 	return [firstSpan] + maxmatch(tree, remainder)
 
-def retokenise(tree, sentence, model_bundle=None):
-	spans = maxmatch(tree, sentence)
+def retokenise(tree, sentence, model_bundle=None, manual=False):
+	spans = []
+	#print(sentence)
+	if manual:
+		"""
+			When we have the tokenisation provided in the file
+		"""
+		def clean_repl(s):
+			return s.replace('@', '').replace('|', '·').replace('¶','')
+		# {'repl': 'ilhujuh', 'span': [('il¶', '19', 4, 12), ('hujuh', '19', 4, 13)]}
+		# (token, current_folio, current_paragraph, current_line)
+		# ('yoan', '1', 1, 4), ('i@¶', '1', 1, 4), ('n|juh', '1', 1, 5)
+		buf = {'repl': '', 'span': []}
+		idx = 0
+		while idx < len(sentence):
+			if sentence[idx][0].replace('¶','').strip()[-1] == '@':
+				temp = sentence[idx][0]
+				temp = temp.replace('@', '').replace('|', '·')
+				sentence[idx] = (temp, sentence[idx][1], sentence[idx][2], sentence[idx][3])
+				buf['repl'] += sentence[idx][0]
+				buf['span'].append(sentence[idx])
+			else:
+				if buf['repl'] != '':
+					temp = sentence[idx][0]
+					temp = temp.replace('@', '').replace('|', '·')
+					sentence[idx] = (temp, sentence[idx][1], sentence[idx][2], sentence[idx][3])
+					buf['repl'] += sentence[idx][0]
+					buf['span'].append(sentence[idx])
+					buf['repl'] = clean_repl(buf['repl'])
+					spans.append(buf)
+					buf = {'repl': '', 'span': []}
+				else:
+					if '|' in sentence[idx][0]:
+						buf = {'repl': '', 'span': []}
+						temp = sentence[idx][0]
+						temp = temp.replace('@', '').replace('|', '·')
+						sentence[idx] = (temp, sentence[idx][1], sentence[idx][2], sentence[idx][3])
+						buf['repl'] += sentence[idx][0]
+						buf['span'].append(sentence[idx])
+						buf['repl'] = clean_repl(buf['repl'])
+						spans.append(buf)
+						buf = {'repl': '', 'span': []}
+					else:
+						spans.append(sentence[idx])
+			idx += 1
+	else:
+		spans = maxmatch(tree, sentence)
+
+	#print(spans)
 	# if model_bundle is not None:
 	# 	sentence = (
 	# 		"·".join([t[0] for t in sentence]).replace("¶·", "¶")
@@ -176,8 +223,16 @@ current_paragraph = 0
 book = os.path.basename(sys.argv[1])
 tokens = []
 
+manual_tokenisation = False
 
-for line in open(sys.argv[1]):
+book_text = open(sys.argv[1]).read()
+if '@' in book_text:
+	book_text = re.sub(' *@ *', '@ ', book_text)
+	manual_tokenisation = True
+
+lines = book_text.split('\n')
+
+for line in lines:
 	if re.findall(' [Ff]ol?. *[0-9]+', line):
 		current_folio = re.sub('[^0-9]+', '', line.replace('fo.','').strip())
 		current_paragraph = 0
@@ -233,7 +288,7 @@ for token in tokens:
 		#
 		# Remove model_bundle=... to revert to sans-model mode.
 		#
-		s2 = retokenise(tree, current_sentence)  #, model_bundle=retokenization_bundle)
+		s2 = retokenise(tree, current_sentence, manual=manual_tokenisation)  #, model_bundle=retokenization_bundle)
 
 		sentence_id_string = '%s:%d' % (book, current_sentence_id)
 		if sentence_id_string in overrides:
