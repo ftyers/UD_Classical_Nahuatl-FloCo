@@ -388,4 +388,3 @@ for token in tokens:
 		print()
 		current_sentence = []
 		current_sentence_id += 1
-		
