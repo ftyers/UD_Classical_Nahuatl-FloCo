@@ -157,7 +157,8 @@ def load_normalisation_table(fn, table):
 		except:
 			print('!!! Error wrong number of values in line %d' % lineno, file=sys.stderr)
 			print('!!!', line, file=sys.stderr)
-			raise
+			continue
+			#raise
 			
 		level = int(level)
 		rank = int(rank)
@@ -235,6 +236,7 @@ manual_tokenisation = False
 book_text = re.sub('  *', ' ', open(sys.argv[1]).read())
 if '@' in book_text:
 	book_text = re.sub(' *@ *', '@ ', book_text)
+	book_text = re.sub(' *\n@', '@\n', book_text)
 	# '|' followed by a space is a mistake
 	# Auh intlacamo motlapaloa
 	# pilhoaque, in quj@chioaz in, ticitl:
