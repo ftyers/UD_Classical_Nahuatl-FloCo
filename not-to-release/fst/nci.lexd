@@ -96,6 +96,7 @@ LEXICON N-DERIV
 <dim>:>pil
 <dim>:>tin
 <dim>:>zol
+<poss>:>yo
 
 LEXICON N-DERIV-ABS
 <rev><abs>:>tzin>tli
@@ -11206,6 +11207,9 @@ zoyacapolin:zoyacapol[in]
 maxtlatl:maxtla[tl]
 tecuhtli<n>+tlatoqui:tecuhtlato[qui]
 
+tonatiuh:tonatiuh[Ø]
+ixiptlatl:ixiptla[tl]
+
 # unknowns that look like nouns TODO
 nahuixihuitl:nahuixihui[tl]
 matlacxihuitl:matlacxihui[tl]
@@ -11336,6 +11340,11 @@ nepa # "there"
 huehca # "far"
 ahco # "above"
 
+nohuiyan # "everywhere"
+ayocmo # "no longer"
+anoce # "perhaps"
+oce # TODO "another one"?
+
 ###############################################################################
 
 PATTERN VERB
@@ -11421,6 +11430,41 @@ ObjVerb[cl3] [:{del}] Tense[|[pret,fut]]
 ObjVerb[cl4] Tense
 
 VerbRootIV [<v><iv>:] Aux
+
+IrregVerbs
+
+LEXICON IrregVerbs
+cah<v><tv><pres>:cah[sg]
+cah<v><tv><pres>:ca>teh[pl]
+cah<v><tv><pret>:cat>ca[sg]
+cah<v><tv><pret>:cat>cah[pl]
+cah<v><tv><fut>:yez[sg]
+cah<v><tv><fut>:yez>queh[pl]
+cah<v><tv><impf>:yeya[sg]
+cah<v><tv><impf>:yeyah[pl]
+
+ya<v><iv><pres>:yauh[sg]
+ya<v><iv><pres>:huih[pl]
+ya<v><iv><pret>:yah[sg]
+ya<v><iv><pret>:yah>queh[pl]
+ya<v><iv><fut>:yaz[sg]
+ya<v><iv><fut>:yaz>queh[pl]
+ya<v><iv><impf>:yaya[sg]
+ya<v><iv><impf>:yaya>h[pl]
+ya<v><iv><impf>:huiya[sg]
+ya<v><iv><impf>:huiya>h[pl]
+
+hualla<v><iv><pres>:huallauh[sg]
+hualla<v><iv><pres>:hualhuih[pl]
+hualla<v><iv><pret>:huallah[sg]
+hualla<v><iv><pret>:huallah>queh[pl]
+hualla<v><iv><fut>:huallaz[sg]
+hualla<v><iv><fut>:huallaz>queh[pl]
+hualla<v><iv><impf>:hualhuiya[sg]
+hualla<v><iv><impf>:hualhuiya>h[pl]
+
+huitz<v><iv><pres>:huitz[sg]
+huitz<v><iv><pres>:huizt>eh[pl]
 
 PATTERN AnyStem
 IVStem
@@ -19176,6 +19220,7 @@ zohzohuilia[cl3]
 
 LEXICON Irregulares 
 <s_sg3>catca<v><iv>:catca
+tiyacatl<n><pl>:tiyacahuan
 
 LEXICON PUNCT
 ,<cm>:,
