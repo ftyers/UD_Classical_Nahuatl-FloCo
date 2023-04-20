@@ -7,7 +7,7 @@ def tokenise(s):
 	o = s
 	o = re.sub('([,:.;?!()]+)', ' \g<1> ', o)
 	o = o.replace(" ). ", " ) . ")
-	for etc in ['etc', '&c', 'Etc', 'q. n', 'xpo', '14', 'p']:
+	for etc in ['etc', '&c', 'Etc', 'q. n', 'xpo', '14', 'p', 'N']:
 		o = o.replace(etc + ' .', etc + '.')
 		o = o.replace('. ' + etc, etc)
 	o = re.sub('  *', ' ', o)
@@ -122,6 +122,7 @@ def retokenise(tree, sentence, model_bundle=None, manual=False):
 		spans = maxmatch(tree, sentence)
 
 	#print(spans)
+
 	# if model_bundle is not None:
 	# 	sentence = (
 	# 		"·".join([t[0] for t in sentence]).replace("¶·", "¶")
@@ -241,6 +242,9 @@ if '@' in book_text:
 	# tli. A@uh in@tla|ic| mjquj ijti, mj@
 	# toa, motocaiotia: mocioaque@
 	book_text = re.sub('\| ', ' ', book_text) 
+	# In iehoantin,|y, moteneoa tlalo
+	book_text = re.sub(',\|', ', ', book_text) 
+	book_text = re.sub('\.\|', '. ', book_text) 
 	manual_tokenisation = True
 
 lines = re.sub('  *', ' ', book_text).split('\n')
@@ -259,6 +263,7 @@ for line in lines:
 	line = line.replace('xpo.', '@#@18@#@')
 	line = line.replace('14.', '@#@19@#@')
 	line = line.replace('p.', '@#@20@#@')
+	line = line.replace('N.', '@#@21@#@')
 
 	if line.strip() == '¶':
 		current_paragraph += 1
@@ -292,6 +297,8 @@ for token in tokens:
 				newtok = ('14.', token[1], token[2], token[3])
 			elif token_check == '@#@20@#@':
 				newtok = ('p.', token[1], token[2], token[3])
+			elif token_check == '@#@21@#@':
+				newtok = ('N.', token[1], token[2], token[3])
 		current_sentence.append(newtok)
 
 	if token[0] == '.' or token[0] == '?' or token[0].lower() in ['&c.', 'etc.']:
