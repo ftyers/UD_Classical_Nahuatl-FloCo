@@ -6,7 +6,9 @@ Alphabet
  %~:0 
  %·:0
  %»:0 %«:0
- %>:0 
+ %>:0
+
+ i:0
  ;
 
 
@@ -20,6 +22,5 @@ Cns   = b c d f g h j k l m n p q r s t w x y z u ;
 
 Rules
 
-"Remove symbols"
-Sx:0 <=> _ ; 
-     where Sx in ( %~ %· %» %« %> ) ; 
+"ii is sometimes wrong"
+i:0 => _ %>:0 i ;

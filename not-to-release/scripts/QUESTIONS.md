@@ -24,3 +24,7 @@
 * How do we deal with numerical expressions like *Ic matlactli omeyi capítulo*
 
 * How do we deal with ordinals *Inic macuilli capítulo* 
+
+* Should we orthographically normalise based on morphology, e.g. *Imamux* → *Inamox* or *Imamox* ?
+
+* Should we include *h* in words derived from *ihtoa*, e.g. *tlatolli* → *tlahtolli* or *tlatolli*?
