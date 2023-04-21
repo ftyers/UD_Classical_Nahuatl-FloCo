@@ -1,4 +1,5 @@
 import sys, re, os
+import hashlib
 from Trie import PrefixTree
 import glob
 # from ml_support import load_retokenization_model, retokenize_w_model
@@ -30,7 +31,9 @@ def normalise(table, overrides, s, idx):
 	if s == '':
 		print('WARNING: Empty token:', idx, s, file=sys.stderr)
 
-	if idx in overrides:
+	# norm, norm_form, ambiguous, overridden
+
+	if idx in overrides and overrides[idx][0] == s:
 		form = overrides[idx][1]
 		return form, form, table[0][s.lower()][1], True
 	if s in table[0]:
@@ -148,6 +151,7 @@ def load_normalisation_table(fn, table):
 #	table = {}
 	lineno = 0
 	ranks = {}
+	errs = []
 	for lineno, line in enumerate(open(fn)):
 		if line.strip() == '' or line[0] == '#':
 			continue
@@ -155,8 +159,8 @@ def load_normalisation_table(fn, table):
 			line = re.sub('\t\t*', '\t', line)
 			level, rank, left, right = line.strip().split('\t')
 		except:
-			print('!!! Error wrong number of values in line %d' % lineno, file=sys.stderr)
-			print('!!!', line, file=sys.stderr)
+			#print('!!! Error wrong number of values in line %d // %s' % (lineno, line), file=sys.stderr)
+			errs.append((lineno, line))
 			continue
 			#raise
 			
@@ -175,7 +179,7 @@ def load_normalisation_table(fn, table):
 			table[level][left] = ('/'.join([j for i,j in ranks[left]]), True)
 		else:
 			table[level][left] = (right, False)
-	return table
+	return table, errs
 
 def load_override_table(fn):
 	table = {}
@@ -215,9 +219,13 @@ for fn in glob.glob('retokenisation/*.retok'):
 #
 # retokenization_bundle = load_retokenization_model()
 
-table = load_normalisation_table('normalisation.tsv', {})
+table, errs = load_normalisation_table('normalisation.tsv', {})
+
 for fn in glob.glob('normalisation/*.norm'):
-	table = load_normalisation_table(fn, table)
+	table, errsx = load_normalisation_table(fn, table)
+	errs.extend(errsx)
+
+print('Errors: ', len(errs), file=sys.stderr)
 	
 overrides = load_override_table('overrides.tsv')
 subtoken_table = load_subtoken_table('subtokens.tsv')
@@ -251,6 +259,13 @@ if '@' in book_text:
 
 lines = re.sub('  *', ' ', book_text).split('\n')
 
+replacements = ['N.', 'q.', 'n.', 'xpo.', 'p.']
+
+for i in range(0, 20):
+	replacements.append(str(i)+'.')
+
+replacement_lookup = {'['+hashlib.md5(i.encode('utf-8')).hexdigest()+']': i for i in replacements}
+
 for line in lines:
 	if re.findall(' [Ff]ol?. *[0-9]+', line):
 		current_folio = re.sub('[^0-9]+', '', line.replace('fo.','').strip())
@@ -261,11 +276,11 @@ for line in lines:
 	line = line.strip() + '¶'
 	line = re.sub('\([0-9]+\)', '', line)
 	# We need to track and replace tokens that end in a full stop
-	line = line.replace('q. n.', '@#@16@#@ @#@17@#@')
-	line = line.replace('xpo.', '@#@18@#@')
-	line = line.replace('14.', '@#@19@#@')
-	line = line.replace('p.', '@#@20@#@')
-	line = line.replace('N.', '@#@21@#@')
+	for k, v in replacement_lookup.items():
+		line =   re.sub('([^A-Za-z0-9])(' + v.replace('.', '\\.') + ')([^A-Za-z0-9])', 
+				'\g<1>' + k + '\g<3>', 
+				line)
+		#line = line.replace(' ' +v, k)
 
 	if line.strip() == '¶':
 		current_paragraph += 1
@@ -288,19 +303,9 @@ for token in tokens:
 		# Make this more beautiful
 		newtok = token
 		token_check = token[0].strip('¶')
-		if token[0].strip('¶') in ['@#@16@#@', '@#@17@#@', '@#@18@#@', '@#@19@#@', '@#@20@#@']:
-			if token_check == '@#@16@#@':
-				newtok = ('q.', token[1], token[2], token[3])
-			elif token_check == '@#@17@#@':
-				newtok = ('n.', token[1], token[2], token[3])
-			elif token_check == '@#@18@#@':
-				newtok = ('xpo.', token[1], token[2], token[3])
-			elif token_check == '@#@19@#@':
-				newtok = ('14.', token[1], token[2], token[3])
-			elif token_check == '@#@20@#@':
-				newtok = ('p.', token[1], token[2], token[3])
-			elif token_check == '@#@21@#@':
-				newtok = ('N.', token[1], token[2], token[3])
+		if token[0].strip('¶') in replacement_lookup:
+			newtok = (replacement_lookup[token[0].strip('¶')], token[1], token[2], token[3])
+			
 		current_sentence.append(newtok)
 
 	if token[0] == '.' or token[0] == '?' or token[0].lower() in ['&c.', 'etc.']:
