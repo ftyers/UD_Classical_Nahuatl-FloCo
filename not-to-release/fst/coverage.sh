@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat ../conllu/*.conllu | grep 'Norm' | sed 's/Norm=/\t&/g'| cut -f11 | cut -f1 -d'|' | cut -f2 -d'=' | apertium-destxt | hfst-proc -w nci.mor.hfstol | apertium-retxt > /tmp/nci.analysed
+cat ../conllu/*.conllu | grep 'Norm' | sed 's/Norm=/\t&/g'| cut -f11 | cut -f1 -d'|' | cut -f2 -d'=' | apertium-destxt | hfst-proc -w nci.mor.hfstol | apertium-cleanstream -n | grep -v '^$' > /tmp/nci.analysed
 
 unknown=$(cat /tmp/nci.analysed | grep '*' | wc -l)
 total=$(cat /tmp/nci.analysed | wc -l)
@@ -18,8 +18,8 @@ lex=0
 
 cat /tmp/nci.analysed | cut -f2 -d'^' | cut -f1 -d'/' | sort -f | uniq -c | sort -gr > nci.freq
 
-total_types=$(cat nci.freq | apertium-destxt | hfst-proc nci.mor.hfstol   | wc -l)
-known_types=$(cat nci.freq | apertium-destxt | hfst-proc nci.mor.hfstol   | grep '<' | wc -l)
+total_types=$(cat nci.freq | wc -l)
+known_types=$(cat nci.freq | sed -E 's/[[:digit:]]+ //g' | hfst-proc nci.mor.hfstol   | grep '<' | wc -l)
 coverage_types=$(echo "${known_types}/${total_types}*100" | bc -l | head -c 6)
 #echo "Types:  ${known}/${total} (${coverage}%)" 
 

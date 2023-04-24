@@ -83,6 +83,7 @@ LEXICON N-ABS-SPA
 
 PATTERN Noun-Absolutive
 (Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,teteuh,cicitlaltin,catl,qui,t]]
+VerbRootIV [<v><iv><nmlz>:>liz] N-ABS[tli]
 
 PATTERN Noun-Possessed
 Comunes[-teteuh,-cicitlaltin,-spa,-spa-s,-spa-es,-spa-anes,-loc,-rel] [<n>:]
@@ -132,7 +133,7 @@ Numeros[tli] NUM-TLI
 Numeros[li] NUM-LI
 
 LEXICON Digitos 
-/([0123456789])+[,.]([0123456789])+/
+/([0123456789])+([,.]([0123456789])*)?/
 
 LEXICON NUM-TLI
 <num>:>tli
@@ -185,6 +186,10 @@ ixquichtin<prn>:ixquichtin
 mochi<prn>:mochi
 tle<prn><int>:tle
 
+on<prn><dem>:on
+
+yehhuatl<prn><pers><p3><sg><short>:yeh # TODO
+
 ###############################################################################
 
 LEXICON CONJ
@@ -202,14 +207,111 @@ ca<cnjsub>:ca
 
 ic<cnjsub>:ic # "when"
 
+tel<cnjsub>:tel # "but"
+
+# Farfan conjunctions
+# TODO: cnjcoo vs cnjsub
+auh<cnj>:auh
+ihuan<cnj>:ihuan
+ic<cnj>:ic
+inic<cnj>:inic
+telchitl<cnj>:telchitl
+intla<cnj>:intla
+tel<cnj>:tel
+anca<cnj>:anca
+zaceh<cnj>:zaceh
+yequeneh<cnj>:yequeneh
+yeceh<cnj>:yeceh
+nozo<cnj>:nozo
+ahnozo<cnj>:ahnozo
+noceh<cnj>:noceh
+ahnoceh<cnj>:ahnoceh
+ihui<cnj>:ihui
+
 LEXICON DET 
 
 in<det>:in
 inin<det>:inin
 mochi<det>:mochi
 
+# Farfan quantifiers
+achi<det><qnt>:achi
+ce<det><qnt>:ce
+cemeh<det><qnt>:cemeh
+cequi<det><qnt>:cequi
+cequintin<det><qnt>:cequintin
+ixachi<det><qnt>:ixachi
+ixachintin<det><qnt>:ixachintin
+miyac<det><qnt>:miyac
+miyaquin<det><qnt>:miyaquin
+miyactin<det><qnt>:miyactin
+miyaquintin<det><qnt>:miyaquintin
+moch<det><qnt>:moch
+mochi<det><qnt>:mochi
+mochin<det><qnt>:mochin
+mochtin<det><qnt>:mochtin
+mochintin<det><qnt>:mochintin
+izqui<det><qnt>:izqui
+izquintin<det><qnt>:izquintin
+ixquich<det><qnt>:ixquich
+ixquichtin<det><qnt>:ixquichtin
+
 LEXICON PART
 ma<part><opt>:ma
+tla<part><opt>:tla
+
+ahzo<part><dub>:ahzo
+at<part><dub>:at
+ach<part><dub>:ach
+nempancah<part><dub>:nempancah
+iuh<part>:iuh
+iuhqui<part>:iuhqui
+iuhqueh<part>:iuhqueh
+zan<part>:zan
+za<part>:za
+mach<part>:mach
+ma<part>:ma
+macamo<part>:macamo
+mah<part>:mah
+mahca<part>:mahca
+mahcamo<part>:mahcamo
+macheh<part>:macheh
+macihui<part>:macihui
+manel<part>:manel
+nel<part>:nel
+immanel<part>:immanel
+intlanel<part>:intlanel
+mazo<part>:mazo
+yolic<part>:yolic
+iyolic<part>:iyolic
+ihuian<part>:ihuian
+matca<part>:matca
+yocoxca<part>:yocoxca
+tlamach<part>:tlamach
+pacca<part>:pacca
+ihuihuih<part>:ihuihuih
+moca<part>:moca
+huel<part>:huel
+ahhuel<part>:ahhuel
+quil<part>:quil
+quilmach<part>:quilmach
+ayaxcan<part>:ayaxcan
+nenya<part>:nenya
+nenyan<part>:nenyan
+tlalhuiz<part>:tlalhuiz
+ilihuiz<part>:ilihuiz
+ilhuiz<part>:ilhuiz
+ilhuiceh<part>:ilhuiceh
+tlacahzo<part>:tlacahzo
+aquihtzin<part>:aquihtzin
+aquihton<part>:aquihton
+quemah<part>:quemah
+ahmo<part>:ahmo
+nen<part>:nen
+no<part>:no
+nehuan<part>:nehuan
+cepan<part>:cepan
+
 
 LEXICON Numeros
 
@@ -11220,6 +11322,9 @@ exihuitl:exihui[tl]
 chalchihuitl:chalchihui[tl]
 teoxihuitl:teoxihui[tl]
 
+ano:ano[spa-s]
+mil:mil[spa-es]
+
 LEXICON Propios 
 Quetzalcoatl:Quetzalcoa[tl]
 Tlazolteotl:Tlazolteo[tl]
@@ -11285,6 +11390,10 @@ celic # "fresh, green, tender"
 celpatic[tic] # "fresh, green, tender"
 chichiltic[tic] # "red"
 
+eztic[tic] # "red"
+yel # "diligent, helpful"
+achi # "a little" # TODO: POS
+
 LEXICON Adverbios 
 quenin[itg] # "cómo"
 aocmo:aocmo # "ya no"
@@ -11344,6 +11453,182 @@ nohuiyan # "everywhere"
 ayocmo # "no longer"
 anoce # "perhaps"
 oce # TODO "another one"?
+quin # "then"
+moch # mochi
+campa[itg] # "where"
+ace # "perhaps, already"
+aoc # "no longer"
+cen # "entirely"
+nen # "futilely"
+
+# Farfan Temporal
+achca
+achchica
+achic
+achipa
+achiquezquipa
+achihtonca
+achihtzinca
+achto
+achtopa
+achtzah
+achtzan
+aic
+ahoc
+aoc
+aoccampa
+aoccan
+aocmo
+aoquic
+axcampa
+axcan
+aya
+ayaic
+ayamo
+ayoc
+cecemilhuitl
+cecenyohual
+cen
+cemihcac
+cemmaniyan
+cenyohual
+cuel
+cueleh
+huehcauh
+huehcauhtica
+huehhuehcauhtica
+huiptla
+huiptlatica
+icah
+ihciuhca
+ihcuac
+imman
+immani
+inihcuac
+inoc
+ixquichca
+ixquichcapa
+ixquichcauh
+iyohpa
+izquipa
+miacpa
+miecpa
+mochipa
+momoztlaeh
+moztla
+nepa
+niman
+nocuel
+nocuelye
+oc
+ocma
+ocmaya
+ocno
+oncan
+oquic
+quemman
+quemmaniyan
+quin
+quinachic
+quinihcuac
+quiniuh
+quinizqui
+teotlac
+teotlacpa
+tepan
+tlahcah
+tlapohualpa
+ya
+yalhua
+yancuican
+ye
+yectel
+yecuel
+yehua
+yeohuiptla
+yeppa
+yeyehua
+yohuac
+yohualnepantla
+
+# Farfan interrogative
+ahtel[itg]
+monel[itg]
+ahmonel[itg]
+can[itg]
+canin[itg]
+campa[itg]
+cuix[itg]
+quexquichca[itg]
+quexquichcauh[itg]
+quen[itg]
+quenin[itg]
+ac[itg]
+aquin[itg]
+aquihqueh[itg]
+tle[itg]
+tleh[itg]
+tlein[itg]
+tleihqueh[itg]
+quezqui[itg]
+quexquich[itg]
+quexquichtin[itg]
+quezquin[itg]
+quezquintin[itg]
+
+# Farfan locative
+ahco
+ahcohuic
+ahhuic
+ahhuicpa
+canah
+canahpa
+ceccan
+cececni
+cecentlapal
+cecni
+centlani
+centlapal
+chichico
+chico
+huehca
+huehcapa
+huehhuehca
+ici
+itzintlan
+ixquichca
+iz
+miaccan
+mieccan
+momayeccancopa
+mopochcopa
+nechca
+nechcapa
+necoc
+necoccampa
+nenecoc
+nenetech
+nepa
+netech
+nican
+nipa
+nohuiyampa
+nohuiyan
+noncuah
+nononcuah
+ompa
+oncan
+tlalchi
+tlalchipa
+tlamayauhcampa
+tlamayeccampa
+tlamayeccancopa
+tlani
+tlanihuic
+tlanipa
+tlaopochcopa
+tlatzintlan
+tlayeccampa
 
 ###############################################################################
 
@@ -11376,6 +11661,7 @@ PATTERN IObjPrefix
 ObjectSpec(2)
 ObjectRefl(2)
 ObjectNonSpec(2)
+[<i_ref>:ne>]
 
 PATTERN TwoObjectPrefix
 IObjPrefix
@@ -11514,6 +11800,8 @@ VerbRootIV[-cl3] [<v><iv>:] CausAppl
 PATTERN DVlexStem
 VerbRootDVlex [<v><dv>:]
 IVCaus
+VerbRootDV[cl3] [<v><dv>:] PassCl3
+VerbRootDV[-cl3] [<v><dv>:] Pass
 
 PATTERN DVStem
 VerbRootDV [<v><dv>:]
@@ -19221,6 +19509,11 @@ zohzohuilia[cl3]
 LEXICON Irregulares 
 <s_sg3>catca<v><iv>:catca
 tiyacatl<n><pl>:tiyacahuan
+
+/([a-zA-Z])(<sym>:)/
+PP<sym>:PP
+
+de<pr>:de
 
 LEXICON PUNCT
 ,<cm>:,
