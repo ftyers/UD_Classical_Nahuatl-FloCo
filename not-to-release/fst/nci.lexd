@@ -59,7 +59,7 @@ LEXICON N-ABS
 <abs>:catl[catl]
 <pl>:ca[catl]
 <abs>:tli[tli]
-<pl>:tin[tli]
+<pl>:ti{~n}[tli]
 <abs>:tl[huitl]
 <abs>:[Ø]
 <pl>:me[Ø]
@@ -98,6 +98,7 @@ LEXICON N-DERIV
 <dim>:>tin
 <dim>:>zol
 <poss>:>yo
+<poss>:>iyo # TODO
 
 LEXICON N-DERIV-ABS
 <rev><abs>:>tzin>tli
@@ -131,6 +132,7 @@ Digitos [<num>:]
 Numeros[-tli,-li] [<num>:]
 Numeros[tli] NUM-TLI
 Numeros[li] NUM-LI
+Numeros [<num>:] [+xihuitl<n><abs>:xihuitl]
 
 LEXICON Digitos 
 /([0123456789])+([,.]([0123456789])*)?/
@@ -327,6 +329,20 @@ chiconahui:chiconahui # "nueve"
 matlactli:matlac[tli] # "diez"
 caxtolli:caxtol[li] # "quince"
 cempohualli:cempohual[li] # "veinte"
+ompohualli:ompohual[li] # "40"
+yepohualli:yepohual[li] # "60"
+nauhpohualli:nauhpohual[li] # "80"
+macuilpohualli:macuilpohual[li] # "100"
+centzontli:centzon[tli] # "400"
+ontzontli:ontzon[tli] # "800"
+yetzontli:zetzon[tli] # "1200"
+cenxiquipilli:cenxiquipil[li] # "8000"
+
+on<cnjcoo>+ce:on>ce
+on<cnjcoo>+ome:om>ome
+on<cnjcoo>+eyi:om>eyi
+on<cnjcoo>+nahui:onnahui
+on<cnjcoo>+matlactli:ommahtlactli
 
 LEXICON Relacionales 
 pan:pan
@@ -1871,6 +1887,7 @@ cihuatlahtolli:cihuatlahtol[li]
 cihuatlaiyelli:cihuatlaiyel[li]
 cihuatlalli:cihuatlal[li]
 cihuatl:cihua[tl] # "mujer" # FIXME: This can take -h plural too (e.g. -Ø in FloCo)
+cihuatl:cihua[Ø]
 cihuatochtli:cihuatoch[tli]
 cihuatotolin:cihuatotol[in]
 cihuatototl:cihuatoto[tl]
@@ -11311,6 +11328,7 @@ tecuhtli<n>+tlatoqui:tecuhtlato[qui]
 
 tonatiuh:tonatiuh[Ø]
 ixiptlatl:ixiptla[tl]
+teuctli:teuc[tli]
 
 # unknowns that look like nouns TODO
 nahuixihuitl:nahuixihui[tl]
@@ -11324,6 +11342,8 @@ teoxihuitl:teoxihui[tl]
 
 ano:ano[spa-s]
 mil:mil[spa-es]
+pahuaqui:pahua[qui]
+oquichtli:oquich[tli]
 
 LEXICON Propios 
 Quetzalcoatl:Quetzalcoa[tl]
@@ -11460,6 +11480,7 @@ ace # "perhaps, already"
 aoc # "no longer"
 cen # "entirely"
 nen # "futilely"
+nepapan # "various"
 
 # Farfan Temporal
 achca
