@@ -5,7 +5,7 @@ TARGETS = ../conllu/Book_01_-_The_Gods.conllu \
 	../conllu/Book_07_-_The_Sun,_Moon,_Stars,_and_the_Binding_of_the_Years.conllu \
 	../conllu/Book_08_-_Kings_and_Lords.conllu \
 	../conllu/Book_12_-_The_Conquest_of_Mexico.conllu
-DEPS = lexicon.tsv normalisation.tsv retokenisation.tsv tagset.tsv ../fst/nci.mor.att.gz tag-codex.py process-codex.py
+DEPS = lexicon.tsv normalisation.tsv retokenisation.tsv tagset.tsv ../fst/nci.mor.att.gz tag-codex.py process-codex.py normalisation/*
 
 all: $(TARGETS)
 
