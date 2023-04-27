@@ -132,7 +132,11 @@ Digitos [<num>:]
 Numeros[-tli,-li] [<num>:]
 Numeros[tli] NUM-TLI
 Numeros[li] NUM-LI
-Numeros [<num>:] [+xihuitl<n><abs>:xihuitl]
+Numeros [<num>+:>] NumNouns
+
+LEXICON NumNouns
+xihuitl<n><abs>:xihuitl
+ilhuitl<n><abs>:ilhuitl
 
 LEXICON Digitos 
 /([0123456789])+([,.]([0123456789])*)?/
@@ -11344,6 +11348,36 @@ ano:ano[spa-s]
 mil:mil[spa-es]
 pahuaqui:pahua[qui]
 oquichtli:oquich[tli]
+xomoihuitilmatli:xomoihuitilma[tli]t
+Tlacochcalcatl:Tlacochcalca[tl]
+cacahuatl:cacahua[tl]
+cueitl:cuei[tl]
+tlatquitl:tlatqui[tl]
+petlatl:petla[tl]
+miyahuatl:miyahua[tl]
+tlacateccatl:tlacatecca[tl]
+teocuitlapanitl:teocuitlapani[tl]
+pepechtli:pepech[tli]
+huactli:huac[tli]
+chicuatli:chicua[tli]
+tlatzincuitl:tlatzincui[tl]
+tianquiztli:tianquiz[tli]
+tecomatl:tecoma[tl]
+quetzalpanitl:quetzalpani[tl]
+olmaitl:olmai[tl]
+mahuizyotl:mahuizyo[tl]
+ixtlahuatl:ixtlahua[tl]
+colotli:colo[tli]
+cahuitl:cahui[tl]
+ayecotli:ayeco[tli]
+apaztli:apaz[tli]
+xiuhtototl:xiuhtoto[tl]
+tzitzimitl:tzitzimi[tl]
+tzayanalquilitl:tzayanalquili[tl]
+tlamachtli:tlamach[tli]
+tetlapaloliztli:tetlapaloliz[tli]
+tecpatl:tecpa[tl]
+tecoanotzaliztli:tecoanotzaliz[tli]
 
 LEXICON Propios 
 Quetzalcoatl:Quetzalcoa[tl]
@@ -11376,9 +11410,12 @@ Coyolxauh:Coyolxauh
 Omacatl:Omacatl
 Opochtli:Opochtli
 
+Ticociahuacatl:Ticociahuacatl
+
 LEXICON Adjetivos
 cualli:cualli
 hueyi:hueyi
+huehueyi:hue~hueyi
 chichiltic[tic]
 coztic[tic] # "yellow"
 iztac # "white"
