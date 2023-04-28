@@ -219,7 +219,8 @@ for bloc in sys.stdin.read().split('\n\n'):
 			a = analysis[0]
 			c = convertor.convert(a)
 			generated_analyses[a] = list(genfst.apply(a))
-			converted_analyses.append(c[0])
+			if c[0] not in converted_analyses:
+				converted_analyses.append(c[0])
 			#print(form, '|', norm, '|||', c, '|||', a, '|||', generated_analyses, file=sys.stderr)
 
 		if len(converted_analyses) > 0:
