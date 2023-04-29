@@ -234,6 +234,8 @@ noceh<cnj>:noceh
 ahnoceh<cnj>:ahnoceh
 ihui<cnj>:ihui
 
+intlacamo<cnjsub>:intlacamo
+
 LEXICON DET 
 
 in<det>:in
@@ -377,6 +379,10 @@ nacazco:nacazco
 nepantla:nepantla
 #ten:ten
 #toca:toca
+iuhcan
+tlalticpac
+ixco
+iuhca
 
 LEXICON Locativos 
 teopan:teopan
@@ -11390,6 +11396,22 @@ malcalli:malcal[li]
 aquilli:aquil[li]
 acualli:acual[li]
 tlazopilli:tlazopi~pil[li]
+tecocoliani:tecocolia[ni]
+tochin:tochin[Ø]
+yaotequihua:yaotequihua[Ø]
+tachcauh:tachcauh[Ø]
+ohui[Ø]
+caquiztli:caquiz[tli]
+tlacihuiti[Ø]
+huehuetque:hue~huet[que]
+chane[Ø]
+tliltique:tlilti[que]
+tzapaton[Ø]
+tzonqueme[Ø]
+tzontecomatl:tzontecoma[tl]
+tzotzomatli:tzotzoma[tli]
+tonalpouhqui[Ø]
+zacatla[Ø]
 
 LEXICON Propios 
 Quetzalcoatl:Quetzalcoa[tl]
@@ -11425,6 +11447,10 @@ Opochtli:Opochtli
 Ticociahuacatl:Ticociahuacatl
 Nezahualpilli:Nezahualpilli
 Xochipilli:Xochipilli # TODO: in text lowercase?
+Mictlan[loc]
+Mictlan:mictlan[loc]
+Atlaca:Atlaca
+Atlaca:atlaca
 
 LEXICON Adjetivos
 cualli:cualli
@@ -11464,6 +11490,15 @@ chichiltic[tic] # "red"
 eztic[tic] # "red"
 yel # "diligent, helpful"
 achi # "a little" # TODO: POS
+
+tlatlactic[tic] # "red"
+tlatlauhqui # "red"
+
+yollochicahuac # "brave"
+iyac # "stinky"
+cualcan # "good"
+yolizmatqui # "prudent, sane, witty"
+yolqui # "alive"
 
 LEXICON Adverbios 
 quenin[itg] # "cómo"
@@ -11703,6 +11738,14 @@ tlatzintlan
 tlayeccampa
 
 zazo
+ayocac # "no longer present"
+quenman[itg] # variant of quemman
+yeccan # "good"
+quenami[itg] # "how"
+nohuian # "everywhere" (variant of nohuiyan)
+iciuhca # "quickly"
+yequene
+zaniyo # "alone"
 
 ###############################################################################
 
@@ -11725,6 +11768,8 @@ LEXICON Subject
 <s_pl2>:an>[pl]
 <s_sg3>:[sg]
 <s_pl3>:[pl]
+<s_sg2><imp>:xi[sg]
+<s_pl2><imp>:xi[pl]
 
 PATTERN ObjectPrefix
 ObjectSpec(1): :ObjectSpec(2)
@@ -14429,6 +14474,15 @@ zotlahui[cl1]
 zozolci[cl1]
 zozotlacmiqui[cl2]
 zozotlahu[cl2]
+
+huehuetzca[cl1]
+tzatzi[cl1]
+pipitzca[cl1]
+chicha[cl1]
+moloni[cl2]
+zotlahua[cl2]
+itztiuh[cl1] # TODO: ???
+tlayohua[cl1]
 
 LEXICON VerbRootTV
 aachcui[cl1]
@@ -18841,9 +18895,19 @@ zozolcahuia[cl3]
 zozolotza[cl2]
 zozotlahua[cl2]
 
+mottitia[cl3]
+nelti[cl1] # transitivity unclear
+tlaloa[cl3] # TODO: specifically transitive
+«mauhca<adv>»tlaloa:mauhcatlaloa[cl3]
+aci[cl1]
+ihtoznequi[cl1]
+calaquia[cl3]
+calaquia[cl3]
+
 LEXICON VerbRootDVlex
 tlamachtia[cl3]
 «cal<n>»maca:«cal»maca[cl2]
+tlatoltia[cl3]
 
 LEXICON VerbRootDV
 «yollotl<n>»chichilia:«yollo»chichilia[cl3]
@@ -19586,8 +19650,11 @@ tiyacatl<n><pl>:tiyacahuan
 
 /([a-zA-Z])(<sym>:)/
 PP<sym>:PP
+etc<sym>:etc # TODO: ???
 
 de<pr>:de
+nocne<ij>:nocne
+tleinmach<ij>:tleinmach
 
 LEXICON PUNCT
 ,<cm>:,
