@@ -194,6 +194,8 @@ tle<prn><int>:tle
 
 on<prn><dem>:on
 
+nehhuatl<prn><pers><p1><sg><short>:neh # TODO
+nehhuatl<prn><pers><p1><sg>:nehua>tl # TODO
 yehhuatl<prn><pers><p3><sg><short>:yeh # TODO
 
 ###############################################################################
@@ -235,6 +237,7 @@ ahnoceh<cnj>:ahnoceh
 ihui<cnj>:ihui
 
 intlacamo<cnjsub>:intlacamo
+huacca<cnjsub>:huacca
 
 LEXICON DET 
 
@@ -11403,15 +11406,33 @@ tachcauh:tachcauh[Ø]
 ohui[Ø]
 caquiztli:caquiz[tli]
 tlacihuiti[Ø]
-huehuetque:hue~huet[que]
+huehuetque:hue~huet[qui]
 chane[Ø]
-tliltique:tlilti[que]
+tliltique:tlilti[qui]
 tzapaton[Ø]
 tzonqueme[Ø]
 tzontecomatl:tzontecoma[tl]
 tzotzomatli:tzotzoma[tli]
 tonalpouhqui[Ø]
 zacatla[Ø]
+izac:ihzac[Ø]
+cozamatl:cozama[tl]
+oquichiotl:oquichio[tl]
+nenenque:nenen[qui]
+chichtli:chich[tli]
+tlamacazqui:tlamacaz[qui]
+cuauhchochopitli:cuauhchochopi[tli]
+tlahuaqui:tlahua[qui]
+tlachcuitl:tlachcui[tl]
+occentlamantli:occentlaman[tli]
+tlacayectli:tlacayec[tli]
+ihuitl:ihui[tl]
+cozatli:coza[tli]
+cruz[spa-es]
+tecuanime[Ø]
+tlatlacatecolo[Ø]
+cuecueya[Ø]
+tonalli<n>+tlapalihui:tonallapalihui[Ø]
 
 LEXICON Propios 
 Quetzalcoatl:Quetzalcoa[tl]
@@ -11451,6 +11472,10 @@ Mictlan[loc]
 Mictlan:mictlan[loc]
 Atlaca:Atlaca
 Atlaca:atlaca
+Ipalnemohuani
+Ipalnemohuani:ipalnemohuani
+Acolhuacan
+España
 
 LEXICON Adjetivos
 cualli:cualli
@@ -11499,6 +11524,11 @@ iyac # "stinky"
 cualcan # "good"
 yolizmatqui # "prudent, sane, witty"
 yolqui # "alive"
+cuauhtic[tic] # "tall"
+quechcotoctic[tic] # "headless"
+temamauhti # "frightful"
+tlacuahuac # "hard"
+tetlayelti # "nauseating"
 
 LEXICON Adverbios 
 quenin[itg] # "cómo"
@@ -11746,6 +11776,16 @@ nohuian # "everywhere" (variant of nohuiyan)
 iciuhca # "quickly"
 yequene
 zaniyo # "alone"
+huecauhtica # "despues de largo tiempo"
+occequi
+achitzin:achi>tzin
+expa
+acazomo
+catle[itg]
+moche
+icel
+oppa # "twice"
+ohtlica
 
 ###############################################################################
 
@@ -11820,6 +11860,7 @@ LEXICON Tense
 LEXICON Aux
 +nemi<aux>:>ti·nemi
 +nemi<aux><past>:>ti·nen>ca
++quiza<aux>:>ti·quiza
 
 PATTERN TenseVerb
 ObjVerb[cl1] Tense[-pret]
@@ -14483,6 +14524,26 @@ moloni[cl2]
 zotlahua[cl2]
 itztiuh[cl1] # TODO: ???
 tlayohua[cl1]
+nelti[cl1] # transitivity unclear
+itto[cl1]
+
+caya[cl1] # TODO: not in dictionary, guessed
+
+papaqui[cl2]
+cuecueyoca[cl1]
+acohuetzi[cl2]
+cecepoca[cl1]
+metztona[cl1]
+mani[cl2]
+aya[cl1]
+aci[cl1]
+hualyetia[cl3]
+huiloa[cl3]
+eco[cl1]
+ilpitica[cl1]
+cahua[cl1]
+huetzca[cl1]
+tlathuic[cl4]
 
 LEXICON VerbRootTV
 aachcui[cl1]
@@ -15889,7 +15950,7 @@ ihtlani[cl2]
 ihtliloa[cl3]
 ihtoa[cl3]
 ihtoa:{i}htoa[cl3]
-ihtoa[cl3]
+ihtoa:{i}toa[cl3]
 ihtohtehua[cl1]
 ihtohtinemi[cl2]
 ihtopoloa[cl3]
@@ -18896,13 +18957,15 @@ zozolotza[cl2]
 zozotlahua[cl2]
 
 mottitia[cl3]
-nelti[cl1] # transitivity unclear
 tlaloa[cl3] # TODO: specifically transitive
 «mauhca<adv>»tlaloa:mauhcatlaloa[cl3]
 aci[cl1]
 ihtoznequi[cl1]
 calaquia[cl3]
 calaquia[cl3]
+cuacua[cl1]
+calaquia[cl3]
+mocacayahua[cl1]
 
 LEXICON VerbRootDVlex
 tlamachtia[cl3]
@@ -19655,6 +19718,11 @@ etc<sym>:etc # TODO: ???
 de<pr>:de
 nocne<ij>:nocne
 tleinmach<ij>:tleinmach
+macuele<part>:macuele
+ahuel<part><neg>:ahuel
+quennel<ij>:quennel
+tahui<ij>:tahui
+izca<ij>:izca
 
 LEXICON PUNCT
 ,<cm>:,
