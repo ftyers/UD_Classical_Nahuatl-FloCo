@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat ../conllu/*.conllu | grep 'Norm' | sed 's/Norm=/\t&/g'| cut -f11 | cut -f1 -d'|' | cut -f2 -d'=' | apertium-destxt | hfst-proc -w nci.mor.hfstol | apertium-cleanstream -n | grep -v '^$' > /tmp/nci.analysed
+cat ../conllu/*.conllu | grep 'Norm' | sed 's/Norm=/\t&/g'| cut -f11 | cut -f1 -d'|' | cut -f2 -d'=' | grep -v '^\*' | apertium-destxt | hfst-proc -w nci.mor.hfstol | apertium-cleanstream -n | grep -v '^$' > /tmp/nci.analysed
 
 unknown=$(cat /tmp/nci.analysed | grep '*' | wc -l)
 total=$(cat /tmp/nci.analysed | wc -l)
