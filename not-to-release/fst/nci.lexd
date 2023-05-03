@@ -11435,6 +11435,8 @@ cuecueya[Ø]
 tonalli<n>+tlapalihui:tonallapalihui[Ø]
 tlalticpac[Ø]
 chiquimoli:chiquimo[li]
+yollotl<n>+tlapalihui:yollotlapalihui[Ø]
+yaotl<n>+tlahueliloc:yaotlahueliloc[Ø]
 
 LEXICON Propios 
 Quetzalcoatl:Quetzalcoa[tl]
@@ -11819,14 +11821,15 @@ ObjectRefl(1): :ObjectRefl(2)
 ObjectNonSpec(1): :ObjectNonSpec(2)
 
 PATTERN IObjPrefix
-ObjectSpec(2)
-ObjectRefl(2)
-ObjectNonSpec(2)
-[<i_ref>:ne>]
+ObjectSpec(2) Directional?
+Directional? ObjectRefl(2)
+Directional? ObjectNonSpec(2)
+Directional? [<i_ref>:ne>]
 
 PATTERN TwoObjectPrefix
 IObjPrefix
-ObjectPrefix (ObjectNonSpec(2) | ObjectDouble)
+ObjectPrefix Directional? ObjectNonSpec(2)
+ObjectPrefix Directional? ObjectDouble
 
 LEXICON ObjectSpec(2)
 <o_sg1> <i_sg1>:nech>
@@ -11853,6 +11856,7 @@ LEXICON Tense
 <pres>:[pl,pres]
 <fut>:>z[sg,fut]
 <fut>:>z>que[pl,fut]
+<fut>+nequi<v><tv>:>z>nequi[sg,fut]
 <cond>:>z>quiya[sg,fut]
 <cond>:>z>quiyah[pl,fut]
 <past>:[sg,pret]
@@ -11932,8 +11936,9 @@ AnyStem[cl3] [<impers>:{del}>lo]
 PATTERN ObjVerb
 Directional? IVStem
 ObjectPrefix Directional? TVStem
+Directional ObjectPrefix TVStem # TODO: HACK
 IObjPrefix DVlexStem
-TwoObjectPrefix Directional? DVStem
+TwoObjectPrefix DVStem
 
 LEXICON CausAppl
 <caus>:{caus}ltia[cl3]
@@ -18996,6 +19001,9 @@ nomahuia[cl3] # "act of one's own free will"
 cahuia[cl3]
 amana[cl2] # "divine in water
 tlaloticalaqui[cl2] # "barge in"
+monamictia[cl3]
+calaquia[cl3] # "insert"
+tzacua[cl2] # "close"
 
 LEXICON VerbRootDVlex
 tlamachtia[cl3]
