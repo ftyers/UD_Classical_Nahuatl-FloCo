@@ -29,26 +29,8 @@ Cns   = b c d f g h j k l m n p q r s t w x y z u ;
 
 Rules
 
-"Objeto I"
-u:0 <=> %{q%}:c _  ; 
-
-"Objeto II"
-i:0 <=> %{q%}:c u:0 _ %>: ;
-                    _ %>: %{i%}: ; 
-                    _ %>: %{a%}: ;
-
-!@ {q}:q u:u i:0 >:0 {i}:i h:h t:t o:o a:a >:0 y:y a:a
-
 "Reflexive mo"
 o:0 <=> m _ %>: %{i%}: ;
-
-"c/qu I"
-u:0 <=> _ .#.  ;
-        _ %>: q u e ;
-
-"c/qu I"
-q:c <=> _ u:0 .#.  ;
-        _ u:0 %>: q u e ;
 
 "hu/uh I"
 %{u%}:0 <=> %{u%}: h _ %>:? [Cns | .#.] ;
@@ -60,4 +42,28 @@ q:c <=> _ u:0 .#.  ;
 
 !@ c:c a:a {u}:0 h:h {u}:u a:a
 
+"Objeto I"
+u:0 <=> %{q%}:c _  ; 
 
+"Objeto II"
+i:0 <=> %{q%}:c u:0 _ %>: ;
+                    _ %>: %{i%}: ; 
+                    _ %>: %{a%}: ;
+
+!@ {q}:q u:u i:0 >:0 {i}:i h:h t:t o:o a:a >:0 y:y a:a
+
+"c/qu I"
+u:0 <=> _ .#.  ;
+        _ %>: q u e ;
+
+"c/qu I"
+q:c <=> _ u:0 .#.  ;
+        _ u:0 %>: q u e ;
+
+"i ~ e"
+i:0 => %{q%}: u _ %>: e ; 
+	except 
+		%{q%}:c _ ;
+		
+
+!@ {q}:q u:u i:0 >:> e:e l:l l:l a:a c:c u:u a:a h:h u:u a:a

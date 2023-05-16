@@ -1,9 +1,9 @@
 # sent_id = Book_01_-_The_Gods.txt:1
 # text = Inic ce amuxtli, vncan moteneoa, in teteuh: in qujnmoteutiaia in nican tlaca.
-# text[norm] = Inic ce amoxtli, oncan motenehua, in teteuh: in quinmoteotitaya in nican tlaca.
+# text[norm] = Inic ce amoxtli, oncan motenehua, in teteuh: in quinmoteotitaya in nican tlacah.
 # text[orig] = I·nic·ce·amuxtli·,·vncan·motene¶oa·,·in·te·teuh·:·in·qujnmoteutiaia¶in·nican·tlaca·.
-# tagged = 100.00%
-# analysed = 93.75%
+# tagged = 93.75%
+# analysed = 87.50%
 1	Inic	inic	SCONJ	_	_	_	_	_	Orig=I·nic|Folio=1,1|Paragraph=1,1|Line=1,1|Norm=Inic
 2	ce	ce	NUM	_	_	_	_	_	Folio=1|Paragraph=1|Line=1|Norm=ce|AmbigNorm=True|Override=False|Gloss=uno
 3	amuxtli	amoxtli	NOUN	_	Case=Abs	_	_	_	Folio=1|Paragraph=1|Line=1|Norm=amoxtli|Gloss=libro|Analysed=Yes
@@ -18,7 +18,7 @@
 12	qujnmoteutiaia	_	VERB	_	_	_	_	_	Folio=1|Paragraph=1|Line=2|Norm=quinmoteotitaya|Guessed=Yes
 13	in	in	DET|SCONJ	_	_	_	_	_	Folio=1|Paragraph=1|Line=3|Norm=in
 14	nican	_	ADV	_	_	_	_	_	Folio=1|Paragraph=1|Line=3|Norm=nican|Gloss=aquí
-15	tlaca	tlacatl	NOUN	_	Number=Plur	_	_	_	Folio=1|Paragraph=1|Line=3|Norm=tlaca|Analysed=Yes
+15	tlaca	_	X	_	_	_	_	_	Folio=1|Paragraph=1|Line=3|Norm=tlacah
 16	.	.	PUNCT	_		_	_	_	Folio=1|Paragraph=1|Line=3|Norm=.|Analysed=Yes
 
 # sent_id = Book_01_-_The_Gods.txt:2
@@ -672,10 +672,10 @@
 
 # sent_id = Book_01_-_The_Gods.txt:22
 # text = Jnjc chiquace capitulo: vncan moteneoa, yn oc cenca tlapanauja yn cioateteu: yn qujnmoteutiaia, in qujnteutlapiqujaia yn njcan tlaca.
-# text[norm] = Inic chicuacen capítulo: oncan motenehua, in oc cenca tlapanahuia in cihuateteuh: in quinmoteotitaya, in quinteuhtlapiquiaya in nican tlaca.
+# text[norm] = Inic chicuacen capítulo: oncan motenehua, in oc cenca tlapanahuia in cihuateteuh: in quinmoteotitaya, in quinteuhtlapiquiaya in nican tlacah.
 # text[orig] = Jnjc·chiquace·capitulo·:·vncan·mo¶teneoa·,·y·noc·cenca·tlapanauja¶yn·cioateteu·:·yn·qujnmoteuti¶aia·,·in·qujnteutlapiqujaia·yn¶njcan·tlaca·.
-# tagged = 100.00%
-# analysed = 86.96%
+# tagged = 95.65%
+# analysed = 82.61%
 1	Jnjc	inic	SCONJ	_	_	_	_	_	Folio=2|Paragraph=7|Line=1|Norm=Inic
 2	chiquace	chicuacen	NUM	_		_	_	_	Folio=2|Paragraph=7|Line=1|Norm=chicuacen|Gloss=seis|Analysed=Yes
 3	capitulo	capítulo	NOUN	_	Case=Abs	_	_	_	Folio=2|Paragraph=7|Line=1|Norm=capítulo|Analysed=Yes
@@ -697,7 +697,7 @@
 19	qujnteutlapiqujaia	_	VERB	_	_	_	_	_	Folio=2|Paragraph=7|Line=4|Norm=quinteuhtlapiquiaya|Guessed=Yes
 20	yn	in	DET|SCONJ	_	_	_	_	_	Folio=2|Paragraph=7|Line=4|Norm=in
 21	njcan	_	ADV	_	_	_	_	_	Folio=2|Paragraph=7|Line=5|Norm=nican|Gloss=aquí
-22	tlaca	tlacatl	NOUN	_	Number=Plur	_	_	_	Folio=2|Paragraph=7|Line=5|Norm=tlaca|Analysed=Yes
+22	tlaca	_	X	_	_	_	_	_	Folio=2|Paragraph=7|Line=5|Norm=tlacah
 23	.	.	PUNCT	_		_	_	_	Folio=2|Paragraph=7|Line=5|Norm=.|Analysed=Yes
 
 # sent_id = Book_01_-_The_Gods.txt:23
@@ -1071,7 +1071,7 @@
 52	,	,	PUNCT	_		_	_	_	Folio=3|Paragraph=6|Line=25|Norm=,|Analysed=Yes
 53	netlauizmacoia	_	X	_	_	_	_	_	Folio=3|Paragraph=6|Line=25|Norm=netlahuizmacoya
 54	,	,	PUNCT	_		_	_	_	Folio=3|Paragraph=6|Line=25|Norm=,|Analysed=Yes
-55	netlauhtiloia	tlauhtia	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Subcat=Ditr|Tense=Past|VerbForm=Fin	_	_	_	Orig=netla¶·uhtiloia|Folio=3,3|Paragraph=6,6|Line=25,26|Norm=netlauhtiloya|Analysed=Yes
+55	netlauhtiloia	tlauhtia	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Reflexive[iobj]=Yes|Subcat=Ditr|Tense=Past|VerbForm=Fin	_	_	_	Orig=netla¶·uhtiloia|Folio=3,3|Paragraph=6,6|Line=25,26|Norm=netlauhtiloya|Analysed=Yes
 56	;	;	PUNCT	_		_	_	_	Folio=3|Paragraph=6|Line=26|Norm=;|Analysed=Yes
 57	in	in	DET|SCONJ	_	_	_	_	_	Folio=3|Paragraph=6|Line=26|Norm=in
 58	qujmjliuhca	_	X	_	_	_	_	_	Folio=3|Paragraph=6|Line=26|Norm=quimiliuhca
@@ -1576,7 +1576,7 @@
 # text[norm] = Teotl ipan machoya: iuhquin cihuatl quixiptlatiaya, iuh mihtoaya, quilmach inhuan pohui, inhueltiuh in tlaloque: inic mahuiztililoya, inic imacaxoya, inic mauhcaittoya, inic tlamauhtiaya, teatoctiaya, teatlanmictiaya, tepolactiaya, tepan pozonia, moteponazoa, maxiciotia, tepan motehuilacachoa, inic tecentlanihuica: in acalli quicuepa, quixtlapachcuepa, quehuatiquetza, ca azo mayahui, ca tema.
 # text[orig] = Teutl·ipan·machoia·:·iuhqujn¶cioatl·qujxiptlatiaia·,·iuh·mjtoa¶ia·,·qujlmach·yn·van·pouj·,·in·uel¶tiuh·in·tlaloque·:·y·nic·mauizti¶liloia·,·y·nic·imacaxoia·,·y·njc¶mauhcaittoia·,·y·njc·tlamauhtia¶ia·,·teatoctiaia·,·teatlan·mjctiaia·,·tepolactiaia·,·tepan·poconja·,·mo·te¶ponacoa·,·maxiciotia·,·tepan·mo¶teujlacachoa·,·y·njc·tecentla·njujca·:·yn·acalli·quj·cuepa·,·qujx·tlapach¶cuepa·,·queoatiquetza·,·ca·aco·ma¶ia·uj·,·catema·.
 # tagged = 95.38%
-# analysed = 83.08%
+# analysed = 84.62%
 1	Teutl	teotl	NOUN	_	Case=Abs	_	_	_	Folio=5|Paragraph=3|Line=1|Norm=Teotl|Gloss=díos|Analysed=Yes
 2	ipan	_	NOUN	_	NounType=Relat	_	_	_	Folio=5|Paragraph=3|Line=1|Norm=ipan
 3	machoia	_	VERB	_	_	_	_	_	Folio=5|Paragraph=3|Line=1|Norm=machoya
@@ -1633,7 +1633,7 @@
 54	,	,	PUNCT	_		_	_	_	Folio=5|Paragraph=5|Line=4|Norm=,|Analysed=Yes
 55	qujxtlapachcuepa	ixtlapachcuepa	VERB	_	_	_	_	_	Orig=qujx·tlapach¶·cuepa|Folio=5,5,5|Paragraph=5,5,5|Line=4,4,5|Norm=quixtlapachcuepa
 56	,	,	PUNCT	_		_	_	_	Folio=5|Paragraph=5|Line=5|Norm=,|Analysed=Yes
-57	queoatiquetza	_	VERB	_	_	_	_	_	Folio=5|Paragraph=5|Line=5|Norm=quehuatiquetza
+57	queoatiquetza	ehuatiquetza	VERB	_	_	_	_	_	Folio=5|Paragraph=5|Line=5|Norm=quehuatiquetza
 58	,	,	PUNCT	_		_	_	_	Folio=5|Paragraph=5|Line=5|Norm=,|Analysed=Yes
 59	ca	_	VERB	_	_	_	_	_	Folio=5|Paragraph=5|Line=5|Norm=ca|AmbigNorm=True|Override=False
 60	aco	azo	ADV	_		_	_	_	Folio=5|Paragraph=5|Line=5|Norm=azo|Gloss=quizás|Analysed=Yes
@@ -2816,10 +2816,10 @@
 
 # sent_id = Book_01_-_The_Gods.txt:77
 # text = Auh xicmotlaoculnonochili, yn totecujo, in tloque naoaque, in momacoaltitica, y macochetica, in teputzetica; ximotlapalo, ma timopinoquetz, ma titzicolo.
-# text[norm] = Auh xicmotlaocolnonochili, in totecuiyo, in tloque nahuaque, in momazohualtitica, y macochetica, in tepotzetica; ximotlapalo, ma timopinoquetz, ma titzicolo.
+# text[norm] = Auh xicmotlaocolnonochili, in totecuiyo, in tloque nahuaque, in momazohualtitica, y macochetica, in tepotzetica; ximotlahpalo, ma timopinoquetz, ma titzicolo.
 # text[orig] = Auh·xicmotlaoculnonochili·,·yn¶totecujo·,·in·tloque·naoaque·,·in·mo¶macoaltitica·,·y·macochetica·,·in¶teputzetica·;·ximotlapalo·,·mati¶mopinoquetz·,·matitzicolo·.
-# tagged = 85.19%
-# analysed = 77.78%
+# tagged = 88.89%
+# analysed = 81.48%
 1	Auh	auh	CCONJ	_	_	_	_	_	Folio=8|Paragraph=3|Line=7|Norm=Auh|Gloss=y
 2	xicmotlaoculnonochili	_	VERB	_	_	_	_	_	Folio=8|Paragraph=3|Line=7|Norm=xicmotlaocolnonochili
 3	,	,	PUNCT	_		_	_	_	Folio=8|Paragraph=3|Line=7|Norm=,|Analysed=Yes
@@ -2839,7 +2839,7 @@
 17	in	in	DET|SCONJ	_	_	_	_	_	Folio=8|Paragraph=3|Line=9|Norm=in
 18	teputzetica	_	X	_	_	_	_	_	Folio=8|Paragraph=3|Line=10|Norm=tepotzetica
 19	;	;	PUNCT	_		_	_	_	Folio=8|Paragraph=3|Line=10|Norm=;|Analysed=Yes
-20	ximotlapalo	_	X	_	_	_	_	_	Folio=8|Paragraph=3|Line=10|Norm=ximotlapalo
+20	ximotlapalo	tlahpaloa	VERB	_	Number[subj]=Sing|Person[subj]=2|Reflexive[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=8|Paragraph=3|Line=10|Norm=ximotlahpalo|Analysed=Yes
 21	,	,	PUNCT	_		_	_	_	Folio=8|Paragraph=3|Line=10|Norm=,|Analysed=Yes
 22	ma	_	ADV	_	_	_	_	_	Orig=mati¶·mopinoquetz|Folio=8,8|Paragraph=3,3|Line=10,11|Norm=ma|AmbigNorm=True|Override=False|Gloss=OPT
 23	timopinoquetz	_	VERB	_	_	_	_	_	Orig=mati¶·mopinoquetz|Folio=8,8|Paragraph=3,3|Line=10,11|Norm=timopinoquetz
@@ -3674,7 +3674,7 @@
 19	copaltemjlilo	copaltema	VERB	_	Person=Impers|Subcat=Intr|VerbForm=Fin	_	_	_	Folio=10|Paragraph=4|Line=18|Norm=copaltemililo|Analysed=Yes
 20	,	,	PUNCT	_		_	_	_	Folio=10|Paragraph=4|Line=18|Norm=,|Analysed=Yes
 21	oauhqujltamalli	huauhquiltamalli	NOUN	_	Case=Abs	_	_	_	Orig=oauh¶·qujltamalli|Folio=10,10|Paragraph=4,4|Line=18,19|Norm=huauhquiltamalli|Split=huauhquil·tamalli|Analysed=Yes
-22	nechivililoia	chihuilia	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Subcat=Ditr|Tense=Past|VerbForm=Fin	_	_	_	Folio=10|Paragraph=4|Line=19|Norm=nechihuililoya|Analysed=Yes
+22	nechivililoia	chihuilia	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Reflexive[iobj]=Yes|Subcat=Ditr|Tense=Past|VerbForm=Fin	_	_	_	Folio=10|Paragraph=4|Line=19|Norm=nechihuililoya|Analysed=Yes
 23	,	,	PUNCT	_		_	_	_	Folio=10|Paragraph=4|Line=19|Norm=,|Analysed=Yes
 24	in	in	DET|SCONJ	_	_	_	_	_	Folio=10|Paragraph=4|Line=19|Norm=in
 25	cecencalpan	_	NOUN	_	_	_	_	_	Orig=ce·cencalpan|Folio=10,10|Paragraph=4,4|Line=20,20|Norm=cecencalpan|Split=cecen·calpan|Locative=Yes|Gloss=en.cada.casa
@@ -4168,7 +4168,7 @@
 31	jtlatquj	_	PRON	_	_	_	_	_	Orig=y·nj·tlat¶·quj|Folio=12,12,12,12|Paragraph=0,0,0,0|Line=25,25,25,26|Norm=itlatqui|Gloss=su.cosa
 32	,	,	PUNCT	_		_	_	_	Folio=12|Paragraph=0|Line=26|Norm=,|Analysed=Yes
 33	ipan	_	NOUN	_	NounType=Relat	_	_	_	Folio=12|Paragraph=0|Line=26|Norm=ipan
-34	mjtotiaia	ihtoa	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=12|Paragraph=0|Line=26|Norm=mitotiaya|Analysed=Yes
+34	mjtotiaia	ihtoa	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Reflexive[iobj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=12|Paragraph=0|Line=26|Norm=mitotiaya|Analysed=Yes
 35	,	,	PUNCT	_		_	_	_	Folio=12|Paragraph=0|Line=26|Norm=,|Analysed=Yes
 36	qujtlatzotzonjliaia	_	VERB	_	_	_	_	_	Orig=qujtlatzo¶·tzonjliaia|Folio=12,12|Paragraph=0,0|Line=26,27|Norm=quitlatzotzoniliaya|Guessed=Yes
 37	,	,	PUNCT	_		_	_	_	Folio=12|Paragraph=0|Line=27|Norm=,|Analysed=Yes
@@ -4352,7 +4352,7 @@
 
 # sent_id = Book_01_-_The_Gods.txt:111
 # text = Auh yn jnechichioal: tenmacpale ixtlapaloatzale, tlaixtlapaloatzalujlli, tlaixtlapalhvilli, yhujtzoncale, quachichiqujle, vitonquj yn jtlamamal, vitoncatlamamale, ypan icac, tonalopanjtl, quetzaltzonio, quetzaltzontecomaio, quetzaltzontecome, quetzaltzonteconio, tentlapaltica motzinjlpi, motzinapa, ytonalocac, tonalocaque.
-# text[norm] = Auh in inechichihual: tenmacpale ixtlapalohuatzale, tlaixtlapalohuatzalhuilli, tlaixtlapalhuilli, ihuitzoncale, cuachichiquile, huitonqui in itlamamal, huitoncatlamamale, ipan icac, tonalopanitl, quetzalzoniyo, quetzaltzontecomayo, quetzaltzontecome, quetzaltzenteconyo, tentlapaltica motzinilpi, motzinapa, itonalocac, tonalocaque.
+# text[norm] = Auh in inechichihual: tenmacpale ixtlahpaloatzale, tlaixtlahpaloatzalhuilli, tlaixtlapalhuilli, ihuitzoncale, cuachichiquile, huitonqui in itlamamal, huitoncatlamamale, ipan icac, tonalopanitl, quetzalzoniyo, quetzaltzontecomayo, quetzaltzontecome, quetzaltzenteconyo, tentlapaltica motzinilpi, motzinapa, itonalocac, tonalocaque.
 # text[orig] = A·uh·y·nj·nechichioal·:·tenmacpale·ixtlapaloatzale·,·tlaixtlapaloatzalujlli·,·tlaixtla¶palhvilli·,·yhujtzoncale·,·qua·chi·chi¶qujle·,·vitonquj·y·nj·tlamamal·,·vi¶ton·catlamamale·,·y·pan·icac·,·to¶nalopanjtl·,·quetzaltzonio·,·que¶tzaltzontecomaio·,·quetzaltzonte¶come·,·quetzaltzonteconio·,·tentla¶paltica·motzinjlpi·,·motzinapa·,·y¶tonalocac·,·tonalocaque·.
 # tagged = 69.77%
 # analysed = 62.79%
@@ -4361,9 +4361,9 @@
 3	jnechichioal	nechichihualli	NOUN	_	Number[psor]=Sing|Person[psor]=3	_	_	_	Orig=y·nj·nechichioal|Folio=13,13,13|Paragraph=1,1,1|Line=6,6,6|Norm=inechichihual|Gloss=su.vestimento|Analysed=Yes
 4	:	:	PUNCT	_		_	_	_	Folio=13|Paragraph=1|Line=6|Norm=:|Analysed=Yes
 5	tenmacpale	_	X	_	_	_	_	_	Folio=13|Paragraph=1|Line=7|Norm=tenmacpale
-6	ixtlapaloatzale	_	X	_	_	_	_	_	Folio=13|Paragraph=1|Line=7|Norm=ixtlapalohuatzale
+6	ixtlapaloatzale	_	X	_	_	_	_	_	Folio=13|Paragraph=1|Line=7|Norm=ixtlahpaloatzale
 7	,	,	PUNCT	_		_	_	_	Folio=13|Paragraph=1|Line=7|Norm=,|Analysed=Yes
-8	tlaixtlapaloatzalujlli	_	X	_	_	_	_	_	Folio=13|Paragraph=1|Line=8|Norm=tlaixtlapalohuatzalhuilli
+8	tlaixtlapaloatzalujlli	_	X	_	_	_	_	_	Folio=13|Paragraph=1|Line=8|Norm=tlaixtlahpaloatzalhuilli
 9	,	,	PUNCT	_		_	_	_	Folio=13|Paragraph=1|Line=8|Norm=,|Analysed=Yes
 10	tlaixtlapalhvilli	tlaixtlapalhuilli	NOUN	_	Case=Abs	_	_	_	Orig=tlaixtla¶·palhvilli|Folio=13,13|Paragraph=1,1|Line=8,9|Norm=tlaixtlapalhuilli|Analysed=Yes
 11	,	,	PUNCT	_		_	_	_	Folio=13|Paragraph=1|Line=9|Norm=,|Analysed=Yes
@@ -4474,7 +4474,7 @@
 46	vmpa	ompa	ADV	_		_	_	_	Folio=13|Paragraph=5|Line=3|Norm=ompa|Gloss=allá|Analysed=Yes
 47	mauizmachoia	_	VERB	_	_	_	_	_	Folio=13|Paragraph=5|Line=3|Norm=mahuizmachoya
 48	,	,	PUNCT	_		_	_	_	Folio=13|Paragraph=5|Line=3|Norm=,|Analysed=Yes
-49	necujtlaujloia	cuitlahuia	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Subcat=Ditr|Tense=Past|VerbForm=Fin	_	_	_	Orig=ne¶·cujtlaujloia|Folio=13,13|Paragraph=5,5|Line=3,4|Norm=necuitlahuiloya|Analysed=Yes
+49	necujtlaujloia	cuitlahuia	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Reflexive[iobj]=Yes|Subcat=Ditr|Tense=Past|VerbForm=Fin	_	_	_	Orig=ne¶·cujtlaujloia|Folio=13,13|Paragraph=5,5|Line=3,4|Norm=necuitlahuiloya|Analysed=Yes
 50	yn	in	DET|SCONJ	_	_	_	_	_	Folio=13|Paragraph=5|Line=4|Norm=in
 51	jxiptla	ixiptlatl	NOUN	_	Number[psor]=Sing|Person[psor]=3	_	_	_	Folio=13|Paragraph=5|Line=4|Norm=ixiptla|Gloss=su.imagen|Analysed=Yes
 52	.	.	PUNCT	_		_	_	_	Folio=13|Paragraph=5|Line=4|Norm=.|Analysed=Yes
@@ -4914,7 +4914,7 @@
 21	jxtlilton	_	PROPN	_	_	_	_	_	Orig=y·njxtlilton|Folio=14,14|Paragraph=4,4|Line=16,16|Norm=Ixtlilton
 22	:	:	PUNCT	_		_	_	_	Folio=14|Paragraph=4|Line=16|Norm=:|Analysed=Yes
 23	yn	in	DET|SCONJ	_	_	_	_	_	Orig=y·nomjtoti|Folio=14,14|Paragraph=4,4|Line=17,17|Norm=in
-24	omjtoti	ihtoa	VERB	_	Aspect=Prior|Number[subj]=Sing|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Orig=y·nomjtoti|Folio=14,14|Paragraph=4,4|Line=17,17|Norm=omitoti|Analysed=Yes
+24	omjtoti	ihtoa	VERB	_	Aspect=Prior|Number[subj]=Sing|Person[subj]=3|Reflexive[iobj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Orig=y·nomjtoti|Folio=14,14|Paragraph=4,4|Line=17,17|Norm=omitoti|Analysed=Yes
 25	,	,	PUNCT	_		_	_	_	Folio=14|Paragraph=4|Line=17|Norm=,|Analysed=Yes
 26	yn	in	DET|SCONJ	_	_	_	_	_	Orig=y·non·maceuh|Folio=14,14,14|Paragraph=4,4,4|Line=17,17,17|Norm=in
 27	onmaceuh	macehua	VERB	_	Directional=On|Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	_	_	_	Orig=y·non·maceuh|Folio=14,14,14|Paragraph=4,4,4|Line=17,17,17|Norm=onmaceuh|Analysed=Yes
@@ -5114,10 +5114,10 @@
 
 # sent_id = Book_01_-_The_Gods.txt:129
 # text = Jnic castolli vmome capitulo, ytechpa tlatoa, yn teutl, yn itoca catca opuchtli: yn qujmoteutiaia ie uecauh, nican tlaca.
-# text[norm] = Inic caxtolli omome capítulo, itechpa tlatoa, in teotl, in itoca catca opochtli: in quimoteuhtiaya ye huehcauh, nican tlaca.
+# text[norm] = Inic caxtolli omome capítulo, itechpa tlatoa, in teotl, in itoca catca opochtli: in quimoteuhtiaya ye huehcauh, nican tlacah.
 # text[orig] = Jnic·castolli·vmome·capitulo·,·y¶techpa·tlatoa·,·yn·teutl·,·yn·ito¶ca·catca·opuchtli·:·yn·qujmo¶teutiaia·ie·uecauh·,·nican¶tlaca·.
-# tagged = 100.00%
-# analysed = 95.83%
+# tagged = 95.83%
+# analysed = 91.67%
 1	Jnic	inic	SCONJ	_	_	_	_	_	Folio=15|Paragraph=2|Line=1|Norm=Inic
 2	castolli	caxtolli	NUM	_	_	_	_	_	Folio=15|Paragraph=2|Line=1|Norm=caxtolli
 3	vmome	_	NUM	_	_	_	_	_	Folio=15|Paragraph=2|Line=1|Norm=omome
@@ -5140,7 +5140,7 @@
 20	uecauh	_	ADV	_	_	_	_	_	Folio=15|Paragraph=2|Line=4|Norm=huehcauh
 21	,	,	PUNCT	_		_	_	_	Folio=15|Paragraph=2|Line=4|Norm=,|Analysed=Yes
 22	nican	_	ADV	_	_	_	_	_	Folio=15|Paragraph=2|Line=4|Norm=nican|Gloss=aquí
-23	tlaca	tlacatl	NOUN	_	Number=Plur	_	_	_	Folio=15|Paragraph=2|Line=5|Norm=tlaca|Analysed=Yes
+23	tlaca	_	X	_	_	_	_	_	Folio=15|Paragraph=2|Line=5|Norm=tlacah
 24	.	.	PUNCT	_		_	_	_	Folio=15|Paragraph=2|Line=5|Norm=.|Analysed=Yes
 
 # sent_id = Book_01_-_The_Gods.txt:130
@@ -6163,7 +6163,7 @@
 15	tlalilia	_	VERB	_	_	_	_	_	Folio=18|Paragraph=3|Line=13|Norm=tlalilia
 16	:	:	PUNCT	_		_	_	_	Folio=18|Paragraph=3|Line=13|Norm=:|Analysed=Yes
 17	ipa	_	NOUN	_	NounType=Relat	_	_	_	Folio=18|Paragraph=3|Line=13|Norm=ipan
-18	mjtotiaia	ihtoa	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=18|Paragraph=3|Line=14|Norm=mitotiaya|Analysed=Yes
+18	mjtotiaia	ihtoa	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Reflexive[iobj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=18|Paragraph=3|Line=14|Norm=mitotiaya|Analysed=Yes
 19	in	in	DET|SCONJ	_	_	_	_	_	Folio=18|Paragraph=3|Line=14|Norm=in
 20	tlapanco	_	NOUN	_	_	_	_	_	Folio=18|Paragraph=3|Line=14|Norm=tlapanco|Locative=Yes
 21	,	,	PUNCT	_		_	_	_	Folio=18|Paragraph=3|Line=14|Norm=,|Analysed=Yes
@@ -6583,7 +6583,7 @@
 36	,	,	PUNCT	_		_	_	_	Folio=19|Paragraph=4|Line=28|Norm=,|Analysed=Yes
 37	ma	_	ADV	_	_	_	_	_	Folio=19|Paragraph=4|Line=28|Norm=ma|AmbigNorm=True|Override=False|Gloss=OPT
 38	ic	ic	ADV	_	_	_	_	_	Folio=19|Paragraph=4|Line=28|Norm=ic
-39	onmjtoti	ihtoa	VERB	_	Directional=On|Number[subj]=Sing|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Orig=on¶·mjtoti|Folio=19,20|Paragraph=4,1|Line=28,1|Norm=onmitoti|Analysed=Yes
+39	onmjtoti	ihtoa	VERB	_	Directional=On|Number[subj]=Sing|Person[subj]=3|Reflexive[iobj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Orig=on¶·mjtoti|Folio=19,20|Paragraph=4,1|Line=28,1|Norm=onmitoti|Analysed=Yes
 40	in	in	DET|SCONJ	_	_	_	_	_	Folio=20|Paragraph=1|Line=1|Norm=in
 41	toteouh	_	NOUN	_	_	_	_	_	Folio=20|Paragraph=1|Line=1|Norm=toteouh|Gloss=nuestro.díos
 42	napa	_	PROPN	_	_	_	_	_	Folio=20|Paragraph=1|Line=1|Norm=Napa
@@ -6984,10 +6984,10 @@
 
 # sent_id = Book_01_-_The_Gods.txt:165
 # text = Auh can iehoan in tlarmacazque, yn jntequiuh, in machiceque catca, yn qujnchichioaia, in qujntlaliaia: aiac çan moiocuiaia, in calla in qujnchichioaia.
-# text[norm] = Auh zan yehhuan in tlamacazque, in intequiuh, in machiceque catca, in quinchichihuaya, in quintlaliaya: ayac zan moyocuiaya, in hualla in quinchichihuaya.
+# text[norm] = Auh zan yehhuan in tlamacazque, in intequiuh, in machiceque catca, in quinchichihuaya, in quintlaliaya: ayac zan moyocuiaya, in callan in quinchichihuaya.
 # text[orig] = A·uh¶can·iehoan·in·tlarmacazque·,·y¶njn·tequiuh·,·in·machice·que·cat¶ca·,·yn·qujn·chichioaia·,·in·qujn¶tlaliaia·:·aiac·çan·moiocuiaia·,·in·calla·in·qujn·chichioaia·.
-# tagged = 96.43%
-# analysed = 89.29%
+# tagged = 92.86%
+# analysed = 85.71%
 1	Auh	auh	CCONJ	_	_	_	_	_	Orig=A·uh¶|Folio=21,21|Paragraph=1,1|Line=20,20|Norm=Auh|Gloss=y
 2	can	zan	ADV	_	_	_	_	_	Folio=21|Paragraph=1|Line=21|Norm=zan
 3	iehoan	yehhuan	PRON	_	Number=Plur|Person=3|PronType=Prs	_	_	_	Folio=21|Paragraph=1|Line=21|Norm=yehhuan|Gloss=ellos|Analysed=Yes
@@ -7012,7 +7012,7 @@
 22	moiocuiaia	_	VERB	_	_	_	_	_	Folio=21|Paragraph=1|Line=24|Norm=moyocuiaya|Guessed=Yes
 23	,	,	PUNCT	_		_	_	_	Folio=21|Paragraph=1|Line=24|Norm=,|Analysed=Yes
 24	in	in	DET|SCONJ	_	_	_	_	_	Folio=21|Paragraph=1|Line=25|Norm=in
-25	calla	hualla	VERB	_	_	_	_	_	Folio=21|Paragraph=1|Line=25|Norm=hualla
+25	calla	_	X	_	_	_	_	_	Folio=21|Paragraph=1|Line=25|Norm=callan
 26	in	in	DET|SCONJ	_	_	_	_	_	Folio=21|Paragraph=1|Line=25|Norm=in
 27	qujnchichioaia	chichihua	VERB	_	Aspect=Imp|Number[obj]=Plur|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Orig=qujn·chichioaia|Folio=21,21|Paragraph=1,1|Line=25,25|Norm=quinchichihuaya|Analysed=Yes
 28	.	.	PUNCT	_		_	_	_	Folio=21|Paragraph=1|Line=25|Norm=.|Analysed=Yes
@@ -7254,7 +7254,7 @@
 
 # sent_id = Book_01_-_The_Gods.txt:170
 # text = Auh in vctlali, achto molcaoaltiloia: çan no onnenca yn itequjuh, yn jchiujl: tlacaqujtiloia, navilhujtl mocaoaia, qujnecaujliaia yn itequjuh, ynic amo xocoiaz: vel mopiaia, vel motlacaoaltiaia, amo cioa cochia, amo oqujchcochia, intla cioatl: çan niman aiac: vel ontlapaloaia yn vctli, yoan in necutli, ynic muchioaia: aiac inmanel imapil, conaqujaia, vel, ymacaxoa, vel malhujloia, yn ixqujchica, moiacaxapotlza yn vctli.
-# text[norm] = Auh in octlali, achto molcahualtiloya: zan no onnenca in itequiuh, in ichihuil: tlacaquitiloya, nahuilhuitl mocahuaya, quinecahuiliaya in itequiuh, inic amo xocoyaz: huel mopiyaya, huel motlacahualtiaya, amo cihua cochia, amo oquichcochia, intla cihuatl: zan niman ayac: huel ontlapalohuaya in octli, ihuan in necuhtli, inic mochihuaya: ayac inmanel imapil, conaquiaya, huel, imacaxoa, huel malhuiloya, in ixquichica, moyacaxapotlaz in octli.
+# text[norm] = Auh in octlali, achto molcahualtiloya: zan no onnenca in itequiuh, in ichihuil: tlacaquitiloya, nahuilhuitl mocahuaya, quinecahuiliaya in itequiuh, inic amo xocoyaz: huel mopiyaya, huel motlacahualtiaya, amo cihua cochia, amo oquichcochia, intla cihuatl: zan niman ayac: huel ontlahpaloaya in octli, ihuan in necuhtli, inic mochihuaya: ayac inmanel imapil, conaquiaya, huel, imacaxoa, huel malhuiloya, in ixquichica, moyacaxapotlaz in octli.
 # text[orig] = A·uh·in·vctlali·,·achto¶molcaoaltiloia·:·çan·no·on·nen¶ca·y·nitequjuh·,·y·njchiujl·:·tla¶ca·quj·tiloia·,·navilhujtl·mocaoa¶ia·,·quj·necaujliaia·y·nitequjuh·,·y·nic·amo·xocoiaz·:·vel·mo·piaia·,·vel·motlacaoaltiaia·,·amo·cioa·co¶chia·,·amo·oqujchcochia·,·intla¶cioatl·:·çan·niman·aiac·:·vel¶ontlapaloaia·yn·vctli·,·yoan¶in·necutli·,·ynic·muchioaia·:·aiac¶in·manel·imapil·,·conaqujaia·,·vel·,·ymacaxoa·,·vel·malhujloia·,·yn¶ixqujchica·,·moiacaxapotlza¶yn·vctli·.
 # tagged = 91.36%
 # analysed = 82.72%
@@ -7308,7 +7308,7 @@
 48	aiac	_	PRON	_	_	_	_	_	Folio=22|Paragraph=1|Line=21|Norm=ayac|Gloss=nadie
 49	:	:	PUNCT	_		_	_	_	Folio=22|Paragraph=1|Line=21|Norm=:|Analysed=Yes
 50	vel	huel	ADV	_	_	_	_	_	Folio=22|Paragraph=1|Line=21|Norm=huel
-51	ontlapaloaia	_	VERB	_	_	_	_	_	Folio=22|Paragraph=1|Line=22|Norm=ontlapalohuaya|Guessed=Yes
+51	ontlapaloaia	_	VERB	_	_	_	_	_	Folio=22|Paragraph=1|Line=22|Norm=ontlahpaloaya|Guessed=Yes
 52	yn	in	DET|SCONJ	_	_	_	_	_	Folio=22|Paragraph=1|Line=22|Norm=in
 53	vctli	octli	NOUN	_	Case=Abs	_	_	_	Folio=22|Paragraph=1|Line=22|Norm=octli|Gloss=vino|Analysed=Yes
 54	,	,	PUNCT	_		_	_	_	Folio=22|Paragraph=1|Line=22|Norm=,|Analysed=Yes
@@ -7342,7 +7342,7 @@
 
 # sent_id = Book_01_-_The_Gods.txt:171
 # text = Auh yn aqujn, ichtaca tlapaloaia, yn tlachtaca yia inmanel çan tepiton oconpalo: iuh mjtoaia tennecujlivia tepantiliviia, avic momamana avic xoqujvi yn ite: yoan in aca matzicoliujia, yma qujcuecuetza, icxi quicuecuetza, macopichauj, icxicopichauj, iexicuecuechca, yhixatotoco, tenpapatlaca, tenviviioca, itech qujneoa: mjtoa, oqujtlavelique in xoxouhque tepieme.
-# text[norm] = Auh in aquin, ichtaca tlapalohuaya, in tlachtaca iya inmanel zan tepiton oconpalo: iuh mihtoaya tennecuilihuia tepantilihuiya, ahuic momamana ahuic xoquihui in ite: ihuan in aca matzicolihuiya, ima quicuecuetza, icxi quicuecuetza, macopichahui, icxiicopichahui, icxicuecuechca, yhixatotoco, tenpapatlaca, tenhuihuiyoca, itech quinehua: mihtoa, oquitlahuelique in xoxouhque tepicme.
+# text[norm] = Auh in aquin, ichtaca tlahpaloaya, in tlachtaca iya inmanel zan tepiton oconpalo: iuh mihtoaya tennecuilihuia tepantilihuiya, ahuic momamana ahuic xoquihui in ite: ihuan in aca matzicolihuiya, ima quicuecuetza, icxi quicuecuetza, macopichahui, icxiicopichahui, icxicuecuechca, yhixatotoco, tenpapatlaca, tenhuihuiyoca, itech quinehua: mihtoa, oquitlahuelique in xoxouhque tepicme.
 # text[orig] = A·uh·y·naqujn·,·ichtaca·tlapaloaia·,·yn·tlach·taca¶yia·inmanel·çan·tepiton·ocon¶palo·:·iuh·mjtoaia·tennecujlivia¶tepantiliviia·,·avic·momamana¶avic·xoqujvi·y·nite·:·yoan·inaca¶matzicoliujia·,·yma·quj·cue¶cuetza·,·icxi·qui·cue·cuetza·,·ma¶copichauj·,·icxicopichauj·,·iexi¶cuecuechca·,·yhixatotoco·,·ten¶papatlaca·,·ten·viviioca·,·itech¶qujneoa·:·mjtoa·,·oqujtlavelique¶in·xoxouhque·tepieme·.
 # tagged = 86.67%
 # analysed = 73.33%
@@ -7351,7 +7351,7 @@
 3	aqujn	aquin	PRON	_	_	_	_	_	Orig=y·naqujn|Folio=22,22|Paragraph=1,1|Line=27,27|Norm=aquin
 4	,	,	PUNCT	_		_	_	_	Folio=22|Paragraph=1|Line=27|Norm=,|Analysed=Yes
 5	ichtaca	_	X	_	_	_	_	_	Folio=22|Paragraph=3|Line=1|Norm=ichtaca
-6	tlapaloaia	_	VERB	_	_	_	_	_	Folio=22|Paragraph=3|Line=1|Norm=tlapalohuaya|Guessed=Yes
+6	tlapaloaia	_	VERB	_	_	_	_	_	Folio=22|Paragraph=3|Line=1|Norm=tlahpaloaya|Guessed=Yes
 7	,	,	PUNCT	_		_	_	_	Folio=22|Paragraph=3|Line=1|Norm=,|Analysed=Yes
 8	yn	in	DET|SCONJ	_	_	_	_	_	Folio=22|Paragraph=3|Line=1|Norm=in
 9	tlachtaca	_	X	_	_	_	_	_	Orig=tlach·taca¶|Folio=22,22|Paragraph=3,3|Line=1,1|Norm=tlachtaca

@@ -12,8 +12,8 @@ all: $(TARGETS)
 ../conllu/Book_01_-_The_Gods.conllu: ../books/Book_01_-_The_Gods.txt $(DEPS)
 	python3 process-codex.py $< | python3 tag-codex.py > $@
 
-../conllu/Book_05_-_The_Omens.conllu: ../books/Book_05_-_The_Omens.txt $(DEPS)
-	python3 process-codex.py $< | python3 tag-codex.py > $@
+../conllu/Book_05_-_The_Omens.conllu: ../books/Book_05_-_The_Omens.txt ../trees/Book_05_-_The_Omens.conllu  $(DEPS)
+	python3 process-codex.py $< | python3 tag-codex.py  | python3 merge-trees.py ../trees/Book_05_-_The_Omens.conllu > $@
 
 ../conllu/Book_06_-_Rhetoric_and_Moral_Philosophy.conllu: ../books/Book_06_-_Rhetoric_and_Moral_Philosophy.tokenised $(DEPS)
 	python3 process-codex.py $< | python3 tag-codex.py > $@
