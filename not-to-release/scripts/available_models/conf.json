@@ -1,0 +1,16 @@
+{
+    "models_root": "./available_models",
+    "models": [
+        {
+            "id": 1,
+            "model": "ortho_norm_model.pt",
+            "timeout": 600,
+            "on_timeout": "to_cpu",
+            "load": true,
+            "opt": {
+                "verbose": true,
+                "gpu": -1
+            }
+        }
+    ]
+}
