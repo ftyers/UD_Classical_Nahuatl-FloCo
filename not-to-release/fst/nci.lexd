@@ -74,6 +74,7 @@ LEXICON N-ABS
 <pl>:t>que[t]
 <abs>:qui[qui]
 <pl>:que[qui]
+<abs>:in[in] # TODO: plural
 
 LEXICON N-ABS-SPA
 :án[spa-anes]
@@ -85,7 +86,7 @@ LEXICON N-ABS-SPA
 :[spa]
 
 PATTERN Noun-Absolutive
-(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,teteuh,cicitlaltin,catl,qui,t]]
+(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,teteuh,cicitlaltin,catl,qui,t,in]]
 VerbRootIV [<v><iv><nmlz>:>liz] N-ABS[tli]
 
 PATTERN Noun-Possessed
@@ -201,6 +202,8 @@ nehhuatl<prn><pers><p1><sg><short>:neh # TODO
 nehhuatl<prn><pers><p1><sg>:nehua>tl # TODO
 yehhuatl<prn><pers><p3><sg><short>:yeh # TODO
 
+mi<prn><pers><p1><sg>:mi
+
 ###############################################################################
 
 LEXICON CONJ
@@ -242,11 +245,16 @@ ihui<cnj>:ihui
 intlacamo<cnjsub>:intlacamo
 huacca<cnjsub>:huacca
 
+iuhquinma<cnjsub>:iuhquinma # "like"
+yece<cnjcoo>:yece # "but"
+yehica<cnjsub>:yehica # "because"
+
 LEXICON DET 
 
 in<det>:in
 inin<det>:inin
 mochi<det>:mochi
+inique<det>:inique # "these, those" TODO: in<det><pl>?
 
 # Farfan quantifiers
 achi<det><qnt>:achi
@@ -273,6 +281,7 @@ ixquichtin<det><qnt>:ixquichtin
 LEXICON PART
 ma<part><opt>:ma
 tla<part><opt>:tla
+maca<part><opt><neg>:maca
 
 ahzo<part><dub>:ahzo
 at<part><dub>:at
@@ -400,6 +409,9 @@ tianquizco:tianquizco
 tianquizpan:tianquizpan
 atlan:atlan
 #ten:ten
+pani:pani # "on top of"
+tlallan # "underground"
+petlapan # "on the mat"
 
 LEXICON Comunes 
 aaccayotl:aaccayo[tl]
@@ -11360,7 +11372,7 @@ ano:ano[spa-s]
 mil:mil[spa-es]
 pahuaqui:pahua[qui]
 oquichtli:oquich[tli]
-xomoihuitilmatli:xomoihuitilma[tli]t
+xomoihuitilmatli:xomoihuitilma[tli]
 Tlacochcalcatl:Tlacochcalca[tl]
 cacahuatl:cacahua[tl]
 cueitl:cuei[tl]
@@ -11442,6 +11454,69 @@ yollotl<n>+tlapalihui:yollotlapalihui[Ø]
 yaotl<n>+tlahueliloc:yaotlahueliloc[Ø]
 ticitl:tici[tl]
 cualoni:cualo[ni] # "food"
+patli:pa[tli] # "herb"
+tlanelhuatl:tlanelhua[tl] # "foundation"
+cuauhtli:cuauh[tli] # "eagle"
+cencamatl:cencama[tl] # "mouthful"
+otztli:otz[tli] # "pregnant woman"
+quizqui:quiz[qui] # "end"
+cihuamontli:cihuamon[tli] # "daughter-in-law"
+yollotli:yollo[tli] # "heart"
+aixnamiquiliztli:aixnamiquiliz[tli] # "something irresistible"
+camotli:camo[tli] # "certain edible root"
+opitzactli:opitzac[tli] # "path"
+nantli:nan[tli] # "mother"
+tatapatli:tatapa[tli] # "mended fabric"
+tatli:ta[tli] # "father"
+tlacuicuiliztli:tlacuicuiliz[tli] # "carving"
+ichpochtli:ichpoch[tli] # "maiden"
+xolopitli:xolopi[tli] # "idiot"
+ayectli:ayec[tli] # "bad thing"
+ayohuachtli:ayohuach[tli] # "squash seed"
+acalotli:acalo[tli] # "canal"
+ichpochtontli:ichpochton[tli] # "young lass"
+texotli:texo[tli] # "the color blue"
+necuhtli:necuh[tli] # "honey"
+tepetlatl:tepetla[tl] # "volcanic rock"
+tocaitl:tocai[tl] # "name"
+amilotl:amilo[tl] # "white fish"
+cemiztitl:cemizti[tl] # "a distance measured with fingers"
+cuappetlatl:cuappetla[tl] # "eagle mat"
+papalotl:papalo[tl] # "butterfly"
+yahuitl:yahui[tl] # "corn"
+mecatl:meca[tl] # "rope"
+tlazotetl:tlazote[tl] # "precious stone"
+picietl:picie[tl] # "tobacco"
+tepexitl:tepexi[tl] # "cliff"
+nentlacatl:nentlaca[tl] # "worthless person"
+tenamitl:tenami[tl] # "wall"
+nanacatl:nanaca[tl] # "mushroom"
+eilhuitl:eilhui[tl] # "3 days"
+omilhuitl:omilhui[tl] # "2 days"
+quilitl:quili[tl] # "vegetable"
+tenitztli:tenitz[tli] # "black tern"
+cihuapatli:cihuapa[tli] # "type of medicinal plant"
+huepolli:huepol[li] # "opposite-sex sibling-in-law"
+nahuatlatolli:nahuatlatol[li] # "native language"
+cuauhcamotli:cuauhcamo[tli] # "cassava"
+ayotli:ayo[tli] # "squash"
+mapilli:mapil[li] # "finger"
+quimilli:quimil[li] # "bundle"
+yoyoli:yoyo[li] # "insect"
+tlachihualli:tlachihual[li] # "creation"
+hueli:hue[li] # "power"
+cihuatotolin:cihuatotol[in] # "hen"
+cuetzpalin:cuetzpal[in] # "lizard"
+zolin:zol[in] # "type of bird"
+tochpochtzin:tochpochtz[in] # "maiden"
+axin:ax[in] # "insect
+omentin:oment[in] # "pair"
+quimichin:quimich[in] # "mouse"
+michin:mich[in] # "fish"
+totolin:totol[in] # "turkey"
+patzahuac[Ø] # "ruined crop"
+cemanahuac[Ø] # "world"
+nexehuac[Ø] # "a medicinal herb"
 
 LEXICON Propios 
 Quetzalcoatl:Quetzalcoa[tl]
@@ -11487,49 +11562,59 @@ Acolhuacan
 España
 Tloque:tloque
 Nahuaque:nahuaque
+Tlalteuctli
+Quilaztli
+Yohualticitl
+tlacochtecuhtli
+Quilaztli
+Tlalteuctli
+Itzcuauhtzin
+Nanahuatzin
+Malintzin
+Cihuapipiltin
 
 LEXICON Adjetivos
 cualli:cualli
 hueyi:hueyi
 huehueyi:hue~hueyi
-chichiltic[tic]
-coztic[tic] # "yellow"
+chichiltic
+coztic # "yellow"
 iztac # "white"
-tliltic[tic] # "black"
-xoxoctic[tic] # "green"
+tliltic # "black"
+xoxoctic # "green"
 
 tlazotlanqui # "fair, fine"
 
 # from https://nahuatl.wired-humanities.org/themes/colors
-achipactic[tic] # "bleached"
+achipactic # "bleached"
 alondra # "yellow"
-atenextic[tic] # "grey"
-axihuitic[tic] # "green"
-axohuitic[tic] # "green"
-axoxoctic[tic] # "green"
-ayayactic[tic] # "muddy"
+atenextic # "grey"
+axihuitic # "green"
+axohuitic # "green"
+axoxoctic # "green"
+ayayactic # "muddy"
 ayopalli # "purple-orange"
-azozoquitic[tic] # "muddy"
-azatapiltic[tic] # "white"
+azozoquitic # "muddy"
+azatapiltic # "white"
 azul # "blue"
-azultic[tic] # "blue"
+azultic # "blue"
 camopalli # "dark purple"
-camopaltic[tic] # "dark purple"
-camotic[tic] # "soft"
-capoltic[tic] # "black"
+camopaltic # "dark purple"
+camotic # "soft"
+capoltic # "black"
 capotzauhqui # "black"
-capotztic[tic] # "black"
-ceceltic[tic] # "fresh, green"
+capotztic # "black"
+ceceltic # "fresh, green"
 cel # "fresh, green"
 celic # "fresh, green, tender"
-celpatic[tic] # "fresh, green, tender"
-chichiltic[tic] # "red"
+celpatic # "fresh, green, tender"
+chichiltic # "red"
 
-eztic[tic] # "red"
+eztic # "red"
 yel # "diligent, helpful"
 achi # "a little" # TODO: POS
 
-tlatlactic[tic] # "red"
+tlatlactic # "red"
 tlatlauhqui # "red"
 
 yollochicahuac # "brave"
@@ -11537,11 +11622,98 @@ iyac # "stinky"
 cualcan # "good"
 yolizmatqui # "prudent, sane, witty"
 yolqui # "alive"
-cuauhtic[tic] # "tall"
-quechcotoctic[tic] # "headless"
+cuauhtic # "tall"
+quechcotoctic # "headless"
 temamauhti # "frightful"
 tlacuahuac # "hard"
 tetlayelti # "nauseating"
+
+tomahuac # "fat"
+huelic # "delicious"
+chicahuac # "strong"
+totonqui # "hot"
+ololtic # "round (e.g. bullet)"
+mimiltic # "round (e.g. column)"
+mahuiztic # "amazing"
+pitzahuac # "thin"
+ahuiac # "smooth"
+yamanqui # "delicate"
+tepiton # "small"
+huiac # "long"
+tilahuac # "thick"
+chichic # "bitter"
+nextic # "grey"
+quiltic # "green"
+patlahuac # "wide"
+atic # "liquid"
+itztic # "cold"
+patlachtic # "broad"
+mimati # "subtle"
+miequintin # "numerous"
+chipahuac # "clean"
+tepitztic # "hard"
+melahuac # "straight"
+alahuac # "slippery"
+chamahuac # "dense"
+cococ # "spicy"
+hueyac # "long"
+etic # "heavy"
+malacachtic # "circular"
+quiquiztic # "passageway-like"
+yayactic # "dark"
+camiltic # "brown"
+ixchichiltic # "red"
+piyaztic # "vertical"
+comoltic # "hollowed"
+tecontic # "deep"
+yacahuitztic # "sharp"
+huitztic # "pointed"
+tetzcaltic
+yahualtic # "round"
+cuicuiltic # "painted"
+chachacuachtic # "rough"
+xipetztic # "bald"
+cuechtic # "powdered"
+paltic # "wet"
+cuappachtic # "golden"
+ixcoztic # "yellow"
+tehuilacachtic # "round"
+tilactic # "thick"
+patztic # "soft"
+pochectic # "sooty"
+xixipochtic # "swolen"
+cacaltic # "gaunt"
+cozpatic # "very yellow"
+cozpiltic # "very yellow"
+teololtic # "round"
+tolontic # "round"
+piciltic # "very small"
+tetepontic # "stubby"
+temimiltic # "pillar-like"
+tetecuitztic # "chattering"
+tlalichtic # "tough"
+tzicuictic # "diligent"
+yollotetl # "stubborn"
+tlachichihualli # "counterfeit"
+ahueli # "impossible"
+tepitzin # "a little"
+tetzahuac # "sticky"
+tzopelic # "sweet"
+achiton # "small"
+tlilehuac # "blackened"
+tzimpitzahuac
+tzinpitzahuac # "long and thin"
+pinehuac # "pale"
+pochehuac # "smoky"
+tlacamelahuac # "clean"
+chiahuac # "oily"
+xopalehuac # "dark green"
+papatlahuac # "broad"
+catzahuac # "dirty"
+huapahuac # "rough"
+iztalehuac # "pale"
+poxahuac # "spongy"
+canahuac # "thin"
 
 LEXICON Adverbios 
 quenin[itg] # "cómo"
@@ -11798,7 +11970,12 @@ catle[itg]
 moche
 icel
 oppa # "twice"
-ohtlica
+ohtlic
+zazan # "any which way"
+cuauhtla # "in a tree"
+ahuic # "all over"
+nachca # "from there"
+achica # "frequently"
 
 ###############################################################################
 
@@ -14568,6 +14745,24 @@ amana[cl2] # "make chocolate"
 momaca[cl2] # "come to blows"
 tlaloticalaqui[cl2] # "barge in"
 chicha[cl1]
+pati[cl2]
+tlachia[cl3] # "see from tower"
+tlatla[cl1] # "burn"
+oltia[cl3] # "be resiliant"
+quilpaltia[cl3] # "become blue-green"
+tlacatia[cl3] # "be born"
+mamatlapaltia[cl3] # "shed leaves"
+xoxoctia[cl3] # "turn green"
+atia[cl3] # "melt"
+mahuiltia[cl3] # "play"
+cualtia[cl3] # "become good"
+itztia[cl3] # "become cold"
+mozcaltia[cl3] # "grow"
+mitonia[cl3] # "sweat"
+molinia[cl3] # "shake"
+xoxohuia[cl3] # "be discolored"
+totonia[cl3] # "become hot"
+tleco[cl1] # "rise"
 
 LEXICON VerbRootTV
 aachcui[cl1]
@@ -19014,6 +19209,16 @@ tlaloticalaqui[cl2] # "barge in"
 monamictia[cl3]
 calaquia[cl3] # "insert"
 tzacua[cl2] # "close"
+tlacatia[cl3] # "engender"
+maquixtia[cl3] # "redeem"
+yectia[cl3] # "clean"
+maltia[cl3] # "capture"
+tehueilia[cl3] # "make fat"
+calaquia[cl3] # "enter"
+ayahuia[cl3] # "toss in a blanket"
+tlatlachia[cl3] # "look at"
+yamania[cl3] # "soften"
+celia[cl3] # "host"
 
 LEXICON VerbRootDVlex
 tlamachtia[cl3]
@@ -19791,6 +19996,7 @@ quennel<ij>:quennel
 tahui<ij>:tahui
 izca<ij>:izca
 manozo<part>:manozo
+tleino<ij>:tleino
 
 LEXICON PUNCT
 ,<cm>:,
