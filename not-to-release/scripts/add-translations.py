@@ -40,4 +40,4 @@ for bloc in sys.stdin.read().split('\n\n'):
 	total += 1
 
 if total != 0:
-	print('%d/%d' % (translated,total), '(%.2f%%)' % (translated/total*100),file=sys.stderr)
+	print('Translated: %d/%d' % (translated,total), '(%.2f%%)' % (translated/total*100),file=sys.stderr)
