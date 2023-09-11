@@ -28,6 +28,9 @@ def detokenise(s, manual=False):
 def normalise(table, overrides, s, idx):
 #	print('@',idx, s, overrides, file=sys.stderr)
 	s = s.strip('¶')
+	s = s.replace('¿§', '?')
+	s = s.replace('¬§', '.')
+	s = s.replace('¡§', '!')
 	if s == '':
 		print('WARNING: Empty token:', idx, s, file=sys.stderr)
 
@@ -260,6 +263,7 @@ if '@' in book_text:
 lines = re.sub('  *', ' ', book_text).split('\n')
 
 replacements = ['N.', 'q.', 'n.', 'xpo.', 'p.']
+#for etc in ['etc', '&c', 'Etc', 'q. n', 'xpo', '14', 'p', 'N', 'tetlaquechililli', 'onentlamattinenca']:
 
 for i in range(0, 20):
 	replacements.append(str(i)+'.')
@@ -272,6 +276,11 @@ for line in lines:
 		current_paragraph = 0
 		current_line = 0
 		continue
+
+	# For end of sentences that aren't
+	line = line.replace('.§', ' ¬§')
+	line = line.replace('?§', ' ¿§')
+	line = line.replace('!§', ' ¡§')
 
 	line = line.strip() + '¶'
 	line = re.sub('\([0-9]+\)', '', line)
@@ -293,6 +302,15 @@ for line in lines:
 
 	current_line += 1
 
+def mangle_form(f):
+	o = f
+	o = o.replace('¶', '')
+	o = o.replace('§', '')
+	o = o.replace('¬', '.')
+	o = o.replace('¿', '?')
+	o = o.replace('¡', '!')
+	return o
+
 current_sentence_id = 1
 current_sentence = []
 norm_overrides = {}
@@ -311,6 +329,10 @@ for token in tokens:
 	if token[0] == '.' or token[0] == '?' or token[0].lower() in ['&c.', 'etc.']:
 		sentence = '·'.join([token[0] for token in current_sentence])
 		sentence = sentence.replace('¶·', '¶')
+#		sentence = sentence.replace('¬§', '·.')
+#		sentence = sentence.replace('¿§', '·?')
+#		sentence = sentence.replace('¡§', '·!')
+#		print('SENT:', sentence, file=sys.stderr)
 
 		#
 		# Remove model_bundle=... to revert to sans-model mode.
@@ -359,7 +381,7 @@ for token in tokens:
 						normalised_sentence.append(norm_form.replace('*', ''))
 					retokenised_sentence.append(subtoken.strip('¶'))
 			else:
-				form = token[0].strip('¶')
+				form = mangle_form(token[0])
 				norm, norm_form, ambiguous, overridden = normalise(table, norm_overrides, token[0], idx)
 
 				conllu_subtokens = []
@@ -382,7 +404,7 @@ for token in tokens:
 						lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, form, '_', '_', '_', '_', '_', '_', '_', 'Folio=%s|Paragraph=%d|Line=%d|Norm=%s' % (token[1], token[2], token[3], norm)))
 					normalised_sentence.append(norm_form.replace('*', ''))
 					idx += 1
-				retokenised_sentence.append(form.strip('¶'))
+				retokenised_sentence.append(form)
 	
 		print('# sent_id = %s:%d' % (book, current_sentence_id))
 		print('# text = %s' % detokenise(' '.join(retokenised_sentence)))
