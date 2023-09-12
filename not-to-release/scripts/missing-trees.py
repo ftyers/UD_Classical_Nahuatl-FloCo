@@ -3,6 +3,10 @@ import sys
 left = {}
 right = {}
 
+if len(sys.argv) != 3:
+	print('merge-trees.py book.conllu trees.conllu')
+	sys.exit(-1)
+
 for bloc in open(sys.argv[1]).read().split('\n\n'):
 	sent_id = '_'	
 	tree = {}
