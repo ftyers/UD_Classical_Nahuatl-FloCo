@@ -19,7 +19,7 @@
 
 * How do we deal with adverbs generated from nouns? *yohualtica*
 
-* How do we deal with classifiers *ontetl*
+* How do we deal with classifiers *ontetl*, *centetl*
 
 * How do we deal with numerical expressions like *Ic matlactli omeyi capítulo*
 
@@ -28,3 +28,8 @@
 * Should we orthographically normalise based on morphology, e.g. *Imamux* → *Inamox* or *Imamox* ?
 
 * Should we include *h* in words derived from *ihtoa*, e.g. *tlatolli* → *tlahtolli* or *tlatolli*?
+
+* Expressions with *ca* or *catca*
+
+* Because clauses with *ipampa* 
+
