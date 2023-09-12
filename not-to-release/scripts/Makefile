@@ -11,8 +11,8 @@ DEPS = lexicon.tsv normalisation.tsv retokenisation.tsv tagset.tsv ../fst/nci.mo
 
 all: $(TARGETS)
 
-../conllu/Book_01_-_The_Gods.conllu: ../books/Book_01_-_The_Gods.txt $(DEPS)
-	python3 process-codex.py $< | python3 tag-codex.py > $@
+../conllu/Book_01_-_The_Gods.conllu: ../books/Book_01_-_The_Gods.txt ../trees/Book_01_-_The_Gods.conllu $(DEPS)
+	python3 process-codex.py $< | python3 add-translations.py | python3 tag-codex.py | python3 merge-trees.py ../trees/Book_01_-_The_Gods.conllu > $@
 
 ../conllu/Book_02_-_Ceremonies.conllu: ../books/Book_02_-_Ceremonies.tokenised $(DEPS)
 	python3 process-codex.py $< | python3 tag-codex.py > $@
