@@ -65,9 +65,11 @@ for bloc in sys.stdin.read().split('\n\n'):
 				print(comment)
 			for line in lines:
 				idx, form, lem, upos, xpos, feats, head, deprel, edeps, misc = line
-	
 			
 				if idx in trees[sent_id]:
+					if upos == 'X' or '|' in upos:
+						if trees[sent_id][idx][3] != upos:
+							upos = trees[sent_id][idx][3]
 					head = trees[sent_id][idx][6]
 					deprel = trees[sent_id][idx][7]
 					edeps = trees[sent_id][idx][8]
