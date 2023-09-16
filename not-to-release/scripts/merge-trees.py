@@ -73,7 +73,8 @@ for bloc in sys.stdin.read().split('\n\n'):
 					head = trees[sent_id][idx][6]
 					deprel = trees[sent_id][idx][7]
 					edeps = trees[sent_id][idx][8]
-					line = '\t'.join([idx, form, lem, upos, xpos, feats, head, deprel, edeps, misc])
+
+				line = '\t'.join([idx, form, lem, upos, xpos, feats, head, deprel, edeps, misc])
 				print(line)
 			print()
 

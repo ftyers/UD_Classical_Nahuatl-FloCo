@@ -7,18 +7,18 @@ TARGETS = ../conllu/Book_01_-_The_Gods.conllu \
 	../conllu/Book_10_-_The_People.conllu \
 	../conllu/Book_11_-_Earthly_Things.conllu \
 	../conllu/Book_12_-_The_Conquest_of_Mexico.conllu
-DEPS = lexicon.tsv normalisation.tsv retokenisation.tsv tagset.tsv ../fst/nci.mor.att.gz tag-codex.py process-codex.py translations.tsv normalisation/*
+DEPS = lexicon.tsv normalisation.tsv retokenisation.tsv tagset.tsv ../fst/nci.mor.att.gz tag-codex.py process-codex.py normalisation/*
 
 all: $(TARGETS)
 
-../conllu/Book_01_-_The_Gods.conllu: ../books/Book_01_-_The_Gods.txt ../trees/Book_01_-_The_Gods.conllu $(DEPS)
-	python3 process-codex.py $< | python3 add-translations.py | python3 tag-codex.py | python3 merge-trees.py ../trees/Book_01_-_The_Gods.conllu > $@
+../conllu/Book_01_-_The_Gods.conllu: ../books/Book_01_-_The_Gods.txt ../trees/Book_01_-_The_Gods.conllu translation/Book_01_-_The_Gods.tsv $(DEPS)
+	python3 process-codex.py $< | python3 add-translations.py translation/Book_01_-_The_Gods.tsv | python3 tag-codex.py | python3 merge-trees.py ../trees/Book_01_-_The_Gods.conllu > $@
 
 ../conllu/Book_02_-_Ceremonies.conllu: ../books/Book_02_-_Ceremonies.tokenised $(DEPS)
 	python3 process-codex.py $< | python3 tag-codex.py > $@
 
-../conllu/Book_05_-_The_Omens.conllu: ../books/Book_05_-_The_Omens.txt ../trees/Book_05_-_The_Omens.conllu  $(DEPS)
-	python3 process-codex.py $< | python3 add-translations.py | python3 tag-codex.py | python3 merge-trees.py ../trees/Book_05_-_The_Omens.conllu > $@
+../conllu/Book_05_-_The_Omens.conllu: ../books/Book_05_-_The_Omens.txt ../trees/Book_05_-_The_Omens.conllu  translation/Book_05_-_The_Omens.tsv $(DEPS)
+	python3 process-codex.py $< | python3 add-translations.py translation/Book_05_-_The_Omens.tsv | python3 tag-codex.py | python3 merge-trees.py ../trees/Book_05_-_The_Omens.conllu > $@
 
 ../conllu/Book_06_-_Rhetoric_and_Moral_Philosophy.conllu: ../books/Book_06_-_Rhetoric_and_Moral_Philosophy.tokenised $(DEPS)
 	python3 process-codex.py $< | python3 tag-codex.py > $@

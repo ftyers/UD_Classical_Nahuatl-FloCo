@@ -228,7 +228,8 @@ for fn in glob.glob('normalisation/*.norm'):
 	table, errsx = load_normalisation_table(fn, table)
 	errs.extend(errsx)
 
-print('Errors: ', len(errs), file=sys.stderr)
+if len(errs):
+	print('Errors: ', len(errs), errs, file=sys.stderr)
 	
 overrides = load_override_table('overrides.tsv')
 subtoken_table = load_subtoken_table('subtokens.tsv')

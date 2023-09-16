@@ -9,7 +9,7 @@ def read_translations(fn):
 		translations[sent_id] = (lang, translation)
 	return translations	
 
-translations = read_translations('translations.tsv')
+translations = read_translations(sys.argv[1])
 
 total = 0
 translated = 0
