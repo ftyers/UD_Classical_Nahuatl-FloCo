@@ -3615,13 +3615,13 @@
 # text = Nauh campa oallauh, nauhcampa oalitztiuh.
 # text[norm] = Nauh campa oallauh, nauhcampa oalitztiuh.
 # text[orig] = Nauh·campa·oallauh·,·nauh·campa·oalitztiuh·.
-# tagged = 42.86%
+# tagged = 57.14%
 # analysed = 42.86%
 1	Nauh	_	X	_	_	_	_	_	Folio=9|Paragraph=3|Line=3|Norm=*Nauh
 2	campa	campa	ADV	_		_	_	_	Folio=9|Paragraph=3|Line=3|Norm=campa|Gloss=donde|Analysed=Yes
 3	oallauh	_	X	_	_	_	_	_	Folio=9|Paragraph=3|Line=3|Norm=*oallauh
 4	,	,	PUNCT	_		_	_	_	Folio=9|Paragraph=3|Line=3|Norm=,|Analysed=Yes
-5	nauhcampa	_	X	_	_	_	_	_	Orig=nauh·campa|Folio=9,9|Paragraph=3,3|Line=4,4|Norm=nauhcampa
+5	nauhcampa	_	ADV	_	_	_	_	_	Orig=nauh·campa|Folio=9,9|Paragraph=3,3|Line=4,4|Norm=nauhcampa|Split=nauh·campa|Gloss=cuatro.lados
 6	oalitztiuh	_	X	_	_	_	_	_	Folio=9|Paragraph=3|Line=4|Norm=*oalitztiuh
 7	.	.	PUNCT	_		_	_	_	Folio=9|Paragraph=3|Line=4|Norm=.|Analysed=Yes
 
@@ -3926,11 +3926,11 @@
 # text = Auh inic nauhcampa, oallauh ehecatl; vmpa uitztlampa: motocaiotia uitztlampa ehecatl.
 # text[norm] = Auh inic nauhcampa, oallauh ehecatl; ompa uitztlampa: motocayotia uitztlampa ehecatl.
 # text[orig] = Auh·inic·nauhcampa·,·oallauh¶ehecatl·;·vmpa·uitztlampa·:·mo¶tocaiotia·uitztlampa·ehecatl·.
-# tagged = 71.43%
+# tagged = 78.57%
 # analysed = 71.43%
 1	Auh	auh	CCONJ	_	_	_	_	_	Folio=10|Paragraph=0|Line=13|Norm=Auh|Gloss=y
 2	inic	inic	SCONJ	_	_	_	_	_	Folio=10|Paragraph=0|Line=13|Norm=inic
-3	nauhcampa	_	X	_	_	_	_	_	Folio=10|Paragraph=0|Line=13|Norm=nauhcampa
+3	nauhcampa	_	ADV	_	_	_	_	_	Folio=10|Paragraph=0|Line=13|Norm=nauhcampa|Split=nauh·campa|Gloss=cuatro.lados
 4	,	,	PUNCT	_		_	_	_	Folio=10|Paragraph=0|Line=13|Norm=,|Analysed=Yes
 5	oallauh	_	X	_	_	_	_	_	Folio=10|Paragraph=0|Line=13|Norm=*oallauh
 6	ehecatl	ehecatl	NOUN	_	State=Abs	_	_	_	Folio=10|Paragraph=0|Line=14|Norm=ehecatl|Gloss=viento|Analysed=Yes
@@ -6003,7 +6003,7 @@
 99	,	,	PUNCT	_		_	_	_	Folio=15|Paragraph=2|Line=33|Norm=,|Analysed=Yes
 100	in	in	DET|SCONJ	_	_	_	_	_	Folio=15|Paragraph=2|Line=33|Norm=in
 101	aoccan	_	ADV	_	_	_	_	_	Folio=15|Paragraph=2|Line=33|Norm=ayoccan|Gloss=en.ninguna.parte
-102	vitz	_	NOUN	_	_	_	_	_	Folio=15|Paragraph=2|Line=33|Norm=huitz|Gloss=manera
+102	vitz	_	NOUN|VERB	_	_	_	_	_	Folio=15|Paragraph=2|Line=33|Norm=huitz
 103	,	,	PUNCT	_		_	_	_	Folio=15|Paragraph=2|Line=33|Norm=,|Analysed=Yes
 104	in	in	DET|SCONJ	_	_	_	_	_	Folio=15|Paragraph=2|Line=33|Norm=in
 105	aoccan	_	ADV	_	_	_	_	_	Orig=aoc¶·can|Folio=15,15|Paragraph=2,2|Line=33,34|Norm=ayoccan|Gloss=en.ninguna.parte
@@ -6432,7 +6432,7 @@
 # text = Ca vncan mocentlalia, monepanoa, monamiqui: inic otlaiaoalo nauhcampa matlatlacxiuitl omeey, in iuh omoteneuh: ic mitoa, vncan molpia, molpilia in toxiuh, oc ceppa iancuican vncan xiuhtzitzquilo: inic monezcaiotiaia, in xiuitl isoatoc, muchi tlacatl coquitzquiaia, inic oc ceppa ie opeoa, oc no izqui xiuitl.
 # text[norm] = Ca/Za/Zan oncan mocentlalia, monepanoa, monamiqui: inic otlaiaoalo nauhcampa matlatlacxiuitl omeey, in iuh omoteneuh: ic mihtoa, oncan molpia, molpilia in toxiuh, oc ceppa yancuican oncan xiuhtzitzquilo: inic monezcaiotiaia, in xihuitl isoatoc, mochi tlacatl coquitzquiaia, inic oc ceppa ye opeoa, oc no izqui xihuitl.
 # text[orig] = Ca·vncan·mocentlalia·,·monepanoa·,·monamiqui·:·inic¶otlaiaoalo·nauhcampa·matla¶tlacxiuitl·omeey·,·iniuh·omo¶teneuh·:·ic·mitoa·,·vncan·mol¶pia·,·molpilia·in·toxiuh·,·occep¶pa·ian·cuican·vncan·xiuhtzitz¶quilo·:·inic·monezcaiotiaia·,·in¶xiuitl·isoatoc·,·muchitlacatl·co¶quitzquiaia·,·inic·occeppa·ie·o¶peoa·,·ocno·izqui·xiuitl·.
-# tagged = 71.43%
+# tagged = 73.21%
 # analysed = 71.43%
 1	Ca	_	X	_	_	_	_	_	Folio=16|Paragraph=5|Line=6|Norm=Ca/Za/Zan|AmbigNorm=True|Override=False
 2	vncan	_	ADV	_	_	_	_	_	Folio=16|Paragraph=5|Line=6|Norm=oncan|Gloss=aquí
@@ -6444,7 +6444,7 @@
 8	:	:	PUNCT	_		_	_	_	Folio=16|Paragraph=5|Line=7|Norm=:|Analysed=Yes
 9	inic	inic	SCONJ	_	_	_	_	_	Folio=16|Paragraph=5|Line=7|Norm=inic
 10	otlaiaoalo	_	X	_	_	_	_	_	Folio=17|Paragraph=1|Line=1|Norm=*otlaiaoalo
-11	nauhcampa	_	X	_	_	_	_	_	Folio=17|Paragraph=1|Line=1|Norm=nauhcampa
+11	nauhcampa	_	ADV	_	_	_	_	_	Folio=17|Paragraph=1|Line=1|Norm=nauhcampa|Split=nauh·campa|Gloss=cuatro.lados
 12	matlatlacxiuitl	_	NOUN	_	_	_	_	_	Orig=matla¶·tlacxiuitl|Folio=17,17|Paragraph=1,1|Line=1,2|Norm=*matlatlacxiuitl|Guessed=Yes
 13	omeey	_	X	_	_	_	_	_	Folio=17|Paragraph=1|Line=2|Norm=*omeey
 14	,	,	PUNCT	_		_	_	_	Folio=17|Paragraph=1|Line=2|Norm=,|Analysed=Yes
@@ -7692,7 +7692,7 @@
 # text = Niman ic cocopaltemalo, tlacotonalo, tlenamaco: concui in tlemaitl, nauhcampa coniiaoa in ithoalco, çatepan contema tlexicco, inic otlenamacoc copalli: nima ie ic necpan tzotzooalqualo, vncan ic neçaoaliztlalhuilo.
 # text[norm] = Niman ic cocopaltemalo, tlacotonalo, tlenamaco: concui in tlemaitl, nauhcampa coniiaoa in Itoalco, zatepan contema tlexicco, inic otlenamacoc copalli: niman ye ic necpan tzotzooalqualo, oncan ic neçaoaliztlalhuilo.
 # text[orig] = Niman·ic¶cocopaltemalo·,·tlacotonalo·,·tle¶namaco·:·concui·in·tlemaitl·,·nauhcampa·coniiaoa·inithoal¶co·,·çatepan·contema·tlexicco·,·inic·otlenamacoc·copalli·:·nima¶ie·ic·necpan·tzotzooalqualo·,·vncan·ic·neçaoaliztlalhuilo·.
-# tagged = 68.57%
+# tagged = 71.43%
 # analysed = 62.86%
 1	Niman	_	ADV	_	_	_	_	_	Folio=20|Paragraph=2|Line=15|Norm=Niman
 2	ic	ic	ADV	_	_	_	_	_	Folio=20|Paragraph=2|Line=15|Norm=ic
@@ -7706,7 +7706,7 @@
 10	in	in	DET|SCONJ	_	_	_	_	_	Folio=20|Paragraph=2|Line=17|Norm=in
 11	tlemaitl	_	NOUN	_	_	_	_	_	Folio=20|Paragraph=2|Line=17|Norm=tlemaitl|Guessed=Yes
 12	,	,	PUNCT	_		_	_	_	Folio=20|Paragraph=2|Line=17|Norm=,|Analysed=Yes
-13	nauhcampa	_	X	_	_	_	_	_	Folio=20|Paragraph=2|Line=18|Norm=nauhcampa
+13	nauhcampa	_	ADV	_	_	_	_	_	Folio=20|Paragraph=2|Line=18|Norm=nauhcampa|Split=nauh·campa|Gloss=cuatro.lados
 14	coniiaoa	_	X	_	_	_	_	_	Folio=20|Paragraph=2|Line=18|Norm=*coniiaoa
 15	in	in	DET|SCONJ	_	_	_	_	_	Orig=in·ithoal¶·co|Folio=20,20|Paragraph=2,2|Line=18,19|Norm=in
 16	ithoalco	_	PROPN	_	_	_	_	_	Orig=in·ithoal¶·co|Folio=20,20|Paragraph=2,2|Line=18,19|Norm=Itoalco
