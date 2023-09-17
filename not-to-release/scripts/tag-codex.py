@@ -39,6 +39,8 @@ def guess(norm, guessed_lemma, guessed_upos):
 		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+nenca$', norm):					#onentlamattinenca
 		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', []) 
+	if re.findall('o[a-z]+manca$', norm):					#otlamahuizmamanca
+		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', []) 
 	if re.findall('[a-z]+huilia$', norm):
 		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
 	if re.findall('[a-z]+quiza$', norm):

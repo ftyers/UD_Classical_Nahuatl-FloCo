@@ -31,5 +31,14 @@
 
 * Expressions with *ca* or *catca*
 
+```
+Let me recap:
+(1) CA (affirmative clause-introducing particle, 'surely, indeed'): w/o saltillo, uninflected;
+(2) CAH, CATEH, CATCA (locational verb or copula, 'to be', erroneously "CĀ" by Karttunen): w/ saltillo, verb;
+(3) -CA (relational noun, usually in -ti-ca, 'by means of');
+(4) -TI-CAH (compouning form of (2), used as aspectual auxiliary: 'to be Ving')
+(5) -CĀ- (compounding form of -qui: no-teōpixcā-uh 'my priest')
+```
+
 * Because clauses with *ipampa* 
 

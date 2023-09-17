@@ -3,6 +3,24 @@ import sys, re
 trees = {}
 empties = {}
 
+total_tokens = 0
+annotated_tokens = 0
+
+def get_token_lines(bloc):
+	rows = bloc.split('\n')
+	lines = []	
+	for line in rows:
+		if line[0] == '#':
+			continue
+		row = line.split('\t')
+		if row[0].count('-') > 0 or row[0].count('.') > 0:
+			continue
+		else:
+			lines.append(row)
+
+	return lines
+		
+
 for bloc in open(sys.argv[1]).read().split('\n\n'):
 	sent_id = '_'	
 	tree = {}
@@ -22,6 +40,7 @@ for bloc in open(sys.argv[1]).read().split('\n\n'):
 			empty[row[0]] = row
 		else:
 			tree[row[0]] = row
+			annotated_tokens += 1
 
 	trees[sent_id] = tree
 	empties[sent_id] = empty
@@ -41,6 +60,7 @@ for bloc in sys.stdin.read().split('\n\n'):
 			sent_id = line.split('=')[1].strip()
 			break
 
+	total_tokens += len(get_token_lines(bloc))
 
 	if sent_id not in trees:
 		print(bloc)
@@ -80,4 +100,5 @@ for bloc in sys.stdin.read().split('\n\n'):
 
 	n_trees += 1
 
-print('Trees: %d, Parsed: %d (%.2f%%)' % (n_trees, n_parsed, (n_parsed/n_trees)*100), file=sys.stderr)
+info = (n_trees, n_parsed, (n_parsed/n_trees)*100, total_tokens, annotated_tokens, (annotated_tokens/total_tokens)*100)
+print('Trees: %d, Parsed: %d (%.2f%%) | Tokens: %d, Parsed: %d (%.2f%%)' % info, file=sys.stderr)
