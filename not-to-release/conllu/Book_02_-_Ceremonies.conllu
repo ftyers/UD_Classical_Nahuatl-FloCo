@@ -7018,7 +7018,7 @@
 10	:	:	PUNCT	_		_	_	_	Folio=31|Paragraph=3|Line=29|Norm=:|Analysed=Yes
 11	auh	auh	CCONJ	_	_	_	_	_	Folio=31|Paragraph=3|Line=29|Norm=auh|Gloss=y
 12	iquac	ihcuac	SCONJ	_	_	_	_	_	Folio=31|Paragraph=3|Line=29|Norm=ihcuac|Gloss=cuando
-13	miquj	miqui	VERB	_	Subcat=Intr	_	_	_	Orig=mi·quj|Folio=31,31|Paragraph=3,3|Line=29,29|Norm=miqui
+13	miquj	miqui	VERB|NOUN	_	_	_	_	_	Orig=mi·quj|Folio=31,31|Paragraph=3,3|Line=29,29|Norm=miqui
 14	ce	ce	NUM	_	_	_	_	_	Folio=31|Paragraph=3|Line=29|Norm=ce|AmbigNorm=True|Override=False|Gloss=uno
 15	tlacatl	tlacatl	NOUN	_	State=Abs	_	_	_	Folio=31|Paragraph=3|Line=30|Norm=tlacatl|Gloss=hombre|Analysed=Yes
 16	yn	in	DET|SCONJ	_	_	_	_	_	Orig=yn·oteixiptlatic|Folio=31|Paragraph=3|Line=30|Norm=in
@@ -7733,14 +7733,14 @@
 # text = Auh yn oqujpantlaz, yn izquj tlamamatlatl, yn opanuetzito, tlacpac: njman qujcujtiuetzi in tlamacazque, conaquetztiteca in techcac: njman ie ic queltetequj, conanilia yn iiollo, no conjaujlia in tonatiuh: ca çan muchi tlacatl iuh mictiloia, in mamalti.
 # text[norm] = Auh in oqujpantlaz, in izqui tlamamatlatl, in opanuetzito, tlacpac: niman quicuitihuetzi in tlamacazque, conaquetztiteca in techcac: niman ye ic queltetequi, conanilia in iyollo, no conjaujlia in tonatiuh: ca zan mochi tlacatl iuh mictiloia, in mamalti.
 # text[orig] = A·uh·y·n·o·quj·pantlaz·,·y·n·izquj¶tlamamatlatl·,·y·n·opanuetzito·,·tlacpac·:·nj·man·quj·cujtiuetzi·in¶tlamacazque·,·conaquetztiteca¶in·techcac·:·njman·ie·ic·quelte¶tequj·,·conanilia·y·n·i·iollo·,·noco¶njaujlia·in·tonatiuh·:·ca·çan·mu¶chitlacatl·iuh·mictiloia·,·in·mamal¶ti·.
-# tagged = 80.43%
+# tagged = 82.61%
 # analysed = 76.09%
 1	Auh	auh	CCONJ	_	_	_	_	_	Orig=A·uh|Folio=33,33|Paragraph=3,3|Line=13,13|Norm=Auh|Gloss=y
 2	yn	in	DET|SCONJ	_	_	_	_	_	Orig=y·n|Folio=33,33|Paragraph=3,3|Line=13,13|Norm=in
 3	oqujpantlaz	_	X	_	_	_	_	_	Orig=o·quj·pantlaz|Folio=33,33,33|Paragraph=3,3,3|Line=13,13,13|Norm=*oqujpantlaz
 4	,	,	PUNCT	_		_	_	_	Folio=33|Paragraph=3|Line=13|Norm=,|Analysed=Yes
 5	yn	in	DET|SCONJ	_	_	_	_	_	Orig=y·n|Folio=33,33|Paragraph=3,3|Line=13,13|Norm=in
-6	izquj	_	X	_	_	_	_	_	Folio=33|Paragraph=3|Line=13|Norm=izqui
+6	izquj	_	ADJ	_	_	_	_	_	Folio=33|Paragraph=3|Line=13|Norm=izqui|Gloss=tanto
 7	tlamamatlatl	_	NOUN	_	_	_	_	_	Folio=33|Paragraph=3|Line=14|Norm=tlamamatlatl|Guessed=Yes
 8	,	,	PUNCT	_		_	_	_	Folio=33|Paragraph=3|Line=14|Norm=,|Analysed=Yes
 9	yn	in	DET|SCONJ	_	_	_	_	_	Orig=y·n|Folio=33,33|Paragraph=3,3|Line=14,14|Norm=in
@@ -9191,7 +9191,7 @@
 12	:	:	PUNCT	_		_	_	_	Folio=37|Paragraph=1|Line=11|Norm=:|Analysed=Yes
 13	auh	auh	CCONJ	_	_	_	_	_	Folio=37|Paragraph=1|Line=11|Norm=auh|Gloss=y
 14	iquac	ihcuac	SCONJ	_	_	_	_	_	Orig=i¶·quac|Folio=37,37|Paragraph=1,1|Line=11,12|Norm=ihcuac|Gloss=cuando
-15	mjquj	miqui	VERB	_	Subcat=Intr	_	_	_	Folio=37|Paragraph=1|Line=12|Norm=miqui
+15	mjquj	miqui	VERB|NOUN	_	_	_	_	_	Folio=37|Paragraph=1|Line=12|Norm=miqui
 16	,	,	PUNCT	_		_	_	_	Folio=37|Paragraph=1|Line=12|Norm=,|Analysed=Yes
 17	yn	in	DET|SCONJ	_	_	_	_	_	Folio=37|Paragraph=1|Line=12|Norm=in
 18	Jxteucale	_	X	_	_	_	_	_	Folio=37|Paragraph=1|Line=12|Norm=*Jxteucale
@@ -12184,7 +12184,7 @@
 1	iacattiuj	_	X	_	_	_	_	_	Folio=44|Paragraph=4|Line=1|Norm=yacattihui
 2	in	in	DET|SCONJ	_	_	_	_	_	Folio=44|Paragraph=4|Line=1|Norm=in
 3	mamaltin	_	NOUN	_	_	_	_	_	Orig=ma·maltin|Folio=44,44|Paragraph=4,4|Line=1,1|Norm=*mamaltin|Guessed=Yes
-4	miquj	miqui	VERB	_	Subcat=Intr	_	_	_	Folio=44|Paragraph=4|Line=1|Norm=miqui
+4	miquj	miqui	VERB|NOUN	_	_	_	_	_	Folio=44|Paragraph=4|Line=1|Norm=miqui
 5	:	:	PUNCT	_		_	_	_	Folio=44|Paragraph=4|Line=1|Norm=:|Analysed=Yes
 6	iuhqujn	iuhquin	ADV	_		_	_	_	Orig=iuh¶·qujn|Folio=44,44|Paragraph=4,4|Line=1,2|Norm=iuhquin|AmbigNorm=True|Override=False|Gloss=así|Analysed=Yes
 7	inpepechoan	_	X	_	_	_	_	_	Orig=in·pepechoan|Folio=44,44|Paragraph=4,4|Line=2,2|Norm=*inpepechoan
@@ -15862,7 +15862,7 @@
 63	tlatlatlatiuh	_	X	_	_	_	_	_	Orig=tla·tla·tla¶·tiuh|Folio=53,53,53,53|Paragraph=3,3,3,3|Line=26,26,26,27|Norm=*tlatlatlatiuh
 64	,	,	PUNCT	_		_	_	_	Folio=53|Paragraph=3|Line=27|Norm=,|Analysed=Yes
 65	ca	_	VERB	_	_	_	_	_	Folio=53|Paragraph=3|Line=27|Norm=ca|AmbigNorm=True|Override=False
-66	micquj	miqui	VERB	_	Subcat=Intr	_	_	_	Folio=53|Paragraph=3|Line=27|Norm=miqui
+66	micquj	miqui	VERB|NOUN	_	_	_	_	_	Folio=53|Paragraph=3|Line=27|Norm=miqui
 67	in	in	DET|SCONJ	_	_	_	_	_	Folio=53|Paragraph=3|Line=27|Norm=in
 68	qujcaoa	cahua	VERB	_	_	_	_	_	Folio=53|Paragraph=3|Line=27|Norm=quicahua|Guessed=Yes
 69	.	.	PUNCT	_		_	_	_	Folio=53|Paragraph=3|Line=27|Norm=.|Analysed=Yes
@@ -20714,7 +20714,7 @@
 # text = Ivin in muchioaia, iuhquj in, in muchioaia: in jxqujchtin cioatitici, in jlamatque, yoan in jchpupuchti, yoan cequjntin avienjme: moxeloaia, monepãtlaxceloaia, izquj intlan mãtivi, in teteu innan, no izquj in qujnamjctivi, in qujtiiaiavtla, ic qujpopololtiaia in jtlaocul, qujtlatlacaaviloaia, qujvevetzqujtiaia, injc amo tlaocuiaz: auh in tlachocaz, qujlmach tlatetzaviz: qujl mjec iaumjqujz, in quauhtli ocelutl: anoço mjequjntin mocioaquetzazque in cioa in jmjti ic iazque.
 # text[norm] = Ihuin in mochihuaya, iuhqui in, in mochihuaya: in ixquichtin cioatitici, in ilamatque, ihuan in jchpupuchti, ihuan cequintin avienjme: moxeloaia, monepãtlaxceloaia, izqui intlan mãtivi, in teteuh innan, no izqui in qujnamjctivi, in qujtiiaiavtla, ic qujpopololtiaia in itlauhcol, qujtlatlacaaviloaia, qujvevetzqujtiaia, inic amo tlaocuiaz: auh in tlachocaz, quilmach tlatetzaviz: quil miec iaumjqujz, in cuauhtli ocelotl: anozo miequintin mocioaquetzazque in cihua in jmjti ic iazque.
 # text[orig] = Ivin·in·muchi¶oaia·,·iuh·quj·in·,·in·muchioa¶ia·:·injx·qujchtin·cioa·titici·,·in·jlamatque·,·yoan·injch·pu¶puchti·,·yoan·cequjntin·avie¶njme·:·moxeloaia·,·monepã¶tlaxceloaia·,·izquj·in·tlan·mã¶tivi·,·in·teteu·in·nan·,·no·izquj¶in·quj·namjctivi·,·in·quj·tiiaia¶vtla·,·ic·quj·popololtiaia·inj¶tlaocul·,·quj·tlatlacaaviloaia·,·quj·vevetzqujtiaia·,·injc·amo¶tlaocuiaz·:·auh·in·tlachocaz·,·qujl·mach·tlatetzaviz·:·qujl¶mjec·iau·mjqujz·,·in·quauhtli¶ocelutl·:·anoço·mje·qujn·tin·mo¶cioaquetzazque·in·cioa·inj¶mjti·ic·iazque·.
-# tagged = 75.90%
+# tagged = 78.31%
 # analysed = 74.70%
 1	Ivin	_	ADV	_	_	_	_	_	Folio=67|Paragraph=1|Line=6|Norm=Ihuin
 2	in	in	DET|SCONJ	_	_	_	_	_	Folio=67|Paragraph=1|Line=6|Norm=in
@@ -20745,7 +20745,7 @@
 27	,	,	PUNCT	_		_	_	_	Folio=67|Paragraph=1|Line=11|Norm=,|Analysed=Yes
 28	monepãtlaxceloaia	_	X	_	_	_	_	_	Orig=monepã¶·tlaxceloaia|Folio=67,67|Paragraph=1,1|Line=11,12|Norm=*monepãtlaxceloaia
 29	,	,	PUNCT	_		_	_	_	Folio=67|Paragraph=1|Line=12|Norm=,|Analysed=Yes
-30	izquj	_	X	_	_	_	_	_	Folio=67|Paragraph=1|Line=12|Norm=izqui
+30	izquj	_	ADJ	_	_	_	_	_	Folio=67|Paragraph=1|Line=12|Norm=izqui|Gloss=tanto
 31	intlan	tlantli	NOUN	_	Number[psor]=Plur|Person[psor]=3|State=Poss	_	_	_	Orig=in·tlan|Folio=67,67|Paragraph=1,1|Line=12,12|Norm=intlan|Analysed=Yes
 32	mãtivi	_	X	_	_	_	_	_	Orig=mã¶·tivi|Folio=67,67|Paragraph=1,1|Line=12,13|Norm=*mãtivi
 33	,	,	PUNCT	_		_	_	_	Folio=67|Paragraph=1|Line=13|Norm=,|Analysed=Yes
@@ -20754,7 +20754,7 @@
 36	innan	nantli	NOUN	_	Number[psor]=Plur|Person[psor]=3|State=Poss	_	_	_	Orig=in·nan|Folio=67,67|Paragraph=1,1|Line=13,13|Norm=innan|Gloss=su.madre|Analysed=Yes
 37	,	,	PUNCT	_		_	_	_	Folio=67|Paragraph=1|Line=13|Norm=,|Analysed=Yes
 38	no	no	ADV	_	_	_	_	_	Folio=67|Paragraph=1|Line=13|Norm=no|Gloss=también
-39	izquj	_	X	_	_	_	_	_	Folio=67|Paragraph=1|Line=13|Norm=izqui
+39	izquj	_	ADJ	_	_	_	_	_	Folio=67|Paragraph=1|Line=13|Norm=izqui|Gloss=tanto
 40	in	in	DET|SCONJ	_	_	_	_	_	Folio=67|Paragraph=1|Line=14|Norm=in
 41	qujnamjctivi	_	X	_	_	_	_	_	Orig=quj·namjctivi|Folio=67,67|Paragraph=1,1|Line=14,14|Norm=*qujnamjctivi
 42	,	,	PUNCT	_		_	_	_	Folio=67|Paragraph=1|Line=14|Norm=,|Analysed=Yes
@@ -22522,12 +22522,12 @@
 22	:	:	PUNCT	_		_	_	_	Folio=72|Paragraph=1|Line=3|Norm=:|Analysed=Yes
 23	in	in	DET|SCONJ	_	_	_	_	_	Orig=in·jquac|Folio=72|Paragraph=1|Line=3|Norm=in
 24	jquac	ihcuac	SCONJ	_	_	_	_	_	Orig=in·jquac|Folio=72|Paragraph=1|Line=3|Norm=ihcuac|Gloss=cuando
-25	mjquj	miqui	VERB	_	Subcat=Intr	_	_	_	Folio=72|Paragraph=1|Line=3|Norm=miqui
+25	mjquj	miqui	VERB|NOUN	_	_	_	_	_	Folio=72|Paragraph=1|Line=3|Norm=miqui
 26	toci	_	X	_	_	_	_	_	Folio=72|Paragraph=1|Line=4|Norm=*toci
 27	,	,	PUNCT	_		_	_	_	Folio=72|Paragraph=1|Line=4|Norm=,|Analysed=Yes
 28	no	no	ADV	_	_	_	_	_	Folio=72|Paragraph=1|Line=4|Norm=no|Gloss=también
 29	iquac	ihcuac	SCONJ	_	_	_	_	_	Folio=72|Paragraph=1|Line=4|Norm=ihcuac|Gloss=cuando
-30	mjqui	miqui	VERB	_	Subcat=Intr	_	_	_	Folio=72|Paragraph=1|Line=4|Norm=miqui
+30	mjqui	miqui	VERB|NOUN	_	_	_	_	_	Folio=72|Paragraph=1|Line=4|Norm=miqui
 31	.	.	PUNCT	_		_	_	_	Folio=72|Paragraph=1|Line=4|Norm=.|Analysed=Yes
 
 # sent_id = Book_02_-_Ceremonies.tokenised:486
@@ -26382,7 +26382,7 @@
 14	,	,	PUNCT	_		_	_	_	Folio=82|Paragraph=1|Line=13|Norm=,|Analysed=Yes
 15	in	in	DET|SCONJ	_	_	_	_	_	Folio=82|Paragraph=1|Line=13|Norm=in
 16	juh	iuh	ADV	_	_	_	_	_	Folio=82|Paragraph=1|Line=13|Norm=iuh
-17	mjquj	miqui	VERB	_	Subcat=Intr	_	_	_	Orig=mj·quj|Folio=82,82|Paragraph=1,1|Line=13,13|Norm=miqui
+17	mjquj	miqui	VERB|NOUN	_	_	_	_	_	Orig=mj·quj|Folio=82,82|Paragraph=1,1|Line=13,13|Norm=miqui
 18	:	:	PUNCT	_		_	_	_	Folio=82|Paragraph=1|Line=13|Norm=:|Analysed=Yes
 19	auh	auh	CCONJ	_	_	_	_	_	Folio=82|Paragraph=1|Line=13|Norm=auh|Gloss=y
 20	in	in	DET|SCONJ	_	_	_	_	_	Orig=in·oc|Folio=82|Paragraph=1|Line=14|Norm=in
@@ -26426,12 +26426,12 @@
 10	tlamatzica	_	X	_	_	_	_	_	Orig=tlamatzi¶·ca|Folio=82,82|Paragraph=1,1|Line=19,20|Norm=*tlamatzica
 11	,	,	PUNCT	_		_	_	_	Folio=82|Paragraph=1|Line=20|Norm=,|Analysed=Yes
 12	vmpa	ompa	ADV	_		_	_	_	Folio=82|Paragraph=1|Line=20|Norm=ompa|Gloss=allá|Analysed=Yes
-13	mjquj	miqui	VERB	_	Subcat=Intr	_	_	_	Folio=82|Paragraph=1|Line=20|Norm=miqui
+13	mjquj	miqui	VERB|NOUN	_	_	_	_	_	Folio=82|Paragraph=1|Line=20|Norm=miqui
 14	tlamatzinco	_	X	_	_	_	_	_	Folio=82|Paragraph=1|Line=20|Norm=*tlamatzinco
 15	:	:	PUNCT	_		_	_	_	Folio=82|Paragraph=1|Line=20|Norm=:|Analysed=Yes
 16	auh	auh	CCONJ	_	_	_	_	_	Folio=82|Paragraph=1|Line=21|Norm=auh|Gloss=y
 17	injc	inic	SCONJ	_	_	_	_	_	Folio=82|Paragraph=1|Line=21|Norm=inic
-18	mjquj	miqui	VERB	_	Subcat=Intr	_	_	_	Folio=82|Paragraph=1|Line=21|Norm=miqui
+18	mjquj	miqui	VERB|NOUN	_	_	_	_	_	Folio=82|Paragraph=1|Line=21|Norm=miqui
 19	,	,	PUNCT	_		_	_	_	Folio=82|Paragraph=1|Line=21|Norm=,|Analysed=Yes
 20	çan	zan	ADV	_	_	_	_	_	Folio=82|Paragraph=1|Line=21|Norm=zan
 21	õmonomatlecavia	_	X	_	_	_	_	_	Orig=õmono¶·matlecavia|Folio=82,82|Paragraph=1,1|Line=21,22|Norm=*õmonomatlecavia
@@ -28574,7 +28574,7 @@
 29	tlacpac	_	NOUN	_	_	_	_	_	Folio=85|Paragraph=1|Line=19|Norm=tlacpac|Locative=Yes
 30	,	,	PUNCT	_		_	_	_	Folio=85|Paragraph=1|Line=19|Norm=,|Analysed=Yes
 31	achto	achto	ADV	_		_	_	_	Orig=ach¶·to·mjquj|Folio=85,85|Paragraph=1,1|Line=19,20|Norm=achto|Gloss=primero|Analysed=Yes
-32	mjquj	miqui	VERB	_	Subcat=Intr	_	_	_	Orig=ach¶·to·mjquj|Folio=85,85|Paragraph=1,1|Line=19,20|Norm=miqui
+32	mjquj	miqui	VERB|NOUN	_	_	_	_	_	Orig=ach¶·to·mjquj|Folio=85,85|Paragraph=1,1|Line=19,20|Norm=miqui
 33	in	in	DET|SCONJ	_	_	_	_	_	Folio=85|Paragraph=1|Line=20|Norm=in
 34	mamalti	_	X	_	_	_	_	_	Folio=85|Paragraph=1|Line=20|Norm=mamalti
 35	:	:	PUNCT	_		_	_	_	Folio=85|Paragraph=1|Line=20|Norm=:|Analysed=Yes
@@ -30529,7 +30529,7 @@
 1	Auh	auh	CCONJ	_	_	_	_	_	Orig=A·uh¶|Folio=93,93|Paragraph=4,4|Line=16,16|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ	_	_	_	_	_	Folio=93|Paragraph=4|Line=17|Norm=in
 3	aiamo	ayamo	ADV	_		_	_	_	Folio=93|Paragraph=4|Line=17|Norm=ayamo|Gloss=no|Analysed=Yes
-4	mjquj	miqui	VERB	_	Subcat=Intr	_	_	_	Orig=mj·quj|Folio=93,93|Paragraph=4,4|Line=17,17|Norm=miqui
+4	mjquj	miqui	VERB|NOUN	_	_	_	_	_	Orig=mj·quj|Folio=93,93|Paragraph=4,4|Line=17,17|Norm=miqui
 5	mjtotiaia	ihtoa	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Reflexive[iobj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=93|Paragraph=4|Line=17|Norm=mitotiaya|Analysed=Yes
 6	,	,	PUNCT	_		_	_	_	Folio=93|Paragraph=4|Line=17|Norm=,|Analysed=Yes
 7	qujtlatzotzonjliaia	_	VERB	_	_	_	_	_	Orig=quj·tlatzotzonjliaia|Folio=93,93|Paragraph=4,4|Line=18,18|Norm=quitlatzotzoniliaya|Guessed=Yes
@@ -32934,7 +32934,7 @@
 1	Auh	auh	CCONJ	_	_	_	_	_	Folio=100|Paragraph=3|Line=3|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ	_	_	_	_	_	Folio=100|Paragraph=3|Line=3|Norm=in
 3	oncentlanque	_	X	_	_	_	_	_	Folio=100|Paragraph=3|Line=3|Norm=*oncentlanque
-4	mjquj	miqui	VERB	_	Subcat=Intr	_	_	_	Folio=100|Paragraph=3|Line=3|Norm=miqui
+4	mjquj	miqui	VERB|NOUN	_	_	_	_	_	Folio=100|Paragraph=3|Line=3|Norm=miqui
 5	in	in	DET|SCONJ	_	_	_	_	_	Folio=100|Paragraph=3|Line=4|Norm=in
 6	ie	ye	ADV	_	_	_	_	_	Folio=100|Paragraph=3|Line=4|Norm=ye|AmbigNorm=True|Override=False
 7	iuhquj	iuhqui	ADV	_	_	_	_	_	Orig=iuh·quj|Folio=100,100|Paragraph=3,3|Line=4,4|Norm=iuhqui|Gloss=así

@@ -10727,7 +10727,7 @@
 18	vallatotoca	_	X	_	_	_	_	_	Folio=34|Paragraph=1|Line=8|Norm=*vallatotoca
 19	,	,	PUNCT	_		_	_	_	Folio=34|Paragraph=1|Line=8|Norm=,|Analysed=Yes
 20	ie	ye	ADV	_	_	_	_	_	Folio=34|Paragraph=1|Line=8|Norm=ye|AmbigNorm=True|Override=False
-21	mjquj	miqui	VERB	_	Subcat=Intr	_	_	_	Orig=mj·quj¶|Folio=34,34|Paragraph=1,1|Line=8,8|Norm=miqui
+21	mjquj	miqui	VERB|NOUN	_	_	_	_	_	Orig=mj·quj¶|Folio=34,34|Paragraph=1,1|Line=8,8|Norm=miqui
 22	in	in	DET|SCONJ	_	_	_	_	_	Folio=34|Paragraph=1|Line=9|Norm=in
 23	tiacaoan	tiyacatl	NOUN	_	Number=Plur	_	_	_	Orig=tiaca·oan|Folio=34,34|Paragraph=1,1|Line=9,9|Norm=tiyacahuan|Analysed=Yes
 24	;	;	PUNCT	_		_	_	_	Folio=34|Paragraph=1|Line=9|Norm=;|Analysed=Yes
@@ -11300,7 +11300,7 @@
 # text = Cequjntin mexica ceppa ittaloque, qujcalaqujaia totomjtl: iehoantin tlanexotlaque, inca cequjntin oncalaquj ichtaca, ic cenca netlaquauhnaoatiloc injc vellapieloz, vel mopiaz in jzquj vtli yoan in jzquj acalutli, vel necujtlaviloa vel ixpialoia.
 # text[norm] = Cequintin mexica ceppa ittaloque, qujcalaqujaia totomjtl: yehhuantin tlanexotlaque, inca cequintin oncalaqui ichtaca, ic cenca netlaquauhnaoatiloc inic vellapieloz, huel mopiaz in izqui ohtli ihuan in izqui acalutli, huel necujtlaviloa huel ixpialoia.
 # text[orig] = Cequjntin·mexica¶ceppa·itta·loque·,·qujcalaquj¶aia·totomjtl·:·iehoantin·tla¶nexotlaque·,·in·ca·cequjntin¶on·calaquj·ichtaca·,·ic·cenca·ne¶tlaquauhnaoatiloc·injc·vella¶pieloz·,·vel·mopiaz·in·jz·quj·vtli¶yoan·in·jz·quj·acalutli·,·vel¶necuj·tlaviloa·vel·ix·pialoia·.
-# tagged = 64.86%
+# tagged = 70.27%
 # analysed = 70.27%
 1	Cequjntin	_	PRON	_	_	_	_	_	Folio=35|Paragraph=2|Line=25|Norm=Cequintin|AmbigNorm=True|Override=False|Gloss=algunos
 2	mexica	mexicatl	NOUN	_	Number=Plur	_	_	_	Folio=35|Paragraph=2|Line=25|Norm=mexica|Analysed=Yes
@@ -11327,11 +11327,11 @@
 23	vel	huel	ADV	_	_	_	_	_	Folio=36|Paragraph=1|Line=3|Norm=huel
 24	mopiaz	_	X	_	_	_	_	_	Folio=36|Paragraph=1|Line=3|Norm=*mopiaz
 25	in	in	DET|SCONJ	_	_	_	_	_	Folio=36|Paragraph=1|Line=3|Norm=in
-26	jzquj	_	X	_	_	_	_	_	Orig=jz·quj|Folio=36,36|Paragraph=1,1|Line=3,3|Norm=izqui
+26	jzquj	_	ADJ	_	_	_	_	_	Orig=jz·quj|Folio=36,36|Paragraph=1,1|Line=3,3|Norm=izqui|Gloss=tanto
 27	vtli	ohtli	NOUN	_	State=Abs	_	_	_	Folio=36|Paragraph=1|Line=3|Norm=ohtli|Gloss=camino|Analysed=Yes
 28	yoan	_	NOUN	_	NounType=Relat	_	_	_	Folio=36|Paragraph=1|Line=4|Norm=ihuan|Gloss=con
 29	in	in	DET|SCONJ	_	_	_	_	_	Folio=36|Paragraph=1|Line=4|Norm=in
-30	jzquj	_	X	_	_	_	_	_	Orig=jz·quj|Folio=36,36|Paragraph=1,1|Line=4,4|Norm=izqui
+30	jzquj	_	ADJ	_	_	_	_	_	Orig=jz·quj|Folio=36,36|Paragraph=1,1|Line=4,4|Norm=izqui|Gloss=tanto
 31	acalutli	_	X	_	_	_	_	_	Folio=36|Paragraph=1|Line=4|Norm=*acalutli
 32	,	,	PUNCT	_		_	_	_	Folio=36|Paragraph=1|Line=4|Norm=,|Analysed=Yes
 33	vel	huel	ADV	_	_	_	_	_	Folio=36|Paragraph=1|Line=4|Norm=huel
@@ -12040,7 +12040,7 @@
 # text = Auh in jquac vetzi, vellaltitech viloa, vellaltitech nepacholo, iuhqujn pepechtli neteco, amo tenemachpan in tepã iauh, amo qujteimachitia in temjctia, in quezquj ipan iauh vel izquj mjquj: in jquac imovican vetzi, in aço imjxquac, in anoço incuexcochtlan, ano ço iniollopan, anoço imelchiqujpan, anoço imjtipan, in anoço vel inxillan: auh intla çan imetzpan, anoço imacolpan vetzi, amo njmã ic mjquj, amo ic oviti, çan tel vmpati.
 # text[norm] = Auh in ihcuac huetzi, vellaltitech huiloa, vellaltitech nepacholo, iuhquin pepechtli neteco, amo tenemachpan in tepã yauh, amo qujteimachitia in temictia, in quezqui ipan yauh huel izqui miqui: in ihcuac imovican huetzi, in azo imjxquac, in anozo incuexcochtlan, ano ço iniollopan, anozo imelchiqujpan, anozo imjtipan, in anozo huel inxillan: auh intla zan imetzpan, anozo imacolpan huetzi, amo njmã ic miqui, amo ic oviti, zan tel vmpati.
 # text[orig] = Auh¶in·j·quac·vetzi·,·vellaltitech·vi¶loa·,·vellal·titech·nepacholo·,·iuh·qujn·pepechtli·neteco·,·a¶mo·tene·machpan·in·tepã·iauh·,·amo·qujtei·machitia·in·temjc¶tia·,·in·quez·quj·ipan·iauh·vel¶iz·quj·mj·quj·:·in·j·quac·imovi¶can·vetzi·,·in·aço·imjxquac·,·in·anoço·incuex·cochtlan·,·ano¶ço·in·iollopan·,·anoço·imel¶chiqujpan·,·anoço·imjtipan·,·in·anoço·vel·in·xillan·:·auh¶in·tla·çan·imetzpan·,·anoço·i¶macolpan·vetzi·,·amo·nj·mã¶ic·mj·quj·,·amo·ic·o·viti·,·çan¶tel·vmpati·.
-# tagged = 73.81%
+# tagged = 75.00%
 # analysed = 76.19%
 1	Auh	auh	CCONJ	_	_	_	_	_	Folio=38|Paragraph=1|Line=21|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ	_	_	_	_	_	Folio=38|Paragraph=1|Line=22|Norm=in
@@ -12073,8 +12073,8 @@
 29	ipan	_	NOUN	_	NounType=Relat	_	_	_	Folio=38|Paragraph=1|Line=27|Norm=ipan
 30	iauh	ya	VERB	_	Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	_	_	_	Folio=38|Paragraph=1|Line=27|Norm=yauh|Analysed=Yes
 31	vel	huel	ADV	_	_	_	_	_	Folio=38|Paragraph=1|Line=27|Norm=huel
-32	izquj	_	X	_	_	_	_	_	Orig=iz·quj|Folio=38,38|Paragraph=1,1|Line=28,28|Norm=izqui
-33	mjquj	miqui	VERB	_	Subcat=Intr	_	_	_	Orig=mj·quj|Folio=38,38|Paragraph=1,1|Line=28,28|Norm=miqui
+32	izquj	_	ADJ	_	_	_	_	_	Orig=iz·quj|Folio=38,38|Paragraph=1,1|Line=28,28|Norm=izqui|Gloss=tanto
+33	mjquj	miqui	VERB|NOUN	_	_	_	_	_	Orig=mj·quj|Folio=38,38|Paragraph=1,1|Line=28,28|Norm=miqui
 34	:	:	PUNCT	_		_	_	_	Folio=38|Paragraph=1|Line=28|Norm=:|Analysed=Yes
 35	in	in	DET|SCONJ	_	_	_	_	_	Folio=38|Paragraph=1|Line=28|Norm=in
 36	jquac	ihcuac	SCONJ	_	_	_	_	_	Orig=j·quac|Folio=38,38|Paragraph=1,1|Line=28,28|Norm=ihcuac|Gloss=cuando
@@ -12116,7 +12116,7 @@
 72	amo	amo	ADV	_		_	_	_	Folio=38|Paragraph=2|Line=7|Norm=amo|Gloss=no|Analysed=Yes
 73	njmã	_	X	_	_	_	_	_	Orig=nj·mã¶|Folio=38,38|Paragraph=2,2|Line=7,7|Norm=*njmã
 74	ic	ic	ADV	_	_	_	_	_	Folio=38|Paragraph=2|Line=8|Norm=ic
-75	mjquj	miqui	VERB	_	Subcat=Intr	_	_	_	Orig=mj·quj|Folio=38,38|Paragraph=2,2|Line=8,8|Norm=miqui
+75	mjquj	miqui	VERB|NOUN	_	_	_	_	_	Orig=mj·quj|Folio=38,38|Paragraph=2,2|Line=8,8|Norm=miqui
 76	,	,	PUNCT	_		_	_	_	Folio=38|Paragraph=2|Line=8|Norm=,|Analysed=Yes
 77	amo	amo	ADV	_		_	_	_	Folio=38|Paragraph=2|Line=8|Norm=amo|Gloss=no|Analysed=Yes
 78	ic	ic	ADV	_	_	_	_	_	Folio=38|Paragraph=2|Line=8|Norm=ic
@@ -17226,7 +17226,7 @@
 44	qujça	quiza	VERB	_	_	_	_	_	Orig=quj·ça|Folio=56,56|Paragraph=1,1|Line=5,5|Norm=quiza
 45	,	,	PUNCT	_		_	_	_	Folio=56|Paragraph=1|Line=5|Norm=,|Analysed=Yes
 46	njman	_	ADV	_	_	_	_	_	Orig=nj·man|Folio=56,56|Paragraph=1,1|Line=6,6|Norm=niman
-47	mjquj	miqui	VERB	_	Subcat=Intr	_	_	_	Folio=56|Paragraph=1|Line=6|Norm=miqui
+47	mjquj	miqui	VERB|NOUN	_	_	_	_	_	Folio=56|Paragraph=1|Line=6|Norm=miqui
 48	,	,	PUNCT	_		_	_	_	Folio=56|Paragraph=1|Line=6|Norm=,|Analysed=Yes
 49	vncan	_	ADV	_	_	_	_	_	Folio=56|Paragraph=1|Line=6|Norm=oncan|Gloss=aquí
 50	qujhiovia	_	X	_	_	_	_	_	Orig=qujhi¶·ovia|Folio=56,56|Paragraph=1,1|Line=6,7|Norm=*qujhiovia
@@ -22155,7 +22155,7 @@
 # analysed = 69.39%
 1	Ca	_	X	_	_	_	_	_	Folio=72|Paragraph=1|Line=22|Norm=Ca/Za/Zan|AmbigNorm=True|Override=False
 2	amo	amo	ADV	_		_	_	_	Folio=72|Paragraph=1|Line=22|Norm=amo|Gloss=no|Analysed=Yes
-3	mjquj	miqui	VERB	_	Subcat=Intr	_	_	_	Orig=mj·quj|Folio=72,72|Paragraph=1,1|Line=22,22|Norm=miqui
+3	mjquj	miqui	VERB|NOUN	_	_	_	_	_	Orig=mj·quj|Folio=72,72|Paragraph=1,1|Line=22,22|Norm=miqui
 4	,	,	PUNCT	_		_	_	_	Folio=72|Paragraph=1|Line=22|Norm=,|Analysed=Yes
 5	vel	huel	ADV	_	_	_	_	_	Folio=72|Paragraph=1|Line=22|Norm=huel
 6	,	,	PUNCT	_		_	_	_	Folio=72|Paragraph=1|Line=22|Norm=,|Analysed=Yes
