@@ -21,7 +21,6 @@
 
 * How do we deal with classifiers *ontetl*, *centetl*
 
-* How do we deal with numerical expressions like *Ic matlactli omeyi capítulo*
 
 * How do we deal with ordinals *Inic macuilli capítulo* 
 
@@ -42,3 +41,61 @@ Let me recap:
 
 * Because clauses with *ipampa* 
 
+----
+
+## Decisions
+
+### Ordinal numerals and chapters
+
+
+The word *ic* forms ordinal numerals from cardinal numerals. In Andrews (2001) this is described
+as a relational noun that introduces a clause, for example:
+
+```
+Ic eyi amoxtli. = With this, the books are three in number; i.e., It is the third book.
+```
+
+We treat this slightly differently.
+
+The *Ic* is an `ADJ` which modifies *amoxtli* and takes as a modifier *eyi*. 
+
+```
+amod(amoxtli, ic)
+nummod(ic, eyi)
+obl(motenehua, amoxtli)
+```
+
+What else have we considered:
+
+1. The Andrews (2001) analysis:
+
+```
+root(eyi)
+obl(eyi, ic)
+nsubj(eyi, amoxtli)
+parataxis(eyi, motenehua)
+```
+
+The disadvantage of this is that it makes search difficult, *amoxtli* is hidden deep in the tree as a subject. The 
+most important verb in the sentence *motenehua* is then `parataxis` and further down in the tree.
+
+
+2. An analysis where *ic* is a relational `NOUN` and *eyi* modifies it. Something like *five in-sequence books*
+```
+obl(motenehua, amoxtli)
+nmod(amoxtli, ic)
+nummod(ic, eyi)
+```
+
+The disadvantage of this is that it reverses the usual direction of relational noun + modifier (e.g. *amoxtli* governs 
+*ic* not vice versa.
+
+3. An analysis where *ic* is still a relational `NOUN` but governs both *eyi* and *amoxtli*. Something like *five in-sequence of books*
+
+```
+obl(motenehua, ic)
+nmod(ic, amoxtli)
+nummod(ic, eyi)
+```
+
+The downside here is that *amoxtli* appears further down in the tree.
