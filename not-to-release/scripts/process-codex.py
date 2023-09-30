@@ -212,6 +212,16 @@ def load_subtoken_table(fn):
 			table[token][sent_id] = subtokens
 
 	return table
+
+def load_reference_table(fn):
+	table = {}
+	for line in open(fn):
+		if line[0] == '#':
+			continue
+		sent_id, refs = re.sub('\t\t*', '\t', line).strip().split('\t')	
+		table[sent_id] = refs
+
+	return table
 		
 tree = PrefixTree()
 tree = load_tree('retokenisation.tsv', tree)
@@ -233,6 +243,7 @@ if len(errs):
 	
 overrides = load_override_table('overrides.tsv')
 subtoken_table = load_subtoken_table('subtokens.tsv')
+references = load_reference_table('references.tsv')
 
 #print(tree.size())
 #tree.display()
@@ -406,11 +417,17 @@ for token in tokens:
 					normalised_sentence.append(norm_form.replace('*', ''))
 					idx += 1
 				retokenised_sentence.append(form)
-	
-		print('# sent_id = %s:%d' % (book, current_sentence_id))
+
+		sent_id = '%s:%d' % (book, current_sentence_id)
+		refs = ''
+		if sent_id in references:
+			refs = references[sent_id]
+		print('# sent_id = %s' % (sent_id))
 		print('# text = %s' % detokenise(' '.join(retokenised_sentence)))
 		print('# text[norm] = %s' % detokenise(' '.join(normalised_sentence)))
 		print('# text[orig] = %s' % detokenise(sentence, manual=manual_tokenisation))
+		if refs:
+			print('# references = %s' % refs)
 		for line in lines:
 			print(line)
 		print()
