@@ -204,6 +204,7 @@ for bloc in sys.stdin.read().split('\n\n'):
 	n_tokens = 0
 	n_tagged = 0
 	n_analysed = 0
+	n_lemmatised = 0
 
 	for line in lines:
 		# ID · FORM · LEMMA · UPOS · XPOS · FEATS · HEAD · DEPREL · EDEPS · MISC
@@ -256,8 +257,10 @@ for bloc in sys.stdin.read().split('\n\n'):
 		if upos != 'X':
 			tagged += 1
 			n_tagged += 1
+
 		if lem != '_':
 			lemmatised += 1
+			n_lemmatised += 1
 		total += 1
 		n_tokens += 1
 
@@ -273,7 +276,7 @@ for bloc in sys.stdin.read().split('\n\n'):
 	print('\n'.join(comments))
 	if n_tokens > 0:
 		print('# tagged = %.2f%%' % (n_tagged/n_tokens*100))
-		print('# lemmatised = %.2f%%' % (n_tagged/n_tokens*100))
+		print('# lemmatised = %.2f%%' % (n_lemmatised/n_tokens*100))
 		print('# analysed = %.2f%%' % (n_analysed/n_tokens*100))
 	for row in new_lines:
 		print('\t'.join(row))
