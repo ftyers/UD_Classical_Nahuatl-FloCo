@@ -157,8 +157,10 @@ def read_lexicon(fn, lexicon):
 			print('Error on %d, not enough values to unpack.' % (lineno),file=sys.stderr)
 			raise
 
-		if token in lexicon and upos != lexicon[token][0]:
+		if token in lexicon and upos not in lexicon[token][1].split('|'):
 			lexicon[token] = (lexicon[token][0], lexicon[token][1] + '|' + upos , '_', '_')
+			if lemma not in lexicon[token][0].split('|'):
+				lexicon[token] = (lexicon[token][0] + '|' + lemma, lexicon[token][1], '_', '_')
 		else:
 			if misc == '_':
 				lexicon[token] = (lemma, upos, ufeats, '_')
