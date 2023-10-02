@@ -185,6 +185,7 @@ sents = 0
 total = 0
 tagged = 0
 analysed = 0
+lemmatised = 0
 clean = 0
 
 for bloc in sys.stdin.read().split('\n\n'):
@@ -251,6 +252,8 @@ for bloc in sys.stdin.read().split('\n\n'):
 		if upos != 'X':
 			tagged += 1
 			n_tagged += 1
+		if lem != '_':
+			lemmatised += 1
 		total += 1
 		n_tokens += 1
 
@@ -266,6 +269,7 @@ for bloc in sys.stdin.read().split('\n\n'):
 	print('\n'.join(comments))
 	if n_tokens > 0:
 		print('# tagged = %.2f%%' % (n_tagged/n_tokens*100))
+		print('# lemmatised = %.2f%%' % (n_tagged/n_tokens*100))
 		print('# analysed = %.2f%%' % (n_analysed/n_tokens*100))
 	for row in new_lines:
 		print('\t'.join(row))
@@ -276,4 +280,5 @@ for bloc in sys.stdin.read().split('\n\n'):
 if total != 0:
 	print('Normalised: %d/%d (%.2f%%)' % (clean, total, clean/total*100), file=sys.stderr, end=' | ')
 	print('Tagged: %d/%d (%.2f%%)' % (tagged, total, tagged/total*100), file=sys.stderr, end=' | ')
+	print('Lemmatised: %d/%d (%.2f%%)' % (lemmatised, total, lemmatised/total*100), file=sys.stderr, end=' | ')
 	print('Analysed: %d/%d (%.2f%%)' %  (analysed, total, analysed/total*100), file=sys.stderr)
