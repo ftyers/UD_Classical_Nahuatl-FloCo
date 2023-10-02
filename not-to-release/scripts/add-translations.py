@@ -6,7 +6,9 @@ def read_translations(fn):
 		if line.strip() == '' or line[0] == '#':
 			continue
 		sent_id, lang, translation = line.strip().split('\t')
-		translations[sent_id] = (lang, translation)
+		if sent_id not in translations:
+			translations[sent_id] = []
+		translations[sent_id].append((lang, translation))
 	return translations	
 
 translations = read_translations(sys.argv[1])
@@ -28,7 +30,10 @@ for bloc in sys.stdin.read().split('\n\n'):
 		if comment.startswith('# sent_id'):
 			sent_id = comment.split('=')[1].strip()
 	if sent_id in translations:
-		comments = comments[:-1] + ['# text[%s] = %s' % translations[sent_id], comments[-1]]
+		new_comments = comments[:-1]
+		new_comments += ['# text[%s] = %s' % (lang, trad) for lang, trad in translations[sent_id]]
+		new_comments += [comments[-1]]
+		comments = new_comments
 		translated += 1
 	print('\n'.join(comments))
 #	if n_tokens > 0:

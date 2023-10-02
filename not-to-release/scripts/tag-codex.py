@@ -98,6 +98,9 @@ def tag(lexicon, form, norm, idx, analyses):
 	# 	We should probably do max intersection with the analyses in the lexicon
 	guessed_lemma = '_'
 	guessed_upos = '_'
+	if lower in lexicon:
+		guessed_lemma = lexicon[lower][0]
+
 	if len(analyses) > 1:
 		lemmas = []
 		uposes = []
@@ -114,10 +117,10 @@ def tag(lexicon, form, norm, idx, analyses):
 	if len(analyses) == 1:
 		addmisc = '_'
 		if lower in lexicon:
-#			print(idx, norm, '|||', lexicon[lower][0], '|||', analyses[0]['pos'])
-			if lexicon[lower][0] != analyses[0]['pos']:
-				return (guessed_lemma, lexicon[lower][0], lexicon[lower][1], lexicon[lower][2], [])
-			addmisc = lexicon[lower][2]
+			#print(idx, norm, '|||', lexicon[lower][1], '|||', analyses[0]['pos'], '|||', lexicon[lower], file=sys.stderr)
+			if lexicon[lower][1] != analyses[0]['pos']:
+				return (guessed_lemma, lexicon[lower][1], lexicon[lower][2], lexicon[lower][3], [])
+			addmisc = lexicon[lower][3]
 
 		analysis = analyses[0]
 		#print('@', idx, norm, '|||', analyses[0])
@@ -127,11 +130,12 @@ def tag(lexicon, form, norm, idx, analyses):
 		return (analysis['lemma'], analysis['pos'], '|'.join(['%s=%s' % (i, j) for i, j in analysis['feats'].items()]), misc, analysis['empty'])
 
 	if lower in lexicon:
-		return (guessed_lemma, lexicon[lower][0], lexicon[lower][1], lexicon[lower][2], [])
+		#print('>>', idx, norm, '|||', lexicon[lower][1], '|||', lexicon[lower], file=sys.stderr)
+		return (guessed_lemma, lexicon[lower][1], lexicon[lower][2], lexicon[lower][3], [])
 
 	if norm in lexicon:
 		if lexicon[norm][0] == 'PROPN':
-			return ('_', lexicon[norm][0], lexicon[norm][1], lexicon[norm][2], [])
+			return ('_', lexicon[norm][1], lexicon[norm][2], lexicon[norm][3], [])
 	if norm[0] in '0123456789':
 		return (norm, 'NUM', '_', '_', [])
 	if norm[0].upper() == norm[0] and idx > 1 and norm[0].lower() in alphabet:
@@ -154,12 +158,12 @@ def read_lexicon(fn, lexicon):
 			raise
 
 		if token in lexicon and upos != lexicon[token][0]:
-			lexicon[token] = (lexicon[token][0] + '|' + upos , '_', '_')
+			lexicon[token] = (lexicon[token][0], lexicon[token][1] + '|' + upos , '_', '_')
 		else:
 			if misc == '_':
-				lexicon[token] = (upos, ufeats, '_')
+				lexicon[token] = (lemma, upos, ufeats, '_')
 			else:
-				lexicon[token] = (upos, ufeats, misc)
+				lexicon[token] = (lemma, upos, ufeats, misc)
 	return lexicon
 
 def sort_features(ufeats):
