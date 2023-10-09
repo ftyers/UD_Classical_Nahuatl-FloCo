@@ -438,17 +438,17 @@
 
 # sent_id = Book_05_-_The_Omens.txt:8
 # text = Auh injn, ca oneltico: aco ie tocommaujcoz, in quenamj momaceval: ma ximellaquaoa, ma titlaocux, ixqujch motlapal: oc motepitziollo, oc mochoqujz, motlaocul ipan xonie.
-# text[norm] = Auh inin, ca oneltico: azo ye tocommahuizoz, in quenami momacehual: ma ximellacuahua, ma titlauhcox, ixquich motlapal: oc motepitzyollo, oc mochoquiz, motlauhcol ipan xoniye.
+# text[norm] = Auh inin, ca oneltico: azo ye tocommahuizoz, in quenami momacehual: ma ximellacuahua, ma titlauhcox, ixquich motlapal: oc motepitzyollo, oc mochoquiz, motlaocol ipan xoniye.
 # text[eng] = ... It is on you wished, the man our lord: not become a man the beast: you are poor, it is already like this you were born: it is thus, it is your day, that is not [...]
 # text[orig] = A·uh¶injn·,·caoneltico·:·aco·ie·tocommaujcoz·,·inquenamj·momaceval·:·maximella¶quaoa·,·matitlaocux·,·ixqujch·motla¶pal·:·oc·motepitziollo·,·oc·mochoqujz·,·motlaocul·ipan·xonie·.
 # tagged = 93.94%
-# lemmatised = 78.79%
-# analysed = 78.79%
+# lemmatised = 87.88%
+# analysed = 81.82%
 1	Auh	auh	CCONJ	_	_	5	_	_	Orig=A·uh¶|Folio=1,1|Paragraph=5,5|Line=27,27|Norm=Auh|Gloss=y
 2	injn	_	DET|PRON	_	_	5	_	_	Folio=1|Paragraph=5|Line=28|Norm=inin
 3	,	,	PUNCT	_		5	punct	_	Folio=1|Paragraph=5|Line=28|Norm=,|Analysed=Yes
 4	ca	cah|ca	VERB	_	_	5	_	_	Orig=caoneltico|Folio=1|Paragraph=5|Line=28|Norm=ca|AmbigNorm=True|Override=False
-5	oneltico	_	VERB	_	_	0	root	_	Orig=caoneltico|Folio=1|Paragraph=5|Line=28|Norm=oneltico|AmbigNorm=True|Override=False|Guessed=Yes
+5	oneltico	nelti	VERB	_	_	0	root	_	Orig=caoneltico|Folio=1|Paragraph=5|Line=28|Norm=oneltico|AmbigNorm=True|Override=False
 6	:	:	PUNCT	_		9	punct	_	Folio=1|Paragraph=5|Line=28|Norm=:|Analysed=Yes
 7	aco	azo	ADV	_		9	_	_	Folio=1|Paragraph=5|Line=28|Norm=azo|Gloss=quizás|Analysed=Yes
 8	ie	ye	ADV	_	_	9	_	_	Folio=1|Paragraph=5|Line=28|Norm=ye|AmbigNorm=True|Override=False
@@ -459,7 +459,7 @@
 13	momaceval	macehualli	NOUN	_	Number[psor]=Sing|Person[psor]=2|State=Poss	9	_	_	Folio=1|Paragraph=5|Line=29|Norm=momacehual|Analysed=Yes
 14	:	:	PUNCT	_		16	punct	_	Folio=1|Paragraph=5|Line=29|Norm=:|Analysed=Yes
 15	ma	ma	ADV	_	_	16	_	_	Orig=maximella¶·quaoa|Folio=1,1|Paragraph=5,5|Line=29,30|Norm=ma|AmbigNorm=True|Override=False|Gloss=OPT
-16	ximellaquaoa	_	VERB	_	_	5	_	_	Orig=maximella¶·quaoa|Folio=1,1|Paragraph=5,5|Line=29,30|Norm=ximellacuahua
+16	ximellaquaoa	ellacuahua	VERB	_	_	5	_	_	Orig=maximella¶·quaoa|Folio=1,1|Paragraph=5,5|Line=29,30|Norm=ximellacuahua
 17	,	,	PUNCT	_		19	punct	_	Folio=1|Paragraph=5|Line=30|Norm=,|Analysed=Yes
 18	ma	ma	ADV	_	_	19	_	_	Orig=matitlaocux|Folio=1|Paragraph=5|Line=30|Norm=ma|AmbigNorm=True|Override=False|Gloss=OPT
 19	titlaocux	_	VERB	_	_	16	_	_	Orig=matitlaocux|Folio=1|Paragraph=5|Line=30|Norm=titlauhcox
@@ -473,7 +473,7 @@
 27	oc	oc	ADV	_		28	_	_	Folio=1|Paragraph=5|Line=31|Norm=oc|Analysed=Yes
 28	mochoqujz	choquiztli	NOUN	_	Number[psor]=Sing|Person[psor]=2|State=Poss	25	_	_	Folio=1|Paragraph=5|Line=31|Norm=mochoquiz|Analysed=Yes
 29	,	,	PUNCT	_		30	punct	_	Folio=1|Paragraph=5|Line=31|Norm=,|Analysed=Yes
-30	motlaocul	_	NOUN	_	_	25	_	_	Folio=1|Paragraph=5|Line=32|Norm=motlauhcol|Gloss=tu.tristeza
+30	motlaocul	tlaocolli	NOUN	_	Number[psor]=Sing|Person[psor]=2|State=Poss	25	_	_	Folio=1|Paragraph=5|Line=32|Norm=motlaocol|Gloss=tu.tristeza|Analysed=Yes
 31	ipan	pan	NOUN	_	NounType=Relat	32	obl	_	Folio=1|Paragraph=5|Line=32|Norm=ipan
 32	xonie	_	VERB	_	_	16	_	_	Folio=1|Paragraph=5|Line=32|Norm=xoniye
 33	.	.	PUNCT	_		5	punct	_	Folio=1|Paragraph=5|Line=32|Norm=.|Analysed=Yes
@@ -1047,11 +1047,11 @@
 
 # sent_id = Book_05_-_The_Omens.txt:19
 # text = Ximellaquauacan, nopilhoane, noteiccaoane, quennel tototolinja: ma caiac tlaocuja, nentlamati in jiollo, ca nel ic tioallaque, in timjqujco: ca iuh oalietia, iuh qujoalmattia in toiollo: injc ticoalalcaujque, tiquallalotique in tonca, in teca: in tauj, in totla, in tomach, in toueltiuh: ca ie injc techchoqujli, injc topan qujpixo, in ichoqujz, in jtlaocul: aco cana njcan, ixtlahoatl, atlauhtli itic, quavitl itic, cecemmantoz in tomjo: in totzon, nonoqujuhtoz, aalacatoz in tezco, in totlapallo: ca nel otomaceoaltic, ma caiac qujcioatlamachti in ijollo: xicmotlaquammacacan in mjqujztli, xicmotlatlauhtilican in totecujo: ma caiac tle itic qujnemjti, qujlnamjquj: ma ca qujn jc ticmatizque, in caco tle itech titotzotzonativi: vncan ic cemmaian, tontochochoqujlizque: ca nel iehoatl injc tiquinteiotico, tiqujmjtauhcaiotico, tiqujntonaleoaco, tiqujntzonteconacocujco intotechiuhcaoan, in puchteca, in jiaque: ca ieeppa iuh quimattivi, iuh qujmaujcotiuj, camo qujn tehoan iancujcan ie toconnextizque, ic toconjttazque, in tlein topan muchioaz: ximellaquaoacan, nopilhoane.
-# text[norm] = Ximellacuahuacan, nopilhuane, noteiccahuane, quennel tototolinia: ma cayac tlauhcuia, nentlamati in iyollo, ca nel ic tihuallaque, in timiquizo: ca iuh hualyetia, iuh quihualmattia in toyollo: inic ticualalcahuique, ticuallalotique in tonca, in teca: in tahui, in totla, in tomach, in tohueltiuh: ca ye inic techchoquili, inic topan quipixo, in ichoquiz, in itlauhcol: azo cana nican, ixtlahuatl, atlauhtli itic, cuahuitl itic, cecemmantoz in tomio: in totzon, nonoquiuhtoz, aalacatoz in tezzo, in totlapallo: ca nel otomacehualtic, ma cayac quicihuatlamachti in iyollo: xicmotlacuammacacan in miquiztli, xicmotlatlauhtilican in totecuiyo: ma cayac tle itic quinemiti, quilnamiqui: ma ca quin ic ticmatizque, in zazo tle itech titotzontzonatihui: oncan ic cemmayan, tontochochoquilizque: ca nel yehhuatl inic tiquinteyotico, tiquimitauhcayotico, tiquintonalehuaco, tiquintzonteconacocuico tintotechiuhcahuan, in pochteca, in iyaque: ca yeppa iuh quimattihui, iuh quimahuicotihui, camo quin tehhuan yancuican ye toconnextizque, ic toconittazque, in tlein topan mochihuaz: ximellacuahuacan, nopilhuane.
+# text[norm] = Ximellacuahuacan, nopilhuane, noteiccahuane, quennel tototolinia: ma cayac tlauhcuia, nentlamati in iyollo, ca nel ic tihuallaque, in timiquizo: ca iuh hualyetia, iuh quihualmattia in toyollo: inic ticualalcahuique, ticuallalotique in tonca, in teca: in tahui, in totla, in tomach, in tohueltiuh: ca ye inic techchoquili, inic topan quipixo, in ichoquiz, in itlaocol: azo cana nican, ixtlahuatl, atlauhtli itic, cuahuitl itic, cecemmantoz in tomio: in totzon, nonoquiuhtoz, aalacatoz in tezzo, in totlapallo: ca nel otomacehualtic, ma cayac quicihuatlamachti in iyollo: xicmotlacuammacacan in miquiztli, xicmotlatlauhtilican in totecuiyo: ma cayac tle itic quinemiti, quilnamiqui: ma ca quin ic ticmatizque, in zazo tle itech titotzontzonatihui: oncan ic cemmayan, tontochochoquilizque: ca nel yehhuatl inic tiquinteyotico, tiquimitauhcayotico, tiquintonalehuaco, tiquintzonteconacocuico tintotechiuhcahuan, in pochteca, in iyaque: ca yeppa iuh quimattihui, iuh quimahuicotihui, camo quin tehhuan yancuican ye toconnextizque, ic toconittazque, in tlein topan mochihuaz: ximellacuahuacan, nopilhuane.
 # text[orig] = Ximella¶quauacan·,·nopilhoane·,·noteic¶caoane·,·quennel·tototolinja·:·ma¶caiac·tlaocuja·,·nentlamati·inj¶iollo·,·canel·ictioallaque·,·intimj¶qujco·:·caiuh·oalietia·,·iuhqujoal¶mattia·intoiollo·:·injc·ticoalal¶caujque·,·tiquallalotique·inton¶ca·,·inteca·:·intauj·,·intotla·,·in·to¶mach·,·in·toueltiuh·:·caie·injc¶techchoqujli·,·injc·topan·qujpixo·,·inichoqujz·,·injtlaocul·:·aco·cana¶njcan·,·ixtlahoatl·,·atlauhtli¶itic·,·quavitl·itic·,·cecemmantoz¶in·tomjo·:·intotzon·,·nonoqujuh¶toz·,·aalacatoz·intezco·,·in·totlapallo·:·canel·otomaceoaltic·,·macaiac·quj¶cioatlam·achti·inijollo·:·xicmotla¶quammacacan·in·mjqujztli·,·xicmo¶tlatlauhtilican·in·totecujo·:·macaiac¶tle·itic·qujnemjti·,·qujlnamjquj·:·ma¶ca·qujnjc·ticmatizque·,·in·caco·tle¶itech·titotzotzonativi·:·vncan·iccem¶maian·,·tontochochoqujlizque·:·ca¶nel·iehoatl·injc·tiquinteiotico·,·ti¶qujmjtauhcaiotico·,·tiqujntonaleo¶aco·,·tiqujntzonteconacocujco·in¶totechiuhcaoan·,·inpuchteca·,·injia¶que·:·caieeppa·iuh·quimattivi·,·iuh¶qujmaujcotiuj·,·camo·qujn·tehoan¶iancujcan·ie·toconnextizque·,·ic·toco¶njttazque·,·intlein·topan·muchio¶az·:·ximellaquaoacan·,·nopilhoa¶ne·.
 # tagged = 100.00%
-# lemmatised = 77.25%
-# analysed = 79.37%
+# lemmatised = 77.78%
+# analysed = 79.89%
 1	Ximellaquauacan	_	VERB	_	_	0	root	_	Orig=Ximella¶·quauacan|Folio=3,3|Paragraph=1,1|Line=16,17|Norm=Ximellacuahuacan|Guessed=Yes
 2	,	,	PUNCT	_		3	punct	_	Folio=3|Paragraph=1|Line=17|Norm=,|Analysed=Yes
 3	nopilhoane	pilli	NOUN	_	_	1	vocative	_	Folio=3|Paragraph=1|Line=17|Norm=nopilhuane
@@ -1121,7 +1121,7 @@
 67	ichoqujz	choquiztli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	64	_	_	Orig=inichoqujz|Folio=3|Paragraph=1|Line=27|Norm=ichoquiz|Analysed=Yes
 68	,	,	PUNCT	_		70	punct	_	Folio=3|Paragraph=1|Line=27|Norm=,|Analysed=Yes
 69	in	in	DET|SCONJ	_	_	70	_	_	Orig=injtlaocul|Folio=3|Paragraph=1|Line=27|Norm=in
-70	jtlaocul	_	NOUN	_	_	67	_	_	Orig=injtlaocul|Folio=3|Paragraph=1|Line=27|Norm=itlauhcol
+70	jtlaocul	tlaocolli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	67	_	_	Orig=injtlaocul|Folio=3|Paragraph=1|Line=27|Norm=itlaocol|Analysed=Yes
 71	:	:	PUNCT	_		84	punct	_	Folio=3|Paragraph=1|Line=27|Norm=:|Analysed=Yes
 72	aco	azo	ADV	_		84	_	_	Folio=3|Paragraph=1|Line=27|Norm=azo|Gloss=quizás|Analysed=Yes
 73	cana	cana	ADV	_	_	84	_	_	Folio=3|Paragraph=1|Line=27|Norm=cana|Gloss=alguna.parte
