@@ -219,7 +219,8 @@ def load_reference_table(fn):
 		if line[0] == '#':
 			continue
 		sent_id, refs = re.sub('\t\t*', '\t', line).strip().split('\t')	
-		table[sent_id] = refs
+		if refs != '_':
+			table[sent_id] = refs
 
 	return table
 		
