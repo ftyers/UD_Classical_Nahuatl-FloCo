@@ -152,9 +152,10 @@ def read_lexicon(fn, lexicon):
 			continue
 		line = re.sub('\t\t*', '\t', line)
 		try:
-			token, lemma, upos, ufeats, misc = line.strip().split('\t')
+			token, lemma, upos, ufeats, misc, url = line.strip().split('\t')
 		except:
-			print('Error on %d, not enough values to unpack.' % (lineno),file=sys.stderr)
+			print('! Error on %d, not enough values to unpack.' % (lineno),file=sys.stderr)
+			print('!', line, line.split('\t'), file=sys.stderr)
 			raise
 
 		if token in lexicon and upos not in lexicon[token][1].split('|'):
