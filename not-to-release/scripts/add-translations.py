@@ -1,7 +1,6 @@
-import sys, re
+import sys, re, glob
 
-def read_translations(fn):
-	translations = {}
+def read_translations(fn, translations):
 	for line in open(fn):
 		if line.strip() == '' or line[0] == '#':
 			continue
@@ -11,7 +10,9 @@ def read_translations(fn):
 		translations[sent_id].append((lang, translation))
 	return translations	
 
-translations = read_translations(sys.argv[1])
+translations = {}
+for langfile in sys.argv[1:]:
+	translations = read_translations(langfile, translations)
 
 total = 0
 translated = 0
