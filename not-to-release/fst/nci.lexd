@@ -11993,8 +11993,10 @@ ohtlica # "on the road"
 ###############################################################################
 
 PATTERN VERB
-Augment < (Subject TenseVerb)[-pl]
-Augment < (Subject TenseVerb)[-sg]
+Augment < (Subject TenseVerb)[-pl,-imp]
+Augment < (Subject TenseVerb)[-sg,-imp]
+Augment < (Subject TenseVerb)[-pl,-impf,-pres,-fut,-pret]
+Augment < (Subject TenseVerb)[-sg,-impf,-pres,-fut,-pret]
 VerbImpers
 
 LEXICON Augment
