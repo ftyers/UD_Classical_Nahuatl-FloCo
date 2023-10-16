@@ -5,7 +5,7 @@ import glob
 
 alphabet = 'abcdefghijklmnopqrstuvxyz'
 
-def guess(norm, guessed_lemma, guessed_upos):
+def guess(norm, guessed_lemma, guessed_upos, misc):
 	norm = norm.lower()
 	if re.findall('[aeiou]tl$', norm):
 		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
@@ -86,8 +86,8 @@ def guess(norm, guessed_lemma, guessed_upos):
 	if re.findall("tiquiza", norm):
 		return (guessed_lemma, 'VERB', "_", "Guessed=Yes", [])
 	if guessed_upos != '_':
-		return (guessed_lemma, guessed_upos, '_', 'Ambiguous=Yes|Guessed=Yes', [])
-	return (guessed_lemma, 'X', '_', '_', [])
+		return (guessed_lemma, guessed_upos, '_', misc, [])
+	return (guessed_lemma, 'X', '_', misc, [])
 
 def tag(lexicon, form, norm, idx, analyses):
 	lower = norm.lower().strip('*')
@@ -98,10 +98,12 @@ def tag(lexicon, form, norm, idx, analyses):
 	# 	We should probably do max intersection with the analyses in the lexicon
 	guessed_lemma = '_'
 	guessed_upos = '_'
+	misc = '_'
 	if lower in lexicon:
 		guessed_lemma = lexicon[lower][0]
 
 	if len(analyses) > 1:
+		misc = 'Ambiguous=Yes|Analysed=Yes'	
 		lemmas = []
 		uposes = []
 		for analysis in analyses:
@@ -144,7 +146,7 @@ def tag(lexicon, form, norm, idx, analyses):
 	if norm[0] in '.?!:,;()':
 		return (norm, 'PUNCT', '_', '_', [])
 
-	return guess(norm, guessed_lemma, guessed_upos)
+	return guess(norm, guessed_lemma, guessed_upos, misc)
 
 def read_lexicon(fn, lexicon):
 	# FORM			LEMMA			UPOS		UFEATS		MISC

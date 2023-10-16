@@ -67,7 +67,7 @@
 26	in	in	DET|SCONJ	_	_	32	_	32	Orig=inanoce|Folio=1|Paragraph=2|Line=4|Norm=in
 27	anoce	anoce	CCONJ	_	_	32	_	32	Orig=inanoce|Folio=1|Paragraph=2|Line=4|Norm=anoce
 28	,	,	PUNCT	_		32	punct	32:punct	Folio=1|Paragraph=2|Line=4|Norm=,|Analysed=Yes
-29	iuhquj	iuhqui	ADV	_	_	32	_	32	Folio=1|Paragraph=2|Line=4|Norm=iuhqui|Gloss=así
+29	iuhquj	iuhqui	ADV	_		32	_	32	Folio=1|Paragraph=2|Line=4|Norm=iuhqui|Gloss=así|Analysed=Yes
 30	aca	aca	DET|PRON	_	_	31	_	31	Folio=1|Paragraph=2|Line=4|Norm=aca
 31	ilama	ilamatl	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	32	_	32	Orig=ilamachocaia|Folio=1|Paragraph=2|Line=5|Norm=ilama|Analysed=Yes
 32	chocaia	choca	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	21	_	21	Orig=ilamachocaia|Folio=1|Paragraph=2|Line=5|Norm=chocaya|Analysed=Yes
@@ -195,7 +195,7 @@
 17	choca	choca	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	9	_	_	Folio=1|Paragraph=4|Line=3|Norm=choca|Analysed=Yes
 18	:	:	PUNCT	_		22	punct	_	Folio=1|Paragraph=4|Line=3|Norm=:|Analysed=Yes
 19	in	in	DET|SCONJ	_	_	22	_	_	Orig=injuhquj|Folio=1|Paragraph=4|Line=3|Norm=in
-20	juhquj	iuhqui	ADV	_	_	22	_	_	Orig=injuhquj|Folio=1|Paragraph=4|Line=3|Norm=iuhqui|Gloss=así
+20	juhquj	iuhqui	ADV	_		22	_	_	Orig=injuhquj|Folio=1|Paragraph=4|Line=3|Norm=iuhqui|Gloss=así|Analysed=Yes
 21	tecciztli	tecciztli	NOUN	_	State=Abs	22	_	_	Folio=1|Paragraph=4|Line=3|Norm=tecciztli|Analysed=Yes
 22	qujpitza	pitza	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	9	_	_	Folio=1|Paragraph=4|Line=4|Norm=quipitza|Analysed=Yes
 23	:	:	PUNCT	_		25	punct	_	Folio=1|Paragraph=4|Line=4|Norm=:|Analysed=Yes
@@ -275,6 +275,7 @@
 # text[norm] = In ihcuac oyouh ipan mochiuh, y: niman ic yauh, quittaz in tonalpouhqui: ompa quellacuahua, quitlahpaloa: quilhuia.
 # text[orig] = Y·njqc¶oiuh·ipan·muchiuh·,·y·:·njman·ic·iauh·,·qujttaz·intonalpouhquj·:·vmpa·quella¶quaoa·,·qujtlapaloa·:·qujlvia·.
 # text[osp] = Aujendo oydo este mal aguero: luego yua a buscar, a aquellos que sabian declarar estos agueros: a los quales llamauan tonalpouhque. // I este aguero, o adiuino consolava, y esfurçaua a este tal: diziendole desta manera.
+# text[spa] = Cuando eso pasó, entonces iba a ver el tonalpouhqui, donde éste le consolaba, le esforzaba, decía:
 # references = A&D/161:1
 # tagged = 100.00%
 # lemmatised = 100.00%
@@ -420,7 +421,7 @@
 105	atlapalli	atlapalli	NOUN	_	State=Abs	103	_	_	Folio=1|Paragraph=5|Line=22|Norm=atlapalli|Analysed=Yes
 106	:	:	PUNCT	_		110	punct	_	Folio=1|Paragraph=5|Line=22|Norm=:|Analysed=Yes
 107	cujx	cuix	ADV	_		110	_	_	Folio=1|Paragraph=5|Line=22|Norm=cuix|Gloss=quizás|Analysed=Yes
-108	çan	zan	ADV	_	_	110	_	_	Folio=1|Paragraph=5|Line=22|Norm=zan
+108	çan	zan	ADV	_		110	_	_	Folio=1|Paragraph=5|Line=22|Norm=zan|Analysed=Yes
 109	nel	nel	ADV	_	_	110	_	_	Folio=1|Paragraph=5|Line=22|Norm=nel|Gloss=ya
 110	njmjtzihicaviz	izahuia	VERB	_	Number[obj]=Sing|Number[subj]=Sing|Person[obj]=2|Person[subj]=1|Subcat=Tran|Tense=Fut|VerbForm=Fin	1	_	_	Orig=njmjtzihi¶·caviz|Folio=1,1|Paragraph=5,5|Line=22,23|Norm=nimitzizahuiz|Analysed=Yes
 111	,	,	PUNCT	_		112	punct	_	Folio=1|Paragraph=5|Line=23|Norm=,|Analysed=Yes
@@ -461,7 +462,6 @@
 # text[norm] = Auh inin, ca oneltico: azo ye tocommahuizoz, in quenami momacehual: ma ximellacuahua, ma titlaocox, ixquich motlapal: oc motepitzyollo, oc mochoquiz, motlaocol ipan xonye.
 # text[orig] = A·uh¶injn·,·caoneltico·:·aco·ie·tocommaujcoz·,·inquenamj·momaceval·:·maximella¶quaoa·,·matitlaocux·,·ixqujch·motla¶pal·:·oc·motepitziollo·,·oc·mochoqujz·,·motlaocul·ipan·xonie·.
 # text[osp] = _
-# text[spa] = [...]: perhaps you may do glory to that which you deserve [...]
 # references = A&D/161:2
 # tagged = 100.00%
 # lemmatised = 100.00%
@@ -512,7 +512,7 @@
 1	Ca	cah|ca	X	_	_	8	_	_	Orig=Caizca|Folio=1|Paragraph=5|Line=32|Norm=Ca|AmbigNorm=True|Override=True
 2	izca	izac	VERB	_	_	1	_	_	Orig=Caizca|Folio=1|Paragraph=5|Line=32|Norm=ihzac
 3	,	,	PUNCT	_		4	punct	_	Folio=1|Paragraph=5|Line=32|Norm=,|Analysed=Yes
-4	ca	za	ADV	_	_	8	_	_	Folio=1|Paragraph=5|Line=32|Norm=za|AmbigNorm=True|Override=True
+4	ca	za	ADV	_		8	_	_	Folio=1|Paragraph=5|Line=32|Norm=za|AmbigNorm=True|Override=True|Analysed=Yes
 5	oc	oc	ADV	_		6	_	_	Orig=ocnen|Folio=2|Paragraph=1|Line=1|Norm=oc|Analysed=Yes
 6	nen	nen	ADV	_	_	4	_	_	Orig=ocnen|Folio=2|Paragraph=1|Line=1|Norm=nen|Gloss=en.vano
 7	ic	ic	ADV	_	_	_	_	_	Folio=2|Paragraph=1|Line=1|Norm=ic
@@ -654,12 +654,12 @@
 10	catca	catqui	VERB	_	Subcat=Intr	6	_	_	Folio=2|Paragraph=2|Line=2|Norm=catca
 11	,	,	PUNCT	_		15	punct	_	Folio=2|Paragraph=2|Line=2|Norm=,|Analysed=Yes
 12	in	in	DET|SCONJ	_	_	15	_	_	Folio=2|Paragraph=2|Line=2|Norm=in
-13	çan	zan	ADV	_	_	15	_	_	Folio=2|Paragraph=2|Line=2|Norm=zan
+13	çan	zan	ADV	_		15	_	_	Folio=2|Paragraph=2|Line=2|Norm=zan|Analysed=Yes
 14	necoc	necoc	ADV	_		15	_	_	Folio=2|Paragraph=2|Line=2|Norm=necoc|Analysed=Yes
 15	tlachiaia	tlachia	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	9	_	_	Orig=tlachia¶·ia|Folio=2,2|Paragraph=2,2|Line=2,3|Norm=tlachiaya|AmbigNorm=True|Override=False|Analysed=Yes
 16	:	:	PUNCT	_		19	punct	_	Folio=2|Paragraph=2|Line=3|Norm=:|Analysed=Yes
 17	in	in	DET|SCONJ	_	_	19	_	_	Orig=injuhquj|Folio=2|Paragraph=2|Line=3|Norm=in
-18	juhquj	iuhqui	ADV	_	_	19	_	_	Orig=injuhquj|Folio=2|Paragraph=2|Line=3|Norm=iuhqui|Gloss=así
+18	juhquj	iuhqui	ADV	_		19	_	_	Orig=injuhquj|Folio=2|Paragraph=2|Line=3|Norm=iuhqui|Gloss=así|Analysed=Yes
 19	catca	catqui	VERB	_	Subcat=Intr	15	_	_	Folio=2|Paragraph=2|Line=3|Norm=catca
 20	,	,	PUNCT	_		23	punct	_	Folio=2|Paragraph=2|Line=3|Norm=,|Analysed=Yes
 21	in	in	DET|SCONJ	_	_	22	_	_	Folio=2|Paragraph=2|Line=3|Norm=in
@@ -679,7 +679,7 @@
 35	in	in	DET|SCONJ	_	_	36	_	_	Orig=injquac|Folio=2|Paragraph=2|Line=5|Norm=in
 36	jquac	ihcuac	SCONJ	_	_	43	_	_	Orig=injquac|Folio=2|Paragraph=2|Line=5|Norm=ihcuac|Gloss=cuando
 37	cana	cana	ADV	_	_	43	nsubj	_	Folio=2|Paragraph=2|Line=5|Norm=cana|Gloss=alguna.parte
-38	iuhquj	iuhqui	ADV	_	_	43	_	_	Folio=2|Paragraph=2|Line=5|Norm=iuhqui|Gloss=así
+38	iuhquj	iuhqui	ADV	_		43	_	_	Folio=2|Paragraph=2|Line=5|Norm=iuhqui|Gloss=así|Analysed=Yes
 39	vtlica	ohtlica	ADV	_		43	_	_	Orig=v¶·tlica|Folio=2,2|Paragraph=2,2|Line=5,6|Norm=ohtlica|Gloss=en.el.camino|Analysed=Yes
 40	,	,	PUNCT	_		43	punct	_	Folio=2|Paragraph=2|Line=6|Norm=,|Analysed=Yes
 41	in	in	DET|SCONJ	_	_	43	_	_	Orig=injnpan|Folio=2|Paragraph=2|Line=6|Norm=in
@@ -772,14 +772,14 @@
 30	in	in	DET|SCONJ	_	_	31	det	_	Folio=2|Paragraph=3|Line=8|Norm=in
 31	nenenque	nenenque	NOUN	_	Number=Plur	35	nsubj	_	Folio=2|Paragraph=3|Line=8|Norm=nenenque|Analysed=Yes
 32	:	:	PUNCT	_		35	punct	_	Folio=2|Paragraph=3|Line=8|Norm=:|Analysed=Yes
-33	can	zan	ADV	_	_	35	advmod	_	Folio=2|Paragraph=3|Line=9|Norm=zan
+33	can	zan	ADV	_		35	advmod	_	Folio=2|Paragraph=3|Line=9|Norm=zan|Analysed=Yes
 34	ie	ye	ADV	_	_	35	advmod	_	Folio=2|Paragraph=3|Line=9|Norm=ye|AmbigNorm=True|Override=False
 35	papaquj	papaqui	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	24	_	_	Folio=2|Paragraph=3|Line=9|Norm=papaqui|Analysed=Yes
 36	:	:	PUNCT	_		38	punct	_	Folio=2|Paragraph=3|Line=9|Norm=:|Analysed=Yes
 37	iuhqujn	iuhquin	ADV	_		38	_	_	Orig=iuh·quj·nacovetzi¶|Folio=2,2,2|Paragraph=3,3,3|Line=9,9,9|Norm=iuhquin|AmbigNorm=True|Override=False|Gloss=así|Analysed=Yes
 38	acovetzi	acohuetzi	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	35	_	_	Orig=iuh·quj·nacovetzi¶|Folio=2,2,2|Paragraph=3,3,3|Line=9,9,9|Norm=acohuetzi|Analysed=Yes
 39	in	in	DET|SCONJ	_	_	40	det	_	Orig=ininiollo|Folio=2|Paragraph=4|Line=1|Norm=in
-40	iniollo	yollotl	NOUN	_	_	38	_	_	Orig=ininiollo|Folio=2|Paragraph=4|Line=1|Norm=inyollo|Gloss=sus.corazones
+40	iniollo	yollotl	NOUN	_	Number[psor]=Plur|Person[psor]=3|State=Poss	38	_	_	Orig=ininiollo|Folio=2|Paragraph=4|Line=1|Norm=inyollo|Gloss=sus.corazones|Analysed=Yes
 41	:	:	PUNCT	_		51	punct	_	Folio=2|Paragraph=4|Line=1|Norm=:|Analysed=Yes
 42	ipampa	ipampa	NOUN	_	NounType=Relat	51	obl	_	Folio=2|Paragraph=4|Line=1|Norm=ipampa|Gloss=porque
 43	,	,	PUNCT	_		_	_	_	Folio=2|Paragraph=4|Line=1|Norm=,|Analysed=Yes
@@ -818,7 +818,7 @@
 4	oquicacque	caqui	VERB	_	Aspect=Prior|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	40	_	_	Orig=ieoquicacque|Folio=2|Paragraph=4|Line=4|Norm=oquicacque|Analysed=Yes
 5	,	,	PUNCT	_		8	punct	_	Folio=2|Paragraph=4|Line=4|Norm=,|Analysed=Yes
 6	in	in	DET|SCONJ	_	_	8	_	_	Orig=injuh¶·quj|Folio=2,2|Paragraph=4,4|Line=4,5|Norm=in
-7	juhquj	iuhqui	ADV	_	_	8	_	_	Orig=injuh¶·quj|Folio=2,2|Paragraph=4,4|Line=4,5|Norm=iuhqui|Gloss=así
+7	juhquj	iuhqui	ADV	_		8	_	_	Orig=injuh¶·quj|Folio=2,2|Paragraph=4,4|Line=4,5|Norm=iuhqui|Gloss=así|Analysed=Yes
 8	ommjmjctoc	ommimictoc	VERB	_	_	4	_	_	Folio=2|Paragraph=4|Line=5|Norm=ommimictoc|AmbigNorm=True|Override=False|Root=miqui
 9	,	,	PUNCT	_		11	punct	_	Folio=2|Paragraph=4|Line=5|Norm=,|Analysed=Yes
 10	ic	ic	ADV	_	_	11	_	_	Folio=2|Paragraph=4|Line=5|Norm=ic
@@ -827,7 +827,7 @@
 13	tlatlapitzaoa	tlapitza	VERB	_	_	11	_	_	Orig=tlatlapi¶·tzaoa|Folio=2,2|Paragraph=4,4|Line=5,6|Norm=tlatlapitzahua
 14	:	:	PUNCT	_		22	punct	_	Folio=2|Paragraph=4|Line=6|Norm=:|Analysed=Yes
 15	in	in	DET|SCONJ	_	_	22	_	_	Orig=inju·hquj|Folio=2,2|Paragraph=4,4|Line=6,6|Norm=in
-16	juhquj	iuhqui	ADV	_	_	22	_	_	Orig=inju·hquj|Folio=2,2|Paragraph=4,4|Line=6,6|Norm=iuhqui|Gloss=así
+16	juhquj	iuhqui	ADV	_		22	_	_	Orig=inju·hquj|Folio=2,2|Paragraph=4,4|Line=6,6|Norm=iuhqui|Gloss=así|Analysed=Yes
 17	,	,	PUNCT	_		22	punct	_	Folio=2|Paragraph=4|Line=6|Norm=,|Analysed=Yes
 18	ixillan	xillantli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	22	_	_	Folio=2|Paragraph=4|Line=6|Norm=ixillan|Analysed=Yes
 19	,	,	PUNCT	_		20	punct	_	Folio=2|Paragraph=4|Line=6|Norm=,|Analysed=Yes
@@ -836,7 +836,7 @@
 22	onquaquauhti	oncuacuauhti	VERB	_	_	11	_	_	Orig=on·quaquauhti|Folio=2,2|Paragraph=4,4|Line=7,7|Norm=oncuacuauhti
 23	:	:	PUNCT	_		27	punct	_	Folio=2|Paragraph=4|Line=7|Norm=:|Analysed=Yes
 24	in	in	DET|SCONJ	_	_	27	_	_	Orig=injuhquj|Folio=2|Paragraph=4|Line=7|Norm=in
-25	juhquj	iuhqui	ADV	_	_	27	_	_	Orig=injuhquj|Folio=2|Paragraph=4|Line=7|Norm=iuhqui|Gloss=así
+25	juhquj	iuhqui	ADV	_		27	_	_	Orig=injuhquj|Folio=2|Paragraph=4|Line=7|Norm=iuhqui|Gloss=así|Analysed=Yes
 26	,	,	PUNCT	_		27	punct	_	Folio=2|Paragraph=4|Line=7|Norm=,|Analysed=Yes
 27	mocacanaoa	cacanahua	VERB	_	_	22	_	_	Orig=mocaca¶·naoa|Folio=2,2|Paragraph=4,4|Line=7,8|Norm=mocacanahua|Gloss=se.adelgaza.mucho
 28	,	,	PUNCT	_		29	punct	_	Folio=2|Paragraph=4|Line=8|Norm=,|Analysed=Yes
@@ -853,10 +853,10 @@
 39	aocac	ayocac	PRON	_	_	40	_	_	Folio=2|Paragraph=4|Line=9|Norm=ayocac
 40	naoati	nahuati	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	0	root	_	Orig=na¶·oati|Folio=2,2|Paragraph=4,4|Line=9,10|Norm=nahuati|Analysed=Yes
 41	:	:	PUNCT	_		42	punct	_	Folio=2|Paragraph=4|Line=10|Norm=:|Analysed=Yes
-42	ca	za	ADV	_	_	40	_	_	Folio=2|Paragraph=4|Line=10|Norm=za|AmbigNorm=True|Override=True
+42	ca	za	ADV	_		40	_	_	Folio=2|Paragraph=4|Line=10|Norm=za|AmbigNorm=True|Override=True|Analysed=Yes
 43	tlatoliuj	_	X	_	_	42	_	_	Folio=2|Paragraph=4|Line=10|Norm=tlatolihui
 44	,	,	PUNCT	_		45	punct	_	Folio=2|Paragraph=4|Line=10|Norm=,|Analysed=Yes
-45	ca	za	ADV	_	_	42	_	_	Folio=2|Paragraph=4|Line=10|Norm=za|AmbigNorm=True|Override=True
+45	ca	za	ADV	_		42	_	_	Folio=2|Paragraph=4|Line=10|Norm=za|AmbigNorm=True|Override=True|Analysed=Yes
 46	tlaquechpiliuj	quechpilihui	VERB	_	_	45	_	_	Orig=tlaquechpili¶·uj|Folio=2,2|Paragraph=4,4|Line=10,11|Norm=tlaquechpilihui|Split=tla·quech·pilihui|Incorp[obj]=quech
 47	,	,	PUNCT	_		49	punct	_	Folio=2|Paragraph=4|Line=11|Norm=,|Analysed=Yes
 48	aiocmo	ayocmo	ADV	_		49	_	_	Folio=2|Paragraph=4|Line=11|Norm=ayocmo|Gloss=ya.no|Analysed=Yes
@@ -941,7 +941,7 @@
 31	,	,	PUNCT	_		32	punct	_	Folio=2|Paragraph=4|Line=20|Norm=,|Analysed=Yes
 32	nenemjnj	nehnemini	NOUN	_	_	36	_	_	Orig=nene¶·mjnj|Folio=2,2|Paragraph=4,4|Line=20,21|Norm=nehnemini
 33	:	:	PUNCT	_		36	punct	_	Folio=2|Paragraph=4|Line=21|Norm=:|Analysed=Yes
-34	iuhquj	iuhqui	ADV	_	_	36	_	_	Folio=2|Paragraph=4|Line=21|Norm=iuhqui|Gloss=así
+34	iuhquj	iuhqui	ADV	_		36	_	_	Folio=2|Paragraph=4|Line=21|Norm=iuhqui|Gloss=así|Analysed=Yes
 35	inpan	pan	NOUN	_	NounType=Relat	36	_	_	Folio=2|Paragraph=4|Line=21|Norm=inpan
 36	omuchiuh	chihua	VERB	_	_	_	_	_	Folio=2|Paragraph=4|Line=21|Norm=omochiuh
 37	,	,	PUNCT	_		40	punct	_	Folio=2|Paragraph=4|Line=21|Norm=,|Analysed=Yes
@@ -1111,7 +1111,7 @@
 13	,	,	PUNCT	_		14	punct	_	Folio=3|Paragraph=1|Line=19|Norm=,|Analysed=Yes
 14	nentlamati	nentlamati	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	12	_	_	Folio=3|Paragraph=1|Line=19|Norm=nentlamati|Analysed=Yes
 15	in	in	DET|SCONJ	_	_	16	_	_	Orig=inj¶·iollo|Folio=3,3|Paragraph=1,1|Line=19,20|Norm=in
-16	jiollo	yollotl	NOUN	_	_	14	_	_	Orig=inj¶·iollo|Folio=3,3|Paragraph=1,1|Line=19,20|Norm=iyollo|Gloss=su.corazón
+16	jiollo	yollotl	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	14	_	_	Orig=inj¶·iollo|Folio=3,3|Paragraph=1,1|Line=19,20|Norm=iyollo|Gloss=su.corazón|Analysed=Yes
 17	,	,	PUNCT	_		21	punct	_	Folio=3|Paragraph=1|Line=20|Norm=,|Analysed=Yes
 18	ca	cah|ca	VERB	_	_	21	_	_	Orig=canel|Folio=3|Paragraph=1|Line=20|Norm=ca|AmbigNorm=True|Override=False
 19	nel	nel	ADV	_	_	21	_	_	Orig=canel|Folio=3|Paragraph=1|Line=20|Norm=nel|Gloss=ya
@@ -1128,7 +1128,7 @@
 30	iuh	iuh	ADV	_	_	31	_	_	Orig=iuhqujoal¶·mattia|Folio=3,3|Paragraph=1,1|Line=21,22|Norm=iuh|AmbigNorm=True|Override=False|Gloss=así
 31	qujoalmattia	mati	VERB	_	_	28	_	_	Orig=iuhqujoal¶·mattia|Folio=3,3|Paragraph=1,1|Line=21,22|Norm=quihualmattia
 32	in	in	DET|SCONJ	_	_	33	_	_	Orig=intoiollo|Folio=3|Paragraph=1|Line=22|Norm=in
-33	toiollo	yollotl	NOUN	_	_	31	_	_	Orig=intoiollo|Folio=3|Paragraph=1|Line=22|Norm=toyollo|Gloss=nuestros.corazones
+33	toiollo	yollotl	NOUN	_	Number[psor]=Plur|Person[psor]=1|State=Poss	31	_	_	Orig=intoiollo|Folio=3|Paragraph=1|Line=22|Norm=toyollo|Gloss=nuestros.corazones|Analysed=Yes
 34	:	:	PUNCT	_		36	punct	_	Folio=3|Paragraph=1|Line=22|Norm=:|Analysed=Yes
 35	injc	inic	SCONJ	_	_	36	_	_	Folio=3|Paragraph=1|Line=22|Norm=inic
 36	ticoalalcaujque	cahuia	VERB	_	_	1	_	_	Orig=ticoalal¶·caujque|Folio=3,3|Paragraph=1,1|Line=22,23|Norm=ticualalcahuique
@@ -1203,7 +1203,7 @@
 105	caiac	caya	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	1	_	_	Orig=macaiac|Folio=3|Paragraph=2|Line=5|Norm=cayac|Analysed=Yes
 106	qujcioatlamachti	cihuatlamachtia	VERB	_	Number[iobj]=Sing|Number[subj]=Plur,Sing|Person[iobj]=3|Person[subj]=3|Subcat=Ditr|Tense=Past|VerbForm=Fin	105	_	_	Orig=quj¶·cioatlam·achti|Folio=3,3,3|Paragraph=2,2,2|Line=5,6,6|Norm=quicihuatlamachti|Analysed=Yes
 107	in	in	DET|SCONJ	_	_	108	_	_	Orig=inijollo|Folio=3|Paragraph=2|Line=6|Norm=in
-108	ijollo	yollotl	NOUN	_	_	106	_	_	Orig=inijollo|Folio=3|Paragraph=2|Line=6|Norm=iyollo|Gloss=su.corazón
+108	ijollo	yollotl	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	106	_	_	Orig=inijollo|Folio=3|Paragraph=2|Line=6|Norm=iyollo|Gloss=su.corazón|Analysed=Yes
 109	:	:	PUNCT	_		110	punct	_	Folio=3|Paragraph=2|Line=6|Norm=:|Analysed=Yes
 110	xicmotlaquammacacan	tlacuamaca	VERB	_	_	1	_	_	Orig=xicmotla¶·quammacacan|Folio=3,3|Paragraph=2,2|Line=6,7|Norm=xicmotlacuammacacan|Incorp=tlacua
 111	in	in	DET|SCONJ	_	_	112	_	_	Folio=3|Paragraph=2|Line=7|Norm=in
@@ -1357,7 +1357,7 @@
 8	,	,	PUNCT	_		9	punct	_	Folio=4|Paragraph=1|Line=3|Norm=,|Analysed=Yes
 9	tlacoqujxtia	tlacoquixtia	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	5	_	_	Folio=4|Paragraph=1|Line=3|Norm=tlacoquixtia|Analysed=Yes
 10	,	,	PUNCT	_		11	punct	_	Folio=4|Paragraph=1|Line=3|Norm=,|Analysed=Yes
-11	ca	za	ADV	_	_	3	_	_	Folio=4|Paragraph=1|Line=3|Norm=za|AmbigNorm=True|Override=True
+11	ca	za	ADV	_		3	_	_	Folio=4|Paragraph=1|Line=3|Norm=za|AmbigNorm=True|Override=True|Analysed=Yes
 12	qujmocemmacatoque	cemmaca	VERB	_	_	11	_	_	Orig=qujmocem¶·macatoque|Folio=4,4|Paragraph=1,1|Line=3,4|Norm=quimocemmacatoque|Gloss=se.resigna
 13	,	,	PUNCT	_		15	punct	_	Folio=4|Paragraph=1|Line=4|Norm=,|Analysed=Yes
 14	in	in	DET|SCONJ	_	_	15	_	_	Orig=intlein|Folio=4|Paragraph=1|Line=4|Norm=in
@@ -1375,12 +1375,12 @@
 26	itlamatia	_	VERB	_	_	23	_	_	Folio=4|Paragraph=1|Line=6|Norm=itlamatia
 27	,	,	PUNCT	_		31	punct	_	Folio=4|Paragraph=1|Line=6|Norm=,|Analysed=Yes
 28	intla	tla	PRON	_	_	31	_	_	Folio=4|Paragraph=1|Line=6|Norm=intla|Gloss=algo
-29	iuhquj	iuhqui	ADV	_	_	31	_	_	Folio=4|Paragraph=1|Line=6|Norm=iuhqui|Gloss=así
+29	iuhquj	iuhqui	ADV	_		31	_	_	Folio=4|Paragraph=1|Line=6|Norm=iuhqui|Gloss=así|Analysed=Yes
 30	inpan	pan	NOUN	_	NounType=Relat	31	_	_	Folio=4|Paragraph=1|Line=7|Norm=inpan
 31	muchioa	chihua	VERB	_	_	23	_	_	Folio=4|Paragraph=1|Line=7|Norm=mochihua
 32	,	,	PUNCT	_		36	punct	_	Folio=4|Paragraph=1|Line=7|Norm=,|Analysed=Yes
 33	in	in	DET|SCONJ	_	_	36	_	_	Orig=injuhquj|Folio=4|Paragraph=1|Line=7|Norm=in
-34	juhquj	iuhqui	ADV	_	_	36	_	_	Orig=injuhquj|Folio=4|Paragraph=1|Line=7|Norm=iuhqui|Gloss=así
+34	juhquj	iuhqui	ADV	_		36	_	_	Orig=injuhquj|Folio=4|Paragraph=1|Line=7|Norm=iuhqui|Gloss=así|Analysed=Yes
 35	ic	ic	ADV	_	_	36	_	_	Folio=4|Paragraph=1|Line=7|Norm=ic
 36	oqujntetzauj	tetzahuia	VERB	_	_	31	_	_	Orig=o¶·qujn·tetzauj|Folio=4,4,4|Paragraph=1,1,1|Line=7,8,8|Norm=oquintetzahui
 37	oactli	huactli	NOUN	_	State=Abs	36	nsubj	_	Folio=4|Paragraph=1|Line=8|Norm=huactli|Analysed=Yes
@@ -1397,7 +1397,7 @@
 # analysed = 78.95%
 1	Auh	auh	CCONJ	_	_	4	_	_	Orig=A·uh|Folio=4,4|Paragraph=1,1|Line=8,8|Norm=Auh|Gloss=y
 2	onoce	anoce	CCONJ	_	_	4	_	_	Folio=4|Paragraph=1|Line=8|Norm=anoce
-3	can	zan	ADV	_	_	4	_	_	Folio=4|Paragraph=1|Line=9|Norm=zan
+3	can	zan	ADV	_		4	_	_	Folio=4|Paragraph=1|Line=9|Norm=zan|Analysed=Yes
 4	maqujca	maquiza	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	0	root	_	Folio=4|Paragraph=1|Line=9|Norm=maquiza|Split=ma·quiza|Analysed=Yes
 5	,	,	PUNCT	_		9	punct	_	Folio=4|Paragraph=1|Line=9|Norm=,|Analysed=Yes
 6	acaco	acazo	ADV	_	_	9	_	_	Orig=acacotle|Folio=4|Paragraph=1|Line=9|Norm=acazo|Gloss=quizá
@@ -1480,9 +1480,9 @@
 54	aoccan	aoccan	ADV	_	_	55	advmod	_	Folio=4|Paragraph=1|Line=21|Norm=ayoccan|Gloss=en.ninguna.parte
 55	auja	ahuia	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	46	_	_	Folio=4|Paragraph=1|Line=22|Norm=ahuia|Analysed=Yes
 56	in	in	DET	_	_	57	det	_	Orig=injiollo|Folio=4|Paragraph=1|Line=22|Norm=in
-57	jiollo	yollotl	NOUN	_	_	55	nsubj	_	Orig=injiollo|Folio=4|Paragraph=1|Line=22|Norm=iyollo|Gloss=su.corazón
+57	jiollo	yollotl	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	55	nsubj	_	Orig=injiollo|Folio=4|Paragraph=1|Line=22|Norm=iyollo|Gloss=su.corazón|Analysed=Yes
 58	:	:	PUNCT	_		59	punct	_	Folio=4|Paragraph=1|Line=22|Norm=:|Analysed=Yes
-59	ca	za	ADV	_	_	46	_	_	Folio=4|Paragraph=1|Line=22|Norm=za|AmbigNorm=True|Override=True
+59	ca	za	ADV	_		46	_	_	Folio=4|Paragraph=1|Line=22|Norm=za|AmbigNorm=True|Override=True|Analysed=Yes
 60	tlanauhtiuj	tlanahui	VERB	_	_	59	_	_	Folio=4|Paragraph=1|Line=22|Norm=tlanauhtihui|Gloss=empeora
 61	,	,	PUNCT	_		63	punct	_	Folio=4|Paragraph=1|Line=22|Norm=,|Analysed=Yes
 62	in	in	DET|SCONJ	_	_	63	_	_	Folio=4|Paragraph=1|Line=22|Norm=in
@@ -1602,13 +1602,13 @@
 18	qujcaquja	caqui	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	13	_	_	Orig=quj¶·caquja|Folio=4,4|Paragraph=3,3|Line=3,4|Norm=quicaquiya|Analysed=Yes
 19	,	,	PUNCT	_		24	punct	_	Folio=4|Paragraph=3|Line=4|Norm=,|Analysed=Yes
 20	in	in	DET|SCONJ	_	_	24	_	_	Orig=injuhquj|Folio=4|Paragraph=3|Line=4|Norm=in
-21	juhquj	iuhqui	ADV	_	_	24	_	_	Orig=injuhquj|Folio=4|Paragraph=3|Line=4|Norm=iuhqui|Gloss=así
+21	juhquj	iuhqui	ADV	_		24	_	_	Orig=injuhquj|Folio=4|Paragraph=3|Line=4|Norm=iuhqui|Gloss=así|Analysed=Yes
 22	aca	aca	DET|PRON	_	_	24	_	_	Folio=4|Paragraph=3|Line=4|Norm=aca
 23	,	,	PUNCT	_		24	punct	_	Folio=4|Paragraph=3|Line=4|Norm=,|Analysed=Yes
 24	tlatepuzmjuja	tepozmihuia	VERB	_	Animacy[obj]=Inan|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	18	_	_	Orig=tlatepuzmj¶·uja|Folio=4,4|Paragraph=3,3|Line=4,5|Norm=tlatepozmihuia|Analysed=Yes
 25	:	:	PUNCT	_		28	punct	_	Folio=4|Paragraph=3|Line=5|Norm=:|Analysed=Yes
 26	in	in	DET|SCONJ	_	_	28	_	_	Orig=injuhquj|Folio=4|Paragraph=3|Line=5|Norm=in
-27	juhquj	iuhqui	ADV	_	_	28	_	_	Orig=injuhquj|Folio=4|Paragraph=3|Line=5|Norm=iuhqui|Gloss=así
+27	juhquj	iuhqui	ADV	_		28	_	_	Orig=injuhquj|Folio=4|Paragraph=3|Line=5|Norm=iuhqui|Gloss=así|Analysed=Yes
 28	quauhxeloaia	cuauhxeloa	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	24	_	_	Folio=4|Paragraph=3|Line=5|Norm=cuauhxeloaya|Incorp[obj]=cuauh|Root=xeloa|Analysed=Yes
 29	,	,	PUNCT	_		31	punct	_	Folio=4|Paragraph=3|Line=5|Norm=,|Analysed=Yes
 30	in	in	DET|SCONJ	_	_	31	_	_	Folio=4|Paragraph=3|Line=5|Norm=in
@@ -1766,7 +1766,7 @@
 6	mjhiujntia	ihihuintia	VERB	_	_	2	_	_	Folio=5|Paragraph=1|Line=4|Norm=mihihuintia
 7	,	,	PUNCT	_		10	punct	_	Folio=5|Paragraph=1|Line=4|Norm=,|Analysed=Yes
 8	in	in	DET|SCONJ	_	_	10	_	_	Orig=injiollo¶|Folio=5|Paragraph=1|Line=4|Norm=in
-9	jiollo	yollotl	NOUN	_	_	10	_	_	Orig=injiollo¶|Folio=5|Paragraph=1|Line=4|Norm=iyollo|Gloss=su.corazón
+9	jiollo	yollotl	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	10	_	_	Orig=injiollo¶|Folio=5|Paragraph=1|Line=4|Norm=iyollo|Gloss=su.corazón|Analysed=Yes
 10	qujmati	mati	VERB	_	_	6	_	_	Folio=5|Paragraph=1|Line=5|Norm=quimati
 11	,	,	PUNCT	_		14	punct	_	Folio=5|Paragraph=1|Line=5|Norm=,|Analysed=Yes
 12	in	in	DET|SCONJ	_	_	14	_	_	Orig=inamo|Folio=5|Paragraph=1|Line=5|Norm=in
@@ -1928,7 +1928,7 @@
 14	,	,	PUNCT	_		18	punct	_	Folio=5|Paragraph=2|Line=2|Norm=,|Analysed=Yes
 15	in	in	DET|SCONJ	_	_	18	_	_	Orig=inanoço|Folio=5|Paragraph=2|Line=2|Norm=in
 16	anoço	anozo	ADV	_		18	_	_	Orig=inanoço|Folio=5|Paragraph=2|Line=2|Norm=anozo|Analysed=Yes
-17	çan	zan	ADV	_	_	18	_	_	Folio=5|Paragraph=2|Line=2|Norm=zan
+17	çan	zan	ADV	_		18	_	_	Folio=5|Paragraph=2|Line=2|Norm=zan|Analysed=Yes
 18	mihiujntia	ihihuintia	VERB	_	_	13	_	_	Folio=5|Paragraph=2|Line=2|Norm=mihihuintia
 19	in	in	DET|SCONJ	_	_	20	_	_	Orig=injaotlaueliloc|Folio=5|Paragraph=2|Line=3|Norm=in
 20	jaotlaueliloc	yaotl	NOUN	_		13	_	_	Orig=injaotlaueliloc|Folio=5|Paragraph=2|Line=3|Norm=yaotlahueliloc|Analysed=Yes
@@ -1947,7 +1947,7 @@
 33	ie	ye	ADV	_	_	34	_	_	Folio=5|Paragraph=2|Line=4|Norm=ye|AmbigNorm=True|Override=False
 34	qujmottilia	ittilia	VERB	_	_	0	root	_	Orig=quj¶·mottilia|Folio=5,5|Paragraph=2,2|Line=4,5|Norm=quimottilia|Root=itta
 35	in	in	DET	_	_	36	det	_	Orig=injiollo|Folio=5|Paragraph=2|Line=5|Norm=in
-36	jiollo	yollotl	NOUN	_	_	34	obj	_	Orig=injiollo|Folio=5|Paragraph=2|Line=5|Norm=iyollo|Gloss=su.corazón
+36	jiollo	yollotl	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	34	obj	_	Orig=injiollo|Folio=5|Paragraph=2|Line=5|Norm=iyollo|Gloss=su.corazón|Analysed=Yes
 37	:	:	PUNCT	_		38	punct	_	Folio=5|Paragraph=2|Line=5|Norm=:|Analysed=Yes
 38	qujcujtiuetzi	cuitihuetzi	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	34	_	_	Folio=5|Paragraph=2|Line=5|Norm=quicuitihuetzi|Analysed=Yes
 39	,	,	PUNCT	_		40	punct	_	Folio=5|Paragraph=2|Line=5|Norm=,|Analysed=Yes
@@ -2030,7 +2030,7 @@
 17	tle	tle	PRON	_	_	18	_	_	Folio=5|Paragraph=2|Line=16|Norm=tle
 18	tinechnequjlia	nequi	VERB	_	_	8	_	_	Folio=5|Paragraph=2|Line=17|Norm=tinechnequilia|Guessed=Yes
 19	,	,	PUNCT	_		20	punct	_	Folio=5|Paragraph=2|Line=17|Norm=,|Analysed=Yes
-20	xinechcaoa	cahua	VERB	_	_	8	_	_	Orig=xinech·caoa|Folio=5,5|Paragraph=2,2|Line=17,17|Norm=xinechcahua|Ambiguous=Yes|Guessed=Yes
+20	xinechcaoa	cahua	VERB	_	_	8	_	_	Orig=xinech·caoa|Folio=5,5|Paragraph=2,2|Line=17,17|Norm=xinechcahua|Ambiguous=Yes|Analysed=Yes
 21	:	:	PUNCT	_		22	punct	_	Folio=5|Paragraph=2|Line=17|Norm=:|Analysed=Yes
 22	njmjtzmazca	maca	VERB	_	Number[iobj]=Sing|Number[subj]=Sing|Person[iobj]=2|Person[subj]=1|Subcat=Ditr|Tense=Fut|VerbForm=Fin	20	_	_	Orig=njmjtz¶·mazca|Folio=5,5|Paragraph=2,2|Line=17,18|Norm=nimitzmacaz|Analysed=Yes
 23	in	in	DET|SCONJ	_	_	24	_	_	Orig=intlein|Folio=5|Paragraph=2|Line=18|Norm=in
@@ -2098,7 +2098,7 @@
 8	:	:	PUNCT	_		9	punct	_	Folio=5|Paragraph=2|Line=24|Norm=:|Analysed=Yes
 9	njmtzmaca	maca	VERB	_	Number[iobj]=Sing|Number[subj]=Sing|Person[iobj]=2|Person[subj]=1|Subcat=Ditr|Tense=Pres|VerbForm=Fin	5	_	_	Folio=5|Paragraph=2|Line=24|Norm=nimitzmaca|Analysed=Yes
 10	,	,	PUNCT	_		11	punct	_	Folio=5|Paragraph=2|Line=24|Norm=,|Analysed=Yes
-11	xinechcaoa	cahua	VERB	_	_	5	_	_	Folio=5|Paragraph=2|Line=24|Norm=xinechcahua|Ambiguous=Yes|Guessed=Yes
+11	xinechcaoa	cahua	VERB	_	_	5	_	_	Folio=5|Paragraph=2|Line=24|Norm=xinechcahua|Ambiguous=Yes|Analysed=Yes
 12	:	:	PUNCT	_		14	punct	_	Folio=5|Paragraph=2|Line=24|Norm=:|Analysed=Yes
 13	amo	amo	ADV	_		14	_	_	Folio=5|Paragraph=2|Line=25|Norm=amo|Gloss=no|Analysed=Yes
 14	qujcelia	celia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	_	_	Folio=5|Paragraph=2|Line=25|Norm=quicelia|Analysed=Yes
@@ -2199,14 +2199,14 @@
 14	amo	amo	ADV	_		15	_	_	Folio=6|Paragraph=1|Line=11|Norm=amo|Gloss=no|Analysed=Yes
 15	qujtlatlatoltia	tlatoltia	VERB	_	Animacy[iobj]=Inan|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[iobj]=3|Person[obj]=3|Person[subj]=3|Subcat=Ditr|Tense=Pres|VerbForm=Fin	13	_	_	Orig=qujtlatla¶·toltia|Folio=6,6|Paragraph=1,1|Line=11,12|Norm=quitlatlatoltia|Analysed=Yes
 16	,	,	PUNCT	_		20	punct	_	Folio=6|Paragraph=1|Line=12|Norm=,|Analysed=Yes
-17	çan	zan	ADV	_	_	20	_	_	Folio=6|Paragraph=1|Line=12|Norm=zan
+17	çan	zan	ADV	_		20	_	_	Folio=6|Paragraph=1|Line=12|Norm=zan|Analysed=Yes
 18	vel	huel	ADV	_	_	20	_	_	Folio=6|Paragraph=1|Line=12|Norm=huel
 19	njman	niman	ADV	_	_	20	_	_	Folio=6|Paragraph=1|Line=12|Norm=niman
 20	qujcotonjlia	cotonilia	VERB	_	_	3	_	_	Orig=qujcotonj¶·lia|Folio=6,6|Paragraph=1,1|Line=12,13|Norm=quicotonilia|Root=cotona
 21	,	,	PUNCT	_		22	punct	_	Folio=6|Paragraph=1|Line=13|Norm=,|Analysed=Yes
 22	qujtlatzcotonjlia	tlatzcotona	VERB	_	Number[iobj]=Sing|Number[subj]=Plur,Sing|Person[iobj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	20	conj	_	Orig=quj·tlatzcotonjlia|Folio=6,6|Paragraph=1,1|Line=13,13|Norm=quitlatzcotonilia|Analysed=Yes
 23	in	in	DET	_	_	24	det	_	Orig=inijollo|Folio=6|Paragraph=1|Line=13|Norm=in
-24	ijollo	yollotl	NOUN	_	_	20	obj	_	Orig=inijollo|Folio=6|Paragraph=1|Line=13|Norm=iyollo|Gloss=su.corazón
+24	ijollo	yollotl	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	20	obj	_	Orig=inijollo|Folio=6|Paragraph=1|Line=13|Norm=iyollo|Gloss=su.corazón|Analysed=Yes
 25	:	:	PUNCT	_		29	punct	_	Folio=6|Paragraph=1|Line=13|Norm=:|Analysed=Yes
 26	ixpampa	ixpampa	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Poss	29	obl	_	Orig=ix¶·pampa|Folio=6,6|Paragraph=1,1|Line=13,14|Norm=ixpampa|Analysed=Yes
 27	iehoa	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	26	nmod	_	Folio=6|Paragraph=1|Line=14|Norm=yehhua|Gloss=él|Analysed=Yes
@@ -2214,7 +2214,7 @@
 29	motlaloa	tlaloa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	20	_	_	Folio=6|Paragraph=1|Line=14|Norm=motlaloa|Analysed=Yes
 30	in	in	DET|SCONJ	_	_	31	_	_	Orig=inoqujco¶·tonjli|Folio=6,6|Paragraph=1,1|Line=14,15|Norm=in
 31	oqujcotonjli	cotonilia	VERB	_	_	29	nsubj	_	Orig=inoqujco¶·tonjli|Folio=6,6|Paragraph=1,1|Line=14,15|Norm=oquicotonili|Root=cotona
-32	yiollo	yollotl	NOUN	_	_	31	obj	_	Folio=6|Paragraph=1|Line=15|Norm=iyollo|Gloss=su.corazón
+32	yiollo	yollotl	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	31	obj	_	Folio=6|Paragraph=1|Line=15|Norm=iyollo|Gloss=su.corazón|Analysed=Yes
 33	:	:	PUNCT	_		35	punct	_	Folio=6|Paragraph=1|Line=15|Norm=:|Analysed=Yes
 34	cana	cana	ADV	_	_	35	advmod	_	Folio=6|Paragraph=1|Line=15|Norm=cana|Gloss=alguna.parte
 35	qujtlatia	tlatia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	29	conj	_	Folio=6|Paragraph=1|Line=15|Norm=quitlatia|Analysed=Yes
@@ -2291,7 +2291,7 @@
 14	qujnextia	nextia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	6	parataxis	_	Folio=6|Paragraph=1|Line=24|Norm=quinextia|Analysed=Yes
 15	,	,	PUNCT	_		18	punct	_	Folio=6|Paragraph=1|Line=24|Norm=,|Analysed=Yes
 16	in	in	DET|SCONJ	_	_	18	_	_	Folio=6|Paragraph=1|Line=25|Norm=in
-17	çan	zan	ADV	_	_	18	_	_	Folio=6|Paragraph=1|Line=25|Norm=zan
+17	çan	zan	ADV	_		18	_	_	Folio=6|Paragraph=1|Line=25|Norm=zan|Analysed=Yes
 18	icnoiotl	icnoyotl	NOUN	_	State=Abs	14	_	_	Folio=6|Paragraph=1|Line=25|Norm=icnoyotl|Gloss=pobreza|Analysed=Yes
 19	,	,	PUNCT	_		20	punct	_	Folio=6|Paragraph=1|Line=25|Norm=,|Analysed=Yes
 20	netolinjliztli	netoliniliztli	NOUN	_	State=Abs	18	_	_	Folio=6|Paragraph=1|Line=25|Norm=netoliniliztli|Gloss=miseria|Analysed=Yes
@@ -2328,14 +2328,14 @@
 17	mauhcatlacatl	mauhcatlacatl	NOUN	_	State=Abs	3	_	_	Orig=mauhca¶·tlacatl|Folio=6,6|Paragraph=2,2|Line=1,2|Norm=mauhcatlacatl|Split=mauhca·tlacatl|Gloss=cobarde|Analysed=Yes
 18	:	:	PUNCT	_		_	_	_	Folio=6|Paragraph=2|Line=2|Norm=:|Analysed=Yes
 19	amo	amo	ADV	_		_	_	_	Folio=6|Paragraph=2|Line=2|Norm=amo|Gloss=no|Analysed=Yes
-20	çan	zan	ADV	_	_	_	_	_	Folio=6|Paragraph=2|Line=2|Norm=zan
+20	çan	zan	ADV	_		_	_	_	Folio=6|Paragraph=2|Line=2|Norm=zan|Analysed=Yes
 21	vel	huel	ADV	_	_	_	_	_	Folio=6|Paragraph=2|Line=2|Norm=huel
 22	cana	cana	ADV	_	_	_	_	_	Folio=6|Paragraph=2|Line=2|Norm=cana|Gloss=alguna.parte
 23	,	,	PUNCT	_		25	punct	_	Folio=6|Paragraph=2|Line=2|Norm=,|Analysed=Yes
 24	canijo	zaniyo	ADV	_		25	_	_	Folio=6|Paragraph=2|Line=2|Norm=zaniyo|Analysed=Yes
 25	qujcaquj	caqui	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	Orig=quj¶·caquj|Folio=6,6|Paragraph=2,2|Line=2,3|Norm=quicaqui|Analysed=Yes
 26	,	,	PUNCT	_		29	punct	_	Folio=6|Paragraph=2|Line=3|Norm=,|Analysed=Yes
-27	çan	zan	ADV	_	_	29	_	_	Folio=6|Paragraph=2|Line=3|Norm=zan
+27	çan	zan	ADV	_		29	_	_	Folio=6|Paragraph=2|Line=3|Norm=zan|Analysed=Yes
 28	icampa	campa	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Poss	29	_	_	Folio=6|Paragraph=2|Line=3|Norm=icampa|Analysed=Yes
 29	ontlacuecuetlaxoa	tlacuecuetlaxoa	VERB	_	_	25	_	_	Orig=ontlacuecue¶·tlaxoa|Folio=6,6|Paragraph=2,2|Line=3,4|Norm=ontlacuecuetlaxoa
 30	,	,	PUNCT	_		31	punct	_	Folio=6|Paragraph=2|Line=4|Norm=,|Analysed=Yes
@@ -2345,7 +2345,7 @@
 34	vel	huel	ADV	_	_	35	_	_	Folio=6|Paragraph=2|Line=5|Norm=huel
 35	qujtoca	toca	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	25	_	_	Folio=6|Paragraph=2|Line=5|Norm=quitoca|Analysed=Yes
 36	,	,	PUNCT	_		38	punct	_	Folio=6|Paragraph=2|Line=5|Norm=,|Analysed=Yes
-37	çan	zan	ADV	_	_	38	_	_	Folio=6|Paragraph=2|Line=5|Norm=zan
+37	çan	zan	ADV	_		38	_	_	Folio=6|Paragraph=2|Line=5|Norm=zan|Analysed=Yes
 38	onciammjquj	ciammiqui	VERB	_	Directional=On|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	25	_	_	Orig=onciam·mjquj|Folio=6,6|Paragraph=2,2|Line=5,5|Norm=onciammiqui|Analysed=Yes
 39	,	,	PUNCT	_		40	punct	_	Folio=6|Paragraph=2|Line=5|Norm=,|Analysed=Yes
 40	onmociauhcanequj	ciauhcanequi	VERB	_	_	38	_	_	Orig=on¶·moci·auhcanequj|Folio=6,6,6|Paragraph=2,2,2|Line=5,6,6|Norm=onmociauhcanequi|AmbigNorm=True|Override=False
@@ -2365,11 +2365,11 @@
 54	ic	ic	ADV	_	_	55	_	_	Folio=6|Paragraph=2|Line=8|Norm=ic
 55	qujmati	mati	VERB	_	_	25	_	_	Folio=6|Paragraph=2|Line=8|Norm=quimati
 56	in	in	DET|SCONJ	_	_	58	_	_	Folio=6|Paragraph=2|Line=8|Norm=in
-57	can	zan	ADV	_	_	58	_	_	Folio=6|Paragraph=2|Line=9|Norm=zan
-58	oqujtetzauj	tetzahuia	VERB	_	_	55	_	_	Folio=6|Paragraph=2|Line=9|Norm=oquitetzahui|Ambiguous=Yes|Guessed=Yes
+57	can	zan	ADV	_		58	_	_	Folio=6|Paragraph=2|Line=9|Norm=zan|Analysed=Yes
+58	oqujtetzauj	tetzahuia	VERB	_	_	55	_	_	Folio=6|Paragraph=2|Line=9|Norm=oquitetzahui|Ambiguous=Yes|Analysed=Yes
 59	ioaltepuztli	yohualtepoztli	NOUN	_	State=Abs	58	_	_	Folio=6|Paragraph=2|Line=9|Norm=yohualtepoztli|Split=yohual·tepoztli|Analysed=Yes
 60	,	,	PUNCT	_		63	punct	_	Folio=6|Paragraph=2|Line=9|Norm=,|Analysed=Yes
-61	çan	zan	ADV	_	_	63	_	_	Folio=6|Paragraph=2|Line=9|Norm=zan
+61	çan	zan	ADV	_		63	_	_	Folio=6|Paragraph=2|Line=9|Norm=zan|Analysed=Yes
 62	ica	ca	NOUN	_	NounType=Relat	63	_	_	Folio=6|Paragraph=2|Line=10|Norm=ica|Gloss=con
 63	onmocacaiauh	cacayahua	VERB	_	Directional=On|Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	55	_	_	Folio=6|Paragraph=2|Line=10|Norm=onmocacayauh|Analysed=Yes
 64	,	,	PUNCT	_		66	punct	_	Folio=6|Paragraph=2|Line=10|Norm=,|Analysed=Yes
@@ -2614,10 +2614,10 @@
 126	yn	in	DET|SCONJ	_	_	134	_	134	Orig=y¶·naxcan|Folio=7,7|Paragraph=1,1|Line=22,23|Norm=in
 127	axcan	axcan	ADV	_		134	_	134	Orig=y¶·naxcan|Folio=7,7|Paragraph=1,1|Line=22,23|Norm=axcan|Gloss=ahora|Analysed=Yes
 128	ie	ye	ADV	_	_	134	_	134	Orig=iecaiuhcan|Folio=7|Paragraph=1|Line=23|Norm=ye|AmbigNorm=True|Override=False
-129	ca	za	ADV	_	_	134	_	134	Orig=iecaiuhcan|Folio=7|Paragraph=1|Line=23|Norm=za|AmbigNorm=True|Override=True
+129	ca	za	ADV	_		134	_	134	Orig=iecaiuhcan|Folio=7|Paragraph=1|Line=23|Norm=za|AmbigNorm=True|Override=True|Analysed=Yes
 130	iuhcan	iuhcan	ADV	_	_	134	_	134	Orig=iecaiuhcan|Folio=7|Paragraph=1|Line=23|Norm=iuhcan
 131	,	,	PUNCT	_		134	punct	134:punct	Folio=7|Paragraph=1|Line=23|Norm=,|Analysed=Yes
-132	ca	za	ADV	_	_	134	_	134	Orig=catepan¶·tli|Folio=7,7|Paragraph=1,1|Line=23,24|Norm=za|AmbigNorm=True|Override=True
+132	ca	za	ADV	_		134	_	134	Orig=catepan¶·tli|Folio=7,7|Paragraph=1,1|Line=23,24|Norm=za|AmbigNorm=True|Override=True|Analysed=Yes
 133	tepantli	tepantli	NOUN	_	State=Abs	134	_	134	Orig=catepan¶·tli|Folio=7,7|Paragraph=1,1|Line=23,24|Norm=tepantli|Analysed=Yes
 134	ieoatoc	_	VERB	_	_	85	_	85	Folio=7|Paragraph=1|Line=24|Norm=yehuatoc
 135	.	.	PUNCT	_		1	punct	1:punct	Folio=7|Paragraph=1|Line=24|Norm=.|Analysed=Yes
@@ -2719,7 +2719,7 @@
 8	tzatzitiqujca	tzatzi	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr	24	_	_	Folio=7|Paragraph=3|Line=8|Norm=tzatzitiquiza|Analysed=Yes
 9	:	:	PUNCT	_		13	punct	_	Folio=7|Paragraph=3|Line=8|Norm=:|Analysed=Yes
 10	in	in	DET|SCONJ	_	_	13	_	_	Folio=7|Paragraph=3|Line=8|Norm=in
-11	çan	zan	ADV	_	_	13	_	_	Folio=7|Paragraph=3|Line=8|Norm=zan
+11	çan	zan	ADV	_		13	_	_	Folio=7|Paragraph=3|Line=8|Norm=zan|Analysed=Yes
 12	ie	ye	ADV	_	_	13	_	_	Orig=ievncan|Folio=7|Paragraph=3|Line=8|Norm=ye|AmbigNorm=True|Override=False
 13	vncan	oncan	ADV	_	_	8	_	_	Orig=ievncan|Folio=7|Paragraph=3|Line=8|Norm=oncan|Gloss=aquí
 14	,	,	PUNCT	_		16	punct	_	Folio=7|Paragraph=3|Line=8|Norm=,|Analysed=Yes
@@ -2742,7 +2742,7 @@
 31	,	,	PUNCT	_		32	punct	_	Folio=7|Paragraph=3|Line=11|Norm=,|Analysed=Yes
 32	ca	cah|ca	VERB	_	_	30	_	_	Folio=7|Paragraph=3|Line=11|Norm=ca|AmbigNorm=True|Override=False
 33	amo	amo	ADV	_		35	_	_	Folio=7|Paragraph=3|Line=11|Norm=amo|Gloss=no|Analysed=Yes
-34	çan	zan	ADV	_	_	35	_	_	Folio=7|Paragraph=3|Line=11|Norm=zan
+34	çan	zan	ADV	_		35	_	_	Folio=7|Paragraph=3|Line=11|Norm=zan|Analysed=Yes
 35	tlaneoa	nehuan	NOUN	_	NounType=Relat	32	_	_	Folio=7|Paragraph=3|Line=11|Norm=tlanehuan
 36	:	:	PUNCT	_		37	punct	_	Folio=7|Paragraph=3|Line=11|Norm=:|Analysed=Yes
 37	ca	cah|ca	VERB	_	_	32	_	_	Folio=7|Paragraph=3|Line=11|Norm=ca|AmbigNorm=True|Override=False
@@ -3100,7 +3100,7 @@
 16	,	,	PUNCT	_		17	punct	_	Folio=8|Paragraph=3|Line=14|Norm=,|Analysed=Yes
 17	ticecepoca	cecepoca	VERB	_	_	6	_	_	Folio=8|Paragraph=3|Line=14|Norm=ticecepoca
 18	,	,	PUNCT	_		19	punct	_	Folio=8|Paragraph=3|Line=14|Norm=,|Analysed=Yes
-19	ticuecueioca	cuecueyoca	VERB	_	_	17	_	_	Orig=ticuecue¶·ioca|Folio=8,8|Paragraph=3,3|Line=14,15|Norm=ticuecueyoca|Ambiguous=Yes|Guessed=Yes
+19	ticuecueioca	cuecueyoca	VERB	_	_	17	_	_	Orig=ticuecue¶·ioca|Folio=8,8|Paragraph=3,3|Line=14,15|Norm=ticuecueyoca|Ambiguous=Yes|Analysed=Yes
 20	,	,	PUNCT	_		21	punct	_	Folio=8|Paragraph=3|Line=15|Norm=,|Analysed=Yes
 21	tiquacecepoca	cuacecepoca	VERB	_	_	17	_	_	Folio=8|Paragraph=3|Line=15|Norm=ticuacecepoca
 22	,	,	PUNCT	_		23	punct	_	Folio=8|Paragraph=3|Line=15|Norm=,|Analysed=Yes
@@ -3122,7 +3122,7 @@
 # analysed = 96.15%
 1	Auh	auh	CCONJ	_	_	6	cc	_	Orig=A·uh¶|Folio=8,8|Paragraph=3,3|Line=16,16|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ	_	_	6	_	_	Orig=injuhquj|Folio=8|Paragraph=3|Line=17|Norm=in
-3	juhquj	iuhqui	ADV	_	_	6	advmod	_	Orig=injuhquj|Folio=8|Paragraph=3|Line=17|Norm=iuhqui|Gloss=así
+3	juhquj	iuhqui	ADV	_		6	advmod	_	Orig=injuhquj|Folio=8|Paragraph=3|Line=17|Norm=iuhqui|Gloss=así|Analysed=Yes
 4	,	,	PUNCT	_		6	punct	_	Folio=8|Paragraph=3|Line=17|Norm=,|Analysed=Yes
 5	ic	ic	ADV	_	_	6	_	_	Folio=8|Paragraph=3|Line=17|Norm=ic
 6	muchichiuh	chichihua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	_	Folio=8|Paragraph=3|Line=17|Norm=mochichiuh|Analysed=Yes
@@ -3166,7 +3166,7 @@
 8	in	in	DET|SCONJ	_	_	9	det	_	Folio=8|Paragraph=5|Line=2|Norm=in
 9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	_	_	Folio=8|Paragraph=5|Line=2|Norm=tetzahuitl|Analysed=Yes
 10	injc	inic	SCONJ	_	_	11	mark	_	Folio=8|Paragraph=5|Line=2|Norm=inic
-11	motetxauja	tetzahuia	VERB	_	_	9	_	_	Folio=8|Paragraph=5|Line=2|Norm=motetzahuia|Ambiguous=Yes|Guessed=Yes
+11	motetxauja	tetzahuia	VERB	_	_	9	_	_	Folio=8|Paragraph=5|Line=2|Norm=motetzahuia|Ambiguous=Yes|Analysed=Yes
 12	,	,	PUNCT	_		14	punct	_	Folio=8|Paragraph=5|Line=2|Norm=,|Analysed=Yes
 13	in	in	DET|SCONJ	_	_	14	_	_	Orig=inj·techpa¶|Folio=8,8|Paragraph=5,5|Line=2,2|Norm=in
 14	jtechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Poss	11	obl	_	Orig=inj·techpa¶|Folio=8,8|Paragraph=5,5|Line=2,2|Norm=itechpa|Analysed=Yes
@@ -3276,7 +3276,7 @@
 11	eliztac	eliztac	ADJ	_	_	5	_	_	Folio=8|Paragraph=6|Line=9|Norm=eliztac|Gloss=ser.blanco|Split=el·iztac|Root=el
 12	:	:	PUNCT	_		13	punct	_	Folio=8|Paragraph=6|Line=9|Norm=:|Analysed=Yes
 13	ioan	huan	NOUN	_	NounType=Relat	5	_	_	Folio=8|Paragraph=6|Line=9|Norm=ihuan|Gloss=con
-14	çan	zan	ADV	_	_	15	_	_	Folio=8|Paragraph=6|Line=9|Norm=zan
+14	çan	zan	ADV	_		15	_	_	Folio=8|Paragraph=6|Line=9|Norm=zan|Analysed=Yes
 15	cujtlapiltetepontic	cuitlapiltetepontic	ADJ	_	_	13	_	_	Orig=cujtlapiltete¶·pontic|Folio=8,8|Paragraph=6,6|Line=9,10|Norm=cuitlapiltetepontic|AltPos=VERB|Split=cuitla·pil·tetepontic
 16	.	.	PUNCT	_		2	punct	_	Folio=8|Paragraph=6|Line=10|Norm=.|Analysed=Yes
 
@@ -3478,7 +3478,7 @@
 23	qujmati	mati	VERB	_	_	9	_	_	Folio=9|Paragraph=1|Line=11|Norm=quimati
 24	,	,	PUNCT	_		27	punct	_	Folio=9|Paragraph=1|Line=11|Norm=,|Analysed=Yes
 25	aco	azo	ADV	_		27	_	_	Folio=9|Paragraph=1|Line=11|Norm=azo|Gloss=quizás|Analysed=Yes
-26	çan	zan	ADV	_	_	27	_	_	Folio=9|Paragraph=1|Line=11|Norm=zan
+26	çan	zan	ADV	_		27	_	_	Folio=9|Paragraph=1|Line=11|Norm=zan|Analysed=Yes
 27	itla	tla	PRON	_	_	23	_	_	Folio=9|Paragraph=1|Line=12|Norm=itla|Gloss=algo
 28	in	in	DET|SCONJ	_	_	29	_	_	Folio=9|Paragraph=1|Line=12|Norm=in
 29-30	qujtoznequj	_	_	_	_	_	_	_	_
@@ -3505,12 +3505,12 @@
 47	ioioliton	yoyoliton	NOUN	_	_	41	_	_	Folio=9|Paragraph=1|Line=15|Norm=yoyoliton|Gloss=insecto|Root=yoyoli
 48	:	:	PUNCT	_		52	punct	_	Folio=9|Paragraph=1|Line=15|Norm=:|Analysed=Yes
 49	cujx	cuix	ADV	_		52	_	_	Folio=9|Paragraph=1|Line=15|Norm=cuix|Gloss=quizás|Analysed=Yes
-50	çan	zan	ADV	_	_	52	_	_	Folio=9|Paragraph=1|Line=15|Norm=zan
+50	çan	zan	ADV	_		52	_	_	Folio=9|Paragraph=1|Line=15|Norm=zan|Analysed=Yes
 51	ie	ye	ADV	_	_	52	_	_	Folio=9|Paragraph=1|Line=15|Norm=ye|AmbigNorm=True|Override=False
 52	toconmattiezque	mati	VERB	_	_	36	_	_	Orig=toconmatti¶·ezque|Folio=9,9|Paragraph=1,1|Line=15,16|Norm=toconmattiyezque
 53	?	?	PUNCT	_		52	punct	_	Folio=9|Paragraph=1|Line=16|Norm=?|Analysed=Yes
 54	cujx	cuix	ADV	_		58	_	_	Folio=9|Paragraph=1|Line=16|Norm=cuix|Gloss=quizás|Analysed=Yes
-55	çan	zan	ADV	_	_	58	_	_	Folio=9|Paragraph=1|Line=16|Norm=zan
+55	çan	zan	ADV	_		58	_	_	Folio=9|Paragraph=1|Line=16|Norm=zan|Analysed=Yes
 56	ie	ye	ADV	_	_	58	_	_	Folio=9|Paragraph=1|Line=16|Norm=ye|AmbigNorm=True|Override=False
 57	ipan	pan	NOUN	_	NounType=Relat	58	_	_	Folio=9|Paragraph=1|Line=16|Norm=ipan
 58	toizque	cah	VERB	_	_	52	_	_	Folio=9|Paragraph=1|Line=16|Norm=toyezque
@@ -3557,7 +3557,7 @@
 1	Auh	auh	CCONJ	_	_	5	_	_	Orig=A·uh|Folio=9,9|Paragraph=1,1|Line=19,19|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ	_	_	5	_	_	Folio=9|Paragraph=1|Line=19|Norm=in
 3	aca	aca	DET|PRON	_	_	5	_	_	Folio=9|Paragraph=1|Line=19|Norm=aca
-4	çan	zan	ADV	_	_	5	_	_	Folio=9|Paragraph=1|Line=19|Norm=zan
+4	çan	zan	ADV	_		5	_	_	Folio=9|Paragraph=1|Line=19|Norm=zan|Analysed=Yes
 5	contzonuja	tzonhuia	VERB	_	Directional=On|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	Folio=9|Paragraph=1|Line=20|Norm=contzonhuia|Analysed=Yes
 6	,	,	PUNCT	_		8	punct	_	Folio=9|Paragraph=1|Line=20|Norm=,|Analysed=Yes
 7	aco	azo	ADV	_		8	_	_	Folio=9|Paragraph=1|Line=20|Norm=azo|Gloss=quizás|Analysed=Yes
@@ -3585,12 +3585,12 @@
 # analysed = 95.65%
 1	Auh	auh	CCONJ	_	_	14	_	_	Orig=A·uh|Folio=9,9|Paragraph=1,1|Line=22,22|Norm=Auh|Gloss=y
 2	intla	tla	PRON	_	_	5	_	_	Orig=intlacan|Folio=9|Paragraph=1|Line=22|Norm=intla|Gloss=algo
-3	can	zan	ADV	_	_	5	_	_	Orig=intlacan|Folio=9|Paragraph=1|Line=22|Norm=zan
+3	can	zan	ADV	_		5	_	_	Orig=intlacan|Folio=9|Paragraph=1|Line=22|Norm=zan|Analysed=Yes
 4	ipa	pan	NOUN	_	NounType=Relat	5	_	_	Folio=9|Paragraph=1|Line=22|Norm=ipan
 5	otlatvic	tlathuic	VERB	_	_	14	_	_	Folio=9|Paragraph=1|Line=23|Norm=otlathuic
 6	,	,	PUNCT	_		11	punct	_	Folio=9|Paragraph=1|Line=23|Norm=,|Analysed=Yes
 7	in	in	DET|SCONJ	_	_	11	_	_	Folio=9|Paragraph=1|Line=23|Norm=in
-8	çan	zan	ADV	_	_	11	_	_	Folio=9|Paragraph=1|Line=23|Norm=zan
+8	çan	zan	ADV	_		11	_	_	Folio=9|Paragraph=1|Line=23|Norm=zan|Analysed=Yes
 9	ie	ye	ADV	_	_	11	_	_	Folio=9|Paragraph=1|Line=23|Norm=ye|AmbigNorm=True|Override=False
 10	vncan	oncan	ADV	_	_	11	_	_	Folio=9|Paragraph=1|Line=23|Norm=oncan|Gloss=aquí
 11	pilcac	pilca	VERB	_	_	5	_	_	Folio=9|Paragraph=1|Line=23|Norm=pilcac
@@ -3695,7 +3695,7 @@
 33	anoço	anozo	ADV	_		36	_	_	Folio=9|Paragraph=3|Line=5|Norm=anozo|Analysed=Yes
 34	in	in	DET|SCONJ	_	_	36	_	_	Orig=inj·quac|Folio=9,9|Paragraph=3,3|Line=5,5|Norm=in
 35	jquac	ihcuac	SCONJ	_	_	36	_	_	Orig=inj·quac|Folio=9,9|Paragraph=3,3|Line=5,5|Norm=ihcuac|Gloss=cuando
-36	moxixa	xixa	VERB	_	_	29	_	_	Folio=9|Paragraph=3|Line=5|Norm=moxixa|Ambiguous=Yes|Guessed=Yes
+36	moxixa	xixa	VERB	_	_	29	_	_	Folio=9|Paragraph=3|Line=5|Norm=moxixa|Ambiguous=Yes|Analysed=Yes
 37	:	:	PUNCT	_		38	punct	_	Folio=9|Paragraph=3|Line=5|Norm=:|Analysed=Yes
 38	mjexi	miyexi	VERB	_	_	36	_	_	Folio=9|Paragraph=3|Line=6|Norm=miyexi|Gloss=echa.un.pedo
 39	.	.	PUNCT	_		_	_	_	Folio=9|Paragraph=3|Line=6|Norm=.|Analysed=Yes
@@ -3819,7 +3819,7 @@
 7	ace	ace	ADV	_		8	_	_	Orig=inace|Folio=9|Paragraph=4|Line=12|Norm=ace|Analysed=Yes
 8	qujtoca	toca	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	4	_	_	Folio=9|Paragraph=4|Line=12|Norm=quitoca|Analysed=Yes
 9	:	:	PUNCT	_		12	punct	_	Folio=9|Paragraph=4|Line=12|Norm=:|Analysed=Yes
-10	çan	zan	ADV	_	_	12	_	_	Folio=9|Paragraph=4|Line=12|Norm=zan
+10	çan	zan	ADV	_		12	_	_	Folio=9|Paragraph=4|Line=12|Norm=zan|Analysed=Yes
 11	ic	ic	ADV	_	_	12	_	_	Folio=9|Paragraph=4|Line=12|Norm=ic
 12	qujqueloa	queloa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	Folio=9|Paragraph=4|Line=12|Norm=quiqueloa|Analysed=Yes
 13	,	,	PUNCT	_		16	punct	_	Folio=9|Paragraph=4|Line=12|Norm=,|Analysed=Yes
@@ -3959,7 +3959,7 @@
 37	eco	eco	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	41	_	_	Orig=ine¶·co|Folio=10,10|Paragraph=1,1|Line=8,9|Norm=eco|Analysed=Yes
 38	yel	yel	ADJ	_		37	_	_	Folio=10|Paragraph=1|Line=9|Norm=yel|Analysed=Yes
 39	:	:	PUNCT	_		41	punct	_	Folio=10|Paragraph=1|Line=9|Norm=:|Analysed=Yes
-40	çan	zan	ADV	_	_	41	_	_	Folio=10|Paragraph=1|Line=9|Norm=zan
+40	çan	zan	ADV	_		41	_	_	Folio=10|Paragraph=1|Line=9|Norm=zan|Analysed=Yes
 41	onmotempacho	tempachoa	VERB	_	Directional=On|Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	25	_	_	Folio=10|Paragraph=1|Line=9|Norm=onmotempachoa|Analysed=Yes
 42	.	.	PUNCT	_		2	punct	_	Folio=10|Paragraph=1|Line=9|Norm=.|Analysed=Yes
 
@@ -4153,7 +4153,7 @@
 40	tlaamana	amana	VERB	_	Animacy[obj]=Inan|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	34	_	_	Orig=tlaa¶·mana|Folio=10,10|Paragraph=4,4|Line=8,9|Norm=tlaamana|Analysed=Yes
 41	,	,	PUNCT	_		45	punct	_	Folio=10|Paragraph=4|Line=9|Norm=,|Analysed=Yes
 42	injc	inic	SCONJ	_	_	45	_	_	Folio=10|Paragraph=4|Line=9|Norm=inic
-43	teiollo	yollotl	NOUN	_	_	44	_	_	Folio=10|Paragraph=4|Line=9|Norm=teyollo|Gloss=corazón.de.alguien
+43	teiollo	yollotl	NOUN	_	Animacy[psor]=Anim|Person[psor]=3|State=Poss	44	_	_	Folio=10|Paragraph=4|Line=9|Norm=teyollo|Gloss=corazón.de.alguien|Analysed=Yes
 44	ixco	ixco	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Poss	45	_	_	Folio=10|Paragraph=4|Line=9|Norm=ixco|Locative=Yes|Analysed=Yes
 45	icac	cactli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	34	_	_	Folio=10|Paragraph=4|Line=9|Norm=icac|Gloss=su.zapato|Analysed=Yes
 46	,	,	PUNCT	_		48	punct	_	Folio=10|Paragraph=4|Line=9|Norm=,|Analysed=Yes
@@ -4174,10 +4174,10 @@
 # tagged = 92.31%
 # lemmatised = 92.31%
 # analysed = 92.31%
-1	Ca	za	ADV	_	_	8	_	_	Orig=Caienoiuhquj|Folio=10|Paragraph=4|Line=11|Norm=Za|AmbigNorm=True|Override=True
+1	Ca	za	ADV	_		8	_	_	Orig=Caienoiuhquj|Folio=10|Paragraph=4|Line=11|Norm=Za|AmbigNorm=True|Override=True|Analysed=Yes
 2	ie	ye	ADV	_	_	8	_	_	Orig=Caienoiuhquj|Folio=10|Paragraph=4|Line=11|Norm=ye|AmbigNorm=True|Override=False
 3	no	no	ADV	_	_	8	_	_	Orig=Caienoiuhquj|Folio=10|Paragraph=4|Line=11|Norm=no|Gloss=también
-4	iuhquj	iuhqui	ADV	_	_	8	_	_	Orig=Caienoiuhquj|Folio=10|Paragraph=4|Line=11|Norm=iuhqui|Gloss=así
+4	iuhquj	iuhqui	ADV	_		8	_	_	Orig=Caienoiuhquj|Folio=10|Paragraph=4|Line=11|Norm=iuhqui|Gloss=así|Analysed=Yes
 5	,	,	PUNCT	_		8	punct	_	Folio=10|Paragraph=4|Line=11|Norm=,|Analysed=Yes
 6	muchiuhquj	_	NOUN	_	_	8	_	_	Orig=muchiuh¶·quj|Folio=10,10|Paragraph=4,4|Line=11,12|Norm=mochiuhqui
 7	:	:	PUNCT	_		8	punct	_	Folio=10|Paragraph=4|Line=12|Norm=:|Analysed=Yes
@@ -4228,7 +4228,7 @@
 # lemmatised = 94.87%
 # analysed = 89.74%
 1	No	no	ADV	_	_	14	_	_	Folio=10|Paragraph=4|Line=16|Norm=No|Gloss=también
-2	iuhquj	iuhqui	ADV	_	_	14	_	_	Orig=iuh·quj¶|Folio=10,10|Paragraph=4,4|Line=16,16|Norm=iuhqui|Gloss=así
+2	iuhquj	iuhqui	ADV	_		14	_	_	Orig=iuh·quj¶|Folio=10,10|Paragraph=4,4|Line=16,16|Norm=iuhqui|Gloss=así|Analysed=Yes
 3	in	in	DET|SCONJ	_	_	4	_	_	Orig=intetzauhqujmjchin|Folio=10|Paragraph=4|Line=17|Norm=in
 4	tetzauhqujmjchin	tetzauhquimichin	NOUN	_	State=Abs	14	_	_	Orig=intetzauhqujmjchin|Folio=10|Paragraph=4|Line=17|Norm=tetzauhquimichin|Split=tetzauh·quimichin|Analysed=Yes
 5	,	,	PUNCT	_		7	punct	_	Folio=10|Paragraph=4|Line=17|Norm=,|Analysed=Yes
@@ -4322,7 +4322,7 @@
 12	,	,	PUNCT	_		13	punct	_	Folio=11|Paragraph=1|Line=2|Norm=,|Analysed=Yes
 13	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	4	_	_	Folio=11|Paragraph=1|Line=3|Norm=mihtoa|Analysed=Yes
 14	:	:	PUNCT	_		18	punct	_	Folio=11|Paragraph=1|Line=3|Norm=:|Analysed=Yes
-15	çan	zan	ADV	_	_	18	_	_	Folio=11|Paragraph=1|Line=3|Norm=zan
+15	çan	zan	ADV	_		18	_	_	Folio=11|Paragraph=1|Line=3|Norm=zan|Analysed=Yes
 16	ie	ye	ADV	_	_	18	_	_	Folio=11|Paragraph=1|Line=3|Norm=ye|AmbigNorm=True|Override=False
 17	muche	moche	ADV	_		18	_	_	Folio=11|Paragraph=1|Line=3|Norm=moche|Analysed=Yes
 18	inaoal	nahualli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	13	_	_	Folio=11|Paragraph=1|Line=3|Norm=inahual|Analysed=Yes
@@ -4422,7 +4422,7 @@
 15	in	in	DET|SCONJ	_	_	17	_	_	Orig=inj·quac|Folio=11,11|Paragraph=2,2|Line=3,3|Norm=in
 16	jquac	ihcuac	SCONJ	_	_	17	_	_	Orig=inj·quac|Folio=11,11|Paragraph=2,2|Line=3,3|Norm=ihcuac|Gloss=cuando
 17	oqujttac	itta	VERB	_	Aspect=Prior|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	19	advcl	_	Folio=11|Paragraph=2|Line=3|Norm=oquittac|Analysed=Yes
-18	can	zan	ADV	_	_	19	advmod	_	Folio=11|Paragraph=2|Line=3|Norm=zan
+18	can	zan	ADV	_		19	advmod	_	Folio=11|Paragraph=2|Line=3|Norm=zan|Analysed=Yes
 19	conchicha	chica	VERB	_	_	2	_	_	Folio=11|Paragraph=2|Line=4|Norm=conchicha
 20	,	,	PUNCT	_		24	punct	_	Folio=11|Paragraph=2|Line=4|Norm=,|Analysed=Yes
 21	anoço	anozo	ADV	_		24	_	_	Folio=11|Paragraph=2|Line=4|Norm=anozo|Analysed=Yes
@@ -4436,7 +4436,7 @@
 29	ic	ic	ADV	_	_	30	_	_	Folio=11|Paragraph=2|Line=5|Norm=ic
 30	qujcnelia	icnelia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	19	_	_	Orig=qujcne¶·lia|Folio=11,11|Paragraph=2,2|Line=5,6|Norm=quicnelia|Analysed=Yes
 31	,	,	PUNCT	_		34	punct	_	Folio=11|Paragraph=2|Line=6|Norm=,|Analysed=Yes
-32	çan	zan	ADV	_	_	34	_	_	Folio=11|Paragraph=2|Line=6|Norm=zan
+32	çan	zan	ADV	_		34	_	_	Folio=11|Paragraph=2|Line=6|Norm=zan|Analysed=Yes
 33	no	no	ADV	_	_	34	_	_	Folio=11|Paragraph=2|Line=6|Norm=no|Gloss=también
 34	qujtelchioa	telchihua	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	19	_	_	Folio=11|Paragraph=2|Line=6|Norm=quitelchihua|Analysed=Yes
 35	,	,	PUNCT	_		39	punct	_	Folio=11|Paragraph=2|Line=6|Norm=,|Analysed=Yes
@@ -4471,7 +4471,7 @@
 2	in	in	DET|SCONJ	_	_	3	_	_	Folio=11|Paragraph=2|Line=9|Norm=in
 3	aqujn	aquin	PRON	_	_	8	_	_	Folio=11|Paragraph=2|Line=9|Norm=aquin
 4	,	,	PUNCT	_		7	punct	_	Folio=11|Paragraph=2|Line=9|Norm=,|Analysed=Yes
-5	çan	zan	ADV	_	_	7	_	_	Folio=11|Paragraph=2|Line=9|Norm=zan
+5	çan	zan	ADV	_		7	_	_	Folio=11|Paragraph=2|Line=9|Norm=zan|Analysed=Yes
 6	vel	huel	ADV	_	_	7	_	_	Folio=11|Paragraph=2|Line=10|Norm=huel
 7	mauhcatlacatl	mauhcatlacatl	NOUN	_	State=Abs	3	_	_	Orig=mauh·catlacatl|Folio=11,11|Paragraph=2,2|Line=10,10|Norm=mauhcatlacatl|Split=mauhca·tlacatl|Gloss=cobarde|Analysed=Yes
 8	qujmottitia	mottitia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	12	_	_	Folio=11|Paragraph=2|Line=10|Norm=quimottitia|Analysed=Yes
@@ -4509,7 +4509,7 @@
 40	in	in	DET|SCONJ	_	_	41	_	_	Orig=inj¶·camac|Folio=11,11|Paragraph=2,3|Line=15,1|Norm=in
 41	jcamac	camactli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	39	_	_	Orig=inj¶·camac|Folio=11,11|Paragraph=2,3|Line=15,1|Norm=icamac|Analysed=Yes
 42	:	:	PUNCT	_		45	punct	_	Folio=11|Paragraph=3|Line=1|Norm=:|Analysed=Yes
-43	çan	zan	ADV	_	_	45	_	_	Folio=11|Paragraph=3|Line=1|Norm=zan
+43	çan	zan	ADV	_		45	_	_	Folio=11|Paragraph=3|Line=1|Norm=zan|Analysed=Yes
 44	tlamach	tlamach	ADV	_	_	45	_	_	Folio=11|Paragraph=3|Line=1|Norm=tlamach|Gloss=despacio
 45	contlalcavia	tlalcahuia	VERB	_	Directional=On|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	18	_	_	Folio=11|Paragraph=3|Line=1|Norm=contlalcahuia|Analysed=Yes
 46	,	,	PUNCT	_		47	punct	_	Folio=11|Paragraph=3|Line=1|Norm=,|Analysed=Yes
@@ -4607,7 +4607,7 @@
 12	iuh	iuh	ADV	_	_	13	_	_	Folio=11|Paragraph=5|Line=2|Norm=iuh|AmbigNorm=True|Override=False|Gloss=así
 13	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	4	_	_	Folio=11|Paragraph=5|Line=3|Norm=mihtoa|Analysed=Yes
 14	:	:	PUNCT	_		19	punct	_	Folio=11|Paragraph=5|Line=3|Norm=:|Analysed=Yes
-15	çan	zan	ADV	_	_	19	_	_	Folio=11|Paragraph=5|Line=3|Norm=zan
+15	çan	zan	ADV	_		19	_	_	Folio=11|Paragraph=5|Line=3|Norm=zan|Analysed=Yes
 16	ie	ye	ADV	_	_	19	_	_	Folio=11|Paragraph=5|Line=3|Norm=ye|AmbigNorm=True|Override=False
 17	muchi	mochi	DET|PRON	_	_	19	_	_	Folio=11|Paragraph=5|Line=3|Norm=mochi
 18	ieh	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	19	_	_	Folio=11|Paragraph=5|Line=3|Norm=yeh|Analysed=Yes
@@ -4623,7 +4623,7 @@
 28	jquac	ihcuac	SCONJ	_	_	29	_	_	Orig=inj·quac|Folio=11,11|Paragraph=5,5|Line=5,5|Norm=ihcuac|Gloss=cuando
 29	ittoia	itto	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	32	_	_	Folio=11|Paragraph=5|Line=5|Norm=ittoya|Analysed=Yes
 30	,	,	PUNCT	_		32	punct	_	Folio=11|Paragraph=5|Line=5|Norm=,|Analysed=Yes
-31	çan	zan	ADV	_	_	32	_	_	Folio=11|Paragraph=5|Line=5|Norm=zan
+31	çan	zan	ADV	_		32	_	_	Folio=11|Paragraph=5|Line=5|Norm=zan|Analysed=Yes
 32	momjmjlotiuh	mimiloa	VERB	_	_	13	_	_	Orig=momj¶·mjlotiuh|Folio=11,11|Paragraph=5,5|Line=5,6|Norm=momimilotiuh
 33	,	,	PUNCT	_		34	punct	_	Folio=11|Paragraph=5|Line=6|Norm=,|Analysed=Yes
 34	qujqujnacatiuh	quiquinaca	VERB	_	_	32	_	_	Folio=11|Paragraph=5|Line=6|Norm=quiquinacatiuh
@@ -4655,7 +4655,7 @@
 13	iave	yaotl	NOUN	_	Locative=Yes	10	_	10	Folio=11|Paragraph=5|Line=8|Norm=yaoc|Gloss=en.guerra
 14	,	,	PUNCT	_		17	punct	17:punct	Folio=11|Paragraph=5|Line=8|Norm=,|Analysed=Yes
 15	anoço	anozo	ADV	_		17	_	17	Folio=11|Paragraph=5|Line=8|Norm=anozo|Analysed=Yes
-16	can	zan	ADV	_	_	17	_	17	Folio=11|Paragraph=5|Line=9|Norm=zan
+16	can	zan	ADV	_		17	_	17	Folio=11|Paragraph=5|Line=9|Norm=zan|Analysed=Yes
 17	tlalmjqujz	miqui	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	13	_	13	Folio=11|Paragraph=5|Line=9|Norm=tlalmiquiz|Split=tlal·miquiz|Analysed=Yes
 17.1	_	tlalli	NOUN	_	_	_	_	_	Incorporated=Yes
 18	:	:	PUNCT	_		20	punct	20:punct	Folio=11|Paragraph=5|Line=9|Norm=:|Analysed=Yes
@@ -4691,13 +4691,13 @@
 8	iollatlapaliuj	yollatlapalihui	NOUN	_	_	2	_	_	Folio=11|Paragraph=5|Line=12|Norm=yollatlapalihui|Split=yol·latlapalihui
 9	,	,	PUNCT	_		12	punct	_	Folio=11|Paragraph=5|Line=12|Norm=,|Analysed=Yes
 10	in	in	SCONJ	_	_	12	_	_	Folio=11|Paragraph=5|Line=12|Norm=in
-11	çan	zan	ADV	_	_	12	advmod	_	Folio=11|Paragraph=5|Line=12|Norm=zan
+11	çan	zan	ADV	_		12	advmod	_	Folio=11|Paragraph=5|Line=12|Norm=zan|Analysed=Yes
 12	mauhcatlacatl	mauhcatlacatl	NOUN	_	State=Abs	2	_	_	Orig=mauh¶·catlacatl|Folio=11,11|Paragraph=5,5|Line=12,13|Norm=mauhcatlacatl|Split=mauhca·tlacatl|Gloss=cobarde|Analysed=Yes
 13	,	,	PUNCT	_		15	punct	_	Folio=11|Paragraph=5|Line=13|Norm=,|Analysed=Yes
 14	intla	tla	PRON	_	_	15	nsubj	_	Orig=intlao·quj·mottiti|Folio=11,11,11|Paragraph=5,5,5|Line=13,13,13|Norm=intla|Gloss=algo
 15	oqujmottiti	mottitia	VERB	_	Aspect=Prior|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	21	advcl	_	Orig=intlao·quj·mottiti|Folio=11,11,11|Paragraph=5,5,5|Line=13,13,13|Norm=oquimottiti|Analysed=Yes
 16	:	:	PUNCT	_		18	punct	_	Folio=11|Paragraph=5|Line=13|Norm=:|Analysed=Yes
-17	çan	zan	ADV	_	_	18	advmod	_	Folio=11|Paragraph=5|Line=13|Norm=zan
+17	çan	zan	ADV	_		18	advmod	_	Folio=11|Paragraph=5|Line=13|Norm=zan|Analysed=Yes
 18	ixpampa	ixpampa	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Poss	15	obl	_	Orig=ix¶·pampa|Folio=11,12|Paragraph=5,1|Line=13,1|Norm=ixpampa|Analysed=Yes
 19	iehoa	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	18	nmod	_	Folio=12|Paragraph=1|Line=1|Norm=yehhua|Gloss=él|Analysed=Yes
 20	,	,	PUNCT	_		21	punct	_	Folio=12|Paragraph=1|Line=1|Norm=,|Analysed=Yes
@@ -4801,7 +4801,7 @@
 3	ie	ye	ADV	_	_	4	_	_	Orig=in¶·tlaieo·qujmottiti|Folio=12,12,12|Paragraph=1,1,1|Line=13,14,14|Norm=ye|AmbigNorm=True|Override=False
 4	oqujmottiti	mottitia	VERB	_	Aspect=Prior|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	9	_	_	Orig=in¶·tlaieo·qujmottiti|Folio=12,12,12|Paragraph=1,1,1|Line=13,14,14|Norm=oquimottiti|Analysed=Yes
 5	in	in	DET|SCONJ	_	_	_	_	_	Orig=injuhquj|Folio=12|Paragraph=1|Line=14|Norm=in
-6	juhquj	iuhqui	ADV	_	_	9	_	_	Orig=injuhquj|Folio=12|Paragraph=1|Line=14|Norm=iuhqui|Gloss=así
+6	juhquj	iuhqui	ADV	_		9	_	_	Orig=injuhquj|Folio=12|Paragraph=1|Line=14|Norm=iuhqui|Gloss=así|Analysed=Yes
 7	y	y	CCONJ	_	_	_	_	_	Folio=12|Paragraph=1|Line=14|Norm=y|AmbigNorm=True|Override=False
 8	,	,	PUNCT	_		9	punct	_	Folio=12|Paragraph=1|Line=14|Norm=,|Analysed=Yes
 9	qujtetemoa	temoa	VERB	_	Animacy[iobj]=Anim|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[iobj]=3|Person[obj]=3|Person[subj]=3|Subcat=Ditr|Tense=Pres|VerbForm=Fin	0	root	_	Orig=qujte¶·temoa|Folio=12,12|Paragraph=1,1|Line=14,15|Norm=quitetemoa|Analysed=Yes
@@ -4860,13 +4860,13 @@
 62	,	,	PUNCT	_		63	punct	_	Folio=12|Paragraph=1|Line=24|Norm=,|Analysed=Yes
 63	qujlvia	ilhuia	VERB	_	_	9	_	_	Folio=12|Paragraph=1|Line=24|Norm=quilhuia
 64	:	:	PUNCT	_		65	punct	_	Folio=12|Paragraph=1|Line=24|Norm=:|Analysed=Yes
-65	xinechcaoa	cahua	VERB	_	_	63	_	_	Folio=12|Paragraph=1|Line=24|Norm=xinechcahua|Ambiguous=Yes|Guessed=Yes
+65	xinechcaoa	cahua	VERB	_	_	63	_	_	Folio=12|Paragraph=1|Line=24|Norm=xinechcahua|Ambiguous=Yes|Analysed=Yes
 66	ie	ye	ADV	_	_	67	advmod	_	Folio=12|Paragraph=1|Line=24|Norm=ye|AmbigNorm=True|Override=False
 67	tinechitlacoa	itlacoa	VERB	_	_	65	_	_	Folio=12|Paragraph=1|Line=25|Norm=tinechitlacoa|Guessed=Yes
 68	,	,	PUNCT	_		69	punct	_	Folio=12|Paragraph=1|Line=25|Norm=,|Analysed=Yes
 69	tlein	tlein	PRON	_	_	73	obj	_	Folio=12|Paragraph=1|Line=25|Norm=tlein
 70	qujnequj	nequi	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	69	acl	_	Folio=12|Paragraph=1|Line=25|Norm=quinequi|Gloss=lo.quiere|Analysed=Yes
-71	moiollo	yollotl	NOUN	_	_	70	nsubj	_	Orig=mo¶·iollo|Folio=12,12|Paragraph=1,1|Line=25,26|Norm=moyollo|Gloss=tu.corazón
+71	moiollo	yollotl	NOUN	_	Number[psor]=Sing|Person[psor]=2|State=Poss	70	nsubj	_	Orig=mo¶·iollo|Folio=12,12|Paragraph=1,1|Line=25,26|Norm=moyollo|Gloss=tu.corazón|Analysed=Yes
 72	:	:	PUNCT	_		73	punct	_	Folio=12|Paragraph=1|Line=26|Norm=:|Analysed=Yes
 73	njmjtzmacaz	maca	VERB	_	Number[iobj]=Sing|Number[subj]=Sing|Person[iobj]=2|Person[subj]=1|Subcat=Ditr|Tense=Fut|VerbForm=Fin	65	_	_	Folio=12|Paragraph=1|Line=26|Norm=nimitzmacaz|Analysed=Yes
 74	,	,	PUNCT	_		76	punct	_	Folio=12|Paragraph=1|Line=26|Norm=,|Analysed=Yes
@@ -4929,7 +4929,7 @@
 131	oconjttac	itta	VERB	_	Aspect=Prior|Directional=On|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	127	_	_	Folio=12|Paragraph=2|Line=8|Norm=oconittac|Analysed=Yes
 132	in	in	DET|SCONJ	_	_	131	_	_	Folio=12|Paragraph=2|Line=9|Norm=in
 133	qujtemoa	temoa	VERB	_	_	131	_	_	Folio=12|Paragraph=2|Line=9|Norm=quitemoa|Guessed=Yes
-134	ijollo	yollotl	NOUN	_	_	133	_	_	Folio=12|Paragraph=2|Line=9|Norm=iyollo|Gloss=su.corazón
+134	ijollo	yollotl	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	133	_	_	Folio=12|Paragraph=2|Line=9|Norm=iyollo|Gloss=su.corazón|Analysed=Yes
 135	,	,	PUNCT	_		137	punct	_	Folio=12|Paragraph=2|Line=9|Norm=,|Analysed=Yes
 136	injc	inic	SCONJ	_	_	137	_	_	Folio=12|Paragraph=2|Line=9|Norm=inic
 137	oelciciuhtinenca	elcicihui	VERB	_	_	131	_	_	Orig=oelciciuhti¶·nenca|Folio=12,12|Paragraph=2,2|Line=9,10|Norm=oelciciuhtinenca|Aux=nemi
@@ -4994,7 +4994,7 @@
 17	centlapachton	centlapachton	NOUN	_	_	16	orphan	16:orphan	Folio=12|Paragraph=4|Line=4|Norm=centlapachton
 18	:	:	PUNCT	_		20	punct	20:punct	Folio=12|Paragraph=4|Line=4|Norm=:|Analysed=Yes
 19	iuh	iuh	ADV	_	_	20	advmod	20:advmod	Folio=12|Paragraph=4|Line=4|Norm=iuh|AmbigNorm=True|Override=False|Gloss=así
-20	tocaiotilo	tocayotia	VERB	_	_	4	parataxis	4:parataxis	Folio=12|Paragraph=4|Line=4|Norm=tocayotilo|Ambiguous=Yes|Guessed=Yes
+20	tocaiotilo	tocayotia	VERB	_	_	4	parataxis	4:parataxis	Folio=12|Paragraph=4|Line=4|Norm=tocayotilo|Ambiguous=Yes|Analysed=Yes
 21	.	.	PUNCT	_		4	punct	4:punct	Folio=12|Paragraph=4|Line=4|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:92
@@ -5008,7 +5008,7 @@
 # analysed = 95.00%
 1	Qujtoa	ihtoa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Folio=12|Paragraph=4|Line=5|Norm=Quihtoa|Analysed=Yes
 2	,	,	PUNCT	_		10	punct	10:punct	Folio=12|Paragraph=4|Line=5|Norm=,|Analysed=Yes
-3	çan	zan	ADV	_	_	10	_	10	Folio=12|Paragraph=4|Line=5|Norm=zan
+3	çan	zan	ADV	_		10	_	10	Folio=12|Paragraph=4|Line=5|Norm=zan|Analysed=Yes
 4	vncan	oncan	ADV	_	_	10	_	10	Folio=12|Paragraph=4|Line=5|Norm=oncan|Gloss=aquí
 5	in	in	DET|SCONJ	_	_	6	_	6	Folio=12|Paragraph=4|Line=5|Norm=in
 6	neaxixaloian	neaxixaloyan	NOUN	_	_	4	_	4	Orig=neaxixalo¶·ian|Folio=12,12|Paragraph=4,4|Line=5,6|Norm=neaxixaloyan|Gloss=latrina|Locative=Yes
@@ -5023,7 +5023,7 @@
 15	axixmjquj	axixmiqui	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	21	_	21	Folio=12|Paragraph=4|Line=7|Norm=axixmiqui|Analysed=Yes
 16	,	,	PUNCT	_		21	punct	21:punct	Folio=12|Paragraph=4|Line=7|Norm=,|Analysed=Yes
 17	in	in	DET|SCONJ	_	_	21	_	21	Orig=incan·icel¶|Folio=12,12|Paragraph=4,4|Line=7,7|Norm=in
-18	can	zan	ADV	_	_	21	_	21	Orig=incan·icel¶|Folio=12,12|Paragraph=4,4|Line=7,7|Norm=zan
+18	can	zan	ADV	_		21	_	21	Orig=incan·icel¶|Folio=12,12|Paragraph=4,4|Line=7,7|Norm=zan|Analysed=Yes
 19	icel	cel	NOUN	_	NounType=Relat	21	_	21	Orig=incan·icel¶|Folio=12,12|Paragraph=4,4|Line=7,7|Norm=icel
 20	ioaltica	yohualtica	ADV	_		21	_	21	Folio=12|Paragraph=4|Line=8|Norm=yohualtica|Temporal=Yes|Analysed=Yes
 21	qujca	quiza	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	1	_	1	Folio=12|Paragraph=4|Line=8|Norm=quiza|Analysed=Yes
@@ -5038,7 +5038,7 @@
 30	iquac	ihcuac	SCONJ	_	_	31	_	31	Folio=12|Paragraph=4|Line=9|Norm=ihcuac|Gloss=cuando
 31	qujmottitia	mottitia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	21	_	21	Folio=12|Paragraph=4|Line=9|Norm=quimottitia|Analysed=Yes
 32	:	:	PUNCT	_		37	punct	37:punct	Folio=12|Paragraph=4|Line=9|Norm=:|Analysed=Yes
-33	can	zan	ADV	_	_	37	_	37	Folio=12|Paragraph=4|Line=10|Norm=zan
+33	can	zan	ADV	_		37	_	37	Folio=12|Paragraph=4|Line=10|Norm=zan|Analysed=Yes
 34	ieh	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	37	_	37	Orig=iehmuch|Folio=12|Paragraph=4|Line=10|Norm=yeh|Analysed=Yes
 35	much	moch	PRON	_	_	37	_	37	Orig=iehmuch|Folio=12|Paragraph=4|Line=10|Norm=moch|Gloss=todo
 36	ic	ic	ADV	_	_	37	_	37	Folio=12|Paragraph=4|Line=10|Norm=ic
@@ -5077,7 +5077,7 @@
 19	acanoço	_	ADV	_	_	20	_	_	Orig=y¶·nacanoço|Folio=13,13|Paragraph=1,1|Line=1,2|Norm=acanozo
 20	tlei	tlein	PRON	_	_	23	_	_	Folio=13|Paragraph=1|Line=2|Norm=tlein
 21	,	,	PUNCT	_		23	punct	_	Folio=13|Paragraph=1|Line=2|Norm=,|Analysed=Yes
-22	çan	zan	ADV	_	_	23	_	_	Folio=13|Paragraph=1|Line=2|Norm=zan
+22	çan	zan	ADV	_		23	_	_	Folio=13|Paragraph=1|Line=2|Norm=zan|Analysed=Yes
 23	conmamauhtia	mamauhtia	VERB	_	_	6	_	_	Orig=con·mamauhtia|Folio=13,13|Paragraph=1,1|Line=2,2|Norm=conmamauhtia
 24	:	:	PUNCT	_		27	punct	_	Folio=13|Paragraph=1|Line=2|Norm=:|Analysed=Yes
 25	auh	auh	CCONJ	_	_	27	_	_	Folio=13|Paragraph=1|Line=3|Norm=auh|Gloss=y
@@ -5087,7 +5087,7 @@
 29	iuhqujn	iuhquin	ADV	_		30	_	_	Orig=iuh·qujn|Folio=13,13|Paragraph=1,1|Line=3,3|Norm=iuhquin|AmbigNorm=True|Override=False|Gloss=así|Analysed=Yes
 30	civapiltontli	cihuapilli	NOUN	_	State=Abs	27	_	_	Folio=13|Paragraph=1|Line=3|Norm=cihuapiltontli|Analysed=Yes
 31	,	,	PUNCT	_		34	punct	_	Folio=13|Paragraph=1|Line=3|Norm=,|Analysed=Yes
-32	can	zan	ADV	_	_	34	_	_	Folio=13|Paragraph=1|Line=4|Norm=zan
+32	can	zan	ADV	_		34	_	_	Folio=13|Paragraph=1|Line=4|Norm=zan|Analysed=Yes
 33	vel	huel	ADV	_	_	34	_	_	Folio=13|Paragraph=1|Line=4|Norm=huel
 34	tepiton	tepiton	NOUN	_	_	30	_	_	Folio=13|Paragraph=1|Line=4|Norm=tepiton|Gloss=un.poco
 35	,	,	PUNCT	_		36	punct	_	Folio=13|Paragraph=1|Line=4|Norm=,|Analysed=Yes
@@ -5097,7 +5097,7 @@
 39	achi	achi	ADV	_	_	40	_	_	Folio=13|Paragraph=1|Line=5|Norm=achi
 40	quauhtic	cuauhtic	ADJ	_		30	_	_	Folio=13|Paragraph=1|Line=5|Norm=cuauhtic|Analysed=Yes
 41	:	:	PUNCT	_		43	punct	_	Folio=13|Paragraph=1|Line=5|Norm=:|Analysed=Yes
-42	çan	zan	ADV	_	_	43	_	_	Folio=13|Paragraph=1|Line=5|Norm=zan
+42	çan	zan	ADV	_		43	_	_	Folio=13|Paragraph=1|Line=5|Norm=zan|Analysed=Yes
 43	cacapanton	cacapanton	NOUN	_	_	30	_	_	Folio=13|Paragraph=1|Line=5|Norm=cacapanton
 44	,	,	PUNCT	_		45	punct	_	Folio=13|Paragraph=1|Line=5|Norm=,|Analysed=Yes
 45	chachapaton	chachapaton	NOUN	_	_	43	_	_	Orig=cha¶·chapaton|Folio=13,13|Paragraph=1,1|Line=5,6|Norm=chachapaton
@@ -5125,7 +5125,7 @@
 67	auh	auh	CCONJ	_	_	73	_	_	Folio=13|Paragraph=1|Line=9|Norm=auh|Gloss=y
 68	injc	inic	SCONJ	_	_	69	_	_	Folio=13|Paragraph=1|Line=9|Norm=inic
 69	nenemj	nehnemi	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	73	_	_	Orig=nene¶·mj|Folio=13,13|Paragraph=1,1|Line=9,10|Norm=nehnemi|Analysed=Yes
-70	çan	zan	ADV	_	_	73	_	_	Folio=13|Paragraph=1|Line=10|Norm=zan
+70	çan	zan	ADV	_		73	_	_	Folio=13|Paragraph=1|Line=10|Norm=zan|Analysed=Yes
 71	tlalli	tlalli	NOUN	_	State=Abs	72	_	_	Folio=13|Paragraph=1|Line=10|Norm=tlalli|Gloss=tierra|Analysed=Yes
 72	ixco	ixco	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Poss	73	_	_	Folio=13|Paragraph=1|Line=10|Norm=ixco|Locative=Yes|Analysed=Yes
 73	onotiuh	ono	VERB	_	_	6	_	_	Folio=13|Paragraph=1|Line=10|Norm=onotiuh|AmbigNorm=True|Override=False
@@ -5141,11 +5141,11 @@
 83	intla	tla	PRON	_	_	85	mark	_	Orig=intlaiequjtoca|Folio=13|Paragraph=1|Line=12|Norm=intla|Gloss=algo
 84	ie	ye	ADV	_	_	85	_	_	Orig=intlaiequjtoca|Folio=13|Paragraph=1|Line=12|Norm=ye|AmbigNorm=True|Override=False
 85	qujtoca	toca	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	88	advcl	_	Orig=intlaiequjtoca|Folio=13|Paragraph=1|Line=12|Norm=quitoca|Analysed=Yes
-86	çan	zan	ADV	_	_	88	_	_	Folio=13|Paragraph=1|Line=12|Norm=zan
+86	çan	zan	ADV	_		88	_	_	Folio=13|Paragraph=1|Line=12|Norm=zan|Analysed=Yes
 87	ixpan	ixpan	ADV	_	_	88	_	_	Folio=13|Paragraph=1|Line=12|Norm=ixpan
 88	ompolivi	polihui	VERB	_	Directional=On|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	6	_	_	Orig=om¶·polivi|Folio=13,13|Paragraph=1,1|Line=12,13|Norm=ompolihui|Analysed=Yes
 89	,	,	PUNCT	_		92	punct	_	Folio=13|Paragraph=1|Line=13|Norm=,|Analysed=Yes
-90	can	zan	ADV	_	_	92	_	_	Orig=canjc·quj·queloa|Folio=13,13,13|Paragraph=1,1,1|Line=13,13,13|Norm=zan
+90	can	zan	ADV	_		92	_	_	Orig=canjc·quj·queloa|Folio=13,13,13|Paragraph=1,1,1|Line=13,13,13|Norm=zan|Analysed=Yes
 91	jc	ic	ADV	_	_	92	_	_	Orig=canjc·quj·queloa|Folio=13,13,13|Paragraph=1,1,1|Line=13,13,13|Norm=ic
 92	qujqueloa	queloa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	88	_	_	Orig=canjc·quj·queloa|Folio=13,13,13|Paragraph=1,1,1|Line=13,13,13|Norm=quiqueloa|Analysed=Yes
 93	:	:	PUNCT	_		99	punct	_	Folio=13|Paragraph=1|Line=13|Norm=:|Analysed=Yes
@@ -5162,7 +5162,7 @@
 104	canaznequj	ana	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Fut|VerbForm=Fin	102	_	_	Folio=13|Paragraph=1|Line=15|Norm=canaznequi|Analysed=Yes
 105	ompoliuhtiuh	polihui	VERB	_	_	104	_	_	Folio=13|Paragraph=1|Line=15|Norm=ompoliuhtiuh
 106	:	:	PUNCT	_		109	punct	_	Folio=13|Paragraph=1|Line=15|Norm=:|Analysed=Yes
-107	çan	zan	ADV	_	_	109	_	_	Folio=13|Paragraph=1|Line=15|Norm=zan
+107	çan	zan	ADV	_		109	_	_	Folio=13|Paragraph=1|Line=15|Norm=zan|Analysed=Yes
 108	iuh	iuh	ADV	_	_	109	_	_	Folio=13|Paragraph=1|Line=16|Norm=iuh|AmbigNorm=True|Override=False|Gloss=así
 109	commauhcacaoa	mauhcacahua	VERB	_	Directional=On|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	102	_	_	Orig=com·mauh·cacaoa|Folio=13,13,13|Paragraph=1,1,1|Line=16,16,16|Norm=commauhcacahua|Analysed=Yes
 110	,	,	PUNCT	_		111	punct	_	Folio=13|Paragraph=1|Line=16|Norm=,|Analysed=Yes
@@ -5180,10 +5180,10 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 90.91%
-1	Can	zan	ADV	_	_	9	_	9	Folio=13|Paragraph=2|Line=1|Norm=Zan
+1	Can	zan	ADV	_		9	_	9	Folio=13|Paragraph=2|Line=1|Norm=Zan|Analysed=Yes
 2	ie	ye	ADV	_	_	9	_	9	Orig=ieno|Folio=13|Paragraph=2|Line=1|Norm=ye|AmbigNorm=True|Override=False
 3	no	no	ADV	_	_	9	_	9	Orig=ieno|Folio=13|Paragraph=2|Line=1|Norm=no|Gloss=también
-4	iuhquj	iuhqui	ADV	_	_	9	_	9	Folio=13|Paragraph=2|Line=1|Norm=iuhqui|Gloss=así
+4	iuhquj	iuhqui	ADV	_		9	_	9	Folio=13|Paragraph=2|Line=1|Norm=iuhqui|Gloss=así|Analysed=Yes
 5	in	in	DET|SCONJ	_	_	9	_	9	Folio=13|Paragraph=2|Line=1|Norm=in
 6	tzontecomatl	tzontecomatl	NOUN	_	State=Abs	9	_	9	Orig=tzonteco¶·matl|Folio=13,13|Paragraph=2,2|Line=1,2|Norm=tzontecomatl|Analysed=Yes
 7	,	,	PUNCT	_		9	punct	9:punct	Folio=13|Paragraph=2|Line=2|Norm=,|Analysed=Yes
@@ -5196,7 +5196,7 @@
 14	aqujn	aquin	PRON	_	_	19	_	19	Orig=inaqujn|Folio=13|Paragraph=2|Line=3|Norm=aquin
 15	qujmottitia	mottitia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	14	_	14	Orig=quj·mottitia|Folio=13,13|Paragraph=2,2|Line=3,3|Norm=quimottitia|Analysed=Yes
 16	,	,	PUNCT	_		19	punct	19:punct	Folio=13|Paragraph=2|Line=3|Norm=,|Analysed=Yes
-17	can	zan	ADV	_	_	19	_	19	Orig=canjc|Folio=13|Paragraph=2|Line=3|Norm=zan
+17	can	zan	ADV	_		19	_	19	Orig=canjc|Folio=13|Paragraph=2|Line=3|Norm=zan|Analysed=Yes
 18	jc	ic	ADV	_	_	19	_	19	Orig=canjc|Folio=13|Paragraph=2|Line=3|Norm=ic
 19	qujmachitia	machitia	VERB	_	_	9	_	9	Orig=quj¶·machitia|Folio=13,13|Paragraph=2,2|Line=3,4|Norm=quimachitia|Gloss=hacer.saber
 20	,	,	PUNCT	_		22	punct	22:punct	Folio=13|Paragraph=2|Line=4|Norm=,|Analysed=Yes
@@ -5252,7 +5252,7 @@
 15	injc	inic	SCONJ	_	_	16	_	16	Folio=13|Paragraph=3|Line=3|Norm=inic
 16	qujcujtiuetziz	cuitihuetzi	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Fut|VerbForm=Fin	13	_	13	Orig=quj·cuj¶·tiuetziz|Folio=13,13,13|Paragraph=3,3,3|Line=3,3,4|Norm=quicuitihuetziz|Analysed=Yes
 17	:	:	PUNCT	_		20	punct	20:punct	Folio=13|Paragraph=3|Line=4|Norm=:|Analysed=Yes
-18	can	zan	ADV	_	_	20	_	20	Orig=canjc|Folio=13|Paragraph=3|Line=4|Norm=zan
+18	can	zan	ADV	_		20	_	20	Orig=canjc|Folio=13|Paragraph=3|Line=4|Norm=zan|Analysed=Yes
 19	jc	ic	ADV	_	_	20	_	20	Orig=canjc|Folio=13|Paragraph=3|Line=4|Norm=ic
 20	qujqueloa	queloa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	_	3	Folio=13|Paragraph=3|Line=4|Norm=quiqueloa|Analysed=Yes
 21	,	,	PUNCT	_		25	punct	25:punct	Folio=13|Paragraph=3|Line=4|Norm=,|Analysed=Yes
@@ -5265,7 +5265,7 @@
 28	uel	huel	ADV	_	_	29	_	29	Orig=amouel|Folio=13|Paragraph=3|Line=5|Norm=huel
 29	cana	cana	ADV	_	_	25	_	25	Folio=13|Paragraph=3|Line=5|Norm=cana|Gloss=alguna.parte
 30	:	:	PUNCT	_		34	punct	34:punct	Folio=13|Paragraph=3|Line=5|Norm=:|Analysed=Yes
-31	çan	zan	ADV	_	_	34	_	34	Folio=13|Paragraph=3|Line=5|Norm=zan
+31	çan	zan	ADV	_		34	_	34	Folio=13|Paragraph=3|Line=5|Norm=zan|Analysed=Yes
 32	no	no	ADV	_	_	34	_	34	Folio=13|Paragraph=3|Line=6|Norm=no|Gloss=también
 33	iuh	iuh	ADV	_	_	34	_	34	Folio=13|Paragraph=3|Line=6|Norm=iuh|AmbigNorm=True|Override=False|Gloss=así
 34	conmauhcacaoa	mauhcacahua	VERB	_	Directional=On|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	20	_	20	Orig=con·mauhcacaoa|Folio=13,13|Paragraph=3,3|Line=6,6|Norm=conmauhcacahua|Analysed=Yes
@@ -5291,10 +5291,10 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 86.49%
-1	Can	zan	ADV	_	_	9	_	_	Folio=13|Paragraph=4|Line=1|Norm=Zan
+1	Can	zan	ADV	_		9	_	_	Folio=13|Paragraph=4|Line=1|Norm=Zan|Analysed=Yes
 2	ie	ye	ADV	_	_	9	_	_	Orig=ieno|Folio=13|Paragraph=4|Line=1|Norm=ye|AmbigNorm=True|Override=False
 3	no	no	ADV	_	_	9	_	_	Orig=ieno|Folio=13|Paragraph=4|Line=1|Norm=no|Gloss=también
-4	iuhquj	iuhqui	ADV	_	_	9	_	_	Folio=13|Paragraph=4|Line=1|Norm=iuhqui|Gloss=así
+4	iuhquj	iuhqui	ADV	_		9	_	_	Folio=13|Paragraph=4|Line=1|Norm=iuhqui|Gloss=así|Analysed=Yes
 5	in	in	DET|SCONJ	_	_	6	_	_	Folio=13|Paragraph=4|Line=1|Norm=in
 6	mjcquj	miqui	NOUN	_	_	9	_	_	Folio=13|Paragraph=4|Line=1|Norm=miqui
 7	,	,	PUNCT	_		9	punct	_	Folio=13|Paragraph=4|Line=1|Norm=,|Analysed=Yes
@@ -5314,9 +5314,9 @@
 21	:	:	PUNCT	_		22	punct	_	Folio=13|Paragraph=4|Line=4|Norm=:|Analysed=Yes
 22	tequjqujnatza	quiquinatza	VERB	_	Animacy[obj]=Anim|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	9	_	_	Folio=13|Paragraph=4|Line=4|Norm=tequiquinatza|Analysed=Yes
 23	:	:	PUNCT	_		25	punct	_	Folio=13|Paragraph=4|Line=4|Norm=:|Analysed=Yes
-24	çan	zan	ADV	_	_	25	_	_	Folio=13|Paragraph=4|Line=4|Norm=zan
+24	çan	zan	ADV	_		25	_	_	Folio=13|Paragraph=4|Line=4|Norm=zan|Analysed=Yes
 25	iehoan	yehhuan	PRON	_	Number=Plur|Person=3|PronType=Prs	31	_	_	Folio=13|Paragraph=4|Line=5|Norm=yehhuan|Gloss=ellos|Analysed=Yes
-26	injollo	yollotl	NOUN	_	_	25	_	_	Folio=13|Paragraph=4|Line=5|Norm=inyollo|Gloss=sus.corazones
+26	injollo	yollotl	NOUN	_	Number[psor]=Plur|Person[psor]=3|State=Poss	25	_	_	Folio=13|Paragraph=4|Line=5|Norm=inyollo|Gloss=sus.corazones|Analysed=Yes
 27	chicavaque	chicahuac	ADJ	_	_	26	_	_	Folio=13|Paragraph=4|Line=5|Norm=chicahuaque
 28	,	,	PUNCT	_		31	punct	_	Folio=13|Paragraph=4|Line=5|Norm=,|Analysed=Yes
 29	vel	huel	ADV	_	_	31	_	_	Folio=13|Paragraph=4|Line=5|Norm=huel
@@ -5340,7 +5340,7 @@
 # analysed = 94.12%
 1	Auh	auh	CCONJ	_	_	5	_	_	Folio=13|Paragraph=4|Line=7|Norm=Auh|Gloss=y
 2	injc	inic	SCONJ	_	_	5	_	_	Folio=13|Paragraph=4|Line=7|Norm=inic
-3	çan	zan	ADV	_	_	5	_	_	Folio=13|Paragraph=4|Line=7|Norm=zan
+3	çan	zan	ADV	_		5	_	_	Folio=13|Paragraph=4|Line=7|Norm=zan|Analysed=Yes
 4	inca	ca	NOUN	_	NounType=Relat	5	_	_	Folio=13|Paragraph=4|Line=7|Norm=inca
 5	mocacaiaoa	cacayahua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	Orig=moca¶·caiaoa|Folio=13,13|Paragraph=4,4|Line=7,8|Norm=mocacayahua|Analysed=Yes
 6	,	,	PUNCT	_		8	punct	_	Folio=13|Paragraph=4|Line=8|Norm=,|Analysed=Yes
@@ -5361,7 +5361,7 @@
 21	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	5	_	_	Orig=mj¶·toa|Folio=13,13|Paragraph=4,4|Line=10,11|Norm=mihtoa|Analysed=Yes
 22	,	,	PUNCT	_		28	punct	_	Folio=13|Paragraph=4|Line=11|Norm=,|Analysed=Yes
 23	ca	cah|ca	VERB	_	_	28	_	_	Orig=cacan|Folio=13|Paragraph=4|Line=11|Norm=ca|AmbigNorm=True|Override=False
-24	can	zan	ADV	_	_	28	_	_	Orig=cacan|Folio=13|Paragraph=4|Line=11|Norm=zan
+24	can	zan	ADV	_		28	_	_	Orig=cacan|Folio=13|Paragraph=4|Line=11|Norm=zan|Analysed=Yes
 25	muchi	mochi	DET|PRON	_	_	28	_	_	Folio=13|Paragraph=4|Line=11|Norm=mochi
 26	ieh	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	_	_	_	Folio=13|Paragraph=4|Line=11|Norm=yeh|Analysed=Yes
 27	,	,	PUNCT	_		28	punct	_	Folio=13|Paragraph=4|Line=11|Norm=,|Analysed=Yes
