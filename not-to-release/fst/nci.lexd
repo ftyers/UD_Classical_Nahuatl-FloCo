@@ -12059,7 +12059,7 @@ LEXICON Tense
 <pres>:[pl,pres]
 <fut>:>z[sg,fut]
 <fut>:>z>que[pl,fut]
-<fut>+nequi<v><tv>:>z>nequi[sg,fut]
+<fut>+nequi<aux>:>z>nequi[sg,fut]
 <cond>:>z>quiya[sg,fut]
 <cond>:>z>quiyah[pl,fut]
 <past>:[sg,pret]
@@ -12070,6 +12070,10 @@ LEXICON Tense
 
 LEXICON Aux
 +nemi<aux>:>ti·nemi
++huetzi<aux>:>ti·huetzi
++huitz<aux>:>ti·huitz
++ca<aux>:>ti·ca
++calaqui<aux>:>ti·calaqui
 +nemi<aux><past>:>ti·nen>ca
 +quiza<aux>:>ti·quiza
 
@@ -12087,6 +12091,7 @@ ObjVerb[cl3] [:{del}] Tense[|[pret,fut]]
 ObjVerb[cl4] Tense
 
 VerbRootIV [<v><iv>:] Aux
+VerbRootTV [<v><tv>:] Aux
 
 IrregVerbs
 
