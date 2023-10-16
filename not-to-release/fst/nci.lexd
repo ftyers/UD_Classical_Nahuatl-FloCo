@@ -12013,8 +12013,8 @@ LEXICON Subject
 #<s_pl3>:[pl]
 <s_sp3>:[sg]
 <s_sp3>:[pl]
-<s_sg2><imp>:xi[sg]
-<s_pl2><imp>:xi[pl]
+<s_sg2>:xi[sg,imp]>
+<s_pl2>:xi[pl,imp]>
 
 PATTERN ObjectPrefix
 ObjectSpec(1): :ObjectSpec(2)
@@ -12063,6 +12063,8 @@ LEXICON Tense
 <past>:[sg,pret]
 <past>:>que[pl,pret]
 <past>:>queh[pl,pret]
+<imp>:>can[pl,imp]
+<imp>:[sg,imp]
 
 LEXICON Aux
 +nemi<aux>:>ti·nemi

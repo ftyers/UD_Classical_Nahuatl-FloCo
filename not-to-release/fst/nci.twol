@@ -9,6 +9,7 @@ Alphabet
  %{i%}:i %{u%}:u
  %{u%}:0
  %{N%}:n %{N%}:m
+ %{o%}:o %{o%}:o
 
  %~:%~
  %·:%·
@@ -31,6 +32,7 @@ Rules
 
 "Reflexive mo"
 o:0 <=> m _ %>: %{i%}: ;
+        m _ %>: e Cns ; 
 
 "hu/uh I"
 %{u%}:0 <=> %{u%}: h _ %>:? [Cns | .#.] ;
