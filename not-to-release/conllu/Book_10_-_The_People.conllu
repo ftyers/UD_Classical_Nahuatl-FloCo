@@ -591,8 +591,8 @@
 # text[norm] = Tepi, Tiacapan, teiacapan, iacapantli tiacapantzin, Teico, teicutzin, Tlaco, tlacocua, tlacotzin, xoco, xocoiutl, xocotzin.
 # text[orig] = Tepi·,·ti¶acapan·,·teiacapan·,·iaca·pantli¶tiacapantzin·,·teicu·,·teicutzin·,·tlaco·,·tlacocua·,·tlacotzin·,·xoco·,·xo¶coiutl·,·xocotzin·.
 # tagged = 68.00%
-# lemmatised = 48.00%
-# analysed = 48.00%
+# lemmatised = 52.00%
+# analysed = 52.00%
 1	Tepi	_	X	_	_	_	_	_	Folio=2|Paragraph=5|Line=5|Norm=*Tepi
 2	,	,	PUNCT	_		_	_	_	Folio=2|Paragraph=5|Line=5|Norm=,|Analysed=Yes
 3	tiacapan	_	PROPN	_	_	_	_	_	Orig=ti¶·acapan|Folio=2,2|Paragraph=5,5|Line=5,6|Norm=Tiacapan
@@ -602,7 +602,7 @@
 7	iacapantli	_	NOUN	_	_	_	_	_	Orig=iaca·pantli¶|Folio=2,2|Paragraph=5,5|Line=6,6|Norm=*iacapantli|Guessed=Yes
 8	tiacapantzin	_	X	_	_	_	_	_	Folio=2|Paragraph=5|Line=7|Norm=*tiacapantzin
 9	,	,	PUNCT	_		_	_	_	Folio=2|Paragraph=5|Line=7|Norm=,|Analysed=Yes
-10	teicu	_	PROPN	_	_	_	_	_	Folio=2|Paragraph=5|Line=7|Norm=Teico
+10	teicu	i	VERB	_	Animacy[obj]=Anim|Directional=And|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=2|Paragraph=5|Line=7|Norm=Teico|Analysed=Yes
 11	,	,	PUNCT	_		_	_	_	Folio=2|Paragraph=5|Line=7|Norm=,|Analysed=Yes
 12	teicutzin	_	X	_	_	_	_	_	Folio=2|Paragraph=5|Line=7|Norm=*teicutzin
 13	,	,	PUNCT	_		_	_	_	Folio=2|Paragraph=5|Line=7|Norm=,|Analysed=Yes
@@ -1912,8 +1912,8 @@
 # text[norm] = In amo cualli uepolli techalania Vezoatli, teuezui, tecotonca, teuiltecca, teueltiuh, teiccauh, Teico, tepi, tepiton.
 # text[orig] = In¶amo·qualli·uepolli·techalania¶Vez·oatli·,·teuezui·,·tecotonca·,·teuil¶tecca·,·teuel·tiuh·,·teiccauh·,·teicu·,·tepi·,·tepiton·.
 # tagged = 60.87%
-# lemmatised = 56.52%
-# analysed = 56.52%
+# lemmatised = 60.87%
+# analysed = 60.87%
 1	In	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=6|Paragraph=6|Line=2|Norm=In
 2	amo	amo	ADV	_		_	_	_	Folio=6|Paragraph=6|Line=3|Norm=amo|Gloss=no|Analysed=Yes
 3	qualli	cualli	ADJ	_	_	_	_	_	Folio=6|Paragraph=6|Line=3|Norm=cualli|Gloss=bueno
@@ -1931,7 +1931,7 @@
 15	,	,	PUNCT	_		_	_	_	Folio=6|Paragraph=7|Line=2|Norm=,|Analysed=Yes
 16	teiccauh	_	X	_	_	_	_	_	Folio=6|Paragraph=7|Line=2|Norm=*teiccauh
 17	,	,	PUNCT	_		_	_	_	Folio=6|Paragraph=7|Line=2|Norm=,|Analysed=Yes
-18	teicu	_	PROPN	_	_	_	_	_	Folio=6|Paragraph=7|Line=2|Norm=Teico
+18	teicu	i	VERB	_	Animacy[obj]=Anim|Directional=And|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=6|Paragraph=7|Line=2|Norm=Teico|Analysed=Yes
 19	,	,	PUNCT	_		_	_	_	Folio=6|Paragraph=7|Line=2|Norm=,|Analysed=Yes
 20	tepi	_	X	_	_	_	_	_	Folio=6|Paragraph=7|Line=2|Norm=*tepi
 21	,	,	PUNCT	_		_	_	_	Folio=6|Paragraph=7|Line=2|Norm=,|Analysed=Yes
@@ -6686,9 +6686,9 @@
 # text[orig] = Inic·chicunaui·capitulo·,·in·techpa·tlatoa·in·tetlachiui¶ani·:·in·nanahoalti·,·in·texixico¶ani·.
 # tagged = 80.00%
 # lemmatised = 80.00%
-# analysed = 73.33%
+# analysed = 80.00%
 1	Inic	inic	SCONJ	_	_	_	_	_	Folio=20|Paragraph=5|Line=1|Norm=Inic
-2	chicunaui	chicnahui	NUM	_	_	_	_	_	Folio=20|Paragraph=5|Line=1|Norm=chicnahui|Gloss=nueve
+2	chicunaui	chiconahui	NUM	_		_	_	_	Folio=20|Paragraph=5|Line=1|Norm=chicnahui|Gloss=nueve|Analysed=Yes
 3	capitulo	capítulo	NOUN	_	State=Abs	_	_	_	Folio=20|Paragraph=5|Line=1|Norm=capítulo|Analysed=Yes
 4	,	,	PUNCT	_		_	_	_	Folio=20|Paragraph=5|Line=1|Norm=,|Analysed=Yes
 5	intechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Plur|Person[psor]=3|State=Poss	_	_	_	Orig=in·techpa|Folio=20,20|Paragraph=5,5|Line=2,2|Norm=intechpa|Analysed=Yes
@@ -48096,7 +48096,7 @@
 # text[orig] = Ximocuepaca·,·tiazque·:·in·vmpa·oallaque·,·nj·man·ie¶ic·vi·,·tlatlauhtizque·in·oz¶toc·:·in·vncan·chicomoztoc·:·nj¶man·ic·oaleoaque·,·achtopa¶vmpa·acito·,·in·mjtoa·tullan¶tzinco·:·nj·man·oalmjquanjque·,·in·xicocotitlan·,·in·mjtoa·tulla·:·auh·njman·qujnoaltoqujli¶que·,·in·chichimeca·,·in·mjtoa¶teuchichimeca·:·auh·nj·man¶qujnoalto·qujlique·in·mjch¶oaque·:·in·oaleoaque·in·qujn¶oaliacan·in·jn·tlatocauh·ito¶ca·Amjmjtl·:·vmpa·qujmjtz¶tiltitia·in·cioatlampa·:·in¶axcan·ie·vmpa·onoque·,·in¶tonatiuh·icalaqujampa·:·oc·no·achto·oallatlatlauhti¶teoaque·in·oztoc·,·chicomoz¶toc·.
 # tagged = 73.12%
 # lemmatised = 72.04%
-# analysed = 69.89%
+# analysed = 70.97%
 1	Ximocuepaca	_	X	_	_	_	_	_	Folio=146|Paragraph=2|Line=6|Norm=*Ximocuepaca
 2	,	,	PUNCT	_		_	_	_	Folio=146|Paragraph=2|Line=6|Norm=,|Analysed=Yes
 3	tiazque	_	X	_	_	_	_	_	Folio=146|Paragraph=2|Line=6|Norm=*tiazque
@@ -48124,7 +48124,7 @@
 25	,	,	PUNCT	_		_	_	_	Folio=146|Paragraph=2|Line=10|Norm=,|Analysed=Yes
 26	achtopa	achtopa	ADV	_		_	_	_	Folio=146|Paragraph=2|Line=10|Norm=achtopa|Gloss=en.primero|Analysed=Yes
 27	vmpa	ompa	ADV	_		_	_	_	Folio=146|Paragraph=2|Line=11|Norm=ompa|Gloss=allá|Analysed=Yes
-28	acito	ahci	VERB	_	_	_	_	_	Folio=146|Paragraph=2|Line=11|Norm=acito
+28	acito	aci	VERB	_	Directional=Ven|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	_	_	_	Folio=146|Paragraph=2|Line=11|Norm=acito|Analysed=Yes
 29	,	,	PUNCT	_		_	_	_	Folio=146|Paragraph=2|Line=11|Norm=,|Analysed=Yes
 30	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=146|Paragraph=2|Line=11|Norm=in
 31	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	_	_	_	Folio=146|Paragraph=2|Line=11|Norm=mihtoa|Analysed=Yes
