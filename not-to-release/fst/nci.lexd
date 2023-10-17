@@ -349,6 +349,7 @@ chicuacen:chicuacen # "seis"
 chicome:chicome # "siete"
 chicueyi:chicueyi # "ocho"
 chiconahui:chiconahui # "nueve"
+chiconahui:chicnahui # "nueve"
 matlactli:matlac[tli] # "diez"
 caxtolli:caxtol[li] # "quince"
 cempohualli:cempohual[li] # "veinte"
@@ -427,6 +428,7 @@ aatl:aa[tl]
 acacampaxoliztli:acacampaxoliz[tli]
 acachapolin:acachapol[in]
 acacocoyotl:acacocoyo[tl]
+hueltiuhtli:hueltiuh[tli] # check
 acacoyotl:acacoyo[tl]
 acacpalli:acacpal[li]
 acacuextli:acacuex[tli]
@@ -12078,6 +12080,13 @@ LEXICON Aux
 +nemi<aux><past>:>ti·nen>ca
 +quiza<aux>:>ti·quiza
 
+LEXICON Dir
+
+<ven><pres>:tiuh
+<ven><past>:to
+<and><fut>:qui
+<and><past>:co
+
 PATTERN TenseVerb
 ObjVerb[cl1] Tense[-pret]
 ObjVerb[cl1] Tense[pret,pl]
@@ -12093,7 +12102,11 @@ ObjVerb[cl4] Tense
 
 VerbRootIV [<v><iv>:] Aux
 
+VerbRootIV [<v><iv>:] Dir
+
 ObjVerb Aux
+
+ObjVerb Dir
 
 IrregVerbs
 
