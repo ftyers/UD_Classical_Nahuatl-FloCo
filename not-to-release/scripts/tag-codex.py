@@ -178,6 +178,21 @@ def read_lexicon(fn, lexicon):
 				lexicon[token] = (lemma, upos, ufeats, misc)
 	return lexicon
 
+def read_analyses(fn):
+	preferences = {}
+	for lineno, line in enumerate(open(fn).readlines()):
+		if line[0] == '#' or line.strip() == '':
+			continue
+		line = re.sub('\t\t*', '\t', line)
+		try:
+			form, analysis = line.strip().split('\t')
+		except:
+			print('! Error on %d, not enough values to unpack.' % (lineno),file=sys.stderr)
+			print('!', line, line.split('\t'), file=sys.stderr)
+			raise
+		preferences[form] = [(analysis, 0.0)]
+	return preferences	
+
 def sort_features(ufeats):
 	if ufeats != '_' and ufeats != '':
 		if '|' in ufeats:
@@ -196,6 +211,8 @@ for fn in glob.glob('lexicon/*.lexicon'):
 morfst = ATTFST('../fst/nci.mor.att.gz')
 genfst = ATTFST('../fst/nci.gen.att.gz')
 convertor = Convertor('tagset.tsv')
+
+preferences = read_analyses('analyses.tsv')
 
 sents = 0
 total = 0
@@ -252,6 +269,9 @@ for bloc in sys.stdin.read().split('\n\n'):
 	
 		if len(trimmed_analyses) > 0:
 			analyses = trimmed_analyses
+
+		if norm in preferences:
+			analyses = preferences[norm]
 			
 #		print('ANAL', analyses)
 		converted_analyses = []
