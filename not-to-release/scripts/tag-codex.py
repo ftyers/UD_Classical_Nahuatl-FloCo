@@ -7,84 +7,89 @@ alphabet = 'abcdefghijklmnopqrstuvxyz'
 
 def guess(norm, guessed_lemma, guessed_upos, misc):
 	norm = norm.lower()
+	guessed_misc = '_'
+	if misc.strip('_') != '':
+		guessed_misc = misc + '|Guessed=Yes'
+	else:
+		guessed_misc = 'Guessed=Yes'
 	if re.findall('[aeiou]tl$', norm):
-		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'NOUN', '_', guessed_misc, [])
 	if re.findall('[aeiou][^aeiou]+tli$', norm):
-		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'NOUN', '_', guessed_misc, [])
 	if re.findall('(in|in|no|mo)[a-z]+huan$', norm):
-		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'NOUN', '_', guessed_misc, [])
 	if re.findall('[a-z]+yotl$', norm):
-		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'NOUN', '_', guessed_misc, [])
 	if re.findall('[a-z]+huitl$', norm):
-		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'NOUN', '_', guessed_misc, [])
 	if re.findall('(i|in|im)[a-z]+ayo$', norm):				# imanahuayo
-		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'NOUN', '_', guessed_misc, [])
 	if re.findall('[a-z]+tzitzin$', norm):
-		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'NOUN', '_', guessed_misc, [])
 	if re.findall('[a-z]+(tilmatli|icpalli)$', norm):
-		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'NOUN', '_', guessed_misc, [])
 	if re.findall('[a-z]+catl$', norm):
-		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'NOUN', '_', guessed_misc, [])
 	if re.findall('[a-z]+iztli$', norm):
-		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'NOUN', '_', guessed_misc, [])
 	if re.findall('[a-z]+tin$', norm):					# zoquitecontotontin
-		return(guessed_lemma, 'NOUN', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'NOUN', '_', guessed_misc, [])
 	if re.findall('o[a-z]+aya$', norm):					# ontlapalohuaya
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('tla[a-z]+aya$', norm):					# tlatlauhtiaya
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('quin[a-z]+tia$', norm):
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('hual[a-z]+tia$', norm):
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('[a-z]+nenca$', norm):					#onentlamattinenca
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', []) 
+		return(guessed_lemma, 'VERB', '_', guessed_misc, []) 
 	if re.findall('o[a-z]+manca$', norm):					#otlamahuizmamanca
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', []) 
+		return(guessed_lemma, 'VERB', '_', guessed_misc, []) 
 	if re.findall('o[a-z]+i[tc]o$', norm):					#otechtoquilico
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', []) 
+		return(guessed_lemma, 'VERB', '_', guessed_misc, []) 
 	if re.findall('[a-z]+huilia$', norm):
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('[a-z]+quiza$', norm):
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('[a-z]+ltia$', norm):
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('^xi[a-z]+can$', norm):			# ximellacuahuacan
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('^qui[a-z]+([io]|hu)a$', norm):
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('^oquin[a-z]+que$', norm):
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('^tinech', norm):				# tinechitlacoa
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('^nimitz', norm):				# nimitzpantia
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('^[a-z]+tinemi$', norm):
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('^[a-z]+znequi$', norm):
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('^mo[a-z]+ya$', norm):
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('^mo[a-z]+lia$', norm):
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('^qui[a-z]+ya$', norm):			# quihtohuaya
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('^qui[a-z]+tiz$', norm):			# quintlanamictiz
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('^[a-z]+zque$', norm):
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('^[a-z]+ohua$', norm):
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall("^mo[a-z]+oa", norm):
-		return(guessed_lemma, "VERB", "_", "Guessed=Yes", [])
+		return(guessed_lemma, "VERB", "_", guessed_misc, [])
 	if re.findall('tihu[ei]tz(iz|i)?$', norm):
-		return(guessed_lemma, 'VERB', '_', 'Guessed=Yes', [])
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall("tinemi$", norm):
-		return(guessed_lemma, "VERB", "_", "Guessed=Yes", [])
+		return(guessed_lemma, "VERB", "_", guessed_misc, [])
 	if norm.startswith("xi[^u]"):
-		return(guessed_lemma, "VERB", "_", "Guessed=Yes", [])
+		return(guessed_lemma, "VERB", "_", guessed_misc, [])
 	if re.findall("tiquiza", norm):
-		return (guessed_lemma, 'VERB', "_", "Guessed=Yes", [])
+		return (guessed_lemma, 'VERB', "_", guessed_misc, [])
 	if guessed_upos != '_':
 		return (guessed_lemma, guessed_upos, '_', misc, [])
 	return (guessed_lemma, 'X', '_', misc, [])
@@ -92,7 +97,7 @@ def guess(norm, guessed_lemma, guessed_upos, misc):
 def tag(lexicon, form, norm, idx, analyses):
 	lower = norm.lower().strip('*')
 	# [{'lemma': 'teotl', 'pos': 'NOUN', 'feats': {'Case': 'Abs'}}] [('teotl<n><abs>', 0.0)]
-	#print(analyses, file=sys.stderr)
+	#print('@', form,'|||', analyses, file=sys.stderr)
 	
 	# TODO: Work out what to do here with multiple analyses
 	# 	We should probably do max intersection with the analyses in the lexicon
@@ -106,6 +111,7 @@ def tag(lexicon, form, norm, idx, analyses):
 		misc = 'Ambiguous=Yes|Analysed=Yes'	
 		lemmas = []
 		uposes = []
+		
 		for analysis in analyses:
 			lemmas.append(analysis['lemma'])
 			uposes.append(analysis['pos'])
@@ -234,6 +240,18 @@ for bloc in sys.stdin.read().split('\n\n'):
 		analyses = list(morfst.apply(norm))
 		if len(analyses) == 0:
 			analyses = list(morfst.apply(norm.lower()))
+
+		trimmed_analyses = []
+		# prefer lexicalised
+		for analysis in analyses:
+			if '+' in analysis[0]:
+				continue
+			if '<caus>' in analysis[0] or '<appl>' in analysis[0]:
+				continue
+			trimmed_analyses.append(analysis)
+	
+		if len(trimmed_analyses) > 0:
+			analyses = trimmed_analyses
 			
 #		print('ANAL', analyses)
 		converted_analyses = []
