@@ -31,8 +31,8 @@ all: $(TARGETS)
 ../conllu/Book_07_-_The_Sun,_Moon,_Stars,_and_the_Binding_of_the_Years.conllu: ../books/Book_07_-_The_Sun,_Moon,_Stars,_and_the_Binding_of_the_Years.tokenised $(DEPS)
 	python3 process-codex.py $< | python3 tag-codex.py > $@
 
-../conllu/Book_08_-_Kings_and_Lords.conllu: ../books/Book_08_-_Kings_and_Lords.txt $(DEPS)
-	python3 process-codex.py $< | python3 tag-codex.py > $@
+../conllu/Book_08_-_Kings_and_Lords.conllu: ../books/Book_08_-_Kings_and_Lords.txt translation/Book_08_-_Kings_and_Lords.* $(DEPS)
+	python3 process-codex.py $< | python3 add-translations.py translation/Book_08_-_Kings_and_Lords.* | python3 tag-codex.py > $@
 
 ../conllu/Book_11_-_Earthly_Things.conllu: ../books/Book_11_-_Earthly_Things.tokenised $(DEPS)
 	python3 process-codex.py $< | python3 tag-codex.py > $@
