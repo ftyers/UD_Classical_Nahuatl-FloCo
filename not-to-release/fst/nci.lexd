@@ -5168,7 +5168,7 @@ omipatilihuiliztli:omipatilihuiliz[tli]
 omipatolli:omipatol[li]
 omipetoniliztli:omipetoniliz[tli]
 omiqueloniliztli:omiqueloniliz[tli]
-omitl:omi[tl]
+omitl:{o}mi[tl]
 omitzotzopaztli:omitzotzopaz[tli]
 omixochitl:omixochi[tl]
 omiyotl:omiyo[tl]
@@ -12173,10 +12173,11 @@ LEXICON Aux
 
 LEXICON Dir
 
-<ven><pres>:tiuh
-<ven><past>:to
-<and><fut>:qui
-<and><past>:co
+<ven><pres>:>tiuh
+<ven><pres>:>{T}iuh # This is terrible // chachalcatiuh, huetzitiuh, chachapantiuh
+<ven><past>:>to
+<and><fut>:>qui
+<and><past>:>co
 
 PATTERN TenseVerb
 ObjVerb[cl1] Tense[-pret]
@@ -12235,6 +12236,7 @@ huitz<v><iv><pres>:huitz[sg]
 huitz<v><iv><pres>:huizt>eh[pl]
 
 nequi<aux>:nequi
+
 
 PATTERN AnyStem
 IVStem
@@ -14916,6 +14918,7 @@ axixa[cl2] # "urinate"
 #/([aeiocltzxmny]|hu|tl|ch|qu)+(a|i)(<guess><cl1>:)/[cl1]
 
 «cocoliztli<n>»cui:«cocoliz»cui[cl1]
+chachapani[cl2]
 
 LEXICON VerbRootTV
 aachcui[cl1]

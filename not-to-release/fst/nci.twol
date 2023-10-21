@@ -11,6 +11,7 @@ Alphabet
  %{N%}:n %{N%}:m
  %{o%}:o %{o%}:0
  %{i%}:0
+ %{T%}:t
 ! h:0
 
  %~:%~
@@ -91,6 +92,13 @@ i:0 => %{q%}: u _ %>: e ;
 !@ {q}:q u:u i:0 >:> e:e l:l l:l a:a c:c u:u a:a h:h u:u a:a
 
 "removal of -a before ligature"
-a:0 <=> o _ %>: t i ·: ; 
+Vx:0 <=> o _ %>: t i ·: ; 
+	where Vx in ( a ) ;
 
 !@ {q}:q u > t e t e m o a:0 > t i · n e m i
+
+"removal of vow before -tiuh"
+Vx:0 <=> Cns _ %>: %{T%}: i u h ; 
+	where Vx in ( a i ) ;
+
+!@ c h a c h a p a n i:0 > t i u h
