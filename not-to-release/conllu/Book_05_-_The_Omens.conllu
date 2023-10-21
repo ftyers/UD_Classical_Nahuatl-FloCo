@@ -3002,7 +3002,7 @@
 # references = A&D/170:3
 # tagged = 100.00%
 # lemmatised = 100.00%
-# analysed = 95.89%
+# analysed = 98.63%
 1	No	no	ADV	_	_	3	advmod	3:advmod	Folio=8|Paragraph=3|Line=1|Norm=No|Gloss=también
 2	ioan	huan	NOUN	_	NounType=Relat	3	_	3	Folio=8|Paragraph=3|Line=1|Norm=ihuan|Gloss=con
 3	netetzaujloia	tetzahuia	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[iobj]=Yes|Subcat=Ditr|Tense=Past|VerbForm=Fin	0	root	0:root	Folio=8|Paragraph=3|Line=1|Norm=netetzahuiloya|Analysed=Yes
@@ -3073,9 +3073,11 @@
 67	tlatolli	tlahtolli	NOUN	_	State=Abs	68	_	68	Folio=8|Paragraph=3|Line=10|Norm=tlahtolli|Gloss=palabra|Analysed=Yes
 68	coneoaltiz	ehualtia	VERB	_	_	27	_	27	Folio=8|Paragraph=3|Line=10|Norm=conehualtiz|Root=ehua
 69	:	:	PUNCT	_		70	punct	70:punct	Folio=8|Paragraph=3|Line=10|Norm=:|Analysed=Yes
-70	contlatollaqujliz	tlahtollaquilia	VERB	_	_	68	_	68	Folio=8|Paragraph=3|Line=11|Norm=contlahtollaquiliz|Incorp[obj]=tlahtol
+70	contlatollaqujliz	tlaquilia	VERB	_	Directional=On|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Fut|VerbForm=Fin	68	_	68	Folio=8|Paragraph=3|Line=11|Norm=contlahtollaquiliz|Incorp[obj]=tlahtol|Analysed=Yes
+70.1	tlahtol	tlahtolli	NOUN	_	_	_	_	_	Incorporated=Yes
 71	,	,	PUNCT	_		72	punct	72:punct	Folio=8|Paragraph=3|Line=11|Norm=,|Analysed=Yes
-72	contlatolchichiujliz	tlahtolchichihuila	VERB	_	_	68	_	68	Orig=contlatolchichiuj¶·liz|Folio=8,8|Paragraph=3,3|Line=11,12|Norm=contlahtolchichihuiliz|Incorp[obj]=tlahtol|Root=chichihuilia
+72	contlatolchichiujliz	chichihuilia	VERB	_	Directional=On|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Fut|VerbForm=Fin	68	_	68	Orig=contlatolchichiuj¶·liz|Folio=8,8|Paragraph=3,3|Line=11,12|Norm=contlahtolchichihuiliz|Incorp[obj]=tlahtol|Root=chichihuilia|Analysed=Yes
+72.1	tlahtol	tlahtolli	NOUN	_	_	_	_	_	Incorporated=Yes
 73	.	.	PUNCT	_		3	punct	3:punct	Folio=8|Paragraph=3|Line=12|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:53
