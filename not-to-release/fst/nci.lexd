@@ -278,22 +278,22 @@ achi<det><qnt>:achi
 ce<det><qnt>:ce
 cemeh<det><qnt>:cemeh
 cequi<det><qnt>:cequi
-cequintin<det><qnt>:cequintin
+cequintin<det><qnt><pl>:cequintin
 ixachi<det><qnt>:ixachi
-ixachintin<det><qnt>:ixachintin
+ixachintin<det><qnt><pl>:ixachintin
 miyac<det><qnt>:miyac
 miyaquin<det><qnt>:miyaquin
-miyactin<det><qnt>:miyactin
-miyaquintin<det><qnt>:miyaquintin
+miyactin<det><qnt><pl>:miyactin
+miyaquintin<det><qnt><pl>:miyaquintin
 moch<det><qnt>:moch
 mochi<det><qnt>:mochi
 mochin<det><qnt>:mochin
-mochtin<det><qnt>:mochtin
-mochintin<det><qnt>:mochintin
+mochtin<det><qnt><pl>:mochtin
+mochintin<det><qnt><pl>:mochintin
 izqui<det><qnt>:izqui
-izquintin<det><qnt>:izquintin
+izquintin<det><qnt><pl>:izquintin
 ixquich<det><qnt>:ixquich
-ixquichtin<det><qnt>:ixquichtin
+ixquichtin<det><qnt><pl>:ixquichtin
 
 LEXICON PART
 ma<part><opt>:ma
@@ -11588,12 +11588,12 @@ nentlan:nentlan[tli]
 tlamacehuayan:tlamacehuayan[tli]
 temamauhtiliztli:temamauhtiliz[tli]
 mahuizcuiyan:mahuizcuiyan[tli]
-huehuetlacatl:huehuetlaca[tl] 
+huehuetlacatl:huehuetla[catl]
 quizayan:quizayan[tli]
 cuitlacaxiuhiyan:cuitlacaxiuhiyan[tli]
 
-mauhcatlacatl:mauhcatlaca[tl]
-huehuetlacatl:huehuetlaca[tl]
+mauhcatlacatl:mauhcatla[catl]
+huehuetlacatl:huehuetla[catl]
 
 tlapallo:tlapallo[poss]
 teiccauhtli:teiccauh[tli]
@@ -12139,6 +12139,8 @@ LEXICON ObjectSpec(2)
 
 LEXICON ObjectRefl(2)
 <o_ref> <i_ref>:mo>
+<o_ref> <i_ref>:t{o}>
+<o_ref> <i_ref>:no>
 
 LEXICON ObjectNonSpec(2)
 <o_aa3> <i_aa3>:te>
@@ -12163,6 +12165,11 @@ LEXICON Tense
 <imp>:>can[pl,imp]
 <imp>:[sg,imp]
 
+# Check these
+<prog>:>{T}oc[sg]
+<prog>:>{T}oqueh[pl]
+<prog>:>{T}oque[pl]
+
 LEXICON Aux
 +nemi<aux>:>ti·nemi
 +huetzi<aux>:>ti·huetzi
@@ -12180,6 +12187,7 @@ LEXICON Dir
 <ven><past>:>to
 <and><fut>:>qui
 <and><past>:>co
+
 
 PATTERN TenseVerb
 ObjVerb[cl1] Tense[-pret]
@@ -12240,6 +12248,16 @@ huitz<v><iv><pres>:huitz[sg]
 huitz<v><iv><pres>:huizt>eh[pl]
 
 nequi<aux>:nequi
+
+#nonoc = yo estoy acostado; tu, tonoc, él/ella, onoc; nosotros, tonoque; vosotros, amonoque; ellos, onoque; onoya = (la gerundiua); onoca = (el pretérito perfecto), yo estaua, yo estuue, y hauia estado acostado; tu, tonoca; él/ella, onoca; nosotros, tonocah; vosotros, amonocah; ellos, onocah; onoua = (el impesonal) todos están acostados (Tetzcoco, 1595)
+onoc<v><iv><pres>:ono>c[sg]
+onoc<v><iv><pres>:ono>que[pl]
+onoc<v><iv><pres>:ono>queh[pl]
+onoc<v><iv><impf>:ono>ya[sg]
+onoc<v><iv><impf>:ono>ya>h[pl]
+onoc<v><iv><pret>:ono>ca[sg]
+onoc<v><iv><pret>:ono>ca>h[pl]
+
 
 
 PATTERN AnyStem
