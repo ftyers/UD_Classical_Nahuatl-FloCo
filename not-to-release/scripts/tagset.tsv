@@ -1,11 +1,14 @@
 #prior  lem     pos     feat    dep     lem     pos     feat    		dep
 2	_	n	rel	_	_	NOUN	NounType=Relat		_
+2	_	v	aug	_	_	VERB	Aspect=Prior		_
+2	_	n	aug	_	_	NOUN	NounDeriv=Aug		_
 #2	_	prn	rel	_	_	PRON	PronType=Rel		_
 #2	_	adv	rel	_	_	ADV	PronType=Rel		_
 0	_	_	pers	_	_	_	PronType=Prs		_
 0	_	_	abs	_	_	_	State=Abs		_
 0	_	_	voc	_	_	_	Clitic=Voc		_
 0	_	_	loc	_	_	_	NounClass=Loc		_
+0	_	_	dim	_	_	_	NounDeriv=Dim		_
 0	_	_	p1	_	_	_	Person=1		_
 0	_	_	p2	_	_	_	Person=2		_
 0	_	_	p3	_	_	_	Person=3		_
@@ -27,7 +30,6 @@
 0	_	_	fut	_	_	_	VerbForm=Fin|Tense=Fut		_
 0	_	_	imp	_	_	_	VerbForm=Fin|Mood=Imp		_
 0	_	_	impf	_	_	_	VerbForm=Fin|Aspect=Imp|Tense=Past	_
-0	_	_	aug	_	_	_	Aspect=Prior				_
 0	_	_	impers	_	_	_	VerbForm=Fin|Person=Impers	_
 0	_	_	rev	_	_	_	Reverential=Yes	_
 0	_	_	i_sg1	_	_	_	Number[iobj]=Sing|Person[iobj]=1	_

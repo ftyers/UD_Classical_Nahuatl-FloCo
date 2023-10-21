@@ -13,6 +13,7 @@ Alphabet
  %{i%}:0
  %{T%}:t
  %{C%}:c
+ %{é%}:e
 ! h:0
 
  %~:%~
@@ -129,3 +130,5 @@ m:n <=> _ i:0 %>: %{T%}: ;
 !@ t e h t e m:n i:0 > {T}:t i u h
 
 
+"drop -i before vocative"
+i:0 <=> t l _ %>: %{é%}:  ;

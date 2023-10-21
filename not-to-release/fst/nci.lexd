@@ -47,15 +47,19 @@ Comunes[spa-anes] [<n>:] N-ABS-SPA[spa-anes]
 
 LEXICON Possessives
 <px3aa>:te>
+<px3nn>:tla>
 <px1sg>:no>
 <px1sg>:no~no> # FIXME: Check
 <px2sg>:mo>
 <px3sg>:i>
 <px1pl>:to>
+<px1pl>:t{o}>
 <px2pl>:namo> # FIXME: Check
 <px3pl>:i{N}>
 
 LEXICON N-ABS
+<abs>:e[e]
+<pl>:e>que[e]
 <abs>:li[li]
 <pl>:tin[li]
 <abs>:tl[tl]
@@ -68,8 +72,11 @@ LEXICON N-ABS
 <abs>:huitl[huitl]
 <abs>:[Ø]
 <pl>:me[Ø]
-<abs>:ni[ni]
+<abs>:i[ni]
+<pl>:ime[ni]
+<pl>:imeh[ni]
 <abs>:[eca]
+<pl>:[teteuh]
 <pl>:>uh[teteuh]
 <pl>:tin[cicitlaltin,tin]
 <abs>:t[t]
@@ -88,19 +95,21 @@ LEXICON N-ABS-SPA
 :[spa]
 
 LEXICON N-VOC
-<voc>:e[li]
-<voc>:e[tl]
-<voc>:e[tli]
+#<voc>:e[li]
+#<voc>:e[tl]
+#<voc>:e[tli]
+<voc>:>{é}
 
 PATTERN Noun-Absolutive
-(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,teteuh,cicitlaltin,catl,qui,t,in]]
+(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,teteuh,cicitlaltin,catl,qui,t,in,e]]
 VerbRootIV [<v><iv><nmlz>:>liz] N-ABS[tli]
 
 PATTERN Noun-Vocative
-(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-VOC)[^[li,tl,tli,huitl,Ø,ni,eca,teteuh,cicitlaltin,catl,qui,t,in]]
+(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,teteuh,cicitlaltin,catl,qui,t,in,e]] N-VOC
 
 PATTERN Noun-Possessed
-Comunes[-teteuh,-cicitlaltin,-spa,-spa-s,-spa-es,-spa-anes,-loc,-rel] [<n>:]
+#Comunes[-teteuh,-cicitlaltin,-spa,-spa-s,-spa-es,-spa-anes,-loc,-rel] [<n>:]
+Comunes[-cicitlaltin,-spa,-spa-s,-spa-es,-spa-anes,-loc,-rel] [<n>:]
 
 LEXICON N-DERIV 
 <rev>:>tzin
@@ -436,8 +445,6 @@ tlallan # "underground"
 petlapan # "on the mat"
 nepantla # "middle"
 
-zacatlan:zacatlan
-nemiyan
 
 # Book 05
 yaoc:yaoc # yaotl
@@ -465,6 +472,16 @@ tlazolpan:tlazolpan #
 mictlampa:mictlampa # 
 nemachpan:nemachpan # 
 calipan:calipan # 
+
+zacatlan:zacatlan
+nonopallan:nonopallan
+memetlan:memetlan
+nemiyan
+tepetzalan:tepetzalan
+neaxixaloyan:neaxixaloyan
+cuauhnepantla:cuauhnepantla
+callan:callan
+
 
 
 
@@ -5838,7 +5855,7 @@ tecuaizteminaliztli:tecuaizteminaliz[tli]
 tecuanatl:tecuana[tl]
 tecuancamotl:tecuancamo[tl]
 tecuanicpalli:tecuanicpal[li]
-tecuani:tecua[ni] # "bestia"
+tecuani:tecuan[ni] # "bestia"
 tecuantonalli:tecuantonal[li]
 tecuappantli:tecuappan[tli]
 tecuatepiniliztli:tecuatepiniliz[tli]
@@ -9524,7 +9541,7 @@ tlatletzoyonilli:tlatletzoyonil[li]
 tlatlilli:tlatlil[li]
 tlatlilpalli:tlatlilpal[li]
 tlatl:tla[tl]
-tlatoani:tlatoa[ni]
+tlatoani:tlatoan[ni]
 tlatocaihcuilolli:tlatocaihcuilol[li]
 tlatocaticalactli:tlatocaticalac[tli]
 tlatocatlanahuatilli:tlatocatlanahuatil[li]
@@ -10997,7 +11014,7 @@ yaotiyanquiztli:yaotiyanquiz[tli]
 yaotlahtolli:yaotlahtol[li]
 yaotlalli:yaotlal[li]
 yaotlapiyaliztli:yaotlapiyaliz[tli]
-yaotlatoani:yaotlatoa[ni]
+yaotlatoani:yaotlatoan[ni]
 yaotl:yao[tl]
 yaoxacalli:yaoxacal[li]
 yaoyotl:yaoyo[tl]
@@ -11473,7 +11490,7 @@ malcalli:malcal[li]
 aquilli:aquil[li]
 acualli:acual[li]
 tlazopilli:tlazopi~pil[li]
-tecocoliani:tecocolia[ni]
+tecocoliani:tecocolian[ni]
 tochin:tochin[Ø]
 yaotequihua:yaotequihua[Ø]
 tachcauh:tachcauh[Ø]
@@ -11503,7 +11520,7 @@ tlacayectli:tlacayec[tli]
 ihuitl:ihui[tl]
 cozatli:coza[tli]
 cruz[spa-es]
-tecuanime[Ø]
+#tecuanime[Ø]
 tlatlacatecolo[tl]
 cuecueya[Ø]
 tonalli<n>+tlapalihui:tonallapalihui[Ø]
@@ -11512,7 +11529,7 @@ chiquimoli:chiquimo[li]
 yollotl<n>+tlapalihui:yollotlapalihui[Ø]
 yaotl<n>+tlahueliloc:yaotlahueliloc[Ø]
 ticitl:tici[tl]
-cualoni:cualo[ni] # "food"
+cualoni:cualon[ni] # "food"
 patli:pa[tli] # "herb"
 tlanelhuatl:tlanelhua[tl] # "foundation"
 cuauhtli:cuauh[tli] # "eagle"
@@ -11580,6 +11597,7 @@ nexehuac[Ø] # "a medicinal herb"
 tochtli:toch[tli] # "rabbit"
 quechcotonqui:quechcoton[qui] # "decapitated person"
 
+# Book 05
 nextitlan:nextitlan[tli]
 titlan:titlan[tli]
 tlecuillan:tlecuillan[tli]
@@ -11600,6 +11618,31 @@ techiuhcauh:techiuhcauh[poss]
 teiccauhtli:teiccauh[tli]
 millacatl:milla[catl]
 miquizliztli:miquizliz[tli]
+
+chane:chan[e]
+nenonotzale:nenonotzal[e]
+
+atlauhtli:atlauh[tli]
+cuiloni:cuilon[ni]
+huitzitl:huitzi[tl]
+tecuantlacualli:tecuantlacual[li]
+
+xolo:xolo[Ø] # paje
+
+miquiztemachiani:miquiztemachian[ni]
+tlamatini:tlamatin[ni]
+hueyiyecoani:hueyiyecoan[ni]
+tlapiloni:tlapilon[ni]
+nehnemini:nehnemin[ni]
+tepoloani:tepoloan[ni]
+mach:mach[poss]
+yomotlan:yomotlan[poss]
+tepitzyollotl:tepitzyollo[tl]
+
+ezzo:ezzo[poss]
+
+quinametli:quiname[tli]
+tecocolica:tecocolica[poss]
 
 LEXICON Propios 
 Quetzalcoatl:Quetzalcoa[tl]
@@ -14895,6 +14938,7 @@ zozotlahu[cl2]
 huehuetzca[cl1]
 tzatzi[cl1]
 pipitzca[cl1]
+pipipitzca[cl1]
 chicha[cl1]
 moloni[cl2]
 zotlahua[cl2]
@@ -14967,6 +15011,11 @@ quiquinaca[cl2] # "groan, buzz"
 chololoa[cl3]
 mihmiloa:mimiloa[cl3]
 «tachcauh<n>»chihua:«tachcauh»chihua[cl2] # tachcauhchiuhtiuh
+
+pilca:pilca[cl1] # PILCA preterit-as-present verb; pret: PIL-CAC to be hanging / estar colgado o ahorcado (M) See PILOĀ. 
+
+acahuatimani:acahuatimani[cl2]
+coxoni:coxoni[cl2]
 
 LEXICON VerbRootTV
 aachcui[cl1]
@@ -15568,6 +15617,7 @@ chololtia[cl3]
 chopinia[cl3]
 choponia[cl3]
 choquilia[cl3]
+chochoquilia[cl3]
 choquiltia[cl3]
 choquitia[cl3]
 choquizcuicatia[cl3]
@@ -19453,6 +19503,7 @@ tlamachtia[cl3]
 «cal<n>»maca:«cal»maca[cl2]
 tlatoltia[cl3]
 tlathuiltia[cl3]
+huihuitoni:huihuitoni[cl2]
 
 #/([aeiocltzxmny]|hu|tl|ch|qu)+(oa|ia)(<guess><cl3>:)/[cl3]
 #/([aeiocltzxmny]|hu|tl|ch|qu)+(a|i)(<guess><cl2>:)/[cl2]
