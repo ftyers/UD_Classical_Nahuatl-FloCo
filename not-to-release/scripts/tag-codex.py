@@ -5,6 +5,33 @@ import glob
 
 alphabet = 'abcdefghijklmnopqrstuvxyz'
 
+def levenshtein(u, v):
+	prev = None
+	curr = [0] + list(range(1, len(v) + 1))
+
+	# Operations: (SUB, DEL, INS)
+	prev_ops = None
+	curr_ops = [(0, 0, i) for i in range(len(v) + 1)]
+	for x in range(1, len(u) + 1):
+		prev, curr = curr, [x] + ([None] * len(v))
+		prev_ops, curr_ops = curr_ops, [(0, x, 0)] + ([None] * len(v))
+		for y in range(1, len(v) + 1):
+			delcost = prev[y] + 1
+			addcost = curr[y - 1] + 1
+			subcost = prev[y - 1] + int(u[x - 1] != v[y - 1])
+			curr[y] = min(subcost, delcost, addcost)
+			if curr[y] == subcost:
+				(n_s, n_d, n_i) = prev_ops[y - 1]
+				curr_ops[y] = (n_s + int(u[x - 1] != v[y - 1]), n_d, n_i)
+			elif curr[y] == delcost:
+				(n_s, n_d, n_i) = prev_ops[y]
+				curr_ops[y] = (n_s, n_d + 1, n_i)
+			else:
+				(n_s, n_d, n_i) = curr_ops[y - 1]
+				curr_ops[y] = (n_s, n_d, n_i + 1)
+	return curr[len(v)], curr_ops[len(v)]
+
+
 def guess(norm, guessed_lemma, guessed_upos, misc):
 	norm = norm.lower()
 	guessed_misc = '_'
@@ -277,15 +304,26 @@ for bloc in sys.stdin.read().split('\n\n'):
 			
 #		print('ANAL', analyses)
 		converted_analyses = []
-		generated_analyses = {}
+		generated_forms = {}
 		# [{'lemma': 'teotl', 'pos': 'NOUN', 'feats': {'Case': 'Abs'}}] [('teotl<n><abs>', 0.0)]
 		for analysis in analyses:
 			a = analysis[0]
-			c = convertor.convert(a)
-			generated_analyses[a] = list(genfst.apply(a))
+			generated_forms[a] = list(genfst.apply(a))
+			min_ = sys.maxsize
+			best_form = ''
+			for generated_form in generated_forms[a]:
+				clean_form = re.sub(r'[>·«»~]', '', generated_form[0])
+				if '«' in generated_form[0] or '·' in generated_form[0]:
+					ld = levenshtein(form, clean_form)
+					if ld[0] < min_:
+						min_ = ld[0]
+						best_form = generated_form[0]
+#					print('FORM:', form, clean_form,'|', ld,'|', min_, '|', best_form, file=sys.stderr)
+					
+			c = convertor.convert(a, best_form)
 			if c[0] not in converted_analyses:
 				converted_analyses.append(c[0])
-			#print(form, '|', norm, '|||', c, '|||', a, '|||', generated_analyses, file=sys.stderr)
+#			print(form, '|', norm, '|||', c, '|||', a, '|||', generated_analyses, file=sys.stderr)
 
 		if len(converted_analyses) > 0:
 			n_analysed += 1
@@ -317,7 +355,7 @@ for bloc in sys.stdin.read().split('\n\n'):
 			ufeats = '_'
 			if empty['feats'] != set():
 				ufeats = '|'.join(list(empty['feats']))
-			new_lines.append([row[0] + '.' + str(i+1), '_', empty['lemma'], empty['pos'], '_', ufeats, '_', '_', '_', 'Incorporated=Yes'])
+			new_lines.append([row[0] + '.' + str(i+1), empty['surface'], empty['lemma'], empty['pos'], '_', ufeats, '_', '_', '_', 'Incorporated=Yes'])
 
 	print('\n'.join(comments))
 	if n_tokens > 0:
