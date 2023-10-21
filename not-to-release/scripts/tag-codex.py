@@ -272,7 +272,7 @@ for bloc in sys.stdin.read().split('\n\n'):
 
 		if norm in preferences:
 			analyses = preferences[norm]
-		else if norm.lower() in preferences:
+		elif norm.lower() in preferences:
 			analyses = preferences[norm.lower()]
 			
 #		print('ANAL', analyses)
