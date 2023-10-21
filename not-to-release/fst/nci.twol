@@ -53,6 +53,14 @@ o:0 <=> m _ %>: %{i%}: ;
 "hu/uh II"
 %{u%}:0 <=> _ h %{u%}: %>: Vow ;
 
+"hui -> uh (I)"
+h:u <=> _ u: i: %>: %{T%}: ;
+
+"hui -> uh (II)"
+u:h <=> h: _ i: %>: %{T%}: ;
+
+!@ o {N}:m > p o l i h:u u:h i:0 > {T}:t i u h
+
 "uh + huan (I)"
 u:0 <=> _ h: %>: h u a n ;
 
@@ -98,7 +106,16 @@ Vx:0 <=> o _ %>: t i ·: ;
 !@ {q}:q u > t e t e m o a:0 > t i · n e m i
 
 "removal of vow before -tiuh"
-Vx:0 <=> Cns _ %>: %{T%}: i u h ; 
+Vx:0 <=> [ Cns | i | :u :h ] _ %>: %{T%}: i u h ; 
 	where Vx in ( a i ) ;
 
-!@ c h a c h a p a n i:0 > t i u h
+!@ c h a c h a p a n i:0 > {T}:t i u h
+
+!@ n i > c > t l a t i a:0 > {T}:t i u h
+
+"m>n before {T}"
+m:n <=> _ i:0 %>: %{T%}: ; 
+
+
+!@ t e h t e m:n i:0 > {T}:t i u h
+
