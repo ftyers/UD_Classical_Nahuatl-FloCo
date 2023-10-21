@@ -12095,6 +12095,10 @@ LEXICON Directional
 <on>:o{N}>
 <hual>:hual>
 
+LEXICON IncorpAdv
+
+«cen<adv>»:«ce{N}»>
+
 LEXICON Subject
 <s_sg1>:ni>[sg]
 <s_pl1>:ti>[pl]
@@ -12108,20 +12112,20 @@ LEXICON Subject
 <s_pl2>:xi[pl,imp]>
 
 PATTERN ObjectPrefix
-ObjectSpec(1): :ObjectSpec(2)
-ObjectRefl(1): :ObjectRefl(2)
-ObjectNonSpec(1): :ObjectNonSpec(2)
+ObjectSpec(1): :ObjectSpec(2) IncorpAdv?
+ObjectRefl(1): :ObjectRefl(2) IncorpAdv?
+ObjectNonSpec(1): :ObjectNonSpec(2) IncorpAdv?
 
 PATTERN IObjPrefix
-ObjectSpec(2) Directional?
-Directional? ObjectRefl(2)
-Directional? ObjectNonSpec(2)
-Directional? [<i_ref>:ne>]
+ObjectSpec(2) Directional? IncorpAdv?
+Directional? ObjectRefl(2) IncorpAdv?
+Directional? ObjectNonSpec(2) IncorpAdv?
+Directional? [<i_ref>:ne>] IncorpAdv?
 
 PATTERN TwoObjectPrefix
 IObjPrefix
-ObjectPrefix Directional? ObjectNonSpec(2)
-ObjectPrefix Directional? ObjectDouble
+ObjectPrefix Directional? ObjectNonSpec(2) IncorpAdv?
+ObjectPrefix Directional? ObjectDouble IncorpAdv?
 
 LEXICON ObjectSpec(2)
 <o_sg1> <i_sg1>:nech>
@@ -12876,6 +12880,7 @@ cuauhtoci[cl1]
 cuauhtzahtzayana[cl2]
 cuauhtzayana[cl2]
 cuauhxeloa[cl3]
+«cuauhtli<n>»xeloa:«cuauh»xeloa[cl3]
 cuauhxima[cl2]
 cuauhxoxotli[cl1]
 cuauhyacana[cl2]
@@ -13575,7 +13580,7 @@ nahualcalaqui[cl2]
 nahuallacaqui[cl2]
 nahuallachiya[cl2]
 nahualpolihui[cl2]
-«tlalli<n>»polihui:tlalpolihui[cl2]
+«tlalli<n>»polihui:«tlal»polihui[cl2]
 nahualquiza[cl2]
 nahuatillalia[cl3]
 nahuatillaza[cl2]
@@ -15900,6 +15905,7 @@ cuicatlalhuia[cl3]
 cuicatlaxilia[cl3]
 cuicayotia[cl3]
 cui[cl1]
+«cocoliztli<n>»cui:«cocoliz»cui[cl1]
 cuicuihcui[cl1]
 cuicuitihuetzi[cl2]
 cuicuitlalpia[cl3]
@@ -19326,7 +19332,7 @@ zozotlahua[cl2]
 
 mottitia[cl3]
 tlaloa[cl3] # TODO: specifically transitive
-«mauhca<adv>»tlaloa:mauhcatlaloa[cl3]
+«mauhca<adv>»tlaloa:«mauhca»tlaloa[cl3]
 aci[cl1]
 ihtoznequi[cl1]
 calaquia[cl3]
@@ -19682,6 +19688,7 @@ iyohcatia[cl3]
 izcaltilia[cl3]
 iztlacalhuia[cl3]
 maca[cl1]
+«tlacualli<n>»maca:«tlacua»maca[cl1]
 macahualtia[cl3]
 macahuilia[cl3]
 maca[cl2]

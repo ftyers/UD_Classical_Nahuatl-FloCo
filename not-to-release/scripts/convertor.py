@@ -192,7 +192,7 @@ class Convertor(object):
 		analysis = []
 		subwords = analysis_.split('+')
 		if surface_ != '':
-			print('CONVERT:', analysis_, '|', surface_, file=sys.stderr)
+		#	print('CONVERT:', analysis_, '|', surface_, file=sys.stderr)
 			if surface_.count('·') == len(subwords):
 				subsurface = surface_.split('·')
 				for word, surface in zip(subwords, subsurface):

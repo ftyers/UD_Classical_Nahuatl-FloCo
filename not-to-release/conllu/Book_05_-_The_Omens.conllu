@@ -1296,7 +1296,7 @@
 # references = A&D/163:5
 # tagged = 100.00%
 # lemmatised = 97.50%
-# analysed = 87.50%
+# analysed = 90.00%
 1	Auh	auh	CCONJ	_	_	15	cc	_	Folio=3|Paragraph=2|Line=22|Norm=Auh|Gloss=y
 2	intla	tla	PRON	_	_	6	mark	_	Orig=intlacana|Folio=3|Paragraph=2|Line=22|Norm=intla|Gloss=algo
 3	cana	cana	ADV	_	_	6	advmod	_	Orig=intlacana|Folio=3|Paragraph=2|Line=22|Norm=cana|Gloss=alguna.parte
@@ -1322,7 +1322,8 @@
 22	,	,	PUNCT	_		23	punct	_	Folio=3|Paragraph=2|Line=26|Norm=,|Analysed=Yes
 23	qujcujtlalpia	cuitlalpiya	VERB	_	Number[iobj]=Sing|Number[subj]=Plur,Sing|Person[iobj]=3|Person[subj]=3|Subcat=Ditr|Tense=Pres|VerbForm=Fin	15	conj	_	Folio=3|Paragraph=2|Line=26|Norm=quicuitlalpiya|Root=piya|Analysed=Yes
 24	,	,	PUNCT	_		25	punct	_	Folio=3|Paragraph=2|Line=26|Norm=,|Analysed=Yes
-25	qujcencujtlalpia	cuitlalpiya	VERB	_	_	23	conj	_	Orig=qujcen¶·cujtlalpia|Folio=3,3|Paragraph=2,2|Line=26,27|Norm=quicencuitlalpiya|Incorp[advmod]=cen|Root=piya
+25	qujcencujtlalpia	cuitlalpiya	VERB	_	Number[iobj]=Sing|Number[subj]=Plur,Sing|Person[iobj]=3|Person[subj]=3|Subcat=Ditr|Tense=Pres|VerbForm=Fin	23	conj	_	Orig=qujcen¶·cujtlalpia|Folio=3,3|Paragraph=2,2|Line=26,27|Norm=quicencuitlalpiya|Incorp[advmod]=cen|Root=piya|Analysed=Yes
+25.1	cen	cen	ADV	_	_	_	_	_	Incorporated=Yes
 26	,	,	PUNCT	_		27	punct	_	Folio=3|Paragraph=2|Line=27|Norm=,|Analysed=Yes
 27	qujcemjlpia	ilpiya	VERB	_	_	23	conj	_	Folio=3|Paragraph=2|Line=27|Norm=quicemilpiya|Incorp[advmod]=cen|Root=ilpiya
 28	,	,	PUNCT	_		29	punct	_	Folio=3|Paragraph=2|Line=27|Norm=,|Analysed=Yes
@@ -1610,7 +1611,7 @@
 25	:	:	PUNCT	_		28	punct	_	Folio=4|Paragraph=3|Line=5|Norm=:|Analysed=Yes
 26	in	in	DET|SCONJ	_	_	28	_	_	Orig=injuhquj|Folio=4|Paragraph=3|Line=5|Norm=in
 27	juhquj	iuhqui	ADV	_		28	_	_	Orig=injuhquj|Folio=4|Paragraph=3|Line=5|Norm=iuhqui|Gloss=así|Analysed=Yes
-28	quauhxeloaia	cuauhxeloa	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	24	_	_	Folio=4|Paragraph=3|Line=5|Norm=cuauhxeloaya|Incorp[obj]=cuauh|Root=xeloa|Analysed=Yes
+28	quauhxeloaia	cuauhxeloa	VERB	_	_	24	_	_	Folio=4|Paragraph=3|Line=5|Norm=cuauhxeloaya|Incorp[obj]=cuauh|Root=xeloa
 29	,	,	PUNCT	_		31	punct	_	Folio=4|Paragraph=3|Line=5|Norm=,|Analysed=Yes
 30	in	in	DET|SCONJ	_	_	31	_	_	Folio=4|Paragraph=3|Line=5|Norm=in
 31	qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	13	_	_	Folio=4|Paragraph=3|Line=6|Norm=quihtoaya|Analysed=Yes
@@ -1673,7 +1674,7 @@
 # lemmatised = 100.00%
 # analysed = 95.24%
 1	In	in	DET|SCONJ	_	_	2	_	_	Orig=I·nontlamaceoato|Folio=4,4|Paragraph=4,4|Line=5,5|Norm=In
-2	ontlamaceoato	macehua	VERB	_	Animacy[obj]=Inan|Directional=Ven|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	_	Orig=I·nontlamaceoato|Folio=4,4|Paragraph=4,4|Line=5,5|Norm=ontlamacehuato|Analysed=Yes
+2	ontlamaceoato	macehua	VERB	_	Animacy[obj]=Inan|Directional=On|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	_	Orig=I·nontlamaceoato|Folio=4,4|Paragraph=4,4|Line=5,5|Norm=ontlamacehuato|Analysed=Yes
 3	,	,	PUNCT	_		5	punct	_	Folio=4|Paragraph=4|Line=5|Norm=,|Analysed=Yes
 4	in	in	DET|SCONJ	_	_	5	_	_	Orig=inonacxoiatlalito|Folio=4|Paragraph=4|Line=6|Norm=in
 5	onacxoiatlalito	acxoyatlalia	VERB	_	_	2	_	_	Orig=inonacxoiatlalito|Folio=4|Paragraph=4|Line=6|Norm=onacxoyatlalito|Incorp[obj]=acxoya
@@ -1701,7 +1702,8 @@
 27	,	,	PUNCT	_		28	punct	_	Folio=4|Paragraph=4|Line=10|Norm=,|Analysed=Yes
 28	tlaxeloa	xeloa	VERB	_	Animacy[obj]=Inan|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	20	_	_	Folio=4|Paragraph=4|Line=10|Norm=tlaxeloa|Analysed=Yes
 29	,	,	PUNCT	_		30	punct	_	Folio=4|Paragraph=4|Line=10|Norm=,|Analysed=Yes
-30	quauhxeloa	cuauhxeloa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	28	_	_	Orig=quauh·xeloa|Folio=4,4|Paragraph=4,4|Line=10,10|Norm=cuauhxeloa|Incorp[obj]=cuauh|Root=xeloa|Analysed=Yes
+30	quauhxeloa	xeloa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	28	_	_	Orig=quauh·xeloa|Folio=4,4|Paragraph=4,4|Line=10,10|Norm=cuauhxeloa|Incorp[obj]=cuauh|Root=xeloa|Analysed=Yes
+30.1	cuauh	cuauhtli	NOUN	_	_	_	_	_	Incorporated=Yes
 31	:	:	PUNCT	_		34	punct	_	Folio=4|Paragraph=4|Line=10|Norm=:|Analysed=Yes
 32	cenca	cenca	ADV	_		34	_	_	Folio=4|Paragraph=4|Line=10|Norm=cenca|Gloss=muy|Analysed=Yes
 33	veca	huehca	ADV	_		34	_	_	Folio=4|Paragraph=4|Line=11|Norm=huehca|Gloss=lejos|Analysed=Yes
@@ -2533,7 +2535,7 @@
 43	aco	azo	ADV	_		45	_	45	Folio=7|Paragraph=1|Line=7|Norm=azo|Gloss=quizás|Analysed=Yes
 44	ie	ye	ADV	_	_	45	_	45	Orig=ietlalpoliujz|Folio=7|Paragraph=1|Line=7|Norm=ye|AmbigNorm=True|Override=False
 45	tlalpoliujz	polihui	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	1	_	1	Orig=ietlalpoliujz|Folio=7|Paragraph=1|Line=7|Norm=tlalpolihuiz|Analysed=Yes
-45.1	_	tlal	NOUN	_	_	_	_	_	Incorporated=Yes
+45.1	tlal	tlalli	NOUN	_	_	_	_	_	Incorporated=Yes
 46	in	in	DET	_	_	47	_	47	Orig=injchan|Folio=7|Paragraph=1|Line=7|Norm=in
 47	jchan	chantli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	45	_	45	Orig=injchan|Folio=7|Paragraph=1|Line=7|Norm=ichan|Gloss=su.casa|Analysed=Yes
 48	,	,	PUNCT	_		50	punct	50:punct	Folio=7|Paragraph=1|Line=7|Norm=,|Analysed=Yes
@@ -3217,7 +3219,7 @@
 21	:	:	PUNCT	_		23	punct	_	Folio=8|Paragraph=6|Line=3|Norm=:|Analysed=Yes
 22	ie	ye	ADV	_	_	23	advmod	_	Orig=ietlalpoli¶·ujz|Folio=8,8|Paragraph=6,6|Line=3,4|Norm=ye|AmbigNorm=True|Override=False
 23	tlalpoliujz	polihui	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	14	ccomp	_	Orig=ietlalpoli¶·ujz|Folio=8,8|Paragraph=6,6|Line=3,4|Norm=tlalpolihuiz|Analysed=Yes
-23.1	_	tlal	NOUN	_	_	_	_	_	Incorporated=Yes
+23.1	tlal	tlalli	NOUN	_	_	_	_	_	Incorporated=Yes
 24	in	in	DET|SCONJ	_	_	25	det	_	Orig=injchan|Folio=8|Paragraph=6|Line=4|Norm=in
 25	jchan	chantli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	23	obl	_	Orig=injchan|Folio=8|Paragraph=6|Line=4|Norm=ichan|Gloss=su.casa|Analysed=Yes
 26	.	.	PUNCT	_		4	punct	_	Folio=8|Paragraph=6|Line=4|Norm=.|Analysed=Yes
@@ -4524,7 +4526,7 @@
 51	qujoalittaznequj	itta	VERB	_	Directional=Hual|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Fut|VerbForm=Fin	45	_	_	Orig=qujoalittazne¶·quj|Folio=11,11|Paragraph=3,3|Line=2,3|Norm=quihualittaznequi|Analysed=Yes
 52	,	,	PUNCT	_		53	punct	_	Folio=11|Paragraph=3|Line=3|Norm=,|Analysed=Yes
 53	momauhcatlaloa	tlaloa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	45	_	_	Orig=momauh·catlaloa|Folio=11,11|Paragraph=3,3|Line=3,3|Norm=momauhcatlaloa|Analysed=Yes
-53.1	_	mauhca	ADV	_	_	_	_	_	Incorporated=Yes
+53.1	mauhca	mauhca	ADV	_	_	_	_	_	Incorporated=Yes
 54	:	:	PUNCT	_		57	punct	_	Folio=11|Paragraph=3|Line=3|Norm=:|Analysed=Yes
 55	in	in	DET|SCONJ	_	_	57	_	_	Orig=injuh|Folio=11|Paragraph=3|Line=3|Norm=in
 56	juh	iuh	ADV	_	_	57	_	_	Orig=injuh|Folio=11|Paragraph=3|Line=3|Norm=iuh|Gloss=así
@@ -5282,7 +5284,7 @@
 41	,	,	PUNCT	_		43	punct	43:punct	Folio=13|Paragraph=3|Line=7|Norm=,|Analysed=Yes
 42	injc	inic	SCONJ	_	_	43	_	43	Folio=13|Paragraph=3|Line=7|Norm=inic
 43	momauhcatlaloa	tlaloa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	40	_	40	Orig=mo¶·mauhcatlaloa|Folio=13,13|Paragraph=3,3|Line=7,8|Norm=momauhcatlaloa|Analysed=Yes
-43.1	_	mauhca	ADV	_	_	_	_	_	Incorporated=Yes
+43.1	mauhca	mauhca	ADV	_	_	_	_	_	Incorporated=Yes
 44	ichan	chantli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	43	_	43	Folio=13|Paragraph=3|Line=8|Norm=ichan|Gloss=su.casa|Analysed=Yes
 45	.	.	PUNCT	_		3	punct	3:punct	Folio=13|Paragraph=3|Line=8|Norm=.|Analysed=Yes
 
