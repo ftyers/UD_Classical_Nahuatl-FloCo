@@ -9,7 +9,7 @@ Alphabet
  %{i%}:i %{u%}:u
  %{u%}:0
  %{N%}:n %{N%}:m
- %{o%}:o
+ %{o%}:o %{o%}:0
  %{i%}:0
 ! h:0
 
@@ -51,6 +51,16 @@ o:0 <=> m _ %>: %{i%}: ;
 
 "hu/uh II"
 %{u%}:0 <=> _ h %{u%}: %>: Vow ;
+
+"uh + huan (I)"
+u:0 <=> _ h: %>: h u a n ;
+
+!@ i>teiccauh>huan
+
+"uh + huan (II)"
+h:0 <=> u: _ %>: h u a n ;
+
+!@ i>teiccauh>huan
 
 !@ c:c a:a {u}:0 h:h {u}:u a:a
 
