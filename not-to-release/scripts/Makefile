@@ -8,7 +8,7 @@ TARGETS = ../conllu/Book_01_-_The_Gods.conllu \
 	../conllu/Book_10_-_The_People.conllu \
 	../conllu/Book_11_-_Earthly_Things.conllu \
 	../conllu/Book_12_-_The_Conquest_of_Mexico.conllu
-DEPS = lexicon.tsv normalisation.tsv retokenisation.tsv tagset.tsv references.tsv subtokens.tsv overrides.tsv \
+DEPS = lexicon.tsv normalisation.tsv retokenisation.tsv tagset.tsv references.tsv subtokens.tsv overrides.tsv analyses.tsv \
 	../fst/nci.mor.att.gz tag-codex.py process-codex.py normalisation/* 
 
 all: $(TARGETS)
