@@ -11580,7 +11580,6 @@ nexehuac[Ø] # "a medicinal herb"
 tochtli:toch[tli] # "rabbit"
 quechcotonqui:quechcoton[qui] # "decapitated person"
 
-# Book 05
 nextitlan:nextitlan[tli]
 titlan:titlan[tli]
 tlecuillan:tlecuillan[tli]
@@ -11594,9 +11593,13 @@ cuitlacaxiuhiyan:cuitlacaxiuhiyan[tli]
 
 mauhcatlacatl:mauhcatla[catl]
 huehuetlacatl:huehuetla[catl]
+oztomecatl:oztome[catl]
 
 tlapallo:tlapallo[poss]
+techiuhcauh:techiuhcauh[poss]
 teiccauhtli:teiccauh[tli]
+millacatl:milla[catl]
+miquizliztli:miquizliz[tli]
 
 LEXICON Propios 
 Quetzalcoatl:Quetzalcoa[tl]
@@ -12138,8 +12141,11 @@ LEXICON ObjectSpec(2)
 <o_pl3> <i_pl3>:{q}ui{n}>
 
 LEXICON ObjectRefl(2)
-<o_ref> <i_ref>:mo>
+<o_ref> <i_ref>:m{o}>
 <o_ref> <i_ref>:t{o}>
+<o_ref> <i_ref>:n{o}>
+<o_ref> <i_ref>:mo>
+<o_ref> <i_ref>:to>
 <o_ref> <i_ref>:no>
 
 LEXICON ObjectNonSpec(2)
@@ -12172,21 +12178,32 @@ LEXICON Tense
 
 LEXICON Aux
 +nemi<aux>:>ti·nemi
-+huetzi<aux>:>ti·huetzi
-+huitz<aux>:>ti·huitz
-+ca<aux>:>ti·ca
-+ca<aux>:>ti·ca>te
-+calaqui<aux>:>ti·calaqui
++nemi<aux>:>{T}i·nemi
 +nemi<aux><past>:>ti·nen>ca
++nemi<aux><past>:>{T}i·nen>ca
+
++huetzi<aux>:>ti·huetzi
++huetzi<aux>:>{T}i·huetzi
++huitz<aux>:>ti·huitz
++huitz<aux>:>{T}i·huitz
++ca<aux>:>ti·ca[sg]
++ca<aux>:>{T}i·ca[sg]
++ca<aux>:>ti·ca>te[pl]
++ca<aux>:>{T}i·ca>te[pl]
++calaqui<aux>:>ti·calaqui
++calaqui<aux>:>{T}i·calaqui
 +quiza<aux>:>ti·quiza
++quiza<aux>:>{T}i·quiza
 
 LEXICON Dir
 
-<ven><pres>:>tiuh
-<ven><pres>:>{T}iuh # This is terrible // chachalcatiuh, huetzitiuh, chachapantiuh
-<ven><past>:>to
-<and><fut>:>qui
-<and><past>:>co
+<and><pres>:>tiuh[sg]
+<and><pres>:>{T}iuh[sg] # This is terrible // chachalcatiuh, huetzitiuh, chachapantiuh
+<and><pres>:>tihui[pl]
+<and><pres>:>{T}ihui[pl] 
+<and><past>:>to
+<ven><fut>:>qui
+<ven><past>:>{C}o
 
 
 PATTERN TenseVerb
@@ -12237,11 +12254,15 @@ ya<v><iv><impf>:huiya>h[pl]
 
 hualla<v><iv><pres>:huallauh[sg]
 hualla<v><iv><pres>:hualhuih[pl]
+hualla<v><iv><pret>:hualla[sg]
 hualla<v><iv><pret>:huallah[sg]
+hualla<v><iv><pret>:hualla>que[pl]
 hualla<v><iv><pret>:huallah>queh[pl]
 hualla<v><iv><fut>:huallaz[sg]
+hualla<v><iv><fut>:huallaz>que[pl]
 hualla<v><iv><fut>:huallaz>queh[pl]
 hualla<v><iv><impf>:hualhuiya[sg]
+hualla<v><iv><impf>:hualhuiya[pl]
 hualla<v><iv><impf>:hualhuiya>h[pl]
 
 huitz<v><iv><pres>:huitz[sg]
@@ -14302,7 +14323,7 @@ tlahuizteci[cl1]
 tlahuiztlahtoa[cl3]
 tlahyohuia[cl3]
 tlaichana[cl2]
-tlaihcuiloa[cl3]
+tlahcuiloa[cl3]
 tlaihiyohuia[cl3]
 tlaihiyohuihtimani[cl2]
 tlaihua[cl1]
@@ -16293,7 +16314,7 @@ ihcuanihpoloa[cl3]
 ihcuanihtimani[cl2]
 ihcuanilia[cl3]
 ihcuillotia[cl3]
-ihcuiloa[cl3]
+ihcuiloa:{i}hcuiloa[cl3]
 ihcuiya[cl2]
 ihhuiaquilia[cl3]
 ihhuitzehtzeloa[cl3]
@@ -19422,6 +19443,10 @@ izo[cl2] # "draw blood"
 mihmiloa:mimiloa[cl3] # momimilotiuh
 mihmiloa:mihmiloa[cl3]
 canahua[cl2]
+«tzontecontli<n>»acocui:«tzontecon»acocui[cl1]
+amoxhuia[cl3] #  consulter les livres sacrés. 
+tezcahuia:tezcahuia[cl3]
+itauhcayotia:itauhcayotia[cl3] 
 
 LEXICON VerbRootDVlex
 tlamachtia[cl3]
