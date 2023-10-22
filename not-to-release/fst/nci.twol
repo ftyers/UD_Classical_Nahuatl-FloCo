@@ -14,7 +14,7 @@ Alphabet
  %{T%}:t
  %{C%}:c
  %{é%}:e
- %{O%}:o %{O%}:i
+ %{O%}:o %{O%}:i %{O%}:0
 ! h:0
 
  %~:%~
@@ -153,7 +153,12 @@ Vx:0 <=> _ %>: %{é%}:  ;
 
 !@ x o l o:0 > {é}:e
 
-"Vowel harmony in 1sg/2sg with directional -on-"
+"Vowel harmony in 1/2 with directional -on-"
 %{O%}:o <=> _ %>: %{q%}: u: i: %>: o %{N%}: ;
 
 !@ n {O}:o > {q}:c u:0 i:0 > o {N}:m > m a h u i z o a
+
+"Vowel drop in 1/2 with directional -on-"
+%{O%}:0 <=> _ %>: o %{N%}: ;
+ 
+!@ t {O}:0 > o {N}:n > t {o}:o > c h o c h o q u i l i a {del}:0 > z > q u e
