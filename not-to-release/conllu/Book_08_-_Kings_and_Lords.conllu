@@ -3131,7 +3131,7 @@
 # text[norm] = In altepetl Tollan, cenca hueyi altepetl, huel mahuiztic: cenca miequintin oncan nenca, in chicahuaque, in tlamatini in intlatollo mitoz in ipan ic matlactli amoxtli.
 # text[orig] = In·altepetl·tullan·,·cenca·vej¶altepetl·,·uel·maujztic·:·cenca·mjie¶qujntin·vncan·nenca·,·in·chicaoaque·,·in·tlamatinj·injn·tlatollo·mjtoz·inj¶pan·ic·matlactli·amoxtli·.
 # tagged = 96.67%
-# lemmatised = 93.33%
+# lemmatised = 90.00%
 # analysed = 90.00%
 1	In	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=10|Paragraph=10|Line=1|Norm=In
 2	altepetl	altepetl	NOUN	_	State=Abs	_	_	_	Folio=10|Paragraph=10|Line=1|Norm=altepetl|Analysed=Yes
@@ -3156,7 +3156,7 @@
 21	tlamatinj	tlamatini	NOUN	_	State=Abs	_	_	_	Folio=10|Paragraph=10|Line=4|Norm=tlamatini|Analysed=Yes
 22	in	in	DET|SCONJ|PRON	_	_	_	_	_	Orig=injn·tlatollo|Folio=10,10|Paragraph=10,10|Line=4,4|Norm=in
 23	jntlatollo	_	X	_	_	_	_	_	Orig=injn·tlatollo|Folio=10,10|Paragraph=10,10|Line=4,4|Norm=intlatollo
-24	mjtoz	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Fut|VerbForm=Fin	_	_	_	Folio=10|Paragraph=10|Line=4|Norm=mitoz|Analysed=Yes
+24	mjtoz	_	VERB	_	_	_	_	_	Folio=10|Paragraph=10|Line=4|Norm=mitoz|Ambiguous=Yes|Analysed=Yes
 25	in	in	DET|SCONJ|PRON	_	_	_	_	_	Orig=inj¶·pan|Folio=10,10|Paragraph=10,10|Line=4,5|Norm=in
 26	jpan	pan	NOUN	_	NounType=Relat	_	_	_	Orig=inj¶·pan|Folio=10,10|Paragraph=10,10|Line=4,5|Norm=ipan
 27	ic	ic	ADV	_	_	_	_	_	Folio=10|Paragraph=10|Line=5|Norm=ic
@@ -3169,7 +3169,7 @@
 # text[norm] = Ihuan in quen opoliuh, in quenin oxixitin, omomoyahuac: mochi oncan mitoz.
 # text[orig] = Ioan¶in·quen·opoliuh·,·in·quenjn·oxixi¶tin·,·omomoiaoac·:·muchi·oncan¶mjtoz·.
 # tagged = 93.33%
-# lemmatised = 86.67%
+# lemmatised = 80.00%
 # analysed = 86.67%
 1	Ioan	huan	NOUN	_	NounType=Relat	_	_	_	Folio=10|Paragraph=10|Line=5|Norm=Ihuan|Gloss=con
 2	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=10|Paragraph=10|Line=6|Norm=in
@@ -3184,7 +3184,7 @@
 11	:	:	PUNCT	_		_	_	_	Folio=10|Paragraph=10|Line=7|Norm=:|Analysed=Yes
 12	muchi	mochi	DET|PRON	_	_	_	_	_	Folio=10|Paragraph=10|Line=7|Norm=mochi
 13	oncan	oncan	ADV	_	_	_	_	_	Folio=10|Paragraph=10|Line=7|Norm=oncan|Gloss=aquí
-14	mjtoz	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Fut|VerbForm=Fin	_	_	_	Folio=10|Paragraph=10|Line=8|Norm=mitoz|Analysed=Yes
+14	mjtoz	_	VERB	_	_	_	_	_	Folio=10|Paragraph=10|Line=8|Norm=mitoz|Ambiguous=Yes|Analysed=Yes
 15	.	.	PUNCT	_		_	_	_	Folio=10|Paragraph=10|Line=8|Norm=.|Analysed=Yes
 
 # sent_id = Book_08_-_Kings_and_Lords.txt:110
@@ -3893,7 +3893,7 @@
 # lemmatised = 85.71%
 # analysed = 85.71%
 1	Niman	niman	ADV	_		_	_	_	Folio=12|Paragraph=6|Line=5|Norm=Niman|Analysed=Yes
-2	qujttilico	ittilia	VERB	_	Directional=Ven|Number[iobj]=Sing|Number[subj]=Plur,Sing|Person[iobj]=3|Person[subj]=3|Subcat=Ditr|Tense=Past|VerbForm=Fin	_	_	_	Orig=quj·ttilico|Folio=12,12|Paragraph=6,6|Line=5,5|Norm=quittilico|Analysed=Yes
+2	qujttilico	ittilia	VERB	_	_	_	_	_	Orig=quj·ttilico|Folio=12,12|Paragraph=6,6|Line=5,5|Norm=quittilico|Ambiguous=Yes|Analysed=Yes
 3	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=12|Paragraph=6|Line=5|Norm=in
 4	motecucuma	Moctezuma	PROPN	_		_	_	_	Folio=12|Paragraph=6|Line=5|Norm=Moctezuma|Analysed=Yes
 5	,	,	PUNCT	_		_	_	_	Folio=12|Paragraph=6|Line=5|Norm=,|Analysed=Yes
@@ -5120,14 +5120,14 @@
 # text[norm] = Quetzallalpiloni, coztic teocuitlayo inic quilpiyaya, intzon quetzalpaltzactli, coztic teocuitlayo in quimama tlauhquetzoltzontli tlazotlanqui, quetzalli icuecuetlacacayo, ihuical huehuetl coztic teocuitlayo, in tlahuiztli in quimama mitotia teocuitlamatemecatl, coztic teocuitlanacochtli coztic in caquiya matzopetztli in cuetlaxtli, hueyi chalchihuitl ololiuhqui, anozo hueyi teoxihuitl ipanca in imaquechtlan quitlalia huitziloxitica inic tlachiuhtli inic tlapetzolli chalchiuhtentetl coztic teocuitlatica callo, iztac tenzacatl, xiuhtototica tlamintli, iztac tehuilotl in intenco caquiya, coztic teocuitlatl in icallo.
 # text[orig] = Quetzallalpilonj·,·coztic·teocuj¶tlaio·injc·qujlpiaia·,·intzonque¶tzalpatzactli·,·coztic·teo·cujtlaio¶in·quj·mama·tlauh·quetzoltzontlj¶tlacotlanquj·,·quetzalli·icue·cuetla¶cacaio·,·iuj·cal·ueuetl·coztic·teo·cuj¶tlaio·,·in·tlaujztli·in·quj·mama·mj¶totia·teucujtlamatemecatl·,·coztic¶teo·cuj·tlanacochtli·coztic·in·caquja¶matzopetztli·in·cuetlaxtli·,·vej·chal¶chiujtl·ololiuh·quj·,·anoço·vej·teu¶xiujtl·ipanca·inj·maquechtlan¶quj·tlalia·ujtziloxitica·injc·tla¶chiuhtli·injc·tlapetzolli·chalchiuh¶tentetl·coztic·teu·cuj·tlatica·callo·,·iztac·tecacatl·,·xiuhtototica·tlamjn¶tli·,·iztac·teujlotl·injntenco·caquja·,·coztic·teu·cujtlatl·inj·callo·.
 # tagged = 84.81%
-# lemmatised = 79.75%
-# analysed = 79.75%
+# lemmatised = 81.01%
+# analysed = 81.01%
 1	Quetzallalpilonj	_	X	_	_	_	_	_	Folio=16|Paragraph=4|Line=1|Norm=Quetzallalpiloni
 2	,	,	PUNCT	_		_	_	_	Folio=16|Paragraph=4|Line=1|Norm=,|Analysed=Yes
 3	coztic	coztic	ADJ	_		_	_	_	Folio=16|Paragraph=4|Line=1|Norm=coztic|Gloss=amarillo|Analysed=Yes
 4	teocujtlaio	teocuitlatl	NOUN	_		_	_	_	Orig=teocuj¶·tlaio|Folio=16,16|Paragraph=4,4|Line=1,2|Norm=teocuitlayo|Analysed=Yes
 5	injc	inic	SCONJ	_	_	_	_	_	Folio=16|Paragraph=4|Line=2|Norm=inic
-6	qujlpiaia	_	VERB	_	_	_	_	_	Folio=16|Paragraph=4|Line=2|Norm=quilpiyaya|Guessed=Yes
+6	qujlpiaia	ilpia	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=16|Paragraph=4|Line=2|Norm=quilpiyaya|Analysed=Yes
 7	,	,	PUNCT	_		_	_	_	Folio=16|Paragraph=4|Line=2|Norm=,|Analysed=Yes
 8	intzon	tzontli	NOUN	_	Number[psor]=Plur|Person[psor]=3|State=Poss	_	_	_	Orig=intzonque¶·tzalpatzactli|Folio=16,16|Paragraph=4,4|Line=2,3|Norm=intzon|Analysed=Yes
 9	quetzalpatzactli	_	NOUN	_	_	_	_	_	Orig=intzonque¶·tzalpatzactli|Folio=16,16|Paragraph=4,4|Line=2,3|Norm=quetzalpaltzactli|Guessed=Yes
@@ -7879,8 +7879,8 @@
 # text[norm] = Auh in tlatoani, intla itla quinmachili in yehhuantin, tecuhtlatoque, azo zan tlapic quihuecahua, in ineteilhuil cuitlapilli, atlapalli, azo ye oxihuitl, anozo ye nahuixihuitl quinemitia in amo huel quitzontequi, azo zan ipampa, tlaxtlahuilli, anozo huayolcayotl: niman quimilpiya, cuauhcalco quintlalia, quitzacotihui, quimictia, inic mauhca yezque tecuhtlatoque.
 # text[orig] = A·uh·in¶tlatoanj·,·intlaitla·qujn·machili¶in·iehoantin·,·tecutlatoque·,·aco·ca¶tlapic·qujuecaoa·,·injneteilhujl¶cujtlapilli·,·atlapalli·,·aco·ie·uxiujtl·,·anoço·ie·nauh·xiujtl·qujnemjtia¶in·amo·uel·qujtzontequj·,·aco·çan¶ipampa·,·tlaxtlaujlli·,·anoço·hoa¶iolcaiotl·:·njman·qujmjlpia·,·quauh¶calco·qujntlalia·,·qujtzacutiuj·,·qujmjctia·,·injc·mauhca·iezque·te¶cutlatoque·.
 # tagged = 96.67%
-# lemmatised = 86.67%
-# analysed = 86.67%
+# lemmatised = 90.00%
+# analysed = 90.00%
 1	Auh	auh	CCONJ	_	_	_	_	_	Orig=A·uh|Folio=26,26|Paragraph=5,5|Line=12,12|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=26|Paragraph=5|Line=12|Norm=in
 3	tlatoanj	tlatoani	NOUN	_	State=Abs	_	_	_	Folio=26|Paragraph=5|Line=13|Norm=tlatoani|Analysed=Yes
@@ -7927,7 +7927,7 @@
 44	hoaiolcaiotl	_	NOUN	_	_	_	_	_	Orig=hoa¶·iolcaiotl|Folio=26,26|Paragraph=5,5|Line=19,20|Norm=huayolcayotl|Guessed=Yes
 45	:	:	PUNCT	_		_	_	_	Folio=26|Paragraph=5|Line=20|Norm=:|Analysed=Yes
 46	njman	niman	ADV	_		_	_	_	Folio=26|Paragraph=5|Line=20|Norm=niman|Analysed=Yes
-47	qujmjlpia	_	VERB	_	_	_	_	_	Folio=26|Paragraph=5|Line=20|Norm=quimilpiya|Guessed=Yes
+47	qujmjlpia	ilpia	VERB	_	Number[obj]=Plur|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	_	_	_	Folio=26|Paragraph=5|Line=20|Norm=quimilpiya|Analysed=Yes
 48	,	,	PUNCT	_		_	_	_	Folio=26|Paragraph=5|Line=20|Norm=,|Analysed=Yes
 49	quauhcalco	_	NOUN	_	_	_	_	_	Orig=quauh¶·calco|Folio=26,26|Paragraph=5,5|Line=20,21|Norm=cuauhcalco|Locative=Yes
 50	qujntlalia	tlalia	VERB	_	Number[obj]=Plur|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	_	_	_	Folio=26|Paragraph=5|Line=21|Norm=quintlalia|Analysed=Yes
@@ -7938,7 +7938,7 @@
 55	,	,	PUNCT	_		_	_	_	Folio=26|Paragraph=5|Line=22|Norm=,|Analysed=Yes
 56	injc	inic	SCONJ	_	_	_	_	_	Folio=26|Paragraph=5|Line=22|Norm=inic
 57	mauhca	_	X	_	_	_	_	_	Folio=26|Paragraph=5|Line=22|Norm=mauhca
-58	iezque	_	VERB	_	_	_	_	_	Folio=26|Paragraph=5|Line=22|Norm=yezque|Guessed=Yes
+58	iezque	cah	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	_	_	_	Folio=26|Paragraph=5|Line=22|Norm=yezque|Analysed=Yes
 59	tecutlatoque	tecuhtli	NOUN	_		_	_	_	Orig=te¶·cutlatoque|Folio=26,26|Paragraph=5,5|Line=22,23|Norm=tecuhtlatoque|Analysed=Yes
 60	.	.	PUNCT	_		_	_	_	Folio=26|Paragraph=5|Line=23|Norm=.|Analysed=Yes
 
@@ -8171,8 +8171,8 @@
 # text[norm] = Cuicacalli, oncan catca in tiachcahuan, in telpochtlatoque oncan tlatecpanohuaya inic quichiaya tlein tequitl, auh in momoztlae, in ihcuac ye calaqui tonatiuh: tlamacehualiztli ipan quimatia, zan petlauhtiuhuiya, inic huiya cuicacalli, inic oncuicoanohuaya zaniyo inquech in onactihuia, iuhquin matlatl ic tlachiuhtli, imaztaxel conmantihui, tochacatl inic quilpiya in tzonchichilicpatl: ihuan ixiuhnacoch, ihuan intempilol eptli, ixquich in telpochtli in oncuicoanoya ihcuac necahualoya in tlacuauhtlapoyahua, in ihcuac yancuican tlapitzaya tlenamacaque tlamacazque, amo ac ichan calaquiya, amohuac ichan oncochiya, ca niman ompa tlamelahuaya, in nohuiyan telpochcalli mamanca: in oncan cochia, zan pepetlauhtoca, zan achi in concochia, momoztlac in oc yohuan quiza in ontecpanoa, in ichan tlatoani.
 # text[orig] = Cuj¶cacalli·,·vncan·catca·in·tiachcahoan·,·in·telpuchtlatoque·vncan·tlatecpa¶noaia·injc·qujchiaia·tlein·tqujtl·,·auh·in·momuztlae·,·inj·quac·ie·cala¶quj·tonatiuh·:·tlamaceoaliztli·ipan¶quj·matia·,·çan·petlauhtiuja·,·injc¶viia·cujcacali·,·injc·oncujcoanooa¶ia·çan·ijo·inquech·inonactiuja·,·iuh·qujn·matlatl·ic·tlachiuhtli·,·imaz¶taxel·conmantiuj·,·tochacatl·injc¶qujlpia·in·tzonchichilicpatl·:·ioan¶ixiuhnacoch·,·ioan·intempilol¶eptli·,·ixqujch·intel·puchtli·inon¶cujco·anoia·icoac·necaoaloia·in¶tlaquauhtlapoiaoa·,·inj·coac·ian¶cujcan·tlapitzaia·tlenamacaque¶tlamacazque·,·amo·ac·ichan·cala¶quja·,·amoac·ichan·oncochia·,·ca¶njman·vmpa·tlamelaoaia·,·in·no¶ujian·telpuchcalli·mamanca·:·in¶oncan·cochia·,·çan·pepetlauhtoca·,·can·achi·in·concochia·,·momoztlac¶in·oc·iohoan·qujca·in·ontecpanoa·,·yn·ichan·tlatoanj·.
 # tagged = 88.80%
-# lemmatised = 81.60%
-# analysed = 82.40%
+# lemmatised = 82.40%
+# analysed = 83.20%
 1	Cujcacalli	cuicacalli	NOUN	_	State=Abs	_	_	_	Orig=Cuj¶·cacalli|Folio=27,27|Paragraph=5,5|Line=10,11|Norm=Cuicacalli|Analysed=Yes
 2	,	,	PUNCT	_		_	_	_	Folio=27|Paragraph=5|Line=11|Norm=,|Analysed=Yes
 3	vncan	oncan	ADV	_	_	_	_	_	Folio=27|Paragraph=5|Line=11|Norm=oncan|Gloss=aquí
@@ -8223,11 +8223,11 @@
 48	tlachiuhtli	tlachiuhtli	NOUN	_	State=Abs	_	_	_	Folio=27|Paragraph=5|Line=19|Norm=tlachiuhtli|Analysed=Yes
 49	,	,	PUNCT	_		_	_	_	Folio=27|Paragraph=5|Line=19|Norm=,|Analysed=Yes
 50	imaztaxel	aztaxelli	NOUN	_	Number[psor]=Plur|Person[psor]=3|State=Poss	_	_	_	Orig=imaz¶·taxel|Folio=27,27|Paragraph=5,5|Line=19,20|Norm=imaztaxel|Analysed=Yes
-51	conmantiuj	mana	VERB	_	Directional=On|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	_	_	_	Folio=27|Paragraph=5|Line=20|Norm=conmantihui|Analysed=Yes
+51	conmantiuj	mana	VERB	_	Directional=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	_	_	_	Folio=27|Paragraph=5|Line=20|Norm=conmantihui|Analysed=Yes
 52	,	,	PUNCT	_		_	_	_	Folio=27|Paragraph=5|Line=20|Norm=,|Analysed=Yes
 53	tochacatl	tochacatl	NOUN	_	State=Abs	_	_	_	Folio=27|Paragraph=5|Line=20|Norm=tochacatl|Analysed=Yes
 54	injc	inic	SCONJ	_	_	_	_	_	Folio=27|Paragraph=5|Line=20|Norm=inic
-55	qujlpia	_	VERB	_	_	_	_	_	Folio=27|Paragraph=5|Line=21|Norm=quilpiya|Guessed=Yes
+55	qujlpia	ilpia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	_	_	_	Folio=27|Paragraph=5|Line=21|Norm=quilpiya|Analysed=Yes
 56-57	intzonchichilicpatl	_	_	_	_	_	_	_	_
 56	in	in	DET|SCONJ|PRON	_	_	_	_	_	Orig=in·tzonchichilicpatl|Folio=27,27|Paragraph=5,5|Line=21,21|Norm=in
 57	tzonchichilicpatl	_	NOUN	_	_	_	_	_	Orig=in·tzonchichilicpatl|Folio=27,27|Paragraph=5,5|Line=21,21|Norm=tzonchichilicpatl|Guessed=Yes
@@ -8410,8 +8410,8 @@
 # text[norm] = Petlacalco, oncan mopiyaya, in ixquich cualoni, in tlahtolli, inic mopiyaya cuauhquezcomatl, amo zan macuiltzontli, oncatca tlaolli: cempohualxiuhcayotl, in itetzon altepetl, ihuan cuauhcuezcontica mamanca in etl, in chian, in huauhtli, in chiatzotzol, iztacomitl, iztaxalli, chilpetlatl, ayohuachpetlatl, cuauhayohuachtli: ihuan oncan mopiyaya in teilpilcalli, Cuauhcalli, in oncan quimilpiyaya, quincaltzacuaya tlatlacoani.
 # text[orig] = Petlacalco·,·vncan·mopiaia·,·injx¶qujch·qualonj·,·in·tlatolli·,·injc·mopia¶ia·quauhqiezcomatl·,·amo·çan·ma¶cujltzontli·,·vncatca·tlaolli·:·cempoal¶xiuhcaiotl·,·injtetzon·altepetl·,·ioan¶quauh·cuezcontica·mamanca·in¶etl·,·in·chian·,·in·oauhtli·,·in·chian·tzo¶tzol·,·iztacomjtl·,·iztaxalli·,·chilpe¶tlatl·,·aiooachpetlatl·,·quauh·aio¶oachtli·:·ioan·vncan·mopiaia·in¶teilpilcalli·,·quauhcalli·,·in·vncan¶qujmjlpiaia·,·qujncaltzaquaia·tla¶tlacoanj·.
 # tagged = 89.86%
-# lemmatised = 76.81%
-# analysed = 78.26%
+# lemmatised = 78.26%
+# analysed = 79.71%
 1	Petlacalco	_	X	_	_	_	_	_	Folio=28|Paragraph=4|Line=1|Norm=Petlacalco
 2	,	,	PUNCT	_		_	_	_	Folio=28|Paragraph=4|Line=1|Norm=,|Analysed=Yes
 3	vncan	oncan	ADV	_	_	_	_	_	Folio=28|Paragraph=4|Line=1|Norm=oncan|Gloss=aquí
@@ -8476,7 +8476,7 @@
 62	,	,	PUNCT	_		_	_	_	Folio=28|Paragraph=4|Line=11|Norm=,|Analysed=Yes
 63	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=28|Paragraph=4|Line=11|Norm=in
 64	vncan	oncan	ADV	_	_	_	_	_	Folio=28|Paragraph=4|Line=11|Norm=oncan|Gloss=aquí
-65	qujmjlpiaia	_	VERB	_	_	_	_	_	Folio=28|Paragraph=4|Line=12|Norm=quimilpiyaya|Guessed=Yes
+65	qujmjlpiaia	ilpia	VERB	_	Aspect=Imp|Number[obj]=Plur|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=28|Paragraph=4|Line=12|Norm=quimilpiyaya|Analysed=Yes
 66	,	,	PUNCT	_		_	_	_	Folio=28|Paragraph=4|Line=12|Norm=,|Analysed=Yes
 67	qujncaltzaquaia	caltzacua	VERB	_	Aspect=Imp|Number[obj]=Plur|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=28|Paragraph=4|Line=12|Norm=quincaltzacuaya|Analysed=Yes
 68	tlatlacoanj	_	X	_	_	_	_	_	Orig=tla¶·tlacoanj|Folio=28,28|Paragraph=4,4|Line=12,13|Norm=tlatlacoani
@@ -10850,8 +10850,8 @@
 # text[norm] = Auh in ihcuac, oquimixquetz in tlatoani: in itecuhtlatocahuan quinmacaya ontetl in tlatocacalli, in teccalli, in oncan yezque, in oncan tetlatzontequilizque, in oncan quicaquizque: in ixquich tlamantli tlacatlatolli, in centetl teccalli, itoca Tlacxitlan, in oncan tetlatzontequiliaya tlazopipiltin, tlatocapipiltin, zan niman iciuhca quitzontequia inteneteyilhuil, anozo tetlatlacol.
 # text[orig] = A·uh¶inj·coac·,·oqujmjxquetz·in·tlato¶anj·:·inj·tecutlato·cahoan·qujn¶macaia·vntetl·in·tlatocacalli·,·in¶teccalli·,·in·vncan·iezque·,·in·vnca¶tetlatzontequjlizque·,·in·vncan¶qujcaqujzque·:·injxqujch·tlama¶tli·tlaca·tlatolli·,·in·centetl·tec¶calli·,·itoca·tlacxitlan·,·in·vnca¶tetlatzontequjliaia·tlacopipilti·,·tlatocapipilti·,·çan·njman·iciuh¶ca·qujtzontequja·inteneteilhujl·,·anoço·tetlatlacul·.
 # tagged = 94.83%
-# lemmatised = 84.48%
-# analysed = 87.93%
+# lemmatised = 86.21%
+# analysed = 89.66%
 1	Auh	auh	CCONJ	_	_	_	_	_	Orig=A·uh¶|Folio=37,37|Paragraph=1,1|Line=15,15|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ|PRON	_	_	_	_	_	Orig=inj·coac|Folio=37,37|Paragraph=1,1|Line=16,16|Norm=in
 3	jcoac	ihcuac	SCONJ	_		_	_	_	Orig=inj·coac|Folio=37,37|Paragraph=1,1|Line=16,16|Norm=ihcuac|Gloss=cuando|Analysed=Yes
@@ -10872,7 +10872,7 @@
 18	,	,	PUNCT	_		_	_	_	Folio=37|Paragraph=1|Line=19|Norm=,|Analysed=Yes
 19	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=37|Paragraph=1|Line=19|Norm=in
 20	vncan	oncan	ADV	_	_	_	_	_	Folio=37|Paragraph=1|Line=19|Norm=oncan|Gloss=aquí
-21	iezque	_	VERB	_	_	_	_	_	Folio=37|Paragraph=1|Line=19|Norm=yezque|Guessed=Yes
+21	iezque	cah	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	_	_	_	Folio=37|Paragraph=1|Line=19|Norm=yezque|Analysed=Yes
 22	,	,	PUNCT	_		_	_	_	Folio=37|Paragraph=1|Line=19|Norm=,|Analysed=Yes
 23	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=37|Paragraph=1|Line=19|Norm=in
 24	vnca	oncan	ADV	_	_	_	_	_	Folio=37|Paragraph=1|Line=19|Norm=oncan|Gloss=aquí
@@ -11238,8 +11238,8 @@
 # text[norm] = Auh in iyeicoac macehua tlatoani, in tlein ilhuitl ipan mocencahua, mochichihua quetzallalpiloni coztic teocuitlayo, inic quilpiya itzon, coztic tenzacatl, anozo chalchiuhtentetl in conaquiya itenco, coztic teocuitlanacochtli, in coquiya inacazco: auh in cozcatl conteca, azo chalchiuhcozcatl, anozo cozcapetlatl, teoxihuitl itlaactoc, macuextli imac quitlalia hueyi chalchihuitl ipan ca anozo hueyi teoxcihuitl, anozo coztic teocuitlamatemecatl, quetzalecacehuaztli, tlazotlanqui inic mitotia inic macehua, tlazotilmatli in quimololoa, in quimoquentia, tlazomaxtlatl in quimomaxtlatia, niman ic noqui cencahua quintlauhtia: in ixquichtin tlatoque, ihuan pipiltin, in oquichti, tiyacahuan, ihuan tecuhtlatoque, ihuan Achcacauhti, ihuan tiyacahuan oquichtin, ihuan tiyachcahuan, ihuan cuicanime, ihuan quinmaca in iyauh, in itlacual tlatoani in izquitlamantia omoteneuhque.
 # text[orig] = A·uh·in·ieicoac·ma¶ceoa·tlatoanj·,·in·tlein·ilhujtl¶ipan·mocencaoa·,·mochichioa¶quetzallalpilonj·coztic·teucuj¶tlaio·,·injc·qujlpia·itzon·,·coztic¶tecacatl·,·anoço·chalchiuh·ten¶tetl·in·conaquja·itenco·,·coztic¶teucujtlana·cochtli·,·in·coquja¶inacazco·:·auh·in·cozcatl·conte¶ca·,·aco·chalchiuh·cozcatl·,·anoço¶cozcapetlatl·,·teuxiujtl·itla·ac¶toc·,·macuextli·imac·qujtlalia¶vei·chalchiujtl·ipan·ca·anoço¶vej·teuxciujtl·,·anoço·coztic·teu¶cujtlam·atemecatl·,·quetzaleca¶ceoaztli·,·tlacotlanquj·injc·mj¶totia·injc·maceoa·,·tlacotilma¶tli·in·qujmololoa·,·in·qujmo¶quentia·,·tlaco·maxtlatl·in·quj¶momaxtlatia·,·njman·ic·no¶quj·cencaoa·qujntlauhtia·:·in¶ixqujchtin·tlatoque·,·ioan·pi¶pilti·,·in·oqujchti·,·tiiacaoan·,·ioan·tecutlatoque·,·ioan·ach¶cacauhti·,·ioan·tiia·caoan·oquj¶chtin·,·io·an·tiachcaoan·,·ioan¶cujcanjme·,·ioan·qujn·maca·inj¶iauh·,·inj·tlaqual·tlatoanj·injz¶qujtlamantia·omoteneuhque·.
 # tagged = 92.37%
-# lemmatised = 83.97%
-# analysed = 85.50%
+# lemmatised = 84.73%
+# analysed = 86.26%
 1	Auh	auh	CCONJ	_	_	_	_	_	Orig=A·uh|Folio=38,38|Paragraph=4,4|Line=18,18|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=38|Paragraph=4|Line=18|Norm=in
 3	ieicoac	_	X	_	_	_	_	_	Folio=38|Paragraph=4|Line=18|Norm=iyeicoac
@@ -11258,7 +11258,7 @@
 16	teucujtlaio	teocuitlatl	NOUN	_		_	_	_	Orig=teucuj¶·tlaio|Folio=38,38|Paragraph=4,4|Line=21,22|Norm=teocuitlayo|Analysed=Yes
 17	,	,	PUNCT	_		_	_	_	Folio=38|Paragraph=4|Line=22|Norm=,|Analysed=Yes
 18	injc	inic	SCONJ	_	_	_	_	_	Folio=38|Paragraph=4|Line=22|Norm=inic
-19	qujlpia	_	VERB	_	_	_	_	_	Folio=38|Paragraph=4|Line=22|Norm=quilpiya|Guessed=Yes
+19	qujlpia	ilpia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	_	_	_	Folio=38|Paragraph=4|Line=22|Norm=quilpiya|Analysed=Yes
 20	itzon	tzontli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	_	_	_	Folio=38|Paragraph=4|Line=22|Norm=itzon|Analysed=Yes
 21	,	,	PUNCT	_		_	_	_	Folio=38|Paragraph=4|Line=22|Norm=,|Analysed=Yes
 22	coztic	coztic	ADJ	_		_	_	_	Folio=38|Paragraph=4|Line=22|Norm=coztic|Gloss=amarillo|Analysed=Yes
@@ -11945,9 +11945,9 @@
 # text = In tlatoanj in jcoac qujttaia, qujmatia ca cenca nentlamati in cujtlapilli, atlapalli maceoalli: njman tlanaoatiaia, injc ollamaloz, injc teellaquaoaia, injc tepequjltiaia tlatoanj: qujnnaoatiaia in calpixque, injc qujoalcujque in olli, ioan nelpilonj, ioan queceoatl, ioan maieoatl: injc mocencaoa injc mochichioa, in jollancaoan tlatoanj, ioan tlacencaoalo in tlachco, tlaaujlilo, tlaxalujlo, tlachpano: ioan in jxqujch qujtlanjtoz tlatoanj, in tlacotilmatli in xomoiujtilmatli, in tlacomaxtlatl, in chalchiuhtentel, teucujtlanacochtli, chlachiuhcozcatl, teucujtlacozcatl, matzopetztli chalchiujtl vei ipan ca, tlacotl: ioan in ixqujch tlacoltilmatli, ioan pepechtli qujoalqujxtia in calpizque, qujoallalia in tlachco.
 # text[norm] = In tlatoani in ihcuac quittaya, quimatia ca cenca nentlamati in cuitlapilli, atlapalli macehualli: niman tlanahuatiaya, inic huallamaloz, inic teellacuahuaya, inic tepequiltiaya tlatoani: quinnahuatiaya in calpixque, inic quihualcuique in olli, ihuan nelpiloni, ihuan quecehuatl, ihuan mayehuatl: inic mocencahua inic mochichihua, in yollancahuan tlatoani, ihuan tlacencahualo in tlachco, tlaahuililo, tlaxalhuilo, tlachpano: ihuan in ixquich quitlanitoz tlatoani, in tlazotilmatli in xomoihuitilmatli, in tlazomaxtlatl, in chalchiuhtentetl, teocuitlanacochtli, chalchiuhcozcatl, teocuitlacozcatl, matzopetztli chalchihuitl hueyi ipan ca, tlacotl: ihuan in ixquich tlazotilmatli, ihuan pepechtli quihualquixtia in calpixque, quihuallalia in tlachco.
 # text[orig] = I·n·tlatoanj·inj·coac·qujttaia·,·qujmatia·ca·cenca·nentlamati¶in·cujtlapilli·,·atlapalli·maceoalli·:·njman·tlanaoatiaia·,·injc·olla¶maloz·,·injc·teellaquaoaia·,·injc¶tepequjltiaia·tlatoanj·:·qujnna¶oatiaia·in·calpixque·,·injc·quj¶oalcujque·in·olli·,·ioan·nelpilo¶nj·,·ioan·que·ceoatl·,·ioan·maie¶oatl·:·injc·mocencaoa·injc·mochi¶chioa·,·inj·ollancaoan·tlatoanj·,·i¶oan·tlacencaoalo·in·tlachco·,·tla¶aujlilo·,·tlaxalujlo·,·tlachpano·:·ioan·injxqujch·qujtlanjtoz·tla¶toanj·,·in·tlaco·tilmatli·in·xomoiuj¶tilmatli·,·in·tlacomaxtlatl·,·in·chal¶chiuh·tentel·,·teucujtla·nacoch¶tli·,·chlachiuh·cozcatl·,·teucuj·tla¶cozcatl·,·matzopetztli·chalchiujtl¶veiipan·ca·,·tlacotl·:·ioan·inix¶qujch·tlacoltilmatli·,·ioan·pepech¶tli·quj·oalqujxtia·in·calpizque·,·quj·oallalia·in·tlachco·.
-# tagged = 90.27%
+# tagged = 91.15%
 # lemmatised = 84.07%
-# analysed = 87.61%
+# analysed = 88.50%
 1	In	in	DET|SCONJ|PRON	_	_	_	_	_	Orig=I·n|Folio=41,41|Paragraph=3,3|Line=1,1|Norm=In
 2	tlatoanj	tlatoani	NOUN	_	State=Abs	_	_	_	Folio=41|Paragraph=3|Line=1|Norm=tlatoani|Analysed=Yes
 3	in	in	DET|SCONJ|PRON	_	_	_	_	_	Orig=inj·coac|Folio=41,41|Paragraph=3,3|Line=1,1|Norm=in
@@ -12018,7 +12018,7 @@
 68	ioan	huan	NOUN	_	NounType=Relat	_	_	_	Folio=41|Paragraph=3|Line=14|Norm=ihuan|Gloss=con
 69	in	in	DET|SCONJ|PRON	_	_	_	_	_	Orig=injxqujch|Folio=41|Paragraph=3|Line=14|Norm=in
 70	jxqujch	ixquich	NOUN	_	NounType=Relat	_	_	_	Orig=injxqujch|Folio=41|Paragraph=3|Line=14|Norm=ixquich|Gloss=todo
-71	qujtlanjtoz	_	X	_	_	_	_	_	Folio=41|Paragraph=3|Line=14|Norm=quitlanitoz
+71	qujtlanjtoz	_	VERB	_	_	_	_	_	Folio=41|Paragraph=3|Line=14|Norm=quitlanitoz|Ambiguous=Yes|Analysed=Yes
 72	tlatoanj	tlatoani	NOUN	_	State=Abs	_	_	_	Orig=tla¶·toanj|Folio=41,41|Paragraph=3,3|Line=14,15|Norm=tlatoani|Analysed=Yes
 73	,	,	PUNCT	_		_	_	_	Folio=41|Paragraph=3|Line=15|Norm=,|Analysed=Yes
 74	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=41|Paragraph=3|Line=15|Norm=in
@@ -12643,8 +12643,8 @@
 # text[norm] = Auh in ihcuac in omocencauh nenonotzaliztli, tlapepenaliztli, in ocentet tlahtolli, in ac yehhuatl tlazopilli in huanoc, in oixquetzaloc in tlatoani yez: niman no ihcuac ixquetzalo, pepenalo in quipalehuizque, in itlan yezque in tlazopipiltin, in itecuhtlatocahuan yezque: motecutlalia, motocamaca Tlacochcalcatl, Huitznahuatlailotlac pochtecatlailotlac, Ticociahuacatl: in ye iuhqui in omocencauh tlapepenaliztli, niman nenonotzalo, tlein cualli cemilhuitonalli in ipantlalilozque, in opepenaloque: in tlatoani ihuan in tecuhtlatoque, ic tenahuatilo in iquin cenquixohuaz: ihuan nahuatilo in ixquichtin pipiltin, inic cenquicaquihui in iitoalco Huitzilopochtli: auh in cequintin in pipiltin in quimacaci tlatocayotl motlatia minaya.
 # text[orig] = A·uh·inj·coac·in·omo¶cencauh·nenonotzaliztli·,·tlapepe¶naliztli·,·in·ocentet·tlatolli·,·in·ac·ie¶hoatl·tlacopilli·in·oanoc·,·in·oixque¶tzaloc·in·tlatoanj·iez·:·njman·no·i¶quac·ixquetzalo·,·pepenalo·in·quj¶paleujzque·,·in·jtlan·iezque·in·tla¶copipilti·,·inj·tecutlato·cahoan·iez¶que·:·motecutlalia·,·motocamaca¶tlacochcalcatl·,·vitznaoatlailotlac¶pochtecatlailotlac·,·ticociaoacatl·:·in·ieiuh·quj·in·omo·cencauh·tla¶pepenaliztli·,·njman·nenonotzalo·,·tlein·qualli·cemjlhuj·tonalli·inj¶pantlalilozque·,·in·opepenaloque·:·in·tlatoanj·ioan·in·tecutlatoque·,·ic·tenaoatilo·injqujn·cenqujxooaz·:·ioan·naoatilo·injxqujchtin·pipilti·,·injc·cenqujcaqujuj·inj·itoalco·vi¶tzilopuchtli·:·auh·in·cequjntin·in·pi¶pilti·in·qujmacaci·tlatocaiotl·mo¶tlatia·mjnaia·.
 # tagged = 90.83%
-# lemmatised = 81.65%
-# analysed = 84.40%
+# lemmatised = 83.49%
+# analysed = 86.24%
 1	Auh	auh	CCONJ	_	_	_	_	_	Orig=A·uh|Folio=43,43|Paragraph=4,4|Line=15,15|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ|PRON	_	_	_	_	_	Orig=inj·coac|Folio=43,43|Paragraph=4,4|Line=15,15|Norm=in
 3	jcoac	ihcuac	SCONJ	_		_	_	_	Orig=inj·coac|Folio=43,43|Paragraph=4,4|Line=15,15|Norm=ihcuac|Gloss=cuando|Analysed=Yes
@@ -12682,13 +12682,13 @@
 35	,	,	PUNCT	_		_	_	_	Folio=43|Paragraph=4|Line=21|Norm=,|Analysed=Yes
 36	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=43|Paragraph=4|Line=21|Norm=in
 37	jtlan	tlantli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	_	_	_	Folio=43|Paragraph=4|Line=21|Norm=itlan|Analysed=Yes
-38	iezque	_	VERB	_	_	_	_	_	Folio=43|Paragraph=4|Line=21|Norm=yezque|Guessed=Yes
+38	iezque	cah	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	_	_	_	Folio=43|Paragraph=4|Line=21|Norm=yezque|Analysed=Yes
 39	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=43|Paragraph=4|Line=21|Norm=in
 40	tlacopipilti	tlazopilli	NOUN	_	_	_	_	_	Orig=tla¶·copipilti|Folio=43,43|Paragraph=4,4|Line=21,22|Norm=tlazopipiltin|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
 41	,	,	PUNCT	_		_	_	_	Folio=43|Paragraph=4|Line=22|Norm=,|Analysed=Yes
 42	in	in	DET|SCONJ|PRON	_	_	_	_	_	Orig=inj·tecutlato·cahoan|Folio=43,43,43|Paragraph=4,4,4|Line=22,22,22|Norm=in
 43	jtecutlatocahoan	_	X	_	_	_	_	_	Orig=inj·tecutlato·cahoan|Folio=43,43,43|Paragraph=4,4,4|Line=22,22,22|Norm=itecuhtlatocahuan
-44	iezque	_	VERB	_	_	_	_	_	Orig=iez¶·que|Folio=43,43|Paragraph=4,4|Line=22,23|Norm=yezque|Guessed=Yes
+44	iezque	cah	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	_	_	_	Orig=iez¶·que|Folio=43,43|Paragraph=4,4|Line=22,23|Norm=yezque|Analysed=Yes
 45	:	:	PUNCT	_		_	_	_	Folio=43|Paragraph=4|Line=23|Norm=:|Analysed=Yes
 46	motecutlalia	_	VERB	_	_	_	_	_	Folio=43|Paragraph=4|Line=23|Norm=motecutlalia|Guessed=Yes
 47	,	,	PUNCT	_		_	_	_	Folio=43|Paragraph=4|Line=23|Norm=,|Analysed=Yes
@@ -12837,7 +12837,7 @@
 40	qujxtemozque	ixtemoa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Fut|VerbForm=Fin	_	_	_	Orig=qujx·temozque¶|Folio=44,44|Paragraph=3,3|Line=7,7|Norm=quixtemozque|Analysed=Yes
 41	injc	inic	SCONJ	_	_	_	_	_	Folio=44|Paragraph=3|Line=8|Norm=inic
 42	tetzalan	_	NOUN	_	_	_	_	_	Folio=44|Paragraph=3|Line=8|Norm=tetzalan
-43	conanatiuj	ana	VERB	_	Directional=On|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	_	_	_	Folio=44|Paragraph=3|Line=8|Norm=conanatihui|Analysed=Yes
+43	conanatiuj	ana	VERB	_	Directional=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	_	_	_	Folio=44|Paragraph=3|Line=8|Norm=conanatihui|Analysed=Yes
 44	:	:	PUNCT	_		_	_	_	Folio=44|Paragraph=3|Line=8|Norm=:|Analysed=Yes
 45	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=44|Paragraph=3|Line=8|Norm=in
 46	opepenaloc	_	X	_	_	_	_	_	Orig=opepe¶·naloc|Folio=44,44|Paragraph=3,3|Line=8,9|Norm=opepenaloc
@@ -15638,11 +15638,11 @@
 # text[norm] = Auh intla hualmitoz yaoyotl in Atlixco, azo Huexotzinco, intla oc ceppa ompa tlamazque, cenca ic huel panhuetzi, ic cenca huel quinmahuiztilia in Moctezuma: ipampa ca ipilhuan in ontlamaque, in onmotenyotique in oconmiyaoayotique in pillotl in cuauhyotl, in oceloyotl, ic oncan in quiza in tlatocati, in quipachoa altepetl, auh quinihcuac intlan quintlalia: itlan tlacua in Moctezuma in quinmaca coztic tenzacatl, anozo coztic tencololli, anozo xoxouhqui tenzacatl, anozo, xoxouhqui tencololli, anozo chalchiuhtencololli, anozo chalchiuhtentetl: anozo tlanitentetl: niman ye quetzallalpiloni teocuitlatica tecpayo, ihuan teocuitlatl in ipepeyocio, anozo cacuan tlapiloni, ihuan cuetlaxnacochtli, ihuan tlazotilmatli, yehhuatl in tlatoca tilmatli in itzcohuayo, anozo ixnextentlapallo, anoce ihuitica tetecomayo, anozo itzmixicalcoliuhqui, ihuan tlazomaxtlatl, anoce tzicoliuhqui maxtlatl, ayacaichcayo, izazo quexquich tlazomaxtlatl, ihuan tlahuiztli, azo quetzalpaltzactli, anozo teocuitlapanitl, anozo tozcuaxolotl, anozo teocuitlacuacalalatli, anoce teocoltlacopilli, anozo quetzalpanitl, anoce itzpapalotl quetzallo teocuitlatl in ixtelolo, ihuan tlazochimalli, azo xiuhtotoyehuatl, anoce tocehuatl in ye huel ixquich tlazotlanqui chimalli, ihuan quinmaca calpixcantli, azo ooccan, anozo cexcan in quinmaca: ipampa ca nel ocacique.
 # text[orig] = A·uh·intla·oalmjtoz¶iaujotl·in·atlixco·,·aco·vexotzin¶co·,·in·tlaocceppa·vmpa·tlamaz¶que·,·cenca·ic·vel·panuetzi·,·ic·cen¶ca·uel·qujn·maujztilia·in·mote¶cu·cuma·:·ipampa·ca·ipilhoan·i¶non·tlamaque·,·in·onmoteniotique¶in·ocon·mjiaoaiotique·in·pillotl¶in·quauhiotl·,·inoceloiotl·,·ic·on¶can·in·qujca·in·tlatocati·,·in·quj¶pachoa·altepetl·,·auh·qujnjquac¶intlan·qujntlalia·:·y·tlan·tlaqua¶in·motecucuma·in·qujn·maca·coz¶tic·tecacatl·,·anoço·coztic·tenco¶lolli·,·anoço·xoxouhquj·tecacatl·,·anoço·,·xoxouhquj·ten·cololli·,·a¶noco·chalchiuh·tencololli·,·anoço¶chalchiuh·tentetl·:·anoço·tlanj¶tentetl·:·njman·ie·quetzallali¶lonj·teu·cujtlatica·tecpaio·,·i¶oan·teucujtlatl·inj·pepeiocio·,·anoço·caquan·tlalpilonj·,·ioan¶cuetlaxnacochtli·,·ioan·tlacotil¶matli·,·iehoatl·in·tlatoca·tilmatli¶inj·tzcoaio·,·anoço·ixnextentla¶pallo·,·anoce·iujtica·tetecomaio·,·anoço·itz·mj·xicalcoliuhquj·,·yoan¶tlaco·maxtlatl·,·anoce·tzicoliuhquj¶maxtlatl·,·aiacaich·caio·,·icaco·quex¶qujch·tlaco·maxtlatl·,·ioan·tlaujz¶tli·,·aco·quetzalpatzactli·,·anoço¶teu·cujtlapanjtl·,·anoço·toz·quaxo¶lotl·,·anoço·teucujtla·quacalala¶tli·,·anoce·teu·cultlacopilli·,·anoço¶quetzal·panjtl·,·anoce·itzpapalotl¶quetzallo·teucujtlatl·injxtelolo·,·ioan·tlaco·chimalli·,·aco·xiuhto¶to·ieoatl·,·anoce·tozeoatl·in·ie·ue¶lixqujch·tlacotlanquj·chimalli·,·ioan·qujn·maca·calpix·cantli·,·aco¶ooccan·,·anoço·cexcan·in·qujnma¶ca·:·ipampa·canel·ocacique·.
 # tagged = 91.18%
-# lemmatised = 85.29%
+# lemmatised = 84.80%
 # analysed = 86.76%
 1	Auh	auh	CCONJ	_	_	_	_	_	Orig=A·uh|Folio=53,53|Paragraph=2,2|Line=2,2|Norm=Auh|Gloss=y
 2	intla	tla	PRON	_	_	_	_	_	Folio=53|Paragraph=2|Line=2|Norm=intla|Gloss=algo
-3	oalmjtoz	ihtoa	VERB	_	Directional=Hual|Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Fut|VerbForm=Fin	_	_	_	Folio=53|Paragraph=2|Line=2|Norm=hualmitoz|Analysed=Yes
+3	oalmjtoz	_	VERB	_	_	_	_	_	Folio=53|Paragraph=2|Line=2|Norm=hualmitoz|Ambiguous=Yes|Analysed=Yes
 4	iaujotl	yaoyotl	NOUN	_	State=Abs	_	_	_	Folio=53|Paragraph=2|Line=3|Norm=yaoyotl|Analysed=Yes
 5	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=53|Paragraph=2|Line=3|Norm=in
 6	atlixco	_	PROPN	_	_	_	_	_	Folio=53|Paragraph=2|Line=3|Norm=Atlixco
@@ -16231,7 +16231,7 @@
 27	tepal	palli	NOUN	_	Animacy[psor]=Anim|Person[psor]=3|State=Poss	_	_	_	Folio=55|Paragraph=2|Line=15|Norm=tepal|AmbigNorm=True|Override=False|Analysed=Yes
 28	xitlama	tlama	VERB	_	Mood=Imp|Number[subj]=Sing|Person[subj]=2|Subcat=Intr|VerbForm=Fin	_	_	_	Folio=55|Paragraph=2|Line=15|Norm=xitlama|Analysed=Yes
 29	tle	tle	PRON	_	_	_	_	_	Folio=55|Paragraph=2|Line=15|Norm=tle
-30	tiez	cah	VERB	_	Number[subj]=Sing|Person[subj]=2|Subcat=Tran|Tense=Fut|VerbForm=Fin	_	_	_	Folio=55|Paragraph=2|Line=16|Norm=tiyez|Analysed=Yes
+30	tiez	cah	VERB	_	Number[subj]=Sing|Person[subj]=2|Subcat=Intr|Tense=Fut|VerbForm=Fin	_	_	_	Folio=55|Paragraph=2|Line=16|Norm=tiyez|Analysed=Yes
 31	cuis	cuix	ADV	_		_	_	_	Folio=55|Paragraph=2|Line=16|Norm=cuix|Gloss=quizás|Analysed=Yes
 32	timatzotzocoltiz	_	X	_	_	_	_	_	Folio=55|Paragraph=2|Line=16|Norm=timatzotzocoltiz
 33	,	,	PUNCT	_		_	_	_	Folio=55|Paragraph=2|Line=16|Norm=,|Analysed=Yes
@@ -16605,7 +16605,7 @@
 46	tiacahoan	tiyacatl	NOUN	_	Number=Plur	_	_	_	Folio=56|Paragraph=1|Line=18|Norm=tiyacahuan|Analysed=Yes
 47	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=56|Paragraph=1|Line=18|Norm=in
 48	vmpa	ompa	ADV	_		_	_	_	Folio=56|Paragraph=1|Line=18|Norm=ompa|Gloss=allá|Analysed=Yes
-49	cate	cah	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	_	_	_	Folio=56|Paragraph=1|Line=18|Norm=cateh|Analysed=Yes
+49	cate	cah	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	_	_	_	Folio=56|Paragraph=1|Line=18|Norm=cateh|Analysed=Yes
 50	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=56|Paragraph=1|Line=18|Norm=in
 51	tlacochcalcatl	Tlacochcalcatl	NOUN	_	State=Abs	_	_	_	Orig=tlacoch¶·calcatl|Folio=56,56|Paragraph=1,1|Line=18,19|Norm=Tlacochcalcatl|Analysed=Yes
 52	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=56|Paragraph=1|Line=19|Norm=in

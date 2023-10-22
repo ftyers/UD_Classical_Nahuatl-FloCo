@@ -12232,9 +12232,15 @@ LEXICON Tense
 <imp>:[sg,imp]
 
 # Check these
+<prog>:>toc[sg]
 <prog>:>{T}oc[sg]
+<prog><fut>:>toz[sg]
+<prog><fut>:>{T}oz[sg]
+<prog>:>toqueh[pl]
 <prog>:>{T}oqueh[pl]
 <prog>:>{T}oque[pl]
+<prog><fut>:>toz>que[pl]
+<prog><fut>:>{T}oz>que[pl]
 
 LEXICON Aux
 +nemi<aux>:>ti·nemi
@@ -12246,10 +12252,14 @@ LEXICON Aux
 +huetzi<aux>:>{T}i·huetzi
 +huitz<aux>:>ti·huitz
 +huitz<aux>:>{T}i·huitz
-+ca<aux>:>ti·ca[sg]
-+ca<aux>:>{T}i·ca[sg]
-+ca<aux>:>ti·ca>te[pl]
-+ca<aux>:>{T}i·ca>te[pl]
++cah<aux>:>ti·ca[sg]
++cah<aux>:>{T}i·ca[sg]
++cah<aux>:>ti·ca>te[pl]
++cah<aux>:>{T}i·ca>te[pl]
++cah<aux><fut>:>ti·yez[sg]
++cah<aux><fut>:>{T}i·yez[sg]
++cah<aux><fut>:>ti·yez>que[pl]
++cah<aux><fut>:>{T}i·yez>que[pl]
 +calaqui<aux>:>ti·calaqui
 +calaqui<aux>:>{T}i·calaqui
 +quiza<aux>:>ti·quiza
@@ -12294,14 +12304,15 @@ IrregVerbs
 IrregPass [<v><tv><pass>:] Tense
 
 LEXICON IrregVerbs
-cah<v><tv><pres>:cah[sg]
-cah<v><tv><pres>:ca>teh[pl]
-cah<v><tv><pret>:cat>ca[sg]
-cah<v><tv><pret>:cat>cah[pl]
-cah<v><tv><fut>:yez[sg]
-cah<v><tv><fut>:yez>queh[pl]
-cah<v><tv><impf>:yeya[sg]
-cah<v><tv><impf>:yeyah[pl]
+cah<v><iv><pres>:cah[sg]
+cah<v><iv><pres>:ca>teh[pl]
+cah<v><iv><pret>:cat>ca[sg]
+cah<v><iv><pret>:cat>cah[pl]
+cah<v><iv><fut>:yez[sg]
+cah<v><iv><fut>:yez>que[pl]
+cah<v><iv><fut>:yez>queh[pl]
+cah<v><iv><impf>:yeya[sg]
+cah<v><iv><impf>:yeyah[pl]
 
 ya<v><iv><pres>:yauh[sg]
 ya<v><iv><pres>:huih[pl]
@@ -15047,6 +15058,8 @@ mamazohua:mamazohua[cl2]
 elcicihui:elcicihui[cl1]
 chicha:chicha[cl1]
 tlaxtlapaloa[cl3]
+ipotoca:ipotoca[cl1]
+aalaca:aalaca[cl1]
 
 LEXICON VerbRootTV
 aachcui[cl1]
@@ -19536,7 +19549,6 @@ yolizcalia[cl3]
 «tecuani<n>»cua:«tecuan»cua[cl2]
 ciauhcanequi:ciauhcanequi[cl1]
 teopoa:teopoa[cl3]
-xixitinia:xixitinia[cl3]
 tlacuicuilia[cl3] # robar
 tlanamohuelia[cl3]
 chicha:chicha[cl1]
@@ -19549,6 +19561,13 @@ tlalotia[cl3]
 «tlatlacolli<n>»namictia:«tlatlacol»namictia[cl3]
 tzontzona[cl1]
 tlapitza:tlapitza[cl1]
+ittilia:ittilia[cl3]
+ilpia[cl3]
+ilpia:ilpiya[cl3]
+elleltia:elleltia[cl3]
+elleltia:eleltia[cl3]
+«tlacatl<n>»yocoya:«tlaca»yocoya[cl3]
+huehueloni:huehueloni[cl2]
 
 LEXICON IrregPass
 
@@ -20375,6 +20394,7 @@ tohtolcatinemi:totolcatinemi[cl2]
 tohtolci:totolci[cl1]
 tohtolini:totolini[cl1]
 tohtomahui:totomahui[cl1]
+xihxitini:xixitini[cl2]
 xihxitini:xixitini[cl2]
 cahcahua:cacahua[cl2]
 cahcalania:cacalania[cl2]
