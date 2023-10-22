@@ -77,6 +77,7 @@ LEXICON N-ABS
 <pl>:imeh[ni]
 <abs>:[eca]
 <pl>:[teteuh]
+<pl>:[tzitzin]
 <pl>:>uh[teteuh]
 <pl>:tin[cicitlaltin,tin]
 <abs>:t[t]
@@ -101,11 +102,11 @@ LEXICON N-VOC
 <voc>:>{é}
 
 PATTERN Noun-Absolutive
-(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,teteuh,cicitlaltin,catl,qui,t,in,e]]
+(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,tzitzin,teteuh,cicitlaltin,catl,qui,t,in,e]]
 VerbRootIV [<v><iv><nmlz>:>liz] N-ABS[tli]
 
 PATTERN Noun-Vocative
-(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,teteuh,cicitlaltin,catl,qui,t,in,e]] N-VOC
+(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,tzitzin,teteuh,cicitlaltin,catl,qui,t,in,e]] N-VOC
 
 PATTERN Noun-Possessed
 #Comunes[-teteuh,-cicitlaltin,-spa,-spa-s,-spa-es,-spa-anes,-loc,-rel] [<n>:]
@@ -465,6 +466,7 @@ cotzco:cotzco #
 cuauhihtic:cuauhihtic # 
 calcuac:calcuac # 
 atlauhcamac:atlauhcamac # 
+atlauhitic:atlauhitic #
 atetloc:atetloc # 
 
 tonalamapan:tonalamapan # 
@@ -10475,6 +10477,7 @@ tzintetl:tzinte[tl]
 tzintiliztli:tzintiliz[tli]
 tzintlantli:tzintlan[tli]
 tzintli:tzin[tli]
+tzintli:tzitzin[tzitzin]
 tzintohpolin:tzintohpol[in]
 tzintomalli:tzintomal[li]
 tzintzoncualactli:tzintzoncualac[tli]
@@ -11643,6 +11646,17 @@ ezzo:ezzo[poss]
 
 quinametli:quiname[tli]
 tecocolica:tecocolica[poss]
+tiacauh:tiacauh[Ø]
+
+cacapanton:cacapanton[Ø]
+centlapachton:centlapachton[Ø]
+chachapaton:chachapaton[Ø]
+cihuapiltepiton:cihuapiltepiton[Ø]
+cintanaton:cintanaton[Ø]
+cuitlapachton:cuitlapachton[Ø]
+yoyoliton:yoyoliton[Ø]
+
+tlahtli:tlah[tli]
 
 LEXICON Propios 
 Quetzalcoatl:Quetzalcoa[tl]
