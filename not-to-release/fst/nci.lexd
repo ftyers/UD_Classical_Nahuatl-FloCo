@@ -57,6 +57,7 @@ LEXICON Possessives
 <px2pl>:namo> # FIXME: Check
 <px3pl>:i{N}>
 
+
 LEXICON N-ABS
 <abs>:e[e]
 <pl>:e>que[e]
@@ -74,9 +75,9 @@ LEXICON N-ABS
 <abs>:huitl[huitl]
 <abs>:[Ø]
 <pl>:me[Ø]
-<abs>:i[ni]
-<pl>:ime[ni]
-<pl>:imeh[ni]
+<abs>:[ni]
+<pl>:me[ni]
+<pl>:meh[ni]
 <abs>:[eca]
 <pl>:[teteuh]
 <pl>:[tzitzin]
@@ -104,11 +105,11 @@ LEXICON N-VOC
 <voc>:>{é}
 
 PATTERN Noun-Absolutive
-(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,tzitzin,teteuh,cicitlaltin,catl,qui,t,in,e,c]]
+(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,tzitzin,teteuh,cicitlaltin,catl,qui,t,in,e,c,ni]]
 VerbRootIV [<v><iv><nmlz>:>liz] N-ABS[tli]
 
 PATTERN Noun-Vocative
-(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,tzitzin,teteuh,cicitlaltin,catl,qui,t,in,e,c]] N-VOC
+(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,tzitzin,teteuh,cicitlaltin,catl,qui,t,in,e,c,ni]] N-VOC
 
 PATTERN Noun-Possessed
 #Comunes[-teteuh,-cicitlaltin,-spa,-spa-s,-spa-es,-spa-anes,-loc,-rel] [<n>:]
@@ -5859,7 +5860,7 @@ tecuaizteminaliztli:tecuaizteminaliz[tli]
 tecuanatl:tecuana[tl]
 tecuancamotl:tecuancamo[tl]
 tecuanicpalli:tecuanicpal[li]
-tecuani:tecuan[ni] # "bestia"
+tecuani:tecuani[ni] # "bestia"
 tecuantonalli:tecuantonal[li]
 tecuappantli:tecuappan[tli]
 tecuatepiniliztli:tecuatepiniliz[tli]
@@ -9545,7 +9546,7 @@ tlatletzoyonilli:tlatletzoyonil[li]
 tlatlilli:tlatlil[li]
 tlatlilpalli:tlatlilpal[li]
 tlatl:tla[tl]
-tlatoani:tlatoan[ni]
+tlatoani:tlatoani[ni]
 tlatocaihcuilolli:tlatocaihcuilol[li]
 tlatocaticalactli:tlatocaticalac[tli]
 tlatocatlanahuatilli:tlatocatlanahuatil[li]
@@ -11019,7 +11020,7 @@ yaotiyanquiztli:yaotiyanquiz[tli]
 yaotlahtolli:yaotlahtol[li]
 yaotlalli:yaotlal[li]
 yaotlapiyaliztli:yaotlapiyaliz[tli]
-yaotlatoani:yaotlatoan[ni]
+yaotlatoani:yaotlatoani[ni]
 yaotl:yao[tl]
 yaoxacalli:yaoxacal[li]
 yaoyotl:yaoyo[tl]
@@ -11495,7 +11496,7 @@ malcalli:malcal[li]
 aquilli:aquil[li]
 acualli:acual[li]
 tlazopilli:tlazopi~pil[li]
-tecocoliani:tecocolian[ni]
+tecocoliani:tecocoliani[ni]
 tochin:tochin[Ø]
 yaotequihua:yaotequihua[Ø]
 tachcauh:tachcauh[Ø]
@@ -11534,7 +11535,7 @@ chiquimoli:chiquimo[li]
 yollotl<n>+tlapalihui:yollotlapalihui[Ø]
 yaotl<n>+tlahueliloc:yaotlahueliloc[Ø]
 ticitl:tici[tl]
-cualoni:cualon[ni] # "food"
+cualoni:cualoni[ni] # "food"
 patli:pa[tli] # "herb"
 tlanelhuatl:tlanelhua[tl] # "foundation"
 cuauhtli:cuauh[tli] # "eagle"
@@ -11628,18 +11629,19 @@ chane:chan[e]
 nenonotzale:nenonotzal[e]
 
 atlauhtli:atlauh[tli]
-cuiloni:cuilon[ni]
+cuiloni:cuiloni[ni]
 huitzitl:huitzi[tl]
 tecuantlacualli:tecuantlacual[li]
 
 xolo:xolo[Ø] # paje
 
-miquiztemachiani:miquiztemachian[ni]
-tlamatini:tlamatin[ni]
-hueyiyecoani:hueyiyecoan[ni]
-tlapiloni:tlapilon[ni]
-nehnemini:nehnemin[ni]
-tepoloani:tepoloan[ni]
+miquiztemachiani:miquiztemachiani[ni]
+miquitlanini:miquitlanini[ni]
+tlamatini:tlamatini[ni]
+hueyiyecoani:hueyiyecoani[ni]
+tlapiloni:tlapiloni[ni]
+nehnemini:nehnemini[ni]
+tepoloani:tepoloani[ni]
 mach:mach[poss]
 yomotlan:yomotlan[poss]
 tepitzyollotl:tepitzyollo[tl]
@@ -11665,6 +11667,9 @@ chicahuac:chicahua[c]
 tonalchicahuac:tonalchicahua[c]
 
 tzonquen:tzonquen[tli]
+tlacacemelle:tlacacemelle[Ø]
+
+ixtecuicuilpol:ixtecuicuilpol[Ø] 
 
 LEXICON Propios 
 Quetzalcoatl:Quetzalcoa[tl]
@@ -12259,8 +12264,15 @@ LEXICON Tense
 <prog>:>{T}oc[sg]
 <prog><fut>:>toz[sg]
 <prog><fut>:>{T}oz[sg]
+<prog><impf>:>toya[sg]
+<prog><impf>:>{T}oya[sg]
 <prog>:>toqueh[pl]
 <prog>:>{T}oqueh[pl]
+<prog><impf>:>toya[pl]
+<prog><impf>:>{T}oya[pl]
+<prog><impf>:>toyah[pl]
+<prog><impf>:>{T}oyah[pl]
+<prog>:>toque[pl]
 <prog>:>{T}oque[pl]
 <prog><fut>:>toz>que[pl]
 <prog><fut>:>{T}oz>que[pl]
@@ -12270,6 +12282,11 @@ LEXICON Aux
 +nemi<aux>:>{T}i·nemi
 +nemi<aux><past>:>ti·nen>ca
 +nemi<aux><past>:>{T}i·nen>ca
+
++mani<aux>:>ti·mani
++mani<aux>:>{T}i·mani
++mani<aux><past>:>ti·man>ca
++mani<aux><past>:>{T}i·man>ca
 
 +huetzi<aux>:>ti·huetzi
 +huetzi<aux>:>{T}i·huetzi
@@ -12299,41 +12316,62 @@ LEXICON Dir
 <ven><fut>:>qui
 <ven><past>:>{C}o
 
+PATTERN Hua
+
+#<impers><fut>:>hua>z[sg]
+#<impers><fut>:>hua>zque[pl]
+#<impers><past>:>hua>c[sg] 
+#<impers><past>:>hua>que[pl] 
+<impers><pres>:>hua[sg] # cochihua
+<impers><pres>:>hua[pl] # cochihua
+<impers><pres>:>huah[pl] # cochihua
 
 PATTERN TenseVerb
 ObjVerb[cl1] Tense[-pret]
 ObjVerb[cl1] Tense[pret,pl]
 ObjVerb[cl1] [<past>:>c[sg]]
+ObjVerb[cl1] Dir
+ObjVerb[cl1] Aux
 
 ObjVerb[cl2] Tense[-pret]
 ObjVerb[cl2] [:{del}] Tense[pret]
+ObjVerb[cl2] [:{del}] Dir
+ObjVerb[cl2] [:{del}] Aux
+ObjVerb[cl2] Dir
+ObjVerb[cl2] Aux
 
 ObjVerb[cl3] Tense[-pret,-fut]
 ObjVerb[cl3] [:{del}] Tense[|[pret,fut]]
+ObjVerb[cl3] Dir
+ObjVerb[cl3] Aux
 
 ObjVerb[cl4] Tense
+ObjVerb[cl4] Dir
+ObjVerb[cl4] Aux
 
 # -ni/-nca
 ObjVerb[cl5] Tense[-pret]
 #ObjVerb[cl5] Tense[pret,pl]
 ObjVerb[cl5] [:{del}] [<past>:>ca[sg]]
+ObjVerb[cl5] Dir
+ObjVerb[cl5] Aux
 
 VerbRootIV [<v><iv>:] Aux
 
-
 VerbRootIV [<v><iv>:] Dir
 
-ObjVerb Aux
+VerbRootIV [<v><iv>:] Hua
 
-ObjVerb Dir
+#ObjVerb Aux
+
+#ObjVerb Dir
 
 IrregVerbs
 
 IrregPass [<v><tv><pass>:] Tense
 
 IObjPrefix IrregPass [<v><tv><pass>:] Tense
-IObjPrefix Pass [<v><tv><pass>:] Tense
-IObjPrefix PassCl3 [<v><tv><pass>:] Tense
+IObjPrefix PassStem Tense
 
 LEXICON IrregVerbs
 cah<v><iv><pres>:cah[sg]
@@ -12420,6 +12458,10 @@ LEXICON CausApplCl3
 <caus>:{del}tia[cl3]
 <appl>:{del}lia[cl3]
 <hon>:{del}tzinoa[cl3]
+
+PATTERN PassStem 
+VerbRootTV[cl3] [<v><tv>:] PassCl3
+VerbRootTV[-cl3] [<v><tv>:] Pass
 
 PATTERN IVStem
 VerbRootIV [<v><iv>:]
@@ -13244,6 +13286,7 @@ huetzquiztequiti[cl2]
 huexcatlahtlacoa[cl3]
 huexiuhtlahuana[cl2]
 hueyiya[cl2]
+hueyiya:hueiya[cl2]
 huicini[cl2]
 huicintehua[cl2]
 huicintihuetzi[cl2]
@@ -15100,6 +15143,8 @@ atlitia[cl3] # natlitiaz
 chachacua:chachacua[cl2]
 manehnemi[cl2]
 «maitl<n>»nenemi:«ma»nenemi[cl2]
+tecuyoa[cl3]
+cia[cl3] 
 
 LEXICON VerbRootTV
 aachcui[cl1]
@@ -18385,7 +18430,6 @@ tlachpahuazhuia[cl3]
 tlachpanhuazhuia[cl3]
 tlachpania[cl3]
 tlacihuia[cl3]
-tlacmauhtia[cl3]
 tlacnalizcahua[cl2]
 tlacohcuepa[cl2]
 tlacohuia[cl3]
@@ -19619,6 +19663,10 @@ axitia:axitia[cl3]
 axitia:aaxitia[cl3]
 potza:potza[cl1] #  v.réfl., se faire un monticule.
 
+«tlalli<n>»tlacuilhuia:«tlal»tlacuilhuia[cl3]
+
+tlacmauhtia[cl3]
+
 LEXICON IrregPass
 
 tlaza:tlaxo[cl1]
@@ -19629,6 +19677,7 @@ temmacho:temmacho[cl1]
 cuitihuetzi:cuitihuecho[cl1]
 huetzi:huecho[cl1]
 itta:itto[cl1]
+«tetzahuitl<n>»itta:«tetzauh»itto[cl1]
 
 LEXICON VerbRootDVlex
 tlamachtia[cl3]
