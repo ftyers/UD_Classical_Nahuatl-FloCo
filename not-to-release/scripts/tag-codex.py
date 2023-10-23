@@ -338,7 +338,7 @@ for bloc in sys.stdin.read().split('\n\n'):
 		if addmisc != '_':
 			row[9] = row[9] + '|' + addmisc
 
-		if upos != 'X':
+		if upos != 'X' or (upos == 'X' and 'Analysed=Yes' in addmisc):
 			tagged += 1
 			n_tagged += 1
 

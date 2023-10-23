@@ -191,6 +191,9 @@ PATTERN ADV
 Adverbios[itg] [<adv><itg>:]
 Adverbios[-itg] [<adv>:]
 
+PATTERN MISC
+Miscellaneous [<x>:]
+
 ###############################################################################
 
 PATTERN PRON
@@ -14439,7 +14442,10 @@ tlahtlanecuiloa[cl3]
 tlahtlani[cl2]
 tlahtlanonotza[cl2]
 tlahtlapaloa[cl3]
+tlahtlapitza[cl2]
+tlahtlapitzahua:tlatlapitza[cl2]
 tlahtlapitzahua[cl2]
+tlahtlapitzahua:tlatlapitzahua[cl2]
 tlahtlauhtia[cl3]
 tlahtlaxcoloa[cl3]
 tlahtlaxochtia[cl3]
@@ -19741,6 +19747,7 @@ LEXICON VerbRootDVlex
 tlamachtia[cl3]
 «cal<n>»maca:«cal»maca[cl2]
 «tlacualli<n>»maca:«tlacua»maca[cl2]
+«quechtli<n>»pilia:«quech»pilia[cl3]
 tlatoltia[cl3]
 tlathuiltia[cl3]
 huihuitoni:huihuitoni[cl2]
@@ -20770,8 +20777,9 @@ LEXICON Irregulares
 tiyacatl<n><pl>:tiyacahuan
 
 /([a-zA-Z])(<sym>:)/
-PP<sym>:PP
-etc<sym>:etc # TODO: ???
+PP<x>:PP
+Plʼ<x>:Plʼ
+#etc<sym>:etc # TODO: ???
 
 de<pr>:de
 nocne<ij>:nocne
