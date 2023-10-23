@@ -59,12 +59,14 @@ o:0 <=> m _ %>: %{i%}: ;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 "hui/hua -> uh (I)"
-h:u <=>    _ u: [ a: | i: ] %>: %{T%}: ;
+h:u <=>    _ u: [ a: | i: ] %>: [ %{T%}: | %{C%}: ] ;
 
 "hui/hua -> uh (II)"
-u:h <=> h: _ [ a: | i: ] %>: %{T%}: ;
+u:h <=> h: _ [ a: | i: ] %>: [ %{T%}: |  %{C%}: ] ;
 
 !@ o {N}:m > p o l i h:u u:h i:0 > {T}:t i u h
+
+!@ o {N}:n > m {o}:o > c h i h:u u:h a:0 > {C}:c a
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -116,15 +118,18 @@ i:0 => %{q%}: u _ %>: e ;
 
 !@ {q}:q u:u i:0 >:> e:e l:l l:l a:a c:c u:u a:a h:h u:u a:a
 
-"removal of -a before ligature"
-Vx:0 <=> o _ %>: t i ·: ; 
-	where Vx in ( a ) ;
+!"removal of -a before ligature"
+!Vx:0 <=> o _ %>: t i ·: ; 
+!	except
+!		_ %>: %{C%}: ;
+!	where Vx in ( a ) ;
 
 !@ {q}:q u > t e t e m o a:0 > t i · n e m i
 
 "removal of vow before -tiuh"
-Vx:0 <=> [ Cns  - u | i | o | :u :h ] _ %>: [ %{T%}: | %{C%}: ] ; 
+Vx:0 <=> [ Cns  - u | i | o | :u :h ] _ %>:  [ %{T%}: | %{C%}: ] ; 
 	where Vx in ( a i ) ;
+
 
 !@ c h a c h a p a n i:0 > {T}:t i u h
 
@@ -137,6 +142,7 @@ Vx:0 <=> [ Cns  - u | i | o | :u :h ] _ %>: [ %{T%}: | %{C%}: ] ;
 !@ o > t e c h > t o q u i l i a:0 > {C}:c o
 
 !@ t i > {q}:q u i {n}:n > « t z o n t e c o n » a c o c u i > {C}:c o
+
 
 "m>n before {T}"
 m:n <=> _ i:0 %>: %{T%}: ; 

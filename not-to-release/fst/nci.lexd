@@ -222,7 +222,8 @@ ayac<prn><rel>:ayac
 ixquichtin<prn>:ixquichtin
 
 mochi<prn>:mochi
-tle<prn><int>:tle
+#tle<prn><int>:tle
+tle<prn>:tle
 
 on<prn><dem>:on
 
@@ -453,7 +454,6 @@ nepantla # "middle"
 
 # Book 05
 yaoc:yaoc # yaotl
-tonalchicahuac:tonalchicahuac # 
 tlateotoco:tlateotoco # 
 tlapanixcuac:tlapanixcuac # 
 tepeticpac:tepeticpac # 
@@ -487,7 +487,10 @@ neaxixaloyan:neaxixaloyan
 cuauhnepantla:cuauhnepantla
 callan:callan
 
+cuauhyocatlan:cuauhyocatlan 
 
+
+tlacacemellecan:tlacacemellecan # lugar de paz
 
 
 LEXICON Comunes 
@@ -11670,6 +11673,8 @@ tzonquen:tzonquen[tli]
 tlacacemelle:tlacacemelle[Ø]
 
 ixtecuicuilpol:ixtecuicuilpol[Ø] 
+yollatlapalihui:yollatlapalihui[Ø] # yol+tla~tlapalihui
+ellapanqui:ellapanqui[Ø] # el+tlapanqui
 
 LEXICON Propios 
 Quetzalcoatl:Quetzalcoa[tl]
@@ -12256,6 +12261,9 @@ LEXICON Tense
 <past>:[sg,pret]
 <past>:>que[pl,pret]
 <past>:>queh[pl,pret]
+<plu>:>{C}a[sg,plu]
+<plu>:>{C}a[pl,plu]
+<plu>:>{C}ah[pl,plu]
 <imp>:>can[pl,imp]
 <imp>:[sg,imp]
 
@@ -12316,12 +12324,12 @@ LEXICON Dir
 <ven><fut>:>qui
 <ven><past>:>{C}o
 
-PATTERN Hua
+LEXICON Hua
 
-#<impers><fut>:>hua>z[sg]
-#<impers><fut>:>hua>zque[pl]
-#<impers><past>:>hua>c[sg] 
-#<impers><past>:>hua>que[pl] 
+<impers><fut>:>hua>z[sg]
+<impers><fut>:>hua>z>que[pl]
+<impers><past>:>hua>c[sg] 
+<impers><past>:>hua>que[pl] 
 <impers><pres>:>hua[sg] # cochihua
 <impers><pres>:>hua[pl] # cochihua
 <impers><pres>:>huah[pl] # cochihua
@@ -15145,6 +15153,7 @@ manehnemi[cl2]
 «maitl<n>»nenemi:«ma»nenemi[cl2]
 tecuyoa[cl3]
 cia[cl3] 
+chachacuania[cl3]
 
 LEXICON VerbRootTV
 aachcui[cl1]
@@ -19666,6 +19675,10 @@ potza:potza[cl1] #  v.réfl., se faire un monticule.
 «tlalli<n>»tlacuilhuia:«tlal»tlacuilhuia[cl3]
 
 tlacmauhtia[cl3]
+cacamapiya:cacamapiya[cl2]
+camapiya:camapiya[cl2]
+icahuia[cl3]
+ciauhcahua[cl2] # conciauhcahua, tire s.o. out
 
 LEXICON IrregPass
 
@@ -19695,6 +19708,8 @@ LEXICON VerbRootDV
 «yollotl<n>»chichilia:«yollo»chichilia[cl3]
 «tzontecontli<n>»acocuilia:«tzontecon»acocuilia[cl3]
 tlatlauhtilia[cl3]
+pialia[cl3]
+pialia:piyelia[cl3]
 namaquilia[cl3]
 tetzahuia:tetzahuia[cl3]
 chieltia:chieltia[cl3]
@@ -19796,6 +19811,7 @@ chipelihuia[cl3]
 chitecolhuia[cl3]
 chiuhtlani[cl2]
 chiyalia[cl3]
+chiyalia:chiyelia[cl3]
 chiyaltia[cl3]
 chopinilia[cl3]
 choquiztlahtlauhtilia[cl3]
