@@ -12199,6 +12199,7 @@ LEXICON Directional
 LEXICON IncorpAdv
 
 «cen<adv>»:«ce{N}»>
+«huel<adv>»:«huel»>
 
 LEXICON Subject
 <s_sg1>:ni>[sg]
@@ -12462,7 +12463,7 @@ PATTERN VerbImpers
 AnyStem[cl3] [<impers>:{del}>lo]
 
 PATTERN ObjVerb
-Directional? IVStem
+Directional? IncorpAdv? IVStem # TODO: Hack
 ObjectPrefix Directional? TVStem
 Directional ObjectPrefix TVStem # TODO: HACK
 IObjPrefix DVlexStem
@@ -15169,6 +15170,8 @@ chachacuania[cl3]
 nenqui[cl2]
 machiotia:machiotia[cl3]
 mozticacalatza:mozticacalatza[cl1]
+
+«tlalli<n>»mictimoteca:«tlalli»mictimoteca[cl1]
 
 LEXICON VerbRootTV
 aachcui[cl1]
@@ -19672,6 +19675,7 @@ tlalotia[cl3]
 «tlatlacolli<n>»namictia:«tlatlacol»namictia[cl3]
 tzontzona[cl1]
 tlapitza:tlapitza[cl1]
+tlatlapitza:tlatlapitza[cl1]
 ittilia:ittilia[cl3]
 ilpia[cl3]
 ilpia:ilpiya[cl3]
@@ -19702,6 +19706,7 @@ icahuia[cl3]
 ciauhcahua[cl2] # conciauhcahua, tire s.o. out
 cuaahayohuia[cl3] # calentar cabeza
 tetzcalihui[cl2]
+
 
 LEXICON IrregPass
 
