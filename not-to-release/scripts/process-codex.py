@@ -283,11 +283,22 @@ for i in range(0, 20):
 
 replacement_lookup = {'['+hashlib.md5(i.encode('utf-8')).hexdigest()+']': i for i in replacements}
 
+current_side = ''
+
 for line in lines:
 	if re.findall(' [Ff]ol?. *[0-9]+', line):
 		current_folio = re.sub('[^0-9]+', '', line.replace('fo.','').strip())
+		current_side = ''
 		current_paragraph = 0
 		current_line = 0
+		continue
+	if re.findall('^#[rv]', line):
+		if 'r' in line:
+			current_side = 'r'
+		elif 'v' in line:
+			current_side = 'v'
+		current_line += 1
+		current_paragraph += 1
 		continue
 
 	# For end of sentences that aren't
@@ -311,7 +322,7 @@ for line in lines:
 
 	for token in tokenise(line):
 		token = token.strip('^') # for inserted tokens
-		tokens.append((token, current_folio, current_paragraph, current_line))
+		tokens.append((token, current_folio + current_side, current_paragraph, current_line))
 
 	current_line += 1
 
