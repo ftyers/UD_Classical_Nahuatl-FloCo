@@ -2809,13 +2809,13 @@
 
 # sent_id = Book_05_-_The_Omens.txt:47
 # text = Ipampa iuh qujtoaia, qujlmach, in iehoatl chiquatli: intitlan, intlaioal, in mjctlan tecutli: yoan mjctecacioatl: ommat in moctlan, ic qujtocaiotiaia, iaotequjoa: ipampa ca inteancauh, intenotzacauh, in mjctlan tecutli: ioan mjctecacioatl.
-# text[norm] = Ipampa iuh quihtoaya, quilmach, in yehhuatl chicuatli: intitlan, intlayohual, in mictlan teuctli: ihuan mictecacihuatl: ommat in mictlan, ic quitocayotiaya, yaotequihua: ipampa ca in teancauh, in tenotzacauh, in mictlan teuctli: ihuan mictecacihuatl.
+# text[norm] = Ipampa iuh quihtoaya, quilmach, in yehhuatl chicuatli: intitlan, intlayohual, in mictlan teuctli: ihuan mictecacihuatl: ommat in mictlan, ic quitocayotiaya, yaotequihua: ipampa ca inteancauh, intenotzcauh, in mictlan teuctli: ihuan mictecacihuatl.
 # text[orig] = Ipampa¶iuh·qujtoaia·,·qujlmach·,·in·iehoatl·chi¶quatli·:·intitlan·,·intlaioal·,·in·mjctlan¶tecutli·:·yoan·mjctecacioatl·:·ommatin¶moctlan·,·icqujtocaiotiaia·,·iaotequjoa·:·ipampa·ca·inteancauh·,·intenotzacauh·,·in·mjctlan·tecutli·:·ioan·mjctecacioatl·.
 # text[osp] = Dezian, que aquel era el mensajero del dios mictlan tecutli, que yva, y venja al infierno: por esto le llamauan yautequja, qujere dezir: mensaiero del dios del infierno, y diosa del infierno, que andaua llamar a los quele mandauan.
 # references = A&D/169:4
 # tagged = 100.00%
 # lemmatised = 100.00%
-# analysed = 95.56%
+# analysed = 100.00%
 1	Ipampa	ipampa	NOUN	_	NounType=Relat	3	obl	_	Folio=7v|Paragraph=3|Line=15|Norm=Ipampa|Gloss=porque
 2	iuh	iuh	ADV	_		3	_	_	Folio=7v|Paragraph=3|Line=16|Norm=iuh|AmbigNorm=True|Override=False|Gloss=así|Analysed=Yes
 3	qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	_	Folio=7v|Paragraph=3|Line=16|Norm=quihtoaya|Analysed=Yes
@@ -2848,21 +2848,17 @@
 30	:	:	PUNCT	_		32	punct	_	Folio=7v|Paragraph=3|Line=19|Norm=:|Analysed=Yes
 31	ipampa	ipampa	NOUN	_	NounType=Relat	32	_	_	Folio=7v|Paragraph=3|Line=20|Norm=ipampa|Gloss=porque
 32	ca	cah|ca	VERB	_	_	27	_	_	Folio=7v|Paragraph=3|Line=20|Norm=ca|AmbigNorm=True|Override=False
-33-34	inteancauh	_	_	_	_	_	_	_	_
-33	in	in	DET|PRON|SCONJ	_	_	34	_	_	Orig=icqujtocaiotiaia|Folio=7v|Paragraph=3|Line=19|Norm=in
-34	teancauh	ana	VERB	_	_	32	_	_	Orig=icqujtocaiotiaia|Folio=7v|Paragraph=3|Line=19|Norm=teancauh
-35	,	,	PUNCT	_		36	punct	_	Folio=7v|Paragraph=3|Line=20|Norm=,|Analysed=Yes
-36-37	intenotzacauh	_	_	_	_	_	_	_	_
-36	in	in	DET|PRON|SCONJ	_	_	37	_	_	Orig=icqujtocaiotiaia|Folio=7v|Paragraph=3|Line=19|Norm=in
-37	tenotzacauh	notza	VERB	_	_	34	_	_	Orig=icqujtocaiotiaia|Folio=7v|Paragraph=3|Line=19|Norm=tenotzacauh
-38	,	,	PUNCT	_		40	punct	_	Folio=7v|Paragraph=3|Line=20|Norm=,|Analysed=Yes
-39	in	in	DET|SCONJ	_	_	40	_	_	Folio=7v|Paragraph=3|Line=21|Norm=in
-40	mjctlan	mictlan	NOUN	_	_	34	_	_	Folio=7v|Paragraph=3|Line=21|Norm=mictlan|AmbigNorm=True|Override=False|Gloss=inframundo|Locative=Yes
-41	tecutli	teuctli	NOUN	_	State=Abs	40	flat	_	Folio=7v|Paragraph=3|Line=21|Norm=teuctli|Analysed=Yes
-42	:	:	PUNCT	_		43	punct	_	Folio=7v|Paragraph=3|Line=21|Norm=:|Analysed=Yes
-43	ioan	huan	NOUN	_	NounType=Relat	40	nmod	_	Folio=7v|Paragraph=3|Line=21|Norm=ihuan|Gloss=con
-44	mjctecacioatl	mictecacihuatl	NOUN	_	State=Abs	43	nmod	_	Folio=7v|Paragraph=3|Line=21|Norm=mictecacihuatl|Analysed=Yes
-45	.	.	PUNCT	_		3	punct	_	Folio=7v|Paragraph=3|Line=21|Norm=.|Analysed=Yes
+33	inteancauh	teancatl	NOUN	_	Number[psor]=Plur|Person[psor]=3|State=Poss	32	_	_	Folio=7v|Paragraph=3|Line=20|Norm=inteancauh|Analysed=Yes
+34	,	,	PUNCT	_		35	punct	_	Folio=7v|Paragraph=3|Line=20|Norm=,|Analysed=Yes
+35	intenotzacauh	tenotzcatl	NOUN	_	Number[psor]=Plur|Person[psor]=3|State=Poss	33	_	_	Folio=7v|Paragraph=3|Line=20|Norm=intenotzcauh|Analysed=Yes
+36	,	,	PUNCT	_		38	punct	_	Folio=7v|Paragraph=3|Line=20|Norm=,|Analysed=Yes
+37	in	in	DET|SCONJ	_	_	38	_	_	Folio=7v|Paragraph=3|Line=21|Norm=in
+38	mjctlan	mictlan	NOUN	_	_	33	_	_	Folio=7v|Paragraph=3|Line=21|Norm=mictlan|AmbigNorm=True|Override=False|Gloss=inframundo|Locative=Yes
+39	tecutli	teuctli	NOUN	_	State=Abs	38	flat	_	Folio=7v|Paragraph=3|Line=21|Norm=teuctli|Analysed=Yes
+40	:	:	PUNCT	_		41	punct	_	Folio=7v|Paragraph=3|Line=21|Norm=:|Analysed=Yes
+41	ioan	huan	NOUN	_	NounType=Relat	38	nmod	_	Folio=7v|Paragraph=3|Line=21|Norm=ihuan|Gloss=con
+42	mjctecacioatl	mictecacihuatl	NOUN	_	State=Abs	41	nmod	_	Folio=7v|Paragraph=3|Line=21|Norm=mictecacihuatl|Analysed=Yes
+43	.	.	PUNCT	_		3	punct	_	Folio=7v|Paragraph=3|Line=21|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:48
 # text = Auh in jquac, qujcaquja tzatzi: ioan in mozticacalatza njman conaoa, conjluja in toqujch: ma xitlamattiuh nocne, tixtecocoiocpul: monan ticieco.
@@ -3472,13 +3468,13 @@
 
 # sent_id = Book_05_-_The_Omens.txt:63
 # text = Intla ie vmpa itztiuh, mjctlampa: ic qujmati ca ie mjqujz, in oqujmottiti: auh intlacamo vmpa itztiuh, ic qujmati, aco çan itla in qujtoznequj, acacomo cenca veixtica: qujtoaia in motetzauj, tlaqujioculi, tlamotelchioa, in ioioliton: cujx çan ie toconmattiezque? cujx çan ie ipan toizque? ma ca qujn jc ticmatizque in tlein, qujtoznequj.
-# text[norm] = Intla ye ompa itztiuh, mictlampa: ic quimati ca ye miquiz, in oquimottiti: auh intlacamo ompa itztiuh, ic quimati, azo zan itla in quihtoz nequi, acazomo cenca hueixtica: quihtoaya in motetzahui, tla quiyocoli, tla motelchihua, in yoyoliton: cuix zan ye toconmattiyezque? cuix zan ye ipan toyezque? ma ca quin ic ticmatizque in tlein, quihtoz nequi.
+# text[norm] = Intla ye ompa itztiuh, mictlampa: ic quimati ca ye miquiz, in oquimottiti: auh intlacamo ompa itztiuh, ic quimati, azo zan itla in quihtoz nequi, acazomo cenca hueixtica: quihtoaya in motetzahui, tla quiyocoli, tla motelchihua, in yoyoliton: cuix zan ye toconmattiyezque? cuix zan ye ipan tonyezque? ma ca quin ic ticmatizque in tlein, quihtoz nequi.
 # text[orig] = Intla·ie·vmpa·itztiuh·,·mjctlampa·:·ic·qujmati·caie·mjqujz·,·ino·quj·mottiti·:·auh·intlacamo·vm¶pa·itztiuh·,·ic·qujmati·,·aco·çan¶itla·in·quj·toznequj·,·acacomo·cen¶ca·veixtica·:·qujtoaia·in·motetza¶uj·,·tlaqujioculi·,·tlamotelchioa·,·in¶ioioliton·:·cujx·çan·ie·toconmatti¶ezque·¿§·cujx·çan·ie·ipan·toizque·¿§¶macaqujnjcticmatizque·intlein·,·qujtoznequj·.
 # text[osp] = [...] y si iua hazia al norte, luego se determjnaua, en que aquello, era señal, que auja de morir este hombre que la miraua: y si poruentura yua hazia otra parte alguna, luego se determinaua, en que no era cosa de muerte aquella señal, sino de algun otro infortunio depoca importancia: y asi dezia: anda vete donde quisieres, no se meda nada de ti, e deandar pensando poruentura en lo que quisieres dezir, ello se parecera ante de mucho, no me curo de ti.
 # references = A&D/172:5
 # tagged = 100.00%
 # lemmatised = 100.00%
-# analysed = 98.57%
+# analysed = 100.00%
 1	Intla	tla	PRON	_	_	4	_	_	Folio=9r|Paragraph=1|Line=8|Norm=Intla|Gloss=algo
 2	ie	ye	ADV	_	_	4	_	_	Folio=9r|Paragraph=1|Line=8|Norm=ye|AmbigNorm=True|Override=False
 3	vmpa	ompa	ADV	_		4	_	_	Folio=9r|Paragraph=1|Line=8|Norm=ompa|Gloss=allá|Analysed=Yes
@@ -3539,7 +3535,7 @@
 55	çan	zan	ADV	_		58	_	_	Folio=9r|Paragraph=1|Line=16|Norm=zan|Analysed=Yes
 56	ie	ye	ADV	_	_	58	_	_	Folio=9r|Paragraph=1|Line=16|Norm=ye|AmbigNorm=True|Override=False
 57	ipan	pan	NOUN	_	NounType=Relat	58	_	_	Folio=9r|Paragraph=1|Line=16|Norm=ipan
-58	toizque	cah	VERB	_	_	52	_	_	Folio=9r|Paragraph=1|Line=16|Norm=toyezque
+58	toizque	cah	VERB	_	Directional=On|Number[subj]=Plur|Person[subj]=1|Subcat=Intr|Tense=Fut|VerbForm=Fin	52	_	_	Folio=9r|Paragraph=1|Line=16|Norm=tonyezque|Analysed=Yes
 59	?	?	PUNCT	_		58	punct	_	Folio=9r|Paragraph=1|Line=16|Norm=?|Analysed=Yes
 60	ma	ma	ADV	_	_	64	_	_	Orig=macaqujnjcticmatizque|Folio=9r|Paragraph=1|Line=17|Norm=ma|AmbigNorm=True|Override=False|Gloss=OPT
 61	ca	cah|ca	VERB	_	_	64	_	_	Orig=macaqujnjcticmatizque|Folio=9r|Paragraph=1|Line=17|Norm=ca|AmbigNorm=True|Override=False
