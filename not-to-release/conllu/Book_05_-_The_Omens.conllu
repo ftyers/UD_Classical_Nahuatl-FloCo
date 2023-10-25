@@ -1098,7 +1098,7 @@
 # references = A&D/163:3
 # tagged = 100.00%
 # lemmatised = 100.00%
-# analysed = 98.42%
+# analysed = 98.95%
 1	Ximellaquauacan	ellacuahua	VERB	_	Mood=Imp|Number[subj]=Plur|Person[subj]=2|Reflexive[obj]=Yes|Subcat=Tran|VerbForm=Fin	0	root	0:root	Orig=Ximella¶·quauacan|Folio=3r,3r|Paragraph=1,1|Line=16,17|Norm=Ximellacuahuacan|Analysed=Yes
 2	,	,	PUNCT	_		3	punct	3:punct	Folio=3r|Paragraph=1|Line=17|Norm=,|Analysed=Yes
 3	nopilhoane	pilli	NOUN	_	Clitic=Voc|Number=Plur|Number[psor]=Sing|Person[psor]=1|State=Poss	1	vocative	1:vocative	Folio=3r|Paragraph=1|Line=17|Norm=nopilhuane|Analysed=Yes
@@ -1263,7 +1263,7 @@
 159	puchteca	pochtecatl	NOUN	_	Number=Plur	156	appos	156:appos	Orig=inpuchteca|Folio=3v|Paragraph=2|Line=44|Norm=pochteca|Analysed=Yes
 160	,	,	PUNCT	_		162	punct	162:punct	Folio=3v|Paragraph=2|Line=44|Norm=,|Analysed=Yes
 161	in	in	DET|SCONJ	_	_	162	_	162	Orig=injia¶·que|Folio=3v,3v|Paragraph=2,2|Line=44,45|Norm=in
-162	jiaque	yohui	VERB	_	_	159	_	159	Orig=injia¶·que|Folio=3v,3v|Paragraph=2,2|Line=44,45|Norm=yaque
+162	jiaque	ya	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr	159	_	159	Orig=injia¶·que|Folio=3v,3v|Paragraph=2,2|Line=44,45|Norm=yaque|Analysed=Yes
 163	:	:	PUNCT	_		167	punct	167:punct	Folio=3v|Paragraph=2|Line=45|Norm=:|Analysed=Yes
 164	ca	cah|ca	PART	_	_	167	_	167	Orig=caieeppa|Folio=3v|Paragraph=2|Line=45|Norm=ca|AmbigNorm=True|Override=False
 165	ieeppa	yeppa	ADV	_		167	_	167	Orig=caieeppa|Folio=3v|Paragraph=2|Line=45|Norm=yeppa|Gloss=antes|Analysed=Yes
@@ -2848,9 +2848,9 @@
 30	:	:	PUNCT	_		32	punct	_	Folio=7v|Paragraph=3|Line=19|Norm=:|Analysed=Yes
 31	ipampa	ipampa	NOUN	_	NounType=Relat	32	_	_	Folio=7v|Paragraph=3|Line=20|Norm=ipampa|Gloss=porque
 32	ca	cah|ca	VERB	_	_	27	_	_	Folio=7v|Paragraph=3|Line=20|Norm=ca|AmbigNorm=True|Override=False
-33	inteancauh	teancatl	NOUN	_	Number[psor]=Plur|Person[psor]=3|State=Poss	32	_	_	Folio=7v|Paragraph=3|Line=20|Norm=inteancauh|Analysed=Yes
+33	inteancauh	teancatl	VERB	_	_	32	_	_	Folio=7v|Paragraph=3|Line=20|Norm=inteancauh
 34	,	,	PUNCT	_		35	punct	_	Folio=7v|Paragraph=3|Line=20|Norm=,|Analysed=Yes
-35	intenotzacauh	tenotzcatl	NOUN	_	Number[psor]=Plur|Person[psor]=3|State=Poss	33	_	_	Folio=7v|Paragraph=3|Line=20|Norm=intenotzcauh|Analysed=Yes
+35	intenotzacauh	tenotzcatl	VERB	_	_	33	_	_	Folio=7v|Paragraph=3|Line=20|Norm=intenotzcauh
 36	,	,	PUNCT	_		38	punct	_	Folio=7v|Paragraph=3|Line=20|Norm=,|Analysed=Yes
 37	in	in	DET|SCONJ	_	_	38	_	_	Folio=7v|Paragraph=3|Line=21|Norm=in
 38	mjctlan	mictlan	NOUN	_	_	33	_	_	Folio=7v|Paragraph=3|Line=21|Norm=mictlan|AmbigNorm=True|Override=False|Gloss=inframundo|Locative=Yes
