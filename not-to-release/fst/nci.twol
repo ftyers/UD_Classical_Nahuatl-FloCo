@@ -99,16 +99,21 @@ u:0 <=> %{q%}:c _  ;
 i:0 <=> %{q%}:c u:0 _ %>: ;
                     _ %>: %{i%}: ; 
                     _ %>: %{a%}: ;
+                    _ %>: %{T%}: ;
 
 !@ {q}:q u:u i:0 >:0 {i}:i h:h t:t o:o a:a >:0 y:y a:a
 
 "c/qu I"
 u:0 <=> _ .#.  ;
         _ %>: q u e ;
+        q: _ i: %>: %{T%}: ;
 
 "c/qu I"
 q:c <=> _ u:0 .#.  ;
         _ u:0 %>: q u e ;
+        _ u:0 :0 %>: %{T%}: ;
+
+!@ o {N}:m > m i q:c u:0 i:0 > {T}:t o c
 
 "i ~ e"
 i:0 => %{q%}: u _ %>: e ; 
@@ -142,6 +147,7 @@ Vx:0 <=> [ Cns  - u | i | o | :u :h ] _ %>:  [ %{T%}: | %{C%}: ] ;
 !@ o > t e c h > t o q u i l i a:0 > {C}:c o
 
 !@ t i > {q}:q u i {n}:n > « t z o n t e c o n » a c o c u i > {C}:c o
+
 
 
 "m>n before {T}"
