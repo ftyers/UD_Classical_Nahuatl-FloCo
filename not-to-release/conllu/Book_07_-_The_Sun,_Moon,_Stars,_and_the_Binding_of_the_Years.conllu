@@ -963,10 +963,10 @@
 # text[norm] = quen tonyezque?
 # text[orig] = quen·toniezque·?
 # tagged = 100.00%
-# lemmatised = 66.67%
-# analysed = 66.67%
+# lemmatised = 100.00%
+# analysed = 100.00%
 1	quen	quen	ADV	_		_	_	_	Folio=2|Paragraph=4|Line=22|Norm=quen|Analysed=Yes
-2	toniezque	_	VERB	_	_	_	_	_	Folio=2|Paragraph=4|Line=22|Norm=tonyezque|Guessed=Yes
+2	toniezque	cah	VERB	_	Directional=On|Number[subj]=Plur|Person[subj]=1|Subcat=Intr|Tense=Fut|VerbForm=Fin	_	_	_	Folio=2|Paragraph=4|Line=22|Norm=tonyezque|Analysed=Yes
 3	?	?	PUNCT	_		_	_	_	Folio=2|Paragraph=4|Line=22|Norm=?|Analysed=Yes
 
 # sent_id = Book_07_-_The_Sun,_Moon,_Stars,_and_the_Binding_of_the_Years.tokenised:33
@@ -5193,7 +5193,7 @@
 # text[orig] = Cepaiauitl·,·Çan·iuical·,·çan·itlauical·,·qui¶toquilia·,·quitocatiuh·,·yoa·ono¶tiuh·in·cetl·:·iuhquin·quiauitl¶ipan·poui·.
 # tagged = 81.82%
 # lemmatised = 63.64%
-# analysed = 59.09%
+# analysed = 63.64%
 1	Cepaiauitl	_	NOUN	_	_	_	_	_	Folio=13|Paragraph=1|Line=1|Norm=*Cepaiauitl|Guessed=Yes
 2	,	,	PUNCT	_		_	_	_	Folio=13|Paragraph=1|Line=1|Norm=,|Analysed=Yes
 3	Çan	zan	ADV	_		_	_	_	Folio=13|Paragraph=1|Line=2|Norm=Zan|Analysed=Yes
@@ -5207,7 +5207,7 @@
 11	quitocatiuh	_	VERB	_	_	_	_	_	Folio=13|Paragraph=1|Line=3|Norm=*quitocatiuh
 12	,	,	PUNCT	_		_	_	_	Folio=13|Paragraph=1|Line=3|Norm=,|Analysed=Yes
 13	yoa	huan	NOUN	_	NounType=Relat	_	_	_	Folio=13|Paragraph=1|Line=3|Norm=ihuan|Gloss=con
-14	onotiuh	ono	VERB	_	_	_	_	_	Orig=ono¶·tiuh|Folio=13,13|Paragraph=1,1|Line=3,4|Norm=onotiuh|AmbigNorm=True|Override=False
+14	onotiuh	i	VERB	_	Aspect=Prior|Directional=And|Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	_	_	_	Orig=ono¶·tiuh|Folio=13,13|Paragraph=1,1|Line=3,4|Norm=onotiuh|AmbigNorm=True|Override=False|Analysed=Yes
 15	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=13|Paragraph=1|Line=4|Norm=in
 16	cetl	_	NOUN	_	_	_	_	_	Folio=13|Paragraph=1|Line=4|Norm=*cetl|Guessed=Yes
 17	:	:	PUNCT	_		_	_	_	Folio=13|Paragraph=1|Line=4|Norm=:|Analysed=Yes
@@ -5887,7 +5887,7 @@
 28	in	in	DET|SCONJ|PRON	_	_	_	_	_	Orig=in·ipan|Folio=14|Paragraph=7|Line=7|Norm=in
 29	ipan	pan	NOUN	_	NounType=Relat	_	_	_	Orig=in·ipan|Folio=14|Paragraph=7|Line=7|Norm=ipan
 30	muchioa	chihua	VERB	_	_	_	_	_	Folio=14|Paragraph=7|Line=7|Norm=mochihua
-31	ia	ya	ADV	_		_	_	_	Orig=¶·ia|Folio=15,15|Paragraph=0,0|Line=0,1|Norm=ya|Analysed=Yes
+31	ia	ya	X	_	_	_	_	_	Orig=¶·ia|Folio=15,15|Paragraph=0,0|Line=0,1|Norm=ya|Ambiguous=Yes|Analysed=Yes
 32	maianaliztli	_	NOUN	_	_	_	_	_	Folio=15|Paragraph=0|Line=1|Norm=mayanaliztli|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
 33	,	,	PUNCT	_		_	_	_	Folio=15|Paragraph=0|Line=1|Norm=,|Analysed=Yes
 34	moteneoa	tenehua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	_	_	_	Folio=15|Paragraph=0|Line=1|Norm=motenehua|AmbigNorm=True|Override=False|Analysed=Yes
@@ -6337,7 +6337,7 @@
 94	ca	cah|ca	VERB|PART	_	_	_	_	_	Orig=ca·nel|Folio=16|Paragraph=1|Line=14|Norm=ca|AmbigNorm=True|Override=False
 95	nel	nel	ADV	_	_	_	_	_	Orig=ca·nel|Folio=16|Paragraph=1|Line=14|Norm=nel|Gloss=ya
 96	oimpan	_	X	_	_	_	_	_	Orig=o·impan|Folio=16,16|Paragraph=1,1|Line=14,14|Norm=*oimpan
-97	ia	ya	ADV	_		_	_	_	Folio=16|Paragraph=1|Line=14|Norm=ya|Analysed=Yes
+97	ia	ya	X	_	_	_	_	_	Folio=16|Paragraph=1|Line=14|Norm=ya|Ambiguous=Yes|Analysed=Yes
 98	,	,	PUNCT	_		_	_	_	Folio=16|Paragraph=1|Line=14|Norm=,|Analysed=Yes
 99	oquimonamictique	_	X	_	_	_	_	_	Folio=16|Paragraph=1|Line=15|Norm=*oquimonamictique
 100	,	,	PUNCT	_		_	_	_	Folio=16|Paragraph=1|Line=15|Norm=,|Analysed=Yes
@@ -7189,7 +7189,7 @@
 # text[norm] = Auh in pipiltototi, no quinmemexaiacatiaia: ayac huel oncochiya, onicopia, onmispiquia, onjsmotzoloaia: zan ic cateh in innahoan, in intahoa, quimixititicate, quintipiniticate, quintiloticate, quintzatziliticate, quimixitia, quintipi niya, quintiloa: ipampa intla oncochizque, quilmach quiquimichtin mocuepazquc, quimichtizque.
 # text[orig] = Auh·in·pipiltototi·,·no·quinmemexaiacatiaia·:·aiac¶vel·oncochia·,·onicopia·,·onmis¶piquia·,·onjsmotzoloaia·:·çanic¶cate·ininnahoan·,·inintahoa·,·quimixititicate·,·quintipiniti¶cate·,·quintiloticate·,·quintzatzi¶liticate·,·quimixitia·,·quintipi¶nja·,·quintiloa·:·ipampa·intla¶oncochizque·,·quilmach·quiqui¶michtin·mocuepazquc·,·quimich¶tizque·.
 # tagged = 66.67%
-# lemmatised = 66.67%
+# lemmatised = 64.71%
 # analysed = 64.71%
 1	Auh	auh	CCONJ	_	_	_	_	_	Folio=18|Paragraph=2|Line=21|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=18|Paragraph=2|Line=21|Norm=in
@@ -7228,7 +7228,7 @@
 35	quimixitia	_	X	_	_	_	_	_	Folio=18|Paragraph=2|Line=28|Norm=*quimixitia
 36	,	,	PUNCT	_		_	_	_	Folio=18|Paragraph=2|Line=28|Norm=,|Analysed=Yes
 37	quintipi	_	X	_	_	_	_	_	Folio=18|Paragraph=2|Line=28|Norm=*quintipi
-38	nja	i	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=18|Paragraph=2|Line=29|Norm=niya|Analysed=Yes
+38	nja	_	VERB	_	_	_	_	_	Folio=18|Paragraph=2|Line=29|Norm=niya|Ambiguous=Yes|Analysed=Yes
 39	,	,	PUNCT	_		_	_	_	Folio=18|Paragraph=2|Line=29|Norm=,|Analysed=Yes
 40	quintiloa	_	X	_	_	_	_	_	Folio=18|Paragraph=2|Line=29|Norm=*quintiloa
 41	:	:	PUNCT	_		_	_	_	Folio=18|Paragraph=2|Line=29|Norm=:|Analysed=Yes
@@ -8019,7 +8019,7 @@
 1	Auh	auh	CCONJ	_	_	_	_	_	Folio=20|Paragraph=2|Line=31|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=20|Paragraph=2|Line=31|Norm=in
 3	oimacaxo	_	X	_	_	_	_	_	Folio=20|Paragraph=2|Line=31|Norm=*oimacaxo
-4	ia	ya	ADV	_		_	_	_	Folio=20|Paragraph=2|Line=32|Norm=ya|Analysed=Yes
+4	ia	ya	X	_	_	_	_	_	Folio=20|Paragraph=2|Line=32|Norm=ya|Ambiguous=Yes|Analysed=Yes
 5	ootzti	_	X	_	_	_	_	_	Folio=20|Paragraph=2|Line=32|Norm=*ootzti
 6	,	,	PUNCT	_		_	_	_	Folio=20|Paragraph=2|Line=32|Norm=,|Analysed=Yes
 7	intla	tla	PRON	_	_	_	_	_	Folio=20|Paragraph=2|Line=32|Norm=intla|Gloss=algo
