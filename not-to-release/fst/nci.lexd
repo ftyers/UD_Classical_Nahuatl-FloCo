@@ -12236,6 +12236,7 @@ PATTERN ObjectPrefix
 ObjectSpec(1): :ObjectSpec(2) IncorpAdv?
 ObjectRefl(1): :ObjectRefl(2) IncorpAdv?
 ObjectNonSpec(1): :ObjectNonSpec(2) IncorpAdv?
+IndirNe IncorpAdv?
 
 PATTERN IObjPrefix
 ObjectSpec(2) Directional? IncorpAdv?
@@ -12268,6 +12269,9 @@ LEXICON ObjectRefl(2)
 LEXICON ObjectNonSpec(2)
 <o_aa3> <i_aa3>:te>
 <o_nn3> <i_nn3>:tla>
+
+LEXICON IndirNe
+<i_ref>:ne>
 
 LEXICON ObjectDouble
 <o_pl3>:i{n}
@@ -12391,6 +12395,8 @@ ObjVerb[cl5] Aux
 VerbRootIV [<v><iv>:] Aux
 
 VerbRootIV [<v><iv>:] Dir
+
+VerbRootIV [<v><iv>:] Tense[imp] Dir
 
 VerbRootIV [<v><iv>:] Hua
 
@@ -15215,6 +15221,10 @@ tolihui:tolihui[cl2]
 
 «nen<adv>»quiza:«nen»quiza[cl2]
 atlitia[cl3] 
+# xitlamatpolotiuh - xi-tlamat-polo(a)-tiuh 
+# to be quiet
+tlamatpoloa[cl3]
+yecahua[cl2]
 
 LEXICON VerbRootTV
 aachcui[cl1]
@@ -20810,6 +20820,7 @@ tiyacatl<n><pl>:tiyacahuan
 <px1sg>icniuhtli<n><voc>:no>cn>e 
 
 <s_sg1>atlitia<v><iv><fut>:natlitiaz # why isn't the -a deleted?
+
 
 
 /([a-zA-Z])(<sym>:)/
