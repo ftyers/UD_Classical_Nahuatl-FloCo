@@ -94,6 +94,7 @@ def retokenise(tree, sentence, model_bundle=None, manual=False):
 		buf = {'repl': '', 'span': []}
 		idx = 0
 		while idx < len(sentence):
+			#print('SENT_IDX:', sentence[idx], file=sys.stderr)
 			if sentence[idx][0].replace('¶','').strip()[-1] == '@':
 				temp = sentence[idx][0]
 				temp = temp.replace('@', '').replace('|', '·')
@@ -271,6 +272,8 @@ if '@' in book_text:
 	# In iehoantin,|y, moteneoa tlalo
 	book_text = re.sub(',\|', ', ', book_text) 
 	book_text = re.sub('\.\|', '. ', book_text) 
+	if re.findall('| *\n', book_text):
+		print('WARNING: Pipe ends a line.', file=sys.stderr)
 	manual_tokenisation = True
 
 lines = re.sub('  *', ' ', book_text).split('\n')
@@ -286,7 +289,8 @@ replacement_lookup = {'['+hashlib.md5(i.encode('utf-8')).hexdigest()+']': i for 
 current_side = ''
 
 for line in lines:
-	if re.findall(' [Ff]ol?. *[0-9]+', line):
+	if re.findall(' *[Ff]ol?. *[0-9]+', line):
+		#print('FOLIO:', line, file=sys.stderr)
 		current_folio = re.sub('[^0-9]+', '', line.replace('fo.','').strip())
 		current_side = ''
 		current_paragraph = 0
