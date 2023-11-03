@@ -272,7 +272,7 @@ if '@' in book_text:
 	# In iehoantin,|y, moteneoa tlalo
 	book_text = re.sub(',\|', ', ', book_text) 
 	book_text = re.sub('\.\|', '. ', book_text) 
-	if re.findall('| *\n', book_text):
+	if re.findall('\| *\n', book_text):
 		print('WARNING: Pipe ends a line.', file=sys.stderr)
 	manual_tokenisation = True
 
