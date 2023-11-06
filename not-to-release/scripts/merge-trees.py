@@ -55,6 +55,8 @@ for bloc in open(sys.argv[1]).read().split('\n\n'):
 			if row[7] != '_':
 				n_tokens_head_deprel += 1
 				stats[sent_id][2] += 1
+			if row[8].isalnum():
+				row[8] = row[8]+':dep'
 
 	trees[sent_id] = tree
 	empties[sent_id] = empty
