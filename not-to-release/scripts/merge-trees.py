@@ -20,6 +20,8 @@ n_parsed = 0
 trees = {}
 empties = {}
 
+stats = {}
+
 n_tokens = 0
 n_tokens_head = 0
 n_tokens_head_deprel = 0
@@ -35,6 +37,7 @@ for bloc in open(sys.argv[1]).read().split('\n\n'):
 #		print('@@@@', line,file=sys.stderr)
 		if line.count('sent_id') > 0:
 			sent_id = line.split('=')[1].strip()
+			stats[sent_id] = [0, 0, 0]
 		if line[0] == '#':
 			continue
 		row = line.split('\t')
@@ -44,11 +47,14 @@ for bloc in open(sys.argv[1]).read().split('\n\n'):
 			empty[row[0]] = row
 		else:
 			tree[row[0]] = row
+			stats[sent_id][0] += 1
 			# id,form,lem,upos,xpos,feat,head,deprel,edep,misc
 			if row[6] != '_':
 				n_tokens_head += 1
+				stats[sent_id][1] += 1
 			if row[7] != '_':
 				n_tokens_head_deprel += 1
+				stats[sent_id][2] += 1
 
 	trees[sent_id] = tree
 	empties[sent_id] = empty
@@ -88,6 +94,8 @@ for bloc in sys.stdin.read().split('\n\n'):
 			n_parsed += 1
 			for comment in comments:
 				print(comment)
+			print('# heads = %.2f%%' % ((stats[sent_id][1]/stats[sent_id][0])*100))
+			print('# relations = %.2f%%' % ((stats[sent_id][2]/stats[sent_id][0])*100))
 			for line in lines:
 				idx, form, lem, upos, xpos, feats, head, deprel, edeps, misc = line
 			

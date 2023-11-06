@@ -9,6 +9,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
 1	Jc	ic	ADV	_	_	3	amod	_	Folio=1r|Paragraph=1|Line=1|Norm=Ic
 2	macujlli	macuilli	NUM	_	_	1	nummod	_	Folio=1r|Paragraph=1|Line=1|Norm=macuilli|Gloss=cinco
 3	amuxtli	amoxtli	NOUN	_	State=Abs	6	obl	_	Folio=1r|Paragraph=1|Line=1|Norm=amoxtli|Gloss=libro|Analysed=Yes
@@ -39,6 +41,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 34.04%
 1	Jc	ic	ADV	_	_	2	_	2	Folio=1r|Paragraph=2|Line=1|Norm=Ic
 2	ce	ce	NUM	_	_	3	_	3	Folio=1r|Paragraph=2|Line=1|Norm=ce|AmbigNorm=True|Override=False|Gloss=uno
 3	capitulo	capítulo	NOUN	_	State=Abs	6	_	6	Folio=1r|Paragraph=2|Line=1|Norm=capítulo|Analysed=Yes
@@ -97,6 +101,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 28.21%
 1	In	in	DET|SCONJ	_	_	3	_	_	Orig=I·nievecauh|Folio=1r,1r|Paragraph=3,3|Line=1,1|Norm=In
 2	ie	ye	ADV	_	_	3	_	_	Orig=I·nievecauh|Folio=1r,1r|Paragraph=3,3|Line=1,1|Norm=ye|AmbigNorm=True|Override=True
 3	vecauh	huecauh	ADV	_		11	_	_	Orig=I·nievecauh|Folio=1r,1r|Paragraph=3,3|Line=1,1|Norm=huecauh|Analysed=Yes
@@ -146,6 +152,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 0.00%
+# relations = 0.00%
 1	Yzqujtlamantli	izquitlamantli	NOUN	_	Number=Plur	_	_	_	Folio=1r|Paragraph=3|Line=8|Norm=Izquitlamanti|Analysed=Yes
 2	,	,	PUNCT	_		_	_	_	Folio=1r|Paragraph=3|Line=8|Norm=,|Analysed=Yes
 3	y	y	CCONJ	_	_	_	_	_	Folio=1r|Paragraph=3|Line=8|Norm=y|AmbigNorm=True|Override=False
@@ -177,6 +185,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 97.06%
+# heads = 97.06%
+# relations = 91.18%
 1	Jnic	inic	SCONJ	_		2	amod	_	Folio=1r|Paragraph=4|Line=1|Norm=Inic|Analysed=Yes
 2	centlamantli	centlamantli	NOUN	_	State=Abs	4	nsubj	_	Folio=1r|Paragraph=4|Line=1|Norm=centlamantli|Analysed=Yes
 3	,	,	PUNCT	_		4	punct	_	Folio=1r|Paragraph=4|Line=1|Norm=,|Analysed=Yes
@@ -187,9 +197,9 @@
 8	aca	aca	PRON	_	_	9	nsubj	_	Folio=1r|Paragraph=4|Line=2|Norm=aca
 9	quicaquia	caqui	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=1r|Paragraph=4|Line=2|Norm=quicaquiya|Analysed=Yes
 10	:	:	PUNCT	_		13	punct	_	Folio=1r|Paragraph=4|Line=2|Norm=:|Analysed=Yes
-11	in	in	DET	_	_	12	_	_	Folio=1r|Paragraph=4|Line=2|Norm=in
-12	tequanj	tecuani	NOUN	_	State=Abs	13	_	_	Folio=1r|Paragraph=4|Line=2|Norm=tecuani|Gloss=bestia|Analysed=Yes
-13	choca	choca	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	9	_	_	Folio=1r|Paragraph=4|Line=2|Norm=choca|Gloss=llora|Analysed=Yes
+11	in	in	DET	_	_	13	mark	_	Folio=1r|Paragraph=4|Line=2|Norm=in
+12	tequanj	tecuani	NOUN	_	State=Abs	13	nsubj	_	Folio=1r|Paragraph=4|Line=2|Norm=tecuani|Gloss=bestia|Analysed=Yes
+13	choca	choca	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	9	ccomp	_	Folio=1r|Paragraph=4|Line=2|Norm=choca|Gloss=llora|Analysed=Yes
 14	,	,	PUNCT	_		17	punct	_	Folio=1r|Paragraph=4|Line=2|Norm=,|Analysed=Yes
 15	tequanj	tecuani	NOUN	_	State=Abs	17	nsubj	_	Orig=te¶·quanj|Folio=1r,1r|Paragraph=4,4|Line=2,3|Norm=tecuani|Gloss=bestia|Analysed=Yes
 16	ipan	pan	NOUN	_	NounType=Relat	17	obl	_	Folio=1r|Paragraph=4|Line=3|Norm=ipan
@@ -217,11 +227,14 @@
 # text[norm] = Inin, quitoaya ye yaomiquiz: anozo ye miquiz, tlalmiquiz: anozo, ye itla commonamictiz, icnoyotl: azo monamacaz, motlanamictiz: anozo ipilhuan cemeh quinmonamaquiliz, quintlanamictiz: quintlatlacolnamictiz, icnoyotl calaquiz, in inextitlan, in itlecuillan: atl nehneciz in ichan.
 # text[orig] = Ynjn·,·qujtovaia·ie·iaomj¶qujz·:·anoço·ie·mjqujz·,·tlalmiqujz·:·anoço·,·ie·itla·com·monamjctiz·,·ic¶noiotl·:·aco·monamacaz·,·motlanamjc¶tiz·:·anoço·ipilhoan·ceme·quin·mona¶maqujliz·,·qujn·tlanamjctiz·:·qujntlatlacul¶namjctiz·,·icnoiotl·calaqujz·,·inj·nextitlan·,·injtlecujllan·:·atl·neneciz·injchan·.
 # text[osp] = [...] luego tomaua mal agueros diziendo que significaua algun infortunio, o desastre: que le auia de venir en breve o que auja de morir en la guerra o de enfermedad, o que algun desastre, o infortunio le auja de venir: de que le aujan de hazer esclauo a el, o a alguno de sus hijos, o que alguna desventura auja de venir por el, o por su casa.
+# text[spa] = _, decían que ya moriría en guerra: o moriría, moriría en tierra: quizás ya algo se le habría de juntar, pobreza: o se vendería, se esclavizaría: o sus hijos algunos vendería, los esclavizaría, los vendería de esclavos, pobreza entraría, en su hogar: el agua aparecería y seguiría apareciendo en su casa.
 # references = A&D/160:4
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
-1	Ynjn	inin	DET|PRON	_	_	3	_	3	Folio=1r|Paragraph=4|Line=6|Norm=Inin
+# heads = 100.00%
+# relations = 83.33%
+1	Ynjn	inin	PRON	_	_	3	dislocated	3:dislocated	Folio=1r|Paragraph=4|Line=6|Norm=Inin
 2	,	,	PUNCT	_		3	punct	3:punct	Folio=1r|Paragraph=4|Line=6|Norm=,|Analysed=Yes
 3	qujtovaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	0:root	Folio=1r|Paragraph=4|Line=6|Norm=quitoaya|Analysed=Yes
 4	ie	ye	ADV	_	_	5	advmod	5:advmod	Folio=1r|Paragraph=4|Line=6|Norm=ye|AmbigNorm=True|Override=False
@@ -236,8 +249,8 @@
 12	:	:	PUNCT	_		17	punct	17:punct	Folio=1r|Paragraph=4|Line=7|Norm=:|Analysed=Yes
 13	anoço	anozo	ADV	_		17	_	17	Folio=1r|Paragraph=4|Line=8|Norm=anozo|Analysed=Yes
 14	,	,	PUNCT	_		17	punct	17:punct	Folio=1r|Paragraph=4|Line=8|Norm=,|Analysed=Yes
-15	ie	ye	ADV	_	_	17	_	17	Folio=1r|Paragraph=4|Line=8|Norm=ye|AmbigNorm=True|Override=False
-16	itla	tla	PRON	_	_	17	_	17	Folio=1r|Paragraph=4|Line=8|Norm=itla|Gloss=algo
+15	ie	ye	ADV	_	_	17	advmod	17:advmod	Folio=1r|Paragraph=4|Line=8|Norm=ye|AmbigNorm=True|Override=False
+16	itla	tla	PRON	_	_	17	nsubj	17:nsubj	Folio=1r|Paragraph=4|Line=8|Norm=itla|Gloss=algo
 17	commonamjctiz	monamictia	VERB	_	Directional=On|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Fut|VerbForm=Fin	5	conj	5:conj	Orig=com·monamjctiz|Folio=1r,1r|Paragraph=4,4|Line=8,8|Norm=commonamictiz|Analysed=Yes
 18	,	,	PUNCT	_		19	punct	19:punct	Folio=1r|Paragraph=4|Line=8|Norm=,|Analysed=Yes
 19	icnoiotl	icnoyotl	NOUN	_	State=Abs	17	dislocated	17:dislocated	Orig=ic¶·noiotl|Folio=1r,1v|Paragraph=4,5|Line=8,10|Norm=icnoyotl|Gloss=pobreza|Analysed=Yes
@@ -248,8 +261,8 @@
 24	motlanamjctiz	tlanamictia	VERB	_	_	22	_	22	Orig=motlanamjc¶·tiz|Folio=1v,1v|Paragraph=5,5|Line=10,11|Norm=motlanamictiz|Root=namictia
 25	:	:	PUNCT	_		29	punct	29:punct	Folio=1v|Paragraph=5|Line=11|Norm=:|Analysed=Yes
 26	anoço	anozo	ADV	_		29	_	29	Folio=1v|Paragraph=5|Line=11|Norm=anozo|Analysed=Yes
-27	ipilhoan	pilli	NOUN	_	Number=Plur|Number[psor]=Sing|Person[psor]=3|State=Poss	_	_	_	Folio=1v|Paragraph=5|Line=11|Norm=ipilhuan|Analysed=Yes
-28	ceme	ce	PRON	_	_	_	_	_	Folio=1v|Paragraph=5|Line=11|Norm=cemeh|Gloss=unos
+27	ipilhoan	pilli	NOUN	_	Number=Plur|Number[psor]=Sing|Person[psor]=3|State=Poss	29	dislocated	29:dislocated	Folio=1v|Paragraph=5|Line=11|Norm=ipilhuan|Analysed=Yes
+28	ceme	ce	PRON	_	_	29	obj	29:obj	Folio=1v|Paragraph=5|Line=11|Norm=cemeh|Gloss=unos
 29	quinmonamaqujliz	namaquilia	VERB	_	Number[obj]=Plur|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Reflexive[iobj]=Yes|Subcat=Ditr|Tense=Fut|VerbForm=Fin	5	conj	5:conj	Orig=quin·mona¶·maqujliz|Folio=1v,1v,1v|Paragraph=5,5,5|Line=11,11,12|Norm=quinmonamaquiliz|Analysed=Yes
 30	,	,	PUNCT	_		31	punct	31:punct	Folio=1v|Paragraph=5|Line=12|Norm=,|Analysed=Yes
 31	qujntlanamjctiz	tlanamictia	VERB	_	_	29	_	29	Orig=qujn·tlanamjctiz|Folio=1v,1v|Paragraph=5,5|Line=12,12|Norm=quintlanamictiz|Root=namictia
@@ -257,16 +270,16 @@
 33	qujntlatlaculnamjctiz	namictia	VERB	_	Number[obj]=Plur|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Fut|VerbForm=Fin	29	_	29	Orig=qujntlatlacul¶·namjctiz|Folio=1v,1v|Paragraph=5,5|Line=12,13|Norm=quintlatlacolnamictiz|Incorp[obj]=tlatlacol|Root=namictia|Split=quintlatlacol·namictiz|Analysed=Yes
 33.1	tlatlacol	tlatlacolli	NOUN	_	_	_	_	_	Incorporated=Yes
 34	,	,	PUNCT	_		36	punct	36:punct	Folio=1v|Paragraph=5|Line=13|Norm=,|Analysed=Yes
-35	icnoiotl	icnoyotl	NOUN	_	State=Abs	36	_	36	Folio=1v|Paragraph=5|Line=13|Norm=icnoyotl|Gloss=pobreza|Analysed=Yes
+35	icnoiotl	icnoyotl	NOUN	_	State=Abs	36	nsubj	36:nsubj	Folio=1v|Paragraph=5|Line=13|Norm=icnoyotl|Gloss=pobreza|Analysed=Yes
 36	calaqujz	calaqui	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	5	conj	5:conj	Folio=1v|Paragraph=5|Line=13|Norm=calaquiz|Analysed=Yes
 37	,	,	PUNCT	_		39	punct	39:punct	Folio=1v|Paragraph=5|Line=13|Norm=,|Analysed=Yes
-38	in	in	DET	_	_	39	_	39	Orig=inj·nextitlan|Folio=1v,1v|Paragraph=5,5|Line=13,13|Norm=in
-39	jnextitlan	nextitlan	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	36	_	36	Orig=inj·nextitlan|Folio=1v,1v|Paragraph=5,5|Line=13,13|Norm=inextitlan|Locative=Yes|Split=inex·titlan|Gloss=su.hogar|Analysed=Yes
+38	in	in	DET	_	_	39	det	39:det	Orig=inj·nextitlan|Folio=1v,1v|Paragraph=5,5|Line=13,13|Norm=in
+39	jnextitlan	nextitlan	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	36	obl	36:obl	Orig=inj·nextitlan|Folio=1v,1v|Paragraph=5,5|Line=13,13|Norm=inextitlan|Locative=Yes|Split=inex·titlan|Gloss=su.hogar|Analysed=Yes
 40	,	,	PUNCT	_		42	punct	42:punct	Folio=1v|Paragraph=5|Line=13|Norm=,|Analysed=Yes
-41	in	in	DET	_	_	42	_	42	Orig=injtlecujllan|Folio=1v|Paragraph=5|Line=14|Norm=in
-42	jtlecujllan	tlecuillan	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	39	_	39	Orig=injtlecujllan|Folio=1v|Paragraph=5|Line=14|Norm=itlecuillan|Locative=Yes|Split=itlecuil·lan|Gloss=su.hogar|Analysed=Yes
+41	in	in	DET	_	_	42	det	42:det	Orig=injtlecujllan|Folio=1v|Paragraph=5|Line=14|Norm=in
+42	jtlecujllan	tlecuillan	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	39	appos:difras	39:appos:difras	Orig=injtlecujllan|Folio=1v|Paragraph=5|Line=14|Norm=itlecuillan|Locative=Yes|Split=itlecuil·lan|Gloss=su.hogar|Analysed=Yes
 43	:	:	PUNCT	_		45	punct	45:punct	Folio=1v|Paragraph=5|Line=14|Norm=:|Analysed=Yes
-44	atl	atl	NOUN	_	State=Abs	45	_	45	Folio=1v|Paragraph=5|Line=14|Norm=atl|Gloss=agua|Analysed=Yes
+44	atl	atl	NOUN	_	State=Abs	45	nsubj	45:nsubj	Folio=1v|Paragraph=5|Line=14|Norm=atl|Gloss=agua|Analysed=Yes
 45	neneciz	nehneci	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	3	conj	3:conj	Folio=1v|Paragraph=5|Line=14|Norm=nehneciz|Analysed=Yes
 46	in	in	DET	_	_	47	det	47:det	Orig=injchan|Folio=1v|Paragraph=5|Line=14|Norm=in
 47	jchan	chantli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	45	obl	45:obl	Orig=injchan|Folio=1v|Paragraph=5|Line=14|Norm=ichan|Gloss=su.casa|Analysed=Yes
@@ -282,6 +295,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 52.17%
 1	Yn	in	DET	_	_	3	_	_	Orig=Y·njqc¶|Folio=1v,1v|Paragraph=5,5|Line=14,14|Norm=In
 2	jqc	ihcuac	SCONJ	_		1	_	_	Orig=Y·njqc¶|Folio=1v,1v|Paragraph=5,5|Line=14,14|Norm=ihcuac|Gloss=cuando|Analysed=Yes
 3	oiuh	oyohua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	11	_	_	Folio=1v|Paragraph=5|Line=15|Norm=oyouh|Analysed=Yes
@@ -316,6 +331,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 99.29%
+# relations = 36.88%
 1	Timotolinja	tolinia	NOUN	_	Number[subj]=Sing|Person[subj]=2	0	root	_	Orig=Timotoli¶·nja|Folio=1v,1v|Paragraph=5,5|Line=17,18|Norm=Timotolinia
 2	xole	xolo	NOUN	_	Clitic=Voc|State=Abs	1	vocative	_	Folio=1v|Paragraph=5|Line=18|Norm=xole|Gloss=paje|Analysed=Yes
 3	,	,	PUNCT	_		4	punct	_	Folio=1v|Paragraph=5|Line=18|Norm=,|Analysed=Yes
@@ -469,6 +486,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 36.36%
 1	Auh	auh	CCONJ	_	_	5	_	_	Orig=A·uh¶|Folio=1v,1v|Paragraph=5,5|Line=36,36|Norm=Auh|Gloss=y
 2	injn	inin	DET|PRON	_	_	5	_	_	Folio=1v|Paragraph=5|Line=37|Norm=inin
 3	,	,	PUNCT	_		5	punct	_	Folio=1v|Paragraph=5|Line=37|Norm=,|Analysed=Yes
@@ -512,6 +531,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 97.67%
+# relations = 51.16%
 1	Ca	cah|ca	X	_	_	8	_	_	Orig=Caizca|Folio=1v|Paragraph=5|Line=41|Norm=Ca|AmbigNorm=True|Override=True
 2	izca	izac	VERB	_	_	1	_	_	Orig=Caizca|Folio=1v|Paragraph=5|Line=41|Norm=ihzac
 3	,	,	PUNCT	_		4	punct	_	Folio=1v|Paragraph=5|Line=41|Norm=,|Analysed=Yes
@@ -565,6 +586,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 98.00%
+# relations = 44.00%
 1	Iquac	ihcuac	SCONJ	_		5	_	_	Folio=2r|Paragraph=1|Line=7|Norm=Ihcuac|Gloss=cuando|Analysed=Yes
 2	,	,	PUNCT	_		3	punct	_	Folio=2r|Paragraph=1|Line=7|Norm=,|Analysed=Yes
 3	yn	in	DET|SCONJ	_	_	5	_	_	Folio=2r|Paragraph=1|Line=7|Norm=in
@@ -625,6 +648,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 90.00%
+# heads = 100.00%
+# relations = 50.00%
 1	Ivin	ihuin	ADV	_		4	_	_	Folio=2r|Paragraph=1|Line=14|Norm=Ihuin|Analysed=Yes
 2	,	,	PUNCT	_		4	punct	_	Folio=2r|Paragraph=1|Line=14|Norm=,|Analysed=Yes
 3	in	in	DET|SCONJ	_	_	4	_	_	Orig=inqujchioaia|Folio=2r|Paragraph=1|Line=14|Norm=in
@@ -645,6 +670,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 35.42%
 1	Ic	ic	ADV	_	_	2	_	_	Folio=2r|Paragraph=2|Line=1|Norm=Ic
 2	ome	ome	NUM	_		3	_	_	Folio=2r|Paragraph=2|Line=1|Norm=ome|Gloss=dos|Analysed=Yes
 3	capitulo	capítulo	NOUN	_	State=Abs	6	_	_	Folio=2r|Paragraph=2|Line=1|Norm=capítulo|Analysed=Yes
@@ -704,6 +731,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 34.48%
 1	No	no	ADV	_		4	_	_	Folio=2r|Paragraph=3|Line=1|Norm=No|Gloss=también|Analysed=Yes
 2	ioan	huan	NOUN	_	NounType=Relat	4	_	_	Folio=2r|Paragraph=3|Line=1|Norm=ihuan|Gloss=con
 3	,	,	PUNCT	_		4	punct	_	Folio=2r|Paragraph=3|Line=1|Norm=,|Analysed=Yes
@@ -743,6 +772,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 98.39%
+# relations = 46.77%
 1	In	in	DET|SCONJ	_	_	4	_	_	Orig=Inj·qc¶|Folio=2r,2r|Paragraph=3,3|Line=4,4|Norm=In
 2	jqc	ihcuac	SCONJ	_		4	_	_	Orig=Inj·qc¶|Folio=2r,2r|Paragraph=3,3|Line=4,4|Norm=ihcuac|Gloss=cuando|Analysed=Yes
 3	qualli	cualli	ADJ	_	_	4	_	_	Folio=2r|Paragraph=3|Line=5|Norm=cualli|Gloss=bueno
@@ -815,6 +846,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 32.94%
 1	Auh	auh	CCONJ	_	_	40	_	_	Folio=2v|Paragraph=4|Line=14|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ	_	_	4	_	_	Folio=2v|Paragraph=4|Line=14|Norm=in
 3	ie	ye	ADV	_	_	4	_	_	Orig=ieoquicacque|Folio=2v|Paragraph=4|Line=14|Norm=ye|AmbigNorm=True|Override=False
@@ -911,6 +944,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 90.70%
+# relations = 39.53%
 1	In	in	DET|SCONJ	_	_	3	_	3	Orig=I·njn·pan|Folio=2v,2v,2v|Paragraph=4,4,4|Line=26,26,26|Norm=In
 2	jnpan	pan	NOUN	_	NounType=Relat|Number[psor]=Plur|Person[psor]=3|State=Poss	3	_	3	Orig=I·njn·pan|Folio=2v,2v,2v|Paragraph=4,4,4|Line=26,26,26|Norm=inpan|Analysed=Yes
 3	muchioa	chihua	VERB	_	_	0	root	0:root	Folio=2v|Paragraph=4|Line=26|Norm=mochihua
@@ -964,6 +999,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 37.18%
 1	Aco	azo	ADV	_		6	_	_	Orig=A·co|Folio=2v,2v|Paragraph=4,4|Line=33,33|Norm=Azo|Gloss=quizás|Analysed=Yes
 2	,	,	PUNCT	_		6	punct	_	Folio=2v|Paragraph=4|Line=33|Norm=,|Analysed=Yes
 3	ie	ye	ADV	_	_	6	_	_	Folio=2v|Paragraph=4|Line=33|Norm=ye|AmbigNorm=True|Override=False
@@ -1052,6 +1089,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 97.22%
+# relations = 38.89%
 1	In	in	DET|SCONJ	_	_	3	_	_	Orig=Inj·quac¶|Folio=3r,3r|Paragraph=1,1|Line=9,9|Norm=In
 2	jquac	ihcuac	SCONJ	_		3	_	_	Orig=Inj·quac¶|Folio=3r,3r|Paragraph=1,1|Line=9,9|Norm=ihcuac|Gloss=cuando|Analysed=Yes
 3	yn	in	DET|SCONJ	_	_	21	_	_	Folio=3r|Paragraph=1|Line=10|Norm=in
@@ -1100,6 +1139,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 99.47%
+# heads = 99.47%
+# relations = 31.05%
 1	Ximellaquauacan	ellacuahua	VERB	_	Mood=Imp|Number[subj]=Plur|Person[subj]=2|Reflexive[obj]=Yes|Subcat=Tran|VerbForm=Fin	0	root	0:root	Orig=Ximella¶·quauacan|Folio=3r,3r|Paragraph=1,1|Line=16,17|Norm=Ximellacuahuacan|Analysed=Yes
 2	,	,	PUNCT	_		3	punct	3:punct	Folio=3r|Paragraph=1|Line=17|Norm=,|Analysed=Yes
 3	nopilhoane	pilli	NOUN	_	Clitic=Voc|Number=Plur|Number[psor]=Sing|Person[psor]=1|State=Poss	1	vocative	1:vocative	Folio=3r|Paragraph=1|Line=17|Norm=nopilhuane|Analysed=Yes
@@ -1304,6 +1345,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
 1	Auh	auh	CCONJ	_	_	15	cc	_	Folio=3v|Paragraph=2|Line=50|Norm=Auh|Gloss=y
 2	intla	tla	PRON	_	_	6	mark	_	Orig=intlacana|Folio=3v|Paragraph=2|Line=50|Norm=intla|Gloss=algo
 3	cana	cana	ADV	_	_	6	advmod	_	Orig=intlacana|Folio=3v|Paragraph=2|Line=50|Norm=cana|Gloss=alguna.parte
@@ -1358,6 +1401,8 @@
 # tagged = 100.00%
 # lemmatised = 97.37%
 # analysed = 97.37%
+# heads = 100.00%
+# relations = 47.37%
 1	Vncan	oncan	ADV	_		3	advmod	_	Folio=4r|Paragraph=1|Line=1|Norm=Oncan|Gloss=aquí|Analysed=Yes
 2	ixpan	ixpan	ADV	_	_	3	_	_	Orig=ix¶·pan|Folio=4r,4r|Paragraph=1,1|Line=1,2|Norm=ixpan
 3	tlamaceoa	macehua	VERB	_	_	0	root	_	Folio=4r|Paragraph=1|Line=2|Norm=tlamacehua
@@ -1406,6 +1451,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 68.42%
 1	Auh	auh	CCONJ	_	_	4	cc	_	Orig=A·uh|Folio=4r,4r|Paragraph=1,1|Line=8,8|Norm=Auh|Gloss=y
 2	onoce	anoce	CCONJ	_	_	4	advmod	_	Folio=4r|Paragraph=1|Line=8|Norm=anoce
 3	can	zan	ADV	_		4	advmod	_	Folio=4r|Paragraph=1|Line=9|Norm=zan|Analysed=Yes
@@ -1435,6 +1482,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 99.06%
+# relations = 29.25%
 1	Intla	tla	PRON	_	_	4	_	_	Orig=Intlacatle|Folio=4r|Paragraph=1|Line=12|Norm=Intla|Gloss=algo
 2	catle	catle	PRON	_	_	4	_	_	Orig=Intlacatle|Folio=4r|Paragraph=1|Line=12|Norm=catle
 3	inpan	pan	NOUN	_	NounType=Relat|Number[psor]=Plur|Person[psor]=3|State=Poss	4	_	_	Folio=4r|Paragraph=1|Line=12|Norm=inpan|Analysed=Yes
@@ -1552,6 +1601,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 32.26%
 1	Ie	ye	ADV	_	_	2	_	_	Folio=4v|Paragraph=2|Line=31|Norm=Ye|AmbigNorm=True|Override=False
 2	omjto	ihtoa	VERB	_	_	0	root	_	Folio=4v|Paragraph=2|Line=31|Norm=omihto
 3	,	,	PUNCT	_		6	punct	_	Folio=4v|Paragraph=2|Line=31|Norm=,|Analysed=Yes
@@ -1593,6 +1644,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 32.35%
 1	Ic	ic	ADV	_	_	2	_	_	Folio=4v|Paragraph=3|Line=1|Norm=Ic
 2	ei	eyi	NUM	_		3	_	_	Folio=4v|Paragraph=3|Line=1|Norm=eyi|Gloss=tres|Analysed=Yes
 3	capitulo	capítulo	NOUN	_	State=Abs	6	_	_	Folio=4v|Paragraph=3|Line=1|Norm=capítulo|Analysed=Yes
@@ -1638,6 +1691,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 42.86%
 1	No	no	ADV	_		5	_	_	Folio=4v|Paragraph=4|Line=1|Norm=No|Gloss=también|Analysed=Yes
 2	ioan	huan	NOUN	_	NounType=Relat	5	_	_	Folio=4v|Paragraph=4|Line=1|Norm=ihuan|Gloss=con
 3	,	,	PUNCT	_		4	punct	_	Folio=4v|Paragraph=4|Line=1|Norm=,|Analysed=Yes
@@ -1664,6 +1719,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 40.00%
 1	Iquac	ihcuac	SCONJ	_		5	_	_	Folio=4v|Paragraph=4|Line=3|Norm=Ihcuac|Gloss=cuando|Analysed=Yes
 2	caqujztia	aquiza	VERB	_	Number[iobj]=Sing|Number[subj]=Plur,Sing|Person[iobj]=3|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	5	_	_	Orig=caqujz¶·tia|Folio=4v,4v|Paragraph=4,4|Line=3,4|Norm=caquiztia|Analysed=Yes
 3	,	,	PUNCT	_		5	punct	_	Folio=4v|Paragraph=4|Line=4|Norm=,|Analysed=Yes
@@ -1686,6 +1743,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 97.62%
+# relations = 38.10%
 1	In	in	DET|SCONJ	_	_	2	_	2	Orig=I·nontlamaceoato|Folio=4v,4v|Paragraph=4,4|Line=5,5|Norm=In
 2	ontlamaceoato	macehua	VERB	_	Animacy[obj]=Inan|Directional=And|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	0:root	Orig=I·nontlamaceoato|Folio=4v,4v|Paragraph=4,4|Line=5,5|Norm=ontlamacehuato|Analysed=Yes
 3	,	,	PUNCT	_		5	punct	5:punct	Folio=4v|Paragraph=4|Line=5|Norm=,|Analysed=Yes
@@ -1739,6 +1798,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 44.00%
 1	Inin	inin	PRON	_	_	12	dislocated	_	Orig=In·in|Folio=4v,4v|Paragraph=4,4|Line=12,12|Norm=Inin
 2	,	,	PUNCT	_		3	punct	_	Folio=4v|Paragraph=4|Line=12|Norm=,|Analysed=Yes
 3	ioaltepuztli	yohualtepoztli	NOUN	_	State=Abs	1	_	_	Orig=io·altepuztli|Folio=4v,4v|Paragraph=4,4|Line=13,13|Norm=yohualtepoztli|Split=yohual·tepoztli|Analysed=Yes
@@ -1774,6 +1835,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 98.82%
+# heads = 97.65%
+# relations = 30.59%
 1	In	in	DET|SCONJ	_	_	2	_	_	Orig=Inaqujn¶|Folio=5r|Paragraph=1|Line=3|Norm=In
 2	aqujn	aquin	PRON	_	_	21	_	_	Orig=Inaqujn¶|Folio=5r|Paragraph=1|Line=3|Norm=aquin
 3	qujttaia	itta	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	2	_	_	Folio=5r|Paragraph=1|Line=4|Norm=quittaya|Analysed=Yes
@@ -1869,6 +1932,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 36.73%
 1	Iquac	ihcuac	SCONJ	_		3	_	_	Orig=I·quac¶|Folio=5r,5r|Paragraph=1,1|Line=16,16|Norm=Ihcuac|Gloss=cuando|Analysed=Yes
 2	in	in	DET|SCONJ	_	_	3	_	_	Orig=inoqujciammjcti|Folio=5r|Paragraph=1|Line=17|Norm=in
 3	oqujciammjcti	ciammictia	VERB	_	Aspect=Prior|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	7	_	_	Orig=inoqujciammjcti|Folio=5r|Paragraph=1|Line=17|Norm=oquiciammicti|Analysed=Yes
@@ -1928,6 +1993,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 34.83%
 1	Auh	auh	CCONJ	_	_	34	_	_	Folio=5r|Paragraph=1|Line=26|Norm=Auh|Gloss=y
 2	ie	ye	ADV	_	_	34	_	_	Orig=ieiehoatl|Folio=5r|Paragraph=1|Line=26|Norm=ye|AmbigNorm=True|Override=False
 3	iehoatl	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	34	_	_	Orig=ieiehoatl|Folio=5r|Paragraph=1|Line=26|Norm=yehhuatl|Gloss=él|Analysed=Yes
@@ -2027,6 +2094,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 33.33%
 1	Auh	auh	CCONJ	_	_	4	_	_	Orig=A·uh|Folio=5v,5v|Paragraph=2,2|Line=41,41|Norm=Auh|Gloss=y
 2	intla	tla	PRON	_	_	4	_	_	Orig=in¶·tlaiequjnotza|Folio=5v,5v|Paragraph=2,2|Line=41,42|Norm=intla|Gloss=algo
 3	ie	ye	ADV	_	_	4	_	_	Orig=in¶·tlaiequjnotza|Folio=5v,5v|Paragraph=2,2|Line=41,42|Norm=ye|AmbigNorm=True|Override=False
@@ -2081,6 +2150,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 85.71%
 1	Auh	auh	CCONJ	_	_	2	cc	_	Folio=5v|Paragraph=2|Line=48|Norm=Auh|Gloss=y
 2	qujluja	ilhuia	VERB	_	_	0	root	_	Folio=5v|Paragraph=2|Line=48|Norm=quilhuia
 3	in	in	DET	_	_	4	det	_	Folio=5v|Paragraph=2|Line=48|Norm=in
@@ -2105,6 +2176,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 48.24%
 1	Ic	ic	ADV	_	_	3	_	_	Folio=5v|Paragraph=2|Line=50|Norm=Ic
 2	vncan	oncan	ADV	_		3	_	_	Folio=5v|Paragraph=2|Line=50|Norm=oncan|Gloss=aquí|Analysed=Yes
 3	qujluja	ilhuia	VERB	_	_	0	root	_	Folio=5v|Paragraph=2|Line=50|Norm=quilhuia
@@ -2201,6 +2274,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 98.78%
+# relations = 41.46%
 1	Auh	auh	CCONJ	_	_	3	_	_	Orig=A·uh|Folio=6r,6r|Paragraph=1,1|Line=9,9|Norm=Auh|Gloss=y
 2	yoa	huan	NOUN	_	NounType=Relat	3	_	_	Folio=6r|Paragraph=1|Line=9|Norm=ihuan|Gloss=con
 3	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	Folio=6r|Paragraph=1|Line=10|Norm=mihtoa|Analysed=Yes
@@ -2294,6 +2369,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 43.48%
 1	Auh	auh	CCONJ	_	_	6	_	_	Orig=A·uh|Folio=6r,6r|Paragraph=1,1|Line=22,22|Norm=Auh|Gloss=y
 2	intlacamo	intlacamo	SCONJ	_		3	_	_	Orig=in¶·tlacamo|Folio=6r,6r|Paragraph=1,1|Line=22,23|Norm=intlacamo|Gloss=si.no|Analysed=Yes
 3	qualli	cualli	ADJ	_	_	6	_	_	Folio=6r|Paragraph=1|Line=23|Norm=cualli|Gloss=bueno
@@ -2328,6 +2405,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 92.94%
+# relations = 31.76%
 1	Auh	auh	CCONJ	_	_	25	_	_	Orig=A·uh|Folio=6r,6r|Paragraph=1,1|Line=26,26|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ	_	_	3	_	_	Orig=inaqujn|Folio=6r|Paragraph=1|Line=26|Norm=in
 3	aqujn	aquin	PRON	_	_	25	_	_	Orig=inaqujn|Folio=6r|Paragraph=1|Line=26|Norm=aquin
@@ -2424,6 +2503,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 29.41%
 1	Ic	ic	ADV	_	_	2	_	_	Orig=I·c|Folio=6v,6v|Paragraph=3,3|Line=1,1|Norm=Ic
 2	nauj	nahui	NUM	_		3	_	_	Folio=6v|Paragraph=3|Line=1|Norm=nahui|Gloss=cuatro|Analysed=Yes
 3	capitulo	capítulo	NOUN	_	State=Abs	6	_	_	Folio=6v|Paragraph=3|Line=1|Norm=capítulo|Analysed=Yes
@@ -2451,6 +2532,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 39.53%
 1	No	no	ADV	_		3	_	_	Folio=6v|Paragraph=4|Line=1|Norm=No|Gloss=también|Analysed=Yes
 2	yoan	huan	NOUN	_	NounType=Relat	3	_	_	Folio=6v|Paragraph=4|Line=1|Norm=ihuan|Gloss=con
 3	netetzaujloia	tetzahuia	VERB	_	_	0	root	_	Folio=6v|Paragraph=4|Line=1|Norm=netetzahuiloya
@@ -2505,6 +2588,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 99.26%
+# relations = 32.59%
 1	Qujtoa	ihtoa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Orig=Quj¶·toa|Folio=6v,6v|Paragraph=4,4|Line=7,8|Norm=Quihtoa|Analysed=Yes
 2	in	in	DET|SCONJ	_	_	7	_	7	Orig=injquac|Folio=6v|Paragraph=4|Line=8|Norm=in
 3	jquac	ihcuac	SCONJ	_		5	_	5	Orig=injquac|Folio=6v|Paragraph=4|Line=8|Norm=ihcuac|Gloss=cuando|Analysed=Yes
@@ -2653,6 +2738,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 73.33%
 1	Ic	ic	ADV	_	_	2	_	_	Folio=7v|Paragraph=2|Line=26|Norm=Ic
 2	macujlli	macuilli	NUM	_	_	3	_	_	Folio=7v|Paragraph=2|Line=26|Norm=macuilli|Gloss=cinco
 3	capitulo	capítulo	NOUN	_	State=Abs	6	_	_	Folio=7v|Paragraph=2|Line=26|Norm=capítulo|Analysed=Yes
@@ -2678,6 +2765,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 34.88%
 1	No	no	ADV	_		3	_	_	Folio=7v|Paragraph=3|Line=1|Norm=No|Gloss=también|Analysed=Yes
 2	yoan	huan	NOUN	_	NounType=Relat	3	_	_	Folio=7v|Paragraph=3|Line=1|Norm=ihuan|Gloss=con
 3	netetzaujloia	tetzahuia	VERB	_	_	0	root	_	Folio=7v|Paragraph=3|Line=1|Norm=netetzahuiloya
@@ -2733,6 +2822,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 97.78%
+# relations = 26.67%
 1	Auh	auh	CCONJ	_	_	8	_	_	Orig=Au·h|Folio=7v,7v|Paragraph=3,3|Line=7,7|Norm=Auh|Gloss=y
 2	intla	tla	PRON	_	_	8	_	_	Orig=intlaieoppa|Folio=7v|Paragraph=3|Line=7|Norm=intla|Gloss=algo
 3	ie	ye	ADV	_	_	4	_	_	Orig=intlaieoppa|Folio=7v|Paragraph=3|Line=7|Norm=ye|AmbigNorm=True|Override=False
@@ -2788,6 +2879,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 70.00%
 1	No	no	ADV	_		13	advmod	_	Folio=7v|Paragraph=3|Line=13|Norm=No|Gloss=también|Analysed=Yes
 2	ioan	huan	NOUN	_	NounType=Relat	13	obl	_	Folio=7v|Paragraph=3|Line=13|Norm=ihuan|Gloss=con
 3	,	,	PUNCT	_		7	punct	_	Folio=7v|Paragraph=3|Line=13|Norm=,|Analysed=Yes
@@ -2818,6 +2911,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 60.47%
 1	Ipampa	ipampa	NOUN	_	NounType=Relat	3	obl	_	Folio=7v|Paragraph=3|Line=15|Norm=Ipampa|Gloss=porque
 2	iuh	iuh	ADV	_		3	_	_	Folio=7v|Paragraph=3|Line=16|Norm=iuh|AmbigNorm=True|Override=False|Gloss=así|Analysed=Yes
 3	qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	_	Folio=7v|Paragraph=3|Line=16|Norm=quihtoaya|Analysed=Yes
@@ -2872,6 +2967,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 92.31%
+# relations = 57.69%
 1	Auh	auh	CCONJ	_	_	12	cc	_	Orig=A·uh|Folio=7v,7v|Paragraph=3,3|Line=22,22|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ	_	_	5	_	_	Orig=inj·quac|Folio=7v,7v|Paragraph=3,3|Line=22,22|Norm=in
 3	jquac	ihcuac	SCONJ	_		5	_	_	Orig=inj·quac|Folio=7v,7v|Paragraph=3,3|Line=22,22|Norm=ihcuac|Gloss=cuando|Analysed=Yes
@@ -2908,6 +3005,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 34.62%
 1	Auh	auh	CCONJ	_	_	4	_	_	Orig=A·uh|Folio=7v,7v|Paragraph=3,3|Line=26,26|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ	_	_	3	_	_	Orig=incihoa|Folio=7v|Paragraph=3|Line=26|Norm=in
 3	cihoa	cihuatl	NOUN	_	State=Abs	4	nsubj	_	Orig=incihoa|Folio=7v|Paragraph=3|Line=26|Norm=cihua|Gloss=mujer|Analysed=Yes
@@ -2944,6 +3043,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 30.00%
 1	Injc	inic	SCONJ	_		3	_	_	Folio=8r|Paragraph=1|Line=3|Norm=Inic|Analysed=Yes
 2	iuh	iuh	ADV	_		3	_	_	Folio=8r|Paragraph=1|Line=3|Norm=iuh|AmbigNorm=True|Override=False|Gloss=así|Analysed=Yes
 3	conaoa	ahua	VERB	_	Directional=On|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	9	_	_	Folio=8r|Paragraph=1|Line=4|Norm=conahua|Analysed=Yes
@@ -2984,6 +3085,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 62.50%
 1	Ic	ic	ADV	_	_	2	_	_	Orig=Icchiquacen|Folio=8r|Paragraph=2|Line=1|Norm=Ic
 2	chiquacen	chicuacen	NUM	_		3	_	_	Orig=Icchiquacen|Folio=8r|Paragraph=2|Line=1|Norm=chicuacen|Gloss=seis|Analysed=Yes
 3	capitulo	capítulo	NOUN	_	State=Abs	6	_	_	Folio=8r|Paragraph=2|Line=1|Norm=capítulo|Analysed=Yes
@@ -3018,6 +3121,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 38.36%
 1	No	no	ADV	_		3	advmod	3:advmod	Folio=8r|Paragraph=3|Line=1|Norm=No|Gloss=también|Analysed=Yes
 2	ioan	huan	NOUN	_	NounType=Relat	3	_	3	Folio=8r|Paragraph=3|Line=1|Norm=ihuan|Gloss=con
 3	netetzaujloia	tetzahuia	VERB	_	_	0	root	0:root	Folio=8r|Paragraph=3|Line=1|Norm=netetzahuiloya
@@ -3104,6 +3209,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 46.43%
 1	Auh	auh	CCONJ	_	_	6	_	_	Orig=A·uh|Folio=8r,8r|Paragraph=3,3|Line=12,12|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ	_	_	4	_	_	Orig=inj·quac|Folio=8r,8r|Paragraph=3,3|Line=12,12|Norm=in
 3	jquac	ihcuac	SCONJ	_		4	_	_	Orig=inj·quac|Folio=8r,8r|Paragraph=3,3|Line=12,12|Norm=ihcuac|Gloss=cuando|Analysed=Yes
@@ -3142,6 +3249,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 42.31%
 1	Auh	auh	CCONJ	_	_	6	cc	_	Orig=A·uh¶|Folio=8r,8r|Paragraph=3,3|Line=16,16|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ	_	_	6	_	_	Orig=injuhquj|Folio=8r|Paragraph=3|Line=17|Norm=in
 3	juhquj	iuhqui	ADV	_		6	advmod	_	Orig=injuhquj|Folio=8r|Paragraph=3|Line=17|Norm=iuhqui|Gloss=así|Analysed=Yes
@@ -3178,6 +3287,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 62.50%
 1	Ic	ic	ADV	_	_	2	_	_	Folio=8v|Paragraph=5|Line=1|Norm=Ic
 2	chicome	chicome	NUM	_		3	nummod	_	Folio=8v|Paragraph=5|Line=1|Norm=chicome|Gloss=siete|Analysed=Yes
 3	capitulo	capítulo	NOUN	_	State=Abs	6	_	_	Folio=8v|Paragraph=5|Line=1|Norm=capítulo|Analysed=Yes
@@ -3213,6 +3324,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 96.15%
 1	No	no	ADV	_		4	advmod	_	Folio=8v|Paragraph=6|Line=1|Norm=No|Gloss=también|Analysed=Yes
 2	ioan	huan	NOUN	_	NounType=Relat	4	obl	_	Folio=8v|Paragraph=6|Line=1|Norm=ihuan|Gloss=con
 3	,	,	PUNCT	_		4	punct	_	Folio=8v|Paragraph=6|Line=1|Norm=,|Analysed=Yes
@@ -3250,6 +3363,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 30.77%
 1	Anoco	anozo	ADV	_		4	_	_	Orig=A·noco|Folio=8v,8v|Paragraph=6,6|Line=4,4|Norm=Anozo|Analysed=Yes
 2	ie	ye	ADV	_	_	4	_	_	Folio=8v|Paragraph=6|Line=4|Norm=ye|AmbigNorm=True|Override=False
 3	aca	aca	DET|PRON	_	_	4	_	_	Folio=8v|Paragraph=6|Line=4|Norm=aca
@@ -3286,6 +3401,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 43.75%
 1	Injc	inic	SCONJ	_		2	_	_	Folio=8v|Paragraph=6|Line=7|Norm=Inic|Analysed=Yes
 2	muchichiuh	chichihua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	_	Folio=8v|Paragraph=6|Line=7|Norm=mochichiuh|Analysed=Yes
 3	tochin	tochin	NOUN	_	State=Abs	2	_	_	Folio=8v|Paragraph=6|Line=7|Norm=tochin|AmbigNorm=True|Override=False|Gloss=conejo|Analysed=Yes
@@ -3312,6 +3429,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 33.33%
 1	Ic	ic	ADV	_	_	2	_	_	Folio=8v|Paragraph=7|Line=1|Norm=Ic
 2	chicuei	chicueyi	NUM	_		3	_	_	Folio=8v|Paragraph=7|Line=1|Norm=chicueyi|Gloss=ocho|Analysed=Yes
 3	capitulo	capítulo	NOUN	_	State=Abs	6	_	_	Folio=8v|Paragraph=7|Line=1|Norm=capítulo|Analysed=Yes
@@ -3340,6 +3459,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 92.31%
+# relations = 30.77%
 1	No	no	ADV	_		4	_	_	Folio=8v|Paragraph=8|Line=1|Norm=No|Gloss=también|Analysed=Yes
 2	ioan	huan	NOUN	_	NounType=Relat	4	_	_	Folio=8v|Paragraph=8|Line=1|Norm=ihuan|Gloss=con
 3	,	,	PUNCT	_		4	punct	_	Folio=8v|Paragraph=8|Line=1|Norm=,|Analysed=Yes
@@ -3363,6 +3484,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 98.63%
+# relations = 39.73%
 1	In	in	DET|SCONJ	_	_	6	_	_	Orig=I·nj·quac|Folio=8v,8v,8v|Paragraph=8,8,8|Line=3,3,3|Norm=In
 2	jquac	ihcuac	SCONJ	_		6	_	_	Orig=I·nj·quac|Folio=8v,8v,8v|Paragraph=8,8,8|Line=3,3,3|Norm=ihcuac|Gloss=cuando|Analysed=Yes
 3	aca	aca	DET|PRON	_	_	5	_	_	Folio=8v|Paragraph=8|Line=3|Norm=aca
@@ -3447,6 +3570,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 30.00%
 1	Tlen	tlein	PRON	_	_	3	_	_	Orig=Tlenjc|Folio=9r|Paragraph=1|Line=5|Norm=Tlein
 2	jc	ic	ADV	_	_	3	_	_	Orig=Tlenjc|Folio=9r|Paragraph=1|Line=5|Norm=ic
 3	otivalla	hualla	VERB	_	Aspect=Prior|Number[subj]=Sing|Person[subj]=2|Subcat=Intr	0	root	_	Folio=9r|Paragraph=1|Line=5|Norm=otihualla|Analysed=Yes
@@ -3477,6 +3602,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 98.57%
+# relations = 27.14%
 1	Intla	tla	PRON	_	_	4	_	_	Folio=9r|Paragraph=1|Line=8|Norm=Intla|Gloss=algo
 2	ie	ye	ADV	_	_	4	_	_	Folio=9r|Paragraph=1|Line=8|Norm=ye|AmbigNorm=True|Override=False
 3	vmpa	ompa	ADV	_		4	_	_	Folio=9r|Paragraph=1|Line=8|Norm=ompa|Gloss=allá|Analysed=Yes
@@ -3561,6 +3688,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 42.86%
 1	Niman	niman	ADV	_		3	_	_	Folio=9r|Paragraph=1|Line=18|Norm=Niman|Analysed=Yes
 2	ic	ic	ADV	_	_	3	_	_	Folio=9r|Paragraph=1|Line=18|Norm=ic
 3	conana	ana	VERB	_	Directional=On|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	Folio=9r|Paragraph=1|Line=18|Norm=conana|Analysed=Yes
@@ -3578,6 +3707,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 26.32%
 1	Auh	auh	CCONJ	_	_	5	_	_	Orig=A·uh|Folio=9r,9r|Paragraph=1,1|Line=19,19|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ	_	_	5	_	_	Folio=9r|Paragraph=1|Line=19|Norm=in
 3	aca	aca	DET|PRON	_	_	5	_	_	Folio=9r|Paragraph=1|Line=19|Norm=aca
@@ -3607,6 +3738,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 26.09%
 1	Auh	auh	CCONJ	_	_	14	_	_	Orig=A·uh|Folio=9r,9r|Paragraph=1,1|Line=22,22|Norm=Auh|Gloss=y
 2	intla	tla	PRON	_	_	5	_	_	Orig=intlacan|Folio=9r|Paragraph=1|Line=22|Norm=intla|Gloss=algo
 3	can	zan	ADV	_		5	_	_	Orig=intlacan|Folio=9r|Paragraph=1|Line=22|Norm=zan|Analysed=Yes
@@ -3640,6 +3773,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 26.47%
 1	Auh	auh	CCONJ	_	_	11	_	_	Orig=A·uh|Folio=9r,9r|Paragraph=1,1|Line=25,25|Norm=Auh|Gloss=y
 2	injc	inic	SCONJ	_		3	_	_	Folio=9r|Paragraph=1|Line=25|Norm=inic|Analysed=Yes
 3	contlalia	tlalia	VERB	_	Directional=On|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	11	_	_	Orig=contla¶·lia|Folio=9r,9r|Paragraph=1,1|Line=25,26|Norm=contlalia|Analysed=Yes
@@ -3684,6 +3819,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 66.67%
+# relations = 15.38%
 1	Ic	ic	ADV	_	_	2	_	_	Folio=9v|Paragraph=3|Line=1|Norm=Ic
 2	chicunauj	chiconahui	NUM	_		3	_	_	Folio=9v|Paragraph=3|Line=1|Norm=chicnahui|Gloss=nueve|Analysed=Yes
 3	capitulo	capítulo	NOUN	_	State=Abs	6	_	_	Folio=9v|Paragraph=3|Line=1|Norm=capítulo|Analysed=Yes
@@ -3734,6 +3871,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 74.07%
+# relations = 48.15%
 1	No	no	ADV	_		6	advmod	6:advmod	Folio=9v|Paragraph=4|Line=1|Norm=No|Gloss=también|Analysed=Yes
 2	ioan	huan	NOUN	_	NounType=Relat	6	obl	6:obl	Orig=io·an|Folio=9v,9v|Paragraph=4,4|Line=1,1|Norm=ihuan|Gloss=con
 3	in	in	DET	_	_	4	det	4:det	Folio=9v|Paragraph=4|Line=1|Norm=in
@@ -3800,6 +3939,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 72.00%
 1	No	no	ADV	_		3	advmod	_	Folio=9v|Paragraph=4|Line=7|Norm=No|Gloss=también|Analysed=Yes
 2	ipan	pan	NOUN	_	NounType=Relat	3	_	_	Folio=9v|Paragraph=4|Line=7|Norm=ipan
 3	qujmatia	matia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	Folio=9v|Paragraph=4|Line=8|Norm=quimatia|Analysed=Yes
@@ -3835,6 +3976,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 98.99%
+# heads = 100.00%
+# relations = 31.31%
 1	Auh	auh	CCONJ	_	_	12	_	_	Orig=A·uh|Folio=9v,9v|Paragraph=4,4|Line=11,11|Norm=Auh|Gloss=y
 2	intla	tla	PRON	_	_	4	_	_	Folio=9v|Paragraph=4|Line=11|Norm=intla|Gloss=algo
 3	aca	aca	DET|PRON	_	_	4	_	_	Folio=9v|Paragraph=4|Line=11|Norm=aca
@@ -3944,6 +4087,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 97.62%
+# relations = 33.33%
 1	Auh	auh	CCONJ	_	_	2	_	_	Orig=A·uh|Folio=10r,10r|Paragraph=1,1|Line=4,4|Norm=Auh|Gloss=y
 2	qujtoa	ihtoa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	Folio=10r|Paragraph=1|Line=4|Norm=quihtoa|Analysed=Yes
 3	,	,	PUNCT	_		12	punct	_	Folio=10r|Paragraph=1|Line=4|Norm=,|Analysed=Yes
@@ -3997,6 +4142,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 30.43%
 1	Ic	ic	ADV	_	_	2	_	_	Folio=10r|Paragraph=2|Line=1|Norm=Ic
 2	matlactli	matlactli	NUM	_		3	_	_	Folio=10r|Paragraph=2|Line=1|Norm=matlactli|Gloss=diez|Analysed=Yes
 3	capitulo	capítulo	NOUN	_	State=Abs	6	_	_	Folio=10r|Paragraph=2|Line=1|Norm=capítulo|Analysed=Yes
@@ -4030,6 +4177,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 27.08%
 1	No	no	ADV	_		4	_	_	Folio=10r|Paragraph=3|Line=1|Norm=No|Gloss=también|Analysed=Yes
 2	ioan	huan	NOUN	_	NounType=Relat	4	_	_	Folio=10r|Paragraph=3|Line=1|Norm=ihuan|Gloss=con
 3	,	,	PUNCT	_		4	punct	_	Folio=10r|Paragraph=3|Line=1|Norm=,|Analysed=Yes
@@ -4136,6 +4285,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 30.19%
 1	In	in	DET|SCONJ	_	_	5	_	_	Orig=I·nj¶·quac|Folio=10v,10v,10v|Paragraph=4,4,4|Line=17,17,18|Norm=In
 2	jquac	ihcuac	SCONJ	_		5	_	_	Orig=I·nj¶·quac|Folio=10v,10v,10v|Paragraph=4,4,4|Line=17,17,18|Norm=ihcuac|Gloss=cuando|Analysed=Yes
 3	aca	aca	DET|PRON	_	_	4	_	_	Folio=10v|Paragraph=4|Line=18|Norm=aca
@@ -4199,6 +4350,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 38.46%
 1	Ca	za	ADV	_		8	_	_	Orig=Caienoiuhquj|Folio=10v|Paragraph=4|Line=26|Norm=Za|AmbigNorm=True|Override=True|Analysed=Yes
 2	ie	ye	ADV	_	_	8	_	_	Orig=Caienoiuhquj|Folio=10v|Paragraph=4|Line=26|Norm=ye|AmbigNorm=True|Override=True
 3	no	no	ADV	_		8	_	_	Orig=Caienoiuhquj|Folio=10v|Paragraph=4|Line=26|Norm=no|Gloss=también|Analysed=Yes
@@ -4223,6 +4376,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 36.84%
 1	In	in	DET|SCONJ	_	_	2	_	_	Folio=10v|Paragraph=4|Line=28|Norm=In
 2	iehoatl	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	3	nsubj	_	Folio=10v|Paragraph=4|Line=28|Norm=yehhuatl|Gloss=él|Analysed=Yes
 3	calcujatl	calcuiyatl	NOUN	_	State=Abs	0	root	_	Folio=10v|Paragraph=4|Line=28|Norm=calcuiyatl|Split=cal·cuiyatl|Analysed=Yes
@@ -4252,6 +4407,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 97.44%
+# heads = 100.00%
+# relations = 35.90%
 1	No	no	ADV	_		14	_	_	Folio=10v|Paragraph=4|Line=31|Norm=No|Gloss=también|Analysed=Yes
 2	iuhquj	iuhqui	ADV	_		14	_	_	Orig=iuh·quj¶|Folio=10v,10v|Paragraph=4,4|Line=31,31|Norm=iuhqui|Gloss=así|Analysed=Yes
 3	in	in	DET|SCONJ	_	_	4	_	_	Orig=intetzauhqujmjchin|Folio=10v|Paragraph=4|Line=32|Norm=in
@@ -4301,6 +4458,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 31.82%
 1	Ic	ic	ADV	_	_	2	_	_	Folio=10v|Paragraph=5|Line=1|Norm=Ic
 2	matlactli	matlactli	NUM	_		4	_	_	Folio=10v|Paragraph=5|Line=1|Norm=matlactli|Gloss=diez|Analysed=Yes
 3	oce	ce	NUM	_	_	2	_	_	Folio=10v|Paragraph=5|Line=1|Norm=oce|Gloss=y.uno
@@ -4333,6 +4492,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 97.83%
+# relations = 28.26%
 1	No	no	ADV	_		4	_	_	Folio=11r|Paragraph=1|Line=1|Norm=No|Gloss=también|Analysed=Yes
 2	yoan	huan	NOUN	_	NounType=Relat	4	_	_	Folio=11r|Paragraph=1|Line=1|Norm=ihuan|Gloss=con
 3	,	,	PUNCT	_		4	punct	_	Folio=11r|Paragraph=1|Line=1|Norm=,|Analysed=Yes
@@ -4389,6 +4550,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 32.26%
 1	Auh	auh	CCONJ	_	_	14	_	_	Orig=A·uh|Folio=11r,11r|Paragraph=1,1|Line=7,7|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ	_	_	3	_	_	Orig=i¶·naqujn|Folio=11r,11r|Paragraph=1,1|Line=7,8|Norm=in
 3	aqujn	aquin	PRON	_	_	14	_	_	Orig=i¶·naqujn|Folio=11r,11r|Paragraph=1,1|Line=7,8|Norm=aquin
@@ -4430,6 +4593,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 36.54%
 1	Auh	auh	CCONJ	_	_	2	cc	_	Orig=A·uh|Folio=11r,11r|Paragraph=2,2|Line=1,1|Norm=Auh|Gloss=y
 2	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	Folio=11r|Paragraph=2|Line=1|Norm=mihtoa|Analysed=Yes
 3	in	in	DET|SCONJ	_	_	4	_	_	Orig=inaqujn|Folio=11r|Paragraph=2|Line=1|Norm=in
@@ -4492,6 +4657,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 29.41%
 1	Auh	auh	CCONJ	_	_	12	_	_	Orig=A·uh|Folio=11r,11r|Paragraph=2,2|Line=9,9|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ	_	_	3	_	_	Folio=11r|Paragraph=2|Line=9|Norm=in
 3	aqujn	aquin	PRON	_	_	8	_	_	Folio=11r|Paragraph=2|Line=9|Norm=aquin
@@ -4590,6 +4757,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 94.74%
+# relations = 31.58%
 1	Ic	ic	ADV	_	_	2	_	_	Folio=11v|Paragraph=4|Line=1|Norm=Ic
 2	matlactli	matlactli	NUM	_		4	_	_	Folio=11v|Paragraph=4|Line=1|Norm=matlactli|Gloss=diez|Analysed=Yes
 3	omome	ome	NUM	_	_	2	_	_	Folio=11v|Paragraph=4|Line=1|Norm=omome|Gloss=y.dos
@@ -4619,6 +4788,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 35.14%
 1	No	no	ADV	_		4	_	_	Folio=11v|Paragraph=5|Line=1|Norm=No|Gloss=también|Analysed=Yes
 2	yoan	huan	NOUN	_	NounType=Relat	4	_	_	Folio=11v|Paragraph=5|Line=1|Norm=ihuan|Gloss=con
 3	,	,	PUNCT	_		4	punct	_	Folio=11v|Paragraph=5|Line=1|Norm=,|Analysed=Yes
@@ -4666,6 +4837,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 31.03%
 1	In	in	DET|SCONJ	_	_	2	_	2	Orig=Inaqujn|Folio=11v|Paragraph=5|Line=7|Norm=In
 2	aqujn	aquin	PRON	_	_	6	_	6	Orig=Inaqujn|Folio=11v|Paragraph=5|Line=7|Norm=aquin
 3	qujttaia	itta	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	2	_	2	Folio=11v|Paragraph=5|Line=7|Norm=quittaya|Analysed=Yes
@@ -4707,6 +4880,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 84.21%
 1	In	in	DET	_	_	2	_	_	Orig=Inaqujn|Folio=11v|Paragraph=5|Line=11|Norm=In
 2	aqujn	aquin	PRON	_	_	21	nsubj	_	Orig=Inaqujn|Folio=11v|Paragraph=5|Line=11|Norm=aquin
 3	amo	amo	ADV	_		4	advmod	_	Folio=11v|Paragraph=5|Line=11|Norm=amo|Gloss=no|Analysed=Yes
@@ -4755,6 +4930,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 33.93%
 1	Auh	auh	CCONJ	_	_	14	_	14	Orig=A·uh¶|Folio=12r,12r|Paragraph=1,1|Line=4,4|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ	_	_	3	_	3	Orig=inaqujn|Folio=12r|Paragraph=1|Line=5|Norm=in
 3	aqujn	aquin	PRON	_	_	14	_	14	Orig=inaqujn|Folio=12r|Paragraph=1|Line=5|Norm=aquin
@@ -4823,6 +5000,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 99.30%
+# relations = 33.10%
 1	Auh	auh	CCONJ	_	_	9	_	_	Orig=A·uh|Folio=12r,12r|Paragraph=1,1|Line=13,13|Norm=Auh|Gloss=y
 2	intla	tla	PRON	_	_	4	_	_	Orig=in¶·tlaieo·qujmottiti|Folio=12r,12r,12r|Paragraph=1,1,1|Line=13,14,14|Norm=intla|Gloss=algo
 3	ie	ye	ADV	_	_	4	_	_	Orig=in¶·tlaieo·qujmottiti|Folio=12r,12r,12r|Paragraph=1,1,1|Line=13,14,14|Norm=ye|AmbigNorm=True|Override=False
@@ -4977,6 +5156,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
 1	Ic	ic	ADV	_	_	4	dep	_	Folio=12v|Paragraph=3|Line=1|Norm=Ic
 2	matlactli	matlactli	NUM	_		4	nummod	_	Folio=12v|Paragraph=3|Line=1|Norm=matlactli|Gloss=diez|Analysed=Yes
 3	omei	eyi	NUM	_	_	2	conj	_	Folio=12v|Paragraph=3|Line=1|Norm=omeyi|Gloss=y.tres
@@ -5004,6 +5185,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
 1	No	no	ADV	_		4	advmod	4:advmod	Folio=12v|Paragraph=4|Line=1|Norm=No|Gloss=también|Analysed=Yes
 2	yoan	huan	NOUN	_	NounType=Relat	4	obl	4:obl	Folio=12v|Paragraph=4|Line=1|Norm=ihuan|Gloss=con
 3	,	,	PUNCT	_		4	punct	4:punct	Folio=12v|Paragraph=4|Line=1|Norm=,|Analysed=Yes
@@ -5035,6 +5218,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 25.00%
 1	Qujtoa	ihtoa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Folio=12v|Paragraph=4|Line=5|Norm=Quihtoa|Analysed=Yes
 2	,	,	PUNCT	_		10	punct	10:punct	Folio=12v|Paragraph=4|Line=5|Norm=,|Analysed=Yes
 3	çan	zan	ADV	_		10	_	10	Folio=12v|Paragraph=4|Line=5|Norm=zan|Analysed=Yes
@@ -5085,6 +5270,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 29.82%
 1	In	in	DET|SCONJ	_	_	2	_	_	Orig=Inaqujn|Folio=12v|Paragraph=4|Line=11|Norm=In
 2	aqujn	aquin	PRON	_	_	6	_	_	Orig=Inaqujn|Folio=12v|Paragraph=4|Line=11|Norm=aquin
 3	qujmottitia	mottitia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	2	_	_	Orig=qujmotti¶·tia|Folio=12v,12v|Paragraph=4,4|Line=11,12|Norm=quimottitia|Analysed=Yes
@@ -5209,6 +5396,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 25.00%
 1	Can	zan	ADV	_		9	_	9	Folio=13r|Paragraph=2|Line=1|Norm=Zan|Analysed=Yes
 2	ie	ye	ADV	_	_	9	_	9	Orig=ieno|Folio=13r|Paragraph=2|Line=1|Norm=ye|AmbigNorm=True|Override=False
 3	no	no	ADV	_		9	_	9	Orig=ieno|Folio=13r|Paragraph=2|Line=1|Norm=no|Gloss=también|Analysed=Yes
@@ -5263,6 +5452,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 28.89%
 1	Auh	auh	CCONJ	_	_	3	_	3	Orig=A·uh|Folio=13v,13v|Paragraph=3,3|Line=10,10|Norm=Auh|Gloss=y
 2	intla	tla	PRON	_	_	3	_	3	Orig=intlamoquetza|Folio=13v|Paragraph=3|Line=10|Norm=intla|Gloss=algo
 3	moquetza	quetza	VERB	_	_	0	root	0:root	Orig=intlamoquetza|Folio=13v|Paragraph=3|Line=10|Norm=moquetza
@@ -5320,6 +5511,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 41.67%
 1	Can	zan	ADV	_		9	_	_	Folio=13v|Paragraph=4|Line=1|Norm=Zan|Analysed=Yes
 2	ie	ye	ADV	_	_	9	_	_	Orig=ieno|Folio=13v|Paragraph=4|Line=1|Norm=ye|AmbigNorm=True|Override=False
 3	no	no	ADV	_		9	_	_	Orig=ieno|Folio=13v|Paragraph=4|Line=1|Norm=no|Gloss=también|Analysed=Yes
@@ -5366,6 +5559,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 97.06%
+# relations = 20.59%
 1	Auh	auh	CCONJ	_	_	5	_	_	Folio=13v|Paragraph=4|Line=7|Norm=Auh|Gloss=y
 2	injc	inic	SCONJ	_		5	_	_	Folio=13v|Paragraph=4|Line=7|Norm=inic|Analysed=Yes
 3	çan	zan	ADV	_		5	_	_	Folio=13v|Paragraph=4|Line=7|Norm=zan|Analysed=Yes
@@ -5411,6 +5606,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 50.00%
 1	Tetzaujtl	tetzahuitl	NOUN	_	State=Abs	0	root	_	Folio=13v|Paragraph=5|Line=1|Norm=Tetzahuitl|Analysed=Yes
 2	itechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Poss	1	_	_	Folio=13v|Paragraph=5|Line=1|Norm=itechpa|Analysed=Yes
 3	chiqujmoli	chiquimoli	NOUN	_	State=Abs	2	_	_	Folio=13v|Paragraph=5|Line=1|Norm=chiquimoli|Analysed=Yes
@@ -5426,6 +5623,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 31.25%
 1	In	in	DET|SCONJ	_	_	2	_	_	Orig=I·nchiqujmoli|Folio=13v,13v|Paragraph=6,6|Line=1,1|Norm=In
 2	chiqujmoli	chiquimoli	NOUN	_	State=Abs	6	_	_	Orig=I·nchiqujmoli|Folio=13v,13v|Paragraph=6,6|Line=1,1|Norm=chiquimoli|Analysed=Yes
 3	,	,	PUNCT	_		6	punct	_	Folio=13v|Paragraph=6|Line=1|Norm=,|Analysed=Yes
@@ -5454,6 +5653,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 31.82%
 1	Auh	auh	CCONJ	_	_	7	_	_	Folio=13v|Paragraph=6|Line=3|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ	_	_	5	_	_	Orig=injqc¶|Folio=13v|Paragraph=6|Line=3|Norm=in
 3	jqc	ihcuac	SCONJ	_		5	_	_	Orig=injqc¶|Folio=13v|Paragraph=6|Line=3|Norm=ihcuac|Gloss=cuando|Analysed=Yes
@@ -5487,6 +5688,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
 1	Tetzaujtl	tetzahuitl	NOUN	_	State=Abs	0	root	0:root	Folio=14r|Paragraph=2|Line=1|Norm=Tetzahuitl|Analysed=Yes
 2	itechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Poss	1	nmod	1:nmod	Folio=14r|Paragraph=2|Line=1|Norm=itechpa|Analysed=Yes
 3	in	in	DET	_	_	4	det	4:det	Folio=14r|Paragraph=2|Line=1|Norm=in
@@ -5503,6 +5706,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 30.00%
 1	Qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	_	Orig=Quj·toaia|Folio=14r,14r|Paragraph=3,3|Line=1,1|Norm=Quihtoaya|Analysed=Yes
 2	,	,	PUNCT	_		8	punct	_	Folio=14r|Paragraph=3|Line=1|Norm=,|Analysed=Yes
 3	ca	cah|ca	PART	_	_	8	_	_	Folio=14r|Paragraph=3|Line=1|Norm=ca|AmbigNorm=True|Override=True
@@ -5533,6 +5738,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 97.14%
+# relations = 85.71%
 1	Auh	auh	CCONJ	_	_	10	_	_	Folio=14r|Paragraph=3|Line=4|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ	_	_	10	_	_	Orig=inj·quac|Folio=14r,14r|Paragraph=3,3|Line=5,5|Norm=in
 3	jquac	ihcuac	SCONJ	_		5	mark	_	Orig=inj·quac|Folio=14r,14r|Paragraph=3,3|Line=5,5|Norm=ihcuac|Gloss=cuando|Analysed=Yes
@@ -5579,6 +5786,8 @@
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 84.62%
+# relations = 84.62%
 1	Nican	nican	ADV	_		2	advmod	2:advmod	Folio=14r|Paragraph=4|Line=1|Norm=Nican|Gloss=aquí|Analysed=Yes
 2	tzonqujca	tzonquiza	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	0	root	0:root	Folio=14r|Paragraph=4|Line=1|Norm=tzonquiza|Analysed=Yes
 3	yn	in	DET	_	_	4	det	4:det	Folio=14r|Paragraph=4|Line=1|Norm=in
