@@ -1,7 +1,7 @@
 import sys,re
 
 def replace_keep_case(word, replacement, text):
-	def func(match):
+	def func(match): #defines the function
 		g = match.group()
 		#print('!',match,'|', g, file=sys.stderr)
 		if g.islower(): return replacement.lower()
@@ -17,6 +17,7 @@ while line:
 	tokens = re.sub('([:,.!?]+)', ' \g<1> ', line).split(' ')
 	normalized_tokens = []
 	for token in tokens:
+
 		token = replace_keep_case('muger', 'mujer', token)
 		token = re.sub(r'vn([oa])?(s)?$', r'un\g<1>\g<2>', token)		
 		token = replace_keep_case('asi', 'así', token)		
