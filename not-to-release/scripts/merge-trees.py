@@ -1,11 +1,5 @@
 import sys, re 
 
-trees = {}
-empties = {}
-
-total_tokens = 0
-annotated_tokens = 0
-
 def get_token_lines(bloc):
 	rows = bloc.split('\n')
 	lines = []	
@@ -19,7 +13,19 @@ def get_token_lines(bloc):
 			lines.append(row)
 
 	return lines
-		
+	
+n_trees = 0
+n_parsed = 0
+
+trees = {}
+empties = {}
+
+stats = {}
+
+n_tokens = 0
+n_tokens_head = 0
+n_tokens_head_deprel = 0
+	
 
 for bloc in open(sys.argv[1]).read().split('\n\n'):
 	sent_id = '_'	
@@ -31,6 +37,7 @@ for bloc in open(sys.argv[1]).read().split('\n\n'):
 #		print('@@@@', line,file=sys.stderr)
 		if line.count('sent_id') > 0:
 			sent_id = line.split('=')[1].strip()
+			stats[sent_id] = [0, 0, 0]
 		if line[0] == '#':
 			continue
 		row = line.split('\t')
@@ -40,13 +47,19 @@ for bloc in open(sys.argv[1]).read().split('\n\n'):
 			empty[row[0]] = row
 		else:
 			tree[row[0]] = row
-			annotated_tokens += 1
+			stats[sent_id][0] += 1
+			# id,form,lem,upos,xpos,feat,head,deprel,edep,misc
+			if row[6] != '_':
+				n_tokens_head += 1
+				stats[sent_id][1] += 1
+			if row[7] != '_':
+				n_tokens_head_deprel += 1
+				stats[sent_id][2] += 1
+			if row[8].isalnum():
+				row[8] = row[8]+':dep'
 
 	trees[sent_id] = tree
 	empties[sent_id] = empty
-
-n_trees = 0
-n_parsed = 0
 
 for bloc in sys.stdin.read().split('\n\n'):
 	sent_id = '_'	
@@ -60,7 +73,7 @@ for bloc in sys.stdin.read().split('\n\n'):
 			sent_id = line.split('=')[1].strip()
 			break
 
-	total_tokens += len(get_token_lines(bloc))
+	n_tokens += len(get_token_lines(bloc))
 
 	if sent_id not in trees:
 		print(bloc)
@@ -83,6 +96,8 @@ for bloc in sys.stdin.read().split('\n\n'):
 			n_parsed += 1
 			for comment in comments:
 				print(comment)
+			print('# heads = %.2f%%' % ((stats[sent_id][1]/stats[sent_id][0])*100))
+			print('# relations = %.2f%%' % ((stats[sent_id][2]/stats[sent_id][0])*100))
 			for line in lines:
 				idx, form, lem, upos, xpos, feats, head, deprel, edeps, misc = line
 			
@@ -100,5 +115,5 @@ for bloc in sys.stdin.read().split('\n\n'):
 
 	n_trees += 1
 
-info = (n_trees, n_parsed, (n_parsed/n_trees)*100, total_tokens, annotated_tokens, (annotated_tokens/total_tokens)*100)
-print('Trees: %d, Parsed: %d (%.2f%%) | Tokens: %d, Parsed: %d (%.2f%%)' % info, file=sys.stderr)
+info = (n_trees, n_parsed, (n_parsed/n_trees)*100, n_tokens, n_tokens_head, (n_tokens_head/n_tokens)*100, n_tokens_head_deprel, (n_tokens_head_deprel/n_tokens)*100)
+print('Trees: %d, Parsed: %d (%.2f%%) | Tokens: %d, Heads: %d (%.2f%%), Deprels: %d (%.2f%%)' % info, file=sys.stderr)
