@@ -20,8 +20,7 @@ while line:
 
 		token = replace_keep_case('jendo$','iendo', token)
 		token = replace_keep_case('muger', 'mujer', token)
-		token = re.sub(r'vn([oa])?(s)?$', r'un\g<1>\g<2>', token)			token = replace_keep_case('mesmo', 'mismo', token)		
-		token = replace_keep_case('asi', 'así', token)		
+		token = re.sub(r'vn([oa])?(s)?$', r'un\g<1>\g<2>', token)			token = replace_keep_case('asi', 'así', token)		
 		token = replace_keep_case('camjno', 'camino', token)		
 		token = replace_keep_case('algun$', 'algún', token)		
 		token = replace_keep_case(r'a[uv]an$', r'aban', token)
