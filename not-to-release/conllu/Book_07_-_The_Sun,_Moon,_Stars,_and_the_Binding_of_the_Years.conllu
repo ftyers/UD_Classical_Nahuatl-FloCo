@@ -1,10 +1,10 @@
 # sent_id = Book_07_-_The_Sun,_Moon,_Stars,_and_the_Binding_of_the_Years.tokenised:1
 # text = Jnic chicome amostli, itechpa tlatoa in tonatiuh: yoan in metztli, yoan in çiçitlalti, yoan in toximmolpia.
-# text[norm] = Inic chicome amoxtli, itechpa tlatoa in tonatiuh: ihuan in metztli, ihuan in cicitlalti, ihuan in toximmolpiya.
+# text[norm] = Inic chicome amoxtli, itechpa tlatoa in tonatiuh: ihuan in metztli, ihuan in cicitlaltin, ihuan in toximmolpiya.
 # text[orig] = J·nic·chicome·amostli·,·itechpa¶tlatoa·in·tonatiuh·:·yoan·in·metz¶tli·,·yoan·in·çiçitlalti·,·yoan·in·to¶ximmolpia·.
-# tagged = 90.48%
-# lemmatised = 90.48%
-# analysed = 90.48%
+# tagged = 95.24%
+# lemmatised = 95.24%
+# analysed = 95.24%
 1	Jnic	inic	SCONJ	_		_	_	_	Orig=J·nic|Folio=1,1|Paragraph=1,1|Line=1,1|Norm=Inic|Analysed=Yes
 2	chicome	chicome	NUM	_		_	_	_	Folio=1|Paragraph=1|Line=1|Norm=chicome|Gloss=siete|Analysed=Yes
 3	amostli	amoxtli	NOUN	_	State=Abs	_	_	_	Folio=1|Paragraph=1|Line=1|Norm=amoxtli|Gloss=libro|Analysed=Yes
@@ -20,7 +20,7 @@
 13	,	,	PUNCT	_		_	_	_	Folio=1|Paragraph=1|Line=3|Norm=,|Analysed=Yes
 14	yoan	huan	NOUN	_	NounType=Relat	_	_	_	Folio=1|Paragraph=1|Line=3|Norm=ihuan|Gloss=con
 15	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=1|Paragraph=1|Line=3|Norm=in
-16	çiçitlalti	_	X	_	_	_	_	_	Folio=1|Paragraph=1|Line=3|Norm=cicitlalti
+16	çiçitlalti	citlalli	NOUN	_	_	_	_	_	Folio=1|Paragraph=1|Line=3|Norm=cicitlaltin|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
 17	,	,	PUNCT	_		_	_	_	Folio=1|Paragraph=1|Line=3|Norm=,|Analysed=Yes
 18	yoan	huan	NOUN	_	NounType=Relat	_	_	_	Folio=1|Paragraph=1|Line=3|Norm=ihuan|Gloss=con
 19	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=1|Paragraph=1|Line=3|Norm=in
@@ -1560,7 +1560,7 @@
 32	çan	zan	ADV	_		_	_	_	Folio=4|Paragraph=0|Line=14|Norm=zan|Analysed=Yes
 33	ommismauhtito	_	VERB	_	_	_	_	_	Orig=ommismauh¶·tito|Folio=4,4|Paragraph=0,0|Line=14,15|Norm=ommixmauhtito|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
 34	,	,	PUNCT	_		_	_	_	Folio=4|Paragraph=0|Line=15|Norm=,|Analysed=Yes
-35	ommotilquetzato	tilquetza	VERB	_	Directional=And|Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=4|Paragraph=0|Line=15|Norm=ommotilquetzato|Analysed=Yes
+35	ommotilquetzato	tilquetza	VERB	_	Directional=On|Number[subj]=Plur,Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=4|Paragraph=0|Line=15|Norm=ommotilquetzato|Analysed=Yes
 36	,	,	PUNCT	_		_	_	_	Folio=4|Paragraph=0|Line=15|Norm=,|Analysed=Yes
 37	oaltzinquiz	tzinquiza	VERB	_	Directional=Hual|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	_	_	_	Orig=oaltzin¶·quiz|Folio=4,4|Paragraph=0,0|Line=15,16|Norm=hualtzinquiz|Analysed=Yes
 38	,	,	PUNCT	_		_	_	_	Folio=4|Paragraph=0|Line=16|Norm=,|Analysed=Yes
