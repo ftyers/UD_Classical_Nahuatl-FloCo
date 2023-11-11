@@ -167,6 +167,9 @@ def load_normalisation_table(fn, table):
 			errs.append((lineno, line))
 			continue
 			#raise
+
+		if right == '_':
+			continue
 			
 		level = int(level)
 		rank = int(rank)
