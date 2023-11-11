@@ -28,8 +28,8 @@ all: $(TARGETS)
 ../conllu/Book_06_-_Rhetoric_and_Moral_Philosophy.conllu: ../books/Book_06_-_Rhetoric_and_Moral_Philosophy.tokenised $(DEPS)
 	python3 process-codex.py $< | python3 tag-codex.py > $@
 
-../conllu/Book_07_-_The_Sun,_Moon,_Stars,_and_the_Binding_of_the_Years.conllu: ../books/Book_07_-_The_Sun,_Moon,_Stars,_and_the_Binding_of_the_Years.tokenised $(DEPS)
-	python3 process-codex.py $< | python3 tag-codex.py > $@
+../conllu/Book_07_-_The_Sun,_Moon,_Stars,_and_the_Binding_of_the_Years.conllu: ../books/Book_07_-_The_Sun,_Moon,_Stars,_and_the_Binding_of_the_Years.tokenised translation/Book_07_-_The_Sun,_Moon,_Stars,_and_the_Binding_of_the_Years.* $(DEPS)
+	python3 process-codex.py $< | python3 add-translations.py translation/Book_07_-_The_Sun,_Moon,_Stars,_and_the_Binding_of_the_Years.* | python3 tag-codex.py > $@
 
 ../conllu/Book_08_-_Kings_and_Lords.conllu: ../books/Book_08_-_Kings_and_Lords.txt translation/Book_08_-_Kings_and_Lords.* $(DEPS)
 	python3 process-codex.py $< | python3 add-translations.py translation/Book_08_-_Kings_and_Lords.* | python3 tag-codex.py > $@
