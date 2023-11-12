@@ -36,6 +36,7 @@ while line:
 		token = replace_keep_case('vezes', 'veces', token)
 		token = replace_keep_case('penetratiuo', 'penetrativo', token) # i dont think this is right
 		token = replace_keep_case('aue', 'ave', token)		
+		token = replace_keep_case('quj', 'qui', token) # i dont know if this will always work
 
 		#removing stuff
 		token = replace_keep_case('pass', 'pas', token)
@@ -64,8 +65,6 @@ while line:
 		token = re.sub('aua([n])?','aba\g<1>', token)
 		token = re.sub('d([ie])z', 'd\g<1>c', token)	
 		token = re.sub('[ji]a([n])?$', 'ía\g<1>', token)
-		token = replace_keep_case('quj', 'qui', token) # this is for next time i work on the file,
-		# going to change this for qujera/qujere/qujen stuff^
 		
 		# cual shenanigans?
 		if (token == 'qualquiera'):
