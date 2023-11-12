@@ -19,6 +19,7 @@ while line:
 	for token in tokens:
 		
 		token = replace_keep_case('jendo$','iendo', token)
+		token = replace_keep_case('sauandija','sabandija', token)
 		token = replace_keep_case('onze','once', token)
 		token = replace_keep_case('muger', 'mujer', token)
 		token = replace_keep_case('mesmo', 'mismo', token)
@@ -27,14 +28,15 @@ while line:
 		token = replace_keep_case('aujan', 'habían', token)
 		token = replace_keep_case('auja', 'había', token)	
 		token = replace_keep_case('y[uv]a', 'iba', token)
-		token = replace_keep_case('quando', 'cuando', token)
+		token = replace_keep_case('quando', 'cuándo', token)
 		token = replace_keep_case('nueua', 'nueva', token)
 		token = replace_keep_case('dexa', 'deja', token)
 		token = replace_keep_case('mjedo', 'miedo', token)
 		token = replace_keep_case('camjno', 'camino', token)
 		token = replace_keep_case('vezes', 'veces', token)
 		token = replace_keep_case('penetratiuo', 'penetrativo', token) # i dont think this is right
-		
+		token = replace_keep_case('aue', 'ave', token)		
+
 		#removing stuff
 		token = replace_keep_case('pass', 'pas', token)
 		token = replace_keep_case('habla me', 'hablame', token)
@@ -51,7 +53,7 @@ while line:
 		# for splitting words
 		token = replace_keep_case('ala', 'a la', token)
 		token = replace_keep_case('della', 'de ella', token)
-		token = replace_keep_case('desta', 'de esta', token)
+		token = replace_keep_case('dest[oa]', 'de est\g<1>', token)
 		token = replace_keep_case('poruentura', 'por ventura', token)
 
 		
@@ -62,7 +64,7 @@ while line:
 		token = re.sub('aua([n])?','aba\g<1>', token)
 		token = re.sub('d([ie])z', 'd\g<1>c', token)	
 		token = re.sub('[ji]a([n])?$', 'ía\g<1>', token)
-		token = replace_keep_case('qujen', 'quien', token) # this is for next time i work on the file,
+		token = replace_keep_case('quj', 'qui', token) # this is for next time i work on the file,
 		# going to change this for qujera/qujere/qujen stuff^
 		
 		# cual shenanigans?
