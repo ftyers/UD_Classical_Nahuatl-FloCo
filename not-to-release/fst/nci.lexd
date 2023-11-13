@@ -21,9 +21,11 @@ Irregulares
 PATTERN NOUN
 # Absolutive Nouns
 Noun-Absolutive
+Noun-Vocative
 Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-DERIV-ABS
 # Possessive singular
 Possessives Noun-Possessed > N-DERIV
+Possessives Noun-Possessed N-POSS-SG > N-DERIV
 # Possessive plural
 Possessives Noun-Possessed N-POSS-PL > N-DERIV-PL
 # Derived Nouns
@@ -45,15 +47,22 @@ Comunes[spa-anes] [<n>:] N-ABS-SPA[spa-anes]
 
 LEXICON Possessives
 <px3aa>:te>
+<px3nn>:tla>
 <px1sg>:no>
 <px1sg>:no~no> # FIXME: Check
 <px2sg>:mo>
 <px3sg>:i>
 <px1pl>:to>
+<px1pl>:t{o}>
 <px2pl>:namo> # FIXME: Check
 <px3pl>:i{N}>
 
+
 LEXICON N-ABS
+<abs>:e[e]
+<pl>:e>que[e]
+<abs>:c[c]
+<pl>:>que[c]
 <abs>:li[li]
 <pl>:tin[li]
 <abs>:tl[tl]
@@ -63,13 +72,17 @@ LEXICON N-ABS
 <pl>:cah[catl]
 <abs>:tli[tli]
 <pl>:ti{~n}[tli]
-<abs>:tl[huitl]
+<abs>:huitl[huitl]
 <abs>:[Ø]
 <pl>:me[Ø]
-<abs>:ni[ni]
+<abs>:[ni]
+<pl>:me[ni]
+<pl>:meh[ni]
 <abs>:[eca]
+<pl>:[teteuh]
+<pl>:[tzitzin]
 <pl>:>uh[teteuh]
-<pl>:tin[cicitlaltin]
+<pl>:tin[cicitlaltin,tin]
 <abs>:t[t]
 <pl>:t>que[t]
 <abs>:qui[qui]
@@ -85,16 +98,27 @@ LEXICON N-ABS-SPA
 <pl>:>s[spa-s]
 :[spa]
 
+LEXICON N-VOC
+#<voc>:e[li]
+#<voc>:e[tl]
+#<voc>:e[tli]
+<voc>:>{é}
+
 PATTERN Noun-Absolutive
-(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,teteuh,cicitlaltin,catl,qui,t,in]]
+(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,tzitzin,teteuh,cicitlaltin,catl,qui,t,in,e,c,ni]]
 VerbRootIV [<v><iv><nmlz>:>liz] N-ABS[tli]
 
+PATTERN Noun-Vocative
+(Comunes[-spa,-spa-s,-spa-es,-spa-anes] [<n>:] N-ABS)[^[li,tl,tli,huitl,Ø,ni,eca,tzitzin,teteuh,cicitlaltin,catl,qui,t,in,e,c,ni]] N-VOC
+
 PATTERN Noun-Possessed
-Comunes[-teteuh,-cicitlaltin,-spa,-spa-s,-spa-es,-spa-anes,-loc,-rel] [<n>:]
+#Comunes[-teteuh,-cicitlaltin,-spa,-spa-s,-spa-es,-spa-anes,-loc,-rel] [<n>:]
+Comunes[-cicitlaltin,-spa,-spa-s,-spa-es,-spa-anes,-loc,-rel] [<n>:]
 
 LEXICON N-DERIV 
 <rev>:>tzin
 <rev><pl>:>tzi~tzin
+<rev><voc>:>tz>e
 <dim>:>ton
 <aug>:>pol
 # TODO: tags
@@ -109,8 +133,12 @@ LEXICON N-DERIV-ABS
 <dim><abs>:>ton>tli
 <dim><abs>:>zol>li
 
+LEXICON N-POSS-SG
+:>uh
+
 LEXICON N-POSS-PL
 <pl>:>huan
+<pl><voc>:>huan>e
 
 LEXICON N-DERIV-PL
 <rev>:>tzi~tzin
@@ -163,6 +191,9 @@ PATTERN ADV
 Adverbios[itg] [<adv><itg>:]
 Adverbios[-itg] [<adv>:]
 
+PATTERN MISC
+Miscellaneous [<x>:]
+
 ###############################################################################
 
 PATTERN PRON
@@ -194,7 +225,8 @@ ayac<prn><rel>:ayac
 ixquichtin<prn>:ixquichtin
 
 mochi<prn>:mochi
-tle<prn><int>:tle
+#tle<prn><int>:tle
+tle<prn>:tle
 
 on<prn><dem>:on
 
@@ -203,6 +235,8 @@ nehhuatl<prn><pers><p1><sg>:nehua>tl # TODO
 yehhuatl<prn><pers><p3><sg><short>:yeh # TODO
 
 mi<prn><pers><p1><sg>:mi
+
+nonoma<prn><emph><p1><sg>:nonoma # yo mismo
 
 ###############################################################################
 
@@ -218,6 +252,7 @@ y<cnjcoo>:y # "y"
 
 ye<cnjsub>:ye
 ca<cnjsub>:ca
+camo<cnjsub>:camo # ca + amo
 
 ic<cnjsub>:ic # "when"
 
@@ -256,27 +291,29 @@ inin<det>:inin
 mochi<det>:mochi
 inique<det>:inique # "these, those" TODO: in<det><pl>?
 
+itla<det>:itla # itla tecuani
+
 # Farfan quantifiers
 achi<det><qnt>:achi
 ce<det><qnt>:ce
 cemeh<det><qnt>:cemeh
 cequi<det><qnt>:cequi
-cequintin<det><qnt>:cequintin
+cequintin<det><qnt><pl>:cequintin
 ixachi<det><qnt>:ixachi
-ixachintin<det><qnt>:ixachintin
+ixachintin<det><qnt><pl>:ixachintin
 miyac<det><qnt>:miyac
 miyaquin<det><qnt>:miyaquin
-miyactin<det><qnt>:miyactin
-miyaquintin<det><qnt>:miyaquintin
+miyactin<det><qnt><pl>:miyactin
+miyaquintin<det><qnt><pl>:miyaquintin
 moch<det><qnt>:moch
 mochi<det><qnt>:mochi
 mochin<det><qnt>:mochin
-mochtin<det><qnt>:mochtin
-mochintin<det><qnt>:mochintin
+mochtin<det><qnt><pl>:mochtin
+mochintin<det><qnt><pl>:mochintin
 izqui<det><qnt>:izqui
-izquintin<det><qnt>:izquintin
+izquintin<det><qnt><pl>:izquintin
 ixquich<det><qnt>:ixquich
-ixquichtin<det><qnt>:ixquichtin
+ixquichtin<det><qnt><pl>:ixquichtin
 
 LEXICON PART
 ma<part><opt>:ma
@@ -288,10 +325,10 @@ at<part><dub>:at
 ach<part><dub>:ach
 nempancah<part><dub>:nempancah
 iuh<part>:iuh
-iuhqui<part>:iuhqui
+#iuhqui<part>:iuhqui
 iuhqueh<part>:iuhqueh
-zan<part>:zan
-za<part>:za
+#zan<part>:zan
+#za<part>:za
 mach<part>:mach
 ma<part>:ma
 macamo<part>:macamo
@@ -318,7 +355,6 @@ huel<part>:huel
 ahhuel<part>:ahhuel
 quil<part>:quil
 quilmach<part>:quilmach
-ayaxcan<part>:ayaxcan
 nenya<part>:nenya
 nenyan<part>:nenyan
 tlalhuiz<part>:tlalhuiz
@@ -332,7 +368,7 @@ quemah<part>:quemah
 ahmo<part>:ahmo
 nen<part>:nen
 no<part>:no
-nehuan<part>:nehuan
+#nehuan<part>:nehuan
 cepan<part>:cepan
 
 
@@ -348,11 +384,13 @@ chicuacen:chicuacen # "seis"
 chicome:chicome # "siete"
 chicueyi:chicueyi # "ocho"
 chiconahui:chiconahui # "nueve"
+chiconahui:chicnahui # "nueve"
 matlactli:matlac[tli] # "diez"
 caxtolli:caxtol[li] # "quince"
 cempohualli:cempohual[li] # "veinte"
 ompohualli:ompohual[li] # "40"
 yepohualli:yepohual[li] # "60"
+yepohualli:epohual[li] # "60"
 nauhpohualli:nauhpohual[li] # "80"
 macuilpohualli:macuilpohual[li] # "100"
 centzontli:centzon[tli] # "400"
@@ -398,6 +436,7 @@ nepantla:nepantla
 iuhcan
 tlalticpac
 ixco
+nehuan:nehuan
 iuhca
 cuahuitl<n>+nepantlah:cuauhnepantla
 nahui<num>+campa:nauhcampa
@@ -417,6 +456,48 @@ tlallan # "underground"
 petlapan # "on the mat"
 nepantla # "middle"
 
+
+# Book 05
+yaoc:yaoc # yaotl
+tlateotoco:tlateotoco # 
+tlapanixcuac:tlapanixcuac # 
+tepeticpac:tepeticpac # 
+tepancamac:tepancamac # 
+omaxac:omaxac # 
+yolloco:yolloco # 
+ixacalticpac:ixacalticpac # 
+tlapantenco:tlapantenco # 
+tlapanixcuac:tlapanixcuac # 
+tenamac:tenamac # 
+cuauhticpac:cuauhticpac # 
+cotzco:cotzco # 
+cuauhihtic:cuauhihtic # 
+calcuac:calcuac # 
+atlauhcamac:atlauhcamac # 
+atlauhitic:atlauhitic #
+atetloc:atetloc # 
+
+tonalamapan:tonalamapan # 
+tlazolpan:tlazolpan # 
+mictlampa:mictlampa # 
+nemachpan:nemachpan # 
+calipan:calipan # 
+
+zacatlan:zacatlan
+nonopallan:nonopallan
+memetlan:memetlan
+nemiyan
+tepetzalan:tepetzalan
+neaxixaloyan:neaxixaloyan
+cuauhnepantla:cuauhnepantla
+callan:callan
+
+cuauhyocatlan:cuauhyocatlan 
+
+
+tlacacemellecan:tlacacemellecan # lugar de paz
+
+
 LEXICON Comunes 
 aaccayotl:aaccayo[tl]
 aactiyaliztli:aactiyaliz[tli]
@@ -425,6 +506,7 @@ aatl:aa[tl]
 acacampaxoliztli:acacampaxoliz[tli]
 acachapolin:acachapol[in]
 acacocoyotl:acacocoyo[tl]
+hueltiuhtli:hueltiuh[tli] # check
 acacoyotl:acacoyo[tl]
 acacpalli:acacpal[li]
 acacuextli:acacuex[tli]
@@ -2223,7 +2305,7 @@ cuahuichtli:cuahuich[tli]
 cuahuilacapitztli:cuahuilacapitz[tli]
 cuahuiltetl:cuahuilte[tl]
 cuahuipilli:cuahuipil[li]
-cuahuitl:cuahui[huitl]
+cuahuitl:cua[huitl]
 cuahuitztli:cuahuitz[tli]
 cuahuizquixochitl:cuahuizquixochi[tl]
 cuahzahuacapoztli:cuahzahuacapoz[tli]
@@ -2552,7 +2634,7 @@ cuauhtzontetl:cuauhtzonte[tl]
 cuauhtzontli:cuauhtzon[tli]
 cuauhtzotzocolli:cuauhtzotzocol[li]
 cuauhtzotzontli:cuauhtzotzon[tli]
-cuauhuitl:cuauhui[huitl]
+cuauhuitl:cuau[huitl]
 cuauhxacalli:cuauhxacal[li]
 cuauhxicalli:cuauhxical[li]
 cuauhxicohtli:cuauhxicoh[tli]
@@ -3206,6 +3288,7 @@ ichtli:ich[tli]
 icnitl:icni[tl]
 icniuhmoyactli:icniuhmoyac[tli]
 icniuhtli:icniuh[tli]
+icniuhtli:{i}cniuh[tli]
 icniuhyotl:icniuhyo[tl]
 icnoacatzacualli:icnoacatzacual[li]
 icnoatl:icnoa[tl]
@@ -3295,7 +3378,7 @@ ihhuitlachihualli:ihhuitlachihual[li]
 ihhuitlacotl:ihhuitlaco[tl]
 ihhuitlahcuilolli:ihhuitlahcuilol[li]
 ihhuitlahuatzalli:ihhuitlahuatzal[li]
-ihhuitl:ihhui[huitl]
+ihhuitl:ih[huitl]
 ihhuitl:ihhui[tl]
 ihhuitohmiyotl:ihhuitohmiyo[tl]
 ihhuitopilli:ihhuitopil[li]
@@ -3367,7 +3450,7 @@ ilhuichihualiztli:ilhuichihualiz[tli]
 ilhuilli:ilhuil[li]
 ilhuiquixtiliztli:ilhuiquixtiliz[tli]
 ilhuitlaliztli:ilhuitlaliz[tli]
-ilhuitl:ilhui[huitl]
+ilhuitl:il[huitl]
 ilhuitl:ilhui[tl]
 ilhuizolli:ilhuizol[li]
 ilihuizcihuatl:ilihuizcihua[tl]
@@ -3522,7 +3605,7 @@ ixpetlahualiztli:ixpetlahualiz[tli]
 ixpeyoctli:ixpeyoc[tli]
 ixpeyotl:ixpeyo[tl]
 ixpilcuetlaxtli:ixpilcuetlax[tli]
-ixpilhuitl:ixpilhui[huitl]
+ixpilhuitl:ixpil[huitl]
 ixpilhuitl:ixpilhui[tl]
 ixpilli:ixpil[li]
 ixpinahualiztli:ixpinahualiz[tli]
@@ -4085,7 +4168,7 @@ miquiliztli:miquiliz[tli]
 miquitl:miqui[tl]
 miquiztehuicalli:miquiztehuical[li]
 miquiztentli:miquizten[tli]
-miquiztetzahuitl:miquiztetzahui[huitl]
+miquiztetzahuitl:miquiztetza[huitl]
 miquiztlacualli:miquiztlacual[li]
 miquiztlaneltiliztli:miquiztlaneltiliz[tli]
 miquiztlatzontequililli:miquiztlatzontequilil[li]
@@ -5117,7 +5200,7 @@ omipatilihuiliztli:omipatilihuiliz[tli]
 omipatolli:omipatol[li]
 omipetoniliztli:omipetoniliz[tli]
 omiqueloniliztli:omiqueloniliz[tli]
-omitl:omi[tl]
+omitl:{o}mi[tl]
 omitzotzopaztli:omitzotzopaz[tli]
 omixochitl:omixochi[tl]
 omiyotl:omiyo[tl]
@@ -5736,6 +5819,7 @@ tecolonochnohpalli:tecolonochnohpal[li]
 tecolonochpalli:tecolonochpal[li]
 tecolonochtli:tecolonoch[tli]
 tecolotl:tecolo[tl] # "búho"
+tecolotl:tecolooo[Ø] # "búho"
 tecomaxochitl:tecomaxochi[tl]
 tecomayotl:tecomayo[tl]
 tecompotzoliztli:tecompotzoliz[tli]
@@ -5785,7 +5869,7 @@ tecuaizteminaliztli:tecuaizteminaliz[tli]
 tecuanatl:tecuana[tl]
 tecuancamotl:tecuancamo[tl]
 tecuanicpalli:tecuanicpal[li]
-tecuani:tecua[ni] # "bestia"
+tecuani:tecuani[ni] # "bestia"
 tecuantonalli:tecuantonal[li]
 tecuappantli:tecuappan[tli]
 tecuatepiniliztli:tecuatepiniliz[tli]
@@ -6485,6 +6569,7 @@ tequippantli:tequippan[tli]
 tequitl:tequi[tl]
 tequixquiatl:tequixquia[tl]
 tequixquinahuacatl:tequixquinahua[catl]
+tequixquitl:tequixqui[tl]
 tequixquitlalli:tequixquitlal[li]
 tequixtiliztli:tequixtiliz[tli]
 tequiyotl:tequiyo[tl]
@@ -6762,7 +6847,7 @@ teyoliuhtlamachtilli:teyoliuhtlamachtil[li]
 teyollotl:teyollo[tl]
 teyotl:teyo[tl]
 tezacanecuilli:tezacanecuil[li]
-tetzahuitl:tetzahui[huitl]
+tetzahuitl:tetza[huitl]
 tezcacohuacatl:tezcacohua[catl]
 tezcacuitlapilli:tezcacuitlapil[li]
 tezcahuauhtli:tezcahuauh[tli]
@@ -9470,7 +9555,7 @@ tlatletzoyonilli:tlatletzoyonil[li]
 tlatlilli:tlatlil[li]
 tlatlilpalli:tlatlilpal[li]
 tlatl:tla[tl]
-tlatoani:tlatoa[ni]
+tlatoani:tlatoani[ni]
 tlatocaihcuilolli:tlatocaihcuilol[li]
 tlatocaticalactli:tlatocaticalac[tli]
 tlatocatlanahuatilli:tlatocatlanahuatil[li]
@@ -10077,6 +10162,7 @@ tocatencualactli:tocatencualac[tli]
 tocatlaxhuiztli:tocatlaxhuiz[tli]
 tocatl:toca[tl]
 toca[poss]
+piltoca[poss]
 tocatzahualli:tocatzahual[li]
 tocayotl:tocayo[tl]
 tochacatl:tocha[catl]
@@ -10403,6 +10489,7 @@ tzintetl:tzinte[tl]
 tzintiliztli:tzintiliz[tli]
 tzintlantli:tzintlan[tli]
 tzintli:tzin[tli]
+tzintli:tzitzin[tzitzin]
 tzintohpolin:tzintohpol[in]
 tzintomalli:tzintomal[li]
 tzintzoncualactli:tzintzoncualac[tli]
@@ -10589,7 +10676,7 @@ xictehuilacachiuhyantli:xictehuilacachiuhyan[tli]
 xictli:xic[tli]
 xictzontli:xictzon[tli]
 xihtli:xih[tli]
-xihuitl:xihui[huitl]
+xihuitl:xi[huitl]
 xihuitzilin:xihuitzil[in]
 xihxicuintli:xihxicuin[tli]
 xihxicuin:xihxicu[in]
@@ -10933,16 +11020,16 @@ yamancayotl:yamancayo[tl]
 yancuiliztli:yancuiliz[tli]
 yaoacalli:yaoacal[li]
 yaocalli:yaocal[li]
-yaohuitl:yaohui[huitl]
+yaohuitl:yao[huitl]
 yaoohtli:yaooh[tli]
 yaoquizaliztli:yaoquizaliz[tli]
-yaotetzahuitl:yaotetzahui[huitl]
+yaotetzahuitl:yaotetza[huitl]
 yaotiliztli:yaotiliz[tli]
 yaotiyanquiztli:yaotiyanquiz[tli]
 yaotlahtolli:yaotlahtol[li]
 yaotlalli:yaotlal[li]
 yaotlapiyaliztli:yaotlapiyaliz[tli]
-yaotlatoani:yaotlatoa[ni]
+yaotlatoani:yaotlatoani[ni]
 yaotl:yao[tl]
 yaoxacalli:yaoxacal[li]
 yaoyotl:yaoyo[tl]
@@ -11375,7 +11462,7 @@ teoxihuitl:teoxihui[tl]
 ano:ano[spa-s]
 mil:mil[spa-es]
 pahuaqui:pahua[qui]
-oquichtli:oquich[tli]
+oquichtli:{o}quich[tli]
 xomoihuitilmatli:xomoihuitilma[tli]
 Tlacochcalcatl:Tlacochcalca[tl]
 cacahuatl:cacahua[tl]
@@ -11418,7 +11505,7 @@ malcalli:malcal[li]
 aquilli:aquil[li]
 acualli:acual[li]
 tlazopilli:tlazopi~pil[li]
-tecocoliani:tecocolia[ni]
+tecocoliani:tecocoliani[ni]
 tochin:tochin[Ø]
 yaotequihua:yaotequihua[Ø]
 tachcauh:tachcauh[Ø]
@@ -11429,7 +11516,6 @@ huehuetque:hue~huet[qui]
 chane[Ø]
 tliltique:tlilti[qui]
 tzapaton[Ø]
-tzonqueme[Ø]
 tzontecomatl:tzontecoma[tl]
 tzotzomatli:tzotzoma[tli]
 tonalpouhqui[Ø]
@@ -11448,7 +11534,7 @@ tlacayectli:tlacayec[tli]
 ihuitl:ihui[tl]
 cozatli:coza[tli]
 cruz[spa-es]
-tecuanime[Ø]
+#tecuanime[Ø]
 tlatlacatecolo[tl]
 cuecueya[Ø]
 tonalli<n>+tlapalihui:tonallapalihui[Ø]
@@ -11457,7 +11543,7 @@ chiquimoli:chiquimo[li]
 yollotl<n>+tlapalihui:yollotlapalihui[Ø]
 yaotl<n>+tlahueliloc:yaotlahueliloc[Ø]
 ticitl:tici[tl]
-cualoni:cualo[ni] # "food"
+cualoni:cualoni[ni] # "food"
 patli:pa[tli] # "herb"
 tlanelhuatl:tlanelhua[tl] # "foundation"
 cuauhtli:cuauh[tli] # "eagle"
@@ -11465,7 +11551,7 @@ cencamatl:cencama[tl] # "mouthful"
 otztli:otz[tli] # "pregnant woman"
 quizqui:quiz[qui] # "end"
 cihuamontli:cihuamon[tli] # "daughter-in-law"
-yollotli:yollo[tli] # "heart"
+#yollotli:yollo[tli] # "heart"
 aixnamiquiliztli:aixnamiquiliz[tli] # "something irresistible"
 camotli:camo[tli] # "certain edible root"
 opitzactli:opitzac[tli] # "path"
@@ -11516,6 +11602,7 @@ tochpochtzin:tochpochtz[in] # "maiden"
 axin:ax[in] # "insect
 omentin:oment[in] # "pair"
 quimichin:quimich[in] # "mouse"
+quimichin:quiquimich[tin] # "mouse"
 michin:mich[in] # "fish"
 totolin:totol[in] # "turkey"
 patzahuac[Ø] # "ruined crop"
@@ -11523,6 +11610,89 @@ cemanahuac[Ø] # "world"
 nexehuac[Ø] # "a medicinal herb"
 tochtli:toch[tli] # "rabbit"
 quechcotonqui:quechcoton[qui] # "decapitated person"
+
+# Book 05
+nextitlan:nextitlan[tli]
+titlan:titlan[tli]
+tlecuillan:tlecuillan[tli]
+nentlan:nentlan[tli]
+tlamacehuayan:tlamacehuayan[tli]
+temamauhtiliztli:temamauhtiliz[tli]
+mahuizcuiyan:mahuizcuiyan[tli]
+huehuetlacatl:huehuetla[catl]
+quizayan:quizayan[tli]
+cuitlacaxiuhiyan:cuitlacaxiuhiyan[tli]
+
+mauhcatlacatl:mauhcatla[catl]
+huehuetlacatl:huehuetla[catl]
+oztomecatl:oztome[catl]
+
+tlapallo:tlapallo[poss]
+techiuhcauh:techiuhcauh[poss]
+teiccauhtli:teiccauh[tli]
+millacatl:milla[catl]
+miquizliztli:miquizliz[tli]
+
+chane:chan[e]
+nenonotzale:nenonotzal[e]
+
+atlauhtli:atlauh[tli]
+cuiloni:cuiloni[ni] # !FIXME! cuilon>pol
+cuilonpol:cuilonpol[Ø]
+huitzitl:huitzi[tl]
+tecuantlacualli:tecuantlacual[li]
+
+xolo:xolo[Ø] # paje
+
+miquiztemachiani:miquiztemachiani[ni]
+miquitlanini:miquitlanini[ni]
+tlamatini:tlamatini[ni]
+hueyiyecoani:hueyiyecoani[ni]
+tlapiloni:tlapiloni[ni]
+nehnemini:nehnemini[ni]
+tepoloani:tepoloani[ni]
+mach:mach[poss]
+yomotlan:yomotlan[poss]
+tepitzyollotl:tepitzyollo[tl]
+
+ezzo:ezzo[poss]
+
+quinametli:quiname[tli]
+tecocolica:tecocolica[poss]
+tiacauh:tiacauh[Ø]
+
+cacapanton:cacapanton[Ø]
+centlapachton:centlapachton[Ø]
+chachapaton:chachapaton[Ø]
+cihuapiltepiton:cihuapiltepiton[Ø]
+cintanaton:cintanaton[Ø]
+cuitlapachton:cuitlapachton[Ø]
+yoyoliton:yoyoliton[Ø]
+
+tlahtli:tlah[tli]
+
+tlacahuiyac:tlacahuiya[c]
+chicahuac:chicahua[c]
+tonalchicahuac:tonalchicahua[c]
+
+tzonquen:tzonquen[tli]
+tzonqueme[Ø]
+tzotzonqueme[Ø]
+tzotzoquenpile[Ø]
+tlacacemelle:tlacacemelle[Ø]
+
+ixtecuicuilpol:ixtecuicuilpol[Ø] 
+yollatlapalihui:yollatlapalihui[Ø] # yol+tla~tlapalihui
+ellapanqui:ellapanqui[Ø] # el+tlapanqui
+elchiquiuhtlapanqui:elchiquiuhtlapanqui[Ø]
+
+etc.:etc.
+
+teancatl:tean[catl]
+tenotzcatl:tenotz[catl]
+
+# Book 7
+tlecuahuitl:tlecua[huitl]
 
 LEXICON Propios 
 Quetzalcoatl:Quetzalcoa[tl]
@@ -11536,8 +11706,9 @@ Cristóbal:Cristóbal # ;
 Hernando:Hernando # ;
 Pedro:Pedro # ;
 Mexico[loc]
+Tlalxictentica:Tlalxictentica[loc]
 Moctezuma:Moctezuma
-Chimalpopoca[loc]
+Chimalpopoca
 Tlatelolco[loc]
 Texcoco[loc]
 Tlaxcallan[loc]
@@ -11581,6 +11752,34 @@ Cihuapipiltin
 Yacatecuhtli
 Yacatecuhtli:Yiacateuctli # var spelling
 
+Tecociztecatl
+Huitzlampa[loc]
+Ecatl
+Xiuhtzitzqui
+Xiuhtlatlac
+Xiuhtlamin
+Xiuhquen
+Xiuhcue
+Xiuhcozol
+Totec
+Tlaloc
+Tlacoyehua
+Tiacapan
+Texiuh
+Teicu
+Tecihuitl
+Quetzalxiuh
+Popoca
+Itztlacoliuhqui
+Itoalco[loc]
+Intlanel
+Huixachtlan[loc]
+Huixachtecatl
+Citlalpol
+Cepayahuitl
+Anahuatl
+
+
 LEXICON Adjetivos
 cualli:cualli
 hueyi:hueyi
@@ -11590,6 +11789,8 @@ coztic # "yellow"
 iztac # "white"
 tliltic # "black"
 xoxoctic # "green"
+
+yancuic # nuevo
 
 tlazotlanqui # "fair, fine"
 
@@ -11724,6 +11925,18 @@ poxahuac # "spongy"
 canahuac # "thin"
 nueva # "nueva"
 
+
+cuitlapiltetepontic
+eliztac
+nacazpapatlactic
+quechtepoltic
+tentetepontic
+tentipontic
+ahquimamatcahua # necio/tonto
+
+
+yehuatoc:yehuatoc # !FIXME!
+
 LEXICON Adverbios 
 quenin[itg] # "cómo"
 aocmo:aocmo # "ya no"
@@ -11755,6 +11968,8 @@ cana:cana #
 miec:miec
 nel # "truly"
 achto # "firstly"
+
+
 
 # from Campbell
 achiquin # "later"
@@ -11988,11 +12203,37 @@ nachca # "from there"
 achica # "frequently"
 ohtlica # "on the road"
 
+
+# From Book 05
+acanozo
+acazo
+ayoccan
+cemmayan
+ihuin
+izquican
+macuel
+nauhcampa
+ohtlipan
+ohuel
+omma
+oquenteltzin
+tlacuele
+yamo
+ayaxcan:ayaxcan
+
+acanozomo:acanozomo 
+
+maca:maca
+maca:mmaca
+
+
 ###############################################################################
 
 PATTERN VERB
-Augment < (Subject TenseVerb)[-pl]
-Augment < (Subject TenseVerb)[-sg]
+Augment < (Subject TenseVerb)[-pl,-imp]
+Augment < (Subject TenseVerb)[-sg,-imp]
+Augment < Subject[sg,imp] TenseVerb[-pl,imp]
+Augment < Subject[pl,imp] TenseVerb[-sg,imp]
 VerbImpers
 
 LEXICON Augment
@@ -12002,33 +12243,46 @@ LEXICON Directional
 <on>:o{N}>
 <hual>:hual>
 
+LEXICON IncorpAdv
+
+«cen<adv>»:«ce{N}»>
+«huel<adv>»:«huel»>
+
 LEXICON Subject
 <s_sg1>:ni>[sg]
+<s_sg1>:n{O}>[sg]
 <s_pl1>:ti>[pl]
+<s_pl1>:t{O}>[pl]
 <s_sg2>:ti>[sg]
+<s_sg2>:t{O}>[sg]
 <s_pl2>:an>[pl]
 #<s_sg3>:[sg]
 #<s_pl3>:[pl]
+<s_nn3>:tla>[sg]
 <s_sp3>:[sg]
 <s_sp3>:[pl]
-<s_sg2><imp>:xi[sg]
-<s_pl2><imp>:xi[pl]
+<s_sg2>:xi[sg,imp]>
+<s_pl2>:xi[pl,imp]>
+<s_sg2>:x{O}[sg,imp]>
+<s_pl2>:x{O}[pl,imp]>
 
 PATTERN ObjectPrefix
-ObjectSpec(1): :ObjectSpec(2)
-ObjectRefl(1): :ObjectRefl(2)
-ObjectNonSpec(1): :ObjectNonSpec(2)
+ObjectSpec(1): :ObjectSpec(2) IncorpAdv?
+ObjectRefl(1): :ObjectRefl(2) IncorpAdv?
+ObjectNonSpec(1): :ObjectNonSpec(2) IncorpAdv?
+IndirNe IncorpAdv?
 
 PATTERN IObjPrefix
-ObjectSpec(2) Directional?
-Directional? ObjectRefl(2)
-Directional? ObjectNonSpec(2)
-Directional? [<i_ref>:ne>]
+ObjectSpec(2) Directional? IncorpAdv?
+Directional? ObjectRefl(2) IncorpAdv?
+Directional? ObjectNonSpec(2) IncorpAdv?
+Directional? [<i_ref>:ne>] IncorpAdv?
 
 PATTERN TwoObjectPrefix
 IObjPrefix
-ObjectPrefix Directional? ObjectNonSpec(2)
-ObjectPrefix Directional? ObjectDouble
+ObjectPrefix Directional? ObjectNonSpec(2) IncorpAdv?
+ObjectPrefix Directional? ObjectDouble IncorpAdv?
+ObjectPrefix Directional? ObjectRefl(2) IncorpAdv?
 
 LEXICON ObjectSpec(2)
 <o_sg1> <i_sg1>:nech>
@@ -12039,11 +12293,19 @@ LEXICON ObjectSpec(2)
 <o_pl3> <i_pl3>:{q}ui{n}>
 
 LEXICON ObjectRefl(2)
+<o_ref> <i_ref>:m{o}>
+<o_ref> <i_ref>:t{o}>
+<o_ref> <i_ref>:n{o}>
 <o_ref> <i_ref>:mo>
+<o_ref> <i_ref>:to>
+<o_ref> <i_ref>:no>
 
 LEXICON ObjectNonSpec(2)
 <o_aa3> <i_aa3>:te>
 <o_nn3> <i_nn3>:tla>
+
+LEXICON IndirNe
+<i_ref>:ne>
 
 LEXICON ObjectDouble
 <o_pl3>:i{n}
@@ -12055,67 +12317,202 @@ LEXICON Tense
 <pres>:[pl,pres]
 <fut>:>z[sg,fut]
 <fut>:>z>que[pl,fut]
-<fut>+nequi<v><tv>:>z>nequi[sg,fut]
+<fut>+nequi<aux>:>z>nequi[sg,fut]
 <cond>:>z>quiya[sg,fut]
 <cond>:>z>quiyah[pl,fut]
 <past>:[sg,pret]
 <past>:>que[pl,pret]
 <past>:>queh[pl,pret]
+<plu>:>{C}a[sg,plu]
+<plu>:>{C}a[pl,plu]
+<plu>:>{C}ah[pl,plu]
+<imp>:>can[pl,imp]
+<imp>:[sg,imp]
+
+# Check these
+<prog>:>toc[sg]
+<prog>:>{T}oc[sg]
+<prog><fut>:>toz[sg]
+<prog><fut>:>{T}oz[sg]
+<prog><impf>:>toya[sg]
+<prog><impf>:>{T}oya[sg]
+<prog>:>toqueh[pl]
+<prog>:>{T}oqueh[pl]
+<prog><impf>:>toya[pl]
+<prog><impf>:>{T}oya[pl]
+<prog><impf>:>toyah[pl]
+<prog><impf>:>{T}oyah[pl]
+<prog>:>toque[pl]
+<prog>:>{T}oque[pl]
+<prog><fut>:>toz>que[pl]
+<prog><fut>:>{T}oz>que[pl]
 
 LEXICON Aux
 +nemi<aux>:>ti·nemi
++nemi<aux>:>{T}i·nemi
 +nemi<aux><past>:>ti·nen>ca
++nemi<aux><past>:>{T}i·nen>ca
+
++mani<aux>:>ti·mani
++mani<aux>:>{T}i·mani
++mani<aux><past>:>ti·man>ca
++mani<aux><past>:>{T}i·man>ca
+
++huetzi<aux>:>ti·huetzi
++huetzi<aux>:>{T}i·huetzi
++huitz<aux>:>ti·huitz
++huitz<aux>:>{T}i·huitz
++cah<aux>:>ti·ca[sg]
++cah<aux>:>{T}i·ca[sg]
++cah<aux>:>ti·ca>te[pl]
++cah<aux>:>{T}i·ca>te[pl]
++cah<aux><fut>:>ti·yez[sg]
++cah<aux><fut>:>{T}i·yez[sg]
++cah<aux><fut>:>ti·yez>que[pl]
++cah<aux><fut>:>{T}i·yez>que[pl]
++calaqui<aux>:>ti·calaqui
++calaqui<aux>:>{T}i·calaqui
 +quiza<aux>:>ti·quiza
++quiza<aux>:>{T}i·quiza
+
+LEXICON Dir
+
+<and><pres>:>tiuh[sg]
+<and><pres>:>{T}iuh[sg] # This is terrible // chachalcatiuh, huetzitiuh, chachapantiuh
+<and><pres>:>tihui[pl]
+<and><pres>:>{T}ihui[pl] 
+<and><past>:>to #onacxoyatlalito
+<and><past>:>{T}o
+<ven><fut>:>qui
+<ven><past>:>{C}o
+
+LEXICON Hua
+
+<impers><fut>:>hua>z[sg]
+<impers><fut>:>hua>z>que[pl]
+<impers><past>:>hua>c[sg] 
+<impers><past>:>hua>que[pl] 
+<impers><pres>:>hua[sg] # cochihua
+<impers><pres>:>hua[pl] # cochihua
+<impers><pres>:>huah[pl] # cochihua
 
 PATTERN TenseVerb
 ObjVerb[cl1] Tense[-pret]
 ObjVerb[cl1] Tense[pret,pl]
 ObjVerb[cl1] [<past>:>c[sg]]
+ObjVerb[cl1] Dir
+ObjVerb[cl1] Aux
 
 ObjVerb[cl2] Tense[-pret]
 ObjVerb[cl2] [:{del}] Tense[pret]
+ObjVerb[cl2] [:{del}] Dir
+ObjVerb[cl2] [:{del}] Aux
+ObjVerb[cl2] Dir
+ObjVerb[cl2] Aux
 
-ObjVerb[cl3] Tense[-pret,-fut]
-ObjVerb[cl3] [:{del}] Tense[|[pret,fut]]
+ObjVerb[cl3] Tense[-pret,-fut,-imp]
+ObjVerb[cl3] [:{del}] Tense[|[pret,fut,imp]]
+ObjVerb[cl3] Dir
+ObjVerb[cl3] Aux
 
 ObjVerb[cl4] Tense
+ObjVerb[cl4] Dir
+ObjVerb[cl4] Aux
+
+# -ni/-nca
+ObjVerb[cl5] Tense[-pret]
+#ObjVerb[cl5] Tense[pret,pl]
+ObjVerb[cl5] [:{del}] [<past>:>ca[sg]]
+ObjVerb[cl5] Dir
+ObjVerb[cl5] Aux
 
 VerbRootIV [<v><iv>:] Aux
 
+VerbRootIV [<v><iv>:] Dir
+
+VerbRootIV [<v><iv>:] Tense[imp] Dir
+
+VerbRootIV [<v><iv>:] Hua
+
+#ObjVerb Aux
+
+#ObjVerb Dir
+
 IrregVerbs
 
+IrregPass [<v><tv><pass>:] Tense
+IrregPass [<v><tv><pass>:] [<past>:>c[sg]]
+
+IObjPrefix IrregPass [<v><tv><pass>:] Tense
+IObjPrefix IrregPass [<v><tv><pass>:] [<past>:>c[sg]]
+IObjPrefix PassStem Tense
+
 LEXICON IrregVerbs
-cah<v><tv><pres>:cah[sg]
-cah<v><tv><pres>:ca>teh[pl]
-cah<v><tv><pret>:cat>ca[sg]
-cah<v><tv><pret>:cat>cah[pl]
-cah<v><tv><fut>:yez[sg]
-cah<v><tv><fut>:yez>queh[pl]
-cah<v><tv><impf>:yeya[sg]
-cah<v><tv><impf>:yeyah[pl]
+cah<v><iv><pres>:cah[sg]
+cah<v><iv><pres>:ca>teh[pl]
+cah<v><iv><pret>:cat>ca[sg]
+cah<v><iv><pret>:cat>cah[pl]
+cah<v><iv><fut>:yez[sg]
+cah<v><iv><fut>:yez>que[pl]
+cah<v><iv><fut>:yez>queh[pl]
+cah<v><iv><impf>:yeya[sg]
+cah<v><iv><impf>:yeyah[pl]
+<on>cah<v><iv><imp>:on>ye[imp,sg]
+cah<v><iv><fut>:yez[sg]
+cah<v><iv><fut>:icaz[sg]          # in izquican icaz, toteteuh, tonextlahual
+cah<v><iv><and><pres>:icatiuh[sg]  # in tachcauh icatiuh ohtlipan
 
 ya<v><iv><pres>:yauh[sg]
 ya<v><iv><pres>:huih[pl]
 ya<v><iv><pret>:yah[sg]
+ya<v><iv><pret>:ya[sg]
+ya<v><iv><pret>:ya>que[pl]
 ya<v><iv><pret>:yah>queh[pl]
 ya<v><iv><fut>:yaz[sg]
 ya<v><iv><fut>:yaz>queh[pl]
+<on>ya<v><iv><fut>:on>yaz>queh[pl]
+<on>ya<v><iv><fut>:on>yaz>que[pl]
 ya<v><iv><impf>:yaya[sg]
 ya<v><iv><impf>:yaya>h[pl]
 ya<v><iv><impf>:huiya[sg]
 ya<v><iv><impf>:huiya>h[pl]
+<on>ya<v><iv><impf>:on>huiya[sg]
+<on>ya<v><iv><impf>:on>huiya>h[pl]
 
 hualla<v><iv><pres>:huallauh[sg]
 hualla<v><iv><pres>:hualhuih[pl]
+hualla<v><iv><pret>:hualla[sg]
 hualla<v><iv><pret>:huallah[sg]
+hualla<v><iv><pret>:hualla>que[pl]
 hualla<v><iv><pret>:huallah>queh[pl]
 hualla<v><iv><fut>:huallaz[sg]
+hualla<v><iv><fut>:huallaz>que[pl]
 hualla<v><iv><fut>:huallaz>queh[pl]
 hualla<v><iv><impf>:hualhuiya[sg]
+hualla<v><iv><impf>:hualhuiya[pl]
 hualla<v><iv><impf>:hualhuiya>h[pl]
 
 huitz<v><iv><pres>:huitz[sg]
 huitz<v><iv><pres>:huizt>eh[pl]
+
+nequi<aux>:nequi
+
+#nonoc = yo estoy acostado; tu, tonoc, él/ella, onoc; nosotros, tonoque; vosotros, amonoque; ellos, onoque; onoya = (la gerundiua); onoca = (el pretérito perfecto), yo estaua, yo estuue, y hauia estado acostado; tu, tonoca; él/ella, onoca; nosotros, tonocah; vosotros, amonocah; ellos, onocah; onoua = (el impesonal) todos están acostados (Tetzcoco, 1595)
+onoc<v><iv><pres>:ono>c[sg]
+onoc<v><iv><pres>:ono>que[pl]
+onoc<v><iv><pres>:ono>queh[pl]
+onoc<v><iv><impf>:ono>ya[sg]
+onoc<v><iv><impf>:ono>ya>h[pl]
+onoc<v><iv><pret>:ono>ca[sg]
+onoc<v><iv><pret>:ono>ca>h[pl]
+
+# HUETZTOC to be lying down, stretched out / estar echado (M), acostado (Z) [(2)Zp.5,155]. T has the variant forms HUETZTICAH and HUETZTOTICAH.
+huetztoc<v><iv><pres>:huetzto>c[sg]
+huetztoc<v><iv><pres>:huetzto>que[pl]
+huetztoc<v><iv><pret>:huetzto>ca[sg]
+huetztoc<v><iv><pret>:huetzto>ca[pl]
+huetztoc<v><iv><pret>:huetzto>cah[pl]
+
 
 PATTERN AnyStem
 IVStem
@@ -12133,7 +12530,7 @@ PATTERN VerbImpers
 AnyStem[cl3] [<impers>:{del}>lo]
 
 PATTERN ObjVerb
-Directional? IVStem
+Directional? IncorpAdv? IVStem # TODO: Hack
 ObjectPrefix Directional? TVStem
 Directional ObjectPrefix TVStem # TODO: HACK
 IObjPrefix DVlexStem
@@ -12148,6 +12545,10 @@ LEXICON CausApplCl3
 <caus>:{del}tia[cl3]
 <appl>:{del}lia[cl3]
 <hon>:{del}tzinoa[cl3]
+
+PATTERN PassStem 
+VerbRootTV[cl3] [<v><tv>:] PassCl3
+VerbRootTV[-cl3] [<v><tv>:] Pass
 
 PATTERN IVStem
 VerbRootIV [<v><iv>:]
@@ -12761,6 +13162,7 @@ cuauhtoci[cl1]
 cuauhtzahtzayana[cl2]
 cuauhtzayana[cl2]
 cuauhxeloa[cl3]
+«cuauhtli<n>»xeloa:«cuauh»xeloa[cl3]
 cuauhxima[cl2]
 cuauhxoxotli[cl1]
 cuauhyacana[cl2]
@@ -12971,6 +13373,7 @@ huetzquiztequiti[cl2]
 huexcatlahtlacoa[cl3]
 huexiuhtlahuana[cl2]
 hueyiya[cl2]
+hueyiya:hueiya[cl2]
 huicini[cl2]
 huicintehua[cl2]
 huicintihuetzi[cl2]
@@ -13460,6 +13863,7 @@ nahualcalaqui[cl2]
 nahuallacaqui[cl2]
 nahuallachiya[cl2]
 nahualpolihui[cl2]
+«tlalli<n>»polihui:«tlal»polihui[cl2]
 nahualquiza[cl2]
 nahuatillalia[cl3]
 nahuatillaza[cl2]
@@ -13483,6 +13887,8 @@ natzoyohua[cl2]
 nauhxiuhtia[cl3]
 nechicahui[cl2]
 neci[cl2]
+nehneci[cl2]
+nehneci:neneci[cl2]
 necoctlahtoa[cl3]
 necuehua[cl2]
 necuizquichihua[cl2]
@@ -14093,7 +14499,10 @@ tlahtlanecuiloa[cl3]
 tlahtlani[cl2]
 tlahtlanonotza[cl2]
 tlahtlapaloa[cl3]
+tlahtlapitza[cl2]
+tlahtlapitzahua:tlatlapitza[cl2]
 tlahtlapitzahua[cl2]
+tlahtlapitzahua:tlatlapitzahua[cl2]
 tlahtlauhtia[cl3]
 tlahtlaxcoloa[cl3]
 tlahtlaxochtia[cl3]
@@ -14155,7 +14564,7 @@ tlahuizteci[cl1]
 tlahuiztlahtoa[cl3]
 tlahyohuia[cl3]
 tlaichana[cl2]
-tlaihcuiloa[cl3]
+tlahcuiloa[cl3]
 tlaihiyohuia[cl3]
 tlaihiyohuihtimani[cl2]
 tlaihua[cl1]
@@ -14727,13 +15136,14 @@ zozotlahu[cl2]
 huehuetzca[cl1]
 tzatzi[cl1]
 pipitzca[cl1]
+pipipitzca[cl1]
 chicha[cl1]
 moloni[cl2]
 zotlahua[cl2]
 itztiuh[cl1] # TODO: ???
 tlayohua[cl1]
 nelti[cl1] # transitivity unclear
-itto[cl1]
+#itto[cl1]
 
 caya[cl1] # TODO: not in dictionary, guessed
 
@@ -14741,6 +15151,7 @@ papaqui[cl2]
 cuecueyoca[cl1]
 acohuetzi[cl2]
 cecepoca[cl1]
+cuacecepoca[cl1]
 metztona[cl1]
 mani[cl2]
 aya[cl1]
@@ -14749,6 +15160,7 @@ hualyetia[cl3]
 huiloa[cl3]
 eco[cl1]
 ilpitica[cl1]
+cuacuailpitica[cl1]
 cahua[cl1]
 huetzca[cl1]
 tlathuic[cl4]
@@ -14792,6 +15204,65 @@ axixa[cl2] # "urinate"
 #/([aeiocltzxmny]|hu|tl|ch|qu)+(a|i)(<guess><cl2>:)/[cl2]
 #/([aeiocltzxmny]|hu|tl|ch|qu)+(a|i)(<guess><cl1>:)/[cl1]
 
+«cocoliztli<n>»cui:«cocoliz»cui[cl1]
+chachapani[cl2]
+pepeyoca[cl2] # "lumbrar el agua"
+quiquinaca[cl2] # "groan, buzz"
+chololoa[cl3]
+mihmiloa:mimiloa[cl3]
+«tachcauh<n>»chihua:«tachcauh»chihua[cl2] # tachcauhchiuhtiuh
+
+pilca:pilca[cl1] # PILCA preterit-as-present verb; pret: PIL-CAC to be hanging / estar colgado o ahorcado (M) See PILOĀ. 
+
+acahuatimani:acahuatimani[cl2]
+coxoni:coxoni[cl2]
+tochtia:tochtia[cl3]
+mazatia:mazatia[cl3]
+canahua[cl2]
+aquetza:aquetza[cl2]
+mamazohua:mamazohua[cl2]
+«nahualli<n>»tetemoa:«nahual»tetemoa[cl3]
+elcicihui:elcicihui[cl1]
+chicha:chicha[cl1]
+tlaxtlapaloa[cl3]
+ipotoca:ipotoca[cl1]
+aalaca:aalaca[cl1]
+xixitini:xihxitini[cl2]
+xixitini:xixitini[cl2]
+nonoquihui[cl1]
+atlitia[cl3] # natlitiaz
+chachacua:chachacua[cl2]
+manehnemi[cl2]
+«maitl<n>»nenemi:«ma»nenemi[cl2]
+tecuyoa[cl3]
+cia[cl3] 
+chachacuania[cl3]
+nenqui[cl2]
+machiotia:machiotia[cl3]
+mozticacalatza:mozticacalatza[cl1]
+
+«tlalli<n>»mictimoteca:«tlalli»mictimoteca[cl1]
+
+cuauhti:cuauhti[cl1] # get stiff
+cuacuauhti:cuacuauhti[cl1] 
+ihilpia[cl3]
+ihilpia:iilpia[cl3]
+ihilpia:ihilpiya[cl3]
+ihilpia:iilpiya[cl3]
+
+quechpilihui:quechpilihui[cl2]
+tolihui:tolihui[cl2]
+
+«nen<adv>»quiza:«nen»quiza[cl2]
+atlitia[cl3] 
+# xitlamatpolotiuh - xi-tlamat-polo(a)-tiuh 
+# to be quiet
+tlamatpoloa[cl3]
+yecahua[cl2]
+tona[cl1]
+
+ixtlecalehua[cl2]
+
 LEXICON VerbRootTV
 aachcui[cl1]
 aachti[cl1]
@@ -14805,6 +15276,7 @@ acaloa[cl3]
 «cuitlaxcolli<n>»zahua:«cuitlaxcol»zahua[cl2]
 «tentli<n>»huatza:«ten»huatza[cl2]
 «yollotl<n>»chichiya:«yollo»chichiya[cl2]
+«choquiztli<n>»tlapaloa:«choquiz»tlapaloa[cl3]
 acaltema[cl2]
 acana[cl2]
 acelana[cl2]
@@ -15133,6 +15605,7 @@ camiloa[cl3]
 campaxoa[cl3]
 campaxohtihuetzi[cl2]
 canahua[cl2]
+cacanahua[cl2]
 capania[cl3]
 capotzoa[cl3]
 caqui[cl2]
@@ -15377,6 +15850,7 @@ chitonia[cl3]
 chittoloa[cl3]
 chiuhtinemi[cl2]
 chiya[cl2]
+chiya:chiye[cl2]
 chiyahua[cl2]
 chiyamahuia[cl3]
 choca[cl1]
@@ -15390,6 +15864,7 @@ chololtia[cl3]
 chopinia[cl3]
 choponia[cl3]
 choquilia[cl3]
+chochoquilia[cl3]
 choquiltia[cl3]
 choquitia[cl3]
 choquizcuicatia[cl3]
@@ -15786,6 +16261,7 @@ cuicuitihuetzi[cl2]
 cuicuitlalpia[cl3]
 cuihcui[cl1]
 cuihcuiloa[cl3]
+cuihcuiloa:cuicuiloa[cl3]
 cuihcuitiquiza[cl2]
 cuihcuitlalpia[cl3]
 cuililtia[cl3]
@@ -15944,6 +16420,7 @@ huehcatlaza[cl2]
 huehcatzahtzilia[cl3]
 huehcatzahtzitia[cl3]
 huehhueloa[cl3]
+huehueloa:huehueloa[cl3]
 huehuehcapahuihtinemi[cl2]
 huehuehnextia[cl3]
 huehuehtilia[cl3]
@@ -16136,7 +16613,7 @@ ihcuanihpoloa[cl3]
 ihcuanihtimani[cl2]
 ihcuanilia[cl3]
 ihcuillotia[cl3]
-ihcuiloa[cl3]
+ihcuiloa:{i}hcuiloa[cl3]
 ihcuiya[cl2]
 ihhuiaquilia[cl3]
 ihhuitzehtzeloa[cl3]
@@ -16717,6 +17194,7 @@ matetlahtlatzcueponia[cl3]
 matetzotilia[cl3]
 matia[cl3]
 mati[cl2]
+mati:matti[cl2]
 matiloa[cl3]
 mati[cl2]
 matlachihua[cl2]
@@ -17390,6 +17868,7 @@ pehua[cl2]
 pehualtia[cl3]
 pehua[cl2]
 pehuia[cl3]
+«tlahtolli<n>»tlaquilia:«tlahtol»laquilia[cl3]
 pepehualtia[cl3]
 pepetlaquiltia[cl3]
 pepetlatza[cl2]
@@ -17419,7 +17898,7 @@ pichaquia[cl3]
 piciloa[cl3]
 piciyehuia[cl3]
 piciyepohua[cl2]
-pi[cl1]
+#pi[cl1]
 pihpiya[cl2]
 pilchihua[cl2]
 pilichahuia[cl3]
@@ -17595,6 +18074,7 @@ quetztehua[cl1]
 quetztinemi[cl2]
 quihquimilihcuania[cl3]
 quihquimiloa[cl3]
+quihquimiloa:quiquimiloa[cl3]
 quihquixtia[cl3]
 quihquizoa[cl3]
 quihuimoloa[cl3]
@@ -17705,6 +18185,8 @@ temmattinemi[cl2]
 temmecayotia[cl3]
 temmimiloa[cl3]
 temoa[cl3]
+tetemoa[cl3]
+tetemoa:tehtemoa[cl3]
 temohuia[cl3]
 temohuihtimani[cl2]
 temohuilia[cl3]
@@ -17913,7 +18395,6 @@ tetepehua[cl2]
 teteponoa[cl3]
 tetepotzoquixtia[cl3]
 teteppachoa[cl3]
-tetequi[cl2]
 tetequi:te~tequi[cl2]
 tetequi[cl2]
 tetequitia[cl3]
@@ -18067,7 +18548,6 @@ tlachpahuazhuia[cl3]
 tlachpanhuazhuia[cl3]
 tlachpania[cl3]
 tlacihuia[cl3]
-tlacmauhtia[cl3]
 tlacnalizcahua[cl2]
 tlacohcuepa[cl2]
 tlacohuia[cl3]
@@ -18078,6 +18558,9 @@ tlacoyonia[cl3]
 tlactia[cl3]
 tlacuahua[cl2]
 tlacualchihuilia[cl3]
+«tlacualli<n>»chihuilia:«tlacual»chihuilia[cl3]
+«tlahtolli<n>»chihuilia:«tlahtol»chihuilia[cl3]
+«tlahtolli<n>»chichihuilia:«tlahtol»chi~chihuilia[cl3]
 tlacualixtlahua[cl2]
 tlacualizcahualtia[cl3]
 tlacuauhnahuatia[cl3]
@@ -18546,6 +19029,7 @@ tocatlalia[cl3]
 toca[cl2]
 tocatzahualquimiloa[cl3]
 tocayotia[cl3]
+«tlacatl<n>»tocayotia:«tlaca»tocayotia[cl3]
 tochacahuia[cl3]
 tochacalhuia[cl3]
 tochmatlahuia[cl3]
@@ -19134,6 +19618,7 @@ yolmaxiltia[cl3]
 yolmelahua[cl2]
 yolmictia[cl3]
 yolpachihuitia[cl3]
+yolpachiuhcayotia[cl3] # !FIXME! -cayotia?
 yolpaquiltia[cl3]
 yolpatzmictia[cl3]
 yolpoloa[cl3]
@@ -19205,7 +19690,7 @@ zozotlahua[cl2]
 
 mottitia[cl3]
 tlaloa[cl3] # TODO: specifically transitive
-«mauhca<adv>»tlaloa:mauhcatlaloa[cl3]
+«mauhca<adv>»tlaloa:«mauhca»tlaloa[cl3]
 aci[cl1]
 ihtoznequi[cl1]
 calaquia[cl3]
@@ -19256,11 +19741,90 @@ izo[cl2] # "draw blood"
 #/([aeiocltzxmny]|hu|tl|ch|qu)+(a|i)(<guess><cl2>:)/[cl2]
 #/([aeiocltzxmny]|hu|tl|ch|qu)+(a|i)(<guess><cl1>:)/[cl1]
 
+mihmiloa:mimiloa[cl3] # momimilotiuh
+mihmiloa:mihmiloa[cl3]
+canahua[cl2]
+«tzontecontli<n>»acocui:«tzontecon»acocui[cl1]
+amoxhuia[cl3] #  consulter les livres sacrés. 
+tezcahuia:tezcahuia[cl3]
+itauhcayotia:itauhcayotia[cl3] 
+mahuizoa[cl3]
+yolizcalia[cl3]
+«tecuani<n>»cua:«tecuan»cua[cl2]
+ciauhcanequi:ciauhcanequi[cl1]
+teopoa:teopoa[cl3]
+tlacuicuilia[cl3] # robar
+tlanamohuelia[cl3]
+chicha:chicha[cl1]
+inecui:inecui[cl1]
+cayahua:cayahua[cl2]
+payahualochtia:payahualochtia[cl3]
+«acxoyatl<n>»tlalia:«acxoya»tlalia[cl3]
+hueyipoloa:hueyipoloa[cl3]
+tlalotia[cl3]
+«tlatlacolli<n>»namictia:«tlatlacol»namictia[cl3]
+tzontzona[cl1]
+tlapitza:tlapitza[cl1]
+tlatlapitza:tlatlapitza[cl1]
+ittilia:ittilia[cl3]
+ilpia[cl3]
+ilpia:ilpiya[cl3]
+elleltia:elleltia[cl3]
+elleltia:eleltia[cl3]
+«tlacatl<n>»yocoya:«tlaca»yocoya[cl3]
+huehueloni:huehueloni[cl2]
+«tepitz<adv>»ilacatzoa:«tepitz»ilacatzoa[cl3]
+cemmaca[cl1]
+ihihuintia:ihihuintia[cl3]
+mahuizmahmani:mahuizmamani[cl5]
+mahuizmahmani:mahuizmahmani[cl5]
+amana:aamana[cl2]
+axitia:axitia[cl3]
+axitia:aaxitia[cl3]
+potza:potza[cl1] #  v.réfl., se faire un monticule.
+
+tenehuilia:tenehuilia[cl3]
+«tlalli<n>»tlacuilhuia:«tlal»tlacuilhuia[cl3]
+«tlalli<n>»cahuia:«tlal»cahuia[cl3]
+
+tlacmauhtia[cl3]
+cacamapiya:cacamapiya[cl2]
+cacamapiya:cacamapia[cl2]
+camapiya:camapiya[cl2]
+camapiya:camapia[cl2]
+icahuia[cl3]
+ciauhcahua[cl2] # conciauhcahua, tire s.o. out
+cuaahayohuia[cl3] # calentar cabeza
+tetzcalihui[cl2]
+yollitlacoa[cl3]
+mania[cl3] # prepararse
+
+toloa[cl3]
+tlalochana[cl1] # FIXME: tlaloch+ana (?)
+neloa[cl3]
+
+LEXICON IrregPass
+
+tlaza:tlaxo[cl1]
+huica:huico[cl1]
+mati:macho[cl1]
+«tlazolli<n>»tlaza:«tlazol»>tlaxo[cl1]
+«tetzahuitl<n>»mati:«tetza»macho[cl1]
+temmacho:temmacho[cl1]
+cuitihuetzi:cuitihuecho[cl1]
+huetzi:huecho[cl1]
+itta:itto[cl1]
+caqui:caco[cl1]
+«tetzahuitl<n>»itta:«tetzauh»itto[cl1]
+
 LEXICON VerbRootDVlex
 tlamachtia[cl3]
 «cal<n>»maca:«cal»maca[cl2]
+«tlacualli<n>»maca:«tlacua»maca[cl2]
+«quechtli<n>»pilia:«quech»pilia[cl3]
 tlatoltia[cl3]
 tlathuiltia[cl3]
+huihuitoni:huihuitoni[cl2]
 
 #/([aeiocltzxmny]|hu|tl|ch|qu)+(oa|ia)(<guess><cl3>:)/[cl3]
 #/([aeiocltzxmny]|hu|tl|ch|qu)+(a|i)(<guess><cl2>:)/[cl2]
@@ -19269,6 +19833,14 @@ tlathuiltia[cl3]
 LEXICON VerbRootDV
 «yollotl<n>»chichilia:«yollo»chichilia[cl3]
 «tzontecontli<n>»acocuilia:«tzontecon»acocuilia[cl3]
+«tlahtolli<n>»chiyelia:«tlahtol»chiyelia[cl3]
+tlatlauhtilia[cl3]
+pialia[cl3]
+pialia:piyelia[cl3]
+namaquilia[cl3]
+tetzahuia:tetzahuia[cl3]
+chieltia:chieltia[cl3]
+chieltia:chiyeltia[cl3]
 aaquilia[cl3]
 actia[cl3]
 ahacolehuilia[cl3]
@@ -19366,6 +19938,7 @@ chipelihuia[cl3]
 chitecolhuia[cl3]
 chiuhtlani[cl2]
 chiyalia[cl3]
+chiyalia:chiyelia[cl3]
 chiyaltia[cl3]
 chopinilia[cl3]
 choquiztlahtlauhtilia[cl3]
@@ -19561,6 +20134,7 @@ iyohcatia[cl3]
 izcaltilia[cl3]
 iztlacalhuia[cl3]
 maca[cl1]
+«tlacualli<n>»maca:«tlacua»maca[cl1]
 macahualtia[cl3]
 macahuilia[cl3]
 maca[cl2]
@@ -20009,22 +20583,290 @@ cihuatlamachtia[cl3]
 cahuia[cl3]
 axixa[cl2]
 
+
 #/([aeiocltzxmny]|hu|tl|ch|qu)+(oa|ia)(<guess><cl3>:)/[cl3]
 #/([aeiocltzxmny]|hu|tl|ch|qu)+(a|i)(<guess><cl2>:)/[cl2]
 #/([aeiocltzxmny]|hu|tl|ch|qu)+(a|i)(<guess><cl1>:)/[cl1]
 
 ###############################################################################
+# Do this with spellrelax
+
+cahcalactinemi:cacalactinemi[cl2]
+cahcalaqui:cacalaqui[cl2]
+cahcamanaloa:cacamanaloa[cl3]
+cehcehuia:cecehuia[cl3]
+cihcicuilihui:cicicuilihui[cl2]
+cihcihuatlahtoa:cicihuatlahtoa[cl3]
+cohcontlatia:cocontlatia[cl3]
+cohcotzoa:cocotzoa[cl3]
+mahmacehua:mamacehua[cl2]
+mahmahui:mamahui[cl2]
+mahmati:mamati[cl2]
+mahmatlapaltia:mamatlapaltia[cl3]
+mahmauhcanemi:mamauhcanemi[cl2]
+mahmazohua:mamazohua[cl2]
+mahpiloa:mapiloa[cl3]
+mihmatcanemi:mimatcanemi[cl2]
+mihmixiuhcanehnemi:mimixiuhcanehnemi[cl2]
+nahnacaztlachiya:nanacaztlachiya[cl2]
+nehnehnemi:nenehnemi[cl2]
+nehnemi:nenemi[cl2]
+nehnentinemi:nenentinemi[cl2]
+nohpalaquia:nopalaquia[cl3]
+nohpallohui:nopallohui[cl1]
+nohpaltzompa:nopaltzompa[cl1]
+pahnamaci:panamaci[cl1]
+pahpactinehnemi:papactinehnemi[cl2]
+pahpalani:papalani[cl2]
+pahpalaniya:papalaniya[cl2]
+pahpaqui:papaqui[cl2]
+pahpati:papati[cl2]
+pahpatoa:papatoa[cl3]
+pahpatztiyi:papatztiyi[cl1]
+pehpechyamania:pepechyamania[cl3]
+pohpolihui:popolihui[cl2]
+pohpoloni:popoloni[cl2]
+pohpoxiuhtehua:popoxiuhtehua[cl2]
+pohpozahua:popozahua[cl2]
+tehteci:teteci[cl1]
+tehtemi:tetemi[cl2]
+tehtencuici:tetencuici[cl1]
+tehtentinemi:tetentinemi[cl2]
+tehtentlamati:tetentlamati[cl2]
+tehtequilihui:tetequilihui[cl2]
+tihticuini:titicuini[cl2]
+tohmiyoltia:tomiyoltia[cl3]
+tohtoci:totoci[cl1]
+tohtolcatinemi:totolcatinemi[cl2]
+tohtolci:totolci[cl1]
+tohtolini:totolini[cl1]
+tohtomahui:totomahui[cl1]
+cahcahua:cacahua[cl2]
+cahcalania:cacalania[cl2]
+cahcalaquia:cacalaquia[cl3]
+cahcali:cacali[cl2]
+cahcalxapotla:cacalxapotla[cl1]
+cahcamanalhuia:cacamanalhuia[cl3]
+cahcatza:cacatza[cl1]
+cahcatzilpia:cacatzilpia[cl3]
+cehcelia:cecelia[cl3]
+#cehceltia:ceceltia[cl3]
+cehcemmati:cecemmati[cl2]
+cehcepanoa:cecepanoa[cl3]
+cohcoaihcuiloa:cocoaihcuiloa[cl3]
+cohcohua:cocohua[cl2]
+#cohcolehua:cocolehua[cl2]
+cohcomonia:cocomonia[cl3]
+cohconahuia:coconahuia[cl3]
+cohconaloa:coconaloa[cl3]
+cohcopina:cocopina[cl2]
+cohcotona:cocotona[cl2]
+cohcoyonia:cocoyonia[cl3]
+cohcozcatia:cocozcatia[cl3]
+cohcozolteca:cocozolteca[cl1]
+#mahcehua:macehua[cl2]
+mahcehualtia:macehualtia[cl3]
+mahcui:macui[cl1]
+mahmachotla:mamachotla[cl1]
+mahmahcehua:mamahcehua[cl2]
+mahmahuizmati:mamahuizmati[cl2]
+mahmalacachoa:mamalacachoa[cl3]
+#mahmana:mamana[cl2]
+mahmanitia:mamanitia[cl3]
+mahmapachoa:mamapachoa[cl3]
+mahmapiqui:mamapiqui[cl2]
+mahmateloa:mamateloa[cl3]
+mahmatia:mamatia[cl3]
+mahmati:mamati[cl2]
+mahmatoca:mamatoca[cl1]
+mahmatzoa:mamatzoa[cl3]
+mahmauhtia:mamauhtia[cl3]
+mahmayahuia:mamayahuia[cl3]
+mahmayahui:mamayahui[cl2]
+mahmazohualtia:mamazohualtia[cl3]
+mahpilcotona:mapilcotona[cl2]
+mahpilhuia:mapilhuia[cl3]
+mahpilhuitequi:mapilhuitequi[cl2]
+mahpiltepilhuia:mapiltepilhuia[cl3]
+mahpiltepilhuilia:mapiltepilhuilia[cl3]
+mahtemoa:matemoa[cl3]
+mehmecapallotia:memecapallotia[cl3]
+mehmecayotia:memecayotia[cl3]
+mihmiloa:mimiloa[cl3]
+nahnacazana:nanacazana[cl2]
+nahnacazaquia:nanacazaquia[cl3]
+nahnahua:nanahua[cl1]
+nahnahuatia:nanahuatia[cl3]
+nahnamaca:nanamaca[cl1]
+nahnamictia:nanamictia[cl3]
+nahnamiqui:nanamiqui[cl2]
+nehcaliltia:necaliltia[cl3]
+nehcaliltilia:necaliltilia[cl3]
+nehmatilizcui:nematilizcui[cl1]
+nehmatilizmati:nematilizmati[cl2]
+nehmatiliztoca:nematiliztoca[cl1]
+nehnecuillalia:nenecuillalia[cl3]
+nehnehuihuilia:nenehuihuilia[cl3]
+nehnehuilia:nenehuilia[cl3]
+nehneloa:neneloa[cl3]
+nehnemi:nenemi[cl2]
+nehnemilia:nenemilia[cl3]
+nehnemiltia:nenemiltia[cl3]
+nehnemi:nenemi[cl2]
+nehnemitia:nenemitia[cl3]
+nehnencoa:nenencoa[cl3]
+nehnequi:nenequi[cl2]
+nehneuhcahuia:neneuhcahuia[cl3]
+nehtoltia:netoltia[cl3]
+nohmahhuia:nomahhuia[cl3]
+nohmatcahuia:nomatcahuia[cl3]
+pahhuia:pahuia[cl3]
+pahmaca:pamaca[cl1]
+pahmictia:pamictia[cl3]
+#pahpaca:papaca[cl2]
+pahpachoa:papachoa[cl3]
+pahpahzo:papahzo[cl1]
+pahpahzoloa:papahzoloa[cl3]
+pahpaloa:papaloa[cl3]
+pahpaqui:papaqui[cl2]
+pahpaquiliztlalhuia:papaquiliztlalhuia[cl3]
+pahpaquiltia:papaquiltia[cl3]
+pahpaqui:papaqui[cl2]
+pahpatla:papatla[cl1]
+pahpatzahua:papatzahua[cl2]
+pahpatzoa:papatzoa[cl3]
+pahpatztilia:papatztilia[cl3]
+pahpayana:papayana[cl1]
+pahtequilia:patequilia[cl3]
+pahtia:patia[cl3]
+pahxotla:paxotla[cl1]
+pahzollalia:pazollalia[cl3]
+pahzoloa:pazoloa[cl3]
+pehpechia:pepechia[cl3]
+pehpechoa:pepechoa[cl3]
+pehpechtia:pepechtia[cl3]
+pehpehpetla:pepehpetla[cl1]
+pehpena:pepena[cl2]
+pehpetla:pepetla[cl1]
+pehpetlahua:pepetlahua[cl2]
+pehpetzcoa:pepetzcoa[cl3]
+pehpetzoa:pepetzoa[cl3]
+pihpiya:pipiya[cl2]
+pohpohua:popohua[cl2]
+pohpolactia:popolactia[cl3]
+pohpoloa:popoloa[cl3]
+pohpouhtinemi:popouhtinemi[cl2]
+pohpouhtitlaza:popouhtitlaza[cl2]
+pohpoxoa:popoxoa[cl3]
+pohpoztequi:popoztequi[cl2]
+pohtia:potia[cl3]
+tahmati:tamati[cl2]
+tahtalanoa:tatalanoa[cl3]
+tehcoxhuia:tecoxhuia[cl3]
+tehcuiya:tecuiya[cl2]
+tehteca:teteca[cl1]
+tehtecpana:tetecpana[cl2]
+tehtecpiloa:tetecpiloa[cl3]
+tehtecuinoa:tetecuinoa[cl3]
+tehtema:tetema[cl2]
+#tehtequi:tetequi[cl2]
+tehtequimaca:tetequimaca[cl1]
+tehtequi:tetequi[cl2]
+tehtoa:tetoa[cl3]
+tihticuinaltia:titicuinaltia[cl3]
+tihtilquetza:titilquetza[cl2]
+tohmiyolhuia:tomiyolhuia[cl3]
+tohmiyopi:tomiyopi[cl2]
+tohmiyotepehua:tomiyotepehua[cl2]
+tohmiyotlaza:tomiyotlaza[cl2]
+tohpochoa:topochoa[cl3]
+#tohtoca:totoca[cl1]
+#tohtocatinemi:totocatinemi[cl2]
+tohtocayotia:totocayotia[cl3]
+tohtohuia:totohuia[cl3]
+tohtoloa:totoloa[cl3]
+tohtoma:totoma[cl2]
+#xehxeloa:xexeloa[cl3]
+xihxicuinoa:xixicuinoa[cl3]
+xihxili:xixili[cl2]
+xihxiltinemi:xixiltinemi[cl1]
+xihxima:xixima[cl2]
+xihxitinia:xixitinia[cl3]
+xohxochiyotia:xoxochiyotia[cl3]
+xohxopehua:xoxopehua[cl2]
+xohxotla:xoxotla[cl1]
+zahzaloa:zazaloa[cl3]
+zohzo:zozo[cl1]
+zohzohua:zozohua[cl1]
+zohzohua:zozohua[cl2]
+zohzotimani:zozotimani[cl2]
+cahcahuilia:cacahuilia[cl3]
+cahcayachilia:cacayachilia[cl3]
+cahcayaquilia:cacayaquilia[cl3]
+cohcohuia:cocohuia[cl3]
+mahcehualtia:macehualtia[cl3]
+mahcehuia:macehuia[cl3]
+mahmaca:mamaca[cl1]
+mahpilhuia:mapilhuia[cl3]
+mahpilhuilia:mapilhuilia[cl3]
+nahnamiquilia:nanamiquilia[cl3]
+nehnectia:nenectia[cl3]
+nehnehuililia:nenehuililia[cl3]
+#nehnequiltia:nenequiltia[cl3]
+nehtoltia:netoltia[cl3]
+pahhuilia:pahuilia[cl3]
+pahpachihuia:papachihuia[cl3]
+pahpaquilia:papaquilia[cl3]
+pahpaquiltila:papaquiltila[cl2]
+pahtilia:patilia[cl3]
+pehpechia:pepechia[cl3]
+pehpechilhuia:pepechilhuia[cl3]
+pehpechtia:pepechtia[cl3]
+pehpenia:pepenia[cl3]
+pehpenilia:pepenilia[cl3]
+pohpolhuia:popolhuia[cl3]
+pohpolhuilia:popolhuilia[cl3]
+pohpololtia:popololtia[cl3]
+pohpoxalhuia:popoxalhuia[cl3]
+pohtia:potia[cl3]
+tahtia:tatia[cl3]
+tehtecpanilia:tetecpanilia[cl3]
+tehtequihmaca:tetequihmaca[cl1]
+tehtequilia:tetequilia[cl3]
+tihtixia:titixia[cl3]
+tohtomilia:totomilia[cl3]
+zohzohuilia:zozohuilia[cl3]
+yahyacatzacuilia:yayacatzacuilia[cl3]
+
+# Book 05
+
+cuitlalpiya[cl3]
+
+
+
+###############################################################################
 
 LEXICON Irregulares 
 <s_sg3>catca<v><iv>:catca
+<s_pl1><on>cah<v><iv><fut>:t>on>yez>que # put this in the right place
+<s_pl1><on>cah<v><iv><fut>:t>on>yez>queh # put this in the right place
+
 tiyacatl<n><pl>:tiyacahuan
+<px3pl>teancatl<n>:inteancauh # why aren't these working
+<px3pl>tenotzcatl<n>:intenotzcauh # why aren't these working
+<px1sg>icniuhtli<n><voc>:no>cn>e 
+
+<s_sg1>atlitia<v><iv><fut>:natlitiaz # why isn't the -a deleted?
+
+
 
 /([a-zA-Z])(<sym>:)/
-PP<sym>:PP
-etc<sym>:etc # TODO: ???
+PP<x>:PP
+Plʼ<x>:Plʼ
+#etc<sym>:etc # TODO: ???
 
 de<pr>:de
-nocne<ij>:nocne
+#nocne<ij>:nocne # no>icniuh>e
 tleinmach<ij>:tleinmach
 macuele<part>:macuele
 ahuel<part><neg>:ahuel

@@ -119,7 +119,7 @@ class Convertor(object):
 		return msd, analysis
 
 
-	def _convert(self, a):
+	def _convert(self, a, s):
 		"""
 		Convert an analysis to UD using the conversion rules, rules
 		are applied in priority order.
@@ -138,6 +138,7 @@ class Convertor(object):
 		"""
 		analysis = {'lemma': '', 'pos': '', 'feats': set(), 'empty':[]}
 		incorporated = re.findall('«[^»]+»', a)
+		incorporated_surface = re.findall('«[^»]+»', s)
 		a = re.sub('«[^»]+»', '', a)
 		tags = [i for i in self.input_patterns.findall(a) if not i == '']
 		msd = set(tags)
@@ -149,17 +150,29 @@ class Convertor(object):
 		analysis['feats'] = {i.split('=')[0]: i.split('=')[1]
 					for i in analysis['feats'] if not i == ''}
 
-		for incorp in incorporated:
-			empty = {'lemma': '', 'pos': '', 'feats': set()}
-			tags = [i for i in self.input_patterns.findall(incorp) if not i == '']
-			msd = set(tags)
-			empty['lemma'] = re.sub('<[^>]+>', '', incorp[1:-1])
-			msd, empty = self._apply_rules(msd, empty)
-			analysis['empty'].append(empty)	
+		if len(incorporated) != len(incorporated_surface):
+			print('CONVERTOR: WARNING:', incorporated, incorporated_surface, file=sys.stderr)
+			for incorp in incorporated:
+				empty = {'surface': '_', 'lemma': '', 'pos': '', 'feats': set()}
+				tags = [i for i in self.input_patterns.findall(incorp) if not i == '']
+				msd = set(tags)
+				
+				empty['lemma'] = re.sub('<[^>]+>', '', incorp[1:-1])
+				msd, empty = self._apply_rules(msd, empty)
+				analysis['empty'].append(empty)	
+		else:
+			for incorp, incorp_surf in zip(incorporated, incorporated_surface):
+				empty = {'surface':re.sub('[»«]', '', incorp_surf),'lemma': '', 'pos': '', 'feats': set()}
+				tags = [i for i in self.input_patterns.findall(incorp) if not i == '']
+				msd = set(tags)
+				empty['lemma'] = re.sub('<[^>]+>', '', incorp[1:-1])
+				msd, empty = self._apply_rules(msd, empty)
+				analysis['empty'].append(empty)	
+
 
 		return analysis
 
-	def convert(self, analysis_):
+	def convert(self, analysis_, surface_=''):
 		"""
 		The main function for conversion, takes a full analysis, including possible
 		subwords, e.g. ya<adv>+<s_sg1>quiza<v><iv><pret> and returns a list of
@@ -178,6 +191,17 @@ class Convertor(object):
 
 		analysis = []
 		subwords = analysis_.split('+')
-		for word in subwords:
-			analysis.append(self._convert(word))
+		if surface_ != '':
+		#	print('CONVERT:', analysis_, '|', surface_, file=sys.stderr)
+			if surface_.count('·') == len(subwords):
+				subsurface = surface_.split('·')
+				for word, surface in zip(subwords, subsurface):
+					analysis.append(self._convert(word, surface))
+			else:
+				for word in subwords:
+					analysis.append(self._convert(word, surface_))
+		else:
+			for word in subwords:
+				analysis.append(self._convert(word, surface_))
+
 		return analysis

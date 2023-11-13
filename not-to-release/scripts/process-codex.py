@@ -8,7 +8,7 @@ def tokenise(s):
 	o = s
 	o = re.sub('([,:.;?!()]+)', ' \g<1> ', o)
 	o = o.replace(" ). ", " ) . ")
-	for etc in ['etc', '&c', 'Etc', 'q. n', 'xpo', '14', 'p', 'N']:
+	for etc in ['etc', '&c', 'Etc', 'q. n', 'xpo', '14', 'p', 'N', 'q.n']:
 		o = o.replace(etc + ' .', etc + '.')
 		o = o.replace('. ' + etc, etc)
 	o = re.sub('  *', ' ', o)
@@ -94,6 +94,7 @@ def retokenise(tree, sentence, model_bundle=None, manual=False):
 		buf = {'repl': '', 'span': []}
 		idx = 0
 		while idx < len(sentence):
+			#print('SENT_IDX:', sentence[idx], file=sys.stderr)
 			if sentence[idx][0].replace('¶','').strip()[-1] == '@':
 				temp = sentence[idx][0]
 				temp = temp.replace('@', '').replace('|', '·')
@@ -166,6 +167,9 @@ def load_normalisation_table(fn, table):
 			errs.append((lineno, line))
 			continue
 			#raise
+
+		if right == '_':
+			continue
 			
 		level = int(level)
 		rank = int(rank)
@@ -219,7 +223,8 @@ def load_reference_table(fn):
 		if line[0] == '#':
 			continue
 		sent_id, refs = re.sub('\t\t*', '\t', line).strip().split('\t')	
-		table[sent_id] = refs
+		if refs != '_':
+			table[sent_id] = refs
 
 	return table
 		
@@ -270,23 +275,36 @@ if '@' in book_text:
 	# In iehoantin,|y, moteneoa tlalo
 	book_text = re.sub(',\|', ', ', book_text) 
 	book_text = re.sub('\.\|', '. ', book_text) 
+	if re.findall('\| *\n', book_text):
+		print('WARNING: Pipe ends a line.', file=sys.stderr)
 	manual_tokenisation = True
 
 lines = re.sub('  *', ' ', book_text).split('\n')
 
-replacements = ['N.', 'q.', 'n.', 'xpo.', 'p.']
-#for etc in ['etc', '&c', 'Etc', 'q. n', 'xpo', '14', 'p', 'N', 'tetlaquechililli', 'onentlamattinenca']:
+replacements = ['N.', 'q.', 'n.', 'xpo.', 'p.', 'q.n.']
 
 for i in range(0, 20):
 	replacements.append(str(i)+'.')
 
 replacement_lookup = {'['+hashlib.md5(i.encode('utf-8')).hexdigest()+']': i for i in replacements}
 
+current_side = ''
+
 for line in lines:
-	if re.findall(' [Ff]ol?. *[0-9]+', line):
+	if re.findall(' *[Ff]ol?. *[0-9]+', line):
+		#print('FOLIO:', line, file=sys.stderr)
 		current_folio = re.sub('[^0-9]+', '', line.replace('fo.','').strip())
+		current_side = ''
 		current_paragraph = 0
 		current_line = 0
+		continue
+	if re.findall('^#[rv]', line):
+		if 'r' in line:
+			current_side = 'r'
+		elif 'v' in line:
+			current_side = 'v'
+		current_line += 1
+		current_paragraph += 1
 		continue
 
 	# For end of sentences that aren't
@@ -310,7 +328,7 @@ for line in lines:
 
 	for token in tokenise(line):
 		token = token.strip('^') # for inserted tokens
-		tokens.append((token, current_folio, current_paragraph, current_line))
+		tokens.append((token, current_folio + current_side, current_paragraph, current_line))
 
 	current_line += 1
 

@@ -9,6 +9,13 @@ Alphabet
  %{i%}:i %{u%}:u
  %{u%}:0
  %{N%}:n %{N%}:m
+ %{o%}:o %{o%}:0
+ %{i%}:0
+ %{T%}:t
+ %{C%}:c
+ %{é%}:e
+ %{O%}:o %{O%}:i %{O%}:0
+! h:0
 
  %~:%~
  %·:%·
@@ -21,8 +28,7 @@ Alphabet
 
 Sets
 
-Vow   = A E I O 
-        a e i o ;
+Vow   = a e i o ;
 
 Cns   = b c d f g h j k l m n p q r s t w x y z u ;
 
@@ -31,14 +37,58 @@ Rules
 
 "Reflexive mo"
 o:0 <=> m _ %>: %{i%}: ;
+        m _ %>: e Cns ; 
+        m _ %>: i Cns ; 
+
+!"Reduplication glottal"
+!h:h <=> _ ;
+!    except 
+!        .#. Cx: Vx: _ Cx: Vx: ;
+!        where Cx in Cns 
+!		Vx in Vow ;
+!
 
 "hu/uh I"
-%{u%}:0 <=> %{u%}: h _ %>:? [Cns | .#.] ;
+%{u%}:0 <=> %{u%}: h _ %>: [Cns | .#.] ;
 
 !@ c:c a:a {u}:u h:h {u}:0 q:q u:u e:e
 
 "hu/uh II"
-%{u%}:0 <=> _ h %{u%}: %>:? Vow ;
+%{u%}:0 <=> _ h %{u%}: %>: Vow ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+"hui/hua -> uh (I)"
+h:u <=>    _ u: [ a: | i: ] %>: [ %{T%}: | %{C%}: ] ;
+
+"hui/hua -> uh (II)"
+u:h <=> h: _ [ a: | i: ] %>: [ %{T%}: |  %{C%}: ] ;
+
+!@ o {N}:m > p o l i h:u u:h i:0 > {T}:t i u h
+
+!@ o {N}:n > m {o}:o > c h i h:u u:h a:0 > {C}:c a
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+"uh -> hu (I)"
+u:h <=> _ h: %>: %{é%}: ;        
+
+"uh -> hu (II)"
+h:u <=> u: _ %>: %{é%}: ;
+
+!@ t i a c a u:h h:u > {é}:e
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+"uh + huan (I)"
+u:0 <=> _ h: %>: h u a n ;
+
+!@ i>teiccauh>huan
+
+"uh + huan (II)"
+h:0 <=> u: _ %>: h u a n ;
+
+!@ i>teiccauh>huan
 
 !@ c:c a:a {u}:0 h:h {u}:u a:a
 
@@ -49,16 +99,21 @@ u:0 <=> %{q%}:c _  ;
 i:0 <=> %{q%}:c u:0 _ %>: ;
                     _ %>: %{i%}: ; 
                     _ %>: %{a%}: ;
+                    _ %>: %{T%}: ;
 
 !@ {q}:q u:u i:0 >:0 {i}:i h:h t:t o:o a:a >:0 y:y a:a
 
 "c/qu I"
 u:0 <=> _ .#.  ;
         _ %>: q u e ;
+        q: _ i: %>: %{T%}: ;
 
 "c/qu I"
 q:c <=> _ u:0 .#.  ;
         _ u:0 %>: q u e ;
+        _ u:0 :0 %>: %{T%}: ;
+
+!@ o {N}:m > m i q:c u:0 i:0 > {T}:t o c
 
 "i ~ e"
 i:0 => %{q%}: u _ %>: e ; 
@@ -67,3 +122,84 @@ i:0 => %{q%}: u _ %>: e ;
 		
 
 !@ {q}:q u:u i:0 >:> e:e l:l l:l a:a c:c u:u a:a h:h u:u a:a
+
+!"removal of -a before ligature"
+!Vx:0 <=> o _ %>: t i ·: ; 
+!	except
+!		_ %>: %{C%}: ;
+!	where Vx in ( a ) ;
+
+!@ {q}:q u > t e t e m o a:0 > t i · n e m i
+
+"removal of vow before -tiuh"
+Vx:0 <=> [ Cns  - u | i | o | :u :h ] _ %>:  [ %{T%}: | %{C%}: ] ; 
+	where Vx in ( a i ) ;
+
+
+!@ c h a c h a p a n i:0 > {T}:t i u h
+
+!@ n i > c > t l a t i a:0 > {T}:t i u h
+
+!@ m o > m i m i l o a:0 > {T}:t i u h 
+
+!@ t i > m o > m a t i:0 > {T}:t o q u e
+
+!@ o > t e c h > t o q u i l i a:0 > {C}:c o
+
+!@ t i > {q}:q u i {n}:n > « t z o n t e c o n » a c o c u i > {C}:c o
+
+
+
+"m>n before {T}"
+m:n <=> _ i:0 %>: %{T%}: ; 
+
+
+!@ t e h t e m:n i:0 > {T}:t i u h
+
+
+"drop -i before vocative"
+Vx:0 <=> _ %>: %{é%}:  ;
+	where Vx in ( o i ) ;
+
+!@ t e l p o c h t l i:0 > {é}:e
+
+!@ x o l o:0 > {é}:e
+
+"Vowel harmony in 1/2 with directional -on-"
+%{O%}:o <=> _ %>: %{q%}: u: i: %>: o %{N%}: ;
+
+!@ n {O}:o > {q}:c u:0 i:0 > o {N}:m > m a h u i z o a
+
+"Vowel drop in 1/2 with directional -on-"
+%{O%}:0 <=> _ %>: o %{N%}: ;
+ 
+!@ t {O}:0 > o {N}:n > t {o}:o > c h o c h o q u i l i a {del}:0 > z > q u e
+
+
+"drop h from hual after -c-"
+h:0 <=> %{q%}:c u: i: %>: _ u a l %> ;
+
+!@ t i > {q}:c u:0 i:0 > h:0 u a l > t:0 l a l i a
+
+
+"drop t between l and l"
+t:0 <=> l »: %>:    _ l ;  
+        l    %>:    _ l ;
+        l »:        _ l ;
+        l »: %>: %« _ l ;
+
+!@ o > « h u e l » > « t:0 l a l l i » m i c t i m o t e c a
+
+!@ t i > {q}:c u:0 i:0 > h:0 u a l > t:0 l a l i a
+
+!@ t i > {q}:c u:0 i:0 > h:0 u a l > t:0 l a l o t i a {del}:0 > q u e
+
+!@ « t l a z o l » > t:0 l a x o > z
+
+!@ {q}:q u i > « t l a l » t:0 l a c u i l h u i a 
+
+"Remove -i from imperative before -on"
+i:0 <=> x _ %>: o n ;
+!@ x i:0 > o n > y e
+
+

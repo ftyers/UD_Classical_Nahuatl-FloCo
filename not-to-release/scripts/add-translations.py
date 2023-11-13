@@ -1,20 +1,25 @@
-import sys, re
+import sys, re, glob
 
-def read_translations(fn):
-	translations = {}
+total = 0
+translated = {}
+
+def read_translations(fn, translations):
+	global translated
 	for line in open(fn):
 		if line.strip() == '' or line[0] == '#':
 			continue
 		sent_id, lang, translation = line.strip().split('\t')
 		if sent_id not in translations:
-			translations[sent_id] = []
-		translations[sent_id].append((lang, translation))
+			translations[sent_id] = {}
+		if lang not in translated:
+			translated[lang] = 0
+		translations[sent_id][lang] = translation
 	return translations	
 
-translations = read_translations(sys.argv[1])
+translations = {}
+for langfile in sys.argv[1:]:
+	translations = read_translations(langfile, translations)
 
-total = 0
-translated = 0
 
 for bloc in sys.stdin.read().split('\n\n'):
 	bloc = bloc.strip()
@@ -31,10 +36,12 @@ for bloc in sys.stdin.read().split('\n\n'):
 			sent_id = comment.split('=')[1].strip()
 	if sent_id in translations:
 		new_comments = comments[:-1]
-		new_comments += ['# text[%s] = %s' % (lang, trad) for lang, trad in translations[sent_id]]
+		for lang in translations[sent_id]:
+			new_comments += ['# text[%s] = %s' % (lang, translations[sent_id][lang])]
+			translated[lang] += 1
 		new_comments += [comments[-1]]
 		comments = new_comments
-		translated += 1
+#		translated += 1
 	print('\n'.join(comments))
 #	if n_tokens > 0:
 #		print('# tagged = %.2f%%' % (n_tagged/n_tokens*100))
@@ -45,4 +52,7 @@ for bloc in sys.stdin.read().split('\n\n'):
 	total += 1
 
 if total != 0:
-	print('Translated: %d/%d' % (translated,total), '(%.2f%%)' % (translated/total*100),file=sys.stderr)
+	print('Translated:',file=sys.stderr)
+	for lang in translated:
+		print(' [%s] %d/%d' % (lang, translated[lang],total), '(%.2f%%)' % (translated[lang]/total*100),file=sys.stderr)
+
