@@ -36,7 +36,8 @@ while line:
 		token = replace_keep_case('vezes', 'veces', token)
 		token = replace_keep_case('penetratiuo', 'penetrativo', token) # i dont think this is right
 		token = replace_keep_case('aue', 'ave', token)		
-		token = replace_keep_case('quj', 'qui', token) # i dont know if this will always work
+		token = replace_keep_case('^quj', 'qui', token) # i dont know if this will always work
+		token = replace_keep_case('ruydo', 'ruido', token) # i dont know if this will always work
 
 		#removing stuff
 		token = replace_keep_case('pass', 'pas', token)
@@ -50,6 +51,8 @@ while line:
 		token = replace_keep_case('aguero', 'agüero', token)
 		token = replace_keep_case('algun$', 'algún', token)		
 		token = replace_keep_case('parecera', 'parecerá', token)		
+		token = replace_keep_case('cion$', 'ción', token)		
+
 
 		# for splitting words
 		token = replace_keep_case('ala', 'a la', token)
