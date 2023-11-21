@@ -1,7 +1,8 @@
 TARGETS = ../conllu/Book_01_-_The_Gods.conllu \
 	../conllu/Book_02_-_Ceremonies.conllu \
-	../conllu/Book_05_-_The_Omens.conllu \
+	../conllu/Book_03_-_The_Origins_of_the_Gods.conllu \
 	../conllu/Book_04_-_The_Art_of_Divination.conllu \
+	../conllu/Book_05_-_The_Omens.conllu \
 	../conllu/Book_06_-_Rhetoric_and_Moral_Philosophy.conllu \
 	../conllu/Book_07_-_The_Sun,_Moon,_Stars,_and_the_Binding_of_the_Years.conllu \
 	../conllu/Book_08_-_Kings_and_Lords.conllu \
@@ -17,6 +18,9 @@ all: $(TARGETS)
 	python3 process-codex.py $< | python3 add-translations.py translation/Book_01_-_The_Gods.* | python3 tag-codex.py | python3 merge-trees.py ../trees/Book_01_-_The_Gods.conllu > $@
 
 ../conllu/Book_02_-_Ceremonies.conllu: ../books/Book_02_-_Ceremonies.tokenised $(DEPS)
+	python3 process-codex.py $< | python3 tag-codex.py > $@
+
+../conllu/Book_03_-_The_Origins_of_the_Gods.conllu: ../books/Book_03_-_The_Origins_of_the_Gods.tokenised $(DEPS)
 	python3 process-codex.py $< | python3 tag-codex.py > $@
 
 ../conllu/Book_04_-_The_Art_of_Divination.conllu: ../books/Book_04_-_The_Art_of_Divination.txt $(DEPS)
