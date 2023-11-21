@@ -11,16 +11,25 @@ def replace_keep_case(word, replacement, text):
 	return re.sub(word, func, text, flags=re.I)
 
 
+conversions = {}
+for line in open('modernisation.tsv'):
+	if line.strip() == '':
+		continue
+	k, v = re.sub('\t\t*', '\t'), line).split('\t')
+	conversions[k] = v
+	
+
 line = sys.stdin.readline().strip()
 while line:
 	
 	tokens = re.sub('([:,.!?]+)', ' \g<1> ', line).split(' ')
 	normalized_tokens = []
 	for token in tokens:
+		for k, v in conversions:
+			token = replace_keep_case(k, v, token)
 		
 		token = replace_keep_case('jendo$','iendo', token)
 		token = replace_keep_case('sauandija','sabandija', token)
-		token = replace_keep_case('onze','once', token)
 		token = replace_keep_case('muger', 'mujer', token)
 		token = replace_keep_case('mesmo', 'mismo', token)
 		token = replace_keep_case(r'a[uv]an$', r'aban', token)
