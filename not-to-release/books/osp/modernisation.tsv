@@ -1,0 +1,79 @@
+onze			once
+doze			doce
+mesmo			mismo
+ymagen			imagen
+breue			breve
+pobrezito		pobrecito
+uentura			ventura
+xeringa			jeringa
+^haz			hac
+jno			ino  #for camjno stuff?
+aue			ave
+iuo$			ivo
+y[uv]a			iba
+a[uv]a			aba
+[jy]endo		iendo
+vezes			veces
+^quj			qui
+huy			hui
+y([r$])			ir
+
+#accentos
+algun$			algún
+ningun$			ninún
+auja			había
+cion			ción
+mas$			más
+alli			allí
+aguero			agüero
+huya			huía
+huyr\w+			huír\g<1>  # there's no way that's right
+uja			uía
+despues			después
+ansi			ansí
+
+# deleting things
+offrenda                ofrenda
+pass                    pas
+traye                   trae
+illusion		ilusion
+
+# spaces
+della			de ella
+ala			a la
+porventura		por ventura
+qual$			cuál
+quales$			cuáles
+qualqu[ij]era		cualquiera # for ordering sake, has to beheer
+yenel			y en el
+conque			con que
+conel			con el
+alomenos		a lo menos
+^alo$			a lo ''' is this how you signify the entire string and only that string?'''
+atodos			a todos
+loque			lo que
+
+# \g<> stuff
+dest[oa]		de est\g<1>
+ç[ao]			z\g<1>
+\w+je\w+                \g<1>ie\g<2> # to avoid viaje getting flagged
+vn([ao])?(s)?$		un\g<1>\g<2>
+[ji]a([n])?$		ía\g<1>
+d([ie])z		d\g<1>c
+z([ei])			c\g<1>
+vn([oa])?(s)?$		r'un\g<1>\g<2>
+oy([ad])		oí\g<1>
+mj([oa])		mí\g<1>
+([ld])ex		\g<1>ej
+#y(ria)
+(\w+)eria$		\g<1>ería #this is a problem thing just in general
+iunt([oa])(s)?		junt\g<1>\g<2>
+
+
+# shorter the rules, bigger the coverage, but then more mistake risk
+''' trouble stuff
+cual/cuales vs. cualquiera
+esta
+idk how we would do this, but making the accento ía for past verbs would be optimal
+yr to ir or iria
+'''

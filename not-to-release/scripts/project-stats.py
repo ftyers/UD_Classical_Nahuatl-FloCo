@@ -4,7 +4,7 @@ books = {}
 translations = {}
 
 maxlen = 0
-for path in glob.glob('../conllu/*.conllu'):
+for path in sorted(glob.glob('../conllu/*.conllu')):
 	book = os.path.basename(path).replace('.conllu','')
 	books[book] = {}
 	translations[book] = {'Spa':0, 'Eng': 0, 'OldSpa':0, 'Nhi':0}
@@ -71,10 +71,14 @@ for path in glob.glob('../conllu/*.conllu'):
 
 langs = '\t'.join(translations[book].keys())
 print('%s\tTrees\tTokens\tNorm\tTagged\tLemmas\tFeats\tHeads\tRels\tGloss\t%s' % (' ' * (maxlen + 2), langs))
+total_trees = 0
+total_tokens = 0
 for book in books:
 	pad = ' ' * ((maxlen - len(book)) + 2)
 	tokens = books[book][1]
 	trees = books[book][0]
+	total_trees += trees
+	total_tokens += tokens
 	cols = [book + pad] + books[book][:2] + ['%.2f' % ((i/tokens)*100) for i in books[book][2:-1]]
 	cols2 = ['%.2f' % ((v/trees)*100) for k, v in translations[book].items()]
 	#[trees, tokens, normalised, tagged, lemmatised, analysed, heads, relations, glosses] = books[book]
@@ -82,3 +86,6 @@ for book in books:
 
 #	print(f'{book + pad}\t{trees}\t{tokens}\t{normalised}\t{tagged}\t{lemmatised}\t{analysed}\t{heads}\t{relations}\t{glosses}')
 	print('%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t' % tuple(cols), '\t'.join(cols2))
+
+
+print('%s\t%s\t%s' % (' ' * (maxlen + 2), total_trees, total_tokens))
