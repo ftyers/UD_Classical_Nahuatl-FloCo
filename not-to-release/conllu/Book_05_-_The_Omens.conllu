@@ -380,7 +380,7 @@
 45	:	:	PUNCT	_		46	punct	_	Folio=1v|Paragraph=5|Line=23|Norm=:|Analysed=Yes
 46	ca	cah|ca	VERB	_	_	1	_	_	Orig=caiuh|Folio=1v|Paragraph=5|Line=23|Norm=ca|AmbigNorm=True|Override=False
 47	iuh	iuh	ADV	_		48	_	_	Orig=caiuh|Folio=1v|Paragraph=5|Line=23|Norm=iuh|AmbigNorm=True|Override=False|Gloss=así|Analysed=Yes
-48	conjtotiuj	ihtoa	VERB	_	Directional=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	46	_	_	Orig=co¶·njtotiuj|Folio=1v,1v|Paragraph=5,5|Line=23,24|Norm=conitotihui|Analysed=Yes
+48	conjtotiuj	ihtoa	VERB	_	Directional=On|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	46	_	_	Orig=co¶·njtotiuj|Folio=1v,1v|Paragraph=5,5|Line=23,24|Norm=conitotihui|Analysed=Yes
 49	,	,	PUNCT	_		51	punct	_	Folio=1v|Paragraph=5|Line=24|Norm=,|Analysed=Yes
 50	in	in	DET|SCONJ	_	_	51	_	_	Folio=1v|Paragraph=5|Line=24|Norm=in
 51	techcauhtiuj	cahua	VERB	_	Directional=And|Number[obj]=Plur|Number[subj]=Plur,Sing|Person[obj]=1|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	48	_	_	Orig=tech·cauh·tiuj|Folio=1v,1v,1v|Paragraph=5,5,5|Line=24,24,24|Norm=techcauhtihui|Analysed=Yes
@@ -1746,7 +1746,7 @@
 # heads = 97.62%
 # relations = 38.10%
 1	In	in	DET|SCONJ	_	_	2	_	2:dep	Orig=I·nontlamaceoato|Folio=4v,4v|Paragraph=4,4|Line=5,5|Norm=In
-2	ontlamaceoato	macehua	VERB	_	Animacy[obj]=Inan|Directional=And|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	0:root	Orig=I·nontlamaceoato|Folio=4v,4v|Paragraph=4,4|Line=5,5|Norm=ontlamacehuato|Analysed=Yes
+2	ontlamaceoato	macehua	VERB	_	Animacy[obj]=Inan|Directional=On|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	0:root	Orig=I·nontlamaceoato|Folio=4v,4v|Paragraph=4,4|Line=5,5|Norm=ontlamacehuato|Analysed=Yes
 3	,	,	PUNCT	_		5	punct	5:punct	Folio=4v|Paragraph=4|Line=5|Norm=,|Analysed=Yes
 4	in	in	DET|SCONJ	_	_	5	_	5:dep	Orig=inonacxoiatlalito|Folio=4v|Paragraph=4|Line=6|Norm=in
 5	onacxoiatlalito	acxoyatlalia	VERB	_	_	2	_	2:dep	Orig=inonacxoiatlalito|Folio=4v|Paragraph=4|Line=6|Norm=onacxoyatlalito|Incorp[obj]=acxoya
@@ -3686,19 +3686,21 @@
 # text = Niman ic conana: homaxac concaoa.
 # text[norm] = Niman ic conana: omaxac concahua.
 # text[orig] = Niman·ic·conana·:·homaxac·concaoa·.
+# text[eng] = Later he grabbed it, he left it at a crossroads.
 # text[osp] = Y luego tomaua aquella sauandija, y ponia la en la diuision de dos caminos: y alli la dexaua.
+# text[spa] = Luego lo agarró, lo dejó en un cruce.
 # references = A&D/172:6
 # tagged = 100.00%
 # lemmatised = 100.00%
 # analysed = 100.00%
 # heads = 100.00%
-# relations = 42.86%
-1	Niman	niman	ADV	_		3	_	_	Folio=9r|Paragraph=1|Line=18|Norm=Niman|Analysed=Yes
-2	ic	ic	ADV	_	_	3	_	_	Folio=9r|Paragraph=1|Line=18|Norm=ic
+# relations = 100.00%
+1	Niman	niman	ADV	_		3	advmod	_	Folio=9r|Paragraph=1|Line=18|Norm=Niman|Analysed=Yes
+2	ic	ic	ADV	_	_	3	advmod	_	Folio=9r|Paragraph=1|Line=18|Norm=ic
 3	conana	ana	VERB	_	Directional=On|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	Folio=9r|Paragraph=1|Line=18|Norm=conana|Analysed=Yes
 4	:	:	PUNCT	_		6	punct	_	Folio=9r|Paragraph=1|Line=18|Norm=:|Analysed=Yes
-5	homaxac	omaxac	NOUN	_	NounClass=Loc	6	_	_	Folio=9r|Paragraph=1|Line=19|Norm=omaxac|Locative=Yes|Gloss=cruce|Analysed=Yes
-6	concaoa	cahua	VERB	_	Directional=On|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	_	_	Folio=9r|Paragraph=1|Line=19|Norm=concahua|Analysed=Yes
+5	homaxac	omaxac	NOUN	_	NounClass=Loc	6	obl	_	Folio=9r|Paragraph=1|Line=19|Norm=omaxac|Locative=Yes|Gloss=cruce|Analysed=Yes
+6	concaoa	cahua	VERB	_	Directional=On|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	parataxis	_	Folio=9r|Paragraph=1|Line=19|Norm=concahua|Analysed=Yes
 7	.	.	PUNCT	_		3	punct	_	Folio=9r|Paragraph=1|Line=19|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:65
