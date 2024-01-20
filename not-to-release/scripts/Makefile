@@ -51,3 +51,9 @@ all: $(TARGETS)
 ../conllu/Book_12_-_The_Conquest_of_Mexico.conllu: ../books/Book_12_-_The_Conquest_of_Mexico.tokenised $(DEPS)
 	python3 process-codex.py $< | python3 tag-codex.py > $@
 
+
+splits:
+	python3 prepare-splits.py test ../../	
+	cat ../../nci_floco-ud-test.conllu | udapy -s ud.SetSpaceAfterFromText ud.FixPunct > ../../nci_floco-ud-test.conllu~
+	mv ../../nci_floco-ud-test.conllu~ ../../nci_floco-ud-test.conllu
+	python3 validate.py --lang nci ../../nci_floco-ud-test.conllu

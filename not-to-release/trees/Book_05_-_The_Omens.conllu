@@ -3330,13 +3330,13 @@
 # text[orig] = Niman·ic·conana·:·homaxac·concaoa·.
 # tagged = 100.00%
 # analysed = 85.71%
-1	Niman	_	ADV	_	_	3	advmod	_	_
-2	ic	ic	ADV	_	_	3	advmod	_	_
-3	conana	ana	VERB	_	_	0	root	_	_
-4	:	:	PUNCT	_	_	6	punct	_	_
-5	homaxac	omaxac	NOUN	_	_	6	obl	_	_
-6	concaoa	cahua	VERB	_	_	3	parataxis	_	_
-7	.	.	PUNCT	_	_	3	punct	_	_
+1	Niman	_	ADV	_	_	3	advmod	3:advmod	_
+2	ic	ic	ADV	_	_	3	advmod	3:advmod	_
+3	conana	ana	VERB	_	_	0	root	0:root	_
+4	:	:	PUNCT	_	_	6	punct	6:punct	_
+5	homaxac	omaxac	NOUN	_	_	6	obl	6:obl	_
+6	concaoa	cahua	VERB	_	_	3	parataxis	3:parataxis	_
+7	.	.	PUNCT	_	_	3	punct	3:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:65
 # text = Auh in aca çan contzonuja, aco compilova: intla otlathvic aocac qujtta: in cenca vel qujtetzammati.
@@ -5064,10 +5064,10 @@
 # text[orig] = Tetzaujtl·itechpa·chiqujmoli·.
 # tagged = 100.00%
 # analysed = 100.00%
-1	Tetzaujtl	tetzahuitl	NOUN	_	State=Abs	0	root	_	_
-2	itechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Poss	1	_	_	_
-3	chiqujmoli	chiquimoli	NOUN	_	State=Abs	2	_	_	_
-4	.	.	PUNCT	_	_	1	punct	_	_
+1	Tetzaujtl	tetzahuitl	NOUN	_	State=Abs	0	root	0:root	_
+2	itechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Poss	1	nmod	3:case	_
+3	chiqujmoli	chiquimoli	NOUN	_	State=Abs	2	nmod	1:nmod	_
+4	.	.	PUNCT	_	_	1	punct	1:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:99
 # text = In chiqujmoli, cacentetl tototl, iuhqujn quauhchochopitli: auh veca quauhtla in jchan.
@@ -5129,9 +5129,9 @@
 # tagged = 100.00%
 # analysed = 100.00%
 1	Tetzaujtl	tezahuitl	NOUN	_	State=Abs	0	root	0:root	_
-2	itechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3	1	nmod	1:nmod	_
+2	itechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3	1	nmod	4:case	_
 3	in	in	DET	_	_	4	det	4:det	_
-4	coiutl	coyotl	NOUN	_	State=Abs	2	nmod	2:nmod	_
+4	coiutl	coyotl	NOUN	_	State=Abs	2	nmod	1:nmod	_
 5	.	.	PUNCT	_	_	1	punct	1:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:102
