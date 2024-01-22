@@ -28,6 +28,10 @@ pattern = 'nci_floco-ud-<SECTION>.conllu'
 of = open(output_dir +'/'+pattern.replace('<SECTION>', section), 'w')
 
 for line in open('final.tsv'):
+	if line.strip() == '':
+		continue
+	if line[0] == '#':
+		continue
 	sent, sect, reviewers = line.strip().split('\t')
 	if sect == section:
 		# Book_05_-_The_Omens.txt:64
