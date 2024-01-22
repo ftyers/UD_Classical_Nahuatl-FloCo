@@ -1,4 +1,4 @@
-import sys, glob, os
+import sys, glob, os, re
 
 section = sys.argv[1]
 output_dir = sys.argv[2]
@@ -27,18 +27,42 @@ pattern = 'nci_floco-ud-<SECTION>.conllu'
 
 of = open(output_dir +'/'+pattern.replace('<SECTION>', section), 'w')
 
+totals = {}
+
 for line in open('final.tsv'):
 	if line.strip() == '':
 		continue
 	if line[0] == '#':
 		continue
-	sent, sect, reviewers = line.strip().split('\t')
+	sent, sect, reviewers, url = re.sub('\t\t*', '\t', line.strip()).split('\t')
 	if sect == section:
 		# Book_05_-_The_Omens.txt:64
 		book, sent_no = sent.split(':')
 		book = book.split('.')[0]
-	
-		print(books[book][sent_no],file=of)
+		comments = []
+		if reviewers != '_' and reviewers != '':
+			comments.append('# reviewers = %s' % (reviewers.replace(',',' ')))
+		if url != '_' and url != '':
+			comments.append('# issue = %s' % (url))
+
+		lines = []
+		inSent = False
+		for sentline in books[book][sent_no].split('\n'):
+			if sentline.strip() == '':
+				continue
+			if sentline[0] == '#':
+				lines.append(sentline)
+				continue
+			if sentline[0] != '#' and not inSent:
+				lines += comments
+				lines.append(sentline)
+				inSent = True
+				continue
+			lines.append(sentline)
+
+		outsent = '\n'.join(lines)
+
+		print(outsent,file=of)
 		print('',file=of)
 
 of.close()
