@@ -3342,7 +3342,7 @@
 3	conana	ana	VERB	_	_	0	root	0:root	_
 4	:	:	PUNCT	_	_	6	punct	6:punct	_
 5	homaxac	omaxac	NOUN	_	_	6	obl	6:obl	_
-6	concaoa	cahua	VERB	_	_	3	parataxis	3:parataxis	_
+6	concaoa	cahua	VERB	_	_	3	parataxis:shared	3:parataxis:shared	_
 7	.	.	PUNCT	_	_	3	punct	3:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:65
@@ -3932,23 +3932,25 @@
 
 # sent_id = Book_05_-_The_Omens.txt:76
 # text = Ca ie no iuhquj, muchiuhquj: qujcenujca, qujcemjtoa in mjqujztetzaujtl.
-# text[norm] = Ca/Za/Zan ye no iuhqui, mochiuhqui: quicenhuica, quicemihtoa in miquiztetzahuitl.
+# text[norm] = Za ye no iuhqui, mochiuhqui: quicenhuica, quicemihtoa in miquiztetzahuitl.
 # text[orig] = Caienoiuhquj·,·muchiuh¶quj·:·qujcenujca·,·qujcemjtoa·in·mj¶qujztetzaujtl·.
-# tagged = 84.62%
-# analysed = 84.62%
-1	Ca	_	ADV	_	_	8	_	_	_
-2	ie	ye	ADV	_	_	8	_	_	_
-3	no	no	ADV	_	_	8	_	_	_
-4	iuhquj	iuhqui	ADV	_	_	8	_	_	_
-5	,	,	PUNCT	_	_	8	punct	_	_
-6	muchiuhquj	_	NOUN	_	_	8	_	_	_
-7	:	:	PUNCT	_	_	8	punct	_	_
-8	qujcenujca	cenhuica	VERB	_	_	0	root	_	_
-9	,	,	PUNCT	_	_	10	punct	_	_
-10	qujcemjtoa	cemihtoa	VERB	_	_	8	_	_	_
-11	in	in	DET|SCONJ	_	_	12	_	_	_
-12	mjqujztetzaujtl	miquiztetzahuitl	NOUN	_	State=Abs	8	_	_	_
-13	.	.	PUNCT	_	_	8	punct	_	_
+# text[osp] = [...] o que los imbidiosos, y maliuolos los hechauan dentro de casa, por mal querencia: y por hazer mal a los mordores, deseando los enfermedad, o muerte, o pobreza, y desasosiego.
+# references = A&D/175:4
+# tagged = 100.00%
+# analysed = 100.00%
+1	Ca	za	ADV	_	_	6	advmod	6:advmod	_
+2	ie	ye	ADV	_	_	6	advmod	6:advmod	_
+3	no	no	ADV	_	_	6	advmod	6:advmod	_
+4	iuhquj	iuhqui	ADV	_	_	6	advmod	6:advmod	_
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	muchiuhquj	chihua	VERB	_	_	0	root	0:root	_
+7	:	:	PUNCT	_	_	8	punct	8:punct	_
+8	qujcenujca	cenhuica	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	_
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	qujcemjtoa	cemihtoa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	8	parataxis:shared	8:parataxis:shared	_
+11	in	in	DET	_	_	12	det	12:det	_
+12	mjqujztetzaujtl	miquiztetzahuitl	NOUN	_	State=Abs	8	obj	8:obj	_
+13	.	.	PUNCT	_	_	8	punct	8:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:77
 # text = In iehoatl calcujatl, aco cana tepancamac: calquac in qujntlalia tecocolianj: cotaloa, cotalotica injc tlatoa.

@@ -44,8 +44,35 @@
 3	conana	ana	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Analysed=Yes|Folio=9r|Line=18|Norm=conana|Paragraph=1|SpaceAfter=No
 4	:	:	PUNCT	_	_	6	punct	6:punct	Folio=9r|Paragraph=1|Line=18|Norm=:|Analysed=Yes
 5	homaxac	omaxac	NOUN	_	NounClass=Loc	6	obl	6:obl	Folio=9r|Paragraph=1|Line=19|Norm=omaxac|Locative=Yes|Gloss=cruce|Analysed=Yes
-6	concaoa	cahua	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	Analysed=Yes|Folio=9r|Line=19|Norm=concahua|Paragraph=1|SpaceAfter=No
+6	concaoa	cahua	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	parataxis:shared	3:parataxis:shared	Analysed=Yes|Folio=9r|Line=19|Norm=concahua|Paragraph=1|SpaceAfter=No
 7	.	.	PUNCT	_	_	3	punct	3:punct	Folio=9r|Paragraph=1|Line=19|Norm=.|Analysed=Yes
+
+# sent_id = Book_05_-_The_Omens.txt:76
+# text = Ca ie no iuhquj, muchiuhquj: qujcenujca, qujcemjtoa in mjqujztetzaujtl.
+# text[norm] = Za ye no iuhqui, mochiuhqui: quicenhuica, quicemihtoa in miquiztetzahuitl.
+# text[orig] = Caienoiuhquj·,·muchiuh¶quj·:·qujcenujca·,·qujcemjtoa·in·mj¶qujztetzaujtl·.
+# text[osp] = [...] o que los imbidiosos, y maliuolos los hechauan dentro de casa, por mal querencia: y por hazer mal a los mordores, deseando los enfermedad, o muerte, o pobreza, y desasosiego.
+# references = A&D/175:4
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/7
+1	Ca	za	ADV	_	_	6	advmod	6:advmod	Orig=Caienoiuhquj|Folio=10v|Paragraph=4|Line=26|Norm=Za|AmbigNorm=True|Override=True|Analysed=Yes
+2	ie	ye	ADV	_	_	6	advmod	6:advmod	Orig=Caienoiuhquj|Folio=10v|Paragraph=4|Line=26|Norm=ye|AmbigNorm=True|Override=True
+3	no	no	ADV	_	_	6	advmod	6:advmod	Orig=Caienoiuhquj|Folio=10v|Paragraph=4|Line=26|Norm=no|Gloss=también|Analysed=Yes
+4	iuhquj	iuhqui	ADV	_	_	6	advmod	6:advmod	Analysed=Yes|Folio=10v|Gloss=así|Line=26|Norm=iuhqui|Orig=Caienoiuhquj|Paragraph=4|SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	6:punct	Folio=10v|Paragraph=4|Line=26|Norm=,|Analysed=Yes
+6	muchiuhquj	chihua	VERB	_	_	0	root	0:root	Ambiguous=Yes|Analysed=Yes|Folio=10v,10v|Line=26,27|Norm=mochiuhqui|Orig=muchiuh¶·quj|Paragraph=4,4|SpaceAfter=No
+7	:	:	PUNCT	_	_	8	punct	8:punct	Folio=10v|Paragraph=4|Line=27|Norm=:|Analysed=Yes
+8	qujcenujca	cenhuica	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	Analysed=Yes|Folio=10v|Line=27|Norm=quicenhuica|Paragraph=4|SpaceAfter=No
+9	,	,	PUNCT	_	_	10	punct	10:punct	Folio=10v|Paragraph=4|Line=27|Norm=,|Analysed=Yes
+10	qujcemjtoa	cemihtoa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	8	parataxis:shared	8:parataxis:shared	Folio=10v|Paragraph=4|Line=27|Norm=quicemihtoa|Analysed=Yes
+11	in	in	DET	_	_	12	det	12:det	Folio=10v|Paragraph=4|Line=27|Norm=in
+12	mjqujztetzaujtl	miquiztetzahuitl	NOUN	_	State=Abs	8	obj	8:obj	Analysed=Yes|Folio=10v,10v|Line=27,28|Norm=miquiztetzahuitl|Orig=mj¶·qujztetzaujtl|Paragraph=4,4|SpaceAfter=No|Split=miquiz·tetzahuitl
+13	.	.	PUNCT	_	_	8	punct	8:punct	Folio=10v|Paragraph=4|Line=28|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:98
 # text = Tetzaujtl itechpa chiqujmoli.

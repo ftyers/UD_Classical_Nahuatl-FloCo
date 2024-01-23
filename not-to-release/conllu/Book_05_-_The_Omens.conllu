@@ -2364,7 +2364,7 @@
 # text = Auh intlacamo qualli, in cinjtta: tecolli, anoço tzotzomatli, ic qujnextia, in çan icnoiotl, netolinjliztli, oqujmaceoalti.
 # text[norm] = Auh intlacamo cualli, in conitta: tecolli, anozo tzotzomatli, ic quinextia, in zan icnoyotl, netoliniliztli, oquimacehualti.
 # text[orig] = A·uh·in¶tlacamo·qualli·,·in·cinjtta·:·tecolli·,·anoço·tzotzomatli·,·ic·qujnextia·,·in·çan·icnoiotl·,·netolinjliztli·,·o¶qujmaceoalti·.
-# text[osp] = Y is porventura hallaua en el paño carbones, o algun handraxo, o pedaço de manta roto, y suzio: en esto conocia, quele auja de venir malauentura, y miseria.
+# text[osp] = Y si porventura hallaua en el paño carbones, o algun handraxo, o pedaço de manta roto, y suzio: en esto conocia, quele auja de venir malauentura, y miseria.
 # text[spa] = Y si no fuera bueno, vio carbón, o un trapo, así revela sólo pobreza, miseria, merecía.
 # references = A&D/166:4
 # tagged = 100.00%
@@ -3699,7 +3699,7 @@
 3	conana	ana	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Folio=9r|Paragraph=1|Line=18|Norm=conana|Analysed=Yes
 4	:	:	PUNCT	_		6	punct	6:punct	Folio=9r|Paragraph=1|Line=18|Norm=:|Analysed=Yes
 5	homaxac	omaxac	NOUN	_	NounClass=Loc	6	obl	6:obl	Folio=9r|Paragraph=1|Line=19|Norm=omaxac|Locative=Yes|Gloss=cruce|Analysed=Yes
-6	concaoa	cahua	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	Folio=9r|Paragraph=1|Line=19|Norm=concahua|Analysed=Yes
+6	concaoa	cahua	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	parataxis:shared	3:parataxis:shared	Folio=9r|Paragraph=1|Line=19|Norm=concahua|Analysed=Yes
 7	.	.	PUNCT	_		3	punct	3:punct	Folio=9r|Paragraph=1|Line=19|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:65
@@ -4355,20 +4355,20 @@
 # lemmatised = 100.00%
 # analysed = 100.00%
 # heads = 100.00%
-# relations = 38.46%
-1	Ca	za	ADV	_		8	_	_	Orig=Caienoiuhquj|Folio=10v|Paragraph=4|Line=26|Norm=Za|AmbigNorm=True|Override=True|Analysed=Yes
-2	ie	ye	ADV	_	_	8	_	_	Orig=Caienoiuhquj|Folio=10v|Paragraph=4|Line=26|Norm=ye|AmbigNorm=True|Override=True
-3	no	no	ADV	_		8	_	_	Orig=Caienoiuhquj|Folio=10v|Paragraph=4|Line=26|Norm=no|Gloss=también|Analysed=Yes
-4	iuhquj	iuhqui	ADV	_		8	_	_	Orig=Caienoiuhquj|Folio=10v|Paragraph=4|Line=26|Norm=iuhqui|Gloss=así|Analysed=Yes
-5	,	,	PUNCT	_		8	punct	_	Folio=10v|Paragraph=4|Line=26|Norm=,|Analysed=Yes
-6	muchiuhquj	chihua	VERB	_	_	8	_	_	Orig=muchiuh¶·quj|Folio=10v,10v|Paragraph=4,4|Line=26,27|Norm=mochiuhqui|Ambiguous=Yes|Analysed=Yes
-7	:	:	PUNCT	_		8	punct	_	Folio=10v|Paragraph=4|Line=27|Norm=:|Analysed=Yes
-8	qujcenujca	cenhuica	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	Folio=10v|Paragraph=4|Line=27|Norm=quicenhuica|Analysed=Yes
-9	,	,	PUNCT	_		10	punct	_	Folio=10v|Paragraph=4|Line=27|Norm=,|Analysed=Yes
-10	qujcemjtoa	cemihtoa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	8	_	_	Folio=10v|Paragraph=4|Line=27|Norm=quicemihtoa|Analysed=Yes
-11	in	in	DET|SCONJ	_	_	12	_	_	Folio=10v|Paragraph=4|Line=27|Norm=in
-12	mjqujztetzaujtl	miquiztetzahuitl	NOUN	_	State=Abs	8	_	_	Orig=mj¶·qujztetzaujtl|Folio=10v,10v|Paragraph=4,4|Line=27,28|Norm=miquiztetzahuitl|Split=miquiz·tetzahuitl|Analysed=Yes
-13	.	.	PUNCT	_		8	punct	_	Folio=10v|Paragraph=4|Line=28|Norm=.|Analysed=Yes
+# relations = 100.00%
+1	Ca	za	ADV	_		6	advmod	6:advmod	Orig=Caienoiuhquj|Folio=10v|Paragraph=4|Line=26|Norm=Za|AmbigNorm=True|Override=True|Analysed=Yes
+2	ie	ye	ADV	_	_	6	advmod	6:advmod	Orig=Caienoiuhquj|Folio=10v|Paragraph=4|Line=26|Norm=ye|AmbigNorm=True|Override=True
+3	no	no	ADV	_		6	advmod	6:advmod	Orig=Caienoiuhquj|Folio=10v|Paragraph=4|Line=26|Norm=no|Gloss=también|Analysed=Yes
+4	iuhquj	iuhqui	ADV	_		6	advmod	6:advmod	Orig=Caienoiuhquj|Folio=10v|Paragraph=4|Line=26|Norm=iuhqui|Gloss=así|Analysed=Yes
+5	,	,	PUNCT	_		6	punct	6:punct	Folio=10v|Paragraph=4|Line=26|Norm=,|Analysed=Yes
+6	muchiuhquj	chihua	VERB	_	_	0	root	0:root	Orig=muchiuh¶·quj|Folio=10v,10v|Paragraph=4,4|Line=26,27|Norm=mochiuhqui|Ambiguous=Yes|Analysed=Yes
+7	:	:	PUNCT	_		8	punct	8:punct	Folio=10v|Paragraph=4|Line=27|Norm=:|Analysed=Yes
+8	qujcenujca	cenhuica	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	Folio=10v|Paragraph=4|Line=27|Norm=quicenhuica|Analysed=Yes
+9	,	,	PUNCT	_		10	punct	10:punct	Folio=10v|Paragraph=4|Line=27|Norm=,|Analysed=Yes
+10	qujcemjtoa	cemihtoa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	8	parataxis:shared	8:parataxis:shared	Folio=10v|Paragraph=4|Line=27|Norm=quicemihtoa|Analysed=Yes
+11	in	in	DET	_	_	12	det	12:det	Folio=10v|Paragraph=4|Line=27|Norm=in
+12	mjqujztetzaujtl	miquiztetzahuitl	NOUN	_	State=Abs	8	obj	8:obj	Orig=mj¶·qujztetzaujtl|Folio=10v,10v|Paragraph=4,4|Line=27,28|Norm=miquiztetzahuitl|Split=miquiz·tetzahuitl|Analysed=Yes
+13	.	.	PUNCT	_		8	punct	8:punct	Folio=10v|Paragraph=4|Line=28|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:77
 # text = In iehoatl calcujatl, aco cana tepancamac: calquac in qujntlalia tecocolianj: cotaloa, cotalotica injc tlatoa.
