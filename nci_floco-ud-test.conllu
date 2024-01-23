@@ -24,6 +24,36 @@
 9	naoati	nahuati	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	2	advcl	2:advcl	Analysed=Yes|Folio=4v|Line=5|Norm=nahuati|Paragraph=4|SpaceAfter=No
 10	.	.	PUNCT	_	_	2	punct	2:punct	Folio=4v|Paragraph=4|Line=5|Norm=.|Analysed=Yes
 
+# sent_id = Book_05_-_The_Omens.txt:58
+# text = Injc muchichiuh tochin, nacazpapatlactic, tentipontic, tentetepontic, eliztac: ioan çan cujtlapiltetepontic.
+# text[norm] = Inic mochichiuh tochin, nacazpapatlactic, tentipontic, tentetepontic, eliztac: ihuan zan cuitlapiltetepontic.
+# text[orig] = Injc·muchichiuh·tochin·,·nacazpapatlactic·,·ten·tipontic·,·tentete¶pontic·,·eliztac·:·ioan·çan·cujtlapiltete¶pontic·.
+# text[osp] = Los conejos desta tierra, son como los de españa: aunque no tienen tan buen comer.
+# references = A&D/171:3
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/9
+1	Injc	inic	ADV	_	_	2	advmod	2:advmod	Folio=8v|Paragraph=6|Line=7|Norm=Inic
+2	muchichiuh	chichihua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	0:root	Folio=8v|Paragraph=6|Line=7|Norm=mochichiuh|Analysed=Yes
+3	tochin	tochin	NOUN	_	State=Abs	2	nsubj	2:nsubj	AmbigNorm=True|Analysed=Yes|Folio=8v|Gloss=conejo|Line=7|Norm=tochin|Override=False|Paragraph=6|SpaceAfter=No
+4	,	,	PUNCT	_	_	5	punct	5:punct	Folio=8v|Paragraph=6|Line=7|Norm=,|Analysed=Yes
+5	nacazpapatlactic	nacazpapatlactic	ADJ	_	_	2	parataxis:shared	2:parataxis:shared	AltPos=VERB|Analysed=Yes|Folio=8v|Line=8|Norm=nacazpapatlactic|Paragraph=6|SpaceAfter=No|Split=nacaz·papatlactic
+6	,	,	PUNCT	_	_	7	punct	7:punct	Folio=8v|Paragraph=6|Line=8|Norm=,|Analysed=Yes
+7	tentipontic	tentipontic	ADJ	_	_	5	parataxis:shared	5:parataxis:shared	AltPos=VERB|Analysed=Yes|Folio=8v,8v|Line=8,8|Norm=tentipontic|Orig=ten·tipontic|Paragraph=6,6|SpaceAfter=No|Split=ten·tipontic
+8	,	,	PUNCT	_	_	9	punct	9:punct	Folio=8v|Paragraph=6|Line=8|Norm=,|Analysed=Yes
+9	tentetepontic	tentetepontic	ADJ	_	_	5	parataxis:shared	5:parataxis:shared	AltPos=VERB|Analysed=Yes|Folio=8v,8v|Line=8,9|Norm=tentetepontic|Orig=tentete¶·pontic|Paragraph=6,6|SpaceAfter=No|Split=ten·tetepontic
+10	,	,	PUNCT	_	_	11	punct	11:punct	Folio=8v|Paragraph=6|Line=9|Norm=,|Analysed=Yes
+11	eliztac	eliztac	ADJ	_	_	5	parataxis:shared	5:parataxis:shared	Analysed=Yes|Folio=8v|Gloss=ser.blanco|Line=9|Norm=eliztac|Paragraph=6|Root=el|SpaceAfter=No|Split=el·iztac
+12	:	:	PUNCT	_	_	13	punct	13:punct	Folio=8v|Paragraph=6|Line=9|Norm=:|Analysed=Yes
+13	ioan	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	5	parataxis:shared	5:parataxis:shared	Folio=8v|Paragraph=6|Line=9|Norm=ihuan|Gloss=con|Analysed=Yes
+14	çan	zan	ADV	_	_	15	advmod	15:advmod	Folio=8v|Paragraph=6|Line=9|Norm=zan|Analysed=Yes
+15	cujtlapiltetepontic	cuitlapiltetepontic	ADJ	_	_	13	parataxis:shared	13:parataxis:shared	AltPos=VERB|Analysed=Yes|Folio=8v,8v|Line=9,10|Norm=cuitlapiltetepontic|Orig=cujtlapiltete¶·pontic|Paragraph=6,6|SpaceAfter=No|Split=cuitla·pil·tetepontic
+16	.	.	PUNCT	_	_	2	punct	2:punct	Folio=8v|Paragraph=6|Line=10|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:64
 # text = Niman ic conana: homaxac concaoa.
 # text[norm] = Niman ic conana: omaxac concahua.
