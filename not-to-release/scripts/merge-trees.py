@@ -105,6 +105,9 @@ for bloc in sys.stdin.read().split('\n\n'):
 					if upos == 'X' or '|' in upos:
 						if trees[sent_id][idx][3] != upos:
 							upos = trees[sent_id][idx][3]
+					if lem == '_' or '|' in lem:
+						if trees[sent_id][idx][2] != lem and trees[sent_id][idx][2] != '_':
+							lem = trees[sent_id][idx][2]
 					head = trees[sent_id][idx][6]
 					deprel = trees[sent_id][idx][7]
 					edeps = trees[sent_id][idx][8]
