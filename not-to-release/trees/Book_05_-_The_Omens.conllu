@@ -5222,21 +5222,24 @@
 
 # sent_id = Book_05_-_The_Omens.txt:104
 # text = Nican tzonqujca yn tetzavitl; yn qujtetzammatia, njçan nueua españa tlaca.
-# text[norm] = Nican tzonquiza in tezahuitl; in quitetzammatia, nican Nueva España tlacah.
+# text[norm] = Nican tzonquiza in tetzahuitl; in quitetzammatia, nican Nueva España tlacah.
 # text[orig] = Nican·tzonqujca·yn·tetza¶vitl·;·yn·qujtetzam·matia·,·nj·çan·nueua·españa·tlaca·.
-# tagged = 92.31%
-# analysed = 84.62%
-1	Nican	_	ADV	_	_	2	advmod	2:advmod	_
-2	tzonqujca	tzonquiza	VERB	_	_	0	root	0:root	_
+# text[eng] = Here end the omens; that they considered them, here New Spain people.
+# text[osp] = Fin del libro, de los agueros.
+# references = A&D/180:9
+# tagged = 100.00%
+# analysed = 100.00%
+1	Nican	nican	NOUN	_	_	2	obl	2:obl	_
+2	tzonqujca	tzonquiza	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	0	root	0:root	_
 3	yn	in	DET	_	_	4	det	4:det	_
-4	tetzavitl	tezahuitl	NOUN	_	State=Abs	2	nsubj	2:nsubj	_
+4	tetzavitl	tetzahuitl	NOUN	_	State=Abs	2	nsubj	2:nsubj	_
 5	;	;	PUNCT	_	_	7	punct	7:punct	_
 6	yn	in	SCONJ	_	_	7	mark	7:mark	_
-7	qujtetzammatia	tetzammatia	VERB	_	_	4	acl	4:acl	_
+7	qujtetzammatia	tetzammatia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	4	acl	4:acl	_
 8	,	,	PUNCT	_	_	12	punct	12:punct	_
-9	njçan	_	ADV	_	_	_	_	_	_
-10	nueua	_	PROPN	_	_	_	_	_	_
+9	njçan	nican	NOUN	_	_	12	nmod	12:nmod	_
+10	nueua	nueva	ADJ	_	_	12	nmod	12:nmod	_
 11	españa	España	PROPN	_	_	10	flat	10:flat	_
-12	tlaca	_	NOUN	_	_	7	dislocated	7:dislocated	_
+12	tlaca	tlacatl	NOUN	_	Number=Plur	7	nsubj	7:nsubj	_
 13	.	.	PUNCT	_	_	2	punct	2:punct	_
 
