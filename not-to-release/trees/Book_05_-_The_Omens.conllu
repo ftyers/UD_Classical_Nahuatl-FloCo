@@ -1957,22 +1957,28 @@
 # text = Auh qujluja in maceoalli, in oqujmottiti: amo njmjtzcaoaz, ca onjmjtzan.
 # text[norm] = Auh quilhuia in macehualli, in oquimottiti: amo nimitzcahuaz, ca onimitzan.
 # text[orig] = Auh·qujluja·in·maceoalli·,·ino¶qujmottiti·:·amonjmjtzcaoaz·,·caonj¶mjtzan·.
+# text[osp] = Y la persona, aqui en esta fantasma le auja aparecido, dezia la: no te dexare que ya te e caçado.
+# text[spa] = Y dijo el vasallo, a quien se había hecho ver: No te dejaré, es que te he tomado.
+# references = A&D/166:3
 # tagged = 100.00%
+# lemmatised = 100.00%
 # analysed = 100.00%
-1	Auh	auh	CCONJ	_	_	2	cc	_	_
-2	qujluja	ilhuia	VERB	_	_	0	root	_	_
-3	in	in	DET	_	_	4	det	_	_
-4	maceoalli	macehualli	NOUN	_	State=Abs	2	nsubj	_	_
-5	,	,	PUNCT	_	_	7	punct	_	_
-6	in	in	SCONJ	_	_	7	mark	_	_
-7	oqujmottiti	mottitia	VERB	_	Aspect=Prior|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	4	acl	_	_
-8	:	:	PUNCT	_	_	10	punct	_	_
-9	amo	amo	ADV	_	_	10	advmod	_	_
-10	njmjtzcaoaz	cahua	VERB	_	Number[obj]=Sing|Number[subj]=Sing|Person[obj]=2|Person[subj]=1|Subcat=Tran|Tense=Fut|VerbForm=Fin	2	ccomp	_	_
-11	,	,	PUNCT	_	_	13	punct	_	_
-12	ca	_	VERB	_	_	13	_	_	_
-13	onjmjtzan	ana	VERB	_	Aspect=Prior|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=2|Person[subj]=1|Subcat=Tran|Tense=Past|VerbForm=Fin	10	_	_	_
-14	.	.	PUNCT	_	_	2	punct	_	_
+# heads = 100.00%
+# relations = 85.71%
+1	Auh	auh	CCONJ	_	_	2	cc	2:cc	_
+2	qujluja	ilhuia	VERB	_	_	0	root	0:root	_
+3	in	in	DET	_	_	4	det	4:det	_
+4	maceoalli	macehualli	NOUN	_	State=Abs	2	nsubj	2:nsubj	_
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	in	in	SCONJ	_	_	7	mark	7:mark	_
+7	oqujmottiti	mottitia	VERB	_	Aspect=Prior|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	4	acl	4:acl	_
+8	:	:	PUNCT	_	_	10	punct	10:punct	_
+9	amo	amo	ADV	_	_	10	advmod	10:advmod	_
+10	njmjtzcaoaz	cahua	VERB	_	Number[obj]=Sing|Number[subj]=Sing|Person[obj]=2|Person[subj]=1|Subcat=Tran|Tense=Fut|VerbForm=Fin	2	parataxis:speech	2:parataxis:speech	_
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	ca	ca	PART	_	_	13	discourse	13:discourse	_
+13	onjmjtzan	ana	VERB	_	Aspect=Prior|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=2|Person[subj]=1|Subcat=Tran|Tense=Past|VerbForm=Fin	10	parataxis:shared	10:parataxis:shared	_
+14	.	.	PUNCT	_	_	2	punct	2:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:36
 # text = Ic vncan qujluja, izca ce vitztli: njmtzmaca, xinechcaoa: amo qujcelia, amo qujuelitta, in jollochicaoac: qujnjquac quicaoa, intla eei, anoço ie nauj, qujmaca vitztli: ic qujnextia, qujnezcaiotia, ca tlamatiuh in iavc, amo nenqujcaz: izquj caciz in oqujtenevilli, in oqujmacac viztli: ic much vncan, qujmaceoaltia in tlalticpan paqujliztli, neiollaliliztli: in xuchitl, in jietl, in netlamachtilli: in tilmatli, in tencacatl, in tlalpilonj.

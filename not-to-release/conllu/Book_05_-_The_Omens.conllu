@@ -2151,21 +2151,21 @@
 # lemmatised = 100.00%
 # analysed = 100.00%
 # heads = 100.00%
-# relations = 85.71%
-1	Auh	auh	CCONJ	_	_	2	cc	_	Folio=5v|Paragraph=2|Line=48|Norm=Auh|Gloss=y
-2	qujluja	ilhuia	VERB	_	_	0	root	_	Folio=5v|Paragraph=2|Line=48|Norm=quilhuia
-3	in	in	DET	_	_	4	det	_	Folio=5v|Paragraph=2|Line=48|Norm=in
-4	maceoalli	macehualli	NOUN	_	State=Abs	2	nsubj	_	Folio=5v|Paragraph=2|Line=48|Norm=macehualli|Gloss=vasallo|Analysed=Yes
-5	,	,	PUNCT	_		7	punct	_	Folio=5v|Paragraph=2|Line=48|Norm=,|Analysed=Yes
-6	in	in	SCONJ	_	_	7	mark	_	Orig=ino¶·qujmottiti|Folio=5v,5v|Paragraph=2,2|Line=48,49|Norm=in
-7	oqujmottiti	mottitia	VERB	_	Aspect=Prior|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	4	acl	_	Orig=ino¶·qujmottiti|Folio=5v,5v|Paragraph=2,2|Line=48,49|Norm=oquimottiti|Analysed=Yes
-8	:	:	PUNCT	_		10	punct	_	Folio=5v|Paragraph=2|Line=49|Norm=:|Analysed=Yes
-9	amo	amo	ADV	_		10	advmod	_	Orig=amonjmjtzcaoaz|Folio=5v|Paragraph=2|Line=49|Norm=amo|Gloss=no|Analysed=Yes
-10	njmjtzcaoaz	cahua	VERB	_	Number[obj]=Sing|Number[subj]=Sing|Person[obj]=2|Person[subj]=1|Subcat=Tran|Tense=Fut|VerbForm=Fin	2	ccomp	_	Orig=amonjmjtzcaoaz|Folio=5v|Paragraph=2|Line=49|Norm=nimitzcahuaz|Analysed=Yes
-11	,	,	PUNCT	_		13	punct	_	Folio=5v|Paragraph=2|Line=49|Norm=,|Analysed=Yes
-12	ca	cah|ca	VERB	_	_	13	_	_	Orig=caonj¶·mjtzan|Folio=5v,5v|Paragraph=2,2|Line=49,50|Norm=ca|AmbigNorm=True|Override=False
-13	onjmjtzan	ana	VERB	_	Aspect=Prior|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=2|Person[subj]=1|Subcat=Tran|Tense=Past|VerbForm=Fin	10	_	_	Orig=caonj¶·mjtzan|Folio=5v,5v|Paragraph=2,2|Line=49,50|Norm=onimitzan|Analysed=Yes
-14	.	.	PUNCT	_		2	punct	_	Folio=5v|Paragraph=2|Line=50|Norm=.|Analysed=Yes
+# relations = 100.00%
+1	Auh	auh	CCONJ	_	_	2	cc	2:cc	Folio=5v|Paragraph=2|Line=48|Norm=Auh|Gloss=y
+2	qujluja	ilhuia	VERB	_	_	0	root	0:root	Folio=5v|Paragraph=2|Line=48|Norm=quilhuia
+3	in	in	DET	_	_	4	det	4:det	Folio=5v|Paragraph=2|Line=48|Norm=in
+4	maceoalli	macehualli	NOUN	_	State=Abs	2	nsubj	2:nsubj	Folio=5v|Paragraph=2|Line=48|Norm=macehualli|Gloss=vasallo|Analysed=Yes
+5	,	,	PUNCT	_		7	punct	7:punct	Folio=5v|Paragraph=2|Line=48|Norm=,|Analysed=Yes
+6	in	in	SCONJ	_	_	7	mark	7:mark	Orig=ino¶·qujmottiti|Folio=5v,5v|Paragraph=2,2|Line=48,49|Norm=in
+7	oqujmottiti	mottitia	VERB	_	Aspect=Prior|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	4	acl	4:acl	Orig=ino¶·qujmottiti|Folio=5v,5v|Paragraph=2,2|Line=48,49|Norm=oquimottiti|Analysed=Yes
+8	:	:	PUNCT	_		10	punct	10:punct	Folio=5v|Paragraph=2|Line=49|Norm=:|Analysed=Yes
+9	amo	amo	ADV	_		10	advmod	10:advmod	Orig=amonjmjtzcaoaz|Folio=5v|Paragraph=2|Line=49|Norm=amo|Gloss=no|Analysed=Yes
+10	njmjtzcaoaz	cahua	VERB	_	Number[obj]=Sing|Number[subj]=Sing|Person[obj]=2|Person[subj]=1|Subcat=Tran|Tense=Fut|VerbForm=Fin	2	parataxis:speech	2:parataxis:speech	Orig=amonjmjtzcaoaz|Folio=5v|Paragraph=2|Line=49|Norm=nimitzcahuaz|Analysed=Yes
+11	,	,	PUNCT	_		13	punct	13:punct	Folio=5v|Paragraph=2|Line=49|Norm=,|Analysed=Yes
+12	ca	cah|ca	PART	_	_	13	discourse	13:discourse	Orig=caonj¶·mjtzan|Folio=5v,5v|Paragraph=2,2|Line=49,50|Norm=ca|AmbigNorm=True|Override=False
+13	onjmjtzan	ana	VERB	_	Aspect=Prior|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=2|Person[subj]=1|Subcat=Tran|Tense=Past|VerbForm=Fin	10	parataxis:shared	10:parataxis:shared	Orig=caonj¶·mjtzan|Folio=5v,5v|Paragraph=2,2|Line=49,50|Norm=onimitzan|Analysed=Yes
+14	.	.	PUNCT	_		2	punct	2:punct	Folio=5v|Paragraph=2|Line=50|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:36
 # text = Ic vncan qujluja, izca ce vitztli: njmtzmaca, xinechcaoa: amo qujcelia, amo qujuelitta, in jollochicaoac: qujnjquac quicaoa, intla eei, anoço ie nauj, qujmaca vitztli: ic qujnextia, qujnezcaiotia, ca tlamatiuh in iavc, amo nenqujcaz: izquj caciz in oqujtenevilli, in oqujmacac viztli: ic much vncan, qujmaceoaltia in tlalticpan paqujliztli, neiollaliliztli: in xuchitl, in jietl, in netlamachtilli: in tilmatli, in tencacatl, in tlalpilonj.
