@@ -175,6 +175,43 @@
 3	chiqujmoli	chiquimoli	NOUN	_	State=Abs	2	nmod	1:nmod	Analysed=Yes|Folio=13v|Line=1|Norm=chiquimoli|Paragraph=5|SpaceAfter=No
 4	.	.	PUNCT	_	_	1	punct	1:punct	Folio=13v|Paragraph=5|Line=1|Norm=.|Analysed=Yes
 
+# sent_id = Book_05_-_The_Omens.txt:100
+# text = Auh in jqc tepan tzatzia, netetzaujloia: qujtovaia, ca amo qualcan, in otioallaque: ca itla ipan ticholozque.
+# text[norm] = Auh in ihcuac tepan tzatzia, netetzahuiloya: quitoaya, ca amo cualcan, in otihuallaque: ca itla ipan ticholozque.
+# text[orig] = Auh·injqc¶tepan·tzatzia·,·netetzaujloia·:·quj¶tovaia·,·ca·amo·qualcan·,·inotioal¶laque·:·ca·itla·ipan·ticholozque·.
+# text[eng] = And when at someone it cries, it was considered an omen: they said it is not good time, that we have come: we will flee from something.
+# text[osp] = [...] quando le oyan bozear en las montañas: que luego concebian sospecha, que les auja de venir algun mal.
+# references = A&D/180:5
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/32
+1	Auh	auh	CCONJ	_	_	7	cc	7:cc	Folio=13v|Paragraph=6|Line=3|Norm=Auh|Gloss=y
+2	in	in	SCONJ	_	_	5	mark	5:mark	Orig=injqc¶|Folio=13v|Paragraph=6|Line=3|Norm=in
+3	jqc	ihcuac	ADV	_	_	5	advmod	5:advmod	Orig=injqc¶|Folio=13v|Paragraph=6|Line=3|Norm=ihcuac|Gloss=en.el.momento
+4	tepan	pan	NOUN	_	Animacy[psor]=Hum|NounType=Relat|Person[psor]=3|State=Pos	5	obl	5:obl	Folio=13v|Paragraph=6|Line=4|Norm=tepan|Analysed=Yes
+5	tzatzia	tzatzia	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	7	advcl	7:advcl	AmbigNorm=True|Analysed=Yes|Folio=13v|Line=4|Norm=tzatzia|Override=False|Paragraph=6|SpaceAfter=No
+6	,	,	PUNCT	_	_	5	punct	7:punct	Folio=13v|Paragraph=6|Line=4|Norm=,|Analysed=Yes
+7	netetzaujloia	tetzahuia	VERB	_	_	0	root	0:root	Folio=13v|Line=4|Norm=netetzahuiloya|Paragraph=6|SpaceAfter=No
+8	:	:	PUNCT	_	_	9	punct	9:punct	Folio=13v|Paragraph=6|Line=4|Norm=:|Analysed=Yes
+9	qujtovaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	7	parataxis	7:parataxis	Analysed=Yes|Folio=13v,14r|Line=4,1|Norm=quitoaya|Orig=quj¶·tovaia|Paragraph=6,1|SpaceAfter=No
+10	,	,	PUNCT	_	_	13	punct	13:punct	Folio=14r|Paragraph=1|Line=1|Norm=,|Analysed=Yes
+11	ca	ca	PART	_	_	13	discourse	13:discourse	Folio=14r|Paragraph=1|Line=1|Norm=ca|AmbigNorm=True|Override=False
+12	amo	amo	ADV	_	_	13	advmod	13:advmod	Folio=14r|Paragraph=1|Line=1|Norm=amo|Gloss=no|Analysed=Yes
+13	qualcan	cualcan	ADV	_	_	9	parataxis:speech	9:parataxis:speech	Folio=14r|Gloss=a.buena.hora|Line=1|Norm=cualcan|Paragraph=1|SpaceAfter=No
+14	,	,	PUNCT	_	_	16	punct	16:punct	Folio=14r|Paragraph=1|Line=1|Norm=,|Analysed=Yes
+15	in	in	SCONJ	_	_	16	mark	16:mark	Orig=inotioal¶·laque|Folio=14r,14r|Paragraph=1,1|Line=1,2|Norm=in
+16	otioallaque	hualla	VERB	_	Aspect=Prior|Number[subj]=Plur|Person[subj]=1|Subcat=Intr	13	csubj	13:csubj	Analysed=Yes|Folio=14r,14r|Line=1,2|Norm=otihuallaque|Orig=inotioal¶·laque|Paragraph=1,1|SpaceAfter=No
+17	:	:	PUNCT	_	_	21	punct	21:punct	Folio=14r|Paragraph=1|Line=2|Norm=:|Analysed=Yes
+18	ca	ca	PART	_	_	21	discourse	21:discourse	Folio=14r|Paragraph=1|Line=2|Norm=ca|AmbigNorm=True|Override=False
+19	itla	tla	PRON	_	_	20	nmod	20:nmod	Folio=14r|Paragraph=1|Line=2|Norm=itla|AmbigNorm=True|Override=False|Gloss=algo
+20	ipan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	21	obl	21:obl	Folio=14r|Paragraph=1|Line=2|Norm=ipan|Analysed=Yes
+21	ticholozque	choloa	VERB	_	Number[subj]=Plur|Person[subj]=1|Subcat=Intr|Tense=Fut|VerbForm=Fin	9	parataxis:speech	9:parataxis:speech	Analysed=Yes|Folio=14r|Line=2|Norm=ticholozque|Paragraph=1|SpaceAfter=No
+22	.	.	PUNCT	_	_	7	punct	7:punct	Folio=14r|Paragraph=1|Line=2|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:101
 # text = Tetzaujtl itechpa in coiutl.
 # text[norm] = Tetzahuitl itechpa in coyotl.
