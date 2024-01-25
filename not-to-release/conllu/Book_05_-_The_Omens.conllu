@@ -649,17 +649,17 @@
 # lemmatised = 100.00%
 # analysed = 90.00%
 # heads = 100.00%
-# relations = 50.00%
-1	Ivin	ihuin	ADV	_		4	_	_	Folio=2r|Paragraph=1|Line=14|Norm=Ihuin|Analysed=Yes
-2	,	,	PUNCT	_		4	punct	_	Folio=2r|Paragraph=1|Line=14|Norm=,|Analysed=Yes
-3	in	in	DET|SCONJ	_	_	4	_	_	Orig=inqujchioaia|Folio=2r|Paragraph=1|Line=14|Norm=in
-4	qujchioaia	chihua	VERB	_	_	0	root	_	Orig=inqujchioaia|Folio=2r|Paragraph=1|Line=14|Norm=quichihuaya|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
-5	,	,	PUNCT	_		6	punct	_	Folio=2r|Paragraph=1|Line=14|Norm=,|Analysed=Yes
-6	motetzaujanj	tetzahuia	VERB	_	_	4	_	_	Orig=mo¶·tetzaujanj|Folio=2r,2r|Paragraph=1,1|Line=14,15|Norm=motetzahuiani
-7	,	,	PUNCT	_		8	punct	_	Folio=2r|Paragraph=1|Line=15|Norm=,|Analysed=Yes
-8	motetzauj	tetzahuia	VERB	_	_	6	_	_	Folio=2r|Paragraph=1|Line=15|Norm=motetzahui
-9	.	.	PUNCT	_		4	punct	_	Folio=2r|Paragraph=1|Line=15|Norm=.|Analysed=Yes
-10	etc.	etc.	NOUN	_	State=Abs	4	_	_	Folio=2r|Paragraph=1|Line=15|Norm=etc.|Analysed=Yes
+# relations = 100.00%
+1	Ivin	ihuin	ADV	_		0	root	0:root	Folio=2r|Paragraph=1|Line=14|Norm=Ihuin|Analysed=Yes
+2	,	,	PUNCT	_		4	punct	4:punct	Folio=2r|Paragraph=1|Line=14|Norm=,|Analysed=Yes
+3	in	in	SCONJ	_	_	4	mark	4:mark	Orig=inqujchioaia|Folio=2r|Paragraph=1|Line=14|Norm=in
+4	qujchioaia	chihua	VERB	_	_	1	csubj	1:csubj	Orig=inqujchioaia|Folio=2r|Paragraph=1|Line=14|Norm=quichihuaya|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
+5	,	,	PUNCT	_		6	punct	6:punct	Folio=2r|Paragraph=1|Line=14|Norm=,|Analysed=Yes
+6	motetzaujanj	tetzahuia	VERB	_	_	4	nsubj	4:nsubj	Orig=mo¶·tetzaujanj|Folio=2r,2r|Paragraph=1,1|Line=14,15|Norm=motetzahuiani
+7	,	,	PUNCT	_		8	punct	8:punct	Folio=2r|Paragraph=1|Line=15|Norm=,|Analysed=Yes
+8	motetzauj	tetzahuia	VERB	_	_	6	appos	6:appos	Folio=2r|Paragraph=1|Line=15|Norm=motetzahui
+9	.	.	PUNCT	_		4	punct	4:punct	Folio=2r|Paragraph=1|Line=15|Norm=.|Analysed=Yes
+10	etc.	etc.	NOUN	_	State=Abs	4	conj	4:conj	Folio=2r|Paragraph=1|Line=15|Norm=etc.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:13
 # text = Ic ome capitulo, vncan mjtoa: in tetzaujtl catca, in çan necoc tlachiaia: in juhquj catca, in jquac qujcaquja, in tzatzia oactli: ioan in tlein qujchioaia, puchteca in jquac cana iuhquj vtlica, in jnpan muchioaia in anoço inpan tzatzia.

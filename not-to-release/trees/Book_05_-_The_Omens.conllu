@@ -581,18 +581,20 @@
 # text = Ivin, in qujchioaia, motetzaujanj, motetzauj. etc.
 # text[norm] = Ihuin, in quichihuaya, motetzahuiani, motetzahui. etc.
 # text[orig] = Ivin·,·inqujchioaia·,·mo¶tetzaujanj·,·motetzauj·¬§·etc.
+# text[osp] = Desta manera hazian: los que oyan el aguero, arriba dicho.
+# references = A&D/161:3
 # tagged = 100.00%
-# analysed = 70.00%
-1	Ivin	_	ADV	_	_	4	_	_	_
-2	,	,	PUNCT	_	_	4	punct	_	_
-3	in	in	DET|SCONJ	_	_	4	_	_	_
-4	qujchioaia	chihua	VERB	_	_	0	root	_	_
-5	,	,	PUNCT	_	_	6	punct	_	_
-6	motetzaujanj	_	NOUN	_	_	4	_	_	_
-7	,	,	PUNCT	_	_	8	punct	_	_
-8	motetzauj	tetzahuia	NOUN	_	_	6	_	_	_
-9	.	.	PUNCT	_	_	4	punct	_	_
-10	etc.	_	NOUN	_	_	4	_	_	_
+# analysed = 90.00%
+1	Ivin	ihuin	ADV	_	_	0	root	0:root	_
+2	,	,	PUNCT	_	_	4	punct	4:punct	_
+3	in	in	SCONJ	_	_	4	mark	4:mark	_
+4	qujchioaia	chihua	VERB	_	_	1	csubj	1:csubj	_
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	motetzaujanj	tetzahuia	NOUN	_	_	4	nsubj	4:nsubj	_
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	motetzauj	tetzahuia	NOUN	_	_	6	appos	6:appos	_
+9	.	.	PUNCT	_	_	4	punct	4:punct	_
+10	etc.	etc.	NOUN	_	State=Abs	4	conj	4:conj	_
 
 # sent_id = Book_05_-_The_Omens.txt:13
 # text = Ic ome capitulo, vncan mjtoa: in tetzaujtl catca, in çan necoc tlachiaia: in juhquj catca, in jquac qujcaquja, in tzatzia oactli: ioan in tlein qujchioaia, puchteca in jquac cana iuhquj vtlica, in jnpan muchioaia in anoço inpan tzatzia.

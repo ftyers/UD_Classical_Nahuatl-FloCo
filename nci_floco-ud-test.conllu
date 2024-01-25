@@ -1,3 +1,27 @@
+# sent_id = Book_05_-_The_Omens.txt:12
+# text = Ivin, in qujchioaia, motetzaujanj, motetzauj. etc.
+# text[norm] = Ihuin, in quichihuaya, motetzahuiani, motetzahui. etc.
+# text[orig] = Ivin·,·inqujchioaia·,·mo¶tetzaujanj·,·motetzauj·¬§·etc.
+# text[osp] = Desta manera hazian: los que oyan el aguero, arriba dicho.
+# references = A&D/161:3
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 90.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/3
+1	Ivin	ihuin	ADV	_	_	0	root	0:root	Analysed=Yes|Folio=2r|Line=14|Norm=Ihuin|Paragraph=1|SpaceAfter=No
+2	,	,	PUNCT	_	_	4	punct	4:punct	Folio=2r|Paragraph=1|Line=14|Norm=,|Analysed=Yes
+3	in	in	SCONJ	_	_	4	mark	4:mark	Orig=inqujchioaia|Folio=2r|Paragraph=1|Line=14|Norm=in
+4	qujchioaia	chihua	VERB	_	_	1	csubj	1:csubj	Ambiguous=Yes|Analysed=Yes|Folio=2r|Guessed=Yes|Line=14|Norm=quichihuaya|Orig=inqujchioaia|Paragraph=1|SpaceAfter=No
+5	,	,	PUNCT	_	_	6	punct	6:punct	Folio=2r|Paragraph=1|Line=14|Norm=,|Analysed=Yes
+6	motetzaujanj	tetzahuia	VERB	_	_	4	nsubj	4:nsubj	Folio=2r,2r|Line=14,15|Norm=motetzahuiani|Orig=mo¶·tetzaujanj|Paragraph=1,1|SpaceAfter=No
+7	,	,	PUNCT	_	_	8	punct	8:punct	Folio=2r|Paragraph=1|Line=15|Norm=,|Analysed=Yes
+8	motetzauj	tetzahuia	VERB	_	_	6	appos	6:appos	Folio=2r|Line=15|Norm=motetzahui|Paragraph=1|SpaceAfter=No
+9	.	.	PUNCT	_	_	4	punct	4:punct	Folio=2r|Paragraph=1|Line=15|Norm=.|Analysed=Yes
+10	etc.	etc.	NOUN	_	State=Abs	4	conj	4:conj	Folio=2r|Paragraph=1|Line=15|Norm=etc.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:28
 # text = Iquac caqujztia, in ouellallimjctimotecac: in aocac naoati.
 # text[norm] = Ihcuac caquiztiya, in ohuellallimictimotecac: in ayocac nahuati.
