@@ -5116,30 +5116,33 @@
 # text = Auh in jqc tepan tzatzia, netetzaujloia: qujtovaia, ca amo qualcan, in otioallaque: ca itla ipan ticholozque.
 # text[norm] = Auh in ihcuac tepan tzatzia, netetzahuiloya: quitoaya, ca amo cualcan, in otihuallaque: ca itla ipan ticholozque.
 # text[orig] = Auh·injqc¶tepan·tzatzia·,·netetzaujloia·:·quj¶tovaia·,·ca·amo·qualcan·,·inotioal¶laque·:·ca·itla·ipan·ticholozque·.
+# text[eng] = And when at someone it cries, it was considered an omen: they said it is not good time, that we have come: we will flee from something.
+# text[osp] = [...] quando le oyan bozear en las montañas: que luego concebian sospecha, que les auja de venir algun mal.
+# references = A&D/180:5
 # tagged = 100.00%
-# analysed = 95.45%
-1	Auh	auh	CCONJ	_	_	7	_	_	_
-2	in	in	DET|SCONJ	_	_	5	_	_	_
-3	jqc	ihcuac	SCONJ	_	_	5	_	_	_
-4	tepan	_	NOUN	_	NounType=Relat	5	_	_	_
-5	tzatzia	tzatzia	VERB	_	_	7	_	_	_
-6	,	,	PUNCT	_	_	7	punct	_	_
-7	netetzaujloia	tetzahuia	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Reflexive[iobj]=Yes|Subcat=Ditr|Tense=Past|VerbForm=Fin	0	root	_	_
-8	:	:	PUNCT	_	_	9	punct	_	_
-9	qujtovaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	7	_	_	_
-10	,	,	PUNCT	_	_	13	punct	_	_
-11	ca	_	VERB	_	_	13	_	_	_
-12	amo	amo	ADV	_	_	13	_	_	_
-13	qualcan	_	ADV	_	_	9	_	_	_
-14	,	,	PUNCT	_	_	16	punct	_	_
-15	in	in	DET|SCONJ	_	_	16	_	_	_
-16	otioallaque	_	VERB	_	_	13	_	_	_
-17	:	:	PUNCT	_	_	21	punct	_	_
-18	ca	_	VERB	_	_	21	_	_	_
-19	itla	_	PRON	_	_	21	_	_	_
-20	ipan	_	NOUN	_	NounType=Relat	21	_	_	_
-21	ticholozque	choloa	VERB	_	Number[subj]=Plur|Person[subj]=1|Subcat=Intr|Tense=Fut|VerbForm=Fin	13	_	_	_
-22	.	.	PUNCT	_	_	7	punct	_	_
+# analysed = 100.00%
+1	Auh	auh	CCONJ	_	_	7	cc	7:cc	_
+2	in	in	SCONJ	_	_	5	mark	5:mark	_
+3	jqc	ihcuac	ADV	_	_	5	advmod	5:advmod	_
+4	tepan	pan	NOUN	_	NounType=Relat	5	obl	5:obl	_
+5	tzatzia	tzatzia	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	7	advcl	7:advcl	_
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	netetzaujloia	tetzahuia	VERB	_	_	0	root	0:root	_
+8	:	:	PUNCT	_	_	9	punct	9:punct	_
+9	qujtovaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	7	parataxis	7:parataxis	_
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11	ca	ca	PART	_	_	13	discourse	13:discourse	_
+12	amo	amo	ADV	_	_	13	advmod	13:advmod	_
+13	qualcan	cualcan	NOUN	_	_	9	parataxis:speech	9:parataxis:speech	_
+14	,	,	PUNCT	_	_	16	punct	16:punct	_
+15	in	in	SCONJ	_	_	16	mark	16:mark	_
+16	otioallaque	hualla	VERB	_	Aspect=Prior|Number[subj]=Plur|Person[subj]=1|Subcat=Intr	13	_	13	_
+17	:	:	PUNCT	_	_	21	punct	21:punct	_
+18	ca	ca	PART	_	_	21	discourse	21:discourse	_
+19	itla	tla	PRON	_	_	21	nsubj	21:nsubj	_
+20	ipan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	21	obl	21:obl	_
+21	ticholozque	choloa	VERB	_	Number[subj]=Plur|Person[subj]=1|Subcat=Intr|Tense=Fut|VerbForm=Fin	9	parataxis:speech	9:parataxis:speech	_
+22	.	.	PUNCT	_	_	7	punct	7:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:101
 # text = Tetzaujtl itechpa in coiutl.
