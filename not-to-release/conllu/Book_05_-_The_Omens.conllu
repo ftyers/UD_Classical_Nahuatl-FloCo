@@ -3088,31 +3088,31 @@
 # lemmatised = 100.00%
 # analysed = 100.00%
 # heads = 100.00%
-# relations = 62.50%
-1	Ic	ic	ADV	_	_	2	_	_	Orig=Icchiquacen|Folio=8r|Paragraph=2|Line=1|Norm=Ic
-2	chiquacen	chicuacen	NUM	_		3	_	_	Orig=Icchiquacen|Folio=8r|Paragraph=2|Line=1|Norm=chicuacen|Gloss=seis|Analysed=Yes
-3	capitulo	capítulo	NOUN	_	State=Abs	6	_	_	Folio=8r|Paragraph=2|Line=1|Norm=capítulo|Analysed=Yes
-4	,	,	PUNCT	_		6	punct	_	Folio=8r|Paragraph=2|Line=1|Norm=,|Analysed=Yes
-5	vncan	oncan	ADV	_		6	_	_	Folio=8r|Paragraph=2|Line=1|Norm=oncan|Gloss=aquí|Analysed=Yes
-6	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	Orig=mj¶·toa|Folio=8r,8r|Paragraph=2,2|Line=1,2|Norm=mihtoa|Analysed=Yes
-7	:	:	PUNCT	_		9	punct	_	Folio=8r|Paragraph=2|Line=2|Norm=:|Analysed=Yes
-8	in	in	DET|SCONJ	_	_	9	_	_	Orig=intetzaujtl|Folio=8r|Paragraph=2|Line=2|Norm=in
-9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	_	_	Orig=intetzaujtl|Folio=8r|Paragraph=2|Line=2|Norm=tetzahuitl|Analysed=Yes
-10	catca	catqui	AUX	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Tense=Past|VerbForm=Fin	9	_	_	Folio=8r|Paragraph=2|Line=2|Norm=catca|Analysed=Yes
-11	,	,	PUNCT	_		13	punct	_	Folio=8r|Paragraph=2|Line=2|Norm=,|Analysed=Yes
-12	injc	inic	SCONJ	_	_	13	_	_	Folio=8r|Paragraph=2|Line=2|Norm=inic
-13	motetzaujaia	tetzahuia	VERB	_	_	9	_	_	Orig=motetzauj¶·aia|Folio=8r,8r|Paragraph=2,2|Line=2,3|Norm=motetzahuiaya|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
-14	:	:	PUNCT	_		18	punct	_	Folio=8r|Paragraph=2|Line=3|Norm=:|Analysed=Yes
-15	in	in	DET|SCONJ	_	_	18	mark	_	Orig=injquac|Folio=8r|Paragraph=2|Line=3|Norm=in
-16	jquac	ihcuac	ADV	_	_	18	mark	_	Orig=injquac|Folio=8r|Paragraph=2|Line=3|Norm=ihcuac|Gloss=en.el.momento
-17	aca	aca	DET|PRON	_	_	18	nsubj	_	Folio=8r|Paragraph=2|Line=3|Norm=aca
-18	qujttaia	itta	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	13	advcl	_	Folio=8r|Paragraph=2|Line=3|Norm=quittaya|Analysed=Yes
-19	,	,	PUNCT	_		20	punct	_	Folio=8r|Paragraph=2|Line=3|Norm=,|Analysed=Yes
-20	cocamatl	cozamatl	NOUN	_	State=Abs	18	obj	_	Folio=8r|Paragraph=2|Line=3|Norm=cozamatl|Analysed=Yes
-21	in	in	DET|SCONJ	_	_	23	mark	_	Folio=8r|Paragraph=2|Line=3|Norm=in
-22	teixpan	ixpan	NOUN	_	Animacy[psor]=Hum|NounType=Relat|Person[psor]=3|State=Pos	23	obl	_	Folio=8r|Paragraph=2|Line=4|Norm=teixpan|Analysed=Yes
-23	tlaujltequja	tlahuiltequi	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	20	acl	_	Folio=8r|Paragraph=2|Line=4|Norm=tlahuiltequiya|Analysed=Yes
-24	.	.	PUNCT	_		6	punct	_	Folio=8r|Paragraph=2|Line=4|Norm=.|Analysed=Yes
+# relations = 100.00%
+1	Ic	ic	ADV	_	_	3	amod	3:amod	Orig=Icchiquacen|Folio=8r|Paragraph=2|Line=1|Norm=Ic
+2	chiquacen	chicuacen	NUM	_		1	nummod	1:nummod	Orig=Icchiquacen|Folio=8r|Paragraph=2|Line=1|Norm=chicuacen|Gloss=seis|Analysed=Yes
+3	capitulo	capítulo	NOUN	_	State=Abs	6	obl	6:obl	Folio=8r|Paragraph=2|Line=1|Norm=capítulo|Analysed=Yes
+4	,	,	PUNCT	_		6	punct	6:punct	Folio=8r|Paragraph=2|Line=1|Norm=,|Analysed=Yes
+5	vncan	oncan	ADV	_		6	advmod	6:advmod	Folio=8r|Paragraph=2|Line=1|Norm=oncan|Gloss=aquí|Analysed=Yes
+6	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Orig=mj¶·toa|Folio=8r,8r|Paragraph=2,2|Line=1,2|Norm=mihtoa|Analysed=Yes
+7	:	:	PUNCT	_		9	punct	9:punct	Folio=8r|Paragraph=2|Line=2|Norm=:|Analysed=Yes
+8	in	in	DET	_	_	9	mark	9:mark	Orig=intetzaujtl|Folio=8r|Paragraph=2|Line=2|Norm=in
+9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	csubj	6:csubj	Orig=intetzaujtl|Folio=8r|Paragraph=2|Line=2|Norm=tetzahuitl|Analysed=Yes
+10	catca	catqui	AUX	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Tense=Past|VerbForm=Fin	9	cop	9:cop	Folio=8r|Paragraph=2|Line=2|Norm=catca|Analysed=Yes
+11	,	,	PUNCT	_		13	punct	13:punct	Folio=8r|Paragraph=2|Line=2|Norm=,|Analysed=Yes
+12	injc	inic	SCONJ	_	_	13	mark	13:mark	Folio=8r|Paragraph=2|Line=2|Norm=inic
+13	motetzaujaia	tetzahuia	VERB	_	_	9	conj	9:conj	Orig=motetzauj¶·aia|Folio=8r,8r|Paragraph=2,2|Line=2,3|Norm=motetzahuiaya|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
+14	:	:	PUNCT	_		18	punct	18:punct	Folio=8r|Paragraph=2|Line=3|Norm=:|Analysed=Yes
+15	in	in	SCONJ	_	_	18	mark	18:mark	Orig=injquac|Folio=8r|Paragraph=2|Line=3|Norm=in
+16	jquac	ihcuac	ADV	_	_	18	advmod	18:advmod	Orig=injquac|Folio=8r|Paragraph=2|Line=3|Norm=ihcuac|Gloss=en.el.momento
+17	aca	aca	PRON	_	_	18	nsubj	18:nsubj	Folio=8r|Paragraph=2|Line=3|Norm=aca
+18	qujttaia	itta	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	13	advcl	13:advcl	Folio=8r|Paragraph=2|Line=3|Norm=quittaya|Analysed=Yes
+19	,	,	PUNCT	_		20	punct	20:punct	Folio=8r|Paragraph=2|Line=3|Norm=,|Analysed=Yes
+20	cocamatl	cozamatl	NOUN	_	State=Abs	18	obj	18:obj	Folio=8r|Paragraph=2|Line=3|Norm=cozamatl|Analysed=Yes
+21	in	in	SCONJ	_	_	23	mark	23:mark	Folio=8r|Paragraph=2|Line=3|Norm=in
+22	teixpan	ixpan	NOUN	_	Animacy[psor]=Hum|NounType=Relat|Person[psor]=3|State=Pos	23	obl	23:obl	Folio=8r|Paragraph=2|Line=4|Norm=teixpan|Analysed=Yes
+23	tlaujltequja	tlahuiltequi	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	20	acl	20:acl	Folio=8r|Paragraph=2|Line=4|Norm=tlahuiltequiya|Analysed=Yes
+24	.	.	PUNCT	_		6	punct	6:punct	Folio=8r|Paragraph=2|Line=4|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:52
 # text = No ioan netetzaujloia in cocamatl, anoço cocatli: in jquac aca ichan calaquja: anoço vtlica, cana qujnamjquj: qujiacaujltequj, ixpan tlaxtlapaloa: qujtoaia, aco ie itla conmonamjctiz tetolinj: aco ie itla ipan oncholoz, amo vel iaz in campa iaznequj: aco acame inmac vetzitiuh, qujmjctizque: anoço ie tlatolli, itech oneoaz: aco ie aca, tlatolli coneoaltiz: contlatollaqujliz, contlatolchichiujliz.

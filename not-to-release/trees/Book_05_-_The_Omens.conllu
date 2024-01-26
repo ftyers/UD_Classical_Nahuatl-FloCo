@@ -2808,34 +2808,39 @@
 
 # sent_id = Book_05_-_The_Omens.txt:51
 # text = Ic chiquacen capitulo, vncan mjtoa: in tetzaujtl catca, injc motetzaujaia: in jquac aca qujttaia, cocamatl in teixpan tlaujltequja.
-# text[norm] = Ic chicuacen capítulo, oncan mihtoa: in tezahuitl catca, inic motetzahuiaya: in ihcuac aca quittaya, cozamatl in teixpan tlahuiltequia.
+# text[norm] = Ic chicuacen capítulo, oncan mihtoa: in tetzahuitl catca, inic motetzahuiaya: in ihcuac aca quittaya, cozamatl in teixpan tlahuiltequiya.
 # text[orig] = Icchiquacen·capitulo·,·vncan·mj¶toa·:·intetzaujtl·catca·,·injc·motetzauj¶aia·:·injquac·aca·qujttaia·,·cocamatl·in¶teixpan·tlaujltequja·.
+# text[osp] = El sexto capitulo, tracta del mal aguero que tomauan: quando vian, que la comadreja, o mostolilla atrauesaua por delante dellos, quando yvan por el camjno, o por la calle.
+# references = A&D/170:1
 # tagged = 100.00%
-# analysed = 95.83%
-1	Ic	ic	ADV	_	_	2	_	_	_
-2	chiquacen	chicuacen	NUM	_	_	3	_	_	_
-3	capitulo	capítulo	NOUN	_	State=Abs	6	_	_	_
-4	,	,	PUNCT	_	_	6	punct	_	_
-5	vncan	_	ADV	_	_	6	_	_	_
-6	mjtoa	ihtoa	VERB	_	_	0	root	_	_
-7	:	:	PUNCT	_	_	9	punct	_	_
-8	in	in	DET|SCONJ	_	_	9	_	_	_
-9	tetzaujtl	tezahuitl	NOUN	_	State=Abs	6	_	_	_
-10	catca	_	VERB	_	Subcat=Intr	9	_	_	_
-11	,	,	PUNCT	_	_	13	punct	_	_
-12	injc	inic	SCONJ	_	_	13	_	_	_
-13	motetzaujaia	tetzahuia	VERB	_	_	9	_	_	_
-14	:	:	PUNCT	_	_	18	punct	_	_
-15	in	in	DET|SCONJ	_	_	18	mark	_	_
-16	jquac	ihcuac	SCONJ	_	_	18	mark	_	_
-17	aca	_	DET|PRON	_	_	18	nsubj	_	_
-18	qujttaia	itta	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	13	advcl	_	_
-19	,	,	PUNCT	_	_	20	punct	_	_
-20	cocamatl	cozamatl	NOUN	_	State=Abs	18	obj	_	_
-21	in	in	DET|SCONJ	_	_	23	mark	_	_
-22	teixpan	ixpan	NOUN	_	Animacy[psor]=Anim|NounType=Relat|Person[psor]=3|State=Poss	23	obl	_	_
-23	tlaujltequja	_	VERB	_	_	20	acl	_	_
-24	.	.	PUNCT	_	_	6	punct	_	_
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 62.50%
+1	Ic	ic	ADV	_	_	3	amod	3:amod	_
+2	chiquacen	chicuacen	NUM	_	_	1	nummod	1:nummod	_
+3	capitulo	capítulo	NOUN	_	State=Abs	6	obl	6:obl	_
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	vncan	oncan	ADV	_	_	6	advmod	6:advmod	_
+6	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	:	:	PUNCT	_	_	9	punct	9:punct	_
+8	in	in	DET	_	_	9	mark	9:mark	_
+9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	csubj	6:csubj	_
+10	catca	catqui	AUX	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Tense=Past|VerbForm=Fin	9	cop	9:cop	_
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	injc	inic	SCONJ	_	_	13	mark	13:mark	_
+13	motetzaujaia	tetzahuia	VERB	_	_	9	conj	9:conj	_
+14	:	:	PUNCT	_	_	18	punct	18:punct	_
+15	in	in	SCONJ	_	_	18	mark	18:mark	_
+16	jquac	ihcuac	ADV	_	_	18	advmod	18:advmod	_
+17	aca	aca	PRON	_	_	18	nsubj	18:nsubj	_
+18	qujttaia	itta	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	13	advcl	13:advcl	_
+19	,	,	PUNCT	_	_	20	punct	20:punct	_
+20	cocamatl	cozamatl	NOUN	_	State=Abs	18	obj	18:obj	_
+21	in	in	SCONJ	_	_	23	mark	23:mark	_
+22	teixpan	ixpan	NOUN	_	Animacy[psor]=Hum|NounType=Relat|Person[psor]=3|State=Pos	23	obl	23:obl	_
+23	tlaujltequja	tlahuiltequi	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	20	acl	20:acl	_
+24	.	.	PUNCT	_	_	6	punct	6:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:52
 # text = No ioan netetzaujloia in cocamatl, anoço cocatli: in jquac aca ichan calaquja: anoço vtlica, cana qujnamjquj: qujiacaujltequj, ixpan tlaxtlapaloa: qujtoaia, aco ie itla conmonamjctiz tetolinj: aco ie itla ipan oncholoz, amo vel iaz in campa iaznequj: aco acame inmac vetzitiuh, qujmjctizque: anoço ie tlatolli, itech oneoaz: aco ie aca, tlatolli coneoaltiz: contlatollaqujliz, contlatolchichiujliz.
