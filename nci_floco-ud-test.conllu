@@ -1,3 +1,37 @@
+# sent_id = Book_05_-_The_Omens.txt:1
+# text = Jc macujlli amuxtli, vncan moteneoa: in tetzaujtl catca, in qujtetzammatia, in iehoantin mexica.
+# text[norm] = Ic macuilli amoxtli, oncan motenehua: in tetzahuitl catca, in quitetzammatia, in yehhuantin mexica.
+# text[orig] = Jc·macujlli·amuxtli·,·vncan·mo¶teneoa·:·intetzaujtl·catca·,·inqujte¶tzammatia·,·in·iehoantin·mexica·.
+# text[eng] = Fifth book, here is told, that which was the omen, that they took to be an omen, they, the Mexica.
+# text[osp] = Libro quinto, que habla de los agueros: que esta gente mexicana _.
+# text[spa] = Libro quinto, que trata de los agüeros y pronósticos que estos naturales tomaban de algunas aves, animales, y sabandijas, para adivinar las cosas futuras.
+# references = A&D/160:1
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/14
+1	Jc	ic	ADV	_	_	3	amod	3:amod	Folio=1r|Paragraph=1|Line=1|Norm=Ic
+2	macujlli	macuilli	NUM	_	_	1	nummod	1:nummod	Folio=1r|Paragraph=1|Line=1|Norm=macuilli|Gloss=cinco
+3	amuxtli	amoxtli	NOUN	_	State=Abs	6	obl	6:obl	Analysed=Yes|Folio=1r|Gloss=libro|Line=1|Norm=amoxtli|Paragraph=1|SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	6:punct	Folio=1r|Paragraph=1|Line=1|Norm=,|Analysed=Yes
+5	vncan	oncan	ADV	_	_	6	advmod	6:advmod	Folio=1r|Paragraph=1|Line=1|Norm=oncan|Gloss=aquí|Analysed=Yes
+6	moteneoa	tenehua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	AmbigNorm=True|Analysed=Yes|Folio=1r,1r|Line=1,2|Norm=motenehua|Orig=mo¶·teneoa|Override=False|Paragraph=1,1|SpaceAfter=No
+7	:	:	PUNCT	_	_	9	punct	9:punct	Folio=1r|Paragraph=1|Line=2|Norm=:|Analysed=Yes
+8	in	in	SCONJ	_	_	9	mark	9:mark	Orig=intetzaujtl|Folio=1r|Paragraph=1|Line=2|Norm=in
+9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	csubj	6:csubj	Orig=intetzaujtl|Folio=1r|Paragraph=1|Line=2|Norm=tetzahuitl|Analysed=Yes
+10	catca	catqui	AUX	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Tense=Past|VerbForm=Fin	9	cop	9:cop	Analysed=Yes|Folio=1r|Line=2|Norm=catca|Paragraph=1|SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	Folio=1r|Paragraph=1|Line=2|Norm=,|Analysed=Yes
+12	in	in	SCONJ	_	_	13	mark	13:mark	Orig=inqujte¶·tzammatia|Folio=1r,1r|Paragraph=1,1|Line=2,3|Norm=in
+13	qujtetzammatia	tetzammatia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	9	conj	9:conj	Analysed=Yes|Folio=1r,1r|Line=2,3|Norm=quitetzammatia|Orig=inqujte¶·tzammatia|Paragraph=1,1|SpaceAfter=No
+14	,	,	PUNCT	_	_	16	punct	16:punct	Folio=1r|Paragraph=1|Line=3|Norm=,|Analysed=Yes
+15	in	in	DET	_	_	16	det	16:det	Folio=1r|Paragraph=1|Line=3|Norm=in
+16	iehoantin	yehhuan	PRON	_	Number=Plur|Person=3|PronType=Prs	13	nsubj	13:nsubj	Folio=1r|Paragraph=1|Line=3|Norm=yehhuantin|Gloss=ellos|Analysed=Yes
+17	mexica	mexicatl	NOUN	_	Number=Plur	16	appos	16:appos	Analysed=Yes|Folio=1r|Line=3|Norm=mexica|Paragraph=1|SpaceAfter=No
+18	.	.	PUNCT	_	_	6	punct	6:punct	Folio=1r|Paragraph=1|Line=3|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:12
 # text = Ivin, in qujchioaia, motetzaujanj, motetzauj. etc.
 # text[norm] = Ihuin, in quichihuaya, motetzahuiani, motetzahui. etc.

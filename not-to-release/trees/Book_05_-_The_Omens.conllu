@@ -1,28 +1,28 @@
 # sent_id = Book_05_-_The_Omens.txt:1
 # text = Jc macujlli amuxtli, vncan moteneoa: in tetzaujtl catca, in qujtetzammatia, in iehoantin mexica.
-# text[norm] = Ic macuilli amoxtli, oncan motenehua: in tezahuitl catca, in quitetzammatia, in yehhuantin mexica.
-# text[spa] = Libro quinto, que trata de los agüeros y pronósticos que estos naturales tomaban de algunas aves, animales, y sabandijas, para adivinar las cosas futuras.
+# text[norm] = Ic macuilli amoxtli, oncan motenehua: in tetzahuitl catca, in quitetzammatia, in yehhuantin mexica.
 # text[orig] = Jc·macujlli·amuxtli·,·vncan·mo¶teneoa·:·intetzaujtl·catca·,·inqujte¶tzammatia·,·in·iehoantin·mexica·.
+# references = A&D/160:1
 # tagged = 100.00%
 # analysed = 100.00%
-1	Jc	ic	ADJ	_	_	3	amod	_	_
-2	macujlli	macuilli	NUM	_	_	1	nummod	_	_
-3	amuxtli	amoxtli	NOUN	_	State=Abs	6	obl	_	_
-4	,	,	PUNCT	_	_	6	punct	_	_
-5	vncan	_	ADV	_	_	6	advmod	_	_
-6	moteneoa	tenehua	VERB	_	_	0	root	_	_
-7	:	:	PUNCT	_	_	8	punct	_	_
-8	in	in	PRON	_	_	6	nsubj	_	_
-9	tetzaujtl	tezahuitl	NOUN	_	State=Abs	8	acl	_	_
-10	catca	_	VERB	_	Subcat=Intr	9	cop	_	_
-11	,	,	PUNCT	_	_	13	punct	_	_
-12	in	in	SCONJ	_	_	13	mark	_	_
-13	qujtetzammatia	tetzammatia	VERB	_	_	9	acl	_	_
-14	,	,	PUNCT	_	_	16	punct	_	_
-15	in	in	DET	_	_	16	det	_	_
-16	iehoantin	yehhuan	PRON	_	Number=Plur|Person=3|PronType=Prs	13	nsubj	_	_
-17	mexica	mexicatl	NOUN	_	Number=Plur	16	appos	_	_
-18	.	.	PUNCT	_	_	6	punct	_	_
+1	Jc	ic	ADV	_	_	3	amod	3:amod	_
+2	macujlli	macuilli	NUM	_	_	1	nummod	1:nummod	_
+3	amuxtli	amoxtli	NOUN	_	State=Abs	6	obl	6:obl	_
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	vncan	oncan	ADV	_	_	6	advmod	6:advmod	_
+6	moteneoa	tenehua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	:	:	PUNCT	_	_	9	punct	9:punct	_
+8	in	in	SCONJ	_	_	9	mark	9:mark	_
+9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	csubj	6:csubj	_
+10	catca	catqui	AUX	_	Subcat=Intr	9	cop	9:cop	_
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	in	in	SCONJ	_	_	13	mark	13:mark	_
+13	qujtetzammatia	tetzammatia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	9	conj	9:conj	_
+14	,	,	PUNCT	_	_	16	punct	16:punct	_
+15	in	in	DET	_	_	16	det	16:det	_
+16	iehoantin	yehhuan	PRON	_	Number=Plur|Person=3|PronType=Prs	13	nsubj	13:nsubj	_
+17	mexica	mexicatl	NOUN	_	Number=Plur	16	appos	16:appos	_
+18	.	.	PUNCT	_	_	6	punct	6:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:2
 # text = Jc ce capitulo, vncan mitoa, in tetzaujtl in qujtetzammatia: in iquac ioaltica, aca quicaquja: in chocaia: itla tequanj, in anoce, iuhquj aca ilama chocaia: auh iequene, in tlejn qujtoaia, tonalpouhque: in mjtovaia tlamatinjme catca.
@@ -3749,32 +3749,37 @@
 
 # sent_id = Book_05_-_The_Omens.txt:73
 # text = Ic matlactli capitulo, vncan mjtoa: in tetzaujtl injc motetzaujaia, in jntechpa azcame, anoço cuecueia: ioan in qujqujmjchtin.
-# text[norm] = Ic matlactli capítulo, oncan mihtoa: in tezahuitl inic motetzahuiaya, in intechpa azcame, anozo cuecueya: ihuan in quiquimichtin.
+# text[norm] = Ic matlactli capítulo, oncan mihtoa: in tetzahuitl inic motetzahuiaya, in intechpa azcame, anozo cuecueya: ihuan in quiquimichtin.
 # text[orig] = Ic·matlactli·capitulo·,·vncan·mj¶toa·:·in·tetzaujtl·injc·motetzaujaia·,·injntechpa·azcame·,·anoço·cuecueia·:·ioan·inqujqujmjchtin·.
+# text[osp] = Capitulo diez, en que se tracta del aguero: que tomauan de las hormigas, y ranas, y ratones, en cierto caso.
+# references = A&D/175:1
 # tagged = 100.00%
-# analysed = 95.65%
-1	Ic	ic	ADV	_	_	2	_	_	_
-2	matlactli	matlactli	NUM	_	_	3	_	_	_
-3	capitulo	capítulo	NOUN	_	State=Abs	6	_	_	_
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 30.43%
+1	Ic	ic	ADV	_	_	3	amod	_	_
+2	matlactli	matlactli	NUM	_	_	1	nummod	_	_
+3	capitulo	capítulo	NOUN	_	State=Abs	6	obl	_	_
 4	,	,	PUNCT	_	_	6	punct	_	_
-5	vncan	_	ADV	_	_	6	_	_	_
-6	mjtoa	ihtoa	VERB	_	_	0	root	_	_
+5	vncan	oncan	ADV	_	_	6	advmod	_	_
+6	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	_
 7	:	:	PUNCT	_	_	9	punct	_	_
 8	in	in	DET|SCONJ	_	_	9	_	_	_
-9	tetzaujtl	tezahuitl	NOUN	_	State=Abs	6	_	_	_
+9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	_	_	_
 10	injc	inic	SCONJ	_	_	11	_	_	_
 11	motetzaujaia	tetzahuia	VERB	_	_	9	_	_	_
 12	,	,	PUNCT	_	_	14	punct	_	_
 13	in	in	DET|SCONJ	_	_	14	_	_	_
-14	jntechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Plur|Person[psor]=3|State=Poss	11	_	_	_
+14	jntechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Plur|Person[psor]=3|State=Pos	11	_	_	_
 15	azcame	azcatl	NOUN	_	Number=Plur	14	_	_	_
 16	,	,	PUNCT	_	_	18	punct	_	_
 17	anoço	anozo	ADV	_	_	18	_	_	_
-18	cuecueia	_	VERB	_	_	15	_	_	_
+18	cuecueia	cuecueya	NOUN	_	State=Abs	15	_	_	_
 19	:	:	PUNCT	_	_	20	punct	_	_
-20	ioan	_	NOUN	_	NounType=Relat	15	_	_	_
-21	in	in	DET|SCONJ	_	_	22	_	_	_
-22	qujqujmjchtin	_	NOUN	_	_	20	_	_	_
+20	ioan	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	15	_	_	_
+21	in	in	DET	_	_	22	det	_	_
+22	qujqujmjchtin	quimichin	NOUN	_	Number=Plur	20	nmod	_	_
 23	.	.	PUNCT	_	_	6	punct	_	_
 
 # sent_id = Book_05_-_The_Omens.txt:74
