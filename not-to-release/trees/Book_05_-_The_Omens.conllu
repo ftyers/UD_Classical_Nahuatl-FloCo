@@ -3142,21 +3142,23 @@
 # text = No ioan, netetzaujloia in pinaujztli: iuhqujn tocatl tlatlauhquj, tlatlactic.
 # text[norm] = No ihuan, netetzahuiloya in pinahuiztli: iuhquin tocatl tlatlauhqui, tlatlactic.
 # text[orig] = No·ioan·,·netetzaujloia·in·pinaujz¶tli·:·iuh·qujn·tocatl·tlatlauhquj·,·tla¶tlactic·.
+# text[osp] = _
+# references = A&D/172:2
 # tagged = 100.00%
 # analysed = 100.00%
-1	No	no	ADV	_	_	4	_	_	_
-2	ioan	_	NOUN	_	NounType=Relat	4	_	_	_
-3	,	,	PUNCT	_	_	4	punct	_	_
-4	netetzaujloia	tetzahuia	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Reflexive[iobj]=Yes|Subcat=Ditr|Tense=Past|VerbForm=Fin	0	root	_	_
-5	in	in	DET|SCONJ	_	_	6	_	_	_
-6	pinaujztli	pinahuiztli	NOUN	_	State=Abs	4	_	_	_
-7	:	:	PUNCT	_	_	10	punct	_	_
-8	iuhqujn	iuhquin	ADV	_	_	10	_	_	_
-9	tocatl	_	NOUN	_	_	10	_	_	_
-10	tlatlauhquj	_	NOUN	_	_	6	_	_	_
-11	,	,	PUNCT	_	_	_	_	_	_
-12	tlatlactic	tlatlactic	ADJ	_	_	10	_	_	_
-13	.	.	PUNCT	_	_	4	punct	_	_
+1	No	no	ADV	_	_	4	advmod	4:advmod	_
+2	ioan	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	4	obl	4:obl	_
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	netetzaujloia	tetzahuia	VERB	_	_	0	root	0:root	_
+5	in	in	DET	_	_	6	det	6:det	_
+6	pinaujztli	pinahuiztli	NOUN	_	State=Abs	4	nsubj	4:nsubj	_
+7	:	:	PUNCT	_	_	9	punct	9:punct	_
+8	iuhqujn	iuhquin	ADV	_	_	9	advmod	9:advmod	_
+9	tocatl	tocatl	NOUN	_	_	6	parataxis:shared	6:parataxis:shared	_
+10	tlatlauhquj	tlatlauhqui	NOUN	_	_	9	amod	9:amod	_
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	tlatlactic	tlatlactic	ADJ	_	_	10	conj	9:amod|10:conj	_
+13	.	.	PUNCT	_	_	4	punct	4:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:61
 # text = In jquac aca, ichan calaquj, in qujtta: anoço vtlica qujiacanamjquj, qujtoa ie vitz cocoliztli, anoço ie itla conmonamjctiz: aco ie aca conaoaz, itla ic conpinauhtiz: auh in jquac, tla oittoc techan: in aqujn oqujttac: njman ic conana, nauhcampa qujtlallacujlhvia, qujtlalxochilia: iuhqujn cruz qujquechilia: auh nepantla yiolloco contlalia, vncan onchicha: njman ie ic qujtlatoltia, qujluja.
@@ -3390,30 +3392,32 @@
 # text = Auh intla can ipa otlatvic, in çan ie vncan pilcac, ic moiollalia: amo cenca qujueimati, atle ipan conjtta.
 # text[norm] = Auh intla zan ipan otlathuic, in zan ye oncan pilcac, ic moyollalia: amo cenca quihueyimati, atle ipan conitta.
 # text[orig] = A·uh·intlacan·ipa¶otlatvic·,·in·çan·ie·vncan·pilcac·,·ic¶moiollalia·:·amo·cenca·qujueimati·,·atle·ipan·conjtta·.
+# text[osp] = [...] y si poruentura, quando la yua ver otro dia, le hallaua alli: entonce consolaua se, teniendo por cierto que no era aguero.
+# references = A&D/173:1
 # tagged = 100.00%
-# analysed = 95.65%
-1	Auh	auh	CCONJ	_	_	14	_	_	_
-2	intla	_	PRON	_	_	5	_	_	_
-3	can	zan	ADV	_	_	5	_	_	_
-4	ipa	_	NOUN	_	NounType=Relat	5	_	_	_
-5	otlatvic	tlathuic	VERB	_	_	14	_	_	_
+# analysed = 100.00%
+1	Auh	auh	CCONJ	_	_	14	cc	_	_
+2	intla	tla	SCONJ	_	_	5	mark	_	_
+3	can	zan	ADV	_	_	5	advmod	_	_
+4	ipa	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	5	obl	_	_
+5	otlatvic	tlathuic	VERB	_	Aspect=Prior|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	14	_	_	_
 6	,	,	PUNCT	_	_	11	punct	_	_
 7	in	in	DET|SCONJ	_	_	11	_	_	_
 8	çan	zan	ADV	_	_	11	_	_	_
 9	ie	ye	ADV	_	_	11	_	_	_
-10	vncan	_	ADV	_	_	11	_	_	_
-11	pilcac	_	VERB	_	_	5	_	_	_
+10	vncan	oncan	ADV	_	_	11	_	_	_
+11	pilcac	pilca	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	5	_	_	_
 12	,	,	PUNCT	_	_	14	punct	_	_
-13	ic	ic	ADV	_	_	14	_	_	_
-14	moiollalia	yollalia	VERB	_	_	0	root	_	_
+13	ic	ic	ADV	_	_	14	advmod	_	_
+14	moiollalia	yollalia	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	_
 15	:	:	PUNCT	_	_	18	punct	_	_
 16	amo	amo	ADV	_	_	17	_	_	_
 17	cenca	cenca	ADV	_	_	18	_	_	_
-18	qujueimati	hueyimati	VERB	_	_	14	_	_	_
+18	qujueimati	hueyimati	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	14	_	_	_
 19	,	,	PUNCT	_	_	22	punct	_	_
-20	atle	_	PRON	_	_	21	_	_	_
-21	ipan	_	NOUN	_	NounType=Relat	22	_	_	_
-22	conjtta	itta	VERB	_	_	18	_	_	_
+20	atle	atle	PRON	_	_	21	_	_	_
+21	ipan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	22	_	_	_
+22	conjtta	itta	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin18	14	_	_	_
 23	.	.	PUNCT	_	_	14	punct	_	_
 
 # sent_id = Book_05_-_The_Omens.txt:67
