@@ -151,41 +151,57 @@ def load_tree(fn, tree):
 		tree.insert(span, right)	
 	return tree
 
-def load_normalisation_table(fn, table):
+def load_normalisation_table(lines, table):
+#def load_normalisation_table(fn, table):
 #	table = {}
 	lineno = 0
 	ranks = {}
 	errs = []
-	for lineno, line in enumerate(open(fn)):
-		if line.strip() == '' or line[0] == '#':
+	#for lineno, line in enumerate(open(fn)):
+	for fn, line in lines:
+		line = line.strip()
+
+		if line == '' or line[0] == '#':
 			continue
 		try:
 			line = re.sub('\t\t*', '\t', line)
 			level, rank, left, right = line.strip().split('\t')
 		except:
-			#print('!!! Error wrong number of values in line %d // %s' % (lineno, line), file=sys.stderr)
-			errs.append((lineno, line))
+			errs.append((fn, lineno, line))
 			continue
-			#raise
 
 		if right == '_':
 			continue
 			
 		level = int(level)
 		rank = int(rank)
+
 		if left not in ranks:
-			ranks[left] = []
-		ranks[left].append((rank, right))
+			ranks[left] = set()
 		if level not in table:
 			table[level] = {}
 		if left not in table[level]:
 			table[level][left] = {}
-		if len(table[level][left]) > 0: # ambiguous
-			ranks[left] = list(set(ranks[left]))
-			ranks[left].sort()
-			table[level][left] = ('/'.join([j for i,j in ranks[left]]), True)
+
+		ranks[left].add((rank, right))	# [(0, ca), (1, za), (2, zan)]
+
+		existing = []
+		if len(table[level][left]) > 0:
+			existing = table[level][left][0].split('/')
+#		print('|', fn, '|||',len(existing), '|||', line, file=sys.stderr)
+		if len(existing) >= 1: # ambiguous
+			all_right = list(ranks[left])
+			all_right.sort()
+			if len(all_right) > 1:
+				table[level][left] = ('/'.join([j for i,j in all_right]), True)
+			else:
+				table[level][left] = (all_right[0][1], False)
+
+#			print('@', fn, '|||',all_right, '|||', table[level][left], file=sys.stderr)
 		else:
 			table[level][left] = (right, False)
+
+		lineno += 1
 	return table, errs
 
 def load_override_table(fn):
@@ -237,11 +253,17 @@ for fn in glob.glob('retokenisation/*.retok'):
 #
 # retokenization_bundle = load_retokenization_model()
 
-table, errs = load_normalisation_table('normalisation.tsv', {})
-
+normalisation_lines = [('normalisation.tsv', line) for line in open('normalisation.tsv').readlines()]
 for fn in glob.glob('normalisation/*.norm'):
-	table, errsx = load_normalisation_table(fn, table)
-	errs.extend(errsx)
+	normalisation_lines += [(fn, line) for line in open(fn).readlines()]
+
+#table, errs = load_normalisation_table('normalisation.tsv', {})
+
+#for fn in glob.glob('normalisation/*.norm'):
+#	table, errsx = load_normalisation_table(fn, table)
+#	errs.extend(errsx)
+
+table, errs = load_normalisation_table(normalisation_lines, {})
 
 if len(errs):
 	print('Errors: ', len(errs), errs, file=sys.stderr)
