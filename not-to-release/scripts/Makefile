@@ -31,7 +31,7 @@ all: $(TARGETS)
 	python3 process-codex.py $< | python3 add-translations.py translation/Book_05_-_The_Omens.* | python3 tag-codex.py | python3 merge-trees.py ../trees/Book_05_-_The_Omens.conllu > $@
 
 ../conllu/Book_06_-_Rhetoric_and_Moral_Philosophy.conllu: ../books/Book_06_-_Rhetoric_and_Moral_Philosophy.tokenised $(DEPS)
-	python3 process-codex.py $< | python3 tag-codex.py > $@
+	python3 process-codex.py $< | python3 add-translations.py translation/Book_06_-_Rhetoric_and_Moral_Philosophy.* | python3 tag-codex.py > $@
 
 ../conllu/Book_07_-_The_Sun,_Moon,_Stars,_and_the_Binding_of_the_Years.conllu: ../books/Book_07_-_The_Sun,_Moon,_Stars,_and_the_Binding_of_the_Years.tokenised translation/Book_07_-_The_Sun,_Moon,_Stars,_and_the_Binding_of_the_Years.* $(DEPS)
 	python3 process-codex.py $< | python3 add-translations.py translation/Book_07_-_The_Sun,_Moon,_Stars,_and_the_Binding_of_the_Years.* | python3 tag-codex.py > $@
@@ -46,7 +46,7 @@ all: $(TARGETS)
 	python3 process-codex.py $< | python3 tag-codex.py > $@
 
 ../conllu/Book_11_-_Earthly_Things.conllu: ../books/Book_11_-_Earthly_Things.tokenised $(DEPS)
-	python3 process-codex.py $< | python3 tag-codex.py > $@
+	python3 process-codex.py $< | python3 add-translations.py translation/Book_11_-_Earthly_Things.* | python3 tag-codex.py > $@
 
 ../conllu/Book_12_-_The_Conquest_of_Mexico.conllu: ../books/Book_12_-_The_Conquest_of_Mexico.tokenised $(DEPS)
 	python3 process-codex.py $< | python3 tag-codex.py > $@

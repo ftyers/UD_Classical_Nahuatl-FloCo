@@ -6,6 +6,7 @@ translated = {}
 def read_translations(fn, translations):
 	global translated
 	for line in open(fn):
+		line = re.sub('\t\t*', '\t', line)
 		if line.strip() == '' or line[0] == '#':
 			continue
 		sent_id, lang, translation = line.strip().split('\t')
