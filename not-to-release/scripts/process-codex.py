@@ -8,7 +8,7 @@ def tokenise(s):
 	o = s
 	o = re.sub('([,:.;?!()]+)', ' \g<1> ', o)
 	o = o.replace(" ). ", " ) . ")
-	for etc in ['etc', '&c', 'Etc', 'q. n', 'xpo', '14', 'p', 'N', 'q.n']:
+	for etc in ['etc', '&c', 'Etc', 'q. n', 'xpo', '14', 'p', 'N', 'q.n', 'ij']:
 		o = o.replace(etc + ' .', etc + '.')
 		o = o.replace('. ' + etc, etc)
 	o = re.sub('  *', ' ', o)
@@ -303,7 +303,7 @@ if '@' in book_text:
 
 lines = re.sub('  *', ' ', book_text).split('\n')
 
-replacements = ['N.', 'q.', 'n.', 'xpo.', 'p.', 'q.n.']
+replacements = ['N.', 'q.', 'n.', 'xpo.', 'p.', 'q.n.', 'ij.']
 
 for i in range(0, 20):
 	replacements.append(str(i)+'.')
