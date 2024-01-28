@@ -18,7 +18,7 @@
 3	amuxtli	amoxtli	NOUN	_	State=Abs	6	obl	6:obl	Analysed=Yes|Folio=1r|Gloss=libro|Line=1|Norm=amoxtli|Paragraph=1|SpaceAfter=No
 4	,	,	PUNCT	_	_	3	punct	6:punct	Folio=1r|Paragraph=1|Line=1|Norm=,|Analysed=Yes
 5	vncan	oncan	ADV	_	_	6	advmod	6:advmod	Folio=1r|Paragraph=1|Line=1|Norm=oncan|Gloss=aquí|Analysed=Yes
-6	moteneoa	tenehua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	AmbigNorm=True|Analysed=Yes|Folio=1r,1r|Line=1,2|Norm=motenehua|Orig=mo¶·teneoa|Override=False|Paragraph=1,1|SpaceAfter=No
+6	moteneoa	tenehua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Analysed=Yes|Folio=1r,1r|Line=1,2|Norm=motenehua|Orig=mo¶·teneoa|Paragraph=1,1|SpaceAfter=No
 7	:	:	PUNCT	_	_	9	punct	9:punct	Folio=1r|Paragraph=1|Line=2|Norm=:|Analysed=Yes
 8	in	in	SCONJ	_	_	9	mark	9:mark	Orig=intetzaujtl|Folio=1r|Paragraph=1|Line=2|Norm=in
 9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	csubj	6:csubj	Orig=intetzaujtl|Folio=1r|Paragraph=1|Line=2|Norm=tetzahuitl|Analysed=Yes
@@ -48,13 +48,41 @@
 1	Ivin	ihuin	ADV	_	_	0	root	0:root	Analysed=Yes|Folio=2r|Line=14|Norm=Ihuin|Paragraph=1|SpaceAfter=No
 2	,	,	PUNCT	_	_	4	punct	4:punct	Folio=2r|Paragraph=1|Line=14|Norm=,|Analysed=Yes
 3	in	in	SCONJ	_	_	4	mark	4:mark	Orig=inqujchioaia|Folio=2r|Paragraph=1|Line=14|Norm=in
-4	qujchioaia	chihua	VERB	_	_	1	csubj	1:csubj	Ambiguous=Yes|Analysed=Yes|Folio=2r|Guessed=Yes|Line=14|Norm=quichihuaya|Orig=inqujchioaia|Paragraph=1|SpaceAfter=No
+4	qujchioaia	chihua	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	1	csubj	1:csubj	Analysed=Yes|Folio=2r|Line=14|Norm=quichihuaya|Orig=inqujchioaia|Paragraph=1|SpaceAfter=No
 5	,	,	PUNCT	_	_	6	punct	6:punct	Folio=2r|Paragraph=1|Line=14|Norm=,|Analysed=Yes
-6	motetzaujanj	tetzahuia	VERB	_	_	4	nsubj	4:nsubj	Folio=2r,2r|Line=14,15|Norm=motetzahuiani|Orig=mo¶·tetzaujanj|Paragraph=1,1|SpaceAfter=No
+6	motetzaujanj	motetzahuiani	NOUN	_	_	4	nsubj	4:nsubj	Folio=2r,2r|Line=14,15|Norm=motetzahuiani|Orig=mo¶·tetzaujanj|Paragraph=1,1|SpaceAfter=No
 7	,	,	PUNCT	_	_	8	punct	8:punct	Folio=2r|Paragraph=1|Line=15|Norm=,|Analysed=Yes
-8	motetzauj	tetzahuia	VERB	_	_	6	appos	6:appos	Folio=2r|Line=15|Norm=motetzahui|Paragraph=1|SpaceAfter=No
+8	motetzauj	tetzahuia	NOUN	_	_	6	appos	6:appos	AltPOS=VERB|Folio=2r|Line=15|Norm=motetzahui|Paragraph=1|SpaceAfter=No
 9	.	.	PUNCT	_	_	4	punct	4:punct	Folio=2r|Paragraph=1|Line=15|Norm=.|Analysed=Yes
 10	etc.	etc.	NOUN	_	State=Abs	4	conj	4:conj	Folio=2r|Paragraph=1|Line=15|Norm=etc.|Analysed=Yes
+
+# sent_id = Book_05_-_The_Omens.txt:27
+# text = No ioan, tetzaujtl catca, netetzaujloia, tetzammachoia: in jtoca ioaltepuztli.
+# text[norm] = No ihuan, tetzahuitl catca, netetzahuiloya, tetzammachoya: in itoca yohualtepoztli.
+# text[orig] = No·ioan·,·tetzaujtl·catca·,·ne¶tetzaujloia·,·tetzammachoia·:·inj¶toca·ioaltepuztli·.
+# text[osp] = [...] quiere dezir: hacha nocturna, [...]
+# references = A&D/165:2
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/5
+1	No	no	ADV	_	_	4	advmod	4:advmod	Folio=4v|Paragraph=4|Line=1|Norm=No|Gloss=también|Analysed=Yes
+2	ioan	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	4	obl	4:obl	Analysed=Yes|Folio=4v|Gloss=con|Line=1|Norm=ihuan|Paragraph=4|SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	4:punct	Folio=4v|Paragraph=4|Line=1|Norm=,|Analysed=Yes
+4	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	0	root	0:root	Folio=4v|Paragraph=4|Line=1|Norm=tetzahuitl|Analysed=Yes
+5	catca	catqui	AUX	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Tense=Past|VerbForm=Fin	4	cop	4:cop	Analysed=Yes|Folio=4v|Line=1|Norm=catca|Paragraph=4|SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	Folio=4v|Paragraph=4|Line=1|Norm=,|Analysed=Yes
+7	netetzaujloia	tetzahuia	VERB	_	_	4	parataxis:shared	4:parataxis:shared	Folio=4v,4v|Line=1,2|Norm=netetzahuiloya|Orig=ne¶·tetzaujloia|Paragraph=4,4|SpaceAfter=No
+8	,	,	PUNCT	_	_	9	punct	9:punct	Folio=4v|Paragraph=4|Line=2|Norm=,|Analysed=Yes
+9	tetzammachoia	tetzammatia	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin|Voice=Pass	4	parataxis:shared	4:parataxis:shared	Analysed=Yes|Folio=4v|Incorp=tetza|Line=2|Norm=tetzammachoya|Paragraph=4|SpaceAfter=No
+10	:	:	PUNCT	_	_	12	punct	12:punct	Folio=4v|Paragraph=4|Line=2|Norm=:|Analysed=Yes
+11	in	in	SCONJ	_	_	12	mark	12:mark	Orig=inj¶·toca|Folio=4v,4v|Paragraph=4,4|Line=2,3|Norm=in
+12	jtoca	toca	NOUN	_	_	4	parataxis:shared	4:parataxis:shared	Orig=inj¶·toca|Folio=4v,4v|Paragraph=4,4|Line=2,3|Norm=itoca|Gloss=su.nombre
+13	ioaltepuztli	yohualtepoztli	NOUN	_	State=Abs	12	nsubj	12:nsubj	Analysed=Yes|Folio=4v|Line=3|Norm=yohualtepoztli|Paragraph=4|SpaceAfter=No|Split=yohual·tepoztli
+14	.	.	PUNCT	_	_	4	punct	4:punct	Folio=4v|Paragraph=4|Line=3|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:28
 # text = Iquac caqujztia, in ouellallimjctimotecac: in aocac naoati.
@@ -199,7 +227,7 @@
 5	in	in	DET	_	_	6	det	6:det	Folio=8v|Paragraph=8|Line=1|Norm=in
 6	pinaujztli	pinahuiztli	NOUN	_	State=Abs	4	nsubj	4:nsubj	Analysed=Yes|Folio=8v,8v|Line=1,2|Norm=pinahuiztli|Orig=pinaujz¶·tli|Paragraph=8,8|SpaceAfter=No
 7	:	:	PUNCT	_	_	9	punct	9:punct	Folio=8v|Paragraph=8|Line=2|Norm=:|Analysed=Yes
-8	iuhqujn	iuhquin	ADV	_	_	9	advmod	9:advmod	Orig=iuh·qujn|Folio=8v,8v|Paragraph=8,8|Line=2,2|Norm=iuhquin|AmbigNorm=True|Override=False|Gloss=así|Analysed=Yes
+8	iuhqujn	iuhquin	ADV	_	_	9	advmod	9:advmod	Orig=iuh·qujn|Folio=8v,8v|Paragraph=8,8|Line=2,2|Norm=iuhquin|Gloss=así|Analysed=Yes
 9	tocatl	tocatl	NOUN	_	_	6	parataxis:shared	6:parataxis:shared	Folio=8v|Paragraph=8|Line=2|Norm=tocatl|Gloss=araña
 10	tlatlauhquj	tlatlauhqui	NOUN	_	_	9	amod	9:amod	Folio=8v|Gloss=rojo|Line=2|Norm=tlatlauhqui|Paragraph=8|SpaceAfter=No
 11	,	,	PUNCT	_	_	12	punct	12:punct	Folio=8v|Paragraph=8|Line=2|Norm=,|Analysed=Yes

@@ -653,11 +653,11 @@
 1	Ivin	ihuin	ADV	_		0	root	0:root	Folio=2r|Paragraph=1|Line=14|Norm=Ihuin|Analysed=Yes
 2	,	,	PUNCT	_		4	punct	4:punct	Folio=2r|Paragraph=1|Line=14|Norm=,|Analysed=Yes
 3	in	in	SCONJ	_	_	4	mark	4:mark	Orig=inqujchioaia|Folio=2r|Paragraph=1|Line=14|Norm=in
-4	qujchioaia	chihua	VERB	_	_	1	csubj	1:csubj	Orig=inqujchioaia|Folio=2r|Paragraph=1|Line=14|Norm=quichihuaya|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
+4	qujchioaia	chihua	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	1	csubj	1:csubj	Orig=inqujchioaia|Folio=2r|Paragraph=1|Line=14|Norm=quichihuaya|Analysed=Yes
 5	,	,	PUNCT	_		6	punct	6:punct	Folio=2r|Paragraph=1|Line=14|Norm=,|Analysed=Yes
-6	motetzaujanj	tetzahuia	VERB	_	_	4	nsubj	4:nsubj	Orig=mo¶·tetzaujanj|Folio=2r,2r|Paragraph=1,1|Line=14,15|Norm=motetzahuiani
+6	motetzaujanj	motetzahuiani	NOUN	_	_	4	nsubj	4:nsubj	Orig=mo¶·tetzaujanj|Folio=2r,2r|Paragraph=1,1|Line=14,15|Norm=motetzahuiani
 7	,	,	PUNCT	_		8	punct	8:punct	Folio=2r|Paragraph=1|Line=15|Norm=,|Analysed=Yes
-8	motetzauj	tetzahuia	VERB	_	_	6	appos	6:appos	Folio=2r|Paragraph=1|Line=15|Norm=motetzahui
+8	motetzauj	tetzahuia	NOUN	_	_	6	appos	6:appos	Folio=2r|Paragraph=1|Line=15|Norm=motetzahui|AltPOS=VERB
 9	.	.	PUNCT	_		4	punct	4:punct	Folio=2r|Paragraph=1|Line=15|Norm=.|Analysed=Yes
 10	etc.	etc.	NOUN	_	State=Abs	4	conj	4:conj	Folio=2r|Paragraph=1|Line=15|Norm=etc.|Analysed=Yes
 
@@ -703,7 +703,7 @@
 29	ioan	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	19	_	_	Folio=2r|Paragraph=2|Line=4|Norm=ihuan|Gloss=con|Analysed=Yes
 30	in	in	DET|SCONJ	_	_	31	det	_	Orig=intlein|Folio=2r|Paragraph=2|Line=4|Norm=in
 31	tlein	tlein	PRON	_	_	29	nmod	_	Orig=intlein|Folio=2r|Paragraph=2|Line=4|Norm=tlein
-32	qujchioaia	chihua	VERB	_	_	31	acl	_	Orig=qujchio¶·aia|Folio=2r,2r|Paragraph=2,2|Line=4,5|Norm=quichihuaya|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
+32	qujchioaia	chihua	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	31	acl	_	Orig=qujchio¶·aia|Folio=2r,2r|Paragraph=2,2|Line=4,5|Norm=quichihuaya|Analysed=Yes
 33	,	,	PUNCT	_		34	punct	_	Folio=2r|Paragraph=2|Line=5|Norm=,|Analysed=Yes
 34	puchteca	pochtecatl	NOUN	_	Number=Plur	32	nsubj	_	Folio=2r|Paragraph=2|Line=5|Norm=pochteca|Analysed=Yes
 35	in	in	DET|SCONJ	_	_	36	_	_	Orig=injquac|Folio=2r|Paragraph=2|Line=5|Norm=in
@@ -1637,7 +1637,7 @@
 
 # sent_id = Book_05_-_The_Omens.txt:26
 # text = Ic ei capitulo, vncan moteneoa: in tetzaujtl catca, in tetzammachoia: in jquac iooltica qujcaquja, in juhquj aca, tlatepuzmjuja: in juhquj quauhxeloaia, in qujtoaia, ioaltepuztli.
-# text[norm] = Ic eyi capítulo, oncan motenehua: in tetzahuitl catca, in tetzamachoya: in ihcuac yohualtica quicaquiya, in iuhqui aca, tlatepozmihuia: in iuhqui cuauhxeloaya, in quihtoaya, yohualtepoztli.
+# text[norm] = Ic eyi capítulo, oncan motenehua: in tetzahuitl catca, in tetzammachoya: in ihcuac yohualtica quicaquiya, in iuhqui aca, tlatepozmihuia: in iuhqui cuauhxeloaya, in quihtoaya, yohualtepoztli.
 # text[orig] = Ic·ei·capitulo·,·vncan·motene¶oa·:·intetzaujtl·catca·,·intetzam¶machoia·:·injquac·iooltica·quj¶caquja·,·injuhquj·aca·,·tlatepuzmj¶uja·:·injuhquj·quauhxeloaia·,·in¶qujtoaia·,·ioaltepuztli·.
 # text[osp] = Capitulo tercero, del aguero que tomauan: quando oyan denoche algunos golpes, como dequjen esta cortando madera. Quando alguno de noche oya golpes, como dequjen corta leña de noche: tomaua mal aguero: a este llamauan Iooaltepuztli, [...]
 # references = A&D/165:1
@@ -1658,8 +1658,7 @@
 10	catca	catqui	AUX	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Tense=Past|VerbForm=Fin	6	_	_	Folio=4v|Paragraph=3|Line=2|Norm=catca|Analysed=Yes
 11	,	,	PUNCT	_		13	punct	_	Folio=4v|Paragraph=3|Line=2|Norm=,|Analysed=Yes
 12	in	in	DET|SCONJ	_	_	13	_	_	Orig=intetzam¶·machoia|Folio=4v,4v|Paragraph=3,3|Line=2,3|Norm=in
-13	tetzammachoia	mati	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin|Voice=Pass	9	_	_	Orig=intetzam¶·machoia|Folio=4v,4v|Paragraph=3,3|Line=2,3|Norm=tetzamachoya|Incorp=tetza|Analysed=Yes
-13.1	tetza	tetzahuitl	NOUN	_	_	_	_	_	Incorporated=Yes
+13	tetzammachoia	tetzammatia	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin|Voice=Pass	9	_	_	Orig=intetzam¶·machoia|Folio=4v,4v|Paragraph=3,3|Line=2,3|Norm=tetzammachoya|Incorp=tetza|Analysed=Yes
 14	:	:	PUNCT	_		18	punct	_	Folio=4v|Paragraph=3|Line=3|Norm=:|Analysed=Yes
 15	in	in	DET|SCONJ	_	_	16	_	_	Orig=injquac|Folio=4v|Paragraph=3|Line=3|Norm=in
 16	jquac	ihcuac	ADV	_	_	18	_	_	Orig=injquac|Folio=4v|Paragraph=3|Line=3|Norm=ihcuac|Gloss=en.el.momento
@@ -1684,7 +1683,7 @@
 
 # sent_id = Book_05_-_The_Omens.txt:27
 # text = No ioan, tetzaujtl catca, netetzaujloia, tetzammachoia: in jtoca ioaltepuztli.
-# text[norm] = No ihuan, tetzahuitl catca, netetzahuiloya, tetzamachoya: in itoca yohualtepoztli.
+# text[norm] = No ihuan, tetzahuitl catca, netetzahuiloya, tetzammachoya: in itoca yohualtepoztli.
 # text[orig] = No·ioan·,·tetzaujtl·catca·,·ne¶tetzaujloia·,·tetzammachoia·:·inj¶toca·ioaltepuztli·.
 # text[osp] = [...] quiere dezir: hacha nocturna, [...]
 # references = A&D/165:2
@@ -1692,22 +1691,21 @@
 # lemmatised = 100.00%
 # analysed = 100.00%
 # heads = 100.00%
-# relations = 42.86%
-1	No	no	ADV	_		5	_	_	Folio=4v|Paragraph=4|Line=1|Norm=No|Gloss=también|Analysed=Yes
-2	ioan	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	5	_	_	Folio=4v|Paragraph=4|Line=1|Norm=ihuan|Gloss=con|Analysed=Yes
-3	,	,	PUNCT	_		4	punct	_	Folio=4v|Paragraph=4|Line=1|Norm=,|Analysed=Yes
-4	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	5	_	_	Folio=4v|Paragraph=4|Line=1|Norm=tetzahuitl|Analysed=Yes
-5	catca	catqui	AUX	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Tense=Past|VerbForm=Fin	0	root	_	Folio=4v|Paragraph=4|Line=1|Norm=catca|Analysed=Yes
-6	,	,	PUNCT	_		7	punct	_	Folio=4v|Paragraph=4|Line=1|Norm=,|Analysed=Yes
-7	netetzaujloia	tetzahuia	VERB	_	_	4	_	_	Orig=ne¶·tetzaujloia|Folio=4v,4v|Paragraph=4,4|Line=1,2|Norm=netetzahuiloya
-8	,	,	PUNCT	_		9	punct	_	Folio=4v|Paragraph=4|Line=2|Norm=,|Analysed=Yes
-9	tetzammachoia	mati	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin|Voice=Pass	7	_	_	Folio=4v|Paragraph=4|Line=2|Norm=tetzamachoya|Incorp=tetza|Analysed=Yes
-9.1	tetza	tetzahuitl	NOUN	_	_	_	_	_	Incorporated=Yes
-10	:	:	PUNCT	_		12	punct	_	Folio=4v|Paragraph=4|Line=2|Norm=:|Analysed=Yes
-11	in	in	DET|SCONJ	_	_	12	_	_	Orig=inj¶·toca|Folio=4v,4v|Paragraph=4,4|Line=2,3|Norm=in
-12	jtoca	toca	NOUN	_	_	4	_	_	Orig=inj¶·toca|Folio=4v,4v|Paragraph=4,4|Line=2,3|Norm=itoca|Gloss=su.nombre
-13	ioaltepuztli	yohualtepoztli	NOUN	_	State=Abs	12	_	_	Folio=4v|Paragraph=4|Line=3|Norm=yohualtepoztli|Split=yohual·tepoztli|Analysed=Yes
-14	.	.	PUNCT	_		5	punct	_	Folio=4v|Paragraph=4|Line=3|Norm=.|Analysed=Yes
+# relations = 100.00%
+1	No	no	ADV	_		4	advmod	4:advmod	Folio=4v|Paragraph=4|Line=1|Norm=No|Gloss=también|Analysed=Yes
+2	ioan	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	4	obl	4:obl	Folio=4v|Paragraph=4|Line=1|Norm=ihuan|Gloss=con|Analysed=Yes
+3	,	,	PUNCT	_		4	punct	4:punct	Folio=4v|Paragraph=4|Line=1|Norm=,|Analysed=Yes
+4	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	0	root	0:root	Folio=4v|Paragraph=4|Line=1|Norm=tetzahuitl|Analysed=Yes
+5	catca	catqui	AUX	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Tense=Past|VerbForm=Fin	4	cop	4:cop	Folio=4v|Paragraph=4|Line=1|Norm=catca|Analysed=Yes
+6	,	,	PUNCT	_		7	punct	7:punct	Folio=4v|Paragraph=4|Line=1|Norm=,|Analysed=Yes
+7	netetzaujloia	tetzahuia	VERB	_	_	4	parataxis:shared	4:parataxis:shared	Orig=ne¶·tetzaujloia|Folio=4v,4v|Paragraph=4,4|Line=1,2|Norm=netetzahuiloya
+8	,	,	PUNCT	_		9	punct	9:punct	Folio=4v|Paragraph=4|Line=2|Norm=,|Analysed=Yes
+9	tetzammachoia	tetzammatia	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin|Voice=Pass	4	parataxis:shared	4:parataxis:shared	Folio=4v|Paragraph=4|Line=2|Norm=tetzammachoya|Incorp=tetza|Analysed=Yes
+10	:	:	PUNCT	_		12	punct	12:punct	Folio=4v|Paragraph=4|Line=2|Norm=:|Analysed=Yes
+11	in	in	SCONJ	_	_	12	mark	12:mark	Orig=inj¶·toca|Folio=4v,4v|Paragraph=4,4|Line=2,3|Norm=in
+12	jtoca	toca	NOUN	_	_	4	parataxis:shared	4:parataxis:shared	Orig=inj¶·toca|Folio=4v,4v|Paragraph=4,4|Line=2,3|Norm=itoca|Gloss=su.nombre
+13	ioaltepuztli	yohualtepoztli	NOUN	_	State=Abs	12	nsubj	12:nsubj	Folio=4v|Paragraph=4|Line=3|Norm=yohualtepoztli|Split=yohual·tepoztli|Analysed=Yes
+14	.	.	PUNCT	_		4	punct	4:punct	Folio=4v|Paragraph=4|Line=3|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:28
 # text = Iquac caqujztia, in ouellallimjctimotecac: in aocac naoati.
@@ -2525,7 +2523,7 @@
 
 # sent_id = Book_05_-_The_Omens.txt:41
 # text = No yoan netetzaujloia, tlatetzaujaia, tetzammachoia, in teculutl choca: in jquac tla aca ytlapantenco, anoço ixacalticpac, iquauhticpac chocatia: in qujcaquj qujtotica: Tecolo, o, o, tecolooo, yvin in caqujzti, in choca.
-# text[norm] = No ihuan netetzahuiloya, tlatetzahuiaya, tetzamachoya, in tecolotl choca: in ihcuac tla aca itlapantenco, anozo ixacalticpac, icuauhticpac chocatica: in quicaqui quihtotica: tecolo, o, o, tecolooo, ihuin in caquizti, in choca.
+# text[norm] = No ihuan netetzahuiloya, tlatetzahuiaya, tetzammachoya, in tecolotl choca: in ihcuac tla aca itlapantenco, anozo ixacalticpac, icuauhticpac chocatica: in quicaqui quihtotica: tecolo, o, o, tecolooo, ihuin in caquizti, in choca.
 # text[orig] = No·yoan·netetzaujloia·,·tla¶tetzaujaia·,·tetzammachoia·,·in·te¶culutl·choca·:·inj·quac·tlaaca·y¶tlapantenco·,·anoço·ixacalticpac·,·iquauh·ticpac·chocatia·:·in·qujca¶quj·qujtotica·:·Tecolo·,·o·,·o·,·tecoloo¶o·,·y·vin·incaqujzti·,·inchoca·.
 # text[osp] = Tambien, quando oyan cantar al buho, estos naturales desta nueua españa: tomauan mal aguero, ora estuujesse sobre su casa, ora estuuiesse sobre algun arbol cerca: oyendo aquella manera del canto del buho: [...]
 # text[spa] = También, con eso se tomó como agüero, se tenía de agüero, conocían el agüero: que el búho llora, cuando si encima de su techo de alguien, o encima de su jacal, en sus árboles estaba llorando: el que oía que estaba diciendo: tecolo, o, o, tecolooo, así se escuchó, que lloraba.
@@ -2541,8 +2539,7 @@
 4	,	,	PUNCT	_		5	punct	_	Folio=6v|Paragraph=4|Line=1|Norm=,|Analysed=Yes
 5	tlatetzaujaia	tetzahuia	VERB	_	_	3	_	_	Orig=tla¶·tetzaujaia|Folio=6v,6v|Paragraph=4,4|Line=1,2|Norm=tlatetzahuiaya
 6	,	,	PUNCT	_		7	punct	_	Folio=6v|Paragraph=4|Line=2|Norm=,|Analysed=Yes
-7	tetzammachoia	mati	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin|Voice=Pass	3	_	_	Folio=6v|Paragraph=4|Line=2|Norm=tetzamachoya|Incorp=tetza|Analysed=Yes
-7.1	tetza	tetzahuitl	NOUN	_	_	_	_	_	Incorporated=Yes
+7	tetzammachoia	tetzammatia	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin|Voice=Pass	3	_	_	Folio=6v|Paragraph=4|Line=2|Norm=tetzammachoya|Incorp=tetza|Analysed=Yes
 8	,	,	PUNCT	_		11	punct	_	Folio=6v|Paragraph=4|Line=2|Norm=,|Analysed=Yes
 9	in	in	DET|SCONJ	_	_	11	_	_	Folio=6v|Paragraph=4|Line=2|Norm=in
 10	teculutl	tecolotl	NOUN	_	State=Abs	11	_	_	Orig=te¶·culutl|Folio=6v,6v|Paragraph=4,4|Line=2,3|Norm=tecolotl|Gloss=búho|Analysed=Yes
@@ -3644,7 +3641,7 @@
 35	:	:	PUNCT	_		36	punct	_	Folio=9r|Paragraph=1|Line=13|Norm=:|Analysed=Yes
 36	qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=9r|Paragraph=1|Line=13|Norm=quihtoaya|Analysed=Yes
 37	in	in	DET|SCONJ	_	_	38	_	_	Folio=9r|Paragraph=1|Line=13|Norm=in
-38	motetzauj	tetzahuia	VERB	_	_	36	_	_	Orig=motetza¶·uj|Folio=9r,9r|Paragraph=1,1|Line=13,14|Norm=motetzahui
+38	motetzauj	tetzahuia	NOUN	_	_	36	_	_	Orig=motetza¶·uj|Folio=9r,9r|Paragraph=1,1|Line=13,14|Norm=motetzahui|AltPOS=VERB
 39	,	,	PUNCT	_		41	punct	_	Folio=9r|Paragraph=1|Line=14|Norm=,|Analysed=Yes
 40-41	tlaqujioculi	_	_	_	_	_	_	_	_
 40	tla	tla	SCONJ	_	_	41	_	_	Orig=motetza¶·uj|Folio=9r,9r|Paragraph=1,1|Line=13,14|Norm=tla

@@ -1536,24 +1536,26 @@
 
 # sent_id = Book_05_-_The_Omens.txt:27
 # text = No ioan, tetzaujtl catca, netetzaujloia, tetzammachoia: in jtoca ioaltepuztli.
-# text[norm] = No ihuan, tezahuitl catca, netetzahuiloya, tetzamachoya: in itoca yohualtepoztli.
+# text[norm] = No ihuan, tetzahuitl catca, netetzahuiloya, tetzamachoya: in itoca yohualtepoztli.
 # text[orig] = No·ioan·,·tetzaujtl·catca·,·ne¶tetzaujloia·,·tetzammachoia·:·inj¶toca·ioaltepuztli·.
-# tagged = 92.86%
-# analysed = 92.86%
-1	No	no	ADV	_	_	5	_	_	_
-2	ioan	_	NOUN	_	NounType=Relat	5	_	_	_
-3	,	,	PUNCT	_	_	4	punct	_	_
-4	tetzaujtl	tezahuitl	NOUN	_	State=Abs	5	_	_	_
-5	catca	_	VERB	_	Subcat=Intr	0	root	_	_
-6	,	,	PUNCT	_	_	7	punct	_	_
-7	netetzaujloia	tetzahuia	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Reflexive[iobj]=Yes|Subcat=Ditr|Tense=Past|VerbForm=Fin	4	_	_	_
-8	,	,	PUNCT	_	_	9	punct	_	_
-9	tetzammachoia	_	X	_	_	7	_	_	_
-10	:	:	PUNCT	_	_	12	punct	_	_
-11	in	in	DET|SCONJ	_	_	12	_	_	_
-12	jtoca	_	NOUN	_	_	4	_	_	_
-13	ioaltepuztli	yohualtepoztli	NOUN	_	State=Abs	12	_	_	_
-14	.	.	PUNCT	_	_	5	punct	_	_
+# text[osp] = [...] quiere dezir: hacha nocturna, [...]
+# references = A&D/165:2
+# tagged = 100.00%
+# analysed = 100.00%
+1	No	no	ADV	_	_	4	advmod	4:advmod	_
+2	ioan	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	4	obl	4:obl	_
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	0	root	0:root	_
+5	catca	catqui	AUX	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Tense=Past|VerbForm=Fin	4	cop	4:cop	_
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	netetzaujloia	tetzahuia	VERB	_	_	4	parataxis:shared	4:parataxis:shared	_
+8	,	,	PUNCT	_	_	9	punct	9:punct	_
+9	tetzammachoia	mati	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin|Voice=Pass	4	parataxis:shared	4:parataxis:shared	_
+10	:	:	PUNCT	_	_	12	punct	12:punct	_
+11	in	in	SCONJ	_	_	12	mark	12:mark	_
+12	jtoca	toca	NOUN	_	_	4	parataxis:shared	4:parataxis:shared	_
+13	ioaltepuztli	yohualtepoztli	NOUN	_	State=Abs	12	nsubj	12:nsubj	_
+14	.	.	PUNCT	_	_	4	punct	4:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:28
 # text = Iquac caqujztia, in ouellallimjctimotecac: in aocac naoati.
