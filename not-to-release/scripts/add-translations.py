@@ -9,7 +9,10 @@ def read_translations(fn, translations):
 		line = re.sub('\t\t*', '\t', line)
 		if line.strip() == '' or line[0] == '#':
 			continue
-		sent_id, lang, translation = line.strip().split('\t')
+		try:
+			sent_id, lang, translation = line.strip().split('\t')
+		except:
+			print(line.replace('\t', '###'),file=sys.stderr)
 		if sent_id not in translations:
 			translations[sent_id] = {}
 		if lang not in translated:
