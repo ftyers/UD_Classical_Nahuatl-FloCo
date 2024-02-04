@@ -3,7 +3,8 @@
 # text[norm] = Ic macuilli amoxtli, oncan motenehua: in tetzahuitl catca, in quitetzammatia, in yehhuantin mexica.
 # text[orig] = Jc·macujlli·amuxtli·,·vncan·mo¶teneoa·:·intetzaujtl·catca·,·inqujte¶tzammatia·,·in·iehoantin·mexica·.
 # text[eng] = Fifth book, here is told, that which was the omen, that they took to be an omen, they, the Mexica.
-# text[osp] = Libro quinto, que habla de los agueros: que esta gente mexicana _.
+# text[osp] = Libro quinto, que habla de los agueros: que esta gente mexicana vsaua.
+# text[osp_norm] = Libro quinto, que habla de los agüeros: que esta gente mexicana usaba.
 # text[spa] = Libro quinto, que trata de los agüeros y pronósticos que estos naturales tomaban de algunas aves, animales, y sabandijas, para adivinar las cosas futuras.
 # references = A&D/160:1
 # tagged = 100.00%
@@ -37,6 +38,7 @@
 # text[norm] = Ihuin, in quichihuaya, motetzahuiani, motetzahui. etc.
 # text[orig] = Ivin·,·inqujchioaia·,·mo¶tetzaujanj·,·motetzauj·¬§·etc.
 # text[osp] = Desta manera hazian: los que oyan el aguero, arriba dicho.
+# text[osp_norm] = De esta manera hacían: los que oían el agüero, arriba dicho.
 # references = A&D/161:3
 # tagged = 100.00%
 # lemmatised = 100.00%
@@ -61,6 +63,7 @@
 # text[norm] = No ihuan, tetzahuitl catca, netetzahuiloya, tetzammachoya: in itoca yohualtepoztli.
 # text[orig] = No·ioan·,·tetzaujtl·catca·,·ne¶tetzaujloia·,·tetzammachoia·:·inj¶toca·ioaltepuztli·.
 # text[osp] = [...] quiere dezir: hacha nocturna, [...]
+# text[osp_norm] = [...] quiere decir: hacha nocturna, [...]
 # references = A&D/165:2
 # tagged = 100.00%
 # lemmatised = 100.00%
@@ -90,6 +93,7 @@
 # text[orig] = Iquac·caqujz¶tia·,·inouella·llimjctimotecac·:·ina¶ocac·naoati·.
 # text[eng] = In the dead of night, when nobody speaks aloud, is when it is heard.
 # text[osp] = [...] por la mayor parte: este sonido, se oya al primero sueño de la noche: quando todos duermen profundamente, y ningun ruydo de gente suena: [...]
+# text[osp_norm] = [...] por la mayor parte: este sonido, se oía al primero sueño de la noche: cuando todos duermen profundamente, y ningún ruido de gente suena: [...]
 # references = A&D/165:2
 # tagged = 100.00%
 # lemmatised = 100.00%
@@ -115,6 +119,7 @@
 # text[norm] = Auh quilhuia in macehualli, in oquimottiti: amo nimitzcahuaz, ca onimitzan.
 # text[orig] = Auh·qujluja·in·maceoalli·,·ino¶qujmottiti·:·amonjmjtzcaoaz·,·caonj¶mjtzan·.
 # text[osp] = Y la persona, aqui en esta fantasma le auja aparecido, dezia la: no te dexare que ya te e caçado.
+# text[osp_norm] = Y la persona, aquí en esta fantasma le había aparecido, decíala: no te dejaré que ya te he cazado.
 # text[spa] = Y dijo el vasallo, a quien se había hecho ver: No te dejaré, es que te he tomado.
 # references = A&D/166:3
 # tagged = 100.00%
@@ -139,11 +144,42 @@
 13	onjmjtzan	ana	VERB	_	Aspect=Prior|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=2|Person[subj]=1|Subcat=Tran|Tense=Past|VerbForm=Fin	10	parataxis:shared	10:parataxis:shared	Analysed=Yes|Folio=5v,5v|Line=49,50|Norm=onimitzan|Orig=caonj¶·mjtzan|Paragraph=2,2|SpaceAfter=No
 14	.	.	PUNCT	_	_	2	punct	2:punct	Folio=5v|Paragraph=2|Line=50|Norm=.|Analysed=Yes
 
+# sent_id = Book_05_-_The_Omens.txt:43
+# text = Ic macujlli capitulo, vncan mjtoa: in tetzaujtl catca, in jtechpa chiquatli.
+# text[norm] = Ic macuilli capítulo, oncan mihtoa: in tetzahuitl catca, in itechpa chicuatli.
+# text[orig] = Ic·macujlli·capitulo·,·vncan·mj¶toa·:·intetzaujtl·catca·,·injtechpa·chi¶quatli·.
+# text[osp] = Capitulo quinto, del mal aguero: que tomauan del chillido de la lechuza.
+# text[osp_norm] = Capítulo quinto, del mal agüero: que tomaban del chillido de la lechuza.
+# references = A&D/169:1
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/11
+1	Ic	ic	ADV	_	_	3	amod	3:amod	Folio=7v|Paragraph=2|Line=26|Norm=Ic
+2	macujlli	macuilli	NUM	_	_	1	nummod	1:nummod	Folio=7v|Paragraph=2|Line=26|Norm=macuilli|Gloss=cinco
+3	capitulo	capítulo	NOUN	_	State=Abs	6	obl	6:obl	Analysed=Yes|Folio=7v|Line=26|Norm=capítulo|Paragraph=2|SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	6:punct	Folio=7v|Paragraph=2|Line=26|Norm=,|Analysed=Yes
+5	vncan	oncan	ADV	_	_	6	advmod	6:advmod	Folio=7v|Paragraph=2|Line=26|Norm=oncan|Gloss=aquí|Analysed=Yes
+6	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Analysed=Yes|Folio=7v,7v|Line=26,27|Norm=mihtoa|Orig=mj¶·toa|Paragraph=2,2|SpaceAfter=No
+7	:	:	PUNCT	_	_	9	punct	9:punct	Folio=7v|Paragraph=2|Line=27|Norm=:|Analysed=Yes
+8	in	in	SCONJ	_	_	9	mark	9:mark	Orig=intetzaujtl|Folio=7v|Paragraph=2|Line=27|Norm=in
+9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	csubj	6:csubj	Orig=intetzaujtl|Folio=7v|Paragraph=2|Line=27|Norm=tetzahuitl|Analysed=Yes
+10	catca	catqui	AUX	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Tense=Past|VerbForm=Fin	9	cop	9:cop	Analysed=Yes|Folio=7v|Line=27|Norm=catca|Paragraph=2|SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	Folio=7v|Paragraph=2|Line=27|Norm=,|Analysed=Yes
+12	in	in	SCONJ	_	_	13	mark	13:mark	Orig=injtechpa|Folio=7v|Paragraph=2|Line=27|Norm=in
+13	jtechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	9	acl	9:acl	Orig=injtechpa|Folio=7v|Paragraph=2|Line=27|Norm=itechpa|Analysed=Yes
+14	chiquatli	chicuatli	NOUN	_	State=Abs	13	nmod	13:nmod	Analysed=Yes|Folio=7v,7v|Line=27,28|Norm=chicuatli|Orig=chi¶·quatli|Paragraph=2,2|SpaceAfter=No
+15	.	.	PUNCT	_	_	6	punct	6:punct	Folio=7v|Paragraph=2|Line=28|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:51
 # text = Ic chiquacen capitulo, vncan mjtoa: in tetzaujtl catca, injc motetzaujaia: in jquac aca qujttaia, cocamatl in teixpan tlaujltequja.
 # text[norm] = Ic chicuacen capítulo, oncan mihtoa: in tetzahuitl catca, inic motetzahuiaya: in ihcuac aca quittaya, cozamatl in teixpan tlahuiltequiya.
 # text[orig] = Icchiquacen·capitulo·,·vncan·mj¶toa·:·intetzaujtl·catca·,·injc·motetzauj¶aia·:·injquac·aca·qujttaia·,·cocamatl·in¶teixpan·tlaujltequja·.
 # text[osp] = El sexto capitulo, tracta del mal aguero que tomauan: quando vian, que la comadreja, o mostolilla atrauesaua por delante dellos, quando yvan por el camjno, o por la calle.
+# text[osp_norm] = El sexto capítulo, trata del mal agüero que tomaban: cuando veían, que la comadreja, o mostolilla atravesaba por delante de ellos, cuando iban por el camino, o por la calle.
 # references = A&D/170:1
 # tagged = 100.00%
 # lemmatised = 100.00%
@@ -182,6 +218,7 @@
 # text[norm] = Inic mochichiuh tochin, nacazpapatlactic, tentipontic, tentetepontic, eliztac: ihuan zan cuitlapiltetepontic.
 # text[orig] = Injc·muchichiuh·tochin·,·nacazpapatlactic·,·ten·tipontic·,·tentete¶pontic·,·eliztac·:·ioan·çan·cujtlapiltete¶pontic·.
 # text[osp] = Los conejos desta tierra, son como los de españa: aunque no tienen tan buen comer.
+# text[osp_norm] = Los conejos de esta tierra, son como los de España: aunque no tienen tan buen comer.
 # references = A&D/171:3
 # tagged = 100.00%
 # lemmatised = 100.00%
@@ -212,6 +249,7 @@
 # text[norm] = No ihuan, netetzahuiloya in pinahuiztli: iuhquin tocatl tlatlauhqui, tlatlactic.
 # text[orig] = No·ioan·,·netetzaujloia·in·pinaujz¶tli·:·iuh·qujn·tocatl·tlatlauhquj·,·tla¶tlactic·.
 # text[osp] = _
+# text[osp_norm] = _
 # references = A&D/172:2
 # tagged = 100.00%
 # lemmatised = 100.00%
@@ -240,6 +278,7 @@
 # text[orig] = Niman·ic·conana·:·homaxac·concaoa·.
 # text[eng] = Later he grabbed it, he left it at a crossroads.
 # text[osp] = Y luego tomaua aquella sauandija, y ponia la en la diuision de dos caminos: y alli la dexaua.
+# text[osp_norm] = Y luego tomaba aquella sabandija, y poníala en la división de dos caminos: y allí la dejaba.
 # text[spa] = Luego lo agarró, lo dejó en un cruce.
 # references = A&D/172:6
 # tagged = 100.00%
@@ -262,6 +301,7 @@
 # text[norm] = Za ye no iuhqui, mochiuhqui: quicenhuica, quicemihtoa in miquiztetzahuitl.
 # text[orig] = Caienoiuhquj·,·muchiuh¶quj·:·qujcenujca·,·qujcemjtoa·in·mj¶qujztetzaujtl·.
 # text[osp] = [...] o que los imbidiosos, y maliuolos los hechauan dentro de casa, por mal querencia: y por hazer mal a los mordores, deseando los enfermedad, o muerte, o pobreza, y desasosiego.
+# text[osp_norm] = [...] o que los envidiosos, y malívolos los echaban dentro de casa, por malquerencia: y por hacer mal a los mordores, deseándolos enfermedad, o muerte, o pobreza, y desasosiego.
 # references = A&D/175:4
 # tagged = 100.00%
 # lemmatised = 100.00%
@@ -290,6 +330,7 @@
 # text[orig] = Tetzaujtl·itechpa·chiqujmoli·.
 # text[eng] = Omen about the linnet
 # text[osp] = _
+# text[osp_norm] = _
 # references = A&D/180:3
 # tagged = 100.00%
 # lemmatised = 100.00%
@@ -308,6 +349,7 @@
 # text[orig] = Auh·injqc¶tepan·tzatzia·,·netetzaujloia·:·quj¶tovaia·,·ca·amo·qualcan·,·inotioal¶laque·:·ca·itla·ipan·ticholozque·.
 # text[eng] = And when at someone it cries, it was considered an omen: they said it is not good time, that we have come: we will flee from something.
 # text[osp] = [...] quando le oyan bozear en las montañas: que luego concebian sospecha, que les auja de venir algun mal.
+# text[osp_norm] = [...] cuando le oían vocear en las montañas: que luego concebían sospecha, que les había de venir algún mal.
 # references = A&D/180:5
 # tagged = 100.00%
 # lemmatised = 100.00%
@@ -345,6 +387,7 @@
 # text[orig] = Tetzaujtl·itechpa·in·coiutl·.
 # text[eng] = The omen about the coyote.
 # text[osp] = _
+# text[osp_norm] = _
 # references = A&D/180:6
 # tagged = 100.00%
 # lemmatised = 100.00%
@@ -364,6 +407,7 @@
 # text[orig] = Nican·tzonqujca·yn·tetza¶vitl·;·yn·qujtetzam·matia·,·nj·çan·nueua·españa·tlaca·.
 # text[eng] = Here end the omens; that they considered them, here New Spain people.
 # text[osp] = Fin del libro, de los agueros.
+# text[osp_norm] = Fin del libro, de los agüeros.
 # references = A&D/180:9
 # tagged = 100.00%
 # lemmatised = 100.00%

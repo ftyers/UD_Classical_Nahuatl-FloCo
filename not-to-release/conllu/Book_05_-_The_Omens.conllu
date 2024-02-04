@@ -2780,22 +2780,22 @@
 # lemmatised = 100.00%
 # analysed = 100.00%
 # heads = 100.00%
-# relations = 73.33%
-1	Ic	ic	ADV	_	_	2	_	_	Folio=7v|Paragraph=2|Line=26|Norm=Ic
-2	macujlli	macuilli	NUM	_	_	3	_	_	Folio=7v|Paragraph=2|Line=26|Norm=macuilli|Gloss=cinco
-3	capitulo	capítulo	NOUN	_	State=Abs	6	_	_	Folio=7v|Paragraph=2|Line=26|Norm=capítulo|Analysed=Yes
-4	,	,	PUNCT	_		6	punct	_	Folio=7v|Paragraph=2|Line=26|Norm=,|Analysed=Yes
-5	vncan	oncan	ADV	_		6	_	_	Folio=7v|Paragraph=2|Line=26|Norm=oncan|Gloss=aquí|Analysed=Yes
-6	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	Orig=mj¶·toa|Folio=7v,7v|Paragraph=2,2|Line=26,27|Norm=mihtoa|Analysed=Yes
-7	:	:	PUNCT	_		9	punct	_	Folio=7v|Paragraph=2|Line=27|Norm=:|Analysed=Yes
-8	in	in	SCONJ	_	_	9	mark	_	Orig=intetzaujtl|Folio=7v|Paragraph=2|Line=27|Norm=in
-9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	advcl	_	Orig=intetzaujtl|Folio=7v|Paragraph=2|Line=27|Norm=tetzahuitl|Analysed=Yes
-10	catca	catqui	AUX	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Tense=Past|VerbForm=Fin	9	cop	_	Folio=7v|Paragraph=2|Line=27|Norm=catca|Analysed=Yes
-11	,	,	PUNCT	_		13	punct	_	Folio=7v|Paragraph=2|Line=27|Norm=,|Analysed=Yes
-12	in	in	PRON	_	_	13	nsubj	_	Orig=injtechpa|Folio=7v|Paragraph=2|Line=27|Norm=in
-13	jtechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	9	acl	_	Orig=injtechpa|Folio=7v|Paragraph=2|Line=27|Norm=itechpa|Analysed=Yes
-14	chiquatli	chicuatli	NOUN	_	State=Abs	13	nmod	_	Orig=chi¶·quatli|Folio=7v,7v|Paragraph=2,2|Line=27,28|Norm=chicuatli|Analysed=Yes
-15	.	.	PUNCT	_		6	punct	_	Folio=7v|Paragraph=2|Line=28|Norm=.|Analysed=Yes
+# relations = 100.00%
+1	Ic	ic	ADV	_	_	3	amod	3:amod	Folio=7v|Paragraph=2|Line=26|Norm=Ic
+2	macujlli	macuilli	NUM	_	_	1	nummod	1:nummod	Folio=7v|Paragraph=2|Line=26|Norm=macuilli|Gloss=cinco
+3	capitulo	capítulo	NOUN	_	State=Abs	6	obl	6:obl	Folio=7v|Paragraph=2|Line=26|Norm=capítulo|Analysed=Yes
+4	,	,	PUNCT	_		6	punct	6:punct	Folio=7v|Paragraph=2|Line=26|Norm=,|Analysed=Yes
+5	vncan	oncan	ADV	_		6	advmod	6:advmod	Folio=7v|Paragraph=2|Line=26|Norm=oncan|Gloss=aquí|Analysed=Yes
+6	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Orig=mj¶·toa|Folio=7v,7v|Paragraph=2,2|Line=26,27|Norm=mihtoa|Analysed=Yes
+7	:	:	PUNCT	_		9	punct	9:punct	Folio=7v|Paragraph=2|Line=27|Norm=:|Analysed=Yes
+8	in	in	SCONJ	_	_	9	mark	9:mark	Orig=intetzaujtl|Folio=7v|Paragraph=2|Line=27|Norm=in
+9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	csubj	6:csubj	Orig=intetzaujtl|Folio=7v|Paragraph=2|Line=27|Norm=tetzahuitl|Analysed=Yes
+10	catca	catqui	AUX	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Tense=Past|VerbForm=Fin	9	cop	9:cop	Folio=7v|Paragraph=2|Line=27|Norm=catca|Analysed=Yes
+11	,	,	PUNCT	_		13	punct	13:punct	Folio=7v|Paragraph=2|Line=27|Norm=,|Analysed=Yes
+12	in	in	SCONJ	_	_	13	mark	13:mark	Orig=injtechpa|Folio=7v|Paragraph=2|Line=27|Norm=in
+13	jtechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	9	acl	9:acl	Orig=injtechpa|Folio=7v|Paragraph=2|Line=27|Norm=itechpa|Analysed=Yes
+14	chiquatli	chicuatli	NOUN	_	State=Abs	13	nmod	13:nmod	Orig=chi¶·quatli|Folio=7v,7v|Paragraph=2,2|Line=27,28|Norm=chicuatli|Analysed=Yes
+15	.	.	PUNCT	_		6	punct	6:punct	Folio=7v|Paragraph=2|Line=28|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:44
 # text = No yoan netetzaujloia, tetzaujttoia, in chiquatli: anoço chichtli yn jquac aca, itlapanjxquac tzatzi: tzatzitiqujca, in qujtoa: cuel, ic qujneltocaia, ca ie aca mjqujz: ie ceme mjqujzque in chaneque: ie ceme cocolizcujzque.
