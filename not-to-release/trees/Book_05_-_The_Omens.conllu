@@ -2506,25 +2506,31 @@
 
 # sent_id = Book_05_-_The_Omens.txt:43
 # text = Ic macujlli capitulo, vncan mjtoa: in tetzaujtl catca, in jtechpa chiquatli.
-# text[norm] = Ic macuilli capítulo, oncan mihtoa: in tezahuitl catca, in itechpa chicuatli.
+# text[norm] = Ic macuilli capítulo, oncan mihtoa: in tetzahuitl catca, in itechpa chicuatli.
 # text[orig] = Ic·macujlli·capitulo·,·vncan·mj¶toa·:·intetzaujtl·catca·,·injtechpa·chi¶quatli·.
+# text[osp] = Capitulo quinto, del mal aguero: que tomauan del chillido de la lechuza.
+# text[osp_norm] = Capítulo quinto, del mal agüero: que tomaban del chillido de la lechuza.
+# references = A&D/169:1
 # tagged = 100.00%
+# lemmatised = 100.00%
 # analysed = 100.00%
-1	Ic	ic	ADV	_	_	2	_	_	_
-2	macujlli	macuilli	NUM	_	_	3	_	_	_
-3	capitulo	capítulo	NOUN	_	State=Abs	6	_	_	_
-4	,	,	PUNCT	_	_	6	punct	_	_
-5	vncan	_	ADV	_	_	6	_	_	_
-6	mjtoa	ihtoa	VERB	_	_	0	root	_	_
-7	:	:	PUNCT	_	_	9	punct	_	_
-8	in	in	SCONJ	_	_	9	mark	_	_
-9	tetzaujtl	tezahuitl	NOUN	_	State=Abs	6	advcl	_	_
-10	catca	_	VERB	_	Subcat=Intr	9	cop	_	_
-11	,	,	PUNCT	_	_	13	punct	_	_
-12	in	in	PRON	_	_	13	nsubj	_	_
-13	jtechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Poss	9	acl	_	_
-14	chiquatli	chicuatli	NOUN	_	State=Abs	13	nmod	_	_
-15	.	.	PUNCT	_	_	6	punct	_	_
+# heads = 100.00%
+# relations = 73.33%
+1	Ic	ic	ADV	_	_	3	amod	3:amod	_
+2	macujlli	macuilli	NUM	_	_	1	nummod	1:nummod	_
+3	capitulo	capítulo	NOUN	_	State=Abs	6	obl	6:obl	_
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	vncan	oncan	ADV	_	_	6	advmod	6:advmod	_
+6	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	:	:	PUNCT	_	_	9	punct	9:punct	_
+8	in	in	SCONJ	_	_	9	mark	9:mark	_
+9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	csubj	6:csubj	_
+10	catca	catqui	AUX	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Tense=Past|VerbForm=Fin	9	cop	9:cop	_
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	in	in	SCONJ	_	_	13	mark	13:mark	_
+13	jtechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	9	acl	9:acl	_
+14	chiquatli	chicuatli	NOUN	_	State=Abs	13	nmod	13:nmod	_
+15	.	.	PUNCT	_	_	6	punct	6:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:44
 # text = No yoan netetzaujloia, tetzaujttoia, in chiquatli: anoço chichtli yn jquac aca, itlapanjxquac tzatzi: tzatzitiqujca, in qujtoa: cuel, ic qujneltocaia, ca ie aca mjqujz: ie ceme mjqujzque in chaneque: ie ceme cocolizcujzque.

@@ -276,7 +276,9 @@ for bloc in sys.stdin.read().split('\n\n'):
 		form = row[1]
 		misc = row[9]
 		attrs = {pair.split('=')[0] : pair.split('=')[1] for pair in misc.split('|')}
-		norm = attrs['Norm']
+		norm = ''
+		if 'Norm' in attrs:
+			norm = attrs['Norm']
 
 		if '*' not in norm:
 			clean += 1 

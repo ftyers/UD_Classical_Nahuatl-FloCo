@@ -417,6 +417,7 @@ for token in tokens:
 							conllu_subtokens = subtoken_table[subtoken][sentence_id_string]
 
 					if len(conllu_subtokens) > 0:
+						#print(sentence_id_string, '| %', conllu_subtokens, file=sys.stderr)
 						span = '%d-%d' % (idx, idx+len(conllu_subtokens) -1)
 						lines.append('%s\t%s\t_\t_\t_\t_\t_\t_\t_\t_' % (span, subtoken))
 						for conllu_subtoken in conllu_subtokens:
@@ -442,11 +443,14 @@ for token in tokens:
 						conllu_subtokens = subtoken_table[form][sentence_id_string]
 
 				if len(conllu_subtokens) > 0:
+#					print(sentence_id_string, '| @', conllu_subtokens, file=sys.stderr)
 					span = '%d-%d' % (idx, idx+len(conllu_subtokens) -1)
 					lines.append('%s\t%s\t_\t_\t_\t_\t_\t_\t_\t_' % (span, form))
 					for conllu_subtoken in conllu_subtokens:
 						norm, norm_form, ambiguous, overridden = normalise(table, norm_overrides, conllu_subtoken, idx)
-						lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, conllu_subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s' % (manu, foli, para, line, norm)))
+#						print(sentence_id_string, '| @', idx,'|', conllu_subtoken,'|', norm, norm_form,'|', ambiguous, overridden, file=sys.stderr)
+						lines.append('%d\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % (idx, conllu_subtoken, '_', '_', '_', '_', '_', '_', '_', 'Orig=%s|Folio=%s|Paragraph=%s|Line=%s|Norm=%s' % (token[0], token[1], token[2], token[3], norm)))
+#						print(sentence_id_string, '| £', idx,'|', manu,'|', foli, para, line, norm, file=sys.stderr)
 						normalised_sentence.append(norm_form.replace('*', ''))
 						idx += 1
 				else:

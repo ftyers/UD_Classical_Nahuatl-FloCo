@@ -1372,8 +1372,8 @@
 2	intla	tla	PRON	_	_	6	mark	_	Orig=intlacana|Folio=3v|Paragraph=2|Line=50|Norm=intla|Gloss=algo
 3	cana	cana	ADV	_	_	6	advmod	_	Orig=intlacana|Folio=3v|Paragraph=2|Line=50|Norm=cana|Gloss=alguna.parte
 4-5	oimpan	_	_	_	_	_	_	_	_
-4	o	o		_		6	aux	_	Orig=intlacana|Folio=3v|Paragraph=2|Line=50|Norm=o|Analysed=Yes
-5	impan	pan	NOUN	_	NounType=Relat|Number[psor]=Plur|Person[psor]=3|State=Pos	6	obl	_	Orig=intlacana|Folio=3v|Paragraph=2|Line=50|Norm=impan|Analysed=Yes
+4	o	o		_		6	aux	_	Orig=oimpan|Folio=3v|Paragraph=2|Line=50|Norm=o|Analysed=Yes
+5	impan	pan	NOUN	_	NounType=Relat|Number[psor]=Plur|Person[psor]=3|State=Pos	6	obl	_	Orig=oimpan|Folio=3v|Paragraph=2|Line=50|Norm=impan|Analysed=Yes
 6	ioac	yohuac	VERB	_	_	15	advcl	_	Folio=3v|Paragraph=2|Line=50|Norm=yoac
 7	,	,	PUNCT	_		15	punct	_	Folio=3v|Paragraph=2|Line=50|Norm=,|Analysed=Yes
 8	cana	cana	ADV	_	_	15	advmod	_	Folio=3v|Paragraph=2|Line=51|Norm=cana|Gloss=alguna.parte
@@ -3220,8 +3220,8 @@
 44	in	in	DET|SCONJ	_	_	45	_	45:dep	Orig=incampa¶|Folio=8r|Paragraph=3|Line=7|Norm=in
 45	campa	campa	ADV	_		43	_	43:dep	Orig=incampa¶|Folio=8r|Paragraph=3|Line=7|Norm=campa|Gloss=donde|Analysed=Yes
 46-47	iaznequj	_	_	_	_	_	_	_	_
-46	iaz	ya	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	45	_	45:dep	Orig=incampa¶|Folio=8r|Paragraph=3|Line=7|Norm=yaz|Gloss=irá|Analysed=Yes
-47	nequj	nequi	AUX	_	_	46	_	46:dep	Orig=incampa¶|Folio=8r|Paragraph=3|Line=7|Norm=nequi|Gloss=quiere
+46	iaz	ya	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	45	_	45:dep	Orig=iaznequj|Folio=8r|Paragraph=3|Line=8|Norm=yaz|Gloss=irá|Analysed=Yes
+47	nequj	nequi	AUX	_	_	46	_	46:dep	Orig=iaznequj|Folio=8r|Paragraph=3|Line=8|Norm=nequi|Gloss=quiere
 48	:	:	PUNCT	_		52	punct	52:punct	Folio=8r|Paragraph=3|Line=8|Norm=:|Analysed=Yes
 49	aco	azo	ADV	_		52	advmod	52:advmod	Folio=8r|Paragraph=3|Line=8|Norm=azo|Gloss=quizás|Analysed=Yes
 50	acame	acatl	NOUN	_	Number=Plur	51	nmod	51:nmod	Folio=8r|Paragraph=3|Line=8|Norm=acame|Analysed=Yes
@@ -3707,12 +3707,12 @@
 38	motetzauj	tetzahuia	NOUN	_	_	36	_	_	Orig=motetza¶·uj|Folio=9r,9r|Paragraph=1,1|Line=13,14|Norm=motetzahui|AltPOS=VERB
 39	,	,	PUNCT	_		41	punct	_	Folio=9r|Paragraph=1|Line=14|Norm=,|Analysed=Yes
 40-41	tlaqujioculi	_	_	_	_	_	_	_	_
-40	tla	tla	SCONJ	_	_	41	_	_	Orig=motetza¶·uj|Folio=9r,9r|Paragraph=1,1|Line=13,14|Norm=tla
-41	qujioculi	yocolia	VERB	_	Number[iobj]=Sing|Number[subj]=Plur,Sing|Person[iobj]=3|Person[subj]=3|Subcat=Ditr|Tense=Past|VerbForm=Fin	38	_	_	Orig=motetza¶·uj|Folio=9r,9r|Paragraph=1,1|Line=13,14|Norm=quiyocoli|Analysed=Yes
+40	tla	tla	SCONJ	_	_	41	_	_	Orig=tlaqujioculi|Folio=9r|Paragraph=1|Line=14|Norm=tla
+41	qujioculi	yocolia	VERB	_	Number[iobj]=Sing|Number[subj]=Plur,Sing|Person[iobj]=3|Person[subj]=3|Subcat=Ditr|Tense=Past|VerbForm=Fin	38	_	_	Orig=tlaqujioculi|Folio=9r|Paragraph=1|Line=14|Norm=quiyocoli|Analysed=Yes
 42	,	,	PUNCT	_		43	punct	_	Folio=9r|Paragraph=1|Line=14|Norm=,|Analysed=Yes
 43-44	tlamotelchioa	_	_	_	_	_	_	_	_
-43	tla	tla	SCONJ	_	_	44	_	_	Orig=motetza¶·uj|Folio=9r,9r|Paragraph=1,1|Line=13,14|Norm=tla
-44	motelchioa	telchihua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	41	_	_	Orig=motetza¶·uj|Folio=9r,9r|Paragraph=1,1|Line=13,14|Norm=motelchihua|Analysed=Yes
+43	tla	tla	SCONJ	_	_	44	_	_	Orig=tlamotelchioa|Folio=9r|Paragraph=1|Line=14|Norm=tla
+44	motelchioa	telchihua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	41	_	_	Orig=tlamotelchioa|Folio=9r|Paragraph=1|Line=14|Norm=motelchihua|Analysed=Yes
 45	,	,	PUNCT	_		47	punct	_	Folio=9r|Paragraph=1|Line=14|Norm=,|Analysed=Yes
 46	in	in	DET|SCONJ	_	_	47	_	_	Folio=9r|Paragraph=1|Line=14|Norm=in
 47	ioioliton	yoyoliton	NOUN	_	State=Abs	41	_	_	Folio=9r|Paragraph=1|Line=15|Norm=yoyoliton|Gloss=insecto|Root=yoyoli|Analysed=Yes
@@ -3737,8 +3737,8 @@
 66	tlein	tlein	PRON	_	_	64	_	_	Orig=intlein|Folio=9r|Paragraph=1|Line=17|Norm=tlein
 67	,	,	PUNCT	_		68	punct	_	Folio=9r|Paragraph=1|Line=17|Norm=,|Analysed=Yes
 68-69	qujtoznequj	_	_	_	_	_	_	_	_
-68	qujtoz	ihtoa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Fut|VerbForm=Fin	66	_	_	Orig=intlein|Folio=9r|Paragraph=1|Line=17|Norm=quihtoz|Analysed=Yes
-69	nequj	nequi	AUX	_	_	68	_	_	Orig=intlein|Folio=9r|Paragraph=1|Line=17|Norm=nequi|Gloss=quiere
+68	qujtoz	ihtoa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Fut|VerbForm=Fin	66	_	_	Orig=qujtoznequj|Folio=9r|Paragraph=1|Line=18|Norm=quihtoz|Analysed=Yes
+69	nequj	nequi	AUX	_	_	68	_	_	Orig=qujtoznequj|Folio=9r|Paragraph=1|Line=18|Norm=nequi|Gloss=quiere
 70	.	.	PUNCT	_		9	punct	_	Folio=9r|Paragraph=1|Line=18|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:64
@@ -5729,8 +5729,8 @@
 2	chiqujmoli	chiquimoli	NOUN	_	State=Abs	6	_	_	Orig=I·nchiqujmoli|Folio=13v,13v|Paragraph=6,6|Line=1,1|Norm=chiquimoli|Analysed=Yes
 3	,	,	PUNCT	_		6	punct	_	Folio=13v|Paragraph=6|Line=1|Norm=,|Analysed=Yes
 4-5	cacentetl	_	_	_	_	_	_	_	_
-4	ca	cah|ca	VERB	_	_	6	_	_	Orig=I·nchiqujmoli|Folio=13v,13v|Paragraph=6,6|Line=1,1|Norm=ca
-5	centetl	ce	NUM	_	NumType=Clf	6	_	_	Orig=I·nchiqujmoli|Folio=13v,13v|Paragraph=6,6|Line=1,1|Norm=centetl|Gloss=una.pieza|Split=cen·tetl
+4	ca	cah|ca	VERB	_	_	6	_	_	Orig=cacentetl|Folio=13v|Paragraph=6|Line=1|Norm=ca
+5	centetl	ce	NUM	_	NumType=Clf	6	_	_	Orig=cacentetl|Folio=13v|Paragraph=6|Line=1|Norm=centetl|Gloss=una.pieza|Split=cen·tetl
 6	tototl	tototl	NOUN	_	State=Abs	0	root	_	Orig=to·totl|Folio=13v,13v|Paragraph=6,6|Line=1,1|Norm=tototl|Gloss=pájaro|Analysed=Yes
 7	,	,	PUNCT	_		9	punct	_	Folio=13v|Paragraph=6|Line=1|Norm=,|Analysed=Yes
 8	iuhqujn	iuhquin	ADV	_		9	_	_	Orig=iuh·qujn|Folio=13v,13v|Paragraph=6,6|Line=2,2|Norm=iuhquin|Gloss=así|Analysed=Yes
