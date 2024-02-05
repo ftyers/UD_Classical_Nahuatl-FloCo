@@ -148,7 +148,7 @@
 
 # sent_id = Book_05_-_The_Omens.txt:4
 # text = Yzqujtlamantli, y, in qujtetzammatia, in quitetzaujttaia, in tetzaujtl ipan quimatia in netetzaujloia, in tlatetzaujaia.
-# text[norm] = Izquitlamanti, y, in quitetzammatia, in quitetzahuittaya, in tetzahuitl ipan quimatia in netetzahuiloya, in tlatetzahuiaya.
+# text[norm] = Izquitlamanti, in, in quitetzammatia, in quitetzahuittaya, in tetzahuitl ipan quimatia in netetzahuiloya, in tlatetzahuiaya.
 # text[orig] = Yzqujtlamantli·,·y·,·in·quj·tetzamma¶tia·,·inquitetzaujttaia·,·in·tetzaujtl·ipan¶quimatia·innetetzaujloia·,·in·tlatetza¶ujaia·.
 # text[osp] = _
 # text[osp_norm] = _
@@ -160,7 +160,7 @@
 # relations = 0.00%
 1	Yzqujtlamantli	izquitlamantli	NOUN	_	Number=Plur	_	_	_	Folio=1r|Paragraph=3|Line=8|Norm=Izquitlamanti|Analysed=Yes
 2	,	,	PUNCT	_		_	_	_	Folio=1r|Paragraph=3|Line=8|Norm=,|Analysed=Yes
-3	y	y	CCONJ	_	_	_	_	_	Folio=1r|Paragraph=3|Line=8|Norm=y|AmbigNorm=True|Override=False
+3	y	in	CCONJ	_	_	_	_	_	Folio=1r|Paragraph=3|Line=8|Norm=in|AmbigNorm=True|Override=True
 4	,	,	PUNCT	_		_	_	_	Folio=1r|Paragraph=3|Line=8|Norm=,|Analysed=Yes
 5	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=1r|Paragraph=3|Line=8|Norm=in
 6	qujtetzammatia	tetzammatia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	_	_	_	Orig=quj·tetzamma¶·tia|Folio=1r,1r,1r|Paragraph=3,3,3|Line=8,8,9|Norm=quitetzammatia|Analysed=Yes
@@ -2925,27 +2925,27 @@
 # lemmatised = 100.00%
 # analysed = 100.00%
 # heads = 100.00%
-# relations = 70.00%
-1	No	no	ADV	_		13	advmod	_	Folio=7v|Paragraph=3|Line=13|Norm=No|Gloss=también|Analysed=Yes
-2	ioan	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	13	obl	_	Folio=7v|Paragraph=3|Line=13|Norm=ihuan|Gloss=con|Analysed=Yes
-3	,	,	PUNCT	_		7	punct	_	Folio=7v|Paragraph=3|Line=13|Norm=,|Analysed=Yes
-4	intla	tla	PRON	_	_	7	mark	_	Folio=7v|Paragraph=3|Line=13|Norm=intla|Gloss=algo
-5	ie	ye	ADV	_	_	7	advmod	_	Folio=7v|Paragraph=3|Line=13|Norm=ye|AmbigNorm=True|Override=False
-6	aca	aca	DET|PRON	_	_	7	nsubj	_	Folio=7v|Paragraph=3|Line=13|Norm=aca
-7	mococoa	cocoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	13	advcl	_	Folio=7v|Paragraph=3|Line=13|Norm=mococoa|Analysed=Yes
-8	:	:	PUNCT	_		11	punct	_	Folio=7v|Paragraph=3|Line=13|Norm=:|Analysed=Yes
-9	in	in	DET|SCONJ	_	_	11	_	_	Orig=inj¶·pan|Folio=7v,7v|Paragraph=3,3|Line=13,14|Norm=in
-10	jpan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	11	obl	_	Orig=inj¶·pan|Folio=7v,7v|Paragraph=3,3|Line=13,14|Norm=ipan|Analysed=Yes
-11	tzatzitiqujca	tzatzi	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr	7	_	_	Folio=7v|Paragraph=3|Line=14|Norm=tzatzitiquiza|Analysed=Yes
-12	,	,	PUNCT	_		13	punct	_	Folio=7v|Paragraph=3|Line=14|Norm=,|Analysed=Yes
-13	qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	_	Folio=7v|Paragraph=3|Line=14|Norm=quihtoaya|Analysed=Yes
-14	ca	cah|ca	VERB	_	_	13	_	_	Folio=7v|Paragraph=3|Line=14|Norm=ca|AmbigNorm=True|Override=False
-15	aiocmo	ayocmo	ADV	_		16	advmod	_	Orig=aioc¶·mo|Folio=7v,7v|Paragraph=3,3|Line=14,15|Norm=ayocmo|Gloss=ya.no|Analysed=Yes
-16	qujcaz	quiza	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	14	_	_	Folio=7v|Paragraph=3|Line=15|Norm=quizaz|Analysed=Yes
-17	:	:	PUNCT	_		18	punct	_	Folio=7v|Paragraph=3|Line=15|Norm=:|Analysed=Yes
-18	ca	cah|ca	VERB	_	_	13	_	_	Orig=caticcaoazque|Folio=7v|Paragraph=3|Line=15|Norm=ca|AmbigNorm=True|Override=False
-19	ticcaoazque	cahua	VERB	_	Number[obj]=Sing|Number[subj]=Plur|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Fut|VerbForm=Fin	18	_	_	Orig=caticcaoazque|Folio=7v|Paragraph=3|Line=15|Norm=ticcahuazque|Analysed=Yes
-20	.	.	PUNCT	_		13	punct	_	Folio=7v|Paragraph=3|Line=15|Norm=.|Analysed=Yes
+# relations = 100.00%
+1	No	no	ADV	_		13	advmod	13:advmod	Folio=7v|Paragraph=3|Line=13|Norm=No|Gloss=también|Analysed=Yes
+2	ioan	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	13	obl	13:obl	Folio=7v|Paragraph=3|Line=13|Norm=ihuan|Gloss=con|Analysed=Yes
+3	,	,	PUNCT	_		7	punct	7:punct	Folio=7v|Paragraph=3|Line=13|Norm=,|Analysed=Yes
+4	intla	tla	PRON	_	_	7	mark	7:mark	Folio=7v|Paragraph=3|Line=13|Norm=intla|Gloss=algo
+5	ie	ye	ADV	_	_	7	advmod	7:advmod	Folio=7v|Paragraph=3|Line=13|Norm=ye|AmbigNorm=True|Override=False
+6	aca	aca	PRON	_	_	7	nsubj	7:nsubj	Folio=7v|Paragraph=3|Line=13|Norm=aca
+7	mococoa	cocoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	13	advcl	13:advcl	Folio=7v|Paragraph=3|Line=13|Norm=mococoa|Analysed=Yes
+8	:	:	PUNCT	_		11	punct	11:punct	Folio=7v|Paragraph=3|Line=13|Norm=:|Analysed=Yes
+9	in	in	SCONJ	_	_	11	mark	11:mark	Orig=inj¶·pan|Folio=7v,7v|Paragraph=3,3|Line=13,14|Norm=in
+10	jpan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	11	obl	11:obl	Orig=inj¶·pan|Folio=7v,7v|Paragraph=3,3|Line=13,14|Norm=ipan|Analysed=Yes
+11	tzatzitiqujca	tzatzi	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr	7	conj	7:conj	Folio=7v|Paragraph=3|Line=14|Norm=tzatzitiquiza|Analysed=Yes
+12	,	,	PUNCT	_		13	punct	13:punct	Folio=7v|Paragraph=3|Line=14|Norm=,|Analysed=Yes
+13	qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	0:root	Folio=7v|Paragraph=3|Line=14|Norm=quihtoaya|Analysed=Yes
+14	ca	cah|ca	PART	_	_	16	discourse	16:discourse	Folio=7v|Paragraph=3|Line=14|Norm=ca|AmbigNorm=True|Override=False
+15	aiocmo	ayocmo	ADV	_		16	advmod	16:advmod	Orig=aioc¶·mo|Folio=7v,7v|Paragraph=3,3|Line=14,15|Norm=ayocmo|Gloss=ya.no|Analysed=Yes
+16	qujcaz	quiza	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	13	parataxis:speech	13:parataxis:speech	Folio=7v|Paragraph=3|Line=15|Norm=quizaz|Analysed=Yes
+17	:	:	PUNCT	_		19	punct	19:punct	Folio=7v|Paragraph=3|Line=15|Norm=:|Analysed=Yes
+18	ca	cah|ca	PART	_	_	19	discourse	19:discourse	Orig=caticcaoazque|Folio=7v|Paragraph=3|Line=15|Norm=ca|AmbigNorm=True|Override=False
+19	ticcaoazque	cahua	VERB	_	Number[obj]=Sing|Number[subj]=Plur|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Fut|VerbForm=Fin	13	parataxis:speech	13:parataxis:speech	Orig=caticcaoazque|Folio=7v|Paragraph=3|Line=15|Norm=ticcahuazque|Analysed=Yes
+20	.	.	PUNCT	_		13	punct	13:punct	Folio=7v|Paragraph=3|Line=15|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:47
 # text = Ipampa iuh qujtoaia, qujlmach, in iehoatl chiquatli: intitlan, intlaioal, in mjctlan tecutli: yoan mjctecacioatl: ommat in moctlan, ic qujtocaiotiaia, iaotequjoa: ipampa ca inteancauh, intenotzacauh, in mjctlan tecutli: ioan mjctecacioatl.
@@ -5724,24 +5724,24 @@
 # lemmatised = 100.00%
 # analysed = 100.00%
 # heads = 100.00%
-# relations = 31.25%
-1	In	in	DET|SCONJ	_	_	2	_	_	Orig=I·nchiqujmoli|Folio=13v,13v|Paragraph=6,6|Line=1,1|Norm=In
-2	chiqujmoli	chiquimoli	NOUN	_	State=Abs	6	_	_	Orig=I·nchiqujmoli|Folio=13v,13v|Paragraph=6,6|Line=1,1|Norm=chiquimoli|Analysed=Yes
-3	,	,	PUNCT	_		6	punct	_	Folio=13v|Paragraph=6|Line=1|Norm=,|Analysed=Yes
+# relations = 100.00%
+1	In	in	DET	_	_	2	det	2:det	Orig=I·nchiqujmoli|Folio=13v,13v|Paragraph=6,6|Line=1,1|Norm=In
+2	chiqujmoli	chiquimoli	NOUN	_	State=Abs	6	nsubj	6:nsubj	Orig=I·nchiqujmoli|Folio=13v,13v|Paragraph=6,6|Line=1,1|Norm=chiquimoli|Analysed=Yes
+3	,	,	PUNCT	_		6	punct	6:punct	Folio=13v|Paragraph=6|Line=1|Norm=,|Analysed=Yes
 4-5	cacentetl	_	_	_	_	_	_	_	_
-4	ca	cah|ca	VERB	_	_	6	_	_	Orig=cacentetl|Folio=13v|Paragraph=6|Line=1|Norm=ca
-5	centetl	ce	NUM	_	NumType=Clf	6	_	_	Orig=cacentetl|Folio=13v|Paragraph=6|Line=1|Norm=centetl|Gloss=una.pieza|Split=cen·tetl
-6	tototl	tototl	NOUN	_	State=Abs	0	root	_	Orig=to·totl|Folio=13v,13v|Paragraph=6,6|Line=1,1|Norm=tototl|Gloss=pájaro|Analysed=Yes
-7	,	,	PUNCT	_		9	punct	_	Folio=13v|Paragraph=6|Line=1|Norm=,|Analysed=Yes
-8	iuhqujn	iuhquin	ADV	_		9	_	_	Orig=iuh·qujn|Folio=13v,13v|Paragraph=6,6|Line=2,2|Norm=iuhquin|Gloss=así|Analysed=Yes
-9	quauhchochopitli	cuauhchochopitli	NOUN	_	State=Abs	6	_	_	Orig=quauh·chochopitli|Folio=13v,13v|Paragraph=6,6|Line=2,2|Norm=cuauhchochopitli|Analysed=Yes
-10	:	:	PUNCT	_		13	punct	_	Folio=13v|Paragraph=6|Line=2|Norm=:|Analysed=Yes
-11	auh	auh	CCONJ	_	_	13	_	_	Folio=13v|Paragraph=6|Line=2|Norm=auh|Gloss=y
-12	veca	huehca	ADV	_		13	_	_	Folio=13v|Paragraph=6|Line=2|Norm=huehca|Gloss=lejos|Analysed=Yes
-13	quauhtla	cuauhtla	NOUN	_	_	6	_	_	Folio=13v|Paragraph=6|Line=3|Norm=cuauhtla|Gloss=bosque
-14	in	in	DET|SCONJ	_	_	15	_	_	Orig=injchan|Folio=13v|Paragraph=6|Line=3|Norm=in
-15	jchan	chantli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Pos	13	_	_	Orig=injchan|Folio=13v|Paragraph=6|Line=3|Norm=ichan|Gloss=su.casa|Analysed=Yes
-16	.	.	PUNCT	_		6	punct	_	Folio=13v|Paragraph=6|Line=3|Norm=.|Analysed=Yes
+4	ca	cah|ca	PART	_	_	6	discourse	6:discourse	Orig=cacentetl|Folio=13v|Paragraph=6|Line=1|Norm=ca
+5	centetl	ce	NUM	_	NumType=Clf	6	nummod	6:nummod	Orig=cacentetl|Folio=13v|Paragraph=6|Line=1|Norm=centetl|Gloss=una.pieza|Split=cen·tetl
+6	tototl	tototl	NOUN	_	State=Abs	0	root	0:root	Orig=to·totl|Folio=13v,13v|Paragraph=6,6|Line=1,1|Norm=tototl|Gloss=pájaro|Analysed=Yes
+7	,	,	PUNCT	_		8	punct	8:punct	Folio=13v|Paragraph=6|Line=1|Norm=,|Analysed=Yes
+8	iuhqujn	iuhquin	ADV	_		6	acl	6:acl	Orig=iuh·qujn|Folio=13v,13v|Paragraph=6,6|Line=2,2|Norm=iuhquin|Gloss=así|Analysed=Yes
+9	quauhchochopitli	cuauhchochopitli	NOUN	_	State=Abs	8	xcomp	8:xcomp	Orig=quauh·chochopitli|Folio=13v,13v|Paragraph=6,6|Line=2,2|Norm=cuauhchochopitli|Analysed=Yes
+10	:	:	PUNCT	_		13	punct	13:punct	Folio=13v|Paragraph=6|Line=2|Norm=:|Analysed=Yes
+11	auh	auh	CCONJ	_	_	13	cc	13:cc	Folio=13v|Paragraph=6|Line=2|Norm=auh|Gloss=y
+12	veca	huehca	ADV	_		13	advmod	13:advmod	Folio=13v|Paragraph=6|Line=2|Norm=huehca|Gloss=lejos|Analysed=Yes
+13	quauhtla	cuauhtla	NOUN	_	_	6	conj	6:conj	Folio=13v|Paragraph=6|Line=3|Norm=cuauhtla|Gloss=bosque
+14	in	in	DET	_	_	15	det	15:det	Orig=injchan|Folio=13v|Paragraph=6|Line=3|Norm=in
+15	jchan	chantli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Pos	13	nsubj	13:nsubj	Orig=injchan|Folio=13v|Paragraph=6|Line=3|Norm=ichan|Gloss=su.casa|Analysed=Yes
+16	.	.	PUNCT	_		6	punct	6:punct	Folio=13v|Paragraph=6|Line=3|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:100
 # text = Auh in jqc tepan tzatzia, netetzaujloia: qujtovaia, ca amo qualcan, in otioallaque: ca itla ipan ticholozque.

@@ -2638,28 +2638,35 @@
 # text = No ioan, intla ie aca mococoa: in jpan tzatzitiqujca, qujtoaia ca aiocmo qujcaz: ca ticcaoazque.
 # text[norm] = No ihuan, intla ye aca mococoa: in ipan tzatzitiquiza, quihtoaya ca ayocmo quizaz: ca ticcahuazque.
 # text[orig] = No·ioan·,·intla·ie·aca·mococoa·:·inj¶pan·tzatzitiqujca·,·qujtoaia·ca·aioc¶mo·qujcaz·:·caticcaoazque·.
+# text[osp] = [...] estaua algun enfermo: luego le pronosticauan la muerte.
+# text[osp_norm] = [...] estaba algún enfermo: luego le pronosticaban la muerte.
+# text[spa] = También con eso, si ya alguien se enferma: que en él se pone a chillar, decían que ya no saldrá, que lo dejaremos.
+# references = A&D/169:3
 # tagged = 100.00%
+# lemmatised = 100.00%
 # analysed = 100.00%
-1	No	no	ADV	_	_	13	advmod	_	_
-2	ioan	_	NOUN	_	NounType=Relat	13	obl	_	_
-3	,	,	PUNCT	_	_	7	punct	_	_
-4	intla	_	PRON	_	_	7	mark	_	_
-5	ie	ye	ADV	_	_	7	advmod	_	_
-6	aca	_	DET|PRON	_	_	7	nsubj	_	_
-7	mococoa	cocoa	VERB	_	_	13	advcl	_	_
-8	:	:	PUNCT	_	_	11	punct	_	_
-9	in	in	DET|SCONJ	_	_	11	_	_	_
-10	jpan	_	NOUN	_	NounType=Relat	11	obl	_	_
-11	tzatzitiqujca	tzatzi	VERB	_	_	7	_	_	_
-12	,	,	PUNCT	_	_	13	punct	_	_
-13	qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	_	_
-14	ca	_	VERB	_	_	13	_	_	_
-15	aiocmo	ayocmo	ADV	_	_	16	advmod	_	_
-16	qujcaz	quiza	VERB	_	Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	14	_	_	_
-17	:	:	PUNCT	_	_	18	punct	_	_
-18	ca	_	VERB	_	_	13	_	_	_
-19	ticcaoazque	cahua	VERB	_	Number[obj]=Sing|Number[subj]=Plur|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Fut|VerbForm=Fin	18	_	_	_
-20	.	.	PUNCT	_	_	13	punct	_	_
+# heads = 100.00%
+# relations = 70.00%
+1	No	no	ADV	_	_	13	advmod	13:advmod	_
+2	ioan	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	13	obl	13:obl	_
+3	,	,	PUNCT	_	_	7	punct	7:punct	_
+4	intla	tla	SCONJ	_	_	7	mark	7:mark	_
+5	ie	ye	ADV	_	_	7	advmod	7:advmod	_
+6	aca	aca	PRON	_	_	7	nsubj	7:nsubj	_
+7	mococoa	cocoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	13	advcl	13:advcl	_
+8	:	:	PUNCT	_	_	11	punct	11:punct	_
+9	in	in	SCONJ	_	_	11	mark	11:mark	_
+10	jpan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	11	obl	11:obl	_
+11	tzatzitiqujca	tzatzi	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr	7	conj	7:conj	_
+12	,	,	PUNCT	_	_	13	punct	13:punct	_
+13	qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	0:root	_
+14	ca	cah|ca	PART	_	_	16	discourse	16:discourse	_
+15	aiocmo	ayocmo	ADV	_	_	16	advmod	16:advmod	_
+16	qujcaz	quiza	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	13	parataxis:speech	13:parataxis:speech	_
+17	:	:	PUNCT	_	_	19	punct	19:punct	_
+18	ca	cah|ca	PART	_	_	19	discourse	19:discourse	_
+19	ticcaoazque	cahua	VERB	_	Number[obj]=Sing|Number[subj]=Plur|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Fut|VerbForm=Fin	13	parataxis:speech	13:parataxis:speech	_
+20	.	.	PUNCT	_	_	13	punct	13:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:47
 # text = Ipampa iuh qujtoaia, qujlmach, in iehoatl chiquatli: intitlan, intlaioal, in mjctlan tecutli: yoan mjctecacioatl: ommat in moctlan, ic qujtocaiotiaia, iaotequjoa: ipampa ca inteancauh, intenotzacauh, in mjctlan tecutli: ioan mjctecacioatl.
