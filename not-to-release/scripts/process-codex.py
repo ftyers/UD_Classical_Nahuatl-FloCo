@@ -307,6 +307,8 @@ replacements = ['N.', 'q.', 'n.', 'xpo.', 'p.', 'q.n.', 'ij.']
 
 for i in range(0, 20):
 	replacements.append(str(i)+'.')
+for i in range(0, 150):
+	replacements.append('.'+str(i)+'.')
 
 replacement_lookup = {'['+hashlib.md5(i.encode('utf-8')).hexdigest()+']': i for i in replacements}
 
@@ -336,6 +338,7 @@ for line in lines:
 
 	line = line.strip() + '¶'
 	line = re.sub('\([0-9]+\)', '', line)
+	line = re.sub('(\.)([0-9]+)(\.)', '·\g<2>·', line)
 	# We need to track and replace tokens that end in a full stop
 	for k, v in replacement_lookup.items():
 		line =   re.sub('([^A-Za-z0-9])(' + v.replace('.', '\\.') + ')([^A-Za-z0-9])', 
