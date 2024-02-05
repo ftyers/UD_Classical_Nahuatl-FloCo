@@ -995,12 +995,12 @@
 # text[norm] = Auh amo onnezticatca: in ce tlacatl Nanahuatzin, oncan tehhuan tlacacticatca, in nenonotzalo: niman ic yehhuatl, connotzque in teteuh: quilhuique.
 # text[orig] = Auh¶amo·onnezticatca·:·incetlacatl¶nanaoatzin·,·vncan·tehoan·tla¶cacticatca·,·in·nenonotzalo·:·nima¶ic·iehoatl·,·connotzque·in·teteu·:·quilhuique·.
 # references = A&D/11:7
-# tagged = 92.31%
+# tagged = 100.00%
 # lemmatised = 92.31%
 # analysed = 92.31%
 1	Auh	auh	CCONJ	_	_	_	_	_	Folio=3|Paragraph=1|Line=3|Norm=Auh|Gloss=y
 2	amo	amo	ADV	_		_	_	_	Folio=3|Paragraph=1|Line=4|Norm=amo|Gloss=no|Analysed=Yes
-3	onnezticatca	_	X	_	_	_	_	_	Folio=3|Paragraph=1|Line=4|Norm=onnezticatca
+3	onnezticatca	_	VERB	_	_	_	_	_	Folio=3|Paragraph=1|Line=4|Norm=onnezticatca|Guessed=Yes
 4	:	:	PUNCT	_		_	_	_	Folio=3|Paragraph=1|Line=4|Norm=:|Analysed=Yes
 5	in	in	DET|SCONJ|PRON	_	_	_	_	_	Orig=in·ce·tlacatl¶|Folio=3|Paragraph=1|Line=4|Norm=in
 6	ce	ce	NUM	_	_	_	_	_	Orig=in·ce·tlacatl¶|Folio=3|Paragraph=1|Line=4|Norm=ce|AmbigNorm=True|Override=False|Gloss=uno
@@ -1009,7 +1009,7 @@
 9	,	,	PUNCT	_		_	_	_	Folio=3|Paragraph=1|Line=5|Norm=,|Analysed=Yes
 10	vncan	oncan	ADV	_		_	_	_	Folio=3|Paragraph=1|Line=5|Norm=oncan|Gloss=aquí|Analysed=Yes
 11	tehoan	tehhuan	PRON	_	Number=Plur|Person=1|PronType=Prs	_	_	_	Folio=3|Paragraph=1|Line=5|Norm=tehhuan|Gloss=nosotros|Analysed=Yes
-12	tlacacticatca	_	X	_	_	_	_	_	Orig=tla¶·cacticatca|Folio=3,3|Paragraph=1,1|Line=5,6|Norm=tlacacticatca
+12	tlacacticatca	_	VERB	_	_	_	_	_	Orig=tla¶·cacticatca|Folio=3,3|Paragraph=1,1|Line=5,6|Norm=tlacacticatca|Guessed=Yes
 13	,	,	PUNCT	_		_	_	_	Folio=3|Paragraph=1|Line=6|Norm=,|Analysed=Yes
 14	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=3|Paragraph=1|Line=6|Norm=in
 15	nenonotzalo	nonotza	VERB	_	_	_	_	_	Folio=3|Paragraph=1|Line=6|Norm=nenonotzalo|Ambiguous=Yes|Analysed=Yes
@@ -2926,7 +2926,7 @@
 # tagged = 95.24%
 # lemmatised = 90.48%
 # analysed = 95.24%
-1	Nican	nican	ADV|NOUN	_	_	_	_	_	Folio=7|Paragraph=2|Line=1|Norm=Nican
+1	Nican	nican	ADV	_		_	_	_	Folio=7|Paragraph=2|Line=1|Norm=Nican|Gloss=aquí|Analysed=Yes
 2	tlami	tlami	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	_	_	_	Folio=7|Paragraph=2|Line=1|Norm=tlami|Analysed=Yes
 3	,	,	PUNCT	_		_	_	_	Folio=7|Paragraph=2|Line=1|Norm=,|Analysed=Yes
 4	in	in	DET|SCONJ|PRON	_	_	_	_	_	Orig=in·hin|Folio=7|Paragraph=2|Line=1|Norm=in
@@ -3588,12 +3588,12 @@
 # text[orig] = Mitoa·:·amo·nenquiça·,·amo·ne¶uetzi·,·initlamjnaliz·:·tlaocuillo¶tia·.
 # references = A&D/19:5
 # tagged = 100.00%
-# lemmatised = 92.31%
+# lemmatised = 100.00%
 # analysed = 100.00%
 1	Mitoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	_	_	_	Folio=8|Paragraph=5|Line=2|Norm=Mihtoa|Analysed=Yes
 2	:	:	PUNCT	_		_	_	_	Folio=8|Paragraph=5|Line=2|Norm=:|Analysed=Yes
 3	amo	amo	ADV	_		_	_	_	Folio=8|Paragraph=5|Line=2|Norm=amo|Gloss=no|Analysed=Yes
-4	nenquiça	_	VERB	_	_	_	_	_	Folio=8|Paragraph=5|Line=2|Norm=nenquiza|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
+4	nenquiça	nenquiza	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	_	_	_	Folio=8|Paragraph=5|Line=2|Norm=nenquiza|Analysed=Yes
 5	,	,	PUNCT	_		_	_	_	Folio=8|Paragraph=5|Line=2|Norm=,|Analysed=Yes
 6	amo	amo	ADV	_		_	_	_	Folio=8|Paragraph=5|Line=2|Norm=amo|Gloss=no|Analysed=Yes
 7	neuetzi	nehuetzi	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	_	_	_	Orig=ne¶·uetzi|Folio=8,8|Paragraph=5,5|Line=2,3|Norm=nehuetzi|Analysed=Yes
@@ -7044,7 +7044,7 @@
 2	tlapoiaoa	poyahua	VERB	_	Animacy[obj]=Nhum|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	_	_	_	Folio=17|Paragraph=3|Line=1|Norm=tlapoyahua|Analysed=Yes
 3	,	,	PUNCT	_		_	_	_	Folio=17|Paragraph=3|Line=1|Norm=,|Analysed=Yes
 4	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=17|Paragraph=3|Line=1|Norm=in
-5	nican	nican	ADV|NOUN	_	_	_	_	_	Folio=17|Paragraph=3|Line=1|Norm=nican
+5	nican	nican	ADV	_		_	_	_	Folio=17|Paragraph=3|Line=1|Norm=nican|Gloss=aquí|Analysed=Yes
 6	oneoaia	ehua	VERB	_	_	_	_	_	Orig=oneoa¶·ia|Folio=17,17|Paragraph=3,3|Line=1,2|Norm=onehuaya|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
 7	mexico	Mexico	PROPN	_	NounClass=Loc	_	_	_	Folio=17|Paragraph=3|Line=2|Norm=Mexico|Analysed=Yes
 8	:	:	PUNCT	_		_	_	_	Folio=17|Paragraph=3|Line=2|Norm=:|Analysed=Yes
@@ -7125,7 +7125,7 @@
 8	tlequauhtlazqui	tlecuauhtlaza	VERB	_	Directional=Ven|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	_	_	_	Orig=tle¶·quauhtlazqui|Folio=18,18|Paragraph=1,1|Line=10,11|Norm=tlecuauhtlazqui|Analysed=Yes
 9	:	:	PUNCT	_		_	_	_	Folio=18|Paragraph=1|Line=11|Norm=:|Analysed=Yes
 10	niman	niman	ADV	_		_	_	_	Folio=18|Paragraph=1|Line=11|Norm=niman|Analysed=Yes
-11	nican	nican	ADV|NOUN	_	_	_	_	_	Folio=18|Paragraph=1|Line=11|Norm=nican
+11	nican	nican	ADV	_		_	_	_	Folio=18|Paragraph=1|Line=11|Norm=nican|Gloss=aquí|Analysed=Yes
 12	quipeoaltia	pehualtia	VERB	_	_	_	_	_	Folio=18|Paragraph=1|Line=12|Norm=quipehualtia|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
 13	,	,	PUNCT	_		_	_	_	Folio=18|Paragraph=1|Line=12|Norm=,|Analysed=Yes
 14	in	in	DET|SCONJ|PRON	_	_	_	_	_	Orig=in·imac|Folio=18|Paragraph=1|Line=12|Norm=in
@@ -7719,7 +7719,7 @@
 # text[orig] = Ça¶no·iuh·quichioa·,·inisquich·alte¶peoa·tlenamacac·:·inic·quit¶quia·,·quinenemitiaia·tletl·,·ce¶¶ca·quitototzaia·,·quimotlaloch¶tiaia·:·inic·iciuhca·caxitizque·in¶chan·,·quimomamacatiquiça·,·qui¶mocuicuilitiquiça·,·ic·mopapatla¶tiui·.
 # references = A&D/34:4
 # tagged = 91.18%
-# lemmatised = 82.35%
+# lemmatised = 85.29%
 # analysed = 85.29%
 1	Ça	za	ADV	_		_	_	_	Folio=19|Paragraph=4|Line=25|Norm=Za|Analysed=Yes
 2	no	no	ADV	_		_	_	_	Folio=19|Paragraph=4|Line=26|Norm=no|Gloss=también|Analysed=Yes
@@ -7746,7 +7746,7 @@
 23	inic	inic	SCONJ|ADV	_	_	_	_	_	Folio=20|Paragraph=0|Line=2|Norm=inic
 24	iciuhca	iciuhca	ADV	_		_	_	_	Folio=20|Paragraph=0|Line=2|Norm=iciuhca|Gloss=luego|Analysed=Yes
 25	caxitizque	axitia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Fut|VerbForm=Fin	_	_	_	Folio=20|Paragraph=0|Line=2|Norm=caxitizque|Analysed=Yes
-26	inchan	_	NOUN	_	_	_	_	_	Orig=in¶·chan|Folio=20,20|Paragraph=0,0|Line=2,3|Norm=inchan|Ambiguous=Yes|Analysed=Yes
+26	inchan	chantli	NOUN	_	Number[psor]=Plur|Person[psor]=3|State=Pos	_	_	_	Orig=in¶·chan|Folio=20,20|Paragraph=0,0|Line=2,3|Norm=inchan|Analysed=Yes
 27	,	,	PUNCT	_		_	_	_	Folio=20|Paragraph=0|Line=3|Norm=,|Analysed=Yes
 28	quimomamacatiquiça	mamacatiquiza	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Reflex[iobj]=Yes|Subcat=Ditr|Tense=Pres|VerbForm=Fin	_	_	_	Folio=20|Paragraph=0|Line=3|Norm=quimomamacatiquiza|Analysed=Yes
 29	,	,	PUNCT	_		_	_	_	Folio=20|Paragraph=0|Line=3|Norm=,|Analysed=Yes

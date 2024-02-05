@@ -79,6 +79,10 @@ def guess(norm, guessed_lemma, guessed_upos, misc):
 		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('[a-z]+quiza$', norm):
 		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
+	if re.findall('[a-z]+tihuetzi$', norm):
+		return(guessed_lemma, 'VERB', '_', guessed_misc, []) 		# tiquimoncentlalitihuetzi
+	if re.findall('[a-z]+ticatca$', norm):
+		return(guessed_lemma, 'VERB', '_', guessed_misc, []) 		# otimapanticatca
 	if re.findall('[a-z]+ltia$', norm):
 		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('^xi[a-z]+can$', norm):			# ximellacuahuacan
@@ -88,6 +92,8 @@ def guess(norm, guessed_lemma, guessed_upos, misc):
 	if re.findall('^oquin[a-z]+que$', norm):
 		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('^tinech', norm):				# tinechitlacoa
+		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
+	if re.findall('^tiquin', norm):				# tiquimonzozo
 		return(guessed_lemma, 'VERB', '_', guessed_misc, [])
 	if re.findall('^nimitz', norm):				# nimitzpantia
 		return(guessed_lemma, 'VERB', '_', guessed_misc, [])

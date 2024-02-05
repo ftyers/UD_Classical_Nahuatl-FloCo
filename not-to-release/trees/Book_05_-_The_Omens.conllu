@@ -5112,27 +5112,34 @@
 
 # sent_id = Book_05_-_The_Omens.txt:99
 # text = In chiqujmoli, cacentetl tototl, iuhqujn quauhchochopitli: auh veca quauhtla in jchan.
-# text[norm] = In chiquimoli, cacentetl tototl, iuhquin cuauhchochopitli: auh huehca cuauhtla in ichan.
+# text[norm] = In chiquimoli, ca centetl tototl, iuhquin cuauhchochopitli: auh huehca cuauhtla in ichan.
 # text[orig] = I·nchiqujmoli·,·cacentetl·to·totl·,·iuh·qujn·quauh·chochopitli·:·auh·veca¶quauhtla·injchan·.
+# text[eng] = The linnet, it is a bird, like the wood-pecker: and far in the forest is its home.
+# text[osp] = Tambien tenjan por mal aguero, a las bozes del pito: [...]
+# text[osp_norm] = También tenían por mal agüero, a las voces del pito: [...]
+# references = A&D/180:4
 # tagged = 100.00%
-# analysed = 93.33%
-1	In	in	DET|SCONJ	_	_	2	_	_	_
-2	chiqujmoli	chiquimoli	NOUN	_	State=Abs	6	_	_	_
-3	,	,	PUNCT	_	_	6	punct	_	_
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 31.25%
+1	In	in	DET	_	_	2	det	2:det	_
+2	chiqujmoli	chiquimoli	NOUN	_	State=Abs	6	nsubj	6:nsubj	_
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
 4-5	cacentetl	_	_	_	_	_	_	_	_
-4	ca	_	VERB	_	_	6	_	_	_
-5	centetl	_	NUM	_	_	6	_	_	_
-6	tototl	tototl	NOUN	_	State=Abs	0	root	_	_
-7	,	,	PUNCT	_	_	9	punct	_	_
-8	iuhqujn	iuhquin	ADV	_	_	9	_	_	_
-9	quauhchochopitli	cuauhchochopitli	NOUN	_	State=Abs	6	_	_	_
-10	:	:	PUNCT	_	_	13	punct	_	_
-11	auh	auh	CCONJ	_	_	13	_	_	_
-12	veca	huehca	ADV	_	_	13	_	_	_
-13	quauhtla	_	NOUN	_	_	6	_	_	_
-14	in	in	DET|SCONJ	_	_	15	_	_	_
-15	jchan	chantli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	13	_	_	_
-16	.	.	PUNCT	_	_	6	punct	_	_
+4	ca	cah|ca	PART	_	_	6	discourse	6:discourse	_
+5	centetl	ce	NUM	_	NumType=Clf	6	nummod	6:nummod	_
+6	tototl	tototl	NOUN	_	State=Abs	0	root	0:root	_
+7	,	,	PUNCT	_	_	8	punct	8:punct	_
+8	iuhqujn	iuhquin	ADJ	_	_	6	acl	6:acl	_
+9	quauhchochopitli	cuauhchochopitli	NOUN	_	State=Abs	8	xcomp	8:xcomp	_
+10	:	:	PUNCT	_	_	13	punct	13:punct	_
+11	auh	auh	CCONJ	_	_	13	cc	13:cc	_
+12	veca	huehca	ADV	_	_	13	advmod	13:advmod	_
+13	quauhtla	cuauhtla	NOUN	_	_	6	conj	6:conj	_
+14	in	in	DET	_	_	15	det	15:det	_
+15	jchan	chantli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Pos	13	nsubj	13:nsubj	_
+16	.	.	PUNCT	_	_	6	punct	6:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:100
 # text = Auh in jqc tepan tzatzia, netetzaujloia: qujtovaia, ca amo qualcan, in otioallaque: ca itla ipan ticholozque.
