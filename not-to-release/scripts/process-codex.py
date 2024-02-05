@@ -303,12 +303,12 @@ if '@' in book_text:
 
 lines = re.sub('  *', ' ', book_text).split('\n')
 
-replacements = ['N.', 'q.', 'n.', 'xpo.', 'p.', 'q.n.', 'ij.']
+replacements = ['N.', 'q.', 'n.', 'xpo.', 'p.', 'q.n.', 'ij.', 'q.n']
+# sort them by length so that q.n. goes before q. and n.
+replacements.sort(reverse=True)
 
 for i in range(0, 20):
 	replacements.append(str(i)+'.')
-for i in range(0, 150):
-	replacements.append('.'+str(i)+'.')
 
 replacement_lookup = {'['+hashlib.md5(i.encode('utf-8')).hexdigest()+']': i for i in replacements}
 
@@ -338,13 +338,16 @@ for line in lines:
 
 	line = line.strip() + '¶'
 	line = re.sub('\([0-9]+\)', '', line)
-	line = re.sub('(\.)([0-9]+)(\.)', '·\g<2>·', line)
+	line = re.sub('(\.)([0-9]+)(\.)', '·\g<2>·', line) # .120. → ·120·
 	# We need to track and replace tokens that end in a full stop
+	
 	for k, v in replacement_lookup.items():
-		line =   re.sub('([^A-Za-z0-9])(' + v.replace('.', '\\.') + ')([^A-Za-z0-9])', 
+		line =   re.sub('(^|[^A-Za-z0-9])(' + v.replace('.', '\\.') + ')([^A-Za-z0-9]|$)', 
 				'\g<1>' + k + '\g<3>', 
 				line)
 		#line = line.replace(' ' +v, k)
+
+#	print('!!!', current_folio, current_line, '|||', line, file=sys.stderr)
 
 	if line.strip() == '¶':
 		current_paragraph += 1
