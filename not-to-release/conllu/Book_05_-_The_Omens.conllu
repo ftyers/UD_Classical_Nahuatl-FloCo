@@ -5810,27 +5810,27 @@
 # lemmatised = 100.00%
 # analysed = 100.00%
 # heads = 100.00%
-# relations = 30.00%
-1	Qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	_	Orig=Quj·toaia|Folio=14r,14r|Paragraph=3,3|Line=1,1|Norm=Quihtoaya|Analysed=Yes
-2	,	,	PUNCT	_		8	punct	_	Folio=14r|Paragraph=3|Line=1|Norm=,|Analysed=Yes
-3	ca	cah|ca	PART	_	_	8	_	_	Folio=14r|Paragraph=3|Line=1|Norm=ca|AmbigNorm=True|Override=True
-4	in	in	DET|SCONJ	_	_	5	_	_	Orig=intezcatlipuca|Folio=14r|Paragraph=3|Line=1|Norm=in
-5	tezcatlipuca	Tezcatlipoca	PROPN	_		8	_	_	Orig=intezcatlipuca|Folio=14r|Paragraph=3|Line=1|Norm=Tezcatlipoca|Analysed=Yes
-6	:	:	PUNCT	_		8	punct	_	Folio=14r|Paragraph=3|Line=1|Norm=:|Analysed=Yes
-7	mjiecpa	miecpa	ADV	_		8	_	_	Folio=14r|Paragraph=3|Line=2|Norm=miecpa|Temporal=Yes|Analysed=Yes
-8	qujmonaoaltiaia	nahualtia	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Reflex[iobj]=Yes|Subcat=Ditr|Tense=Past|VerbForm=Fin	1	_	_	Folio=14r|Paragraph=3|Line=2|Norm=quimonahualtiaya|Analysed=Yes
-9	in	in	DET|SCONJ	_	_	10	_	_	Folio=14r|Paragraph=3|Line=2|Norm=in
-10	Coiutl	coyotl	NOUN	_	State=Abs	8	_	_	Orig=Co¶·iutl|Folio=14r,14r|Paragraph=3,3|Line=2,3|Norm=Coyotl|Gloss=coyote|Analysed=Yes
-11	:	:	PUNCT	_		17	punct	_	Folio=14r|Paragraph=3|Line=3|Norm=:|Analysed=Yes
-12	auh	auh	CCONJ	_	_	17	_	_	Folio=14r|Paragraph=3|Line=3|Norm=auh|Gloss=y
-13	injc	inic	SCONJ	_	_	17	_	_	Folio=14r|Paragraph=3|Line=3|Norm=inic
-14	coiutl	coyotl	NOUN	_	State=Abs	17	_	_	Folio=14r|Paragraph=3|Line=3|Norm=coyotl|Gloss=coyote|Analysed=Yes
-15	,	,	PUNCT	_		17	punct	_	Folio=14r|Paragraph=3|Line=3|Norm=,|Analysed=Yes
-16	mjiecpa	miecpa	ADV	_		17	_	_	Orig=mj·iecpa¶|Folio=14r,14r|Paragraph=3,3|Line=3,3|Norm=miecpa|Temporal=Yes|Analysed=Yes
-17	teiaiacatzacujlia	yahyacatzacuilia	VERB	_	Animacy[iobj]=Hum|Number[subj]=Plur,Sing|Person[iobj]=3|Person[subj]=3|Subcat=Ditr|Tense=Pres|VerbForm=Fin	8	_	_	Folio=14r|Paragraph=3|Line=4|Norm=teyayacatzacuilia|Analysed=Yes
-18	in	in	DET|SCONJ	_	_	19	_	_	Folio=14r|Paragraph=3|Line=4|Norm=in
-19	vtlica	ohtlica	ADV	_		17	_	_	Folio=14r|Paragraph=3|Line=4|Norm=ohtlica|Gloss=en.el.camino|Root=ohtli|Analysed=Yes
-20	.	.	PUNCT	_		1	punct	_	Folio=14r|Paragraph=3|Line=4|Norm=.|Analysed=Yes
+# relations = 100.00%
+1	Qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	0:root	Orig=Quj·toaia|Folio=14r,14r|Paragraph=3,3|Line=1,1|Norm=Quihtoaya|Analysed=Yes
+2	,	,	PUNCT	_		8	punct	8:punct	Folio=14r|Paragraph=3|Line=1|Norm=,|Analysed=Yes
+3	ca	cah|ca	PART	_	_	8	discourse	8:discourse	Folio=14r|Paragraph=3|Line=1|Norm=ca|AmbigNorm=True|Override=True
+4	in	in	DET	_	_	5	det	5:det	Orig=intezcatlipuca|Folio=14r|Paragraph=3|Line=1|Norm=in
+5	tezcatlipuca	Tezcatlipoca	PROPN	_		8	nsubj	8:nsubj	Orig=intezcatlipuca|Folio=14r|Paragraph=3|Line=1|Norm=Tezcatlipoca|Analysed=Yes
+6	:	:	PUNCT	_		8	punct	8:punct	Folio=14r|Paragraph=3|Line=1|Norm=:|Analysed=Yes
+7	mjiecpa	miecpa	ADV	_		8	advmod	8:advmod	Folio=14r|Paragraph=3|Line=2|Norm=miecpa|Temporal=Yes|Analysed=Yes
+8	qujmonaoaltiaia	nahualtia	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Reflex[iobj]=Yes|Subcat=Ditr|Tense=Past|VerbForm=Fin	1	parataxis:speech	1:parataxis:speech	Folio=14r|Paragraph=3|Line=2|Norm=quimonahualtiaya|Analysed=Yes
+9	in	in	DET	_	_	10	det	10:det	Folio=14r|Paragraph=3|Line=2|Norm=in
+10	Coiutl	coyotl	NOUN	_	State=Abs	8	iobj	8:iobj	Orig=Co¶·iutl|Folio=14r,14r|Paragraph=3,3|Line=2,3|Norm=Coyotl|Gloss=coyote|Analysed=Yes
+11	:	:	PUNCT	_		17	punct	17:punct	Folio=14r|Paragraph=3|Line=3|Norm=:|Analysed=Yes
+12	auh	auh	CCONJ	_	_	17	cc	17:cc	Folio=14r|Paragraph=3|Line=3|Norm=auh|Gloss=y
+13	injc	inic	ADV	_	_	17	advmod	17:advmod	Folio=14r|Paragraph=3|Line=3|Norm=inic
+14	coiutl	coyotl	NOUN	_	State=Abs	17	nsubj	17:nsubj	Folio=14r|Paragraph=3|Line=3|Norm=coyotl|Gloss=coyote|Analysed=Yes
+15	,	,	PUNCT	_		17	punct	17:punct	Folio=14r|Paragraph=3|Line=3|Norm=,|Analysed=Yes
+16	mjiecpa	miecpa	ADV	_		17	advmod	17:advmod	Orig=mj·iecpa¶|Folio=14r,14r|Paragraph=3,3|Line=3,3|Norm=miecpa|Temporal=Yes|Analysed=Yes
+17	teiaiacatzacujlia	yahyacatzacuilia	VERB	_	Animacy[iobj]=Hum|Number[subj]=Plur,Sing|Person[iobj]=3|Person[subj]=3|Subcat=Ditr|Tense=Pres|VerbForm=Fin	8	conj	8:conj	Folio=14r|Paragraph=3|Line=4|Norm=teyayacatzacuilia|Analysed=Yes
+18	in	in	DET	_	_	19	det	19:det	Folio=14r|Paragraph=3|Line=4|Norm=in
+19	vtlica	ohtlica	ADV	_		17	obl	17:obl	Folio=14r|Paragraph=3|Line=4|Norm=ohtlica|Gloss=en.el.camino|Root=ohtli|Analysed=Yes
+20	.	.	PUNCT	_		1	punct	1:punct	Folio=14r|Paragraph=3|Line=4|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:103
 # text = Auh in jquac iuh qujchioa y, njman ic mocaquj, ca amo qualcan in viloa: aco ichtecque, anoço tetlatlacaltique, cana vtlica cate: anoço itla ipan chololoatiuh, in tecoco.

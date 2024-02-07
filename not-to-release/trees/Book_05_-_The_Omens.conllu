@@ -5196,28 +5196,35 @@
 # text = Qujtoaia, ca in tezcatlipuca: mjiecpa qujmonaoaltiaia in Coiutl: auh injc coiutl, mjiecpa teiaiacatzacujlia in vtlica.
 # text[norm] = Quihtoaya, ca in Tezcatlipoca: miecpa quimonahualtiaya in Coyotl: auh inic coyotl, miecpa teyayacatzacuilia in ohtlica.
 # text[orig] = Quj·toaia·,·ca·intezcatlipuca·:·mjiecpa·qujmonaoaltiaia·in·Co¶iutl·:·auh·injc·coiutl·,·mj·iecpa¶teiaiacatzacujlia·in·vtlica·.
+# text[osp] = Asi mesmo dezian: que Tezcatlipuca, muchas vezes se trasformaua en vn animal: que llaman coiutl: que es como lobo, y ansi trasformado, ponia se delante de los caminantes, como atajando los el camino: paraque no pasasen adelante:
+# text[osp_norm] = Así mismo decían: que <Tezcatlipoca>, muchas veces se trasformaba en un animal: que llaman <coyotl>: que es como lobo, y así trasformado, poníase delante de los caminantes, como atajándolos el camino: para que no pasasen adelante:
+# text[spa] = Decían que Tezcatlipoca, muchas veces se transformaba en coyote, y de coyote, muchas veces se encontró con la gente en el camino.
+# references = A&D/180:7
 # tagged = 100.00%
-# analysed = 95.00%
-1	Qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	_	_
-2	,	,	PUNCT	_	_	8	punct	_	_
-3	ca	_	PART	_	_	8	_	_	_
-4	in	in	DET|SCONJ	_	_	5	_	_	_
-5	tezcatlipuca	Tezcatlipoca	PROPN	_	_	8	_	_	_
-6	:	:	PUNCT	_	_	8	punct	_	_
-7	mjiecpa	miecpa	ADV	_	_	8	_	_	_
-8	qujmonaoaltiaia	ahua	VERB	_	Aspect=Imp|Directional=On|Number[iobj]=Plur|Number[subj]=Sing|Person[iobj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	1	_	_	_
-9	in	in	DET|SCONJ	_	_	10	_	_	_
-10	Coiutl	coyotl	NOUN	_	State=Abs	8	_	_	_
-11	:	:	PUNCT	_	_	17	punct	_	_
-12	auh	auh	CCONJ	_	_	17	_	_	_
-13	injc	inic	SCONJ	_	_	17	_	_	_
-14	coiutl	coyotl	NOUN	_	State=Abs	17	_	_	_
-15	,	,	PUNCT	_	_	17	punct	_	_
-16	mjiecpa	miecpa	ADV	_	_	17	_	_	_
-17	teiaiacatzacujlia	_	VERB	_	_	8	_	_	_
-18	in	in	DET|SCONJ	_	_	19	_	_	_
-19	vtlica	ohtlica	ADV	_	_	17	_	_	_
-20	.	.	PUNCT	_	_	1	punct	_	_
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 30.00%
+1	Qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	0:root	_
+2	,	,	PUNCT	_	_	8	punct	8:punct	_
+3	ca	cah|ca	PART	_	_	8	discourse	8:discourse	_
+4	in	in	DET	_	_	5	det	5:det	_
+5	tezcatlipuca	Tezcatlipoca	PROPN	_	_	8	nsubj	8:nsubj	_
+6	:	:	PUNCT	_	_	8	punct	8:punct	_
+7	mjiecpa	miecpa	ADV	_	_	8	advmod	8:advmod	_
+8	qujmonaoaltiaia	nahualtia	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Reflex[iobj]=Yes|Subcat=Ditr|Tense=Past|VerbForm=Fin	1	parataxis:speech	1:parataxis:speech	_
+9	in	in	DET	_	_	10	det	10:det	_
+10	Coiutl	coyotl	NOUN	_	State=Abs	8	iobj	8:iobj	_
+11	:	:	PUNCT	_	_	17	punct	17:punct	_
+12	auh	auh	CCONJ	_	_	17	cc	17:cc	_
+13	injc	inic	ADV	_	_	17	advmod	17:advmod	_
+14	coiutl	coyotl	NOUN	_	State=Abs	17	nsubj	17:nsubj	_
+15	,	,	PUNCT	_	_	17	punct	17:punct	_
+16	mjiecpa	miecpa	ADV	_	_	17	advmod	17:advmod	_
+17	teiaiacatzacujlia	yahyacatzacuilia	VERB	_	Animacy[iobj]=Hum|Number[subj]=Plur,Sing|Person[iobj]=3|Person[subj]=3|Subcat=Ditr|Tense=Pres|VerbForm=Fin	8	conj	8:conj	_
+18	in	in	DET	_	_	19	det	19:det	_
+19	vtlica	ohtlica	ADV	_	_	17	obl	17:obl	_
+20	.	.	PUNCT	_	_	1	punct	1:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:103
 # text = Auh in jquac iuh qujchioa y, njman ic mocaquj, ca amo qualcan in viloa: aco ichtecque, anoço tetlatlacaltique, cana vtlica cate: anoço itla ipan chololoatiuh, in tecoco.
