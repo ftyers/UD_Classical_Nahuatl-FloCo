@@ -442,6 +442,42 @@
 4	coiutl	coyotl	NOUN	_	State=Abs	2	nmod	1:nmod	Analysed=Yes|Folio=14r|Gloss=coyote|Line=1|Norm=coyotl|Paragraph=2|SpaceAfter=No
 5	.	.	PUNCT	_	_	1	punct	1:punct	Folio=14r|Paragraph=2|Line=1|Norm=.|Analysed=Yes
 
+# sent_id = Book_05_-_The_Omens.txt:102
+# text = Qujtoaia, ca in tezcatlipuca: mjiecpa qujmonaoaltiaia in Coiutl: auh injn coiutl, mjiecpa teiaiacatzacujlia in vtlica.
+# text[norm] = Quihtoaya, ca in Tezcatlipoca: miecpa quimonahualtiaya in Coyotl: auh inin coyotl, miecpa teyayacatzacuilia in ohtlica.
+# text[orig] = Quj·toaia·,·ca·intezcatlipuca·:·mjiecpa·qujmonaoaltiaia·in·Co¶iutl·:·auh·injn·coiutl·,·mj·iecpa¶teiaiacatzacujlia·in·vtlica·.
+# text[osp] = Asi mesmo dezian: que Tezcatlipuca, muchas vezes se trasformaua en vn animal: que llaman coiutl: que es como lobo, y ansi trasformado, ponia se delante de los caminantes, como atajando los el camino: paraque no pasasen adelante:
+# text[osp_norm] = Así mismo decían: que <Tezcatlipoca>, muchas veces se trasformaba en un animal: que llaman <coyotl>: que es como lobo, y así trasformado, poníase delante de los caminantes, como atajándolos el camino: para que no pasasen adelante:
+# text[spa] = Decían que Tezcatlipoca, muchas veces se transformaba en coyote, y este coyote, muchas veces se encontró con la gente en el camino.
+# references = A&D/180:7
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/36
+1	Qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	0:root	Analysed=Yes|Folio=14r,14r|Line=1,1|Norm=Quihtoaya|Orig=Quj·toaia|Paragraph=3,3|SpaceAfter=No
+2	,	,	PUNCT	_	_	5	punct	5:punct	Folio=14r|Paragraph=3|Line=1|Norm=,|Analysed=Yes
+3	ca	cah|ca	PART	_	_	5	discourse	5:discourse	Folio=14r|Paragraph=3|Line=1|Norm=ca|AmbigNorm=True|Override=True
+4	in	in	SCONJ	_	_	5	mark	5:mark	Orig=intezcatlipuca|Folio=14r|Paragraph=3|Line=1|Norm=in
+5	tezcatlipuca	Tezcatlipoca	PROPN	_	_	1	parataxis:speech	1:parataxis:speech	Analysed=Yes|Folio=14r|Line=1|Norm=Tezcatlipoca|Orig=intezcatlipuca|Paragraph=3|SpaceAfter=No
+6	:	:	PUNCT	_	_	8	punct	8:punct	Folio=14r|Paragraph=3|Line=1|Norm=:|Analysed=Yes
+7	mjiecpa	miecpa	ADV	_	_	8	advmod	8:advmod	Folio=14r|Paragraph=3|Line=2|Norm=miecpa|Temporal=Yes|Analysed=Yes
+8	qujmonaoaltiaia	nahualtia	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Reflex[iobj]=Yes|Subcat=Ditr|Tense=Past|VerbForm=Fin	5	conj	5:conj	Folio=14r|Paragraph=3|Line=2|Norm=quimonahualtiaya|Analysed=Yes
+9	in	in	DET	_	_	10	det	10:det	Folio=14r|Paragraph=3|Line=2|Norm=in
+10	Coiutl	coyotl	NOUN	_	State=Abs	8	iobj	8:iobj	Analysed=Yes|Folio=14r,14r|Gloss=coyote|Line=2,3|Norm=Coyotl|Orig=Co¶·iutl|Paragraph=3,3|SpaceAfter=No
+11	:	:	PUNCT	_	_	17	punct	17:punct	Folio=14r|Paragraph=3|Line=3|Norm=:|Analysed=Yes
+12	auh	auh	CCONJ	_	_	17	cc	17:cc	Folio=14r|Paragraph=3|Line=3|Norm=auh|Gloss=y
+13	injn	inin	DET	_	_	14	det	14:det	Folio=14r|Paragraph=3|Line=3|Norm=inin
+14	coiutl	coyotl	NOUN	_	State=Abs	17	nsubj	17:nsubj	Analysed=Yes|Folio=14r|Gloss=coyote|Line=3|Norm=coyotl|Paragraph=3|SpaceAfter=No
+15	,	,	PUNCT	_	_	14	punct	17:punct	Folio=14r|Paragraph=3|Line=3|Norm=,|Analysed=Yes
+16	mjiecpa	miecpa	ADV	_	_	17	advmod	17:advmod	Orig=mj·iecpa¶|Folio=14r,14r|Paragraph=3,3|Line=3,3|Norm=miecpa|Temporal=Yes|Analysed=Yes
+17	teiaiacatzacujlia	yahyacatzacuilia	VERB	_	Animacy[iobj]=Hum|Number[subj]=Plur,Sing|Person[iobj]=3|Person[subj]=3|Subcat=Ditr|Tense=Pres|VerbForm=Fin	5	conj	5:conj	Folio=14r|Paragraph=3|Line=4|Norm=teyayacatzacuilia|Analysed=Yes
+18	in	in	DET	_	_	19	det	19:det	Folio=14r|Paragraph=3|Line=4|Norm=in
+19	vtlica	ohtlica	ADV	_	_	17	obl	17:obl	Analysed=Yes|Folio=14r|Gloss=en.el.camino|Line=4|Norm=ohtlica|Paragraph=3|Root=ohtli|SpaceAfter=No
+20	.	.	PUNCT	_	_	1	punct	1:punct	Folio=14r|Paragraph=3|Line=4|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:104
 # text = Nican tzonqujca yn tetzavitl; yn qujtetzammatia, njçan nueua españa tlaca.
 # text[norm] = Nican tzonquiza in tetzahuitl; in quitetzammatia, nican Nueva España tlacah.
