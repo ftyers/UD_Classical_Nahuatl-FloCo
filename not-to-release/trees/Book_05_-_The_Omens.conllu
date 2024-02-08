@@ -3074,34 +3074,40 @@
 # text = Anoco ie aca choloz, ie contocaz in tochtli, in macatl ivuj, ie tochtiz, ie macatiz, ie motochtiliz, ie momacatiliz.
 # text[norm] = Anozo ye aca choloz, ye contocaz in tochtli, in mazatl ihui, ye tochtiz, ye mazatiz, ye motochtiliz, ye momazatiliz.
 # text[orig] = A·noco·ie·aca·choloz·,·ie¶contocaz·intochtli·,·in·macatl·ivuj·,·ie¶tochtiz·,·ie·macatiz·,·ie·motochtiliz·,·iemo¶macatiliz·.
-# tagged = 92.31%
-# analysed = 92.31%
-1	Anoco	anozo	ADV	_	_	4	_	_	_
-2	ie	ye	ADV	_	_	4	_	_	_
-3	aca	_	DET|PRON	_	_	4	_	_	_
-4	choloz	choloa	VERB	_	Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	0	root	_	_
-5	,	,	PUNCT	_	_	7	punct	_	_
-6	ie	ye	ADV	_	_	7	_	_	_
-7	contocaz	toca	VERB	_	Directional=On|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Fut|VerbForm=Fin	4	_	_	_
-8	in	in	DET|SCONJ	_	_	9	_	_	_
-9	tochtli	tochtli	NOUN	_	State=Abs	7	_	_	_
-10	,	,	PUNCT	_	_	12	punct	_	_
-11	in	in	DET|SCONJ	_	_	12	_	_	_
-12	macatl	mazatl	NOUN	_	State=Abs	9	_	_	_
-13	ivuj	_	ADV	_	_	12	_	_	_
-14	,	,	PUNCT	_	_	16	punct	_	_
-15	ie	ye	ADV	_	_	16	_	_	_
-16	tochtiz	_	X	_	_	4	_	_	_
-17	,	,	PUNCT	_	_	19	punct	_	_
-18	ie	ye	ADV	_	_	19	_	_	_
-19	macatiz	_	X	_	_	16	_	_	_
-20	,	,	PUNCT	_	_	22	punct	_	_
-21	ie	ye	ADV	_	_	22	_	_	_
-22	motochtiliz	tochtilia	VERB	_	Number[subj]=Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Fut|VerbForm=Fin	4	_	_	_
-23	,	,	PUNCT	_	_	25	punct	_	_
-24	ie	ye	ADV	_	_	25	_	_	_
-25	momacatiliz	mazatilia	VERB	_	Number[subj]=Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Fut|VerbForm=Fin	22	_	_	_
-26	.	.	PUNCT	_	_	4	punct	_	_
+# text[osp] = [...] o que alguno de su casa se auja de ausentar, o esconder por los montes, o por las barrancas donde andan los cieruos, y conejos. Sobre todas estas cosas: yvan aconsoltar, a los que tenjan oficio de declarar estos agueros.
+# text[osp_norm] = [...] o que alguno de su casa se había de ausentar, o esconder por los montes, o por las barrancas donde andan los ciervos, y conejos. Sobre todas estas cosas: iban a consoltar, a los que tenían oficio de declarar estos agüeros.
+# references = A&D/171:2
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 30.77%
+1	Anoco	anozo	ADV	_	_	4	advmod	4:advmod	_
+2	ie	ye	ADV	_	_	4	advmod	4:advmod	_
+3	aca	aca	PRON	_	_	4	nsubj	4:nsubj	_
+4	choloz	choloa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	0	root	0:root	_
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	ie	ye	ADV	_	_	7	advmod	7:advmod	_
+7	contocaz	toca	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Fut|VerbForm=Fin	4	parataxis:shared	4:parataxis:shared	_
+8	in	in	DET	_	_	9	det	9:det	_
+9	tochtli	tochtli	NOUN	_	State=Abs	7	obj	7:obj	_
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	in	in	DET	_	_	12	det	12:det	_
+12	macatl	mazatl	NOUN	_	State=Abs	9	conj	9:conj	_
+13	ivuj	ihuin	ADV	_	_	7	advmod	7:advmod	_
+14	,	,	PUNCT	_	_	16	punct	16:punct	_
+15	ie	ye	ADV	_	_	16	advmod	16:advmod	_
+16	tochtiz	tochtia	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	4	parataxis:shared	4:parataxis:shared	_
+17	,	,	PUNCT	_	_	19	punct	19:punct	_
+18	ie	ye	ADV	_	_	19	advmod	19:advmod	_
+19	macatiz	mazatia	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	4	parataxis:shared	4:parataxis:shared	_
+20	,	,	PUNCT	_	_	22	punct	22:punct	_
+21	ie	ye	ADV	_	_	22	advmod	22:advmod	_
+22	motochtiliz	tochtilia	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Fut|VerbForm=Fin	4	parataxis:shared	4:parataxis:shared	_
+23	,	,	PUNCT	_	_	25	punct	25:punct	_
+24	ie	ye	ADV	_	_	25	advmod	25:advmod	_
+25	momacatiliz	mazatilia	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Fut|VerbForm=Fin	4	parataxis:shared	4:parataxis:shared	_
+26	.	.	PUNCT	_	_	4	punct	4:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:58
 # text = Injc muchichiuh tochin, nacazpapatlactic, tentipontic, tentetepontic, eliztac: ioan çan cujtlapiltetepontic.
