@@ -3262,35 +3262,35 @@
 # lemmatised = 100.00%
 # analysed = 100.00%
 # heads = 100.00%
-# relations = 46.43%
-1	Auh	auh	CCONJ	_	_	6	_	_	Orig=A·uh|Folio=8r,8r|Paragraph=3,3|Line=12,12|Norm=Auh|Gloss=y
-2	in	in	DET|SCONJ	_	_	4	_	_	Orig=inj·quac|Folio=8r,8r|Paragraph=3,3|Line=12,12|Norm=in
-3	jquac	ihcuac	ADV	_	_	4	_	_	Orig=inj·quac|Folio=8r,8r|Paragraph=3,3|Line=12,12|Norm=ihcuac|Gloss=en.el.momento
-4	itto	itta	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin|Voice=Pass	6	_	_	Folio=8r|Paragraph=3|Line=12|Norm=itto|Analysed=Yes
-5	,	,	PUNCT	_		6	punct	_	Folio=8r|Paragraph=3|Line=12|Norm=,|Analysed=Yes
-6	netlacmauhtilo	tlacmauhtia	VERB	_	_	0	root	_	Orig=netlacmauh¶·tilo|Folio=8r,8r|Paragraph=3,3|Line=12,13|Norm=netlacmauhtilo
-7	:	:	PUNCT	_		8	punct	_	Folio=8r|Paragraph=3|Line=13|Norm=:|Analysed=Yes
-8	necujtiuecho	cuitihuetzi	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[iobj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin|Voice=Pass	6	_	_	Folio=8r|Paragraph=3|Line=13|Norm=necuitihuecho|Analysed=Yes
-9	,	,	PUNCT	_		10	punct	_	Folio=8r|Paragraph=3|Line=13|Norm=,|Analysed=Yes
-10	cecepoca	cecepoca	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	8	_	_	Folio=8r|Paragraph=3|Line=13|Norm=cecepoca|Analysed=Yes
-11	,	,	PUNCT	_		12	punct	_	Folio=8r|Paragraph=3|Line=13|Norm=,|Analysed=Yes
-12	cuecueioca	cuecueyoca	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	8	_	_	Orig=cuecue¶·ioca|Folio=8r,8r|Paragraph=3,3|Line=13,14|Norm=cuecueyoca|Analysed=Yes
-13	,	,	PUNCT	_		15	punct	_	Folio=8r|Paragraph=3|Line=14|Norm=,|Analysed=Yes
-14	in	in	DET|SCONJ	_	_	15	_	_	Orig=intenacaio|Folio=8r|Paragraph=3|Line=14|Norm=in
-15	tenacaio	nacatl	NOUN	_	_	12	_	_	Orig=intenacaio|Folio=8r|Paragraph=3|Line=14|Norm=tenacayo|Gloss=carne.de.alguien
-16	,	,	PUNCT	_		17	punct	_	Folio=8r|Paragraph=3|Line=14|Norm=,|Analysed=Yes
-17	ticecepoca	cecepoca	VERB	_	_	6	_	_	Folio=8r|Paragraph=3|Line=14|Norm=ticecepoca
-18	,	,	PUNCT	_		19	punct	_	Folio=8r|Paragraph=3|Line=14|Norm=,|Analysed=Yes
-19	ticuecueioca	cuecueyoca	VERB	_	_	17	_	_	Orig=ticuecue¶·ioca|Folio=8r,8r|Paragraph=3,3|Line=14,15|Norm=ticuecueyoca|Ambiguous=Yes|Analysed=Yes
-20	,	,	PUNCT	_		21	punct	_	Folio=8r|Paragraph=3|Line=15|Norm=,|Analysed=Yes
-21	tiquacecepoca	cuacecepoca	VERB	_	_	17	_	_	Folio=8r|Paragraph=3|Line=15|Norm=ticuacecepoca
-22	,	,	PUNCT	_		23	punct	_	Folio=8r|Paragraph=3|Line=15|Norm=,|Analysed=Yes
-23	titocujtivetzi	cuitihuetzi	VERB	_	_	17	_	_	Folio=8r|Paragraph=3|Line=15|Norm=titocuitihuetzi|Aux=huetzi
-24	:	:	PUNCT	_		25	punct	_	Folio=8r|Paragraph=3|Line=15|Norm=:|Analysed=Yes
-25	tetequjpachoa	tequipachoa	VERB	_	Animacy[obj]=Hum|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	17	_	_	Folio=8r|Paragraph=3|Line=16|Norm=tetequipachoa|Analysed=Yes
-26	,	,	PUNCT	_		27	punct	_	Folio=8r|Paragraph=3|Line=16|Norm=,|Analysed=Yes
-27	teiollitlacoa	yollitlacoa	VERB	_	Animacy[obj]=Hum|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	25	_	_	Folio=8r|Paragraph=3|Line=16|Norm=teyollitlacoa|Incorp[obj]=yolli|Analysed=Yes
-28	.	.	PUNCT	_		6	punct	_	Folio=8r|Paragraph=3|Line=16|Norm=.|Analysed=Yes
+# relations = 100.00%
+1	Auh	auh	CCONJ	_	_	6	cc	6:cc	Orig=A·uh|Folio=8r,8r|Paragraph=3,3|Line=12,12|Norm=Auh|Gloss=y
+2	in	in	SCONJ	_	_	4	mark	4:mark	Orig=inj·quac|Folio=8r,8r|Paragraph=3,3|Line=12,12|Norm=in
+3	jquac	ihcuac	ADV	_	_	4	advmod	4:advmod	Orig=inj·quac|Folio=8r,8r|Paragraph=3,3|Line=12,12|Norm=ihcuac|Gloss=en.el.momento
+4	itto	itta	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin|Voice=Pass	6	advcl	6:advcl	Folio=8r|Paragraph=3|Line=12|Norm=itto|Analysed=Yes
+5	,	,	PUNCT	_		6	punct	6:punct	Folio=8r|Paragraph=3|Line=12|Norm=,|Analysed=Yes
+6	netlacmauhtilo	tlacmauhtia	VERB	_	_	0	root	0:root	Orig=netlacmauh¶·tilo|Folio=8r,8r|Paragraph=3,3|Line=12,13|Norm=netlacmauhtilo
+7	:	:	PUNCT	_		8	punct	8:punct	Folio=8r|Paragraph=3|Line=13|Norm=:|Analysed=Yes
+8	necujtiuecho	cuitihuetzi	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[iobj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin|Voice=Pass	6	parataxis	6:parataxis	Folio=8r|Paragraph=3|Line=13|Norm=necuitihuecho|Analysed=Yes
+9	,	,	PUNCT	_		10	punct	10:punct	Folio=8r|Paragraph=3|Line=13|Norm=,|Analysed=Yes
+10	cecepoca	cecepoca	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	Folio=8r|Paragraph=3|Line=13|Norm=cecepoca|Analysed=Yes
+11	,	,	PUNCT	_		12	punct	12:punct	Folio=8r|Paragraph=3|Line=13|Norm=,|Analysed=Yes
+12	cuecueioca	cuecueyoca	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	Orig=cuecue¶·ioca|Folio=8r,8r|Paragraph=3,3|Line=13,14|Norm=cuecueyoca|Analysed=Yes
+13	,	,	PUNCT	_		15	punct	15:punct	Folio=8r|Paragraph=3|Line=14|Norm=,|Analysed=Yes
+14	in	in	DET	_	_	15	det	15:det	Orig=intenacaio|Folio=8r|Paragraph=3|Line=14|Norm=in
+15	tenacaio	nacatl	NOUN	_	_	12	nsubj	12:nsubj	Orig=intenacaio|Folio=8r|Paragraph=3|Line=14|Norm=tenacayo|Gloss=carne.de.alguien
+16	,	,	PUNCT	_		17	punct	17:punct	Folio=8r|Paragraph=3|Line=14|Norm=,|Analysed=Yes
+17	ticecepoca	cecepoca	VERB	_	_	6	parataxis	6:parataxis	Folio=8r|Paragraph=3|Line=14|Norm=ticecepoca
+18	,	,	PUNCT	_		19	punct	19:punct	Folio=8r|Paragraph=3|Line=14|Norm=,|Analysed=Yes
+19	ticuecueioca	cuecueyoca	VERB	_	_	6	parataxis	6:parataxis	Orig=ticuecue¶·ioca|Folio=8r,8r|Paragraph=3,3|Line=14,15|Norm=ticuecueyoca|Ambiguous=Yes|Analysed=Yes
+20	,	,	PUNCT	_		21	punct	21:punct	Folio=8r|Paragraph=3|Line=15|Norm=,|Analysed=Yes
+21	tiquacecepoca	cuacecepoca	VERB	_	_	6	parataxis	6:parataxis	Folio=8r|Paragraph=3|Line=15|Norm=ticuacecepoca
+22	,	,	PUNCT	_		23	punct	23:punct	Folio=8r|Paragraph=3|Line=15|Norm=,|Analysed=Yes
+23	titocujtivetzi	cuitihuetzi	VERB	_	_	6	parataxis	6:parataxis	Folio=8r|Paragraph=3|Line=15|Norm=titocuitihuetzi|Aux=huetzi
+24	:	:	PUNCT	_		25	punct	25:punct	Folio=8r|Paragraph=3|Line=15|Norm=:|Analysed=Yes
+25	tetequjpachoa	tequipachoa	VERB	_	Animacy[obj]=Hum|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	Folio=8r|Paragraph=3|Line=16|Norm=tetequipachoa|Analysed=Yes
+26	,	,	PUNCT	_		27	punct	27:punct	Folio=8r|Paragraph=3|Line=16|Norm=,|Analysed=Yes
+27	teiollitlacoa	yollitlacoa	VERB	_	Animacy[obj]=Hum|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	Folio=8r|Paragraph=3|Line=16|Norm=teyollitlacoa|Incorp[obj]=yolli|Analysed=Yes
+28	.	.	PUNCT	_		6	punct	6:punct	Folio=8r|Paragraph=3|Line=16|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:54
 # text = Auh in juhquj, ic muchichiuh: yxtecujcujpul coztic: auh injc tlatoa pipitzca, iuhqujn mapipitzoa: tocujleoa, tocujlechoa: no iaotequjoa qujtocaiotiaia.

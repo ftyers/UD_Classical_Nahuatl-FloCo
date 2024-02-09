@@ -2940,38 +2940,44 @@
 
 # sent_id = Book_05_-_The_Omens.txt:53
 # text = Auh in jquac itto, netlacmauhtilo: necujtiuecho, cecepoca, cuecueioca, in tenacaio, ticecepoca, ticuecueioca, tiquacecepoca, titocujtivetzi: tetequjpachoa, teiollitlacoa.
-# text[norm] = Auh in ihcuac itto, netlacmauhtilo: necuitihuecho, cecepoca, cuecueyoca, in tenacayo, ticecepoca, ticuecueyoca, ticuacecepoca, titocuitihuetzi: tetequipachoa, teyollitlacohua.
+# text[norm] = Auh in ihcuac itto, netlacmauhtilo: necuitihuecho, cecepoca, cuecueyoca, in tenacayo, ticecepoca, ticuecueyoca, ticuacecepoca, titocuitihuetzi: tetequipachoa, teyollitlacoa.
 # text[orig] = A·uh·inj·quac·itto·,·netlacmauh¶tilo·:·necujtiuecho·,·cecepoca·,·cuecue¶ioca·,·intenacaio·,·ticecepoca·,·ticuecue¶ioca·,·tiquacecepoca·,·titocujtivetzi·:·tetequjpachoa·,·teiollitlacoa·.
-# tagged = 96.43%
-# analysed = 82.14%
-1	Auh	auh	CCONJ	_	_	6	_	_	_
-2	in	in	DET|SCONJ	_	_	4	_	_	_
-3	jquac	ihcuac	SCONJ	_	_	4	_	_	_
-4	itto	itto	VERB	_	_	6	_	_	_
-5	,	,	PUNCT	_	_	6	punct	_	_
-6	netlacmauhtilo	_	VERB	_	_	0	root	_	_
-7	:	:	PUNCT	_	_	8	punct	_	_
-8	necujtiuecho	_	VERB	_	_	6	_	_	_
-9	,	,	PUNCT	_	_	10	punct	_	_
-10	cecepoca	cecepoca	VERB	_	_	8	_	_	_
-11	,	,	PUNCT	_	_	12	punct	_	_
-12	cuecueioca	cuecueyoca	VERB	_	_	8	_	_	_
-13	,	,	PUNCT	_	_	15	punct	_	_
-14	in	in	DET|SCONJ	_	_	15	_	_	_
-15	tenacaio	_	NOUN	_	_	12	_	_	_
-16	,	,	PUNCT	_	_	17	punct	_	_
-17	ticecepoca	cecepoca	VERB	_	_	6	_	_	_
-18	,	,	PUNCT	_	_	19	punct	_	_
-19	ticuecueioca	cuecueyoca	VERB	_	_	17	_	_	_
-20	,	,	PUNCT	_	_	21	punct	_	_
-21	tiquacecepoca	_	X	_	_	17	_	_	_
-22	,	,	PUNCT	_	_	23	punct	_	_
-23	titocujtivetzi	_	VERB	_	_	17	_	_	_
-24	:	:	PUNCT	_	_	25	punct	_	_
-25	tetequjpachoa	tequipachoa	VERB	_	_	17	_	_	_
-26	,	,	PUNCT	_	_	27	punct	_	_
-27	teiollitlacoa	_	VERB	_	_	25	_	_	_
-28	.	.	PUNCT	_	_	6	punct	_	_
+# text[osp] = Y por esto, ordinariamente los que encontrauan con este animalejo, les temlauan las carnes de mjedo, y se entremecian, y se les espeluzauan los cabellos, algunos se ponjan jertos, o palmados: por tener entendido, que algun mal les auja de acontecer.
+# text[osp_norm] = Y por esto, ordinariamente los que encontraban con este animalejo, les temblaban las carnes de miedo, y se entremecían, y se les espeluzaban los cabellos, algunos se ponían yertos, o palmados: por tener entendido, que algún mal les había de acontecer.
+# references = A&D/170:4
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 46.43%
+1	Auh	auh	CCONJ	_	_	6	cc	6:cc	_
+2	in	in	SCONJ	_	_	4	mark	4:mark	_
+3	jquac	ihcuac	ADV	_	_	4	advmod	4:advmod	_
+4	itto	itta	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin|Voice=Pass	6	advcl	6:advcl	_
+5	,	,	PUNCT	_	_	6	punct	6:punct	_
+6	netlacmauhtilo	tlacmauhtia	VERB	_	_	0	root	0:root	_
+7	:	:	PUNCT	_	_	8	punct	8:punct	_
+8	necujtiuecho	cuitihuetzi	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[iobj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin|Voice=Pass6_	6	parataxis	6:parataxis	_
+9	,	,	PUNCT	_	_	10	punct	10:punct	_
+10	cecepoca	cecepoca	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	_
+11	,	,	PUNCT	_	_	12	punct	12:punct	_
+12	cuecueioca	cuecueyoca	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	_
+13	,	,	PUNCT	_	_	15	punct	15:punct	_
+14	in	in	DET	_	_	15	det	15:det	_
+15	tenacaio	nacatl	NOUN	_	_	12	nsubj	12:nsubj	_
+16	,	,	PUNCT	_	_	17	punct	17:punct	_
+17	ticecepoca	cecepoca	VERB	_	_	6	parataxis	6:parataxis	_
+18	,	,	PUNCT	_	_	19	punct	19:punct	_
+19	ticuecueioca	cuecueyoca	VERB	_	_	6	parataxis	6:parataxis	_
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	tiquacecepoca	cuacecepoca	VERB	_	_	6	parataxis	6:parataxis	_
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	titocujtivetzi	cuitihuetzi	VERB	_	_	6	parataxis	6:parataxis	_
+24	:	:	PUNCT	_	_	25	punct	25:punct	_
+25	tetequjpachoa	tequipachoa	VERB	_	Animacy[obj]=Hum|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	_
+26	,	,	PUNCT	_	_	27	punct	27:punct	_
+27	teiollitlacoa	yollitlacoa	VERB	_	Animacy[obj]=Hum|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	_
+28	.	.	PUNCT	_	_	6	punct	6:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:54
 # text = Auh in juhquj, ic muchichiuh: yxtecujcujpul coztic: auh injc tlatoa pipitzca, iuhqujn mapipitzoa: tocujleoa, tocujlechoa: no iaotequjoa qujtocaiotiaia.
