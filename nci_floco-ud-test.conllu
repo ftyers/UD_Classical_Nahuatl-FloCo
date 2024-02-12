@@ -174,6 +174,42 @@
 14	chiquatli	chicuatli	NOUN	_	State=Abs	13	nmod	13:nmod	Analysed=Yes|Folio=7v,7v|Line=27,28|Norm=chicuatli|Orig=chi¶·quatli|Paragraph=2,2|SpaceAfter=No
 15	.	.	PUNCT	_	_	6	punct	6:punct	Folio=7v|Paragraph=2|Line=28|Norm=.|Analysed=Yes
 
+# sent_id = Book_05_-_The_Omens.txt:46
+# text = No ioan, intla ie aca mococoa: in jpan tzatzitiqujca, qujtoaia ca aiocmo qujcaz: ca ticcaoazque.
+# text[norm] = No ihuan, intla ye aca mococoa: in ipan tzatzitiquiza, quihtoaya ca ayocmo quizaz: ca ticcahuazque.
+# text[orig] = No·ioan·,·intla·ie·aca·mococoa·:·inj¶pan·tzatzitiqujca·,·qujtoaia·ca·aioc¶mo·qujcaz·:·caticcaoazque·.
+# text[osp] = [...] estaua algun enfermo: luego le pronosticauan la muerte.
+# text[osp_norm] = [...] estaba algún enfermo: luego le pronosticaban la muerte.
+# text[spa] = También con eso, si ya alguien se enferma: que en él se pone a chillar, decían que ya no saldrá, que lo dejaremos.
+# references = A&D/169:3
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/23
+1	No	no	ADV	_	_	13	advmod	13:advmod	Folio=7v|Paragraph=3|Line=13|Norm=No|Gloss=también|Analysed=Yes
+2	ioan	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	13	obl	13:obl	Analysed=Yes|Folio=7v|Gloss=con|Line=13|Norm=ihuan|Paragraph=3|SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	7:punct	Folio=7v|Paragraph=3|Line=13|Norm=,|Analysed=Yes
+4	intla	intla	SCONJ	_	_	7	mark	7:mark	Folio=7v|Paragraph=3|Line=13|Norm=intla
+5	ie	ye	ADV	_	_	7	advmod	7:advmod	Folio=7v|Paragraph=3|Line=13|Norm=ye|AmbigNorm=True|Override=False
+6	aca	aca	PRON	_	_	7	nsubj	7:nsubj	Folio=7v|Paragraph=3|Line=13|Norm=aca
+7	mococoa	cocoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	13	advcl	13:advcl	Analysed=Yes|Folio=7v|Line=13|Norm=mococoa|Paragraph=3|SpaceAfter=No
+8	:	:	PUNCT	_	_	11	punct	11:punct	Folio=7v|Paragraph=3|Line=13|Norm=:|Analysed=Yes
+9	in	in	SCONJ	_	_	11	mark	11:mark	Orig=inj¶·pan|Folio=7v,7v|Paragraph=3,3|Line=13,14|Norm=in
+10	jpan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	11	obl	11:obl	Orig=inj¶·pan|Folio=7v,7v|Paragraph=3,3|Line=13,14|Norm=ipan|Analysed=Yes
+11	tzatzitiqujca	tzatzi	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr	7	conj	7:conj	Analysed=Yes|Folio=7v|Line=14|Norm=tzatzitiquiza|Paragraph=3|SpaceAfter=No
+12	,	,	PUNCT	_	_	7	punct	13:punct	Folio=7v|Paragraph=3|Line=14|Norm=,|Analysed=Yes
+13	qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	0:root	Folio=7v|Paragraph=3|Line=14|Norm=quihtoaya|Analysed=Yes
+14	ca	cah|ca	PART	_	_	16	discourse	16:discourse	Folio=7v|Paragraph=3|Line=14|Norm=ca|AmbigNorm=True|Override=False
+15	aiocmo	ayocmo	ADV	_	_	16	advmod	16:advmod	Orig=aioc¶·mo|Folio=7v,7v|Paragraph=3,3|Line=14,15|Norm=ayocmo|Gloss=ya.no|Analysed=Yes
+16	qujcaz	quiza	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	13	parataxis:speech	13:parataxis:speech	Analysed=Yes|Folio=7v|Line=15|Norm=quizaz|Paragraph=3|SpaceAfter=No
+17	:	:	PUNCT	_	_	19	punct	19:punct	Folio=7v|Paragraph=3|Line=15|Norm=:|Analysed=Yes
+18	ca	cah|ca	PART	_	_	19	discourse	19:discourse	Orig=caticcaoazque|Folio=7v|Paragraph=3|Line=15|Norm=ca|AmbigNorm=True|Override=False
+19	ticcaoazque	cahua	VERB	_	Number[obj]=Sing|Number[subj]=Plur|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Fut|VerbForm=Fin	13	parataxis:speech	13:parataxis:speech	Analysed=Yes|Folio=7v|Line=15|Norm=ticcahuazque|Orig=caticcaoazque|Paragraph=3|SpaceAfter=No
+20	.	.	PUNCT	_	_	13	punct	13:punct	Folio=7v|Paragraph=3|Line=15|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:51
 # text = Ic chiquacen capitulo, vncan mjtoa: in tetzaujtl catca, injc motetzaujaia: in jquac aca qujttaia, cocamatl in teixpan tlaujltequja.
 # text[norm] = Ic chicuacen capítulo, oncan mihtoa: in tetzahuitl catca, inic motetzahuiaya: in ihcuac aca quittaya, cozamatl in teixpan tlahuiltequiya.
