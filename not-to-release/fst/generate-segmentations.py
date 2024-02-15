@@ -1,3 +1,5 @@
+# Remember to run:
+# ln -s ../scripts/attapply.py .
 import sys, re
 from attapply import ATTFST
 
