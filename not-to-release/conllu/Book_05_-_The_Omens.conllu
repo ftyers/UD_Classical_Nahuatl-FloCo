@@ -3807,29 +3807,29 @@
 # analysed = 100.00%
 # heads = 100.00%
 # relations = 100.00%
-1	Auh	auh	CCONJ	_	_	14	cc	_	Orig=A·uh|Folio=9r,9r|Paragraph=1,1|Line=22,22|Norm=Auh|Gloss=y
-2	intla	tla	SCONJ	_	_	5	mark	_	Orig=intlacan|Folio=9r|Paragraph=1|Line=22|Norm=intla
-3	can	zan	ADV	_		5	advmod	_	Orig=intlacan|Folio=9r|Paragraph=1|Line=22|Norm=zan|Analysed=Yes
-4	ipa	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	5	obl	_	Folio=9r|Paragraph=1|Line=22|Norm=ipan|Analysed=Yes
-5	otlatvic	tlathuic	VERB	_	Aspect=Prior|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	14	advcl	_	Folio=9r|Paragraph=1|Line=23|Norm=otlathuic|Analysed=Yes
-6	,	,	PUNCT	_		11	punct	_	Folio=9r|Paragraph=1|Line=23|Norm=,|Analysed=Yes
-7	in	in	SCONJ	_	_	11	mark	_	Folio=9r|Paragraph=1|Line=23|Norm=in
-8	çan	zan	ADV	_		11	advmod	_	Folio=9r|Paragraph=1|Line=23|Norm=zan|Analysed=Yes
-9	ie	ye	ADV	_	_	11	advmod	_	Folio=9r|Paragraph=1|Line=23|Norm=ye|AmbigNorm=True|Override=False
-10	vncan	oncan	ADV	_		11	advmod	_	Folio=9r|Paragraph=1|Line=23|Norm=oncan|Gloss=aquí|Analysed=Yes
-11	pilcac	pilca	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	5	conj	_	Folio=9r|Paragraph=1|Line=23|Norm=pilcac|Analysed=Yes
-12	,	,	PUNCT	_		14	punct	_	Folio=9r|Paragraph=1|Line=23|Norm=,|Analysed=Yes
-13	ic	ic	ADV	_	_	14	advmod	_	Folio=9r|Paragraph=1|Line=23|Norm=ic
-14	moiollalia	yollalia	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	Folio=9r|Paragraph=1|Line=24|Norm=moyollalia|Analysed=Yes
-15	:	:	PUNCT	_		18	punct	_	Folio=9r|Paragraph=1|Line=24|Norm=:|Analysed=Yes
-16	amo	amo	ADV	_		18	advmod	_	Folio=9r|Paragraph=1|Line=24|Norm=amo|Gloss=no|Analysed=Yes
-17	cenca	cenca	ADV	_		18	advmod	_	Folio=9r|Paragraph=1|Line=24|Norm=cenca|Gloss=muy|Analysed=Yes
-18	qujueimati	hueyimati	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	14	parataxis:shared	_	Folio=9r|Paragraph=1|Line=24|Norm=quihueyimati|Analysed=Yes
-19	,	,	PUNCT	_		22	punct	_	Folio=9r|Paragraph=1|Line=24|Norm=,|Analysed=Yes
-20	atle	atle	PRON	_	_	22	obj	_	Folio=9r|Paragraph=1|Line=25|Norm=atle|Gloss=nada
-21	ipan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	22	obl	_	Folio=9r|Paragraph=1|Line=25|Norm=ipan|Analysed=Yes
-22	conjtta	itta	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	14	parataxis:shared	_	Folio=9r|Paragraph=1|Line=25|Norm=conitta|Analysed=Yes
-23	.	.	PUNCT	_		14	punct	_	Folio=9r|Paragraph=1|Line=25|Norm=.|Analysed=Yes
+1	Auh	auh	CCONJ	_	_	14	cc	14:cc	Orig=A·uh|Folio=9r,9r|Paragraph=1,1|Line=22,22|Norm=Auh|Gloss=y
+2	intla	tla	SCONJ	_	_	5	mark	5:mark	Orig=intlacan|Folio=9r|Paragraph=1|Line=22|Norm=intla
+3	can	zan	ADV	_		5	advmod	5:advmod	Orig=intlacan|Folio=9r|Paragraph=1|Line=22|Norm=zan|Analysed=Yes
+4	ipa	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	5	obl	5:obl	Folio=9r|Paragraph=1|Line=22|Norm=ipan|Analysed=Yes
+5	otlatvic	tlathuic	VERB	_	Aspect=Prior|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	14	advcl	14:advcl	Folio=9r|Paragraph=1|Line=23|Norm=otlathuic|Analysed=Yes
+6	,	,	PUNCT	_		11	punct	11:punct	Folio=9r|Paragraph=1|Line=23|Norm=,|Analysed=Yes
+7	in	in	SCONJ	_	_	11	mark	11:mark	Folio=9r|Paragraph=1|Line=23|Norm=in
+8	çan	zan	ADV	_		11	advmod	11:advmod	Folio=9r|Paragraph=1|Line=23|Norm=zan|Analysed=Yes
+9	ie	ye	ADV	_	_	11	advmod	11:advmod	Folio=9r|Paragraph=1|Line=23|Norm=ye|AmbigNorm=True|Override=False
+10	vncan	oncan	ADV	_		11	advmod	11:advmod	Folio=9r|Paragraph=1|Line=23|Norm=oncan|Gloss=aquí|Analysed=Yes
+11	pilcac	pilca	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	5	conj	5:conj	Folio=9r|Paragraph=1|Line=23|Norm=pilcac|Analysed=Yes
+12	,	,	PUNCT	_		14	punct	14:punct	Folio=9r|Paragraph=1|Line=23|Norm=,|Analysed=Yes
+13	ic	ic	ADV	_	_	14	advmod	14:advmod	Folio=9r|Paragraph=1|Line=23|Norm=ic
+14	moiollalia	yollalia	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Folio=9r|Paragraph=1|Line=24|Norm=moyollalia|Analysed=Yes
+15	:	:	PUNCT	_		18	punct	18:punct	Folio=9r|Paragraph=1|Line=24|Norm=:|Analysed=Yes
+16	amo	amo	ADV	_		18	advmod	18:advmod	Folio=9r|Paragraph=1|Line=24|Norm=amo|Gloss=no|Analysed=Yes
+17	cenca	cenca	ADV	_		18	advmod	18:advmod	Folio=9r|Paragraph=1|Line=24|Norm=cenca|Gloss=muy|Analysed=Yes
+18	qujueimati	hueyimati	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	14	parataxis:shared	14:parataxis:shared	Folio=9r|Paragraph=1|Line=24|Norm=quihueyimati|Analysed=Yes
+19	,	,	PUNCT	_		22	punct	22:punct	Folio=9r|Paragraph=1|Line=24|Norm=,|Analysed=Yes
+20	atle	atle	PRON	_	_	22	obj	22:obj	Folio=9r|Paragraph=1|Line=25|Norm=atle|Gloss=nada
+21	ipan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	22	obl	22:obl	Folio=9r|Paragraph=1|Line=25|Norm=ipan|Analysed=Yes
+22	conjtta	itta	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	14	parataxis:shared	14:parataxis:shared	Folio=9r|Paragraph=1|Line=25|Norm=conitta|Analysed=Yes
+23	.	.	PUNCT	_		14	punct	14:punct	Folio=9r|Paragraph=1|Line=25|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:67
 # text = Auh injc contlalia tlanepantla, chichitl, anoço vctli: mjtoa ic contlaoantia: ioan no mjtoa, in quenman ome vitz qujtoa: no qualli qujnextia, aco itla qualli temacehoal muchioa.
