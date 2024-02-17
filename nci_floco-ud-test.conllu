@@ -416,6 +416,44 @@
 6	concaoa	cahua	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	parataxis:shared	3:parataxis:shared	Analysed=Yes|Folio=9r|Line=19|Norm=concahua|Paragraph=1|SpaceAfter=No
 7	.	.	PUNCT	_	_	3	punct	3:punct	Folio=9r|Paragraph=1|Line=19|Norm=.|Analysed=Yes
 
+# sent_id = Book_05_-_The_Omens.txt:66
+# text = Auh intla can ipa otlatvic, in çan ie vncan pilcac, ic moiollalia: amo cenca qujueimati, atle ipan conjtta.
+# text[norm] = Auh intla zan ipan otlathuic, in zan ye oncan pilcac, ic moyollalia: amo cenca quihueyimati, atle ipan conitta.
+# text[orig] = A·uh·intlacan·ipa¶otlatvic·,·in·çan·ie·vncan·pilcac·,·ic¶moiollalia·:·amo·cenca·qujueimati·,·atle·ipan·conjtta·.
+# text[osp] = [...] y si poruentura, quando la yua ver otro dia, le hallaua alli: entonce consolaua se, teniendo por cierto que no era aguero.
+# text[osp_norm] = [...] y si por ventura, cuando la iba a ver otro día, le hallaba allí: entonces consolábase, teniendo por cierto que no era agüero.
+# references = A&D/173:1
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/36
+1	Auh	auh	CCONJ	_	_	14	cc	14:cc	Orig=A·uh|Folio=9r,9r|Paragraph=1,1|Line=22,22|Norm=Auh|Gloss=y
+2	intla	tla	SCONJ	_	_	5	mark	5:mark	Orig=intlacan|Folio=9r|Paragraph=1|Line=22|Norm=intla
+3	can	zan	ADV	_	_	5	advmod	5:advmod	Orig=intlacan|Folio=9r|Paragraph=1|Line=22|Norm=zan|Analysed=Yes
+4	ipa	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	5	obl	5:obl	Folio=9r|Paragraph=1|Line=22|Norm=ipan|Analysed=Yes
+5	otlatvic	tlathuic	VERB	_	Aspect=Prior|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	14	advcl	14:advcl	Analysed=Yes|Folio=9r|Line=23|Norm=otlathuic|Paragraph=1|SpaceAfter=No
+6	,	,	PUNCT	_	_	11	punct	11:punct	Folio=9r|Paragraph=1|Line=23|Norm=,|Analysed=Yes
+7	in	in	SCONJ	_	_	11	mark	11:mark	Folio=9r|Paragraph=1|Line=23|Norm=in
+8	çan	zan	ADV	_	_	11	advmod	11:advmod	Folio=9r|Paragraph=1|Line=23|Norm=zan|Analysed=Yes
+9	ie	ye	ADV	_	_	11	advmod	11:advmod	Folio=9r|Paragraph=1|Line=23|Norm=ye|AmbigNorm=True|Override=False
+10	vncan	oncan	ADV	_	_	11	advmod	11:advmod	Folio=9r|Paragraph=1|Line=23|Norm=oncan|Gloss=aquí|Analysed=Yes
+11	pilcac	pilca	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	5	conj	5:conj	Analysed=Yes|Folio=9r|Line=23|Norm=pilcac|Paragraph=1|SpaceAfter=No
+12	,	,	PUNCT	_	_	5	punct	14:punct	Folio=9r|Paragraph=1|Line=23|Norm=,|Analysed=Yes
+13	ic	ic	ADV	_	_	14	advmod	14:advmod	Folio=9r|Paragraph=1|Line=23|Norm=ic
+14	moiollalia	yollalia	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Analysed=Yes|Folio=9r|Line=24|Norm=moyollalia|Paragraph=1|SpaceAfter=No
+15	:	:	PUNCT	_	_	18	punct	18:punct	Folio=9r|Paragraph=1|Line=24|Norm=:|Analysed=Yes
+16	amo	amo	ADV	_	_	18	advmod	18:advmod	Folio=9r|Paragraph=1|Line=24|Norm=amo|Gloss=no|Analysed=Yes
+17	cenca	cenca	ADV	_	_	18	advmod	18:advmod	Folio=9r|Paragraph=1|Line=24|Norm=cenca|Gloss=muy|Analysed=Yes
+18	qujueimati	hueyimati	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	14	parataxis:shared	14:parataxis:shared	Analysed=Yes|Folio=9r|Line=24|Norm=quihueyimati|Paragraph=1|SpaceAfter=No
+19	,	,	PUNCT	_	_	22	punct	22:punct	Folio=9r|Paragraph=1|Line=24|Norm=,|Analysed=Yes
+20	atle	atle	PRON	_	_	22	obj	22:obj	Folio=9r|Paragraph=1|Line=25|Norm=atle|Gloss=nada
+21	ipan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	22	obl	22:obl	Folio=9r|Paragraph=1|Line=25|Norm=ipan|Analysed=Yes
+22	conjtta	itta	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	14	parataxis:shared	14:parataxis:shared	Analysed=Yes|Folio=9r|Line=25|Norm=conitta|Paragraph=1|SpaceAfter=No
+23	.	.	PUNCT	_	_	14	punct	14:punct	Folio=9r|Paragraph=1|Line=25|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:76
 # text = Ca ie no iuhquj, muchiuhquj: qujcenujca, qujcemjtoa in mjqujztetzaujtl.
 # text[norm] = Za ye no iuhqui, mochiuhqui: quicenhuica, quicemihtoa in miquiztetzahuitl.
