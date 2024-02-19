@@ -4016,29 +4016,36 @@
 
 # sent_id = Book_05_-_The_Omens.txt:77
 # text = In iehoatl calcujatl, aco cana tepancamac: calquac in qujntlalia tecocolianj: cotaloa, cotalotica injc tlatoa.
-# text[norm] = In yehhuatl calcuiatl, azo cana tepancamac: calcuac in quintlalia tecocoliani: cotaloa, cotalotica inic tlatoa.
+# text[norm] = In yehhuatl calcuiyatl, azo cana tepancamac: calcuac in quintlalia tecocoliani: cotaloa, cotalotica inic tlatoa.
 # text[orig] = In·iehoatl·calcujatl·,·aco·cana·tepancamac·:·calquac·in¶qujntlalia·tecocolianj·:·cotaloa·,·co¶talotica·injc·tlatoa·.
+# text[eng] = It is house frogs, maybe somewhere in the mouth of a wall: the roof of the house that he placed them the enemy: they croaked, they continued croaking, like that they spoke.
+# text[osp] = Esto mismo se sentia: si alguno en su casa hallaua, o via alguna rana, o sapo en las paredes, o en el tlapanco, o entre los maderos de la casa. Y tambien tenjan entendido: que las tales ranas, las hechauan dentro de casa los maliuolos enemjgos, y imbidiosos: por mal querencia.
+# text[osp_norm] = Esto mismo se sentía: si alguno en su casa hallaba, o veía alguna rana, o sapo en las paredes, o en el <tlapanco>, o entre los maderos de la casa. Y también tenían entendido: que las tales ranas, las echaban dentro de casa los malívolos enemigos, y envidiosos: por malquerencia.
+# references = A&D/175:4
 # tagged = 100.00%
-# analysed = 78.95%
-1	In	in	DET|SCONJ	_	_	2	_	_	_
-2	iehoatl	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	3	nsubj	_	_
-3	calcujatl	_	NOUN	_	_	0	root	_	_
-4	,	,	PUNCT	_	_	7	punct	_	_
-5	aco	azo	ADV	_	_	7	_	_	_
-6	cana	_	ADV	_	_	7	_	_	_
-7	tepancamac	_	NOUN	_	_	3	_	_	_
-8	:	:	PUNCT	_	_	9	punct	_	_
-9	calquac	_	NOUN	_	_	7	_	_	_
-10	in	in	DET|SCONJ	_	_	11	_	_	_
-11	qujntlalia	tlalia	VERB	_	_	7	_	_	_
-12	tecocolianj	tecocoliani	NOUN	_	State=Abs	11	_	_	_
-13	:	:	PUNCT	_	_	14	punct	_	_
-14	cotaloa	cotaloa	VERB	_	_	3	_	_	_
-15	,	,	PUNCT	_	_	16	punct	_	_
-16	cotalotica	_	VERB	_	_	14	_	_	_
-17	injc	inic	SCONJ	_	_	18	_	_	_
-18	tlatoa	tlatoa	VERB	_	_	14	_	_	_
-19	.	.	PUNCT	_	_	3	punct	_	_
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 36.84%
+1	In	in	DET	_	_	2	det	2:det	_
+2	iehoatl	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	14	dislocated	14:dislocated	_
+3	calcujatl	calcuiyatl	NOUN	_	State=Abs	2	appos	2:appos	_
+4	,	,	PUNCT	_	_	7	punct	7:punct	_
+5	aco	azo	ADV	_	_	7	advmod	7:advmod	_
+6	cana	cana	ADV	_	_	7	advmod	7:advmod	_
+7	tepancamac	tepancamac	NOUN	_	NounClass=Loc	11	obl	11:obl	_
+8	:	:	PUNCT	_	_	11	punct	11:punct	_
+9	calquac	calcuac	NOUN	_	NounClass=Loc	11	obl	11:obl	_
+10	in	in	SCONJ	_	_	11	mark	11:mark	_
+11	qujntlalia	tlalia	VERB	_	Number[obj]=Plur|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	2	acl	2:acl	_
+12	tecocolianj	tecocoliani	NOUN	_	State=Abs	11	nsubj	11:nsubj	_
+13	:	:	PUNCT	_	_	14	punct	14:punct	_
+14	cotaloa	cotaloa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	cotalotica	cotaloa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr	14	parataxis:shared	14:parataxis:shared	_
+17	injc	inic	ADV	_	_	18	advmod	18:advmod	_
+18	tlatoa	tlatoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	14	parataxis:shared	14:parataxis:shared	_
+19	.	.	PUNCT	_	_	14	punct	14:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:78
 # text = No iuhquj in tetzauhqujmjchin, anoço tetlaque chililli. Pl' chililti: muchi iehoan qujntlaliaia, qujntetoqujliaia, in atlaca, in tecocolianj: injc caco, injc mocaquj: vel pipitzca, pipipitzca, pipitzcaticate, injc tlatoa.

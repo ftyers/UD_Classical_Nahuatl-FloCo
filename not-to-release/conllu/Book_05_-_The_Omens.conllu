@@ -4455,26 +4455,26 @@
 # lemmatised = 100.00%
 # analysed = 100.00%
 # heads = 100.00%
-# relations = 36.84%
-1	In	in	DET|SCONJ	_	_	2	_	_	Folio=10v|Paragraph=4|Line=28|Norm=In
-2	iehoatl	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	3	nsubj	_	Folio=10v|Paragraph=4|Line=28|Norm=yehhuatl|Gloss=él|Analysed=Yes
-3	calcujatl	calcuiyatl	NOUN	_	State=Abs	0	root	_	Folio=10v|Paragraph=4|Line=28|Norm=calcuiyatl|Split=cal·cuiyatl|Analysed=Yes
-4	,	,	PUNCT	_		7	punct	_	Folio=10v|Paragraph=4|Line=28|Norm=,|Analysed=Yes
-5	aco	azo	ADV	_		7	_	_	Folio=10v|Paragraph=4|Line=29|Norm=azo|Gloss=quizás|Analysed=Yes
-6	cana	cana	ADV	_	_	7	_	_	Folio=10v|Paragraph=4|Line=29|Norm=cana|Gloss=alguna.parte
-7	tepancamac	tepancamac	NOUN	_	NounClass=Loc	3	_	_	Folio=10v|Paragraph=4|Line=29|Norm=tepancamac|Locative=Yes|Split=tepan·camac|Gloss=hoyo.en.pared|Analysed=Yes
-8	:	:	PUNCT	_		9	punct	_	Folio=10v|Paragraph=4|Line=29|Norm=:|Analysed=Yes
-9	calquac	calcuac	NOUN	_	NounClass=Loc	7	_	_	Folio=10v|Paragraph=4|Line=29|Norm=calcuac|Locative=Yes|Root=calcuatl|Analysed=Yes
-10	in	in	DET|SCONJ	_	_	11	_	_	Folio=10v|Paragraph=4|Line=29|Norm=in
-11	qujntlalia	tlalia	VERB	_	Number[obj]=Plur|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	7	_	_	Folio=10v|Paragraph=4|Line=30|Norm=quintlalia|Analysed=Yes
-12	tecocolianj	tecocoliani	NOUN	_	State=Abs	11	_	_	Folio=10v|Paragraph=4|Line=30|Norm=tecocoliani|Analysed=Yes
-13	:	:	PUNCT	_		14	punct	_	Folio=10v|Paragraph=4|Line=30|Norm=:|Analysed=Yes
-14	cotaloa	cotaloa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	3	_	_	Folio=10v|Paragraph=4|Line=30|Norm=cotaloa|Analysed=Yes
-15	,	,	PUNCT	_		16	punct	_	Folio=10v|Paragraph=4|Line=30|Norm=,|Analysed=Yes
-16	cotalotica	cotaloa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr	14	_	_	Orig=co¶·talotica|Folio=10v,10v|Paragraph=4,4|Line=30,31|Norm=cotalotica|Aux=ca|Analysed=Yes
-17	injc	inic	SCONJ	_	_	18	_	_	Folio=10v|Paragraph=4|Line=31|Norm=inic
-18	tlatoa	tlatoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	14	_	_	Folio=10v|Paragraph=4|Line=31|Norm=tlatoa|Analysed=Yes
-19	.	.	PUNCT	_		3	punct	_	Folio=10v|Paragraph=4|Line=31|Norm=.|Analysed=Yes
+# relations = 100.00%
+1	In	in	DET	_	_	2	det	2:det	Folio=10v|Paragraph=4|Line=28|Norm=In
+2	iehoatl	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	14	dislocated	14:dislocated	Folio=10v|Paragraph=4|Line=28|Norm=yehhuatl|Gloss=él|Analysed=Yes
+3	calcujatl	calcuiyatl	NOUN	_	State=Abs	2	appos	2:appos	Folio=10v|Paragraph=4|Line=28|Norm=calcuiyatl|Split=cal·cuiyatl|Analysed=Yes
+4	,	,	PUNCT	_		7	punct	7:punct	Folio=10v|Paragraph=4|Line=28|Norm=,|Analysed=Yes
+5	aco	azo	ADV	_		7	advmod	7:advmod	Folio=10v|Paragraph=4|Line=29|Norm=azo|Gloss=quizás|Analysed=Yes
+6	cana	cana	ADV	_	_	7	advmod	7:advmod	Folio=10v|Paragraph=4|Line=29|Norm=cana|Gloss=alguna.parte
+7	tepancamac	tepancamac	NOUN	_	NounClass=Loc	11	obl	11:obl	Folio=10v|Paragraph=4|Line=29|Norm=tepancamac|Locative=Yes|Split=tepan·camac|Gloss=hoyo.en.pared|Analysed=Yes
+8	:	:	PUNCT	_		11	punct	11:punct	Folio=10v|Paragraph=4|Line=29|Norm=:|Analysed=Yes
+9	calquac	calcuac	NOUN	_	NounClass=Loc	11	obl	11:obl	Folio=10v|Paragraph=4|Line=29|Norm=calcuac|Locative=Yes|Root=calcuatl|Analysed=Yes
+10	in	in	SCONJ	_	_	11	mark	11:mark	Folio=10v|Paragraph=4|Line=29|Norm=in
+11	qujntlalia	tlalia	VERB	_	Number[obj]=Plur|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	2	acl	2:acl	Folio=10v|Paragraph=4|Line=30|Norm=quintlalia|Analysed=Yes
+12	tecocolianj	tecocoliani	NOUN	_	State=Abs	11	nsubj	11:nsubj	Folio=10v|Paragraph=4|Line=30|Norm=tecocoliani|Analysed=Yes
+13	:	:	PUNCT	_		14	punct	14:punct	Folio=10v|Paragraph=4|Line=30|Norm=:|Analysed=Yes
+14	cotaloa	cotaloa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	0	root	0:root	Folio=10v|Paragraph=4|Line=30|Norm=cotaloa|Analysed=Yes
+15	,	,	PUNCT	_		16	punct	16:punct	Folio=10v|Paragraph=4|Line=30|Norm=,|Analysed=Yes
+16	cotalotica	cotaloa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr	14	parataxis:shared	14:parataxis:shared	Orig=co¶·talotica|Folio=10v,10v|Paragraph=4,4|Line=30,31|Norm=cotalotica|Aux=ca|Analysed=Yes
+17	injc	inic	ADV	_	_	18	advmod	18:advmod	Folio=10v|Paragraph=4|Line=31|Norm=inic
+18	tlatoa	tlatoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	14	parataxis:shared	14:parataxis:shared	Folio=10v|Paragraph=4|Line=31|Norm=tlatoa|Analysed=Yes
+19	.	.	PUNCT	_		14	punct	14:punct	Folio=10v|Paragraph=4|Line=31|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:78
 # text = No iuhquj in tetzauhqujmjchin, anoço tetlaquechililli. Pl' chililti: muchi iehoan qujntlaliaia, qujntetoqujliaia, in atlaca, in tecocolianj: injc caco, injc mocaquj: vel pipitzca, pipipitzca, pipitzcaticate, injc tlatoa.
