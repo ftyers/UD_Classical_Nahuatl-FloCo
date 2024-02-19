@@ -517,6 +517,40 @@
 18	tlatoa	tlatoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	14	parataxis:shared	14:parataxis:shared	Analysed=Yes|Folio=10v|Line=31|Norm=tlatoa|Paragraph=4|SpaceAfter=No
 19	.	.	PUNCT	_	_	14	punct	14:punct	Folio=10v|Paragraph=4|Line=31|Norm=.|Analysed=Yes
 
+# sent_id = Book_05_-_The_Omens.txt:90
+# text = Ic matlactli omei capitulo, vncan moteneoa: yn occequj tetzavitl, in iooaltica monextiaia.
+# text[norm] = Ic matlactli omeyi capítulo, oncan motenehua: in oc cequi tetzahuitl, in yohualtica monextiaya.
+# text[orig] = Ic·matlactli·omei·capitulo·,·vn¶can·moteneoa·:·ynoccequj·tetzavitl·,·in·iooaltica·monextiaia·.
+# text[eng] = Thirteenth chapter: where are told: the other omens, that at night showed themselves.
+# text[osp] = Capitulo treze, en que se trata de otras fantasmas: que aparecian de noche.
+# text[osp_norm] = Capítulo trece, en que se trata de otras fantasmas: que aparecían de noche.
+# references = A&D/179:1
+# tagged = 100.00%
+# lemmatised = 94.12%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/12
+1	Ic	ic	ADV	_	_	4	amod	4:amod	Folio=12v|Paragraph=3|Line=1|Norm=Ic
+2	matlactli	matlactli	NUM	_	_	1	nummod	1:nummod	Folio=12v|Paragraph=3|Line=1|Norm=matlactli|Gloss=diez|Analysed=Yes
+3	omei	eyi	NUM	_	_	2	compound	2:compound	Folio=12v|Paragraph=3|Line=1|Norm=omeyi|Gloss=y.tres
+4	capitulo	capítulo	NOUN	_	State=Abs	7	obl	7:obl	Analysed=Yes|Folio=12v|Line=1|Norm=capítulo|Paragraph=3|SpaceAfter=No
+5	,	,	PUNCT	_	_	4	punct	4:punct	Folio=12v|Paragraph=3|Line=1|Norm=,|Analysed=Yes
+6	vncan	oncan	ADV	_	_	7	advmod	7:advmod	Orig=vn¶·can|Folio=12v,12v|Paragraph=3,3|Line=1,2|Norm=oncan|Gloss=aquí|Analysed=Yes
+7	moteneoa	tenehua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Analysed=Yes|Folio=12v|Line=2|Norm=motenehua|Paragraph=3|SpaceAfter=No
+8	:	:	PUNCT	_	_	12	punct	7:punct	Folio=12v|Paragraph=3|Line=2|Norm=:|Analysed=Yes
+9	yn	in	DET	_	_	12	det	12:det	Orig=ynoccequj|Folio=12v|Paragraph=3|Line=2|Norm=in
+10-11	occequj	_	_	_	_	_	_	_	_
+10	oc	oc	ADV	_	_	11	advmod	11:advmod	Orig=ynoccequj|Folio=12v|Paragraph=3|Line=2|Norm=oc|Analysed=Yes
+11	cequj	_	DET	_	_	12	det	12:det	Orig=ynoccequj|Folio=12v|Paragraph=3|Line=2|Norm=cequi|Gloss=unos
+12	tetzavitl	tetzahuitl	NOUN	_	State=Abs	7	nsubj	7:nsubj	Analysed=Yes|Folio=12v|Line=2|Norm=tetzahuitl|Paragraph=3|SpaceAfter=No
+13	,	,	PUNCT	_	_	16	punct	12:punct	Folio=12v|Paragraph=3|Line=2|Norm=,|Analysed=Yes
+14	in	in	SCONJ	_	_	16	mark	16:mark	Folio=12v|Paragraph=3|Line=3|Norm=in
+15	iooaltica	yohualtica	ADV	_	_	16	advmod	16:advmod	Folio=12v|Paragraph=3|Line=3|Norm=yohualtica|Temporal=Yes|Analysed=Yes
+16	monextiaia	nextia	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	12	acl	12:acl	Analysed=Yes|Folio=12v|Line=3|Norm=monextiaya|Paragraph=3|SpaceAfter=No
+17	.	.	PUNCT	_	_	7	punct	7:punct	Folio=12v|Paragraph=3|Line=3|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:98
 # text = Tetzaujtl itechpa chiqujmoli.
 # text[norm] = Tetzahuitl itechpa chiquimoli.
