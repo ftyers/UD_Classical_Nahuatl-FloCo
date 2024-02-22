@@ -2988,35 +2988,41 @@
 
 # sent_id = Book_05_-_The_Omens.txt:54
 # text = Auh in juhquj, ic muchichiuh: yxtecujcujpul coztic: auh injc tlatoa pipitzca, iuhqujn mapipitzoa: tocujleoa, tocujlechoa: no iaotequjoa qujtocaiotiaia.
-# text[norm] = Auh in iuhqui, ic mochichiuh: ixtecuicuipol coztic: auh inic tlatoa pipitzca, iuhquin mapipitzoa: tocuilehua, tocuilechoa: no yaotequihua quitocayotiaya.
+# text[norm] = Auh in iuhqui, ic mochichiuh: ixtecuicuilpol coztic: auh inic tlatoa pipitzca, iuhquin mapipitzoa: tocuilehua, tocuilechoa: no yaotequihua quitocayotiaya.
 # text[orig] = A·uh¶injuhquj·,·ic·muchichiuh·:·yxtecuj¶cujpul·coztic·:·auh·injctlatoa·pipitzca·,·iuh·qujn·mapipitzoa·:·tocujleoa·,·tocujle¶choa·:·noiaotequjoa·qujto·caiotiaia·.
+# text[osp] = La forma deste animal aca en esta tierra, es, que son como los de españa: que tienen la barriga, y pecho blanca: y todo lodemas bermejo.
+# text[osp_norm] = La forma de este animal acá en esta tierra, es, que son como los de España: que tienen la barriga, y pecho blanca: y todo lo demás bermejo.
+# references = A&D/170:4
 # tagged = 100.00%
-# analysed = 96.15%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 42.31%
 1	Auh	auh	CCONJ	_	_	6	cc	_	_
 2	in	in	DET|SCONJ	_	_	6	_	_	_
 3	juhquj	iuhqui	ADV	_	_	6	advmod	_	_
 4	,	,	PUNCT	_	_	6	punct	_	_
 5	ic	ic	ADV	_	_	6	_	_	_
-6	muchichiuh	chichihua	VERB	_	Number[subj]=Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	_	_
-7	:	:	PUNCT	_	_	8	punct	_	_
-8	yxtecujcujpul	_	NOUN	_	_	6	_	_	_
-9	coztic	coztic	ADJ	_	_	8	_	_	_
-10	:	:	PUNCT	_	_	14	punct	_	_
-11	auh	auh	CCONJ	_	_	14	_	_	_
+6	muchichiuh	chichihua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	_	_
+7	:	:	PUNCT	_	_	9	punct	_	_
+8	yxtecujcujpul	ixtecuicuilpol	NOUN	_	_	9	nsubj	_	_
+9	coztic	coztic	ADJ	_	_	6	conj	_	_
+10	:	:	PUNCT	_	_	13	punct	_	_
+11	auh	auh	CCONJ	_	_	13	cc	_	_
 12	injc	inic	SCONJ	_	_	13	_	_	_
-13	tlatoa	tlatoa	VERB	_	_	14	_	_	_
-14	pipitzca	pipitzca	VERB	_	_	6	_	_	_
-15	,	,	PUNCT	_	_	17	punct	_	_
-16	iuhqujn	iuhquin	ADV	_	_	17	_	_	_
-17	mapipitzoa	mapipitzoa	VERB	_	_	14	_	_	_
+13	tlatoa	tlatoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	6	conj	_	_
+14	pipitzca	pipitzca	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	13	_	_	_
+15	,	,	PUNCT	_	_	16	punct	_	_
+16	iuhqujn	iuhquin	ADV	_	_	14	_	_	_
+17	mapipitzoa	mapipitzoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	16	_	_	_
 18	:	:	PUNCT	_	_	19	punct	_	_
-19	tocujleoa	tocuilehua	VERB	_	_	14	_	_	_
+19	tocujleoa	tocuilehua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	17	parataxis:shared	_	_
 20	,	,	PUNCT	_	_	21	punct	_	_
-21	tocujlechoa	tocuilechoa	VERB	_	_	19	_	_	_
+21	tocujlechoa	tocuilechoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	19	parataxis:shared	_	_
 22	:	:	PUNCT	_	_	25	punct	_	_
-23	no	no	ADV	_	_	25	_	_	_
-24	iaotequjoa	yaotequihua	NOUN	_	State=Abs	25	_	_	_
-25	qujtocaiotiaia	tocayotia	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	6	_	_	_
+23	no	no	ADV	_	_	25	advmod	_	_
+24	iaotequjoa	yaotequihua	NOUN	_	State=Abs	25	obj	_	_
+25	qujtocaiotiaia	tocayotia	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	6	parataxis:shared	_	_
 26	.	.	PUNCT	_	_	6	punct	_	_
 
 # sent_id = Book_05_-_The_Omens.txt:55
@@ -4183,41 +4189,47 @@
 
 # sent_id = Book_05_-_The_Omens.txt:81
 # text = Auh in aqujn vel mjhivintia, in jollotlapaliuj, in tonalchicavac, aiocmo qujcaoa, qujteteuhtzitzquja, itech mopiloa: qujtlanjlia in vitzli, injc qujtemolia oqujchiotl, in tlamaliztli.
-# text[norm] = 	Auh in aquin huel mihuihuintia, in yollotlapalihui, in tonalchicahuac, ayocmo quicahua, quiteteuhtzitzquia, itech mopiloa: quitlanilia in huitztli, inic quitemolia oquichiotl, in tlamaliztli.
+# text[norm] = Auh in aquin huel mihihuintia, in yollotlapalihui, in tonalchicahuac, ayocmo quicahua, quiteteuhtzitzquia, itech mopiloa: quitlanilia in huitztli, inic quitemolia oquichiotl, in tlamaliztli.
 # text[orig] = A·uh·i¶naqujn·vel·mjhivintia·,·injollotla¶paliuj·,·intonalchicavac·,·aiocmo·quj¶caoa·,·qujteteuh·tzitzquja·,·itech·mopi¶loa·:·qujtlanjlia·in·vitzli·,·injc·qujte¶molia·oqujchiotl·,·intlamaliztli·.
-# tagged = 93.55%
-# analysed = 93.55%
-1	Auh	auh	CCONJ	_	_	14	_	_	_
-2	in	in	DET|SCONJ	_	_	3	_	_	_
-3	aqujn	aquin	PRON	_	_	14	_	_	_
-4	vel	huel	ADV	_	_	5	_	_	_
-5	mjhivintia	_	VERB	_	_	3	_	_	_
-6	,	,	PUNCT	_	_	8	punct	_	_
-7	in	in	DET|SCONJ	_	_	8	_	_	_
-8	jollotlapaliuj	yollotl	NOUN	_	_	3	_	_	_
-9	,	,	PUNCT	_	_	11	punct	_	_
-10	in	in	DET|SCONJ	_	_	11	_	_	_
-11	tonalchicavac	_	NOUN	_	_	3	_	_	_
-12	,	,	PUNCT	_	_	14	punct	_	_
-13	aiocmo	ayocmo	ADV	_	_	14	_	_	_
-14	qujcaoa	cahua	VERB	_	_	0	root	_	_
-15	,	,	PUNCT	_	_	16	punct	_	_
-16	qujteteuhtzitzquja	teteuhtzitzquia	VERB	_	_	14	_	_	_
-17	,	,	PUNCT	_	_	19	punct	_	_
-18	itech	tech	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Poss	19	_	_	_
-19	mopiloa	piloa	VERB	_	_	16	_	_	_
-20	:	:	PUNCT	_	_	21	punct	_	_
-21	qujtlanjlia	_	VERB	_	_	14	_	_	_
-22	in	in	DET|SCONJ	_	_	23	_	_	_
-23	vitzli	huitztli	NOUN	_	State=Abs	21	_	_	_
-24	,	,	PUNCT	_	_	26	punct	_	_
-25	injc	inic	SCONJ	_	_	26	_	_	_
-26	qujtemolia	_	VERB	_	_	21	_	_	_
-27	oqujchiotl	oquichiotl	NOUN	_	State=Abs	26	_	_	_
-28	,	,	PUNCT	_	_	30	punct	_	_
-29	in	in	DET|SCONJ	_	_	30	_	_	_
-30	tlamaliztli	_	NOUN	_	_	27	_	_	_
-31	.	.	PUNCT	_	_	14	punct	_	_	
+# text[osp] = Y quando acontecia: que algun soldado valiente, y esforçado; via estas visiones, no temja: si no assia fuertemente de la estantiga, y demandaua la que le di este espinas de maguey: que son señal de fortaleza, y valentia: y que auja de captiuar en la guerra tantos captiuos, quantas espinas le diese.
+# text[osp_norm] = Y cuando acontecía: que algún soldado valiente, y esforzado; veía estas visiones, no temía: si no asía fuertemente de la estantigua, y demandábala que le diese espinas de maguey: que son señal de fortaleza, y valentía: y que había de cautivar en la guerra tantos cautivos, cuantas espinas le diese.
+# references = A&D/176:3
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 32.26%
+1	Auh	auh	CCONJ	_	_	14	cc	14:cc	_
+2	in	in	DET	_	_	3	det	3:det	_
+3	aqujn	aquin	PRON	_	_	14	nsubj	14:nsubj	_
+4	vel	huel	ADV	_	_	5	advmod	5:advmod	_
+5	mjhivintia	ihihuintia	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	acl	3:acl	_
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	in	in	SCONJ	_	_	8	mark	8:mark	_
+8	jollotlapaliuj	yollotl	NOUN	_	_	5	conj	5:conj	_
+9	,	,	PUNCT	_	_	11	punct	11:punct	_
+10	in	in	SCONJ	_	_	11	mark	11:mark	_
+11	tonalchicavac	tonalchicahuac	NOUN	_	State=Abs	5	conj	5:conj	_
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	aiocmo	ayocmo	ADV	_	_	14	advmod	14:advmod	_
+14	qujcaoa	cahua	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+15	,	,	PUNCT	_	_	16	punct	16:punct	_
+16	qujteteuhtzitzquja	teteuhtzitzquia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	14	parataxis:shared	14:parataxis:shared	_
+17	,	,	PUNCT	_	_	19	punct	19:punct	_
+18	itech	tech	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	19	obl	19:obl	_
+19	mopiloa	piloa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	14	parataxis:shared	14:parataxis:shared	_
+20	:	:	PUNCT	_	_	21	punct	21:punct	_
+21	qujtlanjlia	tlanilia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	14	parataxis:shared	14:parataxis:shared	_
+22	in	in	DET	_	_	23	det	23:det	_
+23	vitzli	huitztli	NOUN	_	State=Abs	21	obj	21:obj	_
+24	,	,	PUNCT	_	_	26	punct	26:punct	_
+25	injc	inic	ADV	_	_	26	advmod	26:advmod	_
+26	qujtemolia	temolia	VERB	_	Number[iobj]=Sing|Number[subj]=Plur,Sing|Person[iobj]=3|Person[subj]=3|Subcat=Ditr|Tense=Pres|VerbForm=Fin	14	parataxis:shared	14:parataxis:shared	_
+27	oqujchiotl	oquichiotl	NOUN	_	State=Abs	26	obj	26:obj	_
+28	,	,	PUNCT	_	_	30	punct	30:punct	_
+29	in	in	DET	_	_	30	det	30:det	_
+30	tlamaliztli	tlamaliztli	NOUN	_	_	27	conj	27:conj	_
+31	.	.	PUNCT	_	_	14	punct	14:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:82
 # text = Auh mjtoa in aqujn ahqujmamatcaoa, in amo iolizmatquj, in amo nenonotzale: in jquac oqujttac can conchicha, anoço cujtlatl ic contepachoa: auh amo tle ic qujcnelia, çan no qujtelchioa, itla netolinjliztli ic qujteopoa, ic qujmotla, ic qujueipoloa, aco victli, mecapalli qujttitia.

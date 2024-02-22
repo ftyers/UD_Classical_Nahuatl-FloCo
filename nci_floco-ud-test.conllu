@@ -519,6 +519,52 @@
 18	tlatoa	tlatoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	14	parataxis:shared	14:parataxis:shared	Analysed=Yes|Folio=10v|Line=31|Norm=tlatoa|Paragraph=4|SpaceAfter=No
 19	.	.	PUNCT	_	_	14	punct	14:punct	Folio=10v|Paragraph=4|Line=31|Norm=.|Analysed=Yes
 
+# sent_id = Book_05_-_The_Omens.txt:81
+# text = Auh in aqujn vel mjhivintia, in jollotlapaliuj, in tonalchicavac, aiocmo qujcaoa, qujteteuhtzitzquja, itech mopiloa: qujtlanjlia in vitzli, injc qujtemolia oqujchiotl, in tlamaliztli.
+# text[norm] = Auh in aquin huel mihihuintia, in yollotlapalihui, in tonalchicahuac, ayocmo quicahua, quiteteuhtzitzquia, itech mopiloa: quitlanilia in huitztli, inic quitemolia oquichiotl, in tlamaliztli.
+# text[orig] = A·uh·i¶naqujn·vel·mjhivintia·,·injollotla¶paliuj·,·intonalchicavac·,·aiocmo·quj¶caoa·,·qujteteuh·tzitzquja·,·itech·mopi¶loa·:·qujtlanjlia·in·vitzli·,·injc·qujte¶molia·oqujchiotl·,·intlamaliztli·.
+# text[osp] = Y quando acontecia: que algun soldado valiente, y esforçado; via estas visiones, no temja: si no assia fuertemente de la estantiga, y demandaua la que le di este espinas de maguey: que son señal de fortaleza, y valentia: y que auja de captiuar en la guerra tantos captiuos, quantas espinas le diese.
+# text[osp_norm] = Y cuando acontecía: que algún soldado valiente, y esforzado; veía estas visiones, no temía: si no asía fuertemente de la estantigua, y demandábala que le diese espinas de maguey: que son señal de fortaleza, y valentía: y que había de cautivar en la guerra tantos cautivos, cuantas espinas le diese.
+# references = A&D/176:3
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/46
+1	Auh	auh	CCONJ	_	_	14	cc	14:cc	Orig=A·uh|Folio=11r,11r|Paragraph=1,1|Line=7,7|Norm=Auh|Gloss=y
+2	in	in	DET	_	_	3	det	3:det	Orig=i¶·naqujn|Folio=11r,11r|Paragraph=1,1|Line=7,8|Norm=in
+3	aqujn	aquin	PRON	_	_	14	nsubj	14:nsubj	Orig=i¶·naqujn|Folio=11r,11r|Paragraph=1,1|Line=7,8|Norm=aquin
+4	vel	huel	ADV	_	_	5	advmod	5:advmod	Folio=11r|Paragraph=1|Line=8|Norm=huel
+5	mjhivintia	ihihuintia	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	acl	3:acl	Analysed=Yes|Folio=11r|Gloss=es.valiente|Line=8|Norm=mihihuintia|Paragraph=1|SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	Folio=11r|Paragraph=1|Line=8|Norm=,|Analysed=Yes
+7	in	in	SCONJ	_	_	8	mark	8:mark	Orig=injollotla¶·paliuj|Folio=11r,11r|Paragraph=1,1|Line=8,9|Norm=in
+8	jollotlapaliuj	yollotl	NOUN	_	_	5	conj	5:conj	Analysed=Yes|Folio=11r,11r|Line=8,9|Norm=yollotlapalihui|Orig=injollotla¶·paliuj|Paragraph=1,1|SpaceAfter=No
+9	,	,	PUNCT	_	_	11	punct	11:punct	Folio=11r|Paragraph=1|Line=9|Norm=,|Analysed=Yes
+10	in	in	SCONJ	_	_	11	mark	11:mark	Orig=intonalchicavac|Folio=11r|Paragraph=1|Line=9|Norm=in
+11	tonalchicavac	tonalchicahuac	NOUN	_	State=Abs	5	conj	5:conj	Analysed=Yes|Folio=11r|Line=9|Norm=tonalchicahuac|Orig=intonalchicavac|Paragraph=1|SpaceAfter=No|Split=tonal·chicahuac
+12	,	,	PUNCT	_	_	3	punct	14:punct	Folio=11r|Paragraph=1|Line=9|Norm=,|Analysed=Yes
+13	aiocmo	ayocmo	ADV	_	_	14	advmod	14:advmod	Folio=11r|Paragraph=1|Line=9|Norm=ayocmo|Gloss=ya.no|Analysed=Yes
+14	qujcaoa	cahua	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Analysed=Yes|Folio=11r,11r|Line=9,10|Norm=quicahua|Orig=quj¶·caoa|Paragraph=1,1|SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	Folio=11r|Paragraph=1|Line=10|Norm=,|Analysed=Yes
+16	qujteteuhtzitzquja	teteuhtzitzquia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	14	parataxis:shared	14:parataxis:shared	Analysed=Yes|Folio=11r,11r|Line=10,10|Norm=quiteteuhtzitzquia|Orig=qujteteuh·tzitzquja|Paragraph=1,1|SpaceAfter=No
+17	,	,	PUNCT	_	_	19	punct	19:punct	Folio=11r|Paragraph=1|Line=10|Norm=,|Analysed=Yes
+18	itech	tech	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	19	obl	19:obl	Folio=11r|Paragraph=1|Line=10|Norm=itech|Analysed=Yes
+19	mopiloa	piloa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	14	parataxis:shared	14:parataxis:shared	Analysed=Yes|Folio=11r,11r|Line=10,11|Norm=mopiloa|Orig=mopi¶·loa|Paragraph=1,1|SpaceAfter=No
+20	:	:	PUNCT	_	_	21	punct	21:punct	Folio=11r|Paragraph=1|Line=11|Norm=:|Analysed=Yes
+21	qujtlanjlia	tlanilia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	14	parataxis:shared	14:parataxis:shared	Folio=11r|Paragraph=1|Line=11|Norm=quitlanilia|Root=tlani|Analysed=Yes
+22	in	in	DET	_	_	23	det	23:det	Folio=11r|Paragraph=1|Line=11|Norm=in
+23	vitzli	huitztli	NOUN	_	State=Abs	21	obj	21:obj	Analysed=Yes|Folio=11r|Gloss=colibrí|Line=11|Norm=huitztli|Paragraph=1|SpaceAfter=No
+24	,	,	PUNCT	_	_	26	punct	26:punct	Folio=11r|Paragraph=1|Line=11|Norm=,|Analysed=Yes
+25	injc	inic	ADV	_	_	26	advmod	26:advmod	Folio=11r|Paragraph=1|Line=11|Norm=inic
+26	qujtemolia	temolia	VERB	_	Number[iobj]=Sing|Number[subj]=Plur,Sing|Person[iobj]=3|Person[subj]=3|Subcat=Ditr|Tense=Pres|VerbForm=Fin	14	parataxis:shared	14:parataxis:shared	Orig=qujte¶·molia|Folio=11r,11r|Paragraph=1,1|Line=11,12|Norm=quitemolia|Root=temoa|Analysed=Yes
+27	oqujchiotl	oquichiotl	NOUN	_	State=Abs	26	obj	26:obj	Analysed=Yes|Folio=11r|Line=12|Norm=oquichiotl|Paragraph=1|SpaceAfter=No
+28	,	,	PUNCT	_	_	30	punct	30:punct	Folio=11r|Paragraph=1|Line=12|Norm=,|Analysed=Yes
+29	in	in	DET	_	_	30	det	30:det	Orig=intlamaliztli|Folio=11r|Paragraph=1|Line=12|Norm=in
+30	tlamaliztli	tlamaliztli	NOUN	_	_	27	conj	27:conj	Folio=11r|Line=12|Norm=tlamaliztli|Orig=intlamaliztli|Paragraph=1|SpaceAfter=No
+31	.	.	PUNCT	_	_	14	punct	14:punct	Folio=11r|Paragraph=1|Line=12|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:90
 # text = Ic matlactli omei capitulo, vncan moteneoa: yn occequj tetzavitl, in iooaltica monextiaia.
 # text[norm] = Ic matlactli omeyi capítulo, oncan motenehua: in oc cequi tetzahuitl, in yohualtica monextiaya.
