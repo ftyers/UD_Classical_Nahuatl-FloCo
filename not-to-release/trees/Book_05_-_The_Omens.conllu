@@ -3290,28 +3290,34 @@
 # text = Tlen jc otivalla, tla njqujtta, tlacuele nocommaujco: njamn ic qujtztimotlalia, qujtztica in campa ie itztiaz.
 # text[norm] = Tlein ic otihualla, tla niquitta, tlacuele nocommahuizo: niman ic quitztimotlalia, quitztica in campa ye itztiyaz.
 # text[orig] = Tlenjc·otivalla·,·tlanj·qujt¶ta·,·tlacuele·nocommaujco·:·njamn¶ic·qujtz·timotlalia·,·qujtztica·in·cam¶pa·ie·itztiaz·.
-# tagged = 95.00%
-# analysed = 90.00%
-1	Tlen	tlein	PRON	_	_	3	_	_	_
-2	jc	ic	ADV	_	_	3	_	_	_
-3	otivalla	hualla	VERB	_	_	0	root	_	_
-4	,	,	PUNCT	_	_	6	punct	_	_
-5	tla	_	SCONJ	_	_	6	_	_	_
-6	njqujtta	itta	VERB	_	Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	_	_	_
-7	,	,	PUNCT	_	_	9	punct	_	_
-8	tlacuele	_	ADV	_	_	9	_	_	_
-9	nocommaujco	_	VERB	_	_	6	_	_	_
-10	:	:	PUNCT	_	_	13	punct	_	_
-11	njamn	_	ADV	_	_	13	_	_	_
-12	ic	ic	ADV	_	_	13	_	_	_
-13	qujtztimotlalia	itztimotlalia	VERB	_	_	3	_	_	_
-14	,	,	PUNCT	_	_	15	punct	_	_
-15	qujtztica	itztica	VERB	_	_	13	_	_	_
-16	in	in	DET|SCONJ	_	_	17	_	_	_
-17	campa	campa	ADV	_	_	15	_	_	_
-18	ie	ye	ADV	_	_	19	_	_	_
-19	itztiaz	itztiya	VERB	_	Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	17	_	_	_
-20	.	.	PUNCT	_	_	3	punct	_	_
+# text[osp] = Aque es venido, quiero ver a que as venido: y luego se ponia mirar hazia a que parte yria aquella sauandija: [...]
+# text[osp_norm] = A qué has venido, quiero ver a qué has venido: y luego se ponía a mirar hacía a qué parte iría aquella sabandija: [...]
+# references = A&D/172:4
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 30.00%
+1	Tlen	tlein	PRON	_	_	3	obl	3:obl	_
+2	jc	ic	ADP	_	_	1	case	1:case	_
+3	otivalla	hualla	VERB	_	Aspect=Prior|Number[subj]=Sing|Person[subj]=2|Subcat=Intr	0	root	0:root	_
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	tla	tla	PART	_	_	6	discourse	6:discourse	_
+6	njqujtta	itta	VERB	_	Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	_
+7	,	,	PUNCT	_	_	9	punct	9:punct	_
+8	tlacuele	tlacuele	ADV	_	_	9	advmod	9:advmod	_
+9	nocommaujco	mahuizoa	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Past|VerbForm=Fin	6	parataxis:shared	6:parataxis:shared	_
+10	:	:	PUNCT	_	_	13	punct	13:punct	_
+11	njamn	niman	ADV	_	_	13	advmod	13:advmod	_
+12	ic	ic	ADV	_	_	13	advmod	13:advmod	_
+13	qujtztimotlalia	itztimotlalia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	_
+14	,	,	PUNCT	_	_	15	punct	15:punct	_
+15	qujtztica	itztica	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	_
+16	in	in	SCONJ	_	_	19	mark	19:mark	_
+17	campa	campa	ADV	_	_	19	advmod	19:advmod	_
+18	ie	ye	ADV	_	_	19	advmod	19:advmod	_
+19	itztiaz	itztiya	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	15	advcl	15:advcl	_
+20	.	.	PUNCT	_	_	3	punct	3:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:63
 # text = Intla ie vmpa itztiuh, mjctlampa: ic qujmati ca ie mjqujz, in oqujmottiti: auh intlacamo vmpa itztiuh, ic qujmati, aco çan itla in qujtoznequj, acacomo cenca veixtica: qujtoaia in motetzauj, tlaqujioculi, tlamotelchioa, in ioioliton: cujx çan ie toconmattiezque? cujx çan ie ipan toizque? ma ca qujn jc ticmatizque in tlein, qujtoznequj.

@@ -3634,27 +3634,27 @@
 # lemmatised = 100.00%
 # analysed = 100.00%
 # heads = 100.00%
-# relations = 30.00%
-1	Tlen	tlein	PRON	_	_	3	_	_	Orig=Tlenjc|Folio=9r|Paragraph=1|Line=5|Norm=Tlein
-2	jc	ic	ADV	_	_	3	_	_	Orig=Tlenjc|Folio=9r|Paragraph=1|Line=5|Norm=ic
-3	otivalla	hualla	VERB	_	Aspect=Prior|Number[subj]=Sing|Person[subj]=2|Subcat=Intr	0	root	_	Folio=9r|Paragraph=1|Line=5|Norm=otihualla|Analysed=Yes
-4	,	,	PUNCT	_		6	punct	_	Folio=9r|Paragraph=1|Line=5|Norm=,|Analysed=Yes
-5	tla	tla	SCONJ	_	_	6	_	_	Orig=tlanj·qujt¶·ta|Folio=9r,9r,9r|Paragraph=1,1,1|Line=5,5,6|Norm=tla
-6	njqujtta	itta	VERB	_	Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	_	_	Orig=tlanj·qujt¶·ta|Folio=9r,9r,9r|Paragraph=1,1,1|Line=5,5,6|Norm=niquitta|Analysed=Yes
-7	,	,	PUNCT	_		9	punct	_	Folio=9r|Paragraph=1|Line=6|Norm=,|Analysed=Yes
-8	tlacuele	tlacuele	ADV	_		9	_	_	Folio=9r|Paragraph=1|Line=6|Norm=tlacuele|Analysed=Yes
-9	nocommaujco	mahuizoa	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Past|VerbForm=Fin	6	_	_	Folio=9r|Paragraph=1|Line=6|Norm=nocommahuizo|Analysed=Yes
-10	:	:	PUNCT	_		13	punct	_	Folio=9r|Paragraph=1|Line=6|Norm=:|Analysed=Yes
-11	njamn	niman	ADV	_		13	_	_	Folio=9r|Paragraph=1|Line=6|Norm=niman|Analysed=Yes
-12	ic	ic	ADV	_	_	13	_	_	Folio=9r|Paragraph=1|Line=7|Norm=ic
-13	qujtztimotlalia	itztimotlalia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	_	_	Orig=qujtz·timotlalia|Folio=9r,9r|Paragraph=1,1|Line=7,7|Norm=quitztimotlalia|Analysed=Yes
-14	,	,	PUNCT	_		15	punct	_	Folio=9r|Paragraph=1|Line=7|Norm=,|Analysed=Yes
-15	qujtztica	itztica	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	13	_	_	Folio=9r|Paragraph=1|Line=7|Norm=quitztica|Analysed=Yes
-16	in	in	DET|SCONJ	_	_	17	_	_	Folio=9r|Paragraph=1|Line=7|Norm=in
-17	campa	campa	ADV	_		15	_	_	Orig=cam¶·pa|Folio=9r,9r|Paragraph=1,1|Line=7,8|Norm=campa|Gloss=donde|Analysed=Yes
-18	ie	ye	ADV	_	_	19	_	_	Folio=9r|Paragraph=1|Line=8|Norm=ye|AmbigNorm=True|Override=False
-19	itztiaz	itztiya	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	17	_	_	Folio=9r|Paragraph=1|Line=8|Norm=itztiyaz|Analysed=Yes
-20	.	.	PUNCT	_		3	punct	_	Folio=9r|Paragraph=1|Line=8|Norm=.|Analysed=Yes
+# relations = 100.00%
+1	Tlen	tlein	PRON	_	_	3	obl	3:obl	Orig=Tlenjc|Folio=9r|Paragraph=1|Line=5|Norm=Tlein
+2	jc	ic	ADV	_	_	1	case	1:case	Orig=Tlenjc|Folio=9r|Paragraph=1|Line=5|Norm=ic
+3	otivalla	hualla	VERB	_	Aspect=Prior|Number[subj]=Sing|Person[subj]=2|Subcat=Intr	0	root	0:root	Folio=9r|Paragraph=1|Line=5|Norm=otihualla|Analysed=Yes
+4	,	,	PUNCT	_		6	punct	6:punct	Folio=9r|Paragraph=1|Line=5|Norm=,|Analysed=Yes
+5	tla	tla	SCONJ	_	_	6	discourse	6:discourse	Orig=tlanj·qujt¶·ta|Folio=9r,9r,9r|Paragraph=1,1,1|Line=5,5,6|Norm=tla
+6	njqujtta	itta	VERB	_	Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	Orig=tlanj·qujt¶·ta|Folio=9r,9r,9r|Paragraph=1,1,1|Line=5,5,6|Norm=niquitta|Analysed=Yes
+7	,	,	PUNCT	_		9	punct	9:punct	Folio=9r|Paragraph=1|Line=6|Norm=,|Analysed=Yes
+8	tlacuele	tlacuele	ADV	_		9	advmod	9:advmod	Folio=9r|Paragraph=1|Line=6|Norm=tlacuele|Analysed=Yes
+9	nocommaujco	mahuizoa	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Past|VerbForm=Fin	6	parataxis:shared	6:parataxis:shared	Folio=9r|Paragraph=1|Line=6|Norm=nocommahuizo|Analysed=Yes
+10	:	:	PUNCT	_		13	punct	13:punct	Folio=9r|Paragraph=1|Line=6|Norm=:|Analysed=Yes
+11	njamn	niman	ADV	_		13	advmod	13:advmod	Folio=9r|Paragraph=1|Line=6|Norm=niman|Analysed=Yes
+12	ic	ic	ADV	_	_	13	advmod	13:advmod	Folio=9r|Paragraph=1|Line=7|Norm=ic
+13	qujtztimotlalia	itztimotlalia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	Orig=qujtz·timotlalia|Folio=9r,9r|Paragraph=1,1|Line=7,7|Norm=quitztimotlalia|Analysed=Yes
+14	,	,	PUNCT	_		15	punct	15:punct	Folio=9r|Paragraph=1|Line=7|Norm=,|Analysed=Yes
+15	qujtztica	itztica	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	parataxis	3:parataxis	Folio=9r|Paragraph=1|Line=7|Norm=quitztica|Analysed=Yes
+16	in	in	SCONJ	_	_	19	mark	19:mark	Folio=9r|Paragraph=1|Line=7|Norm=in
+17	campa	campa	ADV	_		19	advmod	19:advmod	Orig=cam¶·pa|Folio=9r,9r|Paragraph=1,1|Line=7,8|Norm=campa|Gloss=donde|Analysed=Yes
+18	ie	ye	ADV	_	_	19	advmod	19:advmod	Folio=9r|Paragraph=1|Line=8|Norm=ye|AmbigNorm=True|Override=False
+19	itztiaz	itztiya	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	15	advcl	15:advcl	Folio=9r|Paragraph=1|Line=8|Norm=itztiyaz|Analysed=Yes
+20	.	.	PUNCT	_		3	punct	3:punct	Folio=9r|Paragraph=1|Line=8|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:63
 # text = Intla ie vmpa itztiuh, mjctlampa: ic qujmati ca ie mjqujz, in oqujmottiti: auh intlacamo vmpa itztiuh, ic qujmati, aco çan itla in qujtoznequj, acacomo cenca veixtica: qujtoaia in motetzauj, tlaqujioculi, tlamotelchioa, in ioioliton: cujx çan ie toconmattiezque? cujx çan ie ipan toizque? ma ca qujn jc ticmatizque in tlein, qujtoznequj.
