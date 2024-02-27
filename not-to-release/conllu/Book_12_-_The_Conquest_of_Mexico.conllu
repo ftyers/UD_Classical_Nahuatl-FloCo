@@ -272,12 +272,12 @@
 
 # sent_id = Book_12_-_The_Conquest_of_Mexico.tokenised:6
 # text = Mexicae ma vallatotoca, tla ceviloz, amaapilol: auh in jquac caatequjaia, in qujceviznequja, çan ie ilhujce mopitza, aocmo vel ceuh, vel tlatlac.
-# text[norm] = Mexicae ma huallatotoca, tla cehuiloz, amaapilol: auh in ihcuac caatequjaia, in quicehuiznequiya, zan ye ilhuice mopitza, ayocmo huel ceuh, huel tlatlac.
+# text[norm] = Mexicae ma huallatotoca, tla cehuiloz, amaapilol: auh in ihcuac caatequiaya, in quicehuiznequiya, zan ye ilhuice mopitza, ayocmo huel ceuh, huel tlatlac.
 # text[orig] = Mexicae¶ma·vallatotoca·,·tla·ceviloz·,·a¶maapi·lol·:·auh·in·jquac·caa¶tequjaia·,·in·qujceviznequja·,·çan·ie·ilhujce·mopitza·,·aoc¶mo·vel·ceuh·,·vel·tlatlac·.
 # references = A&D/18:2
-# tagged = 89.66%
-# lemmatised = 79.31%
-# analysed = 89.66%
+# tagged = 93.10%
+# lemmatised = 82.76%
+# analysed = 93.10%
 1	Mexicae	mexicatl	NOUN	_	Clitic=Voc|Number=Plur	_	_	_	Folio=2|Paragraph=1|Line=2|Norm=Mexicae|Analysed=Yes
 2	ma	ma	ADV	_	_	_	_	_	Folio=2|Paragraph=1|Line=3|Norm=ma|Gloss=OPT
 3	vallatotoca	totoca	VERB	_	Animacy[obj]=Nhum|Movement=Ven|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	_	_	_	Folio=2|Paragraph=1|Line=3|Norm=huallatotoca|Analysed=Yes
@@ -285,12 +285,12 @@
 5	tla	tla	SCONJ	_	_	_	_	_	Folio=2|Paragraph=1|Line=3|Norm=tla
 6	ceviloz	_	VERB	_	_	_	_	_	Folio=2|Paragraph=1|Line=3|Norm=cehuiloz|Ambiguous=Yes|Analysed=Yes
 7	,	,	PUNCT	_		_	_	_	Folio=2|Paragraph=1|Line=3|Norm=,|Analysed=Yes
-8	amaapilol	_	X	_	_	_	_	_	Orig=a¶·maapi·lol|Folio=2,2,2|Paragraph=1,1,1|Line=3,4,4|Norm=*amaapilol
+8	amaapilol	_	X	_	_	_	_	_	Orig=a¶·maapi·lol|Folio=2,2,2|Paragraph=1,1,1|Line=3,4,4|Norm=amaapilol
 9	:	:	PUNCT	_		_	_	_	Folio=2|Paragraph=1|Line=4|Norm=:|Analysed=Yes
 10	auh	auh	CCONJ	_	_	_	_	_	Folio=2|Paragraph=1|Line=4|Norm=auh|Gloss=y
 11	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=2|Paragraph=1|Line=4|Norm=in
 12	jquac	ihcuac	ADV	_	_	_	_	_	Folio=2|Paragraph=1|Line=4|Norm=ihcuac|Gloss=en.el.momento
-13	caatequjaia	_	X	_	_	_	_	_	Orig=caa¶·tequjaia|Folio=2,2|Paragraph=1,1|Line=4,5|Norm=*caatequjaia
+13	caatequjaia	aatequia	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Orig=caa¶·tequjaia|Folio=2,2|Paragraph=1,1|Line=4,5|Norm=caatequiaya|Analysed=Yes
 14	,	,	PUNCT	_		_	_	_	Folio=2|Paragraph=1|Line=5|Norm=,|Analysed=Yes
 15	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=2|Paragraph=1|Line=5|Norm=in
 16	qujceviznequja	cehuiznequi	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=2|Paragraph=1|Line=5|Norm=quicehuiznequiya|Analysed=Yes
@@ -780,8 +780,9 @@
 
 # sent_id = Book_12_-_The_Conquest_of_Mexico.tokenised:19
 # text = Auh in oittoque, in aqujque ovallaque ilhujcaatenco, in acaltica ie onotinemj.
-# text[norm] = Auh in oittoque, in aquique ohuallaque ilhujcaatenco, in acaltica ye onotinemi.
+# text[norm] = Auh in oittoque, in aquique ohuallaque ilhuicaatenco, in acaltica ye onotinemi.
 # text[orig] = Auh·in·oittoque·,·in·aquj¶que·ovallaque·ilhujcaaten¶co·,·in·acaltica·ie·onotinemj·.
+# references = A&D/20:2
 # tagged = 85.71%
 # lemmatised = 85.71%
 # analysed = 85.71%
@@ -792,7 +793,7 @@
 5	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=3|Paragraph=4|Line=1|Norm=in
 6	aqujque	aquin	PRON	_	Number=Plur	_	_	_	Orig=aquj¶·que|Folio=3,3|Paragraph=4,4|Line=1,2|Norm=aquique|Analysed=Yes
 7	ovallaque	hualla	VERB	_	Aspect=Prior|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr	_	_	_	Folio=3|Paragraph=4|Line=2|Norm=ohuallaque|Analysed=Yes
-8	ilhujcaatenco	_	X	_	_	_	_	_	Orig=ilhujcaaten¶·co|Folio=3,3|Paragraph=4,4|Line=2,3|Norm=*ilhujcaatenco
+8	ilhujcaatenco	_	X	_	_	_	_	_	Orig=ilhujcaaten¶·co|Folio=3,3|Paragraph=4,4|Line=2,3|Norm=ilhuicaatenco
 9	,	,	PUNCT	_		_	_	_	Folio=3|Paragraph=4|Line=3|Norm=,|Analysed=Yes
 10	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=3|Paragraph=4|Line=3|Norm=in
 11	acaltica	_	X	_	_	_	_	_	Folio=3|Paragraph=4|Line=3|Norm=acaltica

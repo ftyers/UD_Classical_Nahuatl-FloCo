@@ -92,6 +92,7 @@ for bloc in sys.stdin.read().split('\n\n'):
 			print('    >', ' '.join(trees[sent_id][row][1] for row in trees[sent_id]), file=sys.stderr)
 			print('    <', ' '.join([line[1] for line in lines if '.' not in line[0] and '-' not in line[0]]), file=sys.stderr)
 			print(bloc)
+			print()
 		else:
 			n_parsed += 1
 			for comment in comments:
