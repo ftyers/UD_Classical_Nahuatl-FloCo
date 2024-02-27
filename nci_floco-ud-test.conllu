@@ -292,6 +292,49 @@
 27	teiollitlacoa	yollitlacoa	VERB	_	Animacy[obj]=Hum|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	Analysed=Yes|Folio=8r|Incorp[obj]=yolli|Line=16|Norm=teyollitlacoa|Paragraph=3|SpaceAfter=No
 28	.	.	PUNCT	_	_	6	punct	6:punct	Folio=8r|Paragraph=3|Line=16|Norm=.|Analysed=Yes
 
+# sent_id = Book_05_-_The_Omens.txt:54
+# text = Auh in juhquj, ic muchichiuh: yxtecujcujpul coztic: auh injc tlatoa pipitzca, iuhqujn mapipitzoa: tocujleoa, tocujlechoa: no iaotequjoa qujtocaiotiaia.
+# text[norm] = Auh in iuhqui, ic mochichiuh: ixtecuicuilpol coztic: auh inic tlatoa pipitzca, iuhqui in mapipitzoa: tocuilehua, tocuilechoa: no yaotequihua quitocayotiaya.
+# text[orig] = A·uh¶injuhquj·,·ic·muchichiuh·:·yxtecuj¶cujpul·coztic·:·auh·injctlatoa·pipitzca·,·iuh·qujn·mapipitzoa·:·tocujleoa·,·tocujle¶choa·:·noiaotequjoa·qujto·caiotiaia·.
+# text[osp] = La forma deste animal aca en esta tierra, es, que son como los de españa: que tienen la barriga, y pecho blanca: y todo lodemas bermejo.
+# text[osp_norm] = La forma de este animal acá en esta tierra, es, que son como los de España: que tienen la barriga, y pecho blanca: y todo lo demás bermejo.
+# references = A&D/170:4
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/35
+1	Auh	auh	CCONJ	_	_	6	cc	6:cc	Orig=A·uh¶|Folio=8r,8r|Paragraph=3,3|Line=16,16|Norm=Auh|Gloss=y
+2	in	in	SCONJ	_	_	3	mark	3:mark	Orig=injuhquj|Folio=8r|Paragraph=3|Line=17|Norm=in
+3	juhquj	iuhqui	ADV	_	_	6	advcl	6:advcl	Analysed=Yes|Folio=8r|Gloss=así|Line=17|Norm=iuhqui|Orig=injuhquj|Paragraph=3|SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	6:punct	Folio=8r|Paragraph=3|Line=17|Norm=,|Analysed=Yes
+5	ic	ic	ADV	_	_	6	advmod	6:advmod	Folio=8r|Paragraph=3|Line=17|Norm=ic
+6	muchichiuh	chichihua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	0:root	Analysed=Yes|Folio=8r|Line=17|Norm=mochichiuh|Paragraph=3|SpaceAfter=No
+7	:	:	PUNCT	_	_	9	punct	9:punct	Folio=8r|Paragraph=3|Line=17|Norm=:|Analysed=Yes
+8	yxtecujcujpul	ixtecuicuilpol	NOUN	_	_	9	nsubj	9:nsubj	Orig=yxtecuj¶·cujpul|Folio=8r,8v|Paragraph=3,4|Line=17,19|Norm=ixtecuicuilpol
+9	coztic	coztic	ADJ	_	_	6	conj	6:conj	Analysed=Yes|Folio=8v|Gloss=amarillo|Line=19|Norm=coztic|Paragraph=4|SpaceAfter=No
+10	:	:	PUNCT	_	_	13	punct	13:punct	Folio=8v|Paragraph=4|Line=19|Norm=:|Analysed=Yes
+11	auh	auh	CCONJ	_	_	13	cc	13:cc	Folio=8v|Paragraph=4|Line=19|Norm=auh|Gloss=y
+12	injc	inic	ADV	_	_	13	advmod	13:advmod	Orig=injctlatoa|Folio=8v|Paragraph=4|Line=19|Norm=inic
+13	tlatoa	tlatoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	6	conj	6:conj	Orig=injctlatoa|Folio=8v|Paragraph=4|Line=19|Norm=tlatoa|Analysed=Yes
+14	pipitzca	pipitzca	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	13	parataxis:shared	13:parataxis:shared	Analysed=Yes|Folio=8v|Line=19|Norm=pipitzca|Paragraph=4|SpaceAfter=No
+15	,	,	PUNCT	_	_	16	punct	16:punct	Folio=8v|Paragraph=4|Line=19|Norm=,|Analysed=Yes
+16-17	iuhqujn	_	_	_	_	_	_	_	_
+16	iuhquj	iuhqui	ADV	_	_	13	parataxis:shared	13:parataxis:shared	Orig=iuh·qujn|Folio=8v,8v|Paragraph=4,4|Line=20,20|Norm=iuhqui|Gloss=así|Analysed=Yes
+17	n	in	SCONJ	_	_	18	mark	18:mark	Orig=iuh·qujn|Folio=8v,8v|Paragraph=4,4|Line=20,20|Norm=in
+18	mapipitzoa	mapipitzoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	16	xcomp	16:xcomp	Analysed=Yes|Folio=8v|Line=20|Norm=mapipitzoa|Paragraph=4|SpaceAfter=No|Split=ma·pipiptzoa
+19	:	:	PUNCT	_	_	20	punct	20:punct	Folio=8v|Paragraph=4|Line=20|Norm=:|Analysed=Yes
+20	tocujleoa	tocuilehua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	18	parataxis:shared	18:parataxis:shared	Analysed=Yes|Folio=8v|Line=20|Norm=tocuilehua|Paragraph=4|SpaceAfter=No
+21	,	,	PUNCT	_	_	22	punct	22:punct	Folio=8v|Paragraph=4|Line=20|Norm=,|Analysed=Yes
+22	tocujlechoa	tocuilechoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	18	parataxis:shared	18:parataxis:shared	Analysed=Yes|Folio=8v,8v|Line=20,21|Norm=tocuilechoa|Orig=tocujle¶·choa|Paragraph=4,4|SpaceAfter=No
+23	:	:	PUNCT	_	_	26	punct	26:punct	Folio=8v|Paragraph=4|Line=21|Norm=:|Analysed=Yes
+24	no	no	ADV	_	_	26	advmod	26:advmod	Orig=noiaotequjoa|Folio=8v|Paragraph=4|Line=21|Norm=no|Gloss=también|Analysed=Yes
+25	iaotequjoa	yaotequihua	NOUN	_	State=Abs	26	obj	26:obj	Orig=noiaotequjoa|Folio=8v|Paragraph=4|Line=21|Norm=yaotequihua|Analysed=Yes
+26	qujtocaiotiaia	tocayotia	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	6	parataxis:shared	6:parataxis:shared	Analysed=Yes|Folio=8v,8v|Line=21,21|Norm=quitocayotiaya|Orig=qujto·caiotiaia|Paragraph=4,4|SpaceAfter=No
+27	.	.	PUNCT	_	_	6	punct	6:punct	Folio=8v|Paragraph=4|Line=21|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:57
 # text = Anoco ie aca choloz, ie contocaz in tochtli, in macatl ivuj, ie tochtiz, ie macatiz, ie motochtiliz, ie momacatiliz.
 # text[norm] = Anozo ye aca choloz, ye contocaz in tochtli, in mazatl ihui, ye tochtiz, ye mazatiz, ye motochtiliz, ye momazatiliz.
