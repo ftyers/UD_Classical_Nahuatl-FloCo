@@ -58,6 +58,51 @@
 9	.	.	PUNCT	_	_	4	punct	4:punct	Folio=2r|Paragraph=1|Line=15|Norm=.|Analysed=Yes
 10	etc.	etc.	NOUN	_	State=Abs	4	conj	4:conj	Folio=2r|Paragraph=1|Line=15|Norm=etc.|Analysed=Yes
 
+# sent_id = Book_05_-_The_Omens.txt:14
+# text = No ioan, qujtetzammatia: in jqc aca ipan veuetzca, oactli: in juh conjtoa, vme vitz qujtoa: in quenman qualli, quenman amo qualli.
+# text[norm] = No ihuan, quitetzammatia: in ihcuac aca ipan huehuetzca, huactli: in iuh conihtoa, ome huitz quihtoa: in quenman cualli, quenman amo cualli.
+# text[orig] = No·ioan·,·qujtetzammatia·:·inj·qc¶aca·ipan·veuetzca·,·oactli·:·injuh·co¶njtoa·,·vme·vitz·qujtoa·:·inquenman¶qualli·,·quenman·amo·qualli·.
+# text[eng] = Also with that, they thought it an omen: when at someone screeched, the huactli: that as they said, two ways it spoke: that sometimes good, sometimes not good.
+# text[osp] = El segundo aguero que tenian: era quando oyan cantar, o charrear un aue, que llaman oactli, o oacton. Este aguero: era indiferente: que a las vezes pronunciaua bien, y a las vezes mal.
+# text[osp_norm] = El segundo agüero que tenían: era cuando oían cantar, o charrear un ave, que llaman <huactli>, o <huacton>. Este agüero: era indiferente: que a las veces pronunciaba bien, y a las veces mal.
+# references = A&D/162:2
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/43
+1	No	no	ADV	_	_	4	advmod	4:advmod	Folio=2r|Paragraph=3|Line=1|Norm=No|Gloss=también|Analysed=Yes
+2	ioan	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	4	obl	4:obl	Analysed=Yes|Folio=2r|Gloss=con|Line=1|Norm=ihuan|Paragraph=3|SpaceAfter=No
+3	,	,	PUNCT	_	_	2	punct	4:punct	Folio=2r|Paragraph=3|Line=1|Norm=,|Analysed=Yes
+4	qujtetzammatia	tetzammatia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Analysed=Yes|Folio=2r|Line=1|Norm=quitetzammatia|Paragraph=3|SpaceAfter=No
+5	:	:	PUNCT	_	_	10	punct	10:punct	Folio=2r|Paragraph=3|Line=1|Norm=:|Analysed=Yes
+6	in	in	SCONJ	_	_	10	mark	10:mark	Orig=inj·qc¶|Folio=2r,2r|Paragraph=3,3|Line=1,1|Norm=in
+7	jqc	ihcuac	ADV	_	_	10	advmod	10:advmod	Orig=inj·qc¶|Folio=2r,2r|Paragraph=3,3|Line=1,1|Norm=ihcuac|Gloss=en.el.momento
+8	aca	aca	PRON	_	_	9	nmod	9:nmod	Folio=2r|Paragraph=3|Line=2|Norm=aca
+9	ipan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	10	obl	10:obl	Folio=2r|Paragraph=3|Line=2|Norm=ipan|Analysed=Yes
+10	veuetzca	huehuetzca	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	19	advcl	19:advcl	Analysed=Yes|Folio=2r|Line=2|Norm=huehuetzca|Paragraph=3|SpaceAfter=No
+11	,	,	PUNCT	_	_	12	punct	12:punct	Folio=2r|Paragraph=3|Line=2|Norm=,|Analysed=Yes
+12	oactli	huactli	NOUN	_	State=Abs	10	nsubj	10:nsubj	Analysed=Yes|Folio=2r|Line=2|Norm=huactli|Paragraph=3|SpaceAfter=No
+13	:	:	PUNCT	_	_	16	punct	16:punct	Folio=2r|Paragraph=3|Line=2|Norm=:|Analysed=Yes
+14	in	in	SCONJ	_	_	16	mark	16:mark	Orig=injuh|Folio=2r|Paragraph=3|Line=2|Norm=in
+15	juh	iuh	ADV	_	_	16	advmod	16:advmod	Orig=injuh|Folio=2r|Paragraph=3|Line=2|Norm=iuh|Gloss=así|Analysed=Yes
+16	conjtoa	ihtoa	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	12	acl	12:acl	Analysed=Yes|Folio=2r,2r|Line=2,3|Norm=conihtoa|Orig=co¶·njtoa|Paragraph=3,3|SpaceAfter=No
+17	,	,	PUNCT	_	_	10	punct	19:punct	Folio=2r|Paragraph=3|Line=3|Norm=,|Analysed=Yes
+18	vme	ome	NUM	_	_	19	obl	19:obl	Folio=2r|Paragraph=3|Line=3|Norm=ome|Gloss=dos|Analysed=Yes
+19	vitz	huitza	VERB	_	_	4	parataxis	4:parataxis	Folio=2r|Paragraph=3|Line=3|Norm=huitz
+20	qujtoa	ihtoa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	19	parataxis	19:parataxis	Analysed=Yes|Folio=2r|Line=3|Norm=quihtoa|Paragraph=3|SpaceAfter=No
+21	:	:	PUNCT	_	_	24	punct	24:punct	Folio=2r|Paragraph=3|Line=3|Norm=:|Analysed=Yes
+22	in	in	SCONJ	_	_	24	mark	24:mark	Orig=inquenman¶|Folio=2r|Paragraph=3|Line=3|Norm=in
+23	quenman	quenman	ADV	_	_	24	advmod	24:advmod	Orig=inquenman¶|Folio=2r|Paragraph=3|Line=3|Norm=quenman|Gloss=a.veces|Analysed=Yes
+24	qualli	cualli	ADJ	_	_	19	advcl	19:advcl	Folio=2r|Gloss=bueno|Line=4|Norm=cualli|Paragraph=3|SpaceAfter=No
+25	,	,	PUNCT	_	_	28	punct	28:punct	Folio=2r|Paragraph=3|Line=4|Norm=,|Analysed=Yes
+26	quenman	quenman	ADV	_	_	28	advmod	28:advmod	Folio=2r|Paragraph=3|Line=4|Norm=quenman|Gloss=a.veces|Analysed=Yes
+27	amo	amo	ADV	_	_	28	advmod	28:advmod	Folio=2r|Paragraph=3|Line=4|Norm=amo|Gloss=no|Analysed=Yes
+28	qualli	cualli	ADJ	_	_	24	conj	24:conj	Folio=2r|Gloss=bueno|Line=4|Norm=cualli|Paragraph=3|SpaceAfter=No
+29	.	.	PUNCT	_	_	4	punct	4:punct	Folio=2r|Paragraph=3|Line=4|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:27
 # text = No ioan, tetzaujtl catca, netetzaujloia, tetzammachoia: in jtoca ioaltepuztli.
 # text[norm] = No ihuan, tetzahuitl catca, netetzahuiloya, tetzammachoya: in itoca yohualtepoztli.
