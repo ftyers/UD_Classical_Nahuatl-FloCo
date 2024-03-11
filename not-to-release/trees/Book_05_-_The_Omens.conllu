@@ -992,46 +992,48 @@
 
 # sent_id = Book_05_-_The_Omens.txt:19
 # text = In jquac yn, in aqujn tachcauh, in tachcauhchiuhtiuh, in tachcauh icatiuh vtlipan, vncan peoa, in qujmelaquaoa, in qujnchoqujztlapaloa, iteiccaoan, itlahoapavalvan: in vtli ipan qujmixtlamachtia, qujmjlvia.
-# text[norm] = In ihcuac in, in aquin tachcauh, in tachcauhchiuhtiuh, in tachcauh icatiuh ohtlipan, oncan pehua, in quimelacuaohua, in quinchoquiztlahpalohua, iteiccahuan, itlahuapahualhuan: in ohtli ipan quimixtlamachtia, quimilhuia.
+# text[norm] = In ihcuac in, in aquin tachcauh, in tachcauhchiuhtiuh, in tachcauh icatiuh ohtlipan, oncan pehua, in quimelacuahua, in quinchoquiztlahpalohua, iteiccahuan, itlahuapahualhuan: in ohtli ipan quimixtlamachtia, quimilhuia.
 # text[orig] = Inj·quac¶yn·,·inaqujn·tachcauh·,·in·tach¶cauhchiuhtiuh·,·intachcauh·ica¶tiuh·vtlipan·,·vncan·peoa·,·in·quj¶melaquaoa·,·in·qujn·choqujztla¶paloa·,·iteiccaoan·,·itlahoapaval¶van·:·in·vtli·ipan·qujmixtla¶machtia·,·qujmjlvia·.
 # tagged = 97.22%
 # analysed = 83.33%
-1	In	in	DET|SCONJ	_	_	3	_	_	_
-2	jquac	ihcuac	SCONJ	_	_	3	_	_	_
-3	yn	in	DET|SCONJ	_	_	21	_	_	_
-4	,	,	PUNCT	_	_	7	punct	_	_
-5	in	in	DET|SCONJ	_	_	6	_	_	_
-6	aqujn	aquin	PRON	_	_	7	_	_	_
-7	tachcauh	tachcauh	NOUN	_	State=Abs	21	_	_	_
-8	,	,	PUNCT	_	_	10	punct	_	_
-9	in	in	DET|SCONJ	_	_	10	_	_	_
-10	tachcauhchiuhtiuh	_	VERB	_	_	7	_	_	_
-11	,	,	PUNCT	_	_	14	punct	_	_
-12	in	in	DET|SCONJ	_	_	14	_	_	_
-13	tachcauh	tachcauh	NOUN	_	State=Abs	14	_	_	_
-14	icatiuh	_	VERB	_	_	7	_	_	_
-15	vtlipan	_	ADV	_	_	14	_	_	_
-16	,	,	PUNCT	_	_	21	punct	_	_
-17	vncan	_	ADV	_	_	18	_	_	_
-18	peoa	pehua	VERB	_	_	_	_	_	_
-19	,	,	PUNCT	_	_	21	punct	_	_
-20	in	in	DET|SCONJ	_	_	21	_	_	_
-21	qujmelaquaoa	_	VERB	_	_	0	root	_	_
-22	,	,	PUNCT	_	_	24	punct	_	_
-23	in	in	DET|SCONJ	_	_	24	_	_	_
-24	qujnchoqujztlapaloa	_	VERB	_	_	21	_	_	_
-25	,	,	PUNCT	_	_	26	punct	_	_
-26	iteiccaoan	_	NOUN	_	_	24	_	_	_
-27	,	,	PUNCT	_	_	28	punct	_	_
-28	itlahoapavalvan	tlahuapahualli	NOUN	_	Number=Plur|Number[psor]=Sing|Person[psor]=3|State=Poss	26	_	_	_
-29	:	:	PUNCT	_	_	33	punct	_	_
-30	in	in	DET|SCONJ	_	_	33	_	_	_
-31	vtli	ohtli	NOUN	_	State=Abs	32	nmod	_	_
-32	ipan	_	NOUN	_	NounType=Relat	33	obl	_	_
-33	qujmixtlamachtia	ixtlamachtia	VERB	_	_	21	_	_	_
-34	,	,	PUNCT	_	_	35	punct	_	_
-35	qujmjlvia	ilhuia	VERB	_	_	33	_	_	_
-36	.	.	PUNCT	_	_	21	punct	_	_
+1	In	in	SCONJ	_	_	3	mark	3:mark	_
+2	jquac	ihcuac	ADV	_	_	3	advmod	3:advmod	_
+3	yn	in	PRON	_	_	18	advcl	18:advcl	_
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	in	in	DET	_	_	6	det	6:det	_
+6	aqujn	aquin	PRON	_	_	18	nsubj	18:nsubj	_
+7	tachcauh	tachcauh	NOUN	_	State=Abs	6	acl	6:acl	_
+8	,	,	PUNCT	_	_	10	punct	10:punct	_
+9	in	in	SCONJ	_	_	10	mark	10:mark	_
+10	tachcauhchiuhtiuh	_	VERB	_	_	7	conj	7:conj	_
+10.1	tachcauh	tachcauh	NOUN	_	_	_	_	10:obl	Incorporated=Yes
+11	,	,	PUNCT	_	_	14	punct	14:punct	_
+12	in	in	SCONJ	_	_	14	mark	14:mark	_
+13	tachcauh	tachcauh	NOUN	_	State=Abs	14	nsubj	14:nsubj	_
+14	icatiuh	_	VERB	_	_	7	conj	7:conj	_
+15	vtlipan	_	NOUN	_	_	14	obl	14:obl	_
+16	,	,	PUNCT	_	_	18	punct	18:punct	_
+17	vncan	_	ADV	_	_	18	advmod	18:advmod	_
+18	peoa	pehua	VERB	_	_	0	root	0:root	_
+19	,	,	PUNCT	_	_	21	punct	21:punct	_
+20	in	in	SCONJ	_	_	21	mark	21:mark	_
+21	qujmelaquaoa	_	VERB	_	_	18	xcomp	18:xcomp	_
+22	,	,	PUNCT	_	_	24	punct	24:punct	_
+23	in	in	SCONJ	_	_	24	mark	24:mark	_
+24	qujnchoqujztlapaloa	_	VERB	_	_	21	conj	21:conj	_
+24.1	choquiz	choquiztli	NOUN	_	_	_	_	24:obl	Incorporated=Yes
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	iteiccaoan	_	NOUN	_	_	24	obj	24:obj	_
+27	,	,	PUNCT	_	_	28	punct	28:punct	_
+28	itlahoapavalvan	tlahuapahualli	NOUN	_	Number=Plur|Number[psor]=Sing|Person[psor]=3|State=Poss	26	conj	26:conj	_
+29	:	:	PUNCT	_	_	33	punct	33:punct	_
+30	in	in	SCONJ	_	_	33	mark	33:mark	_
+31	vtli	ohtli	NOUN	_	State=Abs	32	nmod	32:nmod	_
+32	ipan	_	NOUN	_	NounType=Relat	33	obl	33:obl	_
+33	qujmixtlamachtia	ixtlamachtia	VERB	_	_	18	parataxis	18:parataxis	_
+34	,	,	PUNCT	_	_	35	punct	35:punct	_
+35	qujmjlvia	ilhuia	VERB	_	_	18	parataxis	18:parataxis	_
+36	.	.	PUNCT	_	_	18	punct	18:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:20
 # text = Ximellaquauacan, nopilhoane, noteiccaoane, quennel tototolinja: ma caiac tlaocuja, nentlamati in jiollo, ca nel ic tioallaque, in timjqujco: ca iuh oalietia, iuh qujoalmattia in toiollo: injc ticoalalcaujque, tiquallalotique in tonca, in teca: in tauj, in totla, in tomach, in toueltiuh: ca ie injc techchoqujli, injc topan qujpixo, in ichoqujz, in jtlaocul: aco cana njcan, ixtlahoatl, atlauhtli itic, quavitl itic, cecemmantoz in tomjo: in totzon, nonoqujuhtoz, aalacatoz in tezco, in totlapallo: ca nel otomaceoaltic, ma caiac qujcioatlamachti in ijollo: xicmotlaquammacacan in mjqujztli, xicmotlatlauhtilican in totecujo: ma caiac tle itic qujnemjti, qujlnamjquj: ma ca qujn jc ticmatizque, in caco tle itech titotzotzonativi: vncan ic cemmaian, tontochochoqujlizque: ca nel iehoatl injc tiquinteiotico, tiqujmjtauhcaiotico, tiqujntonaleoaco, tiqujntzonteconacocujco intotechiuhcaoan, in puchteca, in jiaque: ca ieeppa iuh quimattivi, iuh qujmaujcotiuj, camo qujn tehoan iancujcan ie toconnextizque, ic toconjttazque, in tlein topan muchioaz: ximellaquaoacan, nopilhoane.
@@ -1466,39 +1468,45 @@
 # text = Ie omjto, tel aiac qujmati, in aco vel neltiz: in acanocomo, ca itlatol itech mocaquj: injc ome vitz qujtoa, qualli, ioan amo qualli.
 # text[norm] = Ye omihto, tel ayac quimati, in azo huel neltiz: in acanozomo, ca itlahtol itech mocaqui: inic ome huitz quihtoa, cualli, ihuan amo cualli.
 # text[orig] = Ie·omjto·,·tel·aiac¶qujmati·,·inaco·vel·neltiz·:·inaca¶nocomo·,·ca·itlatol·itech·moca¶quj·:·injc·ome·vitz·qujtoa·,·qualli·,·ioan·amo·qualli·.
-# tagged = 93.55%
-# analysed = 96.77%
-1	Ie	ye	ADV	_	_	2	_	_	_
-2	omjto	ihtoa	VERB	_	Aspect=Prior|Number[subj]=Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	_	_
-3	,	,	PUNCT	_	_	6	punct	_	_
-4	tel	tel	X	_	_	6	_	_	_
-5	aiac	_	PRON	_	_	6	nsubj	_	_
-6	qujmati	_	VERB	_	_	2	_	_	_
-7	,	,	PUNCT	_	_	11	punct	_	_
-8	in	in	DET|SCONJ	_	_	11	_	_	_
-9	aco	azo	ADV	_	_	11	_	_	_
-10	vel	huel	ADV	_	_	11	_	_	_
-11	neltiz	nelti	VERB	_	Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	6	_	_	_
-12	:	:	PUNCT	_	_	14	punct	_	_
-13	in	in	DET|SCONJ	_	_	14	_	_	_
-14	acanocomo	_	X	_	_	11	_	_	_
-15	,	,	PUNCT	_	_	16	punct	_	_
-16	ca	_	VERB	_	_	11	_	_	_
-17	itlatol	tlahtolli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	19	_	_	_
-18	itech	tech	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Poss	19	_	_	_
-19	mocaquj	caqui	VERB	_	_	16	_	_	_
-20	:	:	PUNCT	_	_	24	punct	_	_
-21	injc	inic	SCONJ	_	_	24	_	_	_
-22	ome	ome	NUM	_	_	23	_	_	_
-23	vitz	_	NOUN	_	_	24	_	_	_
-24	qujtoa	ihtoa	VERB	_	Subcat=Tran	19	_	_	_
-25	,	,	PUNCT	_	_	26	punct	_	_
-26	qualli	cualli	ADJ	_	_	24	_	_	_
-27	,	,	PUNCT	_	_	28	punct	_	_
-28	ioan	_	NOUN	_	NounType=Relat	26	_	_	_
-29	amo	amo	ADV	_	_	30	_	_	_
-30	qualli	cualli	ADJ	_	_	28	_	_	_
-31	.	.	PUNCT	_	_	2	punct	_	_
+# text[osp] = [...] pero algunos dela compañia, que eran medrosos, y de poco esfuerço: todavia yvan con temor, de que alguna cosa, les auja de acontecer: y asi ni se alegrauan, ni hablauan, ni podian rescebir consolacion: yvan como desmayados, y pensatiuos, de que alguna cosa, les auja de acontecer, deende a algun trecho adelante: yuan penseando, que lo que no les auja acontecido, antes cerca de la significacion de aquel aguero que poruentura les aconteceria adelante se determinaua, en lo que podia acontecer: porque como arriba se dixo; este aguero, es indiferente, a bien, y mal.
+# text[osp_norm] = [...] pero algunos de la compañía, que eran medrosos, y de poco esfuerzo: todavía iban con temor, de que alguna cosa, les había de acontecer: y así ni se alegraban, ni hablaban, ni podían recibir consolación: iban como desmayados, y pensativos, de que alguna cosa, les había de acontecer, de ende a algún trecho adelante: iban pensando, que lo que no les había acontecido, antes cerca de la significación de aquel agüero que por ventura les acontecería adelante se determinaba, en lo que podía acontecer: porque como arriba se dijo; este agüero, es indiferente, a bien, y mal.
+# references = A&D/164:4
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 32.26%
+1	Ie	ye	ADV	_	_	2	advmod	2:advmod	_
+2	omjto	ihtoa	VERB	_	_	0	root	0:root	_
+3	,	,	PUNCT	_	_	6	punct	6:punct	_
+4	tel	tel	ADV	_	_	6	advmod	6:advmod	_
+5	aiac	ayac	PRON	_	_	6	nsubj	6:nsubj	_
+6	qujmati	mati	VERB	_	_	2	parataxis	2:parataxis	_
+7	,	,	PUNCT	_	_	11	punct	11:punct	_
+8	in	in	SCONJ	_	_	11	mark	11:mark	_
+9	aco	azo	ADV	_	_	11	advmod	11:advmod	_
+10	vel	huel	ADV	_	_	11	advmod	11:advmod	_
+11	neltiz	nelti	VERB	_	_	2	csubj	2:csubj	_
+12	:	:	PUNCT	_	_	14	punct	14:punct	_
+13	in	in	SCONJ	_	_	14	mark	14:mark	_
+14	acanocomo	acanozomo	ADV	_	_	11	conj	11:conj	_
+15	,	,	PUNCT	_	_	19	punct	19:punct	_
+16	ca	ca	PART	_	_	19	discourse	19:discourse	_
+17	itlatol	tlahtolli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Pos	18	nmod	18:nmod	_
+18	itech	tech	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	19	obl	19:obl	_
+19	mocaquj	caqui	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	11	_	11	_
+20	:	:	PUNCT	_	_	23	punct	23:punct	_
+21	injc	inic	SCONJ	_	_	23	mark	23:mark	_
+22	ome	ome	NUM	_	_	23	obl	23:obl	_
+23	vitz	huitza	NOUN	_	_	19	advcl	19:advcl	_
+24	qujtoa	ihtoa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	23	parataxis	23:parataxis	_
+25	,	,	PUNCT	_	_	26	punct	26:punct	_
+26	qualli	cualli	ADJ	_	_	23	parataxis	23:parataxis	_
+27	,	,	PUNCT	_	_	28	punct	28:punct	_
+28	ioan	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	26	conj	26:conj	_
+29	amo	amo	ADV	_	_	30	advmod	30:advmod	_
+30	qualli	cualli	ADJ	_	_	28	acl	28:acl	_
+31	.	.	PUNCT	_	_	2	punct	2:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:26
 # text = Ic ei capitulo, vncan moteneoa: in tetzaujtl catca, in tetzammachoia: in jquac iooltica qujcaquja, in juhquj aca, tlatepuzmjuja: in juhquj quauhxeloaia, in qujtoaia, ioaltepuztli.
@@ -2307,23 +2315,23 @@
 # text[orig] = I·c·nauj·capitulo·,·vncan·mj¶toa·:·intetzaujtl·injc·motetzauja¶ia·,·inj·quac·teculutl·chocaia·.
 # tagged = 100.00%
 # analysed = 100.00%
-1	Ic	ic	ADV	_	_	2	_	_	_
-2	nauj	nahui	NUM	_	_	3	_	_	_
-3	capitulo	capítulo	NOUN	_	State=Abs	6	_	_	_
-4	,	,	PUNCT	_	_	6	punct	_	_
-5	vncan	_	ADV	_	_	6	_	_	_
-6	mjtoa	ihtoa	VERB	_	_	0	root	_	_
-7	:	:	PUNCT	_	_	9	punct	_	_
-8	in	in	DET|SCONJ	_	_	9	_	_	_
-9	tetzaujtl	tezahuitl	NOUN	_	State=Abs	6	_	_	_
-10	injc	inic	SCONJ	_	_	11	_	_	_
-11	motetzaujaia	tetzahuia	VERB	_	_	9	_	_	_
-12	,	,	PUNCT	_	_	16	punct	_	_
-13	in	in	DET|SCONJ	_	_	16	_	_	_
-14	jquac	ihcuac	SCONJ	_	_	16	_	_	_
-15	teculutl	tecolotl	NOUN	_	State=Abs	16	_	_	_
-16	chocaia	choca	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	11	_	_	_
-17	.	.	PUNCT	_	_	6	punct	_	_
+1	Ic	ic	ADV	_	_	3	amod	3:amod	_
+2	nauj	nahui	NUM	_	_	1	nummod	1:nummod	_
+3	capitulo	capítulo	NOUN	_	State=Abs	6	obl	6:obl	_
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	vncan	_	ADV	_	_	6	advmod	6:advmod	_
+6	mjtoa	ihtoa	VERB	_	_	0	root	0:root	_
+7	:	:	PUNCT	_	_	9	punct	9:punct	_
+8	in	in	SCONJ	_	_	9	mark	9:mark	_
+9	tetzaujtl	tezahuitl	NOUN	_	State=Abs	6	csubj	6:csubj	_
+10	injc	inic	SCONJ	_	_	11	mark	11:mark	_
+11	motetzaujaia	tetzahuia	VERB	_	_	9	conj	9:conj	_
+12	,	,	PUNCT	_	_	16	punct	16:punct	_
+13	in	in	SCONJ	_	_	16	mark	16:mark	_
+14	jquac	ihcuac	SCONJ	_	_	16	advmod	16:advmod	_
+15	teculutl	tecolotl	NOUN	_	State=Abs	16	nsubj	16:nsubj	_
+16	chocaia	choca	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	11	advcl	11:advcl	_
+17	.	.	PUNCT	_	_	6	punct	6:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:41
 # text = No yoan netetzaujloia, tlatetzaujaia, tetzammachoia, in teculutl choca: in jquac tla aca ytlapantenco, anoço ixacalticpac, iquauhticpac chocatia: in qujcaquj qujtotica: Tecolo, o, o, tecolooo, yvin in caqujzti, in choca.
@@ -3429,25 +3437,25 @@
 # text[orig] = A·uh·in·aca·çan¶contzonuja·,·aco·compilova·:·intla¶otlathvic·aocac·qujtta·:·in·cenca·vel¶qujtetzammati·.
 # tagged = 100.00%
 # analysed = 94.74%
-1	Auh	auh	CCONJ	_	_	5	_	_	_
-2	in	in	DET|SCONJ	_	_	5	_	_	_
-3	aca	_	DET|PRON	_	_	5	_	_	_
-4	çan	zan	ADV	_	_	5	_	_	_
-5	contzonuja	tzonhuia	VERB	_	_	0	root	_	_
-6	,	,	PUNCT	_	_	8	punct	_	_
-7	aco	azo	ADV	_	_	8	_	_	_
-8	compilova	_	VERB	_	_	5	_	_	_
-9	:	:	PUNCT	_	_	13	punct	_	_
-10	intla	_	PRON	_	_	13	_	_	_
-11	otlathvic	tlathuic	VERB	_	_	13	_	_	_
-12	aocac	_	PRON	_	_	13	_	_	_
-13	qujtta	itta	VERB	_	Subcat=Tran	18	_	_	_
-14	:	:	PUNCT	_	_	18	punct	_	_
-15	in	in	DET|SCONJ	_	_	18	_	_	_
-16	cenca	cenca	ADV	_	_	18	_	_	_
-17	vel	huel	ADV	_	_	18	_	_	_
-18	qujtetzammati	_	VERB	_	_	5	_	_	_
-19	.	.	PUNCT	_	_	5	punct	_	_
+1	Auh	auh	CCONJ	_	_	5	cc	5:cc	_
+2	in	in	DET	_	_	3	det	3:det	_
+3	aca	_	PRON	_	_	5	nsubj	5:nsubj	_
+4	çan	zan	ADV	_	_	5	advmod	5:advmod	_
+5	contzonuja	tzonhuia	VERB	_	_	0	root	0:root	_
+6	,	,	PUNCT	_	_	8	punct	8:punct	_
+7	aco	azo	ADV	_	_	8	advmod	8:advmod	_
+8	compilova	_	VERB	_	_	5	parataxis:shared	5:parataxis:shared	_
+9	:	:	PUNCT	_	_	11	punct	11:punct	_
+10	intla	_	SCONJ	_	_	11	mark	11:mark	_
+11	otlathvic	tlathuic	VERB	_	_	18	advcl	18:advcl	_
+12	aocac	_	PRON	_	_	13	nsubj	13:nsubj	_
+13	qujtta	itta	VERB	_	Subcat=Tran	11	conj	11:conj	_
+14	:	:	PUNCT	_	_	18	punct	18:punct	_
+15	in	in	SCONJ	_	_	18	mark	18:mark	_
+16	cenca	cenca	ADV	_	_	18	advmod	18:advmod	_
+17	vel	huel	ADV	_	_	18	advmod	18:advmod	_
+18	qujtetzammati	_	VERB	_	_	5	parataxis	5:parataxis	_
+19	.	.	PUNCT	_	_	5	punct	5:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:66
 # text = Auh intla can ipa otlatvic, in çan ie vncan pilcac, ic moiollalia: amo cenca qujueimati, atle ipan conjtta.
@@ -4438,43 +4446,43 @@
 # text[orig] = No·yoan·,·tetzaujtl·catca·,·tete¶tzaujaia·:·in·tlacanexqujmjlli·,·iuh¶mjtoa·:·çan·ie·muchi·ieh·inaoal·,·inecuepaliz·,·inenextiliz·in·tezcatli¶puca·:·inj·quac·ittoia·,·çan·momj¶mjlotiuh·,·qujqujnacatiuh·,·tehten¶tiuh·.
 # tagged = 97.30%
 # analysed = 91.89%
-1	No	no	ADV	_	_	4	_	_	_
-2	yoan	_	NOUN	_	NounType=Relat	4	_	_	_
-3	,	,	PUNCT	_	_	4	punct	_	_
-4	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	0	root	_	_
-5	catca	_	VERB	_	Subcat=Intr	4	_	_	_
-6	,	,	PUNCT	_	_	7	punct	_	_
-7	tetetzaujaia	tetzahuia	VERB	_	_	4	_	_	_
-8	:	:	PUNCT	_	_	10	punct	_	_
-9	in	in	DET|SCONJ	_	_	10	_	_	_
-10	tlacanexqujmjlli	tlacanexquimilli	NOUN	_	State=Abs	4	_	_	_
-11	,	,	PUNCT	_	_	13	punct	_	_
-12	iuh	iuh	ADV	_	_	13	_	_	_
-13	mjtoa	ihtoa	VERB	_	_	4	_	_	_
-14	:	:	PUNCT	_	_	19	punct	_	_
-15	çan	zan	ADV	_	_	19	_	_	_
-16	ie	ye	ADV	_	_	19	_	_	_
-17	muchi	mochi	DET|PRON	_	_	19	_	_	_
-18	ieh	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	19	_	_	_
-19	inaoal	nahualli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	13	_	_	_
-20	,	,	PUNCT	_	_	21	punct	_	_
-21	inecuepaliz	necuepaliztli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	19	_	_	_
-22	,	,	PUNCT	_	_	23	punct	_	_
-23	inenextiliz	nenextiliztli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	19	_	_	_
-24	in	in	DET|SCONJ	_	_	25	_	_	_
-25	tezcatlipuca	Tezcatlipoca	PROPN	_	_	23	_	_	_
-26	:	:	PUNCT	_	_	29	punct	_	_
-27	in	in	DET|SCONJ	_	_	29	_	_	_
-28	jquac	ihcuac	SCONJ	_	_	29	_	_	_
-29	ittoia	itto	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	32	_	_	_
-30	,	,	PUNCT	_	_	32	punct	_	_
-31	çan	zan	ADV	_	_	32	_	_	_
-32	momjmjlotiuh	_	VERB	_	_	13	_	_	_
-33	,	,	PUNCT	_	_	34	punct	_	_
-34	qujqujnacatiuh	_	VERB	_	_	32	_	_	_
-35	,	,	PUNCT	_	_	36	punct	_	_
-36	tehtentiuh	_	VERB	_	_	32	_	_	_
-37	.	.	PUNCT	_	_	4	punct	_	_
+1	No	no	ADV	_	_	4	advmod	4:advmod	_
+2	yoan	_	NOUN	_	NounType=Relat	4	obl	4:obl	_
+3	,	,	PUNCT	_	_	4	punct	4:punct	_
+4	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	0	root	0:root	_
+5	catca	_	VERB	_	Subcat=Intr	4	cop	4:cop	_
+6	,	,	PUNCT	_	_	7	punct	7:punct	_
+7	tetetzaujaia	tetzahuia	VERB	_	_	4	parataxis:shared	4:parataxis:shared	_
+8	:	:	PUNCT	_	_	10	punct	10:punct	_
+9	in	in	DET	_	_	10	nsubj	10:nsubj	_
+10	tlacanexqujmjlli	tlacanexquimilli	NOUN	_	State=Abs	4	nsubj	4:nsubj	_
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	iuh	iuh	ADV	_	_	13	advmod	13:advmod	_
+13	mjtoa	ihtoa	VERB	_	_	4	parataxis	4:parataxis	_
+14	:	:	PUNCT	_	_	19	punct	19:punct	_
+15	çan	zan	ADV	_	_	19	advmod	19:advmod	_
+16	ie	ye	ADV	_	_	19	advmod	19:advmod	_
+17	muchi	mochi	DET|PRON	_	_	19	_	19	_
+18	ieh	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	19	_	19	_
+19	inaoal	nahualli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	13	_	13	_
+20	,	,	PUNCT	_	_	21	punct	21:punct	_
+21	inecuepaliz	necuepaliztli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	19	conj	19:conj	_
+22	,	,	PUNCT	_	_	23	punct	23:punct	_
+23	inenextiliz	nenextiliztli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	19	conj	19:conj	_
+24	in	in	DET	_	_	25	det	25:det	_
+25	tezcatlipuca	Tezcatlipoca	PROPN	_	_	19	nmod	19:nmod	_
+26	:	:	PUNCT	_	_	29	punct	29:punct	_
+27	in	in	SCONJ	_	_	29	mark	29:mark	_
+28	jquac	ihcuac	ADV	_	_	29	advmod	29:advmod	_
+29	ittoia	itto	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	32	advcl	32:advcl	_
+30	,	,	PUNCT	_	_	32	punct	32:punct	_
+31	çan	zan	ADV	_	_	32	advmod	32:advmod	_
+32	momjmjlotiuh	_	VERB	_	_	4	parataxis	4:parataxis	_
+33	,	,	PUNCT	_	_	34	punct	34:punct	_
+34	qujqujnacatiuh	_	VERB	_	_	32	parataxis:shared	32:parataxis:shared	_
+35	,	,	PUNCT	_	_	36	punct	36:punct	_
+36	tehtentiuh	_	VERB	_	_	32	parataxis:shared	32:parataxis:shared	_
+37	.	.	PUNCT	_	_	4	punct	4:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:86
 # text = In aqujn qujttaia, ic qujtetzanuja, in ie mjqujz: aco iave, anoço can tlalmjqujz: anoce ytla, amo qualli ie qujmonamjctiz, ipan vetziz.

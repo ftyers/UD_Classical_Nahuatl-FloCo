@@ -103,6 +103,59 @@
 28	qualli	cualli	ADJ	_	_	24	conj	24:conj	Folio=2r|Gloss=bueno|Line=4|Norm=cualli|Paragraph=3|SpaceAfter=No
 29	.	.	PUNCT	_	_	4	punct	4:punct	Folio=2r|Paragraph=3|Line=4|Norm=.|Analysed=Yes
 
+# sent_id = Book_05_-_The_Omens.txt:19
+# text = In jquac yn, in aqujn tachcauh, in tachcauhchiuhtiuh, in tachcauh icatiuh vtlipan, vncan peoa, in qujmelaquaoa, in qujnchoqujztlapaloa, iteiccaoan, itlahoapavalvan: in vtli ipan qujmixtlamachtia, qujmjlvia.
+# text[norm] = In ihcuac in, in aquin tachcauh, in tachcauhchiuhtiuh, in tachcauh icatiuh ohtlipan, oncan pehua, in quimellacuahua, in quinchoquiztlapaloa, iteiccahuan, itlahuapahualhuan: in ohtli ipan quimixtlamachtia, quimilhuia.
+# text[orig] = Inj·quac¶yn·,·inaqujn·tachcauh·,·in·tach¶cauhchiuhtiuh·,·intachcauh·ica¶tiuh·vtlipan·,·vncan·peoa·,·in·quj¶melaquaoa·,·in·qujn·choqujztla¶paloa·,·iteiccaoan·,·itlahoapaval¶van·:·in·vtli·ipan·qujmixtla¶machtia·,·qujmjlvia·.
+# text[osp] = Quando platicauan estas cosas, entre si: aquel que era principal, entre ellos: començaua a esforçar, y consolar a los otros menores: y dezia a los desta manera, yendo andando.
+# text[osp_norm] = Cuando platicaban estas cosas, entre sí: aquel que era principal, entre ellos: comenzaba a esforzar, y consolar a los otros menores: y decía a los de esta manera, yendo andando.
+# references = A&D/163:2
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/51
+1	In	in	SCONJ	_	_	3	mark	3:mark	Orig=Inj·quac¶|Folio=3r,3r|Paragraph=1,1|Line=9,9|Norm=In
+2	jquac	ihcuac	ADV	_	_	3	advmod	3:advmod	Orig=Inj·quac¶|Folio=3r,3r|Paragraph=1,1|Line=9,9|Norm=ihcuac|Gloss=en.el.momento
+3	yn	in	PRON	_	_	18	advcl	18:advcl	Folio=3r|Line=10|Norm=in|Paragraph=1|SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	6:punct	Folio=3r|Paragraph=1|Line=10|Norm=,|Analysed=Yes
+5	in	in	DET	_	_	6	det	6:det	Orig=inaqujn|Folio=3r|Paragraph=1|Line=10|Norm=in
+6	aqujn	aquin	PRON	_	_	18	nsubj	18:nsubj	Orig=inaqujn|Folio=3r|Paragraph=1|Line=10|Norm=aquin
+7	tachcauh	tachcauh	NOUN	_	State=Abs	6	acl	6:acl	Analysed=Yes|Folio=3r|Line=10|Norm=tachcauh|Paragraph=1|SpaceAfter=No
+8	,	,	PUNCT	_	_	10	punct	10:punct	Folio=3r|Paragraph=1|Line=10|Norm=,|Analysed=Yes
+9	in	in	SCONJ	_	_	10	mark	10:mark	Folio=3r|Paragraph=1|Line=10|Norm=in
+10	tachcauhchiuhtiuh	chihua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Purpose=And|Subcat=Intr|Tense=Pres|VerbForm=Fin	7	conj	7:conj	Analysed=Yes|Folio=3r,3r|Incorp[obj]=tachcauh|Line=10,11|Norm=tachcauhchiuhtiuh|Orig=tach¶·cauhchiuhtiuh|Paragraph=1,1|Root=chihua|SpaceAfter=No
+10.1	tachcauh	tachcauh	NOUN	_	_	_	_	10:obl	Incorporated=Yes
+11	,	,	PUNCT	_	_	14	punct	14:punct	Folio=3r|Paragraph=1|Line=11|Norm=,|Analysed=Yes
+12	in	in	SCONJ	_	_	14	mark	14:mark	Orig=intachcauh|Folio=3r|Paragraph=1|Line=11|Norm=in
+13	tachcauh	tachcauh	NOUN	_	State=Abs	14	nsubj	14:nsubj	Orig=intachcauh|Folio=3r|Paragraph=1|Line=11|Norm=tachcauh|Analysed=Yes
+14	icatiuh	cah	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Purpose=And|Subcat=Intr|Tense=Pres|VerbForm=Fin	7	conj	7:conj	Orig=ica¶·tiuh|Folio=3r,3r|Paragraph=1,1|Line=11,12|Norm=icatiuh|Analysed=Yes
+15	vtlipan	ohtlipan	ADV	_	_	14	obl	14:obl	Analysed=Yes|Folio=3r|Line=12|Norm=ohtlipan|Paragraph=1|SpaceAfter=No
+16	,	,	PUNCT	_	_	6	punct	18:punct	Folio=3r|Paragraph=1|Line=12|Norm=,|Analysed=Yes
+17	vncan	oncan	ADV	_	_	18	advmod	18:advmod	Folio=3r|Paragraph=1|Line=12|Norm=oncan|Gloss=aquí|Analysed=Yes
+18	peoa	pehua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	0	root	0:root	Analysed=Yes|Folio=3r|Line=12|Norm=pehua|Paragraph=1|SpaceAfter=No
+19	,	,	PUNCT	_	_	21	punct	21:punct	Folio=3r|Paragraph=1|Line=12|Norm=,|Analysed=Yes
+20	in	in	SCONJ	_	_	21	mark	21:mark	Folio=3r|Paragraph=1|Line=12|Norm=in
+21	qujmelaquaoa	ellacuahua	VERB	_	Number[obj]=Plur|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	18	xcomp	18:xcomp	Analysed=Yes|Folio=3r,3r|Line=12,13|Norm=quimellacuahua|Orig=quj¶·melaquaoa|Paragraph=1,1|SpaceAfter=No
+22	,	,	PUNCT	_	_	24	punct	24:punct	Folio=3r|Paragraph=1|Line=13|Norm=,|Analysed=Yes
+23	in	in	SCONJ	_	_	24	mark	24:mark	Folio=3r|Paragraph=1|Line=13|Norm=in
+24	qujnchoqujztlapaloa	tlapaloa	VERB	_	Number[obj]=Plur|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	21	conj	21:conj	Analysed=Yes|Folio=3r,3r,3r|Gloss=les.saluda.con.llágrimas|Incorp[adv]=choquiz|Line=13,13,14|Norm=quinchoquiztlapaloa|Orig=qujn·choqujztla¶·paloa|Paragraph=1,1,1|SpaceAfter=No
+24.1	choquiz	choquiztli	NOUN	_	_	_	_	24:obl	Incorporated=Yes
+25	,	,	PUNCT	_	_	26	punct	26:punct	Folio=3r|Paragraph=1|Line=14|Norm=,|Analysed=Yes
+26	iteiccaoan	teiccauhtli	NOUN	_	Number=Plur|Number[psor]=Sing|Person[psor]=3|State=Pos	24	obj	24:obj	Analysed=Yes|Folio=3r|Gloss=sus.hermanitos|Line=14|Norm=iteiccahuan|Paragraph=1|SpaceAfter=No
+27	,	,	PUNCT	_	_	28	punct	28:punct	Folio=3r|Paragraph=1|Line=14|Norm=,|Analysed=Yes
+28	itlahoapavalvan	tlahuapahualli	NOUN	_	Number=Plur|Number[psor]=Sing|Person[psor]=3|State=Pos	26	conj	26:conj	Analysed=Yes|Folio=3r,3r|Line=14,15|Norm=itlahuapahualhuan|Orig=itlahoapaval¶·van|Paragraph=1,1|SpaceAfter=No
+29	:	:	PUNCT	_	_	33	punct	33:punct	Folio=3r|Paragraph=1|Line=15|Norm=:|Analysed=Yes
+30	in	in	SCONJ	_	_	33	mark	33:mark	Folio=3r|Paragraph=1|Line=15|Norm=in
+31	vtli	ohtli	NOUN	_	State=Abs	32	nmod	32:nmod	Folio=3r|Paragraph=1|Line=15|Norm=ohtli|Gloss=camino|Analysed=Yes
+32	ipan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	33	obl	33:obl	Folio=3r|Paragraph=1|Line=15|Norm=ipan|Analysed=Yes
+33	qujmixtlamachtia	ixtlamachtia	VERB	_	Number[obj]=Plur|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	18	parataxis	18:parataxis	Analysed=Yes|Folio=3r,3r|Line=15,16|Norm=quimixtlamachtia|Orig=qujmixtla¶·machtia|Paragraph=1,1|SpaceAfter=No
+34	,	,	PUNCT	_	_	35	punct	35:punct	Folio=3r|Paragraph=1|Line=16|Norm=,|Analysed=Yes
+35	qujmjlvia	ilhuia	VERB	_	_	18	parataxis	18:parataxis	Ambiguous=Yes|Analysed=Yes|Folio=3r|Guessed=Yes|Line=16|Norm=quimilhuia|Paragraph=1|SpaceAfter=No
+36	.	.	PUNCT	_	_	18	punct	18:punct	Folio=3r|Paragraph=1|Line=16|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:27
 # text = No ioan, tetzaujtl catca, netetzaujloia, tetzammachoia: in jtoca ioaltepuztli.
 # text[norm] = No ihuan, tetzahuitl catca, netetzahuiloya, tetzammachoya: in itoca yohualtepoztli.
@@ -540,6 +593,40 @@
 5	homaxac	omaxac	NOUN	_	NounClass=Loc	6	obl	6:obl	Folio=9r|Paragraph=1|Line=19|Norm=omaxac|Locative=Yes|Gloss=cruce|Analysed=Yes
 6	concaoa	cahua	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	3	parataxis:shared	3:parataxis:shared	Analysed=Yes|Folio=9r|Line=19|Norm=concahua|Paragraph=1|SpaceAfter=No
 7	.	.	PUNCT	_	_	3	punct	3:punct	Folio=9r|Paragraph=1|Line=19|Norm=.|Analysed=Yes
+
+# sent_id = Book_05_-_The_Omens.txt:65
+# text = Auh in aca çan contzonuja, aco compilova: intla otlathvic aocac qujtta: in cenca vel qujtetzammati.
+# text[norm] = Auh in aca zan contzonhuia, azo compiloa: intla otlathuic ayocac quitta: in cenca huel quitetzammati.
+# text[orig] = A·uh·in·aca·çan¶contzonuja·,·aco·compilova·:·intla¶otlathvic·aocac·qujtta·:·in·cenca·vel¶qujtetzammati·.
+# text[osp] = Y algunos tomando la, passauan la con un cabello, por medio del cuerpo, y colgauan la de algun palo; y dexauan la estar alli, hasta otro dia: y si otro dia, no la hallaua alli: començaua a sospechar, que le auja de venir algun mal: [...]
+# text[osp_norm] = Y algunos tomándola, pasábanla con un cabello, por medio del cuerpo, y colgábanla de algún palo; y dejábanla estar allí, hasta otro día: y si otro día, no la hallaba allí: comenzaba a sospechar, que le había de venir algún mal: [...]
+# references = A&D/172:7
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/25
+1	Auh	auh	CCONJ	_	_	5	cc	5:cc	Orig=A·uh|Folio=9r,9r|Paragraph=1,1|Line=19,19|Norm=Auh|Gloss=y
+2	in	in	DET	_	_	3	det	3:det	Folio=9r|Paragraph=1|Line=19|Norm=in
+3	aca	aca	PRON	_	_	5	nsubj	5:nsubj	Folio=9r|Paragraph=1|Line=19|Norm=aca
+4	çan	zan	ADV	_	_	5	advmod	5:advmod	Folio=9r|Paragraph=1|Line=19|Norm=zan|Analysed=Yes
+5	contzonuja	tzonhuia	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Analysed=Yes|Folio=9r|Line=20|Norm=contzonhuia|Paragraph=1|SpaceAfter=No
+6	,	,	PUNCT	_	_	8	punct	8:punct	Folio=9r|Paragraph=1|Line=20|Norm=,|Analysed=Yes
+7	aco	azo	ADV	_	_	8	advmod	8:advmod	Folio=9r|Paragraph=1|Line=20|Norm=azo|Gloss=quizás|Analysed=Yes
+8	compilova	piloa	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	5	parataxis:shared	5:parataxis:shared	Analysed=Yes|Folio=9r|Line=20|Norm=compiloa|Paragraph=1|SpaceAfter=No
+9	:	:	PUNCT	_	_	11	punct	11:punct	Folio=9r|Paragraph=1|Line=20|Norm=:|Analysed=Yes
+10	intla	tla|intla	SCONJ	_	_	11	mark	11:mark	Folio=9r|Paragraph=1|Line=20|Norm=intla
+11	otlathvic	tlathuic	VERB	_	Aspect=Prior|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	18	advcl	18:advcl	Folio=9r|Paragraph=1|Line=21|Norm=otlathuic|Analysed=Yes
+12	aocac	ayocac	PRON	_	_	13	nsubj	13:nsubj	Folio=9r|Paragraph=1|Line=21|Norm=ayocac
+13	qujtta	itta	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	11	conj	11:conj	Analysed=Yes|Folio=9r|Line=21|Norm=quitta|Paragraph=1|SpaceAfter=No
+14	:	:	PUNCT	_	_	11	punct	18:punct	Folio=9r|Paragraph=1|Line=21|Norm=:|Analysed=Yes
+15	in	in	SCONJ	_	_	18	mark	18:mark	Folio=9r|Paragraph=1|Line=21|Norm=in
+16	cenca	cenca	ADV	_	_	18	advmod	18:advmod	Folio=9r|Paragraph=1|Line=21|Norm=cenca|Gloss=muy|Analysed=Yes
+17	vel	huel	ADV	_	_	18	advmod	18:advmod	Folio=9r|Paragraph=1|Line=21|Norm=huel
+18	qujtetzammati	tetzammatia	VERB	_	_	5	parataxis	5:parataxis	Folio=9r|Line=22|Norm=quitetzammati|Paragraph=1|SpaceAfter=No
+19	.	.	PUNCT	_	_	5	punct	5:punct	Folio=9r|Paragraph=1|Line=22|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:66
 # text = Auh intla can ipa otlatvic, in çan ie vncan pilcac, ic moiollalia: amo cenca qujueimati, atle ipan conjtta.
