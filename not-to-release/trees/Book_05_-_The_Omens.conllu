@@ -1649,35 +1649,40 @@
 # sent_id = Book_05_-_The_Omens.txt:30
 # text = Inin, ioaltepuztli, iuh mjtoa, qujlmach iehoatl, ipan mjxeoaia, in tezcatlipuca: injc teca mocacaiaoaia, teca maujltiaia, qujtoa.
 # text[norm] = Inin, yohualtepoztli, iuh mihtoa, quilmach yehhuatl, ipan mixehuaya, in Tezcatlipoca: inic teca mocacayahuaya, teca mahuiltiaya, quihtoa.
-# text[spa] = A ellos se pasa, cuando quizás en algun lugar en el monte, dentro de un desfiladero, dentro del desierto, en medio del bosque, en un matorral, dentro de árboles, y si los pochteca [fueron] los viajeros, así les pasó, se rió el huactli a ellos, dijeron:
 # text[orig] = In·in·,·io·altepuztli·,·iuh·mjtoa·,·qujlmach¶iehoatl·,·ipan·mjxeoaia·,·in·tezca¶tlipuca·:·injc·teca·mocacaiaoaia·,·teca·maujltiaia·,·qujtoa·.
+# text[osp] = Y cuando oyan golpes como de qujen hiende madero con hacha, lo qual de noche suena lexos: espantauan se de aquellos golpes, y tomauan mal aguero: dezian. Que estos golpes: eran illusion de Tezcatlipuca, conque espantaua de noche, y burlaua a los que andan de noche.
+# text[osp_norm] = Y cuando oían golpes como de quien hiende madero con hacha, lo cual de noche suena lejos: espantábanse de aquellos golpes, y tomaban mal agüero: decían. Que estos golpes: eran ilusión de <Tezcatlipoca>, con que espantaba de noche, y burlaba a los que andan de noche.
+# references = A&D/165:3
 # tagged = 100.00%
-# analysed = 96.00%
-1	Inin	_	PRON	_	_	12	dislocated	_	_
-2	,	,	PUNCT	_	_	3	punct	_	_
-3	ioaltepuztli	yohualtepoztli	NOUN	_	State=Abs	1	_	_	_
-4	,	,	PUNCT	_	_	6	punct	_	_
-5	iuh	iuh	ADV	_	_	6	_	_	_
-6	mjtoa	ihtoa	VERB	_	_	12	_	_	_
-7	,	,	PUNCT	_	_	12	punct	_	_
-8	qujlmach	_	ADV	_	_	12	_	_	_
-9	iehoatl	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	12	_	_	_
-10	,	,	PUNCT	_	_	12	punct	_	_
-11	ipan	_	NOUN	_	NounType=Relat	12	_	_	_
-12	mjxeoaia	_	VERB	_	_	0	root	_	_
-13	,	,	PUNCT	_	_	15	punct	_	_
-14	in	in	DET	_	_	15	_	_	_
-15	tezcatlipuca	Tezcatlipoca	PROPN	_	_	11	_	_	_
-16	:	:	PUNCT	_	_	19	punct	_	_
-17	injc	inic	SCONJ	_	_	19	_	_	_
-18	teca	_	NOUN	_	NounType=Relat	19	_	_	_
-19	mocacaiaoaia	cacayahua	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Reflexive[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	12	_	_	_
-20	,	,	PUNCT	_	_	22	punct	_	_
-21	teca	_	NOUN	_	NounType=Relat	22	_	_	_
-22	maujltiaia	mahuiltia	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	19	_	_	_
-23	,	,	PUNCT	_	_	24	punct	_	_
-24	qujtoa	ihtoa	VERB	_	Subcat=Tran	12	_	_	_
-25	.	.	PUNCT	_	_	12	punct	_	_
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 44.00%
+1	Inin	inin	PRON	_	_	3	nsubj	3:nsubj	_
+2	,	,	PUNCT	_	_	3	punct	3:punct	_
+3	ioaltepuztli	yohualtepoztli	NOUN	_	State=Abs	6	csubj	6:csubj	_
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	iuh	iuh	ADV	_	_	6	advmod	6:advmod	_
+6	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	,	,	PUNCT	_	_	12	punct	12:punct	_
+8	qujlmach	quilmach	ADV	_	_	12	discourse	12:discourse	_
+9	iehoatl	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	12	nsubj	12:nsubj	_
+10	,	,	PUNCT	_	_	12	punct	12:punct	_
+11	ipan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	12	obl	12:obl	_
+12	mjxeoaia	ixehua	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	6	parataxis	6:parataxis	_
+13	,	,	PUNCT	_	_	15	punct	15:punct	_
+14	in	in	DET	_	_	15	det	15:det	_
+15	tezcatlipuca	Tezcatlipoca	PROPN	_	_	11	nmod	11:nmod	_
+16	:	:	PUNCT	_	_	19	punct	19:punct	_
+17	injc	inic	SCONJ	_	_	19	mark	19:mark	_
+18	teca	ca	NOUN	_	Animacy[psor]=Hum|NounType=Relat|Person[psor]=3|State=Pos	19	obl	19:obl	_
+19	mocacaiaoaia	cacayahua	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	6	parataxis	6:parataxis	_
+20	,	,	PUNCT	_	_	22	punct	22:punct	_
+21	teca	ca	NOUN	_	Animacy[psor]=Hum|NounType=Relat|Person[psor]=3|State=Pos	22	obl	22:obl	_
+22	maujltiaia	mahuiltia	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	19	conj	19:conj	_
+23	,	,	PUNCT	_	_	24	punct	24:punct	_
+24	qujtoa	ihtoa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	_
+25	.	.	PUNCT	_	_	6	punct	6:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:31
 # text = In aqujn qujttaia, in mjhiujntia, in jiollo qujmati, in amo momauhtianj, in tonallapaliuj, vel ic momotla: qujmomaca, aiocmo qujcaoa, injc vel qujttaz, qujtlacanotzaz, vel itech mopiloa, itech motlapaltilia, injc qujtoca: qujteputztoca, qujtlalochtoca, ipampa injc vel caciz: qujttaz, in quenamj itetzauh: in juh conjtoa, in aqujn vel cacia, in qujttaia: aiaxcan in vel itech pachiuj: oc qujtotoca, nouja qujnemjtia: noujan caaxitia.

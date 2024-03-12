@@ -212,6 +212,46 @@
 9	naoati	nahuati	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	2	advcl	2:advcl	Analysed=Yes|Folio=4v|Line=5|Norm=nahuati|Paragraph=4|SpaceAfter=No
 10	.	.	PUNCT	_	_	2	punct	2:punct	Folio=4v|Paragraph=4|Line=5|Norm=.|Analysed=Yes
 
+# sent_id = Book_05_-_The_Omens.txt:30
+# text = Inin, ioaltepuztli, iuh mjtoa, qujlmach iehoatl, ipan mjxeoaia, in tezcatlipuca: injc teca mocacaiaoaia, teca maujltiaia, qujtoa.
+# text[norm] = Inin, yohualtepoztli, iuh mihtoa, quilmach yehhuatl, ipan mixehuaya, in Tezcatlipoca: inic teca mocacayahuaya, teca mahuiltiaya, quihtoa.
+# text[orig] = In·in·,·io·altepuztli·,·iuh·mjtoa·,·qujlmach¶iehoatl·,·ipan·mjxeoaia·,·in·tezca¶tlipuca·:·injc·teca·mocacaiaoaia·,·teca·maujltiaia·,·qujtoa·.
+# text[osp] = Y cuando oyan golpes como de qujen hiende madero con hacha, lo qual de noche suena lexos: espantauan se de aquellos golpes, y tomauan mal aguero: dezian. Que estos golpes: eran illusion de Tezcatlipuca, conque espantaua de noche, y burlaua a los que andan de noche.
+# text[osp_norm] = Y cuando oían golpes como de quien hiende madero con hacha, lo cual de noche suena lejos: espantábanse de aquellos golpes, y tomaban mal agüero: decían. Que estos golpes: eran ilusión de <Tezcatlipoca>, con que espantaba de noche, y burlaba a los que andan de noche.
+# references = A&D/165:3
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/29
+1	Inin	inin	PRON	_	_	3	nsubj	3:nsubj	Folio=4v,4v|Line=12,12|Norm=Inin|Orig=In·in|Paragraph=4,4|SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	3:punct	Folio=4v|Paragraph=4|Line=12|Norm=,|Analysed=Yes
+3	ioaltepuztli	yohualtepoztli	NOUN	_	State=Abs	6	csubj	6:csubj	Analysed=Yes|Folio=4v,4v|Line=13,13|Norm=yohualtepoztli|Orig=io·altepuztli|Paragraph=4,4|SpaceAfter=No|Split=yohual·tepoztli
+4	,	,	PUNCT	_	_	3	punct	6:punct	Folio=4v|Paragraph=4|Line=13|Norm=,|Analysed=Yes
+5	iuh	iuh	ADV	_	_	6	advmod	6:advmod	Folio=4v|Paragraph=4|Line=13|Norm=iuh|Gloss=así|Analysed=Yes
+6	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Analysed=Yes|Folio=4v|Line=13|Norm=mihtoa|Paragraph=4|SpaceAfter=No
+7	,	,	PUNCT	_	_	12	punct	12:punct	Folio=4v|Paragraph=4|Line=13|Norm=,|Analysed=Yes
+8	qujlmach	quilmach	ADV	_	_	12	discourse	12:discourse	Folio=4v|Paragraph=4|Line=13|Norm=quilmach|Gloss=al.parecer
+9	iehoatl	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	12	nsubj	12:nsubj	Analysed=Yes|Folio=5r|Gloss=él|Line=1|Norm=yehhuatl|Paragraph=1|SpaceAfter=No
+10	,	,	PUNCT	_	_	9	punct	12:punct	Folio=5r|Paragraph=1|Line=1|Norm=,|Analysed=Yes
+11	ipan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	12	obl	12:obl	Folio=5r|Paragraph=1|Line=1|Norm=ipan|Analysed=Yes
+12	mjxeoaia	ixehua	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	6	parataxis	6:parataxis	Analysed=Yes|Folio=5r|Line=1|Norm=mixehuaya|Paragraph=1|SpaceAfter=No
+13	,	,	PUNCT	_	_	15	punct	15:punct	Folio=5r|Paragraph=1|Line=1|Norm=,|Analysed=Yes
+14	in	in	DET	_	_	15	det	15:det	Folio=5r|Paragraph=1|Line=1|Norm=in
+15	tezcatlipuca	Tezcatlipoca	PROPN	_	_	11	nmod	11:nmod	Analysed=Yes|Folio=5r,5r|Line=1,2|Norm=Tezcatlipoca|Orig=tezca¶·tlipuca|Paragraph=1,1|SpaceAfter=No
+16	:	:	PUNCT	_	_	19	punct	19:punct	Folio=5r|Paragraph=1|Line=2|Norm=:|Analysed=Yes
+17	injc	inic	SCONJ	_	_	19	mark	19:mark	Folio=5r|Paragraph=1|Line=2|Norm=inic
+18	teca	ca	NOUN	_	Animacy[psor]=Hum|NounType=Relat|Person[psor]=3|State=Pos	19	obl	19:obl	Folio=5r|Paragraph=1|Line=2|Norm=teca|Analysed=Yes
+19	mocacaiaoaia	cacayahua	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	6	parataxis	6:parataxis	Analysed=Yes|Folio=5r|Line=2|Norm=mocacayahuaya|Paragraph=1|SpaceAfter=No
+20	,	,	PUNCT	_	_	22	punct	22:punct	Folio=5r|Paragraph=1|Line=2|Norm=,|Analysed=Yes
+21	teca	ca	NOUN	_	Animacy[psor]=Hum|NounType=Relat|Person[psor]=3|State=Pos	22	obl	22:obl	Folio=5r|Paragraph=1|Line=3|Norm=teca|Analysed=Yes
+22	maujltiaia	mahuiltia	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	19	conj	19:conj	Analysed=Yes|Folio=5r|Line=3|Norm=mahuiltiaya|Paragraph=1|SpaceAfter=No
+23	,	,	PUNCT	_	_	24	punct	24:punct	Folio=5r|Paragraph=1|Line=3|Norm=,|Analysed=Yes
+24	qujtoa	ihtoa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	6	parataxis	6:parataxis	Analysed=Yes|Folio=5r|Line=3|Norm=quihtoa|Paragraph=1|SpaceAfter=No
+25	.	.	PUNCT	_	_	6	punct	6:punct	Folio=5r|Paragraph=1|Line=3|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:35
 # text = Auh qujluja in maceoalli, in oqujmottiti: amo njmjtzcaoaz, ca onjmjtzan.
 # text[norm] = Auh quilhuia in macehualli, in oquimottiti: amo nimitzcahuaz, ca onimitzan.
