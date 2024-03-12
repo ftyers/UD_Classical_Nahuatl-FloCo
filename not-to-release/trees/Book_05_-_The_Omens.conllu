@@ -2316,26 +2316,33 @@
 
 # sent_id = Book_05_-_The_Omens.txt:40
 # text = Ic nauj capitulo, vncan mjtoa: in tetzaujtl injc motetzaujaia, in jquac teculutl chocaia.
-# text[norm] = Ic nahui capítulo, oncan mihtoa: in tezahuitl inic motetzahuiaya, in ihcuac tecolotl chocaya.
+# text[norm] = Ic nahui capítulo, oncan mihtoa: in tetzahuitl inic motetzahuiaya, in ihcuac tecolotl chocaya.
 # text[orig] = I·c·nauj·capitulo·,·vncan·mj¶toa·:·intetzaujtl·injc·motetzauja¶ia·,·inj·quac·teculutl·chocaia·.
+# text[osp] = Capitulo quarto, del mal aguero: que tomauan del canto del buho ave.
+# text[osp_norm] = Capítulo cuarto, del mal agüero: que tomaban del canto del búho ave.
+# text[spa] = Cuarto capítulo, donde se habla del agüero, que tomaron por agüero, cuando el tecolote ulula.
+# references = A&D/168:1
 # tagged = 100.00%
+# lemmatised = 100.00%
 # analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
 1	Ic	ic	ADV	_	_	3	amod	3:amod	_
 2	nauj	nahui	NUM	_	_	1	nummod	1:nummod	_
 3	capitulo	capítulo	NOUN	_	State=Abs	6	obl	6:obl	_
 4	,	,	PUNCT	_	_	6	punct	6:punct	_
-5	vncan	_	ADV	_	_	6	advmod	6:advmod	_
-6	mjtoa	ihtoa	VERB	_	_	0	root	0:root	_
+5	vncan	oncan	ADV	_	_	6	advmod	6:advmod	_
+6	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	_
 7	:	:	PUNCT	_	_	9	punct	9:punct	_
 8	in	in	SCONJ	_	_	9	mark	9:mark	_
-9	tetzaujtl	tezahuitl	NOUN	_	State=Abs	6	csubj	6:csubj	_
+9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	csubj	6:csubj	_
 10	injc	inic	SCONJ	_	_	11	mark	11:mark	_
 11	motetzaujaia	tetzahuia	VERB	_	_	9	conj	9:conj	_
 12	,	,	PUNCT	_	_	16	punct	16:punct	_
 13	in	in	SCONJ	_	_	16	mark	16:mark	_
-14	jquac	ihcuac	SCONJ	_	_	16	advmod	16:advmod	_
+14	jquac	ihcuac	ADV	_	_	16	advmod	16:advmod	_
 15	teculutl	tecolotl	NOUN	_	State=Abs	16	nsubj	16:nsubj	_
-16	chocaia	choca	VERB	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	11	advcl	11:advcl	_
+16	chocaia	choca	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	11	advcl	11:advcl	_
 17	.	.	PUNCT	_	_	6	punct	6:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:41
