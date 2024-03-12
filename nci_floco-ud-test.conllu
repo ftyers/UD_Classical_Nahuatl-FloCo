@@ -282,6 +282,39 @@
 13	onjmjtzan	ana	VERB	_	Aspect=Prior|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=2|Person[subj]=1|Subcat=Tran|Tense=Past|VerbForm=Fin	10	parataxis:shared	10:parataxis:shared	Analysed=Yes|Folio=5v,5v|Line=49,50|Norm=onimitzan|Orig=caonj¶·mjtzan|Paragraph=2,2|SpaceAfter=No
 14	.	.	PUNCT	_	_	2	punct	2:punct	Folio=5v|Paragraph=2|Line=50|Norm=.|Analysed=Yes
 
+# sent_id = Book_05_-_The_Omens.txt:40
+# text = Ic nauj capitulo, vncan mjtoa: in tetzaujtl injc motetzaujaia, in jquac teculutl chocaia.
+# text[norm] = Ic nahui capítulo, oncan mihtoa: in tetzahuitl inic motetzahuiaya, in ihcuac tecolotl chocaya.
+# text[orig] = I·c·nauj·capitulo·,·vncan·mj¶toa·:·intetzaujtl·injc·motetzauja¶ia·,·inj·quac·teculutl·chocaia·.
+# text[osp] = Capitulo quarto, del mal aguero: que tomauan del canto del buho ave.
+# text[osp_norm] = Capítulo cuarto, del mal agüero: que tomaban del canto del búho ave.
+# text[spa] = Cuarto capítulo, donde se habla del agüero, que tomaron por agüero, cuando el tecolote ulula.
+# references = A&D/168:1
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/15
+1	Ic	ic	ADV	_	_	3	amod	3:amod	Orig=I·c|Folio=6v,6v|Paragraph=3,3|Line=1,1|Norm=Ic
+2	nauj	nahui	NUM	_	_	1	nummod	1:nummod	Folio=6v|Paragraph=3|Line=1|Norm=nahui|Gloss=cuatro|Analysed=Yes
+3	capitulo	capítulo	NOUN	_	State=Abs	6	obl	6:obl	Analysed=Yes|Folio=6v|Line=1|Norm=capítulo|Paragraph=3|SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	6:punct	Folio=6v|Paragraph=3|Line=1|Norm=,|Analysed=Yes
+5	vncan	oncan	ADV	_	_	6	advmod	6:advmod	Folio=6v|Paragraph=3|Line=1|Norm=oncan|Gloss=aquí|Analysed=Yes
+6	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Analysed=Yes|Folio=6v,6v|Line=1,2|Norm=mihtoa|Orig=mj¶·toa|Paragraph=3,3|SpaceAfter=No
+7	:	:	PUNCT	_	_	9	punct	9:punct	Folio=6v|Paragraph=3|Line=2|Norm=:|Analysed=Yes
+8	in	in	SCONJ	_	_	9	mark	9:mark	Orig=intetzaujtl|Folio=6v|Paragraph=3|Line=2|Norm=in
+9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	csubj	6:csubj	Orig=intetzaujtl|Folio=6v|Paragraph=3|Line=2|Norm=tetzahuitl|Analysed=Yes
+10	injc	inic	SCONJ	_	_	11	mark	11:mark	Folio=6v|Paragraph=3|Line=2|Norm=inic
+11	motetzaujaia	tetzahuia	VERB	_	_	9	conj	9:conj	Ambiguous=Yes|Analysed=Yes|Folio=6v,6v|Guessed=Yes|Line=2,3|Norm=motetzahuiaya|Orig=motetzauja¶·ia|Paragraph=3,3|SpaceAfter=No
+12	,	,	PUNCT	_	_	16	punct	16:punct	Folio=6v|Paragraph=3|Line=3|Norm=,|Analysed=Yes
+13	in	in	SCONJ	_	_	16	mark	16:mark	Orig=inj·quac|Folio=6v,6v|Paragraph=3,3|Line=3,3|Norm=in
+14	jquac	ihcuac	ADV	_	_	16	advmod	16:advmod	Orig=inj·quac|Folio=6v,6v|Paragraph=3,3|Line=3,3|Norm=ihcuac|Gloss=en.el.momento
+15	teculutl	tecolotl	NOUN	_	State=Abs	16	nsubj	16:nsubj	Folio=6v|Paragraph=3|Line=3|Norm=tecolotl|Gloss=búho|Analysed=Yes
+16	chocaia	choca	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	11	advcl	11:advcl	Analysed=Yes|Folio=6v|Line=3|Norm=chocaya|Paragraph=3|SpaceAfter=No
+17	.	.	PUNCT	_	_	6	punct	6:punct	Folio=6v|Paragraph=3|Line=3|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:43
 # text = Ic macujlli capitulo, vncan mjtoa: in tetzaujtl catca, in jtechpa chiquatli.
 # text[norm] = Ic macuilli capítulo, oncan mihtoa: in tetzahuitl catca, in itechpa chicuatli.
