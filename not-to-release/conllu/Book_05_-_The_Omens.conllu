@@ -4543,29 +4543,29 @@
 # lemmatised = 100.00%
 # analysed = 100.00%
 # heads = 100.00%
-# relations = 31.82%
-1	Ic	ic	ADV	_	_	2	_	_	Folio=10v|Paragraph=5|Line=1|Norm=Ic
-2	matlactli	matlactli	NUM	_		4	_	_	Folio=10v|Paragraph=5|Line=1|Norm=matlactli|Gloss=diez|Analysed=Yes
-3	oce	ce	NUM	_	_	2	_	_	Folio=10v|Paragraph=5|Line=1|Norm=oce|Gloss=y.uno
-4	capitulo	capítulo	NOUN	_	State=Abs	7	_	_	Folio=10v|Paragraph=5|Line=1|Norm=capítulo|Analysed=Yes
-5	,	,	PUNCT	_		7	punct	_	Folio=10v|Paragraph=5|Line=1|Norm=,|Analysed=Yes
-6	vncan	oncan	ADV	_		7	_	_	Folio=10v|Paragraph=5|Line=1|Norm=oncan|Gloss=aquí|Analysed=Yes
-7	moteneoa	tenehua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	Folio=10v|Paragraph=5|Line=2|Norm=motenehua|Analysed=Yes
-8	in	in	DET|SCONJ	_	_	9	_	_	Orig=intetzaujtl|Folio=10v|Paragraph=5|Line=2|Norm=in
-9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	7	_	_	Orig=intetzaujtl|Folio=10v|Paragraph=5|Line=2|Norm=tetzahuitl|Analysed=Yes
-10	:	:	PUNCT	_		12	punct	_	Folio=10v|Paragraph=5|Line=2|Norm=:|Analysed=Yes
-11	injc	inic	SCONJ	_	_	12	_	_	Folio=10v|Paragraph=5|Line=2|Norm=inic
-12	motetzaujaia	tetzahuia	VERB	_	_	9	_	_	Orig=motetza¶·ujaia|Folio=10v,10v|Paragraph=5,5|Line=2,3|Norm=motetzahuiaya|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
-13	:	:	PUNCT	_		18	punct	_	Folio=10v|Paragraph=5|Line=3|Norm=:|Analysed=Yes
-14	in	in	DET|SCONJ	_	_	18	_	_	Orig=inj·quac|Folio=10v,10v|Paragraph=5,5|Line=3,3|Norm=in
-15	jquac	ihcuac	ADV	_	_	18	_	_	Orig=inj·quac|Folio=10v,10v|Paragraph=5,5|Line=3,3|Norm=ihcuac|Gloss=en.el.momento
-16	iooaltica	yohualtica	ADV	_		18	_	_	Folio=10v|Paragraph=5|Line=3|Norm=yohualtica|Temporal=Yes|Analysed=Yes
-17	,	,	PUNCT	_		18	punct	_	Folio=10v|Paragraph=5|Line=3|Norm=,|Analysed=Yes
-18	qujmjttaia	itta	VERB	_	Aspect=Imp|Number[obj]=Plur|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	12	_	_	Orig=quj·mj·ttaia¶|Folio=10v,10v,10v|Paragraph=5,5,5|Line=3,3,3|Norm=quimittaya|Analysed=Yes
-19	tlacaujaque	tlacahuiyac	NOUN	_	Number=Plur	18	_	_	Folio=10v|Paragraph=5|Line=4|Norm=tlacahuiyaque|Split=tlaca·huiyac|Analysed=Yes
-20	,	,	PUNCT	_		21	punct	_	Folio=10v|Paragraph=5|Line=4|Norm=,|Analysed=Yes
-21	qujnameti	quinametli	NOUN	_	State=Abs	19	_	_	Orig=quj·nameti|Folio=10v,10v|Paragraph=5,5|Line=4,4|Norm=quinametli|Gloss=gigante|Analysed=Yes
-22	.	.	PUNCT	_		7	punct	_	Folio=10v|Paragraph=5|Line=4|Norm=.|Analysed=Yes
+# relations = 100.00%
+1	Ic	ic	ADV	_	_	4	amod	4:amod	Folio=10v|Paragraph=5|Line=1|Norm=Ic
+2	matlactli	matlactli	NUM	_		1	nummod	1:nummod	Folio=10v|Paragraph=5|Line=1|Norm=matlactli|Gloss=diez|Analysed=Yes
+3	oce	ce	NUM	_	_	2	compound	2:compound	Folio=10v|Paragraph=5|Line=1|Norm=oce|Gloss=y.uno
+4	capitulo	capítulo	NOUN	_	State=Abs	7	obl	7:obl	Folio=10v|Paragraph=5|Line=1|Norm=capítulo|Analysed=Yes
+5	,	,	PUNCT	_		7	punct	7:punct	Folio=10v|Paragraph=5|Line=1|Norm=,|Analysed=Yes
+6	vncan	oncan	ADV	_		7	advmod	7:advmod	Folio=10v|Paragraph=5|Line=1|Norm=oncan|Gloss=aquí|Analysed=Yes
+7	moteneoa	tenehua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Folio=10v|Paragraph=5|Line=2|Norm=motenehua|Analysed=Yes
+8	in	in	DET	_	_	9	det	9:det	Orig=intetzaujtl|Folio=10v|Paragraph=5|Line=2|Norm=in
+9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	7	nsubj	7:nsubj	Orig=intetzaujtl|Folio=10v|Paragraph=5|Line=2|Norm=tetzahuitl|Analysed=Yes
+10	:	:	PUNCT	_		12	punct	12:punct	Folio=10v|Paragraph=5|Line=2|Norm=:|Analysed=Yes
+11	injc	inic	SCONJ	_	_	12	mark	12:mark	Folio=10v|Paragraph=5|Line=2|Norm=inic
+12	motetzaujaia	tetzahuia	VERB	_	_	9	acl	9:acl	Orig=motetza¶·ujaia|Folio=10v,10v|Paragraph=5,5|Line=2,3|Norm=motetzahuiaya|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
+13	:	:	PUNCT	_		18	punct	18:punct	Folio=10v|Paragraph=5|Line=3|Norm=:|Analysed=Yes
+14	in	in	SCONJ	_	_	18	mark	18:mark	Orig=inj·quac|Folio=10v,10v|Paragraph=5,5|Line=3,3|Norm=in
+15	jquac	ihcuac	ADV	_	_	18	advmod	18:advmod	Orig=inj·quac|Folio=10v,10v|Paragraph=5,5|Line=3,3|Norm=ihcuac|Gloss=en.el.momento
+16	iooaltica	yohualtica	ADV	_		18	advmod	18:advmod	Folio=10v|Paragraph=5|Line=3|Norm=yohualtica|Temporal=Yes|Analysed=Yes
+17	,	,	PUNCT	_		18	punct	18:punct	Folio=10v|Paragraph=5|Line=3|Norm=,|Analysed=Yes
+18	qujmjttaia	itta	VERB	_	Aspect=Imp|Number[obj]=Plur|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	12	advcl	12:advcl	Orig=quj·mj·ttaia¶|Folio=10v,10v,10v|Paragraph=5,5,5|Line=3,3,3|Norm=quimittaya|Analysed=Yes
+19	tlacaujaque	tlacahuiyac	NOUN	_	Number=Plur	18	obj	18:obj	Folio=10v|Paragraph=5|Line=4|Norm=tlacahuiyaque|Split=tlaca·huiyac|Analysed=Yes
+20	,	,	PUNCT	_		21	punct	21:punct	Folio=10v|Paragraph=5|Line=4|Norm=,|Analysed=Yes
+21	qujnameti	quinametli	NOUN	_	State=Abs	19	appos	19:appos	Orig=quj·nameti|Folio=10v,10v|Paragraph=5,5|Line=4,4|Norm=quinametli|Gloss=gigante|Analysed=Yes
+22	.	.	PUNCT	_		7	punct	7:punct	Folio=10v|Paragraph=5|Line=4|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:80
 # text = No yoan, netetzaujloia in tlacaujiac: in jquac iovaltica moteittitia, mjtoa: çan ie muche inaoal, inecuepaliz in tlacateculotl tezcatlipuca, much ic teca mocaiaoa: in jquac aca iuh qujmottitia, ie qujtetzauja in aco ie iaomjqujz, aco ie vicoz.
