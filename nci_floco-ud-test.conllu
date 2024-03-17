@@ -739,6 +739,48 @@
 22	conjtta	itta	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	14	parataxis:shared	14:parataxis:shared	Analysed=Yes|Folio=9r|Line=25|Norm=conitta|Paragraph=1|SpaceAfter=No
 23	.	.	PUNCT	_	_	14	punct	14:punct	Folio=9r|Paragraph=1|Line=25|Norm=.|Analysed=Yes
 
+# sent_id = Book_05_-_The_Omens.txt:70
+# text = No ipan qujmatia, ca ixiptla in tlacateculotl, tezcatlipuca: auh in jquac mjexi, in teiexi, qujtoaia: omjex in tezcatlipuca.
+# text[norm] = No ipan quimatia, ca ixiptla in tlacatecolotl, Tezcatlipoca: auh in ihcuac miyexi, in teiyexi, quihtoaya: omiyex in Tezcatlipoca.
+# text[orig] = No·ipan¶qujmatia·,·ca·ixiptla·in·tlacateculotl·,·tezcatlipuca·:·auh·inj·quac·mjexi·,·in¶teiexi·,·qujtoaia·:·omjex·intezca¶tlipuca·.
+# text[nhi] = Noyohqui oquinimiliaya, oquixhuicaya in tlacaticolotl, itoca Tezcatlipoca: huan cuando omiguixiya, oquihtoayah: omiguix Tezcatlipoca.
+# text[osp] = Tambien dezian, que este animalejo, era ymagen del dioa que llamauan Tezcatlipuca: y quando este animalejo, espelia aquella materia hedionda, que era la orina, o el mismo estiercol, o la ventosidad, dezian: Tezcatlipuca aventosiado.
+# text[osp_norm] = También decían, que este animalejo, era imagen del dios que llamaban <Tezcatlipoca>: y cuando este animalejo, espelía aquella materia hedionda, que era la orina, o el mismo estiércol, o la ventosidad, decían: <Tezcatlipoca> ha ventosiado.
+# text[spa] = También sobre él sabían, que era su imagen del demonio Tezcatlipoca: y cuando echaba un pedo, cuando le echaba un pedo a alguien, decían: Tezcatlipoca echó un pedo.
+# references = A&D/174:3
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/37
+1	No	no	ADV	_	_	3	advmod	3:advmod	Folio=9v|Paragraph=4|Line=7|Norm=No|Gloss=también|Analysed=Yes
+2	ipan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	3	obl	3:obl	Folio=9v|Paragraph=4|Line=7|Norm=ipan|Analysed=Yes
+3	qujmatia	matia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Analysed=Yes|Folio=9v|Line=8|Norm=quimatia|Paragraph=4|SpaceAfter=No
+4	,	,	PUNCT	_	_	6	punct	6:punct	Folio=9v|Paragraph=4|Line=8|Norm=,|Analysed=Yes
+5	ca	ca	PART	_	_	6	discourse	6:discourse	Folio=9v|Paragraph=4|Line=8|Norm=ca|AmbigNorm=True|Override=False
+6	ixiptla	ixiptlatl	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Pos	3	ccomp	3:ccomp	Folio=9v|Paragraph=4|Line=8|Norm=ixiptla|Gloss=su.imagen|Analysed=Yes
+7	in	in	DET	_	_	8	det	8:det	Folio=9v|Paragraph=4|Line=8|Norm=in
+8	tlacateculotl	tlacatecolotl	NOUN	_	State=Abs	6	nmod	6:nmod	Analysed=Yes|Folio=9v|Line=8|Norm=tlacatecolotl|Paragraph=4|SpaceAfter=No|Split=tlaca·tecolotl
+9	,	,	PUNCT	_	_	10	punct	10:punct	Folio=9v|Paragraph=4|Line=8|Norm=,|Analysed=Yes
+10	tezcatlipuca	Tezcatlipoca	PROPN	_	_	8	appos	8:appos	Analysed=Yes|Folio=9v|Line=9|Norm=Tezcatlipoca|Paragraph=4|SpaceAfter=No
+11	:	:	PUNCT	_	_	20	punct	20:punct	Folio=9v|Paragraph=4|Line=9|Norm=:|Analysed=Yes
+12	auh	auh	CCONJ	_	_	20	cc	20:cc	Folio=9v|Paragraph=4|Line=9|Norm=auh|Gloss=y
+13	in	in	SCONJ	_	_	15	mark	15:mark	Orig=inj·quac|Folio=9v,9v|Paragraph=4,4|Line=9,9|Norm=in
+14	jquac	ihcuac	ADV	_	_	15	advmod	15:advmod	Orig=inj·quac|Folio=9v,9v|Paragraph=4,4|Line=9,9|Norm=ihcuac|Gloss=en.el.momento
+15	mjexi	iyexi	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	20	advcl	20:advcl	Analysed=Yes|Folio=9v|Gloss=echa.un.pedo|Line=9|Norm=miyexi|Paragraph=4|SpaceAfter=No
+16	,	,	PUNCT	_	_	18	punct	18:punct	Folio=9v|Paragraph=4|Line=9|Norm=,|Analysed=Yes
+17	in	in	SCONJ	_	_	18	mark	18:mark	Folio=9v|Paragraph=4|Line=9|Norm=in
+18	teiexi	iyexi	VERB	_	Animacy[obj]=Hum|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	15	conj	15:conj	Analysed=Yes|Folio=9v|Line=10|Norm=teiyexi|Paragraph=4|SpaceAfter=No
+19	,	,	PUNCT	_	_	15	punct	20:punct	Folio=9v|Paragraph=4|Line=10|Norm=,|Analysed=Yes
+20	qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	3	conj	3:conj	Analysed=Yes|Folio=9v|Line=10|Norm=quihtoaya|Paragraph=4|SpaceAfter=No
+21	:	:	PUNCT	_	_	22	punct	22:punct	Folio=9v|Paragraph=4|Line=10|Norm=:|Analysed=Yes
+22	omjex	iyexi	VERB	_	Aspect=Prior|Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	20	parataxis:speech	20:parataxis:speech	Folio=9v|Paragraph=4|Line=10|Norm=omiyex|Gloss=echó.un.pedo|Analysed=Yes
+23	in	in	DET	_	_	24	det	24:det	Orig=intezca¶·tlipuca|Folio=9v,9v|Paragraph=4,4|Line=10,11|Norm=in
+24	tezcatlipuca	Tezcatlipoca	PROPN	_	_	22	nsubj	22:nsubj	Analysed=Yes|Folio=9v,9v|Line=10,11|Norm=Tezcatlipoca|Orig=intezca¶·tlipuca|Paragraph=4,4|SpaceAfter=No
+25	.	.	PUNCT	_	_	3	punct	3:punct	Folio=9v|Paragraph=4|Line=11|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:76
 # text = Ca ie no iuhquj, muchiuhquj: qujcenujca, qujcemjtoa in mjqujztetzaujtl.
 # text[norm] = Za ye no iuhqui, mochiuhqui: quicenhuica, quicemihtoa in miquiztetzahuitl.
