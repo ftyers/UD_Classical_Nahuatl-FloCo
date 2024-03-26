@@ -2822,38 +2822,46 @@
 # text = Injc iuh conaoa in, qujlmach iuhqujn ic onepatilo, ic queleltia, ic qujlochtia, ic qujiacatzacuilia, in jtenotzaliz: injc amo inpan neltiz, ic qujntzatzilia.
 # text[norm] = Inic iuh conahua in, quilmach iuhquin ic onepatilo, ic queleltia, ic quilochtia, ic quiyacatzacuilia, in itenotzaliz: inic amo inpan neltiz, ic quintzatzilia.
 # text[orig] = Injc·iuh¶conaoa·in·,·qujlmachiuhqujn·icone¶patilo·,·icqueleltia·,·ic·qujlochtia·,·ic¶qujiacatzacuilia·,·inj·tenotzaliz·:·injc¶amo·inpan·neltiz·,·icqujn·tzatzilia·.
-# tagged = 96.67%
-# analysed = 93.33%
-1	Injc	inic	SCONJ	_	_	3	_	_	_
-2	iuh	iuh	ADV	_	_	3	_	_	_
-3	conaoa	ahua	VERB	_	_	9	_	_	_
-4	in	in	DET|SCONJ	_	_	9	_	_	_
-5	,	,	PUNCT	_	_	9	punct	_	_
-6	qujlmach	_	ADV	_	_	9	_	_	_
-7	iuhqujn	iuhquin	ADV	_	_	9	_	_	_
-8	ic	ic	ADV	_	_	9	_	_	_
-9	onepatilo	_	VERB	_	_	0	root	_	_
-10	,	,	PUNCT	_	_	12	punct	_	_
-11	ic	ic	ADV	_	_	12	_	_	_
-12	queleltia	_	VERB	_	_	9	_	_	_
-13	,	,	PUNCT	_	_	15	punct	_	_
-14	ic	ic	ADV	_	_	15	_	_	_
-15	qujlochtia	ilochtia	VERB	_	_	12	_	_	_
-16	,	,	PUNCT	_	_	18	punct	_	_
-17	ic	ic	ADV	_	_	18	_	_	_
-18	qujiacatzacuilia	_	VERB	_	_	12	_	_	_
-19	,	,	PUNCT	_	_	21	punct	_	_
-20	in	in	DET|SCONJ	_	_	21	_	_	_
-21	jtenotzaliz	tenotzaliztli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	18	_	_	_
-22	:	:	PUNCT	_	_	26	punct	_	_
-23	injc	inic	SCONJ	_	_	26	_	_	_
-24	amo	amo	ADV	_	_	26	_	_	_
-25	inpan	_	NOUN	_	NounType=Relat	26	_	_	_
-26	neltiz	nelti	VERB	_	Number[subj]=Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	12	_	_	_
-27	,	,	PUNCT	_	_	29	punct	_	_
-28	ic	ic	ADV	_	_	29	_	_	_
-29	qujntzatzilia	_	VERB	_	_	26	_	_	_
-30	.	.	PUNCT	_	_	9	punct	_	_
+# text[osp] = Dezian; que por esto le iniuriauan desta manera: para escaparse del mal aguero, que pronosticaua: y para no ser obligados a cumplir, su llamamjento.
+# text[osp_norm] = Decían; que por esto le injuriaban de esta manera: para escaparse del mal agüero, que pronosticaba: y para no ser obligados a cumplir, su llamamiento.
+# references = A&D/169:6
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 30.00%
+1	Injc	inic	SCONJ	_	_	3	mark	3:mark	_
+2	iuh	iuh	ADV	_	_	3	advmod	3:advmod	_
+3	conaoa	ahua	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	7	advcl	7:advcl	_
+4	in	in	PRON	_	_	3	obj	3:obj	_
+5	,	,	PUNCT	_	_	7	punct	7:punct	_
+6	qujlmach	quilmach	ADV	_	_	7	advmod	7:advmod	_
+7-8	iuhqujn	_	_	_	_	_	_	_	_
+7	iuhquj	iuhquin	ADJ	_	_	0	root	0:root	_
+8	n	_	SCONJ	_	_	10	mark	10:mark	_
+9	ic	ic	NOUN	_	_	10	obl	10:obl	_
+10	onepatilo	pati	VERB	_	_	7	xcomp	7:xcomp	_
+11	,	,	PUNCT	_	_	13	punct	13:punct	_
+12	ic	ic	NOUN	_	_	13	obl	13:obl	_
+13	queleltia	elleltia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	10	conj	10:conj	_
+14	,	,	PUNCT	_	_	16	punct	16:punct	_
+15	ic	ic	NOUN	_	_	16	obl	16:obl	_
+16	qujlochtia	ilochtia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	10	conj	10:conj	_
+17	,	,	PUNCT	_	_	19	punct	19:punct	_
+18	ic	ic	NOUN	_	_	19	obl	19:obl	_
+19	qujiacatzacuilia	yacatzacuilia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	10	conj	10:conj	_
+20	,	,	PUNCT	_	_	22	punct	22:punct	_
+21	in	in	DET	_	_	22	det	22:det	_
+22	jtenotzaliz	tenotzaliztli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Pos	19	obj	19:obj	_
+23	:	:	PUNCT	_	_	27	punct	27:punct	_
+24	injc	inic	SCONJ	_	_	27	mark	27:mark	_
+25	amo	amo	ADV	_	_	27	advmod	27:advmod	_
+26	inpan	pan	NOUN	_	NounType=Relat|Number[psor]=Plur|Person[psor]=3|State=Pos	27	obl	27:obl	_
+27	neltiz	nelti	VERB	_	_	7	parataxis	7:parataxis	_
+28	,	,	PUNCT	_	_	30	punct	30:punct	_
+29	ic	ic	NOUN	_	_	30	obl	30:obl	_
+30	qujntzatzilia	tzatzilia	VERB	_	_	27	csubj	27:csubj	_
+31	.	.	PUNCT	_	_	7	punct	7:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:51
 # text = Ic chiquacen capitulo, vncan mjtoa: in tetzaujtl catca, injc motetzaujaia: in jquac aca qujttaia, cocamatl in teixpan tlaujltequja.
