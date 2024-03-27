@@ -484,6 +484,47 @@
 19	ticcaoazque	cahua	VERB	_	Number[obj]=Sing|Number[subj]=Plur|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Fut|VerbForm=Fin	13	parataxis:speech	13:parataxis:speech	Analysed=Yes|Folio=7v|Line=15|Norm=ticcahuazque|Orig=caticcaoazque|Paragraph=3|SpaceAfter=No
 20	.	.	PUNCT	_	_	13	punct	13:punct	Folio=7v|Paragraph=3|Line=15|Norm=.|Analysed=Yes
 
+# sent_id = Book_05_-_The_Omens.txt:49
+# text = Auh in cihoa conjluja, injc caoa: ma xitlamatpolotiuh, cujlonpul: cuix oticcoionj in tzontli ic natlitiaz: ca iamo cuel in njiaz.
+# text[norm] = Auh in cihua conilhuia, inic cahua: ma xitlamatpolotiuh, cuilonpol: cuix oticcoyoni in tzontli ic natlitiaz: ca yamo cuel in niyaz.
+# text[orig] = A·uh·incihoa·conjluja·,·injc¶caoa·:·maxitlamatpolotiuh·,·cujlon¶pul·:·cuix·oticcoionj·in·tzontli·icnatli¶tiaz·:·caiamo·cuel·innjiaz·.
+# text[osp] = Y si era muger la que oya, dezia le: vete day puto, as agujerado el cabello, con que tengo de beuer alla en el infierno: ante desto, no puedo yr.
+# text[osp_norm] = Y si era mujer la que oía, decíale: vete de ahí puto, has agujerado el cabello, con que tengo de beber allá en el infierno: ante de esto, no puedo ir.
+# references = A&D/169:5
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/41
+1	Auh	auh	CCONJ	_	_	4	cc	4:cc	Orig=A·uh|Folio=7v,7v|Paragraph=3,3|Line=26,26|Norm=Auh|Gloss=y
+2	in	in	DET	_	_	3	det	3:det	Orig=incihoa|Folio=7v|Paragraph=3|Line=26|Norm=in
+3	cihoa	cihuatl	NOUN	_	State=Abs	4	nsubj	4:nsubj	Orig=incihoa|Folio=7v|Paragraph=3|Line=26|Norm=cihua|Gloss=mujer|Analysed=Yes
+4	conjluja	ilhuia	VERB	_	_	0	root	0:root	Folio=7v|Line=26|Norm=conilhuia|Paragraph=3|SpaceAfter=No
+5	,	,	PUNCT	_	_	7	punct	7:punct	Folio=7v|Paragraph=3|Line=26|Norm=,|Analysed=Yes
+6	injc	inic	ADV	_	_	7	advmod	7:advmod	Folio=7v|Paragraph=3|Line=26|Norm=inic
+7	caoa	cahua	VERB	_	_	4	conj	4:conj	Folio=8r|Line=1|Norm=cahua|Paragraph=1|SpaceAfter=No
+8	:	:	PUNCT	_	_	10	punct	10:punct	Folio=8r|Paragraph=1|Line=1|Norm=:|Analysed=Yes
+9	ma	ma	AUX	_	_	10	aux	10:aux	Orig=maxitlamatpolotiuh|Folio=8r|Paragraph=1|Line=1|Norm=ma|Gloss=OPT
+10	xitlamatpolotiuh	tlamatpoloa	VERB	_	Mood=Imp|Number[subj]=Sing|Person[subj]=2|Purpose=And|Subcat=Intr|Tense=Pres|VerbForm=Fin	4	parataxis:speech	4:parataxis:speech	Analysed=Yes|Folio=8r|Line=1|Norm=xitlamatpolotiuh|Orig=maxitlamatpolotiuh|Paragraph=1|SpaceAfter=No|Split=xitlamat·polotiuh
+11	,	,	PUNCT	_	_	12	punct	12:punct	Folio=8r|Paragraph=1|Line=1|Norm=,|Analysed=Yes
+12	cujlonpul	cuilonpol	NOUN	_	State=Abs	10	vocative	10:vocative	Analysed=Yes|Folio=8r,8r|Gloss=sodomita|Line=1,2|Norm=cuilonpol|Orig=cujlon¶·pul|Paragraph=1,1|Root=cuiloni|SpaceAfter=No
+13	:	:	PUNCT	_	_	15	punct	15:punct	Folio=8r|Paragraph=1|Line=2|Norm=:|Analysed=Yes
+14	cuix	cuix	ADV	_	_	15	discourse	15:discourse	Folio=8r|Paragraph=1|Line=2|Norm=cuix|Gloss=quizás|Analysed=Yes
+15	oticcoionj	coyonia	VERB	_	Aspect=Prior|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=2|Subcat=Tran|Tense=Past|VerbForm=Fin	4	parataxis:speech	4:parataxis:speech	Folio=8r|Paragraph=1|Line=2|Norm=oticcoyoni|Analysed=Yes
+16	in	in	DET	_	_	17	det	17:det	Folio=8r|Paragraph=1|Line=2|Norm=in
+17	tzontli	tzontli	NOUN	_	State=Abs	15	obj	15:obj	Folio=8r|Paragraph=1|Line=2|Norm=tzontli|Gloss=cabellos|Analysed=Yes
+18	ic	ic	ADV	_	_	17	obl	17:obl	Orig=icnatli¶·tiaz|Folio=8r,8r|Paragraph=1,1|Line=2,3|Norm=ic
+19	natlitiaz	atlitia	VERB	_	Number[subj]=Sing|Person[subj]=1|Subcat=Intr|Tense=Fut|VerbForm=Fin	18	acl	18:acl	Analysed=Yes|Folio=8r,8r|Line=2,3|Norm=natlitiaz|Orig=icnatli¶·tiaz|Paragraph=1,1|SpaceAfter=No
+20	:	:	PUNCT	_	_	22	punct	22:punct	Folio=8r|Paragraph=1|Line=3|Norm=:|Analysed=Yes
+21	ca	ca	PART	_	_	22	discourse	22:discourse	Orig=caiamo|Folio=8r|Paragraph=1|Line=3|Norm=ca|AmbigNorm=True|Override=False
+22	iamo	yamo	ADV	_	_	4	parataxis:speech	4:parataxis:speech	Orig=caiamo|Folio=8r|Paragraph=1|Line=3|Norm=yamo|Split=ye·amo|Analysed=Yes
+23	cuel	cuel	ADV	_	_	22	advmod	22:advmod	Folio=8r|Paragraph=1|Line=3|Norm=cuel|Gloss=ya|Analysed=Yes
+24	in	in	SCONJ	_	_	25	mark	25:mark	Orig=innjiaz|Folio=8r|Paragraph=1|Line=3|Norm=in
+25	njiaz	ya	VERB	_	Number[subj]=Sing|Person[subj]=1|Subcat=Intr|Tense=Fut|VerbForm=Fin	22	csubj	22:csubj	Analysed=Yes|Folio=8r|Gloss=iré|Line=3|Norm=niyaz|Orig=innjiaz|Paragraph=1|SpaceAfter=No
+26	.	.	PUNCT	_	_	4	punct	4:punct	Folio=8r|Paragraph=1|Line=3|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:50
 # text = Injc iuh conaoa in, qujlmach iuhqujn ic onepatilo, ic queleltia, ic qujlochtia, ic qujiacatzacuilia, in jtenotzaliz: injc amo inpan neltiz, ic qujntzatzilia.
 # text[norm] = Inic iuh conahua in, quilmach iuhqui in ic onepatilo, ic queleltia, ic quilochtia, ic quiyacatzacuilia, in itenotzaliz: inic amo inpan neltiz, ic quintzatzilia.
