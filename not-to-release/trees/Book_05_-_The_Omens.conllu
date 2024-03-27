@@ -432,43 +432,51 @@
 
 # sent_id = Book_05_-_The_Omens.txt:9
 # text = Auh injn, ca oneltico: aco ie tocommaujcoz, in quenamj momaceval: ma ximellaquaoa, ma titlaocux, ixqujch motlapal: oc motepitziollo, oc mochoqujz, motlaocul ipan xonie.
-# text[norm] = Auh inin, ca oneltico: azo ye tocommahuizoz, in quenami momacehual: ma ximellacuahua, ma titlauhcox, ixquich motlapal: oc motepitzyollo, oc mochoquiz, motlauhcol ipan xoniye.
+# text[norm] = Auh inin, ca oneltico: azo ye tocommahuizoz, in quenami momacehual: ma ximellacuahua, ma titlaocox, ixquich motlapal: oc motepitzyollo, oc mochoquiz, motlaocol ipan xonye.
 # text[orig] = A·uh¶injn·,·caoneltico·:·aco·ie·tocommaujcoz·,·inquenamj·momaceval·:·maximella¶quaoa·,·matitlaocux·,·ixqujch·motla¶pal·:·oc·motepitziollo·,·oc·mochoqujz·,·motlaocul·ipan·xonie·.
-# tagged = 87.88%
-# analysed = 78.79%
-1	Auh	auh	CCONJ	_	_	5	_	_	_
-2	injn	_	DET|PRON	_	_	5	_	_	_
-3	,	,	PUNCT	_	_	5	punct	_	_
-4	ca	_	VERB	_	_	5	_	_	_
-5	oneltico	_	VERB	_	_	0	root	_	_
-6	:	:	PUNCT	_	_	9	punct	_	_
-7	aco	azo	ADV	_	_	9	_	_	_
-8	ie	ye	ADV	_	_	9	_	_	_
-9	tocommaujcoz	_	VERB	_	_	5	_	_	_
-10	,	,	PUNCT	_	_	13	punct	_	_
-11	in	in	DET|SCONJ	_	_	13	_	_	_
-12	quenamj	quenami	ADV	_	_	13	_	_	_
-13	momaceval	macehualli	NOUN	_	Number[psor]=Sing|Person[psor]=2|State=Poss	9	_	_	_
-14	:	:	PUNCT	_	_	16	punct	_	_
-15	ma	_	ADV	_	_	16	_	_	_
-16	ximellaquaoa	_	VERB	_	_	5	_	_	_
-17	,	,	PUNCT	_	_	19	punct	_	_
-18	ma	_	ADV	_	_	19	_	_	_
-19	titlaocux	_	VERB	_	_	16	_	_	_
-20	,	,	PUNCT	_	_	22	punct	_	_
-21	ixqujch	ixquich	NOUN	_	NounType=Relat	22	_	_	_
-22	motlapal	tlapalli	NOUN	_	Number[psor]=Sing|Person[psor]=2|State=Poss	19	_	_	_
-23	:	:	PUNCT	_	_	25	punct	_	_
-24	oc	oc	ADV	_	_	25	_	_	_
-25	motepitziollo	_	NOUN	_	_	31	_	_	_
-26	,	,	PUNCT	_	_	28	punct	_	_
-27	oc	oc	ADV	_	_	28	_	_	_
-28	mochoqujz	choquiztli	NOUN	_	Number[psor]=Sing|Person[psor]=2|State=Poss	25	_	_	_
-29	,	,	PUNCT	_	_	30	punct	_	_
-30	motlaocul	_	NOUN	_	_	25	_	_	_
-31	ipan	_	NOUN	_	NounType=Relat	32	obl	_	_
-32	xonie	_	X	_	_	16	_	_	_
-33	.	.	PUNCT	_	_	5	punct	_	_
+# text[osp] = Y esto, no soy yo el que te pongo espanto, o miedo: que el mismo señor dios quiso, que esto te acontesciesse, y vieniesse sobre ti: y no ay que culpar al animal, por que el, no sabe lo que se haze, porque carece de entendimiento de rrazon: y tu pobrezito, no deues deculpar a nadie: porque el signo en que naciste, tiene consigo estos azares, ya venido: agora auerificar se enti, la maldad del signo en que naciste: esfuerçate porque por esperiencia lo sentiras: mira que tengas buen animo para sufrirlo: y entre tanto llora, y haz penitencia.
+# text[osp_norm] = Y esto, no soy yo el que te pongo espanto, o miedo: que el mismo señor dios quiso, que esto te aconteciese, y viniese sobre ti: y no hay que culpar al animal, por que él, no sabe lo que se hace, porque carece de entendimiento de razón: y tú pobrecito, no debes de culpar a nadie: porque el signo en que naciste, tiene consigo estos azares, ya venido: ahora a verificarse en ti, la maldad del signo en que naciste: esfuérzate porque por experiencia lo sentirás: mira que tengas buen ánimo para sufrirlo: y entre tanto llora, y haz penitencia.
+# references = A&D/161:2
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 36.36%
+1	Auh	auh	CCONJ	_	_	5	cc	5:cc	_
+2	injn	inin	PRON	_	_	5	nsubj	5:nsubj	_
+3	,	,	PUNCT	_	_	5	punct	5:punct	_
+4	ca	cah|ca	PART	_	_	5	discourse	5:discourse	_
+5	oneltico	eltia	VERB	_	Aspect=Prior|Number[subj]=Plur,Sing|Person[subj]=3|Purpose=Ven|Reflex[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	0:root	_
+6	:	:	PUNCT	_	_	9	punct	9:punct	_
+7	aco	azo	ADV	_	_	9	advmod	9:advmod	_
+8	ie	ye	ADV	_	_	9	advmod	9:advmod	_
+9	tocommaujcoz	mahuizoa	VERB	_	Movement=And|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=2|Subcat=Tran|Tense=Fut|VerbForm=Fin	5	parataxis	5:parataxis	_
+10	,	,	PUNCT	_	_	13	punct	13:punct	_
+11	in	in	SCONJ	_	_	13	mark	13:mark	_
+12-13	quenamj	_	_	_	_	_	_	_	_
+12	quen	quenami	ADV	_	_	13	advmod	13:advmod	_
+13	amj	_	VERB	_	_	9	ccomp	9:ccomp	_
+14	momaceval	macehualli	NOUN	_	Number[psor]=Sing|Person[psor]=2|State=Pos	13	nsubj	13:nsubj	_
+15	:	:	PUNCT	_	_	17	punct	17:punct	_
+16	ma	ma	AUX	_	_	17	aux	17:aux	_
+17	ximellaquaoa	ellacuahua	VERB	_	Mood=Imp|Number[subj]=Sing|Person[subj]=2|Reflex[obj]=Yes|Subcat=Tran|VerbForm=Fin	5	parataxis	5:parataxis	_
+18	,	,	PUNCT	_	_	20	punct	20:punct	_
+19	ma	ma	AUX	_	_	20	aux	20:aux	_
+20	titlaocux	tlaocoya	VERB	_	Number[subj]=Sing|Person[subj]=2|Subcat=Intr|Tense=Past|VerbForm=Fin	17	conj	17:conj	_
+21	,	,	PUNCT	_	_	23	punct	23:punct	_
+22	ixqujch	ixquich	DET	_	_	23	det	23:det	_
+23	motlapal	tlapalli	NOUN	_	Number[psor]=Sing|Person[psor]=2|State=Pos	20	obj	20:obj	_
+24	:	:	PUNCT	_	_	26	punct	26:punct	_
+25	oc	oc	ADV	_	_	26	advmod	26:advmod	_
+26	motepitziollo	tepitzyollotl	NOUN	_	Number[psor]=Sing|Person[psor]=2|State=Pos	23	conj	23:conj	_
+27	,	,	PUNCT	_	_	29	punct	29:punct	_
+28	oc	oc	ADV	_	_	29	advmod	29:advmod	_
+29	mochoqujz	choquiztli	NOUN	_	Number[psor]=Sing|Person[psor]=2|State=Pos	32	nmod	32:nmod	_
+30	,	,	PUNCT	_	_	31	punct	31:punct	_
+31	motlaocul	tlaocolli	NOUN	_	Number[psor]=Sing|Person[psor]=2|State=Pos	29	conj	29:conj	_
+32	ipan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	5	parataxis	5:parataxis	_
+33	xonie	cah	VERB	_	Mood=Imp|Movement=And|Number[subj]=Sing|Person[subj]=2|Subcat=Intr|VerbForm=Fin	32	cop	32:cop	_
+34	.	.	PUNCT	_	_	5	punct	5:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:10
 # text = Ca izca, ca oc nen ic njmjtzpantia, njmjtzteteuhtia, ic njmjtzpatia, ic njmatzpaiaoalochtia: xitlamaceoa, ma iciuhca oniecauhtiuetzi, in amatzintli: in monextlaoal, onmuchioaz: xoconmococouj, in jzqujtlamantli in amatl: in copalli in olli &c.
@@ -3114,7 +3122,7 @@
 9	jquac	ihcuac	ADV	_	_	12	advmod	12:advmod	_
 10	aca	aca	PRON	_	_	11	nmod	11:nmod	_
 11	ichan	chantli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	12	obl	12:obl	_
-12	calaquja	_	VERB	_	_	14	advmod	14:advmod	_
+12	calaquja	_	VERB	_	_	14	advcl	14:advcl	_
 13	,	,	PUNCT	_	_	14	punct	14:punct	_
 14	qujtoa	ihtoa	VERB	_	Subcat=Tran	4	parataxis	4:parataxis	_
 15	in	in	DET	_	_	16	det	16:det	_
