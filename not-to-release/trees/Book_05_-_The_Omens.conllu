@@ -1242,50 +1242,60 @@
 
 # sent_id = Book_05_-_The_Omens.txt:21
 # text = Auh intla cana oimpan ioac, cana quaujtl itzintlan, anoço atlauhcamac, ommololoa, onmocemololoa, ommotepeuhtitlalia, monechicoa, qujcujtlalpia, qujcencujtlalpia, qujcemjlpia, qujcemmana in jntopil, in jpan qujxeoaia in inteouh: Yiacatecutli.
-# text[norm] = Auh intla cana oimpan yoac, cana cuauhuitl itzintlan, anozo atlauhcamac, ommololoa, onmocelmololohua, ommotepeuhtitlalia, monechicohua, quicuitlalpiya, quicencuitlalpiya, quicemilpiya, quicemmana in intopil, in ipan quixehuaya in inteouh: Yiacateuctli.
+# text[norm] = Auh intla cana o impan yoac, cana cuauhuitl itzintlan, anozo atlauhcamac, ommololoa, onmocemololoa, ommotepeuhtitlalia, monechicoa, quicuitlalpiya, quicencuitlalpiya, quicemilpiya, quicemmana in intopil, in ipan quixehuaya in inteouh: Yiacateuctli.
 # text[orig] = Auh·intlacana·oimpan·ioac·,·cana·quaujtl·itzintlan·,·anoço·a¶tlauhcamac·,·ommololoa·,·onmoce¶mololoa·,·ommotepeuhtitlalia·,·mo¶nechicoa·,·qujcujtlalpia·,·qujcen¶cujtlalpia·,·qujcemjlpia·,·qujcem¶mana·injntopil·,·injpanqujxeoaia¶ininteouh·:·Yiacatecutli·.
-# tagged = 97.44%
-# analysed = 76.92%
+# text[eng] = And if somewhere on them night fell, somewhere under a tree, or at the mouth of a gorge, they [...] their staffs, on which they represented their god: Yiacateuctli.
+# text[osp] = Y donde qujera que llegauan a dormir aquel dia: ora fuese de baxo de algun arbol, o debaxos de alguna lapa, o en alguna cueua: luego iuntauan todos sus bordones, o cañas de camjno que llenauan y los atauan todos iuntos, en vna gaujlla: entonce dezian, que aquellos topiles, asi todos atados iuntos: eran la ymagen de su dios Yiacatecutli: (que es el de los mercaderes, y tratantes).
+# text[osp_norm] = Y dondequiera que llegaban a dormir aquel día: ora fuese debajo de algún árbol, o debajo de alguna lapa, o en alguna cueva: luego juntaban todos sus bordones, o cañas de camino que llenaban y los ataban todos juntos, en una gavilla: entonces decían, que aquellos topiles, así todos atados juntos: eran la imagen de su dios <Yacateuctli>: (que es el de los mercaderes, y tratantes).
+# references = A&D/163:5
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
 1	Auh	auh	CCONJ	_	_	15	cc	15:cc	_
-2	intla	_	SCONJ	_	_	6	mark	6:mark	_
-3	cana	_	ADV	_	_	6	advmod	6:advmod	_
+2	intla	tla|intla	SCONJ	_	_	6	mark	6:mark	_
+3	cana	cana	ADV	_	_	6	advmod	6:advmod	_
 4-5	oimpan	_	_	_	_	_	_	_	_
-4	o	_	AUX	_	_	6	aux	6:aux	_
-5	impan	_	NOUN	_	_	6	obl	6:obl	_
+4	o	o	AUX	_	_	6	aux	6:aux	_
+5	impan	pan	NOUN	_	NounType=Relat|Number[psor]=Plur|Person[psor]=3|State=Pos	6	obl	6:obl	_
 6	ioac	yohuac	VERB	_	_	15	advcl	15:advcl	_
 7	,	,	PUNCT	_	_	15	punct	15:punct	_
-8	cana	_	ADV	_	_	15	advmod	15:advmod	_
+8	cana	cana	ADV	_	_	15	advmod	15:advmod	_
 9	quaujtl	cuauhuitl	NOUN	_	State=Abs	10	nmod	10:nmod	_
-10	itzintlan	_	NOUN	_	NounType=Relat	8	obl	8:obl	_
+10	itzintlan	tzintlan	NOUN	_	NounType=Relat	8	obl	8:obl	_
 11	,	,	PUNCT	_	_	13	punct	13:punct	_
 12	anoço	anozo	CCONJ	_	_	13	cc	13:cc	_
-13	atlauhcamac	_	ADV	_	_	10	conj	10:conj	_
+13	atlauhcamac	atlauhcamac	NOUN	_	NounClass=Loc	10	conj	10:conj	_
 14	,	,	PUNCT	_	_	15	punct	15:punct	_
-15	ommololoa	_	VERB	_	_	0	root	0:root	_
+15	ommololoa	ololoa	VERB	_	_	0	root	0:root	_
 16	,	,	PUNCT	_	_	17	punct	17:punct	_
-17	onmocemololoa	_	VERB	_	_	15	conj	15:conj	_
+17	onmocemololoa	ololoa	VERB	_	Movement=And|Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	15	conj	15:conj	_
+17.1	cem	cen	ADV	_	_	_	_	17:advmod	_
 18	,	,	PUNCT	_	_	19	punct	19:punct	_
-19	ommotepeuhtitlalia	tepeuhtitlalia	VERB	_	_	15	conj	15:conj	_
+19	ommotepeuhtitlalia	tepeuhtitlalia	VERB	_	Movement=And|Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	15	conj	15:conj	_
 20	,	,	PUNCT	_	_	21	punct	21:punct	_
-21	monechicoa	_	VERB	_	_	15	conj	15:conj	_
+21	monechicoa	nechicoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	15	conj	15:conj	_
 22	,	,	PUNCT	_	_	23	punct	23:punct	_
-23	qujcujtlalpia	_	VERB	_	_	15	conj	15:conj	_
+23	qujcujtlalpia	cuitlalpiya	VERB	_	Number[iobj]=Sing|Number[subj]=Plur,Sing|Person[iobj]=3|Person[subj]=3|Subcat=Ditr|Tense=Pres|VerbForm=Fin	15	conj	15:conj	_
 24	,	,	PUNCT	_	_	25	punct	25:punct	_
-25	qujcencujtlalpia	_	VERB	_	_	23	conj	23:conj	_
+25	qujcencujtlalpia	cuitlalpiya	VERB	_	Number[iobj]=Sing|Number[subj]=Plur,Sing|Person[iobj]=3|Person[subj]=3|Subcat=Ditr|Tense=Pres|VerbForm=Fin	23	conj	23:conj	_
+25.1	cen	cen	ADV	_	_	_	_	25:advmod	_
 26	,	,	PUNCT	_	_	27	punct	27:punct	_
-27	qujcemjlpia	_	VERB	_	_	23	conj	23:conj	_
+27	qujcemjlpia	ilpia	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	23	conj	23:conj	_
+27.1	cem	cen	ADV	_	_	_	_	27:advmod	_
 28	,	,	PUNCT	_	_	29	punct	29:punct	_
-29	qujcemmana	cemmana	VERB	_	_	23	conj	23:conj	_
+29	qujcemmana	cemmana	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	23	conj	23:conj	_
 30	in	in	DET	_	_	31	det	31:det	_
-31	jntopil	topilli	NOUN	_	Number[psor]=Plur|Person[psor]=3|State=Poss	23	obj	23:obj	_
+31	jntopil	topilli	NOUN	_	Number[psor]=Plur|Person[psor]=3|State=Pos	23	obj	23:obj	_
 32	,	,	PUNCT	_	_	35	punct	35:punct	_
 33	in	in	SCONJ	_	_	35	mark	35:mark	_
-34	jpan	_	NOUN	_	NounType=Relat	35	obl	35:obl	_
-35	qujxeoaia	ixehua	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	31	acl	31:acl	_
+34	jpan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	35	obl	35:obl	_
+35	qujxeoaia	ixehua	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	31	acl	31:acl	_
 36	in	in	DET	_	_	37	det	37:det	_
-37	inteouh	_	NOUN	_	_	35	obj	35:obj	_
+37	inteouh	teotl	NOUN	_	Number[psor]=Plur|Person[psor]=3|State=Pos	35	obj	35:obj	_
 38	:	:	PUNCT	_	_	39	punct	39:punct	_
-39	Yiacatecutli	Yacatecuhtli	PROPN	_	_	37	appos	37:appos	_
+39	Yiacatecutli	Yiacateuctli	PROPN	_	_	37	appos	37:appos	_
 40	.	.	PUNCT	_	_	15	punct	15:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:22
