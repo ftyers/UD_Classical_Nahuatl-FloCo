@@ -710,6 +710,39 @@
 15	cujtlapiltetepontic	cuitlapiltetepontic	ADJ	_	_	13	nmod	13:nmod	AltPos=VERB|Analysed=Yes|Folio=8v,8v|Line=9,10|Norm=cuitlapiltetepontic|Orig=cujtlapiltete¶·pontic|Paragraph=6,6|SpaceAfter=No|Split=cuitla·pil·tetepontic
 16	.	.	PUNCT	_	_	2	punct	2:punct	Folio=8v|Paragraph=6|Line=10|Norm=.|Analysed=Yes
 
+# sent_id = Book_05_-_The_Omens.txt:59
+# text = Ic chicuei capitulo, vncan mjtoa: in tetzaujtl, injc motetzaujaia: in jquac qujttaia pinaujztli.
+# text[norm] = Ic chicueyi capítulo, oncan mihtoa: in tetzahuitl, inic motetzahuiaya: in ihcuac quittaya pinahuiztli.
+# text[orig] = Ic·chicuei·capitulo·,·vncan·mjtoa·:·intetzaujtl·,·injc·motetzaujaia·:·inj¶quac·qujttaia·pinaujztli·.
+# text[osp] = Capitulo ocho, en que se tracta del mal aguero, que tomauan los naturales, desta nueua españa: quando encontrauan con una sauandija, o gusano que la llaman pinauiztli.
+# text[osp_norm] = Capítulo ocho, en que se trata del mal agüero, que tomaban los naturales, de esta Nueva España: cuando encontraban con una sabandija, o gusano que la llaman <pinahuiztli>.
+# references = A&D/172:1
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/16
+1	Ic	ic	ADV	_	_	3	amod	3:amod	Folio=8v|Paragraph=7|Line=1|Norm=Ic
+2	chicuei	chicueyi	NUM	_	_	1	nummod	1:nummod	Folio=8v|Paragraph=7|Line=1|Norm=chicueyi|Gloss=ocho|Analysed=Yes
+3	capitulo	capítulo	NOUN	_	State=Abs	6	obl	6:obl	Analysed=Yes|Folio=8v|Line=1|Norm=capítulo|Paragraph=7|SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	6:punct	Folio=8v|Paragraph=7|Line=1|Norm=,|Analysed=Yes
+5	vncan	oncan	ADV	_	_	6	advmod	6:advmod	Folio=8v|Paragraph=7|Line=1|Norm=oncan|Gloss=aquí|Analysed=Yes
+6	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Analysed=Yes|Folio=8v|Line=1|Norm=mihtoa|Paragraph=7|SpaceAfter=No
+7	:	:	PUNCT	_	_	9	punct	9:punct	Folio=8v|Paragraph=7|Line=1|Norm=:|Analysed=Yes
+8	in	in	SCONJ	_	_	9	mark	9:mark	Orig=intetzaujtl|Folio=8v|Paragraph=7|Line=2|Norm=in
+9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	csubj	6:csubj	Analysed=Yes|Folio=8v|Line=2|Norm=tetzahuitl|Orig=intetzaujtl|Paragraph=7|SpaceAfter=No
+10	,	,	PUNCT	_	_	12	punct	12:punct	Folio=8v|Paragraph=7|Line=2|Norm=,|Analysed=Yes
+11	injc	inic	SCONJ	_	_	12	mark	12:mark	Folio=8v|Paragraph=7|Line=2|Norm=inic
+12	motetzaujaia	tetzahuia	VERB	_	_	9	conj	9:conj	Ambiguous=Yes|Analysed=Yes|Folio=8v|Guessed=Yes|Line=2|Norm=motetzahuiaya|Paragraph=7|SpaceAfter=No
+13	:	:	PUNCT	_	_	16	punct	16:punct	Folio=8v|Paragraph=7|Line=2|Norm=:|Analysed=Yes
+14	in	in	SCONJ	_	_	16	mark	16:mark	Orig=inj¶·quac|Folio=8v,8v|Paragraph=7,7|Line=2,3|Norm=in
+15	jquac	ihcuac	ADV	_	_	16	advmod	16:advmod	Orig=inj¶·quac|Folio=8v,8v|Paragraph=7,7|Line=2,3|Norm=ihcuac|Gloss=en.el.momento
+16	qujttaia	itta	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	9	csubj	9:csubj	Folio=8v|Paragraph=7|Line=3|Norm=quittaya|Analysed=Yes
+17	pinaujztli	pinahuiztli	NOUN	_	State=Abs	16	obj	16:obj	Analysed=Yes|Folio=8v|Line=3|Norm=pinahuiztli|Paragraph=7|SpaceAfter=No
+18	.	.	PUNCT	_	_	6	punct	6:punct	Folio=8v|Paragraph=7|Line=3|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:60
 # text = No ioan, netetzaujloia in pinaujztli: iuhqujn tocatl tlatlauhquj, tlatlactic.
 # text[norm] = No ihuan, netetzahuiloya in pinahuiztli: iuhqui in tocatl tlatlauhqui, tlatlactic.

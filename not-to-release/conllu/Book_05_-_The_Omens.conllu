@@ -3496,25 +3496,25 @@
 # lemmatised = 100.00%
 # analysed = 100.00%
 # heads = 100.00%
-# relations = 33.33%
-1	Ic	ic	ADV	_	_	2	_	_	Folio=8v|Paragraph=7|Line=1|Norm=Ic
-2	chicuei	chicueyi	NUM	_		3	_	_	Folio=8v|Paragraph=7|Line=1|Norm=chicueyi|Gloss=ocho|Analysed=Yes
-3	capitulo	capítulo	NOUN	_	State=Abs	6	_	_	Folio=8v|Paragraph=7|Line=1|Norm=capítulo|Analysed=Yes
-4	,	,	PUNCT	_		6	punct	_	Folio=8v|Paragraph=7|Line=1|Norm=,|Analysed=Yes
-5	vncan	oncan	ADV	_		6	_	_	Folio=8v|Paragraph=7|Line=1|Norm=oncan|Gloss=aquí|Analysed=Yes
-6	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	Folio=8v|Paragraph=7|Line=1|Norm=mihtoa|Analysed=Yes
-7	:	:	PUNCT	_		9	punct	_	Folio=8v|Paragraph=7|Line=1|Norm=:|Analysed=Yes
-8	in	in	DET|SCONJ	_	_	9	_	_	Orig=intetzaujtl|Folio=8v|Paragraph=7|Line=2|Norm=in
-9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	_	_	Orig=intetzaujtl|Folio=8v|Paragraph=7|Line=2|Norm=tetzahuitl|Analysed=Yes
-10	,	,	PUNCT	_		12	punct	_	Folio=8v|Paragraph=7|Line=2|Norm=,|Analysed=Yes
-11	injc	inic	SCONJ	_	_	12	_	_	Folio=8v|Paragraph=7|Line=2|Norm=inic
-12	motetzaujaia	tetzahuia	VERB	_	_	9	_	_	Folio=8v|Paragraph=7|Line=2|Norm=motetzahuiaya|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
-13	:	:	PUNCT	_		16	punct	_	Folio=8v|Paragraph=7|Line=2|Norm=:|Analysed=Yes
-14	in	in	DET|SCONJ	_	_	16	_	_	Orig=inj¶·quac|Folio=8v,8v|Paragraph=7,7|Line=2,3|Norm=in
-15	jquac	ihcuac	ADV	_	_	16	_	_	Orig=inj¶·quac|Folio=8v,8v|Paragraph=7,7|Line=2,3|Norm=ihcuac|Gloss=en.el.momento
-16	qujttaia	itta	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	12	_	_	Folio=8v|Paragraph=7|Line=3|Norm=quittaya|Analysed=Yes
-17	pinaujztli	pinahuiztli	NOUN	_	State=Abs	16	_	_	Folio=8v|Paragraph=7|Line=3|Norm=pinahuiztli|Analysed=Yes
-18	.	.	PUNCT	_		6	punct	_	Folio=8v|Paragraph=7|Line=3|Norm=.|Analysed=Yes
+# relations = 100.00%
+1	Ic	ic	ADV	_	_	3	amod	3:amod	Folio=8v|Paragraph=7|Line=1|Norm=Ic
+2	chicuei	chicueyi	NUM	_		1	nummod	1:nummod	Folio=8v|Paragraph=7|Line=1|Norm=chicueyi|Gloss=ocho|Analysed=Yes
+3	capitulo	capítulo	NOUN	_	State=Abs	6	obl	6:obl	Folio=8v|Paragraph=7|Line=1|Norm=capítulo|Analysed=Yes
+4	,	,	PUNCT	_		6	punct	6:punct	Folio=8v|Paragraph=7|Line=1|Norm=,|Analysed=Yes
+5	vncan	oncan	ADV	_		6	advmod	6:advmod	Folio=8v|Paragraph=7|Line=1|Norm=oncan|Gloss=aquí|Analysed=Yes
+6	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Folio=8v|Paragraph=7|Line=1|Norm=mihtoa|Analysed=Yes
+7	:	:	PUNCT	_		9	punct	9:punct	Folio=8v|Paragraph=7|Line=1|Norm=:|Analysed=Yes
+8	in	in	SCONJ	_	_	9	mark	9:mark	Orig=intetzaujtl|Folio=8v|Paragraph=7|Line=2|Norm=in
+9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	csubj	6:csubj	Orig=intetzaujtl|Folio=8v|Paragraph=7|Line=2|Norm=tetzahuitl|Analysed=Yes
+10	,	,	PUNCT	_		12	punct	12:punct	Folio=8v|Paragraph=7|Line=2|Norm=,|Analysed=Yes
+11	injc	inic	SCONJ	_	_	12	mark	12:mark	Folio=8v|Paragraph=7|Line=2|Norm=inic
+12	motetzaujaia	tetzahuia	VERB	_	_	9	conj	9:conj	Folio=8v|Paragraph=7|Line=2|Norm=motetzahuiaya|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
+13	:	:	PUNCT	_		16	punct	16:punct	Folio=8v|Paragraph=7|Line=2|Norm=:|Analysed=Yes
+14	in	in	SCONJ	_	_	16	mark	16:mark	Orig=inj¶·quac|Folio=8v,8v|Paragraph=7,7|Line=2,3|Norm=in
+15	jquac	ihcuac	ADV	_	_	16	advmod	16:advmod	Orig=inj¶·quac|Folio=8v,8v|Paragraph=7,7|Line=2,3|Norm=ihcuac|Gloss=en.el.momento
+16	qujttaia	itta	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	9	csubj	9:csubj	Folio=8v|Paragraph=7|Line=3|Norm=quittaya|Analysed=Yes
+17	pinaujztli	pinahuiztli	NOUN	_	State=Abs	16	obj	16:obj	Folio=8v|Paragraph=7|Line=3|Norm=pinahuiztli|Analysed=Yes
+18	.	.	PUNCT	_		6	punct	6:punct	Folio=8v|Paragraph=7|Line=3|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:60
 # text = No ioan, netetzaujloia in pinaujztli: iuhqujn tocatl tlatlauhquj, tlatlactic.
