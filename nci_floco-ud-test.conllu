@@ -15,7 +15,7 @@
 # reviewers = ftyers rpugh
 # issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/14
 1	Jc	ic	ADV	_	_	3	amod	3:amod	Folio=1r|Paragraph=1|Line=1|Norm=Ic
-2	macujlli	macuilli	NUM	_	_	1	nummod	1:nummod	Folio=1r|Paragraph=1|Line=1|Norm=macuilli|Gloss=cinco
+2	macujlli	macuilli	NUM	_	_	1	nummod	1:nummod	Folio=1r|Paragraph=1|Line=1|Norm=macuilli|Gloss=cinco|Analysed=Yes
 3	amuxtli	amoxtli	NOUN	_	State=Abs	6	obl	6:obl	Analysed=Yes|Folio=1r|Gloss=libro|Line=1|Norm=amoxtli|Paragraph=1|SpaceAfter=No
 4	,	,	PUNCT	_	_	3	punct	6:punct	Folio=1r|Paragraph=1|Line=1|Norm=,|Analysed=Yes
 5	vncan	oncan	ADV	_	_	6	advmod	6:advmod	Folio=1r|Paragraph=1|Line=1|Norm=oncan|Gloss=aquí|Analysed=Yes
@@ -32,6 +32,45 @@
 16	iehoantin	yehhuan	PRON	_	Number=Plur|Person=3|PronType=Prs	13	nsubj	13:nsubj	Folio=1r|Paragraph=1|Line=3|Norm=yehhuantin|Gloss=ellos|Analysed=Yes
 17	mexica	mexicatl	NOUN	_	Number=Plur	16	appos	16:appos	Analysed=Yes|Folio=1r|Line=3|Norm=mexica|Paragraph=1|SpaceAfter=No
 18	.	.	PUNCT	_	_	6	punct	6:punct	Folio=1r|Paragraph=1|Line=3|Norm=.|Analysed=Yes
+
+# sent_id = Book_05_-_The_Omens.txt:7
+# text = Yn jqc oiuh ipan muchiuh, y: njman ic iauh, qujttaz in tonalpouhquj: vmpa quellaquaoa, qujtlapaloa: qujlvia.
+# text[norm] = In ihcuac oyouh ipan mochiuh, y: niman ic yauh, quittaz in tonalpouhqui: ompa quellacuahua, quitlahpaloa: quilhuia.
+# text[orig] = Y·njqc¶oiuh·ipan·muchiuh·,·y·:·njman·ic·iauh·,·qujttaz·intonalpouhquj·:·vmpa·quella¶quaoa·,·qujtlapaloa·:·qujlvia·.
+# text[osp] = Aujendo oydo este mal aguero: luego yua a buscar, a aquellos que sabian declarar estos agueros: a los quales llamauan tonalpouhque. // I este aguero, o adiuino consolava, y esfurçaua a este tal: diziendole desta manera.
+# text[osp_norm] = Habiendo oído este mal agüero: luego iba a buscar, a aquellos que sabían declarar estos agüeros: a los cuales llamaban tonalpouhque. // Y este agüero, o adivino consolaba, y esforzaba a este tal: diciéndole de esta manera.
+# text[spa] = Cuando eso pasó, entonces iba a ver el tonalpouhqui, donde éste le consolaba, le esforzaba, decía:
+# references = A&D/161:1
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/28
+1	Yn	in	SCONJ	_	_	3	mark	3:mark	Orig=Y·njqc¶|Folio=1v,1v|Paragraph=5,5|Line=14,14|Norm=In
+2	jqc	ihcuac	ADV	_	_	3	advmod	3:advmod	Orig=Y·njqc¶|Folio=1v,1v|Paragraph=5,5|Line=14,14|Norm=ihcuac|Gloss=en.el.momento
+3	oiuh	oyohua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	11	advcl	11:advcl	Folio=1v|Paragraph=5|Line=15|Norm=oyouh|Analysed=Yes
+4	ipan	pan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	5	obl	5:obl	Folio=1v|Paragraph=5|Line=15|Norm=ipan|Analysed=Yes
+5	muchiuh	chihua	VERB	_	_	3	csubj	3:csubj	Folio=1v|Line=15|Norm=mochiuh|Paragraph=5|SpaceAfter=No
+6	,	,	PUNCT	_	_	7	punct	7:punct	Folio=1v|Paragraph=5|Line=15|Norm=,|Analysed=Yes
+7	y	y	CCONJ	_	_	5	nsubj	5:nsubj	AmbigNorm=True|Folio=1v|Line=15|Norm=y|Override=False|Paragraph=5|SpaceAfter=No
+8	:	:	PUNCT	_	_	3	punct	11:punct	Folio=1v|Paragraph=5|Line=15|Norm=:|Analysed=Yes
+9	njman	niman	ADV	_	_	11	advmod	11:advmod	Folio=1v|Paragraph=5|Line=15|Norm=niman|Analysed=Yes
+10	ic	ic	ADV	_	_	11	advmod	11:advmod	Folio=1v|Paragraph=5|Line=15|Norm=ic
+11	iauh	ya	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Pres|VerbForm=Fin	0	root	0:root	Analysed=Yes|Folio=1v|Line=15|Norm=yauh|Paragraph=5|SpaceAfter=No
+12	,	,	PUNCT	_	_	13	punct	13:punct	Folio=1v|Paragraph=5|Line=15|Norm=,|Analysed=Yes
+13	qujttaz	itta	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Fut|VerbForm=Fin	11	advcl	11:advcl	Folio=1v|Paragraph=5|Line=16|Norm=quittaz|Analysed=Yes
+14	in	in	DET	_	_	15	det	15:det	Orig=intonalpouhquj|Folio=1v|Paragraph=5|Line=16|Norm=in
+15	tonalpouhquj	tonalpouhqui	NOUN	_	State=Abs	13	obj	13:obj	Analysed=Yes|Folio=1v|Line=16|Norm=tonalpouhqui|Orig=intonalpouhquj|Paragraph=5|SpaceAfter=No
+16	:	:	PUNCT	_	_	18	punct	18:punct	Folio=1v|Paragraph=5|Line=16|Norm=:|Analysed=Yes
+17	vmpa	ompa	ADV	_	_	18	advmod	18:advmod	Folio=1v|Paragraph=5|Line=16|Norm=ompa|Gloss=allá|Analysed=Yes
+18	quellaquaoa	ellacuahua	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	11	parataxis:shared	11:parataxis:shared	Analysed=Yes|Folio=1v,1v|Line=16,17|Norm=quellacuahua|Orig=quella¶·quaoa|Paragraph=5,5|SpaceAfter=No
+19	,	,	PUNCT	_	_	20	punct	20:punct	Folio=1v|Paragraph=5|Line=17|Norm=,|Analysed=Yes
+20	qujtlapaloa	tlahpaloa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	18	conj	18:conj	Analysed=Yes|Folio=1v|Line=17|Norm=quitlahpaloa|Paragraph=5|SpaceAfter=No
+21	:	:	PUNCT	_	_	22	punct	22:punct	Folio=1v|Paragraph=5|Line=17|Norm=:|Analysed=Yes
+22	qujlvia	ilhuia	VERB	_	_	11	parataxis:shared	11:parataxis:shared	Folio=1v|Line=17|Norm=quilhuia|Paragraph=5|SpaceAfter=No
+23	.	.	PUNCT	_	_	11	punct	11:punct	Folio=1v|Paragraph=5|Line=17|Norm=.|Analysed=Yes
 
 # sent_id = Book_05_-_The_Omens.txt:12
 # text = Ivin, in qujchioaia, motetzaujanj, motetzauj. etc.
@@ -433,7 +472,7 @@
 # reviewers = ftyers rpugh
 # issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/11
 1	Ic	ic	ADV	_	_	3	amod	3:amod	Folio=7v|Paragraph=2|Line=26|Norm=Ic
-2	macujlli	macuilli	NUM	_	_	1	nummod	1:nummod	Folio=7v|Paragraph=2|Line=26|Norm=macuilli|Gloss=cinco
+2	macujlli	macuilli	NUM	_	_	1	nummod	1:nummod	Folio=7v|Paragraph=2|Line=26|Norm=macuilli|Gloss=cinco|Analysed=Yes
 3	capitulo	capítulo	NOUN	_	State=Abs	6	obl	6:obl	Analysed=Yes|Folio=7v|Line=26|Norm=capítulo|Paragraph=2|SpaceAfter=No
 4	,	,	PUNCT	_	_	3	punct	6:punct	Folio=7v|Paragraph=2|Line=26|Norm=,|Analysed=Yes
 5	vncan	oncan	ADV	_	_	6	advmod	6:advmod	Folio=7v|Paragraph=2|Line=26|Norm=oncan|Gloss=aquí|Analysed=Yes
