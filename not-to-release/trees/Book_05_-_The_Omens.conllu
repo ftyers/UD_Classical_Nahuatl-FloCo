@@ -445,7 +445,7 @@
 1	Auh	auh	CCONJ	_	_	5	cc	5:cc	_
 2	injn	inin	PRON	_	_	5	nsubj	5:nsubj	_
 3	,	,	PUNCT	_	_	5	punct	5:punct	_
-4	ca	cah|ca	PART	_	_	5	discourse	5:discourse	_
+4	ca	ca	PART	_	_	5	discourse	5:discourse	_
 5	oneltico	eltia	VERB	_	Aspect=Prior|Number[subj]=Plur,Sing|Person[subj]=3|Purpose=Ven|Reflex[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	0:root	_
 6	:	:	PUNCT	_	_	9	punct	9:punct	_
 7	aco	azo	ADV	_	_	9	advmod	9:advmod	_
@@ -465,7 +465,7 @@
 20	titlaocux	tlaocoya	VERB	_	Number[subj]=Sing|Person[subj]=2|Subcat=Intr|Tense=Past|VerbForm=Fin	17	conj	17:conj	_
 21	,	,	PUNCT	_	_	23	punct	23:punct	_
 22	ixqujch	ixquich	DET	_	_	23	det	23:det	_
-23	motlapal	tlapalli	NOUN	_	Number[psor]=Sing|Person[psor]=2|State=Pos	20	obj	20:obj	_
+23	motlapal	tlapalli	NOUN	_	Number[psor]=Sing|Person[psor]=2|State=Pos	5	parataxis	5:parataxis	_
 24	:	:	PUNCT	_	_	26	punct	26:punct	_
 25	oc	oc	ADV	_	_	26	advmod	26:advmod	_
 26	motepitziollo	tepitzyollotl	NOUN	_	Number[psor]=Sing|Person[psor]=2|State=Pos	23	conj	23:conj	_
@@ -1349,25 +1349,25 @@
 # text[orig] = A·uh·onoce¶can·maqujca·,·acacotle·inpan¶muchioa·:·in·vncan·in·nemauhti¶aia·,·injnmaujzcujian·omuchiuh¶ca·.
 # tagged = 89.47%
 # analysed = 78.95%
-1	Auh	auh	CCONJ	_	_	4	cc	_	_
-2	onoce	_	ADV	_	_	4	advmod	_	_
-3	can	zan	ADV	_	_	4	advmod	_	_
-4	maqujca	maquiza	VERB	_	_	0	root	_	_
-5	,	,	PUNCT	_	_	9	punct	_	_
-6	acaco	_	ADV	_	_	9	advmod	_	_
-7	tle	tle	PRON	_	_	9	nsubj	_	_
-8	inpan	_	NOUN	_	NounType=Relat	9	obl	_	_
-9	muchioa	chihua	VERB	_	_	4	conj	_	_
-10	:	:	PUNCT	_	_	12	punct	_	_
-11	in	in	DET|SCONJ	_	_	12	_	_	_
-12	vncan	_	ADV	_	_	9	_	_	_
-13	in	in	SCONJ	_	_	14	mark	_	_
-14	nemauhtiaia	_	VERB	_	_	12	_	_	_
-15	,	,	PUNCT	_	_	17	punct	_	_
-16	in	in	SCONJ	_	_	17	_	_	_
-17	jnmaujzcujian	_	NOUN	_	_	12	_	_	_
-18	omuchiuhca	_	VERB	_	_	17	_	_	_
-19	.	.	PUNCT	_	_	4	punct	_	_
+1	Auh	auh	CCONJ	_	_	4	cc	4:cc	_
+2	onoce	_	ADV	_	_	4	advmod	4:advmod	_
+3	can	zan	ADV	_	_	4	advmod	4:advmod	_
+4	maqujca	maquiza	VERB	_	_	0	root	0:root	_
+5	,	,	PUNCT	_	_	9	punct	9:punct	_
+6	acaco	_	ADV	_	_	9	advmod	9:advmod	_
+7	tle	tle	PRON	_	_	9	nsubj	9:nsubj	_
+8	inpan	_	NOUN	_	NounType=Relat	9	obl	9:obl	_
+9	muchioa	chihua	VERB	_	_	4	conj	4:conj	_
+10	:	:	PUNCT	_	_	12	punct	12:punct	_
+11	in	in	DET	_	_	12	det	12:det	_
+12	vncan	_	NOUN	_	_	9	obl	9:obl	_
+13	in	in	SCONJ	_	_	14	mark	14:mark	_
+14	nemauhtiaia	_	VERB	_	_	12	advcl	12:advcl	_
+15	,	,	PUNCT	_	_	17	punct	17:punct	_
+16	in	in	DET	_	_	17	det	17:det	_
+17	jnmaujzcujian	_	NOUN	_	_	9	obl	9:obl	_
+18	omuchiuhca	_	VERB	_	_	17	advcl	17:advcl	_
+19	.	.	PUNCT	_	_	4	punct	4:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:24
 # text = Intla catle inpan omochiuh, ic oc ceppa achitzin, oalmoiolizcalia: oalaquetza onmoquaahaiouja: ic ommotonallalilia, injc intech oacca maujztli: auh in mauhcatlaca teteiccaoa, in amo tonalchicaoaque, in amo tonallapaliuj, ca ie in qujmattiuj, in qujmamattiuj: aocmo paquj, aoocmo tlatoa, aocmo naoati, aoccan auja in jiollo: ca tlanauhtiuj, in nenemj, ca imjtic tlacujcujlotiuj, in tleinmach qujlnamiquj: aiocmo iujian, in oc nen achi qujtoca tlalli: ca ie in qujmati, aco qujn cana in ie commonamjctizque, in tlein vel qujtoznequj, intetzauh omuchiuh: injc omotetzaujque.
@@ -1497,9 +1497,9 @@
 1	Ie	ye	ADV	_	_	2	advmod	2:advmod	_
 2	omjto	ihtoa	VERB	_	_	0	root	0:root	_
 3	,	,	PUNCT	_	_	6	punct	6:punct	_
-4	tel	tel	ADV	_	_	6	advmod	6:advmod	_
+4	tel	tel	CCONJ	_	_	6	cc	6:cc	_
 5	aiac	ayac	PRON	_	_	6	nsubj	6:nsubj	_
-6	qujmati	mati	VERB	_	_	2	parataxis	2:parataxis	_
+6	qujmati	mati	VERB	_	_	2	conj	2:conj	_
 7	,	,	PUNCT	_	_	11	punct	11:punct	_
 8	in	in	SCONJ	_	_	11	mark	11:mark	_
 9	aco	azo	ADV	_	_	11	advmod	11:advmod	_
@@ -1512,11 +1512,11 @@
 16	ca	ca	PART	_	_	19	discourse	19:discourse	_
 17	itlatol	tlahtolli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Pos	18	nmod	18:nmod	_
 18	itech	tech	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	19	obl	19:obl	_
-19	mocaquj	caqui	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	11	_	11	_
+19	mocaquj	caqui	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	11	parataxis	11:parataxis	_
 20	:	:	PUNCT	_	_	23	punct	23:punct	_
 21	injc	inic	SCONJ	_	_	23	mark	23:mark	_
 22	ome	ome	NUM	_	_	23	obl	23:obl	_
-23	vitz	huitza	NOUN	_	_	19	advcl	19:advcl	_
+23	vitz	huitza	VERB	_	_	19	advcl	19:advcl	_
 24	qujtoa	ihtoa	VERB	_	Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	23	parataxis	23:parataxis	_
 25	,	,	PUNCT	_	_	26	punct	26:punct	_
 26	qualli	cualli	ADJ	_	_	23	parataxis	23:parataxis	_
@@ -1552,17 +1552,17 @@
 18	qujcaquja	caqui	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	9	csubj	9:csubj	_
 19	,	,	PUNCT	_	_	24	punct	24:punct	_
 20	in	in	SCONJ	_	_	24	mark	24:mark	_
-21	juhquj	iuhqui	ADV	_	_	24	_	24	_
+21	juhquj	iuhqui	ADV	_	_	24	advmod	24:advmod	_
 22	aca	_	PRON	_	_	24	nsubj	24:nsubj	_
 23	,	,	PUNCT	_	_	24	punct	24:punct	_
-24	tlatepuzmjuja	tepozmihuia	VERB	_	_	18	_	18	_
+24	tlatepuzmjuja	tepozmihuia	VERB	_	_	18	csubj	18:csubj	_
 25	:	:	PUNCT	_	_	28	punct	28:punct	_
 26	in	in	SCONJ	_	_	28	mark	28:mark	_
-27	juhquj	iuhqui	ADV	_	_	28	_	28	_
+27	juhquj	iuhqui	ADV	_	_	28	advmod	28:advmod	_
 28	quauhxeloaia	_	VERB	_	_	24	conj	24:conj	_
 29	,	,	PUNCT	_	_	31	punct	31:punct	_
 30	in	in	SCONJ	_	_	31	mark	31:mark	_
-31	qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	9	_	9	_
+31	qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	6	parataxis	6:parataxis	_
 32	,	,	PUNCT	_	_	33	punct	33:punct	_
 33	ioaltepuztli	yohualtepoztli	NOUN	_	State=Abs	31	obj	31:obj	_
 34	.	.	PUNCT	_	_	6	punct	6:punct	_
@@ -2716,11 +2716,11 @@
 11	tzatzitiqujca	tzatzi	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr	7	conj	7:conj	_
 12	,	,	PUNCT	_	_	13	punct	13:punct	_
 13	qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	0:root	_
-14	ca	cah|ca	PART	_	_	16	discourse	16:discourse	_
+14	ca	ca	PART	_	_	16	discourse	16:discourse	_
 15	aiocmo	ayocmo	ADV	_	_	16	advmod	16:advmod	_
 16	qujcaz	quiza	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Fut|VerbForm=Fin	13	parataxis:speech	13:parataxis:speech	_
 17	:	:	PUNCT	_	_	19	punct	19:punct	_
-18	ca	cah|ca	PART	_	_	19	discourse	19:discourse	_
+18	ca	ca	PART	_	_	19	discourse	19:discourse	_
 19	ticcaoazque	cahua	VERB	_	Number[obj]=Sing|Number[subj]=Plur|Person[obj]=3|Person[subj]=1|Subcat=Tran|Tense=Fut|VerbForm=Fin	13	parataxis:speech	13:parataxis:speech	_
 20	.	.	PUNCT	_	_	13	punct	13:punct	_
 
@@ -3106,10 +3106,10 @@
 8	in	in	SCONJ	_	_	9	mark	9:mark	_
 9	tetzaujtl	tezahuitl	NOUN	_	State=Abs	6	csubj	6:csubj	_
 10	injc	inic	SCONJ	_	_	11	mark	11:mark	_
-11	motetxauja	tetzahuia	VERB	_	_	9	conj	9:conj	_
+11	motetxauja	tetzahuia	VERB	_	_	9	acl	9:acl	_
 12	,	,	PUNCT	_	_	14	punct	14:punct	_
-13	in	in	DET|SCONJ	_	_	14	_	14	_
-14	jtechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Poss	9	_	9	_
+13	in	in	SCONJ	_	_	14	mark	14:mark	_
+14	jtechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Poss	9	acl	9:acl	_
 15	tochin	tochin	NOUN	_	State=Abs	14	nmod	14:nmod	_
 16	:	:	PUNCT	_	_	19	punct	19:punct	_
 17	in	in	SCONJ	_	_	19	mark	19:mark	_
@@ -3896,29 +3896,29 @@
 # analysed = 100.00%
 # heads = 100.00%
 # relations = 30.43%
-1	Ic	ic	ADV	_	_	3	amod	_	_
-2	matlactli	matlactli	NUM	_	_	1	nummod	_	_
-3	capitulo	capítulo	NOUN	_	State=Abs	6	obl	_	_
-4	,	,	PUNCT	_	_	6	punct	_	_
-5	vncan	oncan	ADV	_	_	6	advmod	_	_
-6	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	:	:	PUNCT	_	_	9	punct	_	_
-8	in	in	DET|SCONJ	_	_	9	_	_	_
-9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	_	_	_
-10	injc	inic	SCONJ	_	_	11	_	_	_
-11	motetzaujaia	tetzahuia	VERB	_	_	9	_	_	_
-12	,	,	PUNCT	_	_	14	punct	_	_
-13	in	in	DET|SCONJ	_	_	14	_	_	_
-14	jntechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Plur|Person[psor]=3|State=Pos	11	_	_	_
-15	azcame	azcatl	NOUN	_	Number=Plur	14	_	_	_
-16	,	,	PUNCT	_	_	18	punct	_	_
-17	anoço	anozo	ADV	_	_	18	_	_	_
-18	cuecueia	cuecueya	NOUN	_	State=Abs	15	_	_	_
-19	:	:	PUNCT	_	_	20	punct	_	_
-20	ioan	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	15	_	_	_
-21	in	in	DET	_	_	22	det	_	_
-22	qujqujmjchtin	quimichin	NOUN	_	Number=Plur	20	nmod	_	_
-23	.	.	PUNCT	_	_	6	punct	_	_
+1	Ic	ic	ADV	_	_	3	amod	3:amod	_
+2	matlactli	matlactli	NUM	_	_	1	nummod	1:nummod	_
+3	capitulo	capítulo	NOUN	_	State=Abs	6	obl	6:obl	_
+4	,	,	PUNCT	_	_	6	punct	6:punct	_
+5	vncan	oncan	ADV	_	_	6	advmod	6:advmod	_
+6	mjtoa	ihtoa	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	_
+7	:	:	PUNCT	_	_	9	punct	9:punct	_
+8	in	in	DET	_	_	9	det	9:det	_
+9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	csubj	6:csubj	_
+10	injc	inic	SCONJ	_	_	11	mark	11:mark	_
+11	motetzaujaia	tetzahuia	VERB	_	_	9	acl	9:acl	_
+12	,	,	PUNCT	_	_	14	punct	14:punct	_
+13	in	in	SCONJ	_	_	14	mark	14:mark	_
+14	jntechpa	techpa	NOUN	_	NounType=Relat|Number[psor]=Plur|Person[psor]=3|State=Pos	9	acl	9:acl	_
+15	azcame	azcatl	NOUN	_	Number=Plur	14	nmod	14:nmod	_
+16	,	,	PUNCT	_	_	18	punct	18:punct	_
+17	anoço	anozo	CCONJ	_	_	18	cc	18:cc	_
+18	cuecueia	cuecueya	NOUN	_	State=Abs	15	conj	15:conj	_
+19	:	:	PUNCT	_	_	20	punct	20:punct	_
+20	ioan	huan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	15	conj	15:conj	_
+21	in	in	DET	_	_	22	det	22:det	_
+22	qujqujmjchtin	quimichin	NOUN	_	Number=Plur	20	nmod	20:nmod	_
+23	.	.	PUNCT	_	_	6	punct	6:punct	_
 
 # sent_id = Book_05_-_The_Omens.txt:74
 # text = No ioan, netetzaujloia in azcame, in tlatlauhque, anoço tliltique: in jquac aca, ichan molonj, moputza: qujnextiaia in tecocoliliztli: qujtoaia in jquac oittoque, aco aca totecocolicauh itla otechtoqujlico: iuh mjtoa, iuh nemacho in tlein qujtetoqujlia, tecocolianj: iehoan in mocuepa azcame, iquac in ie vecaoa, tlein oqujtocaque: muchi iehoan intech tlamj in tecocolianj, in temjqujtlanjnj, in temjqujztemachique, in temjqujztemachianj, in teveijecoanj, in atlaca in tlatlacateculo: in moteneoa, tepoloanj iehoa qujntoca, qujntlalia in azcame.
@@ -4204,7 +4204,7 @@
 6	vncan	oncan	ADV	_	_	7	advmod	7:advmod	_
 7	moteneoa	tenehua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	_
 8	in	in	DET	_	_	9	det	9:det	_
-9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	7	nsubj	7:nsubj	_
+9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	7	csubj	7:csubj	_
 10	:	:	PUNCT	_	_	12	punct	12:punct	_
 11	injc	inic	SCONJ	_	_	12	mark	12:mark	_
 12	motetzaujaia	tetzahuia	VERB	_	_	9	acl	9:acl	_
@@ -4524,9 +4524,9 @@
 14	:	:	PUNCT	_	_	19	punct	19:punct	_
 15	çan	zan	ADV	_	_	19	advmod	19:advmod	_
 16	ie	ye	ADV	_	_	19	advmod	19:advmod	_
-17	muchi	mochi	DET|PRON	_	_	19	_	19	_
-18	ieh	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	19	_	19	_
-19	inaoal	nahualli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	13	_	13	_
+17	muchi	mochi	DET	_	_	18	det	18:det	_
+18	ieh	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	19	nsubj	19:nsubj	_
+19	inaoal	nahualli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	13	csubj	13:csubj	_
 20	,	,	PUNCT	_	_	21	punct	21:punct	_
 21	inecuepaliz	necuepaliztli	NOUN	_	Number[psor]=Sing|Person[psor]=3|State=Poss	19	conj	19:conj	_
 22	,	,	PUNCT	_	_	23	punct	23:punct	_
@@ -5285,7 +5285,7 @@
 2	chiqujmoli	chiquimoli	NOUN	_	State=Abs	6	nsubj	6:nsubj	_
 3	,	,	PUNCT	_	_	6	punct	6:punct	_
 4-5	cacentetl	_	_	_	_	_	_	_	_
-4	ca	cah|ca	PART	_	_	6	discourse	6:discourse	_
+4	ca	ca	PART	_	_	6	discourse	6:discourse	_
 5	centetl	ce	NUM	_	NumType=Clf	6	nummod	6:nummod	_
 6	tototl	tototl	NOUN	_	State=Abs	0	root	0:root|10:nsubj	_
 7	,	,	PUNCT	_	_	8	punct	8:punct	_
@@ -5360,7 +5360,7 @@
 # relations = 30.00%
 1	Qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	0	root	0:root	_
 2	,	,	PUNCT	_	_	5	punct	5:punct	_
-3	ca	cah|ca	PART	_	_	5	discourse	5:discourse	_
+3	ca	ca	PART	_	_	5	discourse	5:discourse	_
 4	in	in	SCONJ	_	_	5	mark	5:mark	_
 5	tezcatlipuca	Tezcatlipoca	PROPN	_	_	1	parataxis:speech	1:parataxis:speech	_
 6	:	:	PUNCT	_	_	8	punct	8:punct	_

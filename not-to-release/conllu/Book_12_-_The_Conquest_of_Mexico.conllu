@@ -7814,7 +7814,7 @@
 88	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=23|Paragraph=2|Line=12|Norm=in
 89	ma	ma	AUX	_	_	_	_	_	Folio=23|Paragraph=2|Line=12|Norm=ma|Gloss=OPT
 90	iuhquj	iuhqui	ADV	_		_	_	_	Orig=iuh¶·quj|Folio=23,23|Paragraph=2,2|Line=12,13|Norm=iuhqui|Gloss=así|Analysed=Yes
-91	quaquachictin	_	PROPN	_	_	_	_	_	Orig=qua·qua·chictin|Folio=23,23,23|Paragraph=2,2,2|Line=13,13,13|Norm=Cuacuachictin
+91	quaquachictin	_	PROPN	_	_	_	_	_	Orig=qua·qua·chictin|Folio=23,23,23|Paragraph=2,2,2|Line=13,13,13|Norm=Cuacuachictin|AmbigNorm=True|Override=False
 92	,	,	PUNCT	_		_	_	_	Folio=23|Paragraph=2|Line=13|Norm=,|Analysed=Yes
 93	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=23|Paragraph=2|Line=13|Norm=in
 94	ma	ma	AUX	_	_	_	_	_	Folio=23|Paragraph=2|Line=13|Norm=ma|Gloss=OPT
@@ -12991,7 +12991,7 @@
 50	,	,	PUNCT	_		_	_	_	Folio=40|Paragraph=2|Line=2|Norm=,|Analysed=Yes
 51	qujqujnacaia	quiquinaca	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	_	_	_	Orig=qujquj·nacaia|Folio=40,40|Paragraph=2,2|Line=2,2|Norm=quiquinacaya|Analysed=Yes
 52	,	,	PUNCT	_		_	_	_	Folio=40|Paragraph=2|Line=2|Norm=,|Analysed=Yes
-53	ooiovaia	oyohua	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	_	_	_	Orig=oo¶·iovaia|Folio=40,40|Paragraph=2,2|Line=2,3|Norm=ooyohuaya|Analysed=Yes
+53	ooiovaia	oyohua	VERB	_	Aspect=Prior|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Intr|Tense=Past|VerbForm=Fin	_	_	_	Orig=oo¶·iovaia|Folio=40,40|Paragraph=2,2|Line=2,3|Norm=ooyohuaya|Analysed=Yes
 54	,	,	PUNCT	_		_	_	_	Folio=40|Paragraph=2|Line=3|Norm=,|Analysed=Yes
 55	moquaquacuecuechoaia	_	VERB	_	_	_	_	_	Orig=moquaquacuecue¶·choaia|Folio=40,40|Paragraph=2,2|Line=3,4|Norm=mocuacuacuecuechoaya|Guessed=Yes
 56	.	.	PUNCT	_		_	_	_	Folio=40|Paragraph=2|Line=4|Norm=.|Analysed=Yes
@@ -15383,7 +15383,7 @@
 93	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=48|Paragraph=2|Line=10|Norm=in
 94	maca	maca	ADV	_		_	_	_	Folio=48|Paragraph=2|Line=10|Norm=maca|Analysed=Yes
 95	innemachpan	nemachpan	NOUN	_	NounClass=Loc|Number[psor]=Plur|Person[psor]=3|State=Pos	_	_	_	Orig=inne·machpan|Folio=48,48|Paragraph=2,2|Line=11,11|Norm=innemachpan|Analysed=Yes
-96	inpã	pan	NOUN	_	NounType=Relat|Number[psor]=Plur|Person[psor]=3|State=Pos	_	_	_	Folio=48|Paragraph=2|Line=11|Norm=inpan|Analysed=Yes
+96	inpã	pan	NOUN	_	NounType=Relat|Number[psor]=Plur|Person[psor]=3|State=Pos	_	_	_	Folio=48|Paragraph=2|Line=11|Norm=inpan|AmbigNorm=True|Override=False|Analysed=Yes
 97	valcholoti	_	X	_	_	_	_	_	Folio=48|Paragraph=2|Line=11|Norm=hualcholoti
 98	.	.	PUNCT	_		_	_	_	Folio=48|Paragraph=2|Line=11|Norm=.|Analysed=Yes
 
@@ -15496,11 +15496,11 @@
 
 # sent_id = Book_12_-_The_Conquest_of_Mexico.tokenised:350
 # text = Auh in jquac ie iativi, qujmjcavatztivi in maceoaltin, çan vecapa; njman ic ommotlalito in Aztaquemecan: icxitlan itzintlã in iehoatl tepetl Aztaquemecã, in vncan motlalique tlatzintlan: itocaiocan çacamulco, no tlacpac, ololtontli in tepetl: no vncan icac otonteucalli, oncan in õmocaltemato, çan no impan macauh aocmo impan acito in maceoaltin, çan novian cactoc in calli, cacactivetz in calli.
-# text[norm] = Auh in ihcuac ye yatihui, quimicahuatztihui in macehualtin, zan huecapa; niman ic ommotlalito in Aztaquemecan: icxitlan itzintlan in yehhuatl tepetl Aztaquemecan, in oncan motlalique tlatzintlan: itocayocan zacamolco, no tlacpac, ololtontli in tepetl: no oncan icac otonteocalli, oncan in ommocaltemato, zan no impan macauh ayocmo impan acito in macehualtin, zan nohuian cactoc in calli, cacatihuetz in calli.
+# text[norm] = Auh in ihcuac ye yatihui, quimicahuatztihui in macehualtin, zan huecapa; niman ic ommotlalito in Aztaquemecan: icxitlan itzintl; in yehhuatl tepetl Aztaquemecan, in oncan motlalique tlatzintlan: itocayocan zacamolco, no tlacpac, ololtontli in tepetl: no oncan icac otonteocalli, oncan in ommocaltemato, zan no impan macauh ayocmo impan acito in macehualtin, zan nohuian cactoc in calli, cacatihuetz in calli.
 # text[orig] = Auh·inj·quac¶ie·ia·tivi·,·qujmjcavatz·tivi·in¶maceoaltin·,·çan·vecapa·;·nj¶man·ic·om·mo·tlalito·in·Azta¶quemecan·:·icxitlan·itzintlã¶in·iehoatl·tepetl·Azta·quemecã·,·in·vncan·mo·tlalique·tlatzin¶tlan·:·ito·caio·can·çaca·mulco·,·no·tlacpac·,·ololtontli·in·te¶petl·:·no·vncan·icac·otonteu¶calli·,·oncan·in·õmocal·tema¶to·,·çan·no·impan·macauh¶aoc·mo·impan·acito·in·mace¶oaltin·,·çan·novian·cactoc¶in·calli·,·cacacti·vetz·in·calli·.
-# tagged = 92.86%
-# lemmatised = 85.71%
-# analysed = 87.14%
+# tagged = 91.43%
+# lemmatised = 84.29%
+# analysed = 85.71%
 1	Auh	auh	CCONJ	_	_	_	_	_	Folio=49|Paragraph=1|Line=2|Norm=Auh|Gloss=y
 2	in	in	DET|SCONJ|PRON	_	_	_	_	_	Orig=in·j·quac¶|Folio=49,49|Paragraph=1,1|Line=2,2|Norm=in
 3	jquac	ihcuac	ADV	_	_	_	_	_	Orig=in·j·quac¶|Folio=49,49|Paragraph=1,1|Line=2,2|Norm=ihcuac|Gloss=en.el.momento
@@ -15521,7 +15521,7 @@
 18	Aztaquemecan	_	PROPN	_	_	_	_	_	Orig=Azta¶·quemecan|Folio=49,49|Paragraph=1,1|Line=5,6|Norm=Aztaquemecan
 19	:	:	PUNCT	_		_	_	_	Folio=49|Paragraph=1|Line=6|Norm=:|Analysed=Yes
 20	icxitlan	icxitlan	NOUN	_	NounType=Relat|Number[psor]=Sing|Person[psor]=3|State=Pos	_	_	_	Folio=49|Paragraph=1|Line=6|Norm=icxitlan|AmbigNorm=True|Override=False|Analysed=Yes
-21	itzintlã	tzintlan	NOUN	_	NounType=Relat	_	_	_	Folio=49|Paragraph=1|Line=6|Norm=itzintlan|Locative=Yes
+21	itzintlã	_	X	_	_	_	_	_	Folio=49|Paragraph=1|Line=6|Norm=itzintl;|AmbigNorm=True|Override=False
 22	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=49|Paragraph=1|Line=7|Norm=in
 23	iehoatl	yehhuatl	PRON	_	Number=Sing|Person=3|PronType=Prs	_	_	_	Folio=49|Paragraph=1|Line=7|Norm=yehhuatl|Gloss=él|Analysed=Yes
 24	tepetl	tepetl	NOUN	_	State=Abs	_	_	_	Folio=49|Paragraph=1|Line=7|Norm=tepetl|Gloss=monte|Analysed=Yes
@@ -17409,7 +17409,7 @@
 3	acaleque	_	X	_	_	_	_	_	Folio=55|Paragraph=1|Line=19|Norm=acaleque
 4	qujmacaltenque	_	X	_	_	_	_	_	Orig=qujmacal·tenque|Folio=55,55|Paragraph=1,1|Line=19,19|Norm=quimacaltenque
 5	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=55|Paragraph=1|Line=19|Norm=in
-6	impilhoantzitzin	pilli	NOUN	_	Number=Plur|Number[psor]=Plur|Person[psor]=3|Reverential=Yes|State=Pos	_	_	_	Orig=im·pilhoantzitzin|Folio=55,55|Paragraph=1,1|Line=20,20|Norm=impilhuantzitzin|Analysed=Yes
+6	impilhoantzitzin	pilli	NOUN	_	Number=Plur|Number[psor]=Plur|Person[psor]=3|Reverential=Yes|State=Pos	_	_	_	Orig=im·pilhoantzitzin|Folio=55,55|Paragraph=1,1|Line=20,20|Norm=impilhuantzitzin|AmbigNorm=True|Override=False|Analysed=Yes
 7	,	,	PUNCT	_		_	_	_	Folio=55|Paragraph=1|Line=20|Norm=,|Analysed=Yes
 8	qujntlanelhuja	_	VERB	_	_	_	_	_	Orig=qujntlanel¶·huja|Folio=55,55|Paragraph=1,1|Line=20,21|Norm=quintlanelhuia|Ambiguous=Yes|Analysed=Yes|Guessed=Yes
 9	,	,	PUNCT	_		_	_	_	Folio=55|Paragraph=1|Line=21|Norm=,|Analysed=Yes
@@ -18285,7 +18285,7 @@
 60	:	:	PUNCT	_		_	_	_	Folio=58|Paragraph=1|Line=20|Norm=:|Analysed=Yes
 61	auh	auh	CCONJ	_	_	_	_	_	Folio=58|Paragraph=1|Line=20|Norm=auh|Gloss=y
 62	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=58|Paragraph=1|Line=20|Norm=in
-63	quaquachictin	_	PROPN	_	_	_	_	_	Orig=quaquachic¶·tin|Folio=58,58|Paragraph=1,1|Line=20,21|Norm=Cuacuachictin
+63	quaquachictin	_	PROPN	_	_	_	_	_	Orig=quaquachic¶·tin|Folio=58,58|Paragraph=1,1|Line=20,21|Norm=Cuacuachictin|AmbigNorm=True|Override=False
 64	in	in	DET|SCONJ|PRON	_	_	_	_	_	Orig=in·jxqujchtin|Folio=58|Paragraph=1|Line=21|Norm=in
 65	jxqujchtin	ixquich	PRON	_	_	_	_	_	Orig=in·jxqujchtin|Folio=58|Paragraph=1|Line=21|Norm=ixquichtin|Gloss=todos
 66	in	in	DET|SCONJ|PRON	_	_	_	_	_	Folio=58|Paragraph=1|Line=21|Norm=in
@@ -24885,7 +24885,7 @@
 21	mottac	itta	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Past|VerbForm=Fin	_	_	_	Folio=79|Paragraph=3|Line=5|Norm=mottac|Analysed=Yes
 22	Eztetl	eztetl	NOUN	_	State=Abs	_	_	_	Folio=79|Paragraph=3|Line=5|Norm=Eztetl|Analysed=Yes
 23	:	:	PUNCT	_		_	_	_	Folio=79|Paragraph=3|Line=5|Norm=:|Analysed=Yes
-24	iuhq'nma	iuhquinma	SCONJ	_		_	_	_	Orig=iuhq'n¶·ma|Folio=79,79|Paragraph=3,3|Line=5,6|Norm=iuhquinma|Analysed=Yes
+24	iuhq'nma	iuhquinma	SCONJ	_		_	_	_	Orig=iuhq'n¶·ma|Folio=79,79|Paragraph=3,3|Line=5,6|Norm=iuhquinma|AmbigNorm=True|Override=False|Analysed=Yes
 25	ilhujcacpa	_	X	_	_	_	_	_	Orig=ilhuj·cacpa|Folio=79,79|Paragraph=3,3|Line=6,6|Norm=ilhuicacpa
 26	valla	hualla	VERB	_	_	_	_	_	Folio=79|Paragraph=3|Line=6|Norm=hualla
 27	.	.	PUNCT	_		_	_	_	Folio=79|Paragraph=3|Line=6|Norm=.|Analysed=Yes
