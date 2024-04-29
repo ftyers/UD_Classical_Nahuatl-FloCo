@@ -255,6 +255,55 @@
 39	Yiacatecutli	Yiacateuctli	PROPN	_	_	37	appos	37:appos	Analysed=Yes|Folio=4r|Line=1|Norm=Yiacateuctli|Paragraph=1|SpaceAfter=No
 40	.	.	PUNCT	_	_	15	punct	15:punct	Folio=4r|Paragraph=1|Line=1|Norm=.|Analysed=Yes
 
+# sent_id = Book_05_-_The_Omens.txt:26
+# text = Ic ei capitulo, vncan moteneoa: in tetzaujtl catca, in tetzammachoia: in jquac iooltica qujcaquja, in juhquj aca, tlatepuzmjuja: in juhquj quauhxeloaia, in qujtoaia, ioaltepuztli.
+# text[norm] = Ic eyi capítulo, oncan motenehua: in tetzahuitl catca, in tetzammachoya: in ihcuac yohualtica quicaquiya, in iuhqui aca, tlatepozmihuia: in iuhqui cuauhxeloaya, in quihtoaya, yohualtepoztli.
+# text[orig] = Ic·ei·capitulo·,·vncan·motene¶oa·:·intetzaujtl·catca·,·intetzam¶machoia·:·injquac·iooltica·quj¶caquja·,·injuhquj·aca·,·tlatepuzmj¶uja·:·injuhquj·quauhxeloaia·,·in¶qujtoaia·,·ioaltepuztli·.
+# text[osp] = Capitulo tercero, del aguero que tomauan: quando oyan denoche algunos golpes, como dequjen esta cortando madera. Quando alguno de noche oya golpes, como dequjen corta leña de noche: tomaua mal aguero: a este llamauan Iooaltepuztli, [...]
+# text[osp_norm] = Capítulo tercero, del agüero que tomaban: cuando oían de noche algunos golpes, como de quien está cortando madera. Cuando alguno de noche oía golpes, como de quien corta leña de noche: tomaba mal agüero: a éste llamaban <Yohualtepoztli>, [...]
+# references = A&D/165:1
+# tagged = 100.00%
+# lemmatised = 100.00%
+# analysed = 100.00%
+# heads = 100.00%
+# relations = 100.00%
+# reviewers = ftyers rpugh
+# issue = https://github.com/ftyers/UD_Classical_Nahuatl-FloCo/issues/50
+1	Ic	ic	ADV	_	_	3	amod	3:amod	Folio=4v|Paragraph=3|Line=1|Norm=Ic
+2	ei	eyi	NUM	_	_	1	nummod	1:nummod	Folio=4v|Paragraph=3|Line=1|Norm=eyi|Gloss=tres|Analysed=Yes
+3	capitulo	capítulo	NOUN	_	State=Abs	6	obl	6:obl	Analysed=Yes|Folio=4v|Line=1|Norm=capítulo|Paragraph=3|SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	6:punct	Folio=4v|Paragraph=3|Line=1|Norm=,|Analysed=Yes
+5	vncan	oncan	ADV	_	_	6	advmod	6:advmod	Folio=4v|Paragraph=3|Line=1|Norm=oncan|Gloss=aquí|Analysed=Yes
+6	moteneoa	tenehua	VERB	_	Number[subj]=Plur,Sing|Person[subj]=3|Reflex[obj]=Yes|Subcat=Tran|Tense=Pres|VerbForm=Fin	0	root	0:root	Analysed=Yes|Folio=4v,4v|Line=1,2|Norm=motenehua|Orig=motene¶·oa|Paragraph=3,3|SpaceAfter=No
+7	:	:	PUNCT	_	_	9	punct	9:punct	Folio=4v|Paragraph=3|Line=2|Norm=:|Analysed=Yes
+8	in	in	SCONJ	_	_	9	mark	9:mark	Orig=intetzaujtl|Folio=4v|Paragraph=3|Line=2|Norm=in
+9	tetzaujtl	tetzahuitl	NOUN	_	State=Abs	6	csubj	6:csubj	Orig=intetzaujtl|Folio=4v|Paragraph=3|Line=2|Norm=tetzahuitl|Analysed=Yes
+10	catca	catqui	AUX	_	Aspect=Imp|Number[subj]=Sing|Person[subj]=3|Tense=Past|VerbForm=Fin	9	cop	9:cop	Analysed=Yes|Folio=4v|Line=2|Norm=catca|Paragraph=3|SpaceAfter=No
+11	,	,	PUNCT	_	_	13	punct	13:punct	Folio=4v|Paragraph=3|Line=2|Norm=,|Analysed=Yes
+12	in	in	SCONJ	_	_	13	mark	13:mark	Orig=intetzam¶·machoia|Folio=4v,4v|Paragraph=3,3|Line=2,3|Norm=in
+13	tetzammachoia	tetzammatia	VERB	_	Aspect=Imp|Number[subj]=Plur,Sing|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin|Voice=Pass	9	conj	9:conj	Analysed=Yes|Folio=4v,4v|Incorp=tetza|Line=2,3|Norm=tetzammachoya|Orig=intetzam¶·machoia|Paragraph=3,3|SpaceAfter=No
+14	:	:	PUNCT	_	_	18	punct	18:punct	Folio=4v|Paragraph=3|Line=3|Norm=:|Analysed=Yes
+15	in	in	SCONJ	_	_	18	mark	18:mark	Orig=injquac|Folio=4v|Paragraph=3|Line=3|Norm=in
+16	jquac	ihcuac	ADV	_	_	18	advmod	18:advmod	Orig=injquac|Folio=4v|Paragraph=3|Line=3|Norm=ihcuac|Gloss=en.el.momento
+17	iooltica	yohualtica	ADV	_	_	18	advmod	18:advmod	Folio=4v|Paragraph=3|Line=3|Norm=yohualtica|Temporal=Yes|Analysed=Yes
+18	qujcaquja	caqui	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	9	csubj	9:csubj	Analysed=Yes|Folio=4v,4v|Line=3,4|Norm=quicaquiya|Orig=quj¶·caquja|Paragraph=3,3|SpaceAfter=No
+19	,	,	PUNCT	_	_	24	punct	24:punct	Folio=4v|Paragraph=3|Line=4|Norm=,|Analysed=Yes
+20	in	in	SCONJ	_	_	24	mark	24:mark	Orig=injuhquj|Folio=4v|Paragraph=3|Line=4|Norm=in
+21	juhquj	iuhqui	ADV	_	_	24	advmod	24:advmod	Orig=injuhquj|Folio=4v|Paragraph=3|Line=4|Norm=iuhqui|Gloss=así|Analysed=Yes
+22	aca	aca	PRON	_	_	24	nsubj	24:nsubj	Folio=4v|Line=4|Norm=aca|Paragraph=3|SpaceAfter=No
+23	,	,	PUNCT	_	_	22	punct	24:punct	Folio=4v|Paragraph=3|Line=4|Norm=,|Analysed=Yes
+24	tlatepuzmjuja	tepozmihuia	VERB	_	Animacy[obj]=Nhum|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Pres|VerbForm=Fin	18	ccomp	18:ccomp	Analysed=Yes|Folio=4v,4v|Line=4,5|Norm=tlatepozmihuia|Orig=tlatepuzmj¶·uja|Paragraph=3,3|SpaceAfter=No
+25	:	:	PUNCT	_	_	28	punct	28:punct	Folio=4v|Paragraph=3|Line=5|Norm=:|Analysed=Yes
+26	in	in	SCONJ	_	_	28	mark	28:mark	Orig=injuhquj|Folio=4v|Paragraph=3|Line=5|Norm=in
+27	juhquj	iuhqui	ADV	_	_	28	advmod	28:advmod	Orig=injuhquj|Folio=4v|Paragraph=3|Line=5|Norm=iuhqui|Gloss=así|Analysed=Yes
+28	quauhxeloaia	cuauhxeloa	VERB	_	_	24	conj	24:conj	Folio=4v|Incorp[obj]=cuauh|Line=5|Norm=cuauhxeloaya|Paragraph=3|Root=xeloa|SpaceAfter=No
+29	,	,	PUNCT	_	_	31	punct	31:punct	Folio=4v|Paragraph=3|Line=5|Norm=,|Analysed=Yes
+30	in	in	SCONJ	_	_	31	mark	31:mark	Folio=4v|Paragraph=3|Line=5|Norm=in
+31	qujtoaia	ihtoa	VERB	_	Aspect=Imp|Number[obj]=Sing|Number[subj]=Plur,Sing|Person[obj]=3|Person[subj]=3|Subcat=Tran|Tense=Past|VerbForm=Fin	6	parataxis	6:parataxis	Analysed=Yes|Folio=4v|Line=6|Norm=quihtoaya|Paragraph=3|SpaceAfter=No
+32	,	,	PUNCT	_	_	33	punct	33:punct	Folio=4v|Paragraph=3|Line=6|Norm=,|Analysed=Yes
+33	ioaltepuztli	yohualtepoztli	NOUN	_	State=Abs	31	obj	31:obj	Analysed=Yes|Folio=4v|Line=6|Norm=yohualtepoztli|Paragraph=3|SpaceAfter=No|Split=yohual·tepoztli
+34	.	.	PUNCT	_	_	6	punct	6:punct	Folio=4v|Paragraph=3|Line=6|Norm=.|Analysed=Yes
+
 # sent_id = Book_05_-_The_Omens.txt:27
 # text = No ioan, tetzaujtl catca, netetzaujloia, tetzammachoia: in jtoca ioaltepuztli.
 # text[norm] = No ihuan, tetzahuitl catca, netetzahuiloya, tetzammachoya: in itoca yohualtepoztli.
